@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 162,
+            "end": 168
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 169,
+            "end": 176
+          },
+          "computed": false,
+          "optional": false,
+          "start": 162,
+          "end": 176
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 184,
+                  "end": 195
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement inherited abstract class",
+                  "start": 197,
+                  "end": 233
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 184,
+                "end": 233
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 240,
+                  "end": 254
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A {\r\n    abstract m() : void;\r\n}\r\n\r\nclass B extends A {\r\n    m(): void {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    // comment\r\n}",
+                        "cooked": "abstract class A {\n    abstract m() : void;\n}\n\nclass B extends A {\n    m(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n    // comment\n}"
+                      },
+                      "tail": true,
+                      "start": 257,
+                      "end": 425
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 257,
+                  "end": 425
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 240,
+                "end": 425
+              }
+            ],
+            "start": 177,
+            "end": 429
+          }
+        ],
+        "optional": false,
+        "start": 162,
+        "end": 430
+      },
+      "start": 162,
+      "end": 431
+    }
+  ],
+  "sourceType": "script",
+  "start": 162,
+  "end": 433
+}

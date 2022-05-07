@@ -1,0 +1,58 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 573,
+            "end": 579
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "toggleMultilineComment",
+            "start": 580,
+            "end": 602
+          },
+          "computed": false,
+          "optional": false,
+          "start": 573,
+          "end": 602
+        },
+        "arguments": [
+          {
+            "type": "TemplateLiteral",
+            "quasis": [
+              {
+                "type": "TemplateElement",
+                "value": {
+                  "raw": "const a = (\r\n    /*<div>\r\n        some text*/\r\n    </div>\r\n);\r\nconst b = <MyComponent foo={1 /*+ 2 + 3 + 4*/} />;\r\nconst c = <MyComponent message={/*'hello world'*/} />;\r\nconst d = <MyTextBox autocomplete={tr/*ue*/} />;\r\nconst e = <MyCo/*mponent message={'hello world'} />;*/\r\nconst f = [\r\n    /*<li key=\"A\">First item</li>,\r\n    <li key=\"B\">Second item</li>,*/\r\n    <li key=\"C\">Third item</li>,\r\n];",
+                  "cooked": "const a = (\n    /*<div>\n        some text*/\n    </div>\n);\nconst b = <MyComponent foo={1 /*+ 2 + 3 + 4*/} />;\nconst c = <MyComponent message={/*'hello world'*/} />;\nconst d = <MyTextBox autocomplete={tr/*ue*/} />;\nconst e = <MyCo/*mponent message={'hello world'} />;*/\nconst f = [\n    /*<li key=\"A\">First item</li>,\n    <li key=\"B\">Second item</li>,*/\n    <li key=\"C\">Third item</li>,\n];"
+                },
+                "tail": true,
+                "start": 609,
+                "end": 1010
+              }
+            ],
+            "expressions": [],
+            "start": 609,
+            "end": 1010
+          }
+        ],
+        "optional": false,
+        "start": 573,
+        "end": 1011
+      },
+      "start": 573,
+      "end": 1012
+    }
+  ],
+  "sourceType": "script",
+  "start": 573,
+  "end": 1012
+}

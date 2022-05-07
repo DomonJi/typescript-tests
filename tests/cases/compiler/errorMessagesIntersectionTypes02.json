@@ -1,0 +1,321 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "fooProp",
+              "start": 21,
+              "end": 28
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "hello",
+                      "start": 30,
+                      "end": 37
+                    },
+                    "start": 30,
+                    "end": 37
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "world",
+                      "start": 40,
+                      "end": 47
+                    },
+                    "start": 40,
+                    "end": 47
+                  }
+                ],
+                "start": 30,
+                "end": 47
+              },
+              "start": 28,
+              "end": 47
+            },
+            "start": 21,
+            "end": 48
+          }
+        ],
+        "start": 14,
+        "end": 51
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 10,
+        "end": 13
+      },
+      "start": 0,
+      "end": 51
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "barProp",
+              "start": 76,
+              "end": 83
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 85,
+                "end": 91
+              },
+              "start": 83,
+              "end": 91
+            },
+            "start": 76,
+            "end": 92
+          }
+        ],
+        "start": 69,
+        "end": 95
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Bar",
+        "start": 65,
+        "end": 68
+      },
+      "start": 55,
+      "end": 95
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 133,
+        "end": 137
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "FooBar",
+        "start": 109,
+        "end": 115
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 124,
+            "end": 127
+          },
+          "start": 124,
+          "end": 127
+        },
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Bar",
+            "start": 129,
+            "end": 132
+          },
+          "start": 129,
+          "end": 132
+        }
+      ],
+      "start": 99,
+      "end": 137
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "mixBar",
+        "start": 158,
+        "end": 164
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "obj",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 173,
+                "end": 174
+              },
+              "start": 173,
+              "end": 174
+            },
+            "start": 171,
+            "end": 174
+          },
+          "start": 168,
+          "end": 174
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSIntersectionType",
+          "types": [
+            {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 177,
+                "end": 178
+              },
+              "start": 177,
+              "end": 178
+            },
+            {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Bar",
+                "start": 181,
+                "end": 184
+              },
+              "start": 181,
+              "end": 184
+            }
+          ],
+          "start": 177,
+          "end": 184
+        },
+        "start": 175,
+        "end": 184
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 165,
+              "end": 166
+            },
+            "start": 165,
+            "end": 166
+          }
+        ],
+        "start": 164,
+        "end": 167
+      },
+      "start": 141,
+      "end": 185
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "fooBar",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "FooBar",
+                  "start": 201,
+                  "end": 207
+                },
+                "start": 201,
+                "end": 207
+              },
+              "start": 199,
+              "end": 207
+            },
+            "start": 193,
+            "end": 207
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "mixBar",
+              "start": 210,
+              "end": 216
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "fooProp",
+                      "start": 224,
+                      "end": 231
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "frizzlebizzle",
+                      "start": 233,
+                      "end": 248
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 224,
+                    "end": 248
+                  }
+                ],
+                "start": 217,
+                "end": 251
+              }
+            ],
+            "optional": false,
+            "start": 210,
+            "end": 252
+          },
+          "start": 193,
+          "end": 252
+        }
+      ],
+      "kind": "let",
+      "start": 189,
+      "end": 253
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 253
+}

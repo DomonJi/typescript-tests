@@ -1,0 +1,152 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "test",
+        "start": 63,
+        "end": 67
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [
+        {
+          "type": "AssignmentPattern",
+          "left": {
+            "type": "Identifier",
+            "name": "isError",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 77,
+                "end": 84
+              },
+              "start": 75,
+              "end": 84
+            },
+            "start": 68,
+            "end": 84
+          },
+          "right": {
+            "type": "Literal",
+            "value": false,
+            "start": 87,
+            "end": 92
+          },
+          "start": 68,
+          "end": 92
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "Identifier",
+                "name": "isError",
+                "start": 105,
+                "end": 112
+              },
+              "right": {
+                "type": "Literal",
+                "value": true,
+                "start": 117,
+                "end": 121
+              },
+              "start": 105,
+              "end": 121
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": null,
+                  "start": 134,
+                  "end": 141
+                }
+              ],
+              "start": 123,
+              "end": 148
+            },
+            "alternate": null,
+            "start": 101,
+            "end": 148
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 158,
+                  "end": 159
+                },
+                "init": {
+                  "type": "AwaitExpression",
+                  "argument": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "Promise",
+                        "start": 168,
+                        "end": 175
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "resolve",
+                        "start": 176,
+                        "end": 183
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 168,
+                      "end": 183
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "The test is passed without an error.",
+                        "start": 184,
+                        "end": 222
+                      }
+                    ],
+                    "optional": false,
+                    "start": 168,
+                    "end": 223
+                  },
+                  "start": 162,
+                  "end": 223
+                },
+                "start": 158,
+                "end": 223
+              }
+            ],
+            "kind": "let",
+            "start": 154,
+            "end": 224
+          }
+        ],
+        "start": 94,
+        "end": 227
+      },
+      "start": 48,
+      "end": 227
+    }
+  ],
+  "sourceType": "script",
+  "start": 48,
+  "end": 227
+}

@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 225,
+            "end": 231
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 232,
+            "end": 239
+          },
+          "computed": false,
+          "optional": false,
+          "start": 225,
+          "end": 239
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 244,
+                  "end": 255
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'Two'",
+                  "start": 257,
+                  "end": 284
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 244,
+                "end": 284
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 288,
+                  "end": 302
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface One {\n    a: number;\n    b: string;\n}\n\ninterface Two extends Omit<One, \"a\"> {\n    c: boolean;\n}\n\nclass TwoStore implements Two {\n    c: boolean;\n    b: string;\n}",
+                        "cooked": "interface One {\n    a: number;\n    b: string;\n}\n\ninterface Two extends Omit<One, \"a\"> {\n    c: boolean;\n}\n\nclass TwoStore implements Two {\n    c: boolean;\n    b: string;\n}"
+                      },
+                      "tail": true,
+                      "start": 304,
+                      "end": 477
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 304,
+                  "end": 477
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 288,
+                "end": 477
+              }
+            ],
+            "start": 240,
+            "end": 480
+          }
+        ],
+        "optional": false,
+        "start": 225,
+        "end": 481
+      },
+      "start": 225,
+      "end": 482
+    }
+  ],
+  "sourceType": "script",
+  "start": 225,
+  "end": 483
+}

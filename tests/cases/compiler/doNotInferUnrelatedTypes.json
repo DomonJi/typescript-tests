@@ -1,0 +1,249 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "dearray",
+        "start": 27,
+        "end": 34
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "ara",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "ReadonlyArray",
+                "start": 43,
+                "end": 56
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 57,
+                      "end": 58
+                    },
+                    "start": 57,
+                    "end": 58
+                  }
+                ],
+                "start": 56,
+                "end": 59
+              },
+              "start": 43,
+              "end": 59
+            },
+            "start": 41,
+            "end": 59
+          },
+          "start": 38,
+          "end": 59
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 62,
+            "end": 63
+          },
+          "start": 62,
+          "end": 63
+        },
+        "start": 60,
+        "end": 63
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 35,
+              "end": 36
+            },
+            "start": 35,
+            "end": 36
+          }
+        ],
+        "start": 34,
+        "end": 37
+      },
+      "start": 10,
+      "end": 64
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "LiteralType",
+        "start": 70,
+        "end": 81
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "foo",
+              "start": 84,
+              "end": 89
+            },
+            "start": 84,
+            "end": 89
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "bar",
+              "start": 92,
+              "end": 97
+            },
+            "start": 92,
+            "end": 97
+          }
+        ],
+        "start": 84,
+        "end": 97
+      },
+      "start": 65,
+      "end": 98
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "alt",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Array",
+                  "start": 116,
+                  "end": 121
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "LiteralType",
+                        "start": 122,
+                        "end": 133
+                      },
+                      "start": 122,
+                      "end": 133
+                    }
+                  ],
+                  "start": 121,
+                  "end": 134
+                },
+                "start": 116,
+                "end": 134
+              },
+              "start": 114,
+              "end": 134
+            },
+            "start": 111,
+            "end": 134
+          },
+          "init": null,
+          "start": 111,
+          "end": 134
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 99,
+      "end": 135
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "LiteralType",
+                  "start": 146,
+                  "end": 157
+                },
+                "start": 146,
+                "end": 157
+              },
+              "start": 144,
+              "end": 157
+            },
+            "start": 141,
+            "end": 157
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "dearray",
+              "start": 160,
+              "end": 167
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "alt",
+                "start": 168,
+                "end": 171
+              }
+            ],
+            "optional": false,
+            "start": 160,
+            "end": 172
+          },
+          "start": 141,
+          "end": 172
+        }
+      ],
+      "kind": "let",
+      "start": 137,
+      "end": 173
+    }
+  ],
+  "sourceType": "script",
+  "start": 10,
+  "end": 174
+}

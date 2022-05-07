@@ -1,0 +1,541 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Values",
+        "start": 23,
+        "end": 29
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": 1,
+              "start": 32,
+              "end": 33
+            },
+            "start": 32,
+            "end": 33
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": 2,
+              "start": 36,
+              "end": 37
+            },
+            "start": 36,
+            "end": 37
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": 3,
+              "start": 40,
+              "end": 41
+            },
+            "start": 40,
+            "end": 41
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": 4,
+              "start": 44,
+              "end": 45
+            },
+            "start": 44,
+            "end": 45
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": 5,
+              "start": 48,
+              "end": 49
+            },
+            "start": 48,
+            "end": 49
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": 6,
+              "start": 52,
+              "end": 53
+            },
+            "start": 52,
+            "end": 53
+          }
+        ],
+        "start": 32,
+        "end": 53
+      },
+      "start": 18,
+      "end": 53
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "FuncType",
+        "start": 62,
+        "end": 70
+      },
+      "typeAnnotation": {
+        "type": "TSFunctionType",
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "arg",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Values",
+                  "start": 79,
+                  "end": 85
+                },
+                "start": 79,
+                "end": 85
+              },
+              "start": 77,
+              "end": 85
+            },
+            "start": 74,
+            "end": 85
+          }
+        ],
+        "returnType": {
+          "type": "TSTypeAnnotation",
+          "typeAnnotation": {
+            "type": "TSStringKeyword",
+            "start": 90,
+            "end": 96
+          },
+          "start": 87,
+          "end": 96
+        },
+        "start": 73,
+        "end": 96
+      },
+      "start": 57,
+      "end": 96
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Example",
+        "start": 135,
+        "end": 142
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "insideClass",
+              "start": 148,
+              "end": 159
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "val",
+                  "start": 181,
+                  "end": 184
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "SwitchStatement",
+                    "discriminant": {
+                      "type": "Identifier",
+                      "name": "val",
+                      "start": 230,
+                      "end": 233
+                    },
+                    "cases": [
+                      {
+                        "type": "SwitchCase",
+                        "test": {
+                          "type": "Literal",
+                          "value": 1,
+                          "start": 249,
+                          "end": 250
+                        },
+                        "consequent": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "1",
+                              "start": 268,
+                              "end": 271
+                            },
+                            "start": 261,
+                            "end": 272
+                          }
+                        ],
+                        "start": 244,
+                        "end": 272
+                      },
+                      {
+                        "type": "SwitchCase",
+                        "test": {
+                          "type": "Literal",
+                          "value": 2,
+                          "start": 285,
+                          "end": 286
+                        },
+                        "consequent": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "2",
+                              "start": 304,
+                              "end": 307
+                            },
+                            "start": 297,
+                            "end": 308
+                          }
+                        ],
+                        "start": 280,
+                        "end": 308
+                      },
+                      {
+                        "type": "SwitchCase",
+                        "test": {
+                          "type": "Literal",
+                          "value": 3,
+                          "start": 321,
+                          "end": 322
+                        },
+                        "consequent": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "3",
+                              "start": 340,
+                              "end": 343
+                            },
+                            "start": 333,
+                            "end": 343
+                          }
+                        ],
+                        "start": 316,
+                        "end": 343
+                      },
+                      {
+                        "type": "SwitchCase",
+                        "test": {
+                          "type": "Literal",
+                          "value": 4,
+                          "start": 356,
+                          "end": 357
+                        },
+                        "consequent": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "4",
+                              "start": 375,
+                              "end": 378
+                            },
+                            "start": 368,
+                            "end": 378
+                          }
+                        ],
+                        "start": 351,
+                        "end": 378
+                      },
+                      {
+                        "type": "SwitchCase",
+                        "test": {
+                          "type": "Literal",
+                          "value": 5,
+                          "start": 391,
+                          "end": 392
+                        },
+                        "consequent": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "5",
+                              "start": 410,
+                              "end": 413
+                            },
+                            "start": 403,
+                            "end": 413
+                          }
+                        ],
+                        "start": 386,
+                        "end": 413
+                      }
+                    ],
+                    "start": 222,
+                    "end": 444
+                  }
+                ],
+                "start": 186,
+                "end": 449
+              },
+              "async": false,
+              "expression": false,
+              "start": 172,
+              "end": 449
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "FuncType",
+                  "start": 161,
+                  "end": 169
+                },
+                "start": 161,
+                "end": 169
+              },
+              "start": 159,
+              "end": 169
+            },
+            "start": 148,
+            "end": 449
+          }
+        ],
+        "start": 143,
+        "end": 475
+      },
+      "superClass": null,
+      "start": 129,
+      "end": 475
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "outsideClass",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "FuncType",
+                  "start": 499,
+                  "end": 507
+                },
+                "start": 499,
+                "end": 507
+              },
+              "start": 497,
+              "end": 507
+            },
+            "start": 485,
+            "end": 507
+          },
+          "init": {
+            "type": "FunctionExpression",
+            "id": null,
+            "generator": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "val",
+                "start": 519,
+                "end": 522
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "SwitchStatement",
+                  "discriminant": {
+                    "type": "Identifier",
+                    "name": "val",
+                    "start": 592,
+                    "end": 595
+                  },
+                  "cases": [
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 1,
+                        "start": 611,
+                        "end": 612
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "1",
+                            "start": 630,
+                            "end": 633
+                          },
+                          "start": 623,
+                          "end": 634
+                        }
+                      ],
+                      "start": 606,
+                      "end": 634
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 2,
+                        "start": 647,
+                        "end": 648
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "2",
+                            "start": 666,
+                            "end": 669
+                          },
+                          "start": 659,
+                          "end": 670
+                        }
+                      ],
+                      "start": 642,
+                      "end": 670
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 3,
+                        "start": 683,
+                        "end": 684
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "3",
+                            "start": 702,
+                            "end": 705
+                          },
+                          "start": 695,
+                          "end": 705
+                        }
+                      ],
+                      "start": 678,
+                      "end": 705
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 4,
+                        "start": 718,
+                        "end": 719
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "4",
+                            "start": 737,
+                            "end": 740
+                          },
+                          "start": 730,
+                          "end": 740
+                        }
+                      ],
+                      "start": 713,
+                      "end": 740
+                    },
+                    {
+                      "type": "SwitchCase",
+                      "test": {
+                        "type": "Literal",
+                        "value": 5,
+                        "start": 753,
+                        "end": 754
+                      },
+                      "consequent": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": "5",
+                            "start": 772,
+                            "end": 775
+                          },
+                          "start": 765,
+                          "end": 775
+                        }
+                      ],
+                      "start": 748,
+                      "end": 775
+                    }
+                  ],
+                  "start": 584,
+                  "end": 806
+                }
+              ],
+              "start": 524,
+              "end": 809
+            },
+            "async": false,
+            "expression": false,
+            "start": 510,
+            "end": 809
+          },
+          "start": 485,
+          "end": 809
+        }
+      ],
+      "kind": "const",
+      "start": 479,
+      "end": 809
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 809
+}

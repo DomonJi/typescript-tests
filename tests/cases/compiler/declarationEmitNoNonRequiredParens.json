@@ -1,0 +1,194 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSEnumDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Test",
+          "start": 35,
+          "end": 39
+        },
+        "members": [
+          {
+            "type": "TSEnumMember",
+            "id": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 47,
+              "end": 48
+            },
+            "start": 47,
+            "end": 48
+          },
+          {
+            "type": "TSEnumMember",
+            "id": {
+              "type": "Identifier",
+              "name": "B",
+              "start": 50,
+              "end": 51
+            },
+            "start": 50,
+            "end": 51
+          },
+          {
+            "type": "TSEnumMember",
+            "id": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 53,
+              "end": 54
+            },
+            "start": 53,
+            "end": 54
+          }
+        ],
+        "start": 30,
+        "end": 57
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 23,
+      "end": 57
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "TestType",
+          "start": 73,
+          "end": 81
+        },
+        "typeAnnotation": {
+          "type": "TSTypeQuery",
+          "exprName": {
+            "type": "Identifier",
+            "name": "Test",
+            "start": 91,
+            "end": 95
+          },
+          "start": 84,
+          "end": 95
+        },
+        "start": 68,
+        "end": 96
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 61,
+      "end": 96
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 113,
+              "end": 116
+            },
+            "init": {
+              "type": "TSAsExpression",
+              "expression": {
+                "type": "Literal",
+                "value": null,
+                "start": 120,
+                "end": 124
+              },
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSIndexedAccessType",
+                  "objectType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "TestType",
+                      "start": 128,
+                      "end": 136
+                    },
+                    "start": 128,
+                    "end": 136
+                  },
+                  "indexType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Extract",
+                      "start": 137,
+                      "end": 144
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSTypeOperator",
+                          "operator": "keyof",
+                          "typeAnnotation": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "TestType",
+                              "start": 151,
+                              "end": 159
+                            },
+                            "start": 151,
+                            "end": 159
+                          },
+                          "start": 145,
+                          "end": 159
+                        },
+                        {
+                          "type": "TSStringKeyword",
+                          "start": 161,
+                          "end": 167
+                        }
+                      ],
+                      "start": 144,
+                      "end": 168
+                    },
+                    "start": 137,
+                    "end": 168
+                  },
+                  "start": 128,
+                  "end": 169
+                },
+                "start": 128,
+                "end": 171
+              },
+              "start": 120,
+              "end": 171
+            },
+            "start": 113,
+            "end": 172
+          }
+        ],
+        "kind": "const",
+        "start": 107,
+        "end": 173
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 100,
+      "end": 173
+    }
+  ],
+  "sourceType": "module",
+  "start": 23,
+  "end": 173
+}

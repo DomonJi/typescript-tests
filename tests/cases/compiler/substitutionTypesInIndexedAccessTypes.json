@@ -1,0 +1,509 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "UserArgs",
+        "start": 49,
+        "end": 57
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "select",
+              "start": 65,
+              "end": 71
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 74,
+                "end": 81
+              },
+              "start": 72,
+              "end": 81
+            },
+            "start": 65,
+            "end": 81
+          }
+        ],
+        "start": 60,
+        "end": 84
+      },
+      "start": 44,
+      "end": 85
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Subset",
+        "start": 94,
+        "end": 100
+      },
+      "typeAnnotation": {
+        "type": "TSMappedType",
+        "typeParameter": {
+          "type": "TSTypeParameter",
+          "name": {
+            "type": "Identifier",
+            "name": "key",
+            "start": 112,
+            "end": 115
+          },
+          "constraint": {
+            "type": "TSTypeOperator",
+            "operator": "keyof",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 125,
+                "end": 126
+              },
+              "start": 125,
+              "end": 126
+            },
+            "start": 119,
+            "end": 126
+          },
+          "start": 112,
+          "end": 126
+        },
+        "nameType": null,
+        "typeAnnotation": {
+          "type": "TSConditionalType",
+          "checkType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "key",
+              "start": 129,
+              "end": 132
+            },
+            "start": 129,
+            "end": 132
+          },
+          "extendsType": {
+            "type": "TSTypeOperator",
+            "operator": "keyof",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "U",
+                "start": 147,
+                "end": 148
+              },
+              "start": 147,
+              "end": 148
+            },
+            "start": 141,
+            "end": 148
+          },
+          "trueType": {
+            "type": "TSIndexedAccessType",
+            "objectType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 151,
+                "end": 152
+              },
+              "start": 151,
+              "end": 152
+            },
+            "indexType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "key",
+                "start": 153,
+                "end": 156
+              },
+              "start": 153,
+              "end": 156
+            },
+            "start": 151,
+            "end": 157
+          },
+          "falseType": {
+            "type": "TSNeverKeyword",
+            "start": 160,
+            "end": 165
+          },
+          "start": 129,
+          "end": 165
+        },
+        "start": 109,
+        "end": 167
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 101,
+              "end": 102
+            },
+            "start": 101,
+            "end": 102
+          },
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "U",
+              "start": 104,
+              "end": 105
+            },
+            "start": 104,
+            "end": 105
+          }
+        ],
+        "start": 100,
+        "end": 106
+      },
+      "start": 89,
+      "end": 168
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "withBoundary",
+        "start": 189,
+        "end": 201
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "args",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Subset",
+                "start": 229,
+                "end": 235
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 236,
+                      "end": 237
+                    },
+                    "start": 236,
+                    "end": 237
+                  },
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "UserArgs",
+                      "start": 239,
+                      "end": 247
+                    },
+                    "start": 239,
+                    "end": 247
+                  }
+                ],
+                "start": 235,
+                "end": 248
+              },
+              "start": 229,
+              "end": 248
+            },
+            "start": 227,
+            "end": 248
+          },
+          "optional": true,
+          "start": 222,
+          "end": 248
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 251,
+            "end": 252
+          },
+          "start": 251,
+          "end": 252
+        },
+        "start": 249,
+        "end": 252
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 202,
+              "end": 203
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "UserArgs",
+                "start": 212,
+                "end": 220
+              },
+              "start": 212,
+              "end": 220
+            },
+            "start": 202,
+            "end": 220
+          }
+        ],
+        "start": 201,
+        "end": 221
+      },
+      "start": 172,
+      "end": 253
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "withoutBoundary",
+        "start": 272,
+        "end": 287
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "args",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 315,
+                "end": 316
+              },
+              "start": 315,
+              "end": 316
+            },
+            "start": 313,
+            "end": 316
+          },
+          "optional": true,
+          "start": 308,
+          "end": 316
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 319,
+            "end": 320
+          },
+          "start": 319,
+          "end": 320
+        },
+        "start": 317,
+        "end": 320
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 288,
+              "end": 289
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "UserArgs",
+                "start": 298,
+                "end": 306
+              },
+              "start": 298,
+              "end": 306
+            },
+            "start": 288,
+            "end": 306
+          }
+        ],
+        "start": 287,
+        "end": 307
+      },
+      "start": 255,
+      "end": 321
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "boundaryResult",
+            "start": 331,
+            "end": 345
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "withBoundary",
+              "start": 348,
+              "end": 360
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "select",
+                      "start": 366,
+                      "end": 372
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": true,
+                      "start": 374,
+                      "end": 378
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 366,
+                    "end": 378
+                  }
+                ],
+                "start": 361,
+                "end": 382
+              }
+            ],
+            "optional": false,
+            "start": 348,
+            "end": 383
+          },
+          "start": 331,
+          "end": 383
+        }
+      ],
+      "kind": "const",
+      "start": 325,
+      "end": 384
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "withoutBoundaryResult",
+            "start": 394,
+            "end": 415
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "withoutBoundary",
+              "start": 418,
+              "end": 433
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "select",
+                      "start": 439,
+                      "end": 445
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": true,
+                      "start": 447,
+                      "end": 451
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 439,
+                    "end": 451
+                  }
+                ],
+                "start": 434,
+                "end": 455
+              }
+            ],
+            "optional": false,
+            "start": 418,
+            "end": 456
+          },
+          "start": 394,
+          "end": 456
+        }
+      ],
+      "kind": "const",
+      "start": 388,
+      "end": 457
+    }
+  ],
+  "sourceType": "script",
+  "start": 44,
+  "end": 459
+}

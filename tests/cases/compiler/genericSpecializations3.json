@@ -1,0 +1,897 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 25,
+              "end": 28
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 32,
+                      "end": 33
+                    },
+                    "start": 32,
+                    "end": 33
+                  },
+                  "start": 30,
+                  "end": 33
+                },
+                "start": 29,
+                "end": 33
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 36,
+                  "end": 37
+                },
+                "start": 36,
+                "end": 37
+              },
+              "start": 34,
+              "end": 37
+            },
+            "start": 25,
+            "end": 38
+          }
+        ],
+        "start": 18,
+        "end": 41
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IFoo",
+        "start": 10,
+        "end": 14
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 15,
+              "end": 16
+            },
+            "start": 15,
+            "end": 16
+          }
+        ],
+        "start": 14,
+        "end": 17
+      },
+      "start": 0,
+      "end": 41
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "iFoo",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "IFoo",
+                  "start": 55,
+                  "end": 59
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSNumberKeyword",
+                      "start": 60,
+                      "end": 66
+                    }
+                  ],
+                  "start": 59,
+                  "end": 67
+                },
+                "start": 55,
+                "end": 67
+              },
+              "start": 53,
+              "end": 67
+            },
+            "start": 49,
+            "end": 67
+          },
+          "init": null,
+          "start": 49,
+          "end": 67
+        }
+      ],
+      "kind": "var",
+      "start": 45,
+      "end": 68
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "iFoo",
+            "start": 70,
+            "end": 74
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 75,
+            "end": 78
+          },
+          "computed": false,
+          "optional": false,
+          "start": 70,
+          "end": 78
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": 1,
+            "start": 79,
+            "end": 80
+          }
+        ],
+        "optional": false,
+        "start": 70,
+        "end": 81
+      },
+      "start": 70,
+      "end": 82
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "IntFooBad",
+        "start": 92,
+        "end": 101
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 142,
+              "end": 145
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": null,
+                      "start": 174,
+                      "end": 178
+                    },
+                    "start": 167,
+                    "end": 179
+                  }
+                ],
+                "start": 165,
+                "end": 181
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 149,
+                      "end": 155
+                    },
+                    "start": 147,
+                    "end": 155
+                  },
+                  "start": 146,
+                  "end": 155
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 158,
+                  "end": 164
+                },
+                "start": 156,
+                "end": 164
+              },
+              "start": 145,
+              "end": 181
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 142,
+            "end": 181
+          }
+        ],
+        "start": 126,
+        "end": 184
+      },
+      "superClass": null,
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "name": "IFoo",
+            "start": 113,
+            "end": 117
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSNumberKeyword",
+                "start": 118,
+                "end": 124
+              }
+            ],
+            "start": 117,
+            "end": 125
+          },
+          "start": 113,
+          "end": 125
+        }
+      ],
+      "start": 86,
+      "end": 184
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "intFooBad",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "IntFooBad",
+                  "start": 203,
+                  "end": 212
+                },
+                "start": 203,
+                "end": 212
+              },
+              "start": 201,
+              "end": 212
+            },
+            "start": 192,
+            "end": 212
+          },
+          "init": null,
+          "start": 192,
+          "end": 212
+        }
+      ],
+      "kind": "var",
+      "start": 188,
+      "end": 213
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "IntFoo",
+        "start": 223,
+        "end": 229
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 261,
+              "end": 264
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": null,
+                      "start": 293,
+                      "end": 297
+                    },
+                    "start": 286,
+                    "end": 298
+                  }
+                ],
+                "start": 284,
+                "end": 300
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 268,
+                      "end": 274
+                    },
+                    "start": 266,
+                    "end": 274
+                  },
+                  "start": 265,
+                  "end": 274
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSNumberKeyword",
+                  "start": 277,
+                  "end": 283
+                },
+                "start": 275,
+                "end": 283
+              },
+              "start": 264,
+              "end": 300
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 261,
+            "end": 300
+          }
+        ],
+        "start": 254,
+        "end": 303
+      },
+      "superClass": null,
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "name": "IFoo",
+            "start": 241,
+            "end": 245
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSNumberKeyword",
+                "start": 246,
+                "end": 252
+              }
+            ],
+            "start": 245,
+            "end": 253
+          },
+          "start": 241,
+          "end": 253
+        }
+      ],
+      "start": 217,
+      "end": 303
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "intFoo",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "IntFoo",
+                  "start": 319,
+                  "end": 325
+                },
+                "start": 319,
+                "end": 325
+              },
+              "start": 317,
+              "end": 325
+            },
+            "start": 311,
+            "end": 325
+          },
+          "init": null,
+          "start": 311,
+          "end": 325
+        }
+      ],
+      "kind": "var",
+      "start": 307,
+      "end": 326
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StringFoo2",
+        "start": 336,
+        "end": 346
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 378,
+              "end": 381
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": null,
+                      "start": 410,
+                      "end": 414
+                    },
+                    "start": 403,
+                    "end": 415
+                  }
+                ],
+                "start": 401,
+                "end": 417
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 385,
+                      "end": 391
+                    },
+                    "start": 383,
+                    "end": 391
+                  },
+                  "start": 382,
+                  "end": 391
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 394,
+                  "end": 400
+                },
+                "start": 392,
+                "end": 400
+              },
+              "start": 381,
+              "end": 417
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 378,
+            "end": 417
+          }
+        ],
+        "start": 371,
+        "end": 420
+      },
+      "superClass": null,
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "name": "IFoo",
+            "start": 358,
+            "end": 362
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSStringKeyword",
+                "start": 363,
+                "end": 369
+              }
+            ],
+            "start": 362,
+            "end": 370
+          },
+          "start": 358,
+          "end": 370
+        }
+      ],
+      "start": 330,
+      "end": 420
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "stringFoo2",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "StringFoo2",
+                  "start": 440,
+                  "end": 450
+                },
+                "start": 440,
+                "end": 450
+              },
+              "start": 438,
+              "end": 450
+            },
+            "start": 428,
+            "end": 450
+          },
+          "init": null,
+          "start": 428,
+          "end": 450
+        }
+      ],
+      "kind": "var",
+      "start": 424,
+      "end": 451
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "stringFoo2",
+            "start": 453,
+            "end": 463
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 464,
+            "end": 467
+          },
+          "computed": false,
+          "optional": false,
+          "start": 453,
+          "end": 467
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "hm",
+            "start": 468,
+            "end": 472
+          }
+        ],
+        "optional": false,
+        "start": 453,
+        "end": 473
+      },
+      "start": 453,
+      "end": 474
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "intFoo",
+          "start": 480,
+          "end": 486
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "stringFoo2",
+          "start": 489,
+          "end": 499
+        },
+        "start": 480,
+        "end": 499
+      },
+      "start": 480,
+      "end": 500
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "stringFoo2",
+          "start": 511,
+          "end": 521
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "intFoo",
+          "start": 524,
+          "end": 530
+        },
+        "start": 511,
+        "end": 530
+      },
+      "start": 511,
+      "end": 531
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StringFoo3",
+        "start": 552,
+        "end": 562
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 603,
+              "end": 606
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": null,
+                      "start": 628,
+                      "end": 632
+                    },
+                    "start": 621,
+                    "end": 633
+                  }
+                ],
+                "start": 619,
+                "end": 635
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 613,
+                        "end": 614
+                      },
+                      "start": 613,
+                      "end": 614
+                    },
+                    "start": 611,
+                    "end": 614
+                  },
+                  "start": 610,
+                  "end": 614
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 617,
+                    "end": 618
+                  },
+                  "start": 617,
+                  "end": 618
+                },
+                "start": 615,
+                "end": 618
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterDeclaration",
+                "params": [
+                  {
+                    "type": "TSTypeParameter",
+                    "name": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 607,
+                      "end": 608
+                    },
+                    "start": 607,
+                    "end": 608
+                  }
+                ],
+                "start": 606,
+                "end": 609
+              },
+              "start": 606,
+              "end": 635
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 603,
+            "end": 635
+          }
+        ],
+        "start": 587,
+        "end": 638
+      },
+      "superClass": null,
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "name": "IFoo",
+            "start": 574,
+            "end": 578
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSStringKeyword",
+                "start": 579,
+                "end": 585
+              }
+            ],
+            "start": 578,
+            "end": 586
+          },
+          "start": 574,
+          "end": 586
+        }
+      ],
+      "start": 546,
+      "end": 638
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "stringFoo3",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "StringFoo3",
+                  "start": 656,
+                  "end": 666
+                },
+                "start": 656,
+                "end": 666
+              },
+              "start": 654,
+              "end": 666
+            },
+            "start": 644,
+            "end": 666
+          },
+          "init": null,
+          "start": 644,
+          "end": 666
+        }
+      ],
+      "kind": "var",
+      "start": 640,
+      "end": 667
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 667
+}

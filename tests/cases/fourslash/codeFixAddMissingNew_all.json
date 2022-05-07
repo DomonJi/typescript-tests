@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 140,
+            "end": 146
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 147,
+            "end": 157
+          },
+          "computed": false,
+          "optional": false,
+          "start": 140,
+          "end": 157
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 165,
+                  "end": 170
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addMissingNewOperator",
+                  "start": 172,
+                  "end": 195
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 165,
+                "end": 195
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 202,
+                  "end": 219
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add missing 'new' operator to all calls",
+                  "start": 221,
+                  "end": 262
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 202,
+                "end": 262
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 269,
+                  "end": 283
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class C {\r\n    constructor(num?: number) {}\r\n}\r\nvar a = new C();\r\nvar b = new C(3);",
+                        "cooked": "class C {\n    constructor(num?: number) {}\n}\nvar a = new C();\nvar b = new C(3);"
+                      },
+                      "tail": true,
+                      "start": 286,
+                      "end": 371
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 286,
+                  "end": 371
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 269,
+                "end": 371
+              }
+            ],
+            "start": 158,
+            "end": 374
+          }
+        ],
+        "optional": false,
+        "start": 140,
+        "end": 375
+      },
+      "start": 140,
+      "end": 376
+    }
+  ],
+  "sourceType": "script",
+  "start": 140,
+  "end": 378
+}

@@ -1,0 +1,710 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "kindCache",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSIndexSignature",
+                    "parameters": [
+                      {
+                        "type": "Identifier",
+                        "name": "kind",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 49,
+                            "end": 55
+                          },
+                          "start": 47,
+                          "end": 55
+                        },
+                        "start": 43,
+                        "end": 55
+                      }
+                    ],
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSBooleanKeyword",
+                        "start": 58,
+                        "end": 65
+                      },
+                      "start": 56,
+                      "end": 65
+                    },
+                    "start": 42,
+                    "end": 65
+                  }
+                ],
+                "start": 40,
+                "end": 67
+              },
+              "start": 38,
+              "end": 67
+            },
+            "start": 29,
+            "end": 67
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [],
+            "start": 70,
+            "end": 72
+          },
+          "start": 29,
+          "end": 72
+        }
+      ],
+      "kind": "const",
+      "start": 23,
+      "end": 73
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "register",
+        "start": 86,
+        "end": 94
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "kind",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 101,
+              "end": 107
+            },
+            "start": 99,
+            "end": 107
+          },
+          "start": 95,
+          "end": 107
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "kindCache",
+                "start": 132,
+                "end": 141
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "kind",
+                "start": 142,
+                "end": 146
+              },
+              "computed": true,
+              "optional": false,
+              "start": 132,
+              "end": 147
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ThrowStatement",
+                  "argument": {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Error",
+                      "start": 166,
+                      "end": 171
+                    },
+                    "arguments": [
+                      {
+                        "type": "TemplateLiteral",
+                        "quasis": [
+                          {
+                            "type": "TemplateElement",
+                            "value": {
+                              "raw": "Class with kind \"",
+                              "cooked": "Class with kind \""
+                            },
+                            "tail": false,
+                            "start": 172,
+                            "end": 192
+                          },
+                          {
+                            "type": "TemplateElement",
+                            "value": {
+                              "raw": "\" is already registered.",
+                              "cooked": "\" is already registered."
+                            },
+                            "tail": true,
+                            "start": 196,
+                            "end": 222
+                          }
+                        ],
+                        "expressions": [
+                          {
+                            "type": "Identifier",
+                            "name": "kind",
+                            "start": 192,
+                            "end": 196
+                          }
+                        ],
+                        "start": 172,
+                        "end": 222
+                      }
+                    ],
+                    "start": 162,
+                    "end": 223
+                  },
+                  "start": 156,
+                  "end": 224
+                }
+              ],
+              "start": 149,
+              "end": 229
+            },
+            "alternate": null,
+            "start": 128,
+            "end": 229
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "kindCache",
+                  "start": 233,
+                  "end": 242
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "kind",
+                  "start": 243,
+                  "end": 247
+                },
+                "computed": true,
+                "optional": false,
+                "start": 233,
+                "end": 248
+              },
+              "right": {
+                "type": "Literal",
+                "value": true,
+                "start": 251,
+                "end": 255
+              },
+              "start": 233,
+              "end": 255
+            },
+            "start": 233,
+            "end": 256
+          }
+        ],
+        "start": 123,
+        "end": 259
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSUnionType",
+          "types": [
+            {
+              "type": "TSVoidKeyword",
+              "start": 110,
+              "end": 114
+            },
+            {
+              "type": "TSNeverKeyword",
+              "start": 117,
+              "end": 122
+            }
+          ],
+          "start": 110,
+          "end": 122
+        },
+        "start": 108,
+        "end": 122
+      },
+      "start": 77,
+      "end": 259
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ClassFactory",
+        "start": 272,
+        "end": 284
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "kind",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "TKind",
+                "start": 313,
+                "end": 318
+              },
+              "start": 313,
+              "end": 318
+            },
+            "start": 311,
+            "end": 318
+          },
+          "start": 307,
+          "end": 318
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "register",
+                "start": 325,
+                "end": 333
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "kind",
+                  "start": 334,
+                  "end": 338
+                }
+              ],
+              "optional": false,
+              "start": 325,
+              "end": 339
+            },
+            "start": 325,
+            "end": 340
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ClassExpression",
+              "id": null,
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "PropertyDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "THE_KIND",
+                      "start": 382,
+                      "end": 390
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "name": "kind",
+                      "start": 400,
+                      "end": 404
+                    },
+                    "computed": false,
+                    "static": true,
+                    "readonly": true,
+                    "declare": false,
+                    "override": false,
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "TKind",
+                          "start": 392,
+                          "end": 397
+                        },
+                        "start": 392,
+                        "end": 397
+                      },
+                      "start": 390,
+                      "end": 397
+                    },
+                    "start": 366,
+                    "end": 405
+                  },
+                  {
+                    "type": "PropertyDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "kind",
+                      "start": 420,
+                      "end": 424
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "name": "kind",
+                      "start": 434,
+                      "end": 438
+                    },
+                    "computed": false,
+                    "static": false,
+                    "readonly": true,
+                    "declare": false,
+                    "override": false,
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "TKind",
+                          "start": 426,
+                          "end": 431
+                        },
+                        "start": 426,
+                        "end": 431
+                      },
+                      "start": 424,
+                      "end": 431
+                    },
+                    "start": 411,
+                    "end": 439
+                  }
+                ],
+                "start": 359,
+                "end": 444
+              },
+              "superClass": null,
+              "start": 353,
+              "end": 444
+            },
+            "start": 346,
+            "end": 445
+          }
+        ],
+        "start": 320,
+        "end": 448
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TKind",
+              "start": 285,
+              "end": 290
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 299,
+              "end": 305
+            },
+            "start": 285,
+            "end": 305
+          }
+        ],
+        "start": 284,
+        "end": 306
+      },
+      "start": 263,
+      "end": 448
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Kinds",
+        "start": 458,
+        "end": 463
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 485,
+              "end": 486
+            },
+            "value": {
+              "type": "Literal",
+              "value": "A",
+              "start": 489,
+              "end": 492
+            },
+            "computed": false,
+            "static": true,
+            "readonly": true,
+            "declare": false,
+            "override": false,
+            "start": 469,
+            "end": 493
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "B",
+              "start": 513,
+              "end": 514
+            },
+            "value": {
+              "type": "Literal",
+              "value": "B",
+              "start": 517,
+              "end": 520
+            },
+            "computed": false,
+            "static": true,
+            "readonly": true,
+            "declare": false,
+            "override": false,
+            "start": 497,
+            "end": 521
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 541,
+              "end": 542
+            },
+            "value": {
+              "type": "Literal",
+              "value": "C",
+              "start": 545,
+              "end": 548
+            },
+            "computed": false,
+            "static": true,
+            "readonly": true,
+            "declare": false,
+            "override": false,
+            "start": 525,
+            "end": 549
+          }
+        ],
+        "start": 464,
+        "end": 552
+      },
+      "superClass": null,
+      "start": 452,
+      "end": 552
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "AKind",
+          "start": 569,
+          "end": 574
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "start": 605,
+          "end": 609
+        },
+        "superClass": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "ClassFactory",
+            "start": 583,
+            "end": 595
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Kinds",
+                "start": 596,
+                "end": 601
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "A",
+                "start": 602,
+                "end": 603
+              },
+              "computed": false,
+              "optional": false,
+              "start": 596,
+              "end": 603
+            }
+          ],
+          "optional": false,
+          "start": 583,
+          "end": 604
+        },
+        "start": 563,
+        "end": 609
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 556,
+      "end": 609
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "BKind",
+          "start": 626,
+          "end": 631
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "start": 662,
+          "end": 666
+        },
+        "superClass": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "ClassFactory",
+            "start": 640,
+            "end": 652
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Kinds",
+                "start": 653,
+                "end": 658
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "B",
+                "start": 659,
+                "end": 660
+              },
+              "computed": false,
+              "optional": false,
+              "start": 653,
+              "end": 660
+            }
+          ],
+          "optional": false,
+          "start": 640,
+          "end": 661
+        },
+        "start": 620,
+        "end": 666
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 613,
+      "end": 666
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "CKind",
+          "start": 683,
+          "end": 688
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "start": 719,
+          "end": 723
+        },
+        "superClass": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "ClassFactory",
+            "start": 697,
+            "end": 709
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Kinds",
+                "start": 710,
+                "end": 715
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "C",
+                "start": 716,
+                "end": 717
+              },
+              "computed": false,
+              "optional": false,
+              "start": 710,
+              "end": 717
+            }
+          ],
+          "optional": false,
+          "start": 697,
+          "end": 718
+        },
+        "start": 677,
+        "end": 723
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 670,
+      "end": 723
+    }
+  ],
+  "sourceType": "module",
+  "start": 23,
+  "end": 723
+}

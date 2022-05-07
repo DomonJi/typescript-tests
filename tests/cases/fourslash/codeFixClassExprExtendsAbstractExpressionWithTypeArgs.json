@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 237,
+            "end": 243
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 244,
+            "end": 251
+          },
+          "computed": false,
+          "optional": false,
+          "start": 237,
+          "end": 251
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 259,
+                  "end": 270
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement inherited abstract class",
+                  "start": 272,
+                  "end": 308
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 259,
+                "end": 308
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 315,
+                  "end": 329
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "function foo<T>(a: T) {\r\n    a;\r\n    abstract class C<U> {\r\n        abstract a: T | U;\r\n    }\r\n    return C;\r\n}\r\n\r\nlet B = class extends foo(\"s\")<number> {\r\n    a: string | number;\r\n}",
+                        "cooked": "function foo<T>(a: T) {\n    a;\n    abstract class C<U> {\n        abstract a: T | U;\n    }\n    return C;\n}\n\nlet B = class extends foo(\"s\")<number> {\n    a: string | number;\n}"
+                      },
+                      "tail": true,
+                      "start": 332,
+                      "end": 517
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 332,
+                  "end": 517
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 315,
+                "end": 517
+              }
+            ],
+            "start": 252,
+            "end": 520
+          }
+        ],
+        "optional": false,
+        "start": 237,
+        "end": 521
+      },
+      "start": 237,
+      "end": 522
+    }
+  ],
+  "sourceType": "script",
+  "start": 237,
+  "end": 524
+}

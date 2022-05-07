@@ -1,0 +1,262 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSUnionType",
+                  "types": [
+                    {
+                      "type": "TSNumberKeyword",
+                      "start": 12,
+                      "end": 18
+                    },
+                    {
+                      "type": "TSStringKeyword",
+                      "start": 21,
+                      "end": 27
+                    }
+                  ],
+                  "start": 12,
+                  "end": 27
+                },
+                "start": 11,
+                "end": 30
+              },
+              "start": 9,
+              "end": 30
+            },
+            "start": 6,
+            "end": 30
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": "aaa",
+                "start": 34,
+                "end": 39
+              }
+            ],
+            "start": 33,
+            "end": 40
+          },
+          "start": 6,
+          "end": 40
+        }
+      ],
+      "kind": "const",
+      "start": 0,
+      "end": 41
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "isString",
+            "start": 51,
+            "end": 59
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSUnknownKeyword",
+                    "start": 66,
+                    "end": 73
+                  },
+                  "start": 64,
+                  "end": 73
+                },
+                "start": 63,
+                "end": 73
+              }
+            ],
+            "body": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 98,
+                  "end": 99
+                },
+                "start": 91,
+                "end": 99
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 104,
+                "end": 112
+              },
+              "start": 91,
+              "end": 112
+            },
+            "async": false,
+            "expression": true,
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypePredicate",
+                "asserts": false,
+                "parameterName": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 76,
+                  "end": 77
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 81,
+                    "end": 87
+                  },
+                  "start": 81,
+                  "end": 87
+                },
+                "start": 76,
+                "end": 87
+              },
+              "start": 74,
+              "end": 87
+            },
+            "start": 62,
+            "end": 112
+          },
+          "start": 51,
+          "end": 112
+        }
+      ],
+      "kind": "const",
+      "start": 45,
+      "end": 113
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 121,
+            "end": 124
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "every",
+            "start": 125,
+            "end": 130
+          },
+          "computed": false,
+          "optional": false,
+          "start": 121,
+          "end": 130
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "isString",
+            "start": 131,
+            "end": 139
+          }
+        ],
+        "optional": false,
+        "start": 121,
+        "end": 140
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 147,
+                    "end": 150
+                  },
+                  "property": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 151,
+                    "end": 152
+                  },
+                  "computed": true,
+                  "optional": false,
+                  "start": 147,
+                  "end": 153
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "slice",
+                  "start": 154,
+                  "end": 159
+                },
+                "computed": false,
+                "optional": false,
+                "start": 147,
+                "end": 159
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 160,
+                  "end": 161
+                }
+              ],
+              "optional": false,
+              "start": 147,
+              "end": 162
+            },
+            "start": 147,
+            "end": 163
+          }
+        ],
+        "start": 142,
+        "end": 166
+      },
+      "alternate": null,
+      "start": 117,
+      "end": 166
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 168
+}

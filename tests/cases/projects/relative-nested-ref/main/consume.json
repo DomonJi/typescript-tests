@@ -1,0 +1,142 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "decl",
+        "start": 45,
+        "end": 49
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "decl",
+          "start": 60,
+          "end": 66
+        },
+        "start": 52,
+        "end": 67
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 38,
+      "end": 68
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "str",
+            "start": 74,
+            "end": 77
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "decl",
+                "start": 80,
+                "end": 84
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "call",
+                "start": 85,
+                "end": 89
+              },
+              "computed": false,
+              "optional": false,
+              "start": 80,
+              "end": 89
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 80,
+            "end": 91
+          },
+          "start": 74,
+          "end": 91
+        }
+      ],
+      "kind": "var",
+      "start": 70,
+      "end": 92
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "fail",
+        "start": 113,
+        "end": 117
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "declare": true,
+      "start": 96,
+      "end": 120
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "!==",
+        "left": {
+          "type": "Identifier",
+          "name": "str",
+          "start": 127,
+          "end": 130
+        },
+        "right": {
+          "type": "Literal",
+          "value": "success",
+          "start": 135,
+          "end": 144
+        },
+        "start": 127,
+        "end": 144
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "fail",
+                "start": 153,
+                "end": 157
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 153,
+              "end": 159
+            },
+            "start": 153,
+            "end": 160
+          }
+        ],
+        "start": 146,
+        "end": 163
+      },
+      "alternate": null,
+      "start": 124,
+      "end": 163
+    }
+  ],
+  "sourceType": "module",
+  "start": 38,
+  "end": 163
+}

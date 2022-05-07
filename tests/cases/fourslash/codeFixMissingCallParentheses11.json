@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 697,
+            "end": 703
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 704,
+            "end": 714
+          },
+          "computed": false,
+          "optional": false,
+          "start": 697,
+          "end": 714
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 721,
+                  "end": 738
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 740,
+                        "end": 742
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 743,
+                        "end": 754
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 740,
+                      "end": 754
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Add_all_missing_call_parentheses",
+                      "start": 755,
+                      "end": 787
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 740,
+                    "end": 787
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 788,
+                    "end": 795
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 740,
+                  "end": 795
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 721,
+                "end": 795
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 801,
+                  "end": 806
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingCallParentheses",
+                  "start": 808,
+                  "end": 835
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 801,
+                "end": 835
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 841,
+                  "end": 855
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class Foo {\n    #test = () => true;\n    run() {\n        if (this.#test()) {\n            console.log('test')\n        }\n        this.#test() && console.log('test');\n    }\n}\n\nfunction foo() {\n    function test() { return Math.random() > 0.5; }\n    test() ? console.log('test') : undefined;\n    test() && console.log('test');\n}\n\nfunction foo() {\n    const x = {\n        foo: {\n            bar() { return true; }\n        }\n    }\n    x.foo.bar() ? console.log('test') : undefined;\n    if (x.foo.bar()) {}\n    x.foo.bar() && console.log('test');\n}",
+                        "cooked": "class Foo {\n    #test = () => true;\n    run() {\n        if (this.#test()) {\n            console.log('test')\n        }\n        this.#test() && console.log('test');\n    }\n}\n\nfunction foo() {\n    function test() { return Math.random() > 0.5; }\n    test() ? console.log('test') : undefined;\n    test() && console.log('test');\n}\n\nfunction foo() {\n    const x = {\n        foo: {\n            bar() { return true; }\n        }\n    }\n    x.foo.bar() ? console.log('test') : undefined;\n    if (x.foo.bar()) {}\n    x.foo.bar() && console.log('test');\n}"
+                      },
+                      "tail": true,
+                      "start": 857,
+                      "end": 1399
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 857,
+                  "end": 1399
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 841,
+                "end": 1399
+              }
+            ],
+            "start": 715,
+            "end": 1402
+          }
+        ],
+        "optional": false,
+        "start": 697,
+        "end": 1403
+      },
+      "start": 697,
+      "end": 1404
+    }
+  ],
+  "sourceType": "script",
+  "start": 697,
+  "end": 1405
+}

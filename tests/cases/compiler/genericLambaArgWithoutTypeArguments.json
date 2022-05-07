@@ -1,0 +1,195 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 23,
+              "end": 24
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 26,
+                  "end": 27
+                },
+                "start": 26,
+                "end": 27
+              },
+              "start": 24,
+              "end": 27
+            },
+            "start": 23,
+            "end": 28
+          }
+        ],
+        "start": 17,
+        "end": 31
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 10,
+        "end": 13
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 14,
+              "end": 15
+            },
+            "start": 14,
+            "end": 15
+          }
+        ],
+        "start": 13,
+        "end": 16
+      },
+      "start": 0,
+      "end": 31
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 42,
+        "end": 45
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "start": 46,
+          "end": 47
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "value": null,
+              "start": 62,
+              "end": 66
+            },
+            "start": 55,
+            "end": 67
+          }
+        ],
+        "start": 49,
+        "end": 70
+      },
+      "start": 33,
+      "end": 70
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 72,
+          "end": 75
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "arg",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Foo",
+                      "start": 82,
+                      "end": 85
+                    },
+                    "start": 82,
+                    "end": 85
+                  },
+                  "start": 80,
+                  "end": 85
+                },
+                "start": 77,
+                "end": 85
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "arg",
+                      "start": 99,
+                      "end": 102
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "x",
+                      "start": 103,
+                      "end": 104
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 99,
+                    "end": 104
+                  },
+                  "start": 92,
+                  "end": 105
+                }
+              ],
+              "start": 90,
+              "end": 107
+            },
+            "async": false,
+            "expression": false,
+            "start": 76,
+            "end": 107
+          }
+        ],
+        "optional": false,
+        "start": 72,
+        "end": 108
+      },
+      "start": 72,
+      "end": 109
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 111
+}

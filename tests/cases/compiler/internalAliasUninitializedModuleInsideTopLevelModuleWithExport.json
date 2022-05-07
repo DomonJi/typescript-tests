@@ -1,0 +1,220 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "a",
+          "start": 53,
+          "end": 54
+        },
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [
+            {
+              "type": "ExportNamedDeclaration",
+              "declaration": {
+                "type": "TSModuleDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "start": 76,
+                  "end": 77
+                },
+                "body": {
+                  "type": "TSModuleBlock",
+                  "body": [
+                    {
+                      "type": "ExportNamedDeclaration",
+                      "declaration": {
+                        "type": "TSInterfaceDeclaration",
+                        "body": {
+                          "type": "TSInterfaceBody",
+                          "body": [
+                            {
+                              "type": "TSMethodSignature",
+                              "computed": false,
+                              "key": {
+                                "type": "Identifier",
+                                "name": "foo",
+                                "start": 123,
+                                "end": 126
+                              },
+                              "params": [],
+                              "kind": "method",
+                              "start": 123,
+                              "end": 129
+                            }
+                          ],
+                          "start": 108,
+                          "end": 140
+                        },
+                        "id": {
+                          "type": "Identifier",
+                          "name": "I",
+                          "start": 106,
+                          "end": 107
+                        },
+                        "start": 96,
+                        "end": 140
+                      },
+                      "specifiers": [],
+                      "source": null,
+                      "exportKind": "type",
+                      "assertions": [],
+                      "start": 89,
+                      "end": 140
+                    }
+                  ],
+                  "start": 78,
+                  "end": 147
+                },
+                "start": 69,
+                "end": 147
+              },
+              "specifiers": [],
+              "source": null,
+              "exportKind": "value",
+              "assertions": [],
+              "start": 62,
+              "end": 147
+            }
+          ],
+          "start": 55,
+          "end": 150
+        },
+        "start": 46,
+        "end": 150
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 39,
+      "end": 150
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "b",
+        "start": 168,
+        "end": 169
+      },
+      "moduleReference": {
+        "type": "TSQualifiedName",
+        "left": {
+          "type": "Identifier",
+          "name": "a",
+          "start": 172,
+          "end": 173
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "b",
+          "start": 174,
+          "end": 175
+        },
+        "start": 172,
+        "end": 175
+      },
+      "importKind": "value",
+      "isExport": true,
+      "start": 154,
+      "end": 176
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "x",
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "TSQualifiedName",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "b",
+                      "start": 192,
+                      "end": 193
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "I",
+                      "start": 194,
+                      "end": 195
+                    },
+                    "start": 192,
+                    "end": 195
+                  },
+                  "start": 192,
+                  "end": 195
+                },
+                "start": 190,
+                "end": 195
+              },
+              "start": 189,
+              "end": 195
+            },
+            "init": null,
+            "start": 189,
+            "end": 195
+          }
+        ],
+        "kind": "var",
+        "start": 185,
+        "end": 196
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 178,
+      "end": 196
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 198,
+            "end": 199
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 200,
+            "end": 203
+          },
+          "computed": false,
+          "optional": false,
+          "start": 198,
+          "end": 203
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 198,
+        "end": 205
+      },
+      "start": 198,
+      "end": 206
+    }
+  ],
+  "sourceType": "module",
+  "start": 39,
+  "end": 208
+}

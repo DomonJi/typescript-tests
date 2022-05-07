@@ -1,0 +1,270 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "BaseClass",
+        "start": 15,
+        "end": 24
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSAbstractPropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 38,
+              "end": 41
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 43,
+                "end": 49
+              },
+              "start": 41,
+              "end": 49
+            },
+            "start": 29,
+            "end": 50
+          }
+        ],
+        "start": 25,
+        "end": 52
+      },
+      "superClass": null,
+      "abstract": true,
+      "start": 0,
+      "end": 52
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Broken",
+        "start": 60,
+        "end": 66
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 85,
+        "end": 87
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "BaseClass",
+        "start": 75,
+        "end": 84
+      },
+      "start": 54,
+      "end": 87
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 163,
+              "end": 166
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 168,
+                "end": 174
+              },
+              "start": 166,
+              "end": 174
+            },
+            "start": 163,
+            "end": 175
+          }
+        ],
+        "start": 159,
+        "end": 177
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IGetters",
+        "start": 150,
+        "end": 158
+      },
+      "start": 140,
+      "end": 177
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 212,
+        "end": 214
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Broken",
+        "start": 188,
+        "end": 194
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "IGetters",
+            "start": 203,
+            "end": 211
+          },
+          "start": 203,
+          "end": 211
+        }
+      ],
+      "start": 178,
+      "end": 214
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "MemberExpression",
+        "object": {
+          "type": "NewExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "Broken",
+            "start": 220,
+            "end": 226
+          },
+          "arguments": [],
+          "start": 216,
+          "end": 228
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "bar",
+          "start": 229,
+          "end": 232
+        },
+        "computed": false,
+        "optional": false,
+        "start": 216,
+        "end": 232
+      },
+      "start": 216,
+      "end": 232
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "IncorrectlyExtends",
+        "start": 240,
+        "end": 258
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 277,
+        "end": 279
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "BaseClass",
+        "start": 267,
+        "end": 276
+      },
+      "start": 234,
+      "end": 279
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 311,
+              "end": 314
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 316,
+                "end": 322
+              },
+              "start": 314,
+              "end": 322
+            },
+            "start": 311,
+            "end": 323
+          }
+        ],
+        "start": 307,
+        "end": 325
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IncorrectGetters",
+        "start": 290,
+        "end": 306
+      },
+      "start": 280,
+      "end": 325
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 380,
+        "end": 382
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IncorrectlyExtends",
+        "start": 336,
+        "end": 354
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "IncorrectGetters",
+            "start": 363,
+            "end": 379
+          },
+          "start": 363,
+          "end": 379
+        }
+      ],
+      "start": 326,
+      "end": 382
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 383
+}

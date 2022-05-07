@@ -1,0 +1,154 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "print",
+        "start": 17,
+        "end": 22
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "s",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 26,
+              "end": 32
+            },
+            "start": 24,
+            "end": 32
+          },
+          "start": 23,
+          "end": 32
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 35,
+          "end": 39
+        },
+        "start": 33,
+        "end": 39
+      },
+      "declare": true,
+      "start": 0,
+      "end": 40
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 51,
+        "end": 54
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 58,
+              "end": 61
+            },
+            "start": 56,
+            "end": 61
+          },
+          "start": 55,
+          "end": 61
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "SwitchStatement",
+            "discriminant": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 74,
+              "end": 75
+            },
+            "cases": [
+              {
+                "type": "SwitchCase",
+                "test": {
+                  "type": "Literal",
+                  "value": 1,
+                  "start": 87,
+                  "end": 88
+                },
+                "consequent": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": null,
+                    "start": 90,
+                    "end": 97
+                  }
+                ],
+                "start": 82,
+                "end": 97
+              },
+              {
+                "type": "SwitchCase",
+                "test": null,
+                "consequent": [],
+                "start": 101,
+                "end": 109
+              }
+            ],
+            "start": 67,
+            "end": 113
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "print",
+                "start": 116,
+                "end": 121
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "1",
+                  "start": 122,
+                  "end": 125
+                }
+              ],
+              "optional": false,
+              "start": 116,
+              "end": 126
+            },
+            "start": 116,
+            "end": 127
+          }
+        ],
+        "start": 63,
+        "end": 130
+      },
+      "start": 42,
+      "end": 130
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 130
+}

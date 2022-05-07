@@ -1,0 +1,224 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 1041,
+            "end": 1045
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "file",
+            "start": 1046,
+            "end": 1050
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1041,
+          "end": 1050
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "/project/libraries/dtos/src/book.entity.ts",
+            "start": 1051,
+            "end": 1095
+          }
+        ],
+        "optional": false,
+        "start": 1041,
+        "end": 1096
+      },
+      "start": 1041,
+      "end": 1097
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 1098,
+            "end": 1104
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "importFixAtPosition",
+            "start": 1105,
+            "end": 1124
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1098,
+          "end": 1124
+        },
+        "arguments": [
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "getImportFixContent",
+                  "start": 1131,
+                  "end": 1150
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": "mikro-orm",
+                    "start": 1151,
+                    "end": 1162
+                  }
+                ],
+                "optional": false,
+                "start": 1131,
+                "end": 1163
+              },
+              {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "getImportFixContent",
+                  "start": 1169,
+                  "end": 1188
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": "mikro-orm/dist/decorators",
+                    "start": 1189,
+                    "end": 1216
+                  }
+                ],
+                "optional": false,
+                "start": 1169,
+                "end": 1217
+              },
+              {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "getImportFixContent",
+                  "start": 1223,
+                  "end": 1242
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": "mikro-orm/dist/decorators/entity",
+                    "start": 1243,
+                    "end": 1277
+                  }
+                ],
+                "optional": false,
+                "start": 1223,
+                "end": 1278
+              }
+            ],
+            "start": 1125,
+            "end": 1281
+          }
+        ],
+        "optional": false,
+        "start": 1098,
+        "end": 1282
+      },
+      "start": 1098,
+      "end": 1283
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getImportFixContent",
+        "start": 1294,
+        "end": 1313
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "from",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 1320,
+              "end": 1326
+            },
+            "start": 1318,
+            "end": 1326
+          },
+          "start": 1314,
+          "end": 1326
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "TemplateLiteral",
+              "quasis": [
+                {
+                  "type": "TemplateElement",
+                  "value": {
+                    "raw": "import { Entity } from \"",
+                    "cooked": "import { Entity } from \""
+                  },
+                  "tail": false,
+                  "start": 1341,
+                  "end": 1368
+                },
+                {
+                  "type": "TemplateElement",
+                  "value": {
+                    "raw": "\";\n\n@Entity()\nexport class BookEntity {\n    id: number\n}",
+                    "cooked": "\";\n\n@Entity()\nexport class BookEntity {\n    id: number\n}"
+                  },
+                  "tail": true,
+                  "start": 1372,
+                  "end": 1430
+                }
+              ],
+              "expressions": [
+                {
+                  "type": "Identifier",
+                  "name": "from",
+                  "start": 1368,
+                  "end": 1372
+                }
+              ],
+              "start": 1341,
+              "end": 1430
+            },
+            "start": 1334,
+            "end": 1431
+          }
+        ],
+        "start": 1328,
+        "end": 1434
+      },
+      "start": 1285,
+      "end": 1434
+    }
+  ],
+  "sourceType": "script",
+  "start": 1041,
+  "end": 1435
+}

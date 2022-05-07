@@ -1,0 +1,241 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 17,
+        "end": 20
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 23,
+              "end": 26
+            },
+            "start": 22,
+            "end": 26
+          },
+          "start": 21,
+          "end": 26
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSAnyKeyword",
+          "start": 29,
+          "end": 32
+        },
+        "start": 27,
+        "end": 32
+      },
+      "declare": true,
+      "start": 0,
+      "end": 33
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "bar",
+        "start": 52,
+        "end": 55
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 58,
+              "end": 61
+            },
+            "start": 57,
+            "end": 61
+          },
+          "start": 56,
+          "end": 61
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSAnyKeyword",
+          "start": 64,
+          "end": 67
+        },
+        "start": 62,
+        "end": 67
+      },
+      "declare": true,
+      "start": 35,
+      "end": 68
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Greeter",
+        "start": 78,
+        "end": 85
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 93,
+              "end": 104
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 112,
+                        "end": 115
+                      },
+                      "arguments": [
+                        {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "bar",
+                                    "start": 137,
+                                    "end": 140
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "ArrowFunctionExpression",
+                                      "generator": false,
+                                      "id": null,
+                                      "params": [],
+                                      "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                          {
+                                            "type": "VariableDeclaration",
+                                            "declarations": [
+                                              {
+                                                "type": "VariableDeclarator",
+                                                "id": {
+                                                  "type": "Identifier",
+                                                  "name": "x",
+                                                  "start": 170,
+                                                  "end": 171
+                                                },
+                                                "init": {
+                                                  "type": "ThisExpression",
+                                                  "start": 174,
+                                                  "end": 178
+                                                },
+                                                "start": 170,
+                                                "end": 178
+                                              }
+                                            ],
+                                            "kind": "var",
+                                            "start": 166,
+                                            "end": 179
+                                          }
+                                        ],
+                                        "start": 147,
+                                        "end": 185
+                                      },
+                                      "async": false,
+                                      "expression": false,
+                                      "start": 141,
+                                      "end": 185
+                                    }
+                                  ],
+                                  "optional": false,
+                                  "start": 137,
+                                  "end": 186
+                                },
+                                "start": 137,
+                                "end": 187
+                              }
+                            ],
+                            "start": 122,
+                            "end": 192
+                          },
+                          "async": false,
+                          "expression": false,
+                          "start": 116,
+                          "end": 192
+                        }
+                      ],
+                      "optional": false,
+                      "start": 112,
+                      "end": 193
+                    },
+                    "start": 112,
+                    "end": 194
+                  }
+                ],
+                "start": 107,
+                "end": 198
+              },
+              "start": 104,
+              "end": 198
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 93,
+            "end": 198
+          }
+        ],
+        "start": 86,
+        "end": 203
+      },
+      "superClass": null,
+      "start": 72,
+      "end": 203
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 204
+}

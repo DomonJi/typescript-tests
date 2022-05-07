@@ -1,0 +1,314 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 6,
+        "end": 7
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 15,
+              "end": 18
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 21,
+                "end": 23
+              },
+              "params": [],
+              "start": 18,
+              "end": 23
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 15,
+            "end": 23
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 29,
+              "end": 32
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 35,
+                "end": 37
+              },
+              "params": [],
+              "start": 32,
+              "end": 37
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 29,
+            "end": 37
+          }
+        ],
+        "start": 8,
+        "end": 40
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 40
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 50,
+        "end": 54
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 62,
+              "end": 63
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 65,
+                "end": 71
+              },
+              "start": 63,
+              "end": 71
+            },
+            "start": 62,
+            "end": 72
+          }
+        ],
+        "start": 55,
+        "end": 75
+      },
+      "superClass": null,
+      "start": 44,
+      "end": 75
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 86,
+        "end": 93
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 114,
+              "end": 125
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "WithStatement",
+                    "object": {
+                      "type": "NewExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "C",
+                        "start": 148,
+                        "end": 149
+                      },
+                      "arguments": [],
+                      "start": 144,
+                      "end": 151
+                    },
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "foo",
+                              "start": 168,
+                              "end": 171
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 168,
+                            "end": 173
+                          },
+                          "start": 168,
+                          "end": 174
+                        },
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Super",
+                              "start": 188,
+                              "end": 193
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 188,
+                            "end": 195
+                          },
+                          "start": 188,
+                          "end": 196
+                        },
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "bar",
+                              "start": 210,
+                              "end": 213
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 210,
+                            "end": 215
+                          },
+                          "start": 210,
+                          "end": 216
+                        }
+                      ],
+                      "start": 153,
+                      "end": 227
+                    },
+                    "start": 139,
+                    "end": 227
+                  },
+                  {
+                    "type": "TryStatement",
+                    "block": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 243,
+                      "end": 245
+                    },
+                    "handler": {
+                      "type": "CatchClause",
+                      "param": {
+                        "type": "Identifier",
+                        "name": "e",
+                        "start": 252,
+                        "end": 253
+                      },
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Super",
+                                "start": 257,
+                                "end": 262
+                              },
+                              "arguments": [],
+                              "optional": false,
+                              "start": 257,
+                              "end": 264
+                            },
+                            "start": 257,
+                            "end": 265
+                          }
+                        ],
+                        "start": 255,
+                        "end": 267
+                      },
+                      "start": 246,
+                      "end": 267
+                    },
+                    "finalizer": null,
+                    "start": 239,
+                    "end": 267
+                  }
+                ],
+                "start": 128,
+                "end": 274
+              },
+              "start": 125,
+              "end": 274
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 114,
+            "end": 274
+          }
+        ],
+        "start": 107,
+        "end": 277
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 102,
+        "end": 106
+      },
+      "start": 80,
+      "end": 277
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 277
+}

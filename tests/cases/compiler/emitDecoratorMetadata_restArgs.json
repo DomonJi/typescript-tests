@@ -1,0 +1,390 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "MyClassDecorator",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ClassDecorator",
+                  "start": 118,
+                  "end": 132
+                },
+                "start": 118,
+                "end": 132
+              },
+              "start": 116,
+              "end": 132
+            },
+            "start": 100,
+            "end": 132
+          },
+          "init": null,
+          "start": 100,
+          "end": 132
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 86,
+      "end": 133
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "MyMethodDecorator",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "MethodDecorator",
+                  "start": 168,
+                  "end": 183
+                },
+                "start": 168,
+                "end": 183
+              },
+              "start": 166,
+              "end": 183
+            },
+            "start": 149,
+            "end": 183
+          },
+          "init": null,
+          "start": 149,
+          "end": 183
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 135,
+      "end": 184
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 213,
+        "end": 214
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 222,
+              "end": 233
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "RestElement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "args",
+                    "start": 237,
+                    "end": 241
+                  },
+                  "start": 234,
+                  "end": 241
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 243,
+                "end": 245
+              },
+              "start": 233,
+              "end": 245
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 222,
+            "end": 245
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "method",
+              "start": 275,
+              "end": 281
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 291,
+                "end": 293
+              },
+              "params": [
+                {
+                  "type": "RestElement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "args",
+                    "start": 285,
+                    "end": 289
+                  },
+                  "start": 282,
+                  "end": 289
+                }
+              ],
+              "start": 281,
+              "end": 293
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "decorators": [
+              {
+                "type": "Decorator",
+                "expression": {
+                  "type": "Identifier",
+                  "name": "MyMethodDecorator",
+                  "start": 252,
+                  "end": 269
+                },
+                "start": 251,
+                "end": 269
+              }
+            ],
+            "start": 251,
+            "end": 293
+          }
+        ],
+        "start": 215,
+        "end": 296
+      },
+      "superClass": null,
+      "decorators": [
+        {
+          "type": "Decorator",
+          "expression": {
+            "type": "Identifier",
+            "name": "MyClassDecorator",
+            "start": 189,
+            "end": 205
+          },
+          "start": 188,
+          "end": 205
+        }
+      ],
+      "start": 188,
+      "end": 296
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 325,
+        "end": 326
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 334,
+              "end": 345
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "RestElement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "args",
+                    "start": 349,
+                    "end": 353
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSArrayType",
+                      "elementType": {
+                        "type": "TSNumberKeyword",
+                        "start": 355,
+                        "end": 361
+                      },
+                      "start": 355,
+                      "end": 363
+                    },
+                    "start": 353,
+                    "end": 363
+                  },
+                  "start": 346,
+                  "end": 363
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 365,
+                "end": 367
+              },
+              "start": 345,
+              "end": 367
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 334,
+            "end": 367
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "method",
+              "start": 397,
+              "end": 403
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 435,
+                "end": 437
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "this",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSThisType",
+                      "start": 410,
+                      "end": 414
+                    },
+                    "start": 408,
+                    "end": 414
+                  },
+                  "start": 404,
+                  "end": 414
+                },
+                {
+                  "type": "RestElement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "args",
+                    "start": 419,
+                    "end": 423
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSArrayType",
+                      "elementType": {
+                        "type": "TSStringKeyword",
+                        "start": 425,
+                        "end": 431
+                      },
+                      "start": 425,
+                      "end": 433
+                    },
+                    "start": 423,
+                    "end": 433
+                  },
+                  "start": 416,
+                  "end": 433
+                }
+              ],
+              "start": 403,
+              "end": 437
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "decorators": [
+              {
+                "type": "Decorator",
+                "expression": {
+                  "type": "Identifier",
+                  "name": "MyMethodDecorator",
+                  "start": 374,
+                  "end": 391
+                },
+                "start": 373,
+                "end": 391
+              }
+            ],
+            "start": 373,
+            "end": 437
+          }
+        ],
+        "start": 327,
+        "end": 440
+      },
+      "superClass": null,
+      "decorators": [
+        {
+          "type": "Decorator",
+          "expression": {
+            "type": "Identifier",
+            "name": "MyClassDecorator",
+            "start": 301,
+            "end": 317
+          },
+          "start": 300,
+          "end": 317
+        }
+      ],
+      "start": 300,
+      "end": 440
+    }
+  ],
+  "sourceType": "script",
+  "start": 86,
+  "end": 442
+}

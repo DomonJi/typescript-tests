@@ -1,0 +1,252 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "X",
+        "start": 21,
+        "end": 22
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 27,
+              "end": 28
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "x",
+                  "start": 30,
+                  "end": 33
+                },
+                "start": 30,
+                "end": 33
+              },
+              "start": 28,
+              "end": 33
+            },
+            "start": 27,
+            "end": 33
+          }
+        ],
+        "start": 25,
+        "end": 35
+      },
+      "start": 16,
+      "end": 36
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Y",
+        "start": 42,
+        "end": 43
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "y",
+              "start": 48,
+              "end": 49
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "y",
+                  "start": 51,
+                  "end": 54
+                },
+                "start": 51,
+                "end": 54
+              },
+              "start": 49,
+              "end": 54
+            },
+            "start": 48,
+            "end": 54
+          }
+        ],
+        "start": 46,
+        "end": 56
+      },
+      "start": 37,
+      "end": 57
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arr",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSIntersectionType",
+                "types": [
+                  {
+                    "type": "TSArrayType",
+                    "elementType": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "X",
+                        "start": 78,
+                        "end": 79
+                      },
+                      "start": 78,
+                      "end": 79
+                    },
+                    "start": 78,
+                    "end": 81
+                  },
+                  {
+                    "type": "TSArrayType",
+                    "elementType": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Y",
+                        "start": 84,
+                        "end": 85
+                      },
+                      "start": 84,
+                      "end": 85
+                    },
+                    "start": 84,
+                    "end": 87
+                  }
+                ],
+                "start": 78,
+                "end": 87
+              },
+              "start": 76,
+              "end": 87
+            },
+            "start": 73,
+            "end": 87
+          },
+          "init": null,
+          "start": 73,
+          "end": 87
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 59,
+      "end": 88
+    },
+    {
+      "type": "ForOfStatement",
+      "left": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "item",
+              "start": 101,
+              "end": 105
+            },
+            "init": null,
+            "start": 101,
+            "end": 105
+          }
+        ],
+        "kind": "const",
+        "start": 95,
+        "end": 105
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "arr",
+        "start": 109,
+        "end": 112
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "item",
+                "start": 120,
+                "end": 124
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 125,
+                "end": 126
+              },
+              "computed": false,
+              "optional": false,
+              "start": 120,
+              "end": 126
+            },
+            "start": 120,
+            "end": 127
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "item",
+                "start": 132,
+                "end": 136
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "y",
+                "start": 137,
+                "end": 138
+              },
+              "computed": false,
+              "optional": false,
+              "start": 132,
+              "end": 138
+            },
+            "start": 132,
+            "end": 139
+          }
+        ],
+        "start": 114,
+        "end": 141
+      },
+      "await": false,
+      "start": 90,
+      "end": 141
+    }
+  ],
+  "sourceType": "script",
+  "start": 16,
+  "end": 142
+}

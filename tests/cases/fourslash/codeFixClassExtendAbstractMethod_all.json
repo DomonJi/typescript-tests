@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 175,
+            "end": 181
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 182,
+            "end": 192
+          },
+          "computed": false,
+          "optional": false,
+          "start": 175,
+          "end": 192
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 199,
+                  "end": 204
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixClassDoesntImplementInheritedAbstractMember",
+                  "start": 206,
+                  "end": 254
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 199,
+                "end": 254
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 260,
+                  "end": 277
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement all inherited abstract classes",
+                  "start": 279,
+                  "end": 321
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 260,
+                "end": 321
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 327,
+                  "end": 341
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A {\n    abstract m(): void;\n    abstract n(): void;\n}\nclass B extends A {\n    m(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n    n(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n}\nclass C extends A {\n    m(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n    n(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n}",
+                        "cooked": "abstract class A {\n    abstract m(): void;\n    abstract n(): void;\n}\nclass B extends A {\n    m(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n    n(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n}\nclass C extends A {\n    m(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n    n(): void {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 343,
+                      "end": 753
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 343,
+                  "end": 753
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 327,
+                "end": 753
+              }
+            ],
+            "start": 193,
+            "end": 756
+          }
+        ],
+        "optional": false,
+        "start": 175,
+        "end": 757
+      },
+      "start": 175,
+      "end": 758
+    }
+  ],
+  "sourceType": "script",
+  "start": 175,
+  "end": 759
+}

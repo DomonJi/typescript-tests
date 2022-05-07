@@ -1,0 +1,478 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "name",
+              "start": 42,
+              "end": 46
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 48,
+                "end": 54
+              },
+              "start": 46,
+              "end": 54
+            },
+            "start": 42,
+            "end": 55
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "kind",
+              "start": 61,
+              "end": 65
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 67,
+                "end": 73
+              },
+              "start": 65,
+              "end": 73
+            },
+            "start": 61,
+            "end": 74
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "age",
+              "start": 80,
+              "end": 83
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 85,
+                "end": 91
+              },
+              "start": 83,
+              "end": 91
+            },
+            "start": 80,
+            "end": 92
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "location",
+              "start": 98,
+              "end": 106
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 108,
+                "end": 114
+              },
+              "start": 106,
+              "end": 114
+            },
+            "start": 98,
+            "end": 115
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "owner",
+              "start": 121,
+              "end": 126
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSObjectKeyword",
+                "start": 128,
+                "end": 134
+              },
+              "start": 126,
+              "end": 134
+            },
+            "start": 121,
+            "end": 135
+          }
+        ],
+        "start": 35,
+        "end": 138
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Animal",
+        "start": 28,
+        "end": 34
+      },
+      "start": 18,
+      "end": 138
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "clonePet",
+        "start": 151,
+        "end": 159
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "pet",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Animal",
+                "start": 165,
+                "end": 171
+              },
+              "start": 165,
+              "end": 171
+            },
+            "start": 163,
+            "end": 171
+          },
+          "start": 160,
+          "end": 171
+        },
+        {
+          "type": "Identifier",
+          "name": "fullCopy",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSBooleanKeyword",
+              "start": 184,
+              "end": 191
+            },
+            "start": 182,
+            "end": 191
+          },
+          "optional": true,
+          "start": 173,
+          "end": 191
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "name",
+                    "start": 218,
+                    "end": 222
+                  },
+                  "value": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "pet",
+                      "start": 224,
+                      "end": 227
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "name",
+                      "start": 228,
+                      "end": 232
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 224,
+                    "end": 232
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 218,
+                  "end": 232
+                },
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "kind",
+                    "start": 243,
+                    "end": 247
+                  },
+                  "value": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "pet",
+                      "start": 249,
+                      "end": 252
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "kind",
+                      "start": 253,
+                      "end": 257
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 249,
+                    "end": 257
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 243,
+                  "end": 257
+                },
+                {
+                  "type": "SpreadElement",
+                  "argument": {
+                    "type": "LogicalExpression",
+                    "operator": "&&",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "fullCopy",
+                      "start": 272,
+                      "end": 280
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "pet",
+                      "start": 284,
+                      "end": 287
+                    },
+                    "start": 272,
+                    "end": 287
+                  },
+                  "start": 268,
+                  "end": 288
+                }
+              ],
+              "start": 207,
+              "end": 296
+            },
+            "start": 200,
+            "end": 296
+          }
+        ],
+        "start": 193,
+        "end": 299
+      },
+      "start": 142,
+      "end": 299
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "name",
+              "start": 328,
+              "end": 332
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 334,
+                "end": 340
+              },
+              "start": 332,
+              "end": 340
+            },
+            "start": 328,
+            "end": 341
+          },
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "owner",
+              "start": 347,
+              "end": 352
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 355,
+                "end": 361
+              },
+              "start": 353,
+              "end": 361
+            },
+            "start": 347,
+            "end": 362
+          }
+        ],
+        "start": 321,
+        "end": 365
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Animal2",
+        "start": 313,
+        "end": 320
+      },
+      "start": 303,
+      "end": 365
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "billOwner",
+        "start": 376,
+        "end": 385
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "pet",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Animal2",
+                "start": 391,
+                "end": 398
+              },
+              "start": 391,
+              "end": 398
+            },
+            "start": 389,
+            "end": 398
+          },
+          "start": 386,
+          "end": 398
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "SpreadElement",
+                  "argument": {
+                    "type": "LogicalExpression",
+                    "operator": "&&",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "pet",
+                        "start": 429,
+                        "end": 432
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "owner",
+                        "start": 433,
+                        "end": 438
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 429,
+                      "end": 438
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "pet",
+                      "start": 442,
+                      "end": 445
+                    },
+                    "start": 429,
+                    "end": 445
+                  },
+                  "start": 425,
+                  "end": 446
+                },
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "paid",
+                    "start": 457,
+                    "end": 461
+                  },
+                  "value": {
+                    "type": "Literal",
+                    "value": false,
+                    "start": 463,
+                    "end": 468
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 457,
+                  "end": 468
+                }
+              ],
+              "start": 414,
+              "end": 475
+            },
+            "start": 407,
+            "end": 475
+          }
+        ],
+        "start": 400,
+        "end": 478
+      },
+      "start": 367,
+      "end": 478
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 480
+}

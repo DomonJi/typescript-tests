@@ -1,0 +1,550 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "otherValue",
+            "start": 6,
+            "end": 16
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "Literal",
+              "value": true,
+              "start": 25,
+              "end": 29
+            },
+            "async": false,
+            "expression": true,
+            "start": 19,
+            "end": 29
+          },
+          "start": 6,
+          "end": 29
+        }
+      ],
+      "kind": "const",
+      "start": 0,
+      "end": 30
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSPropertySignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "inner",
+                      "start": 47,
+                      "end": 52
+                    },
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSUnionType",
+                        "types": [
+                          {
+                            "type": "TSNumberKeyword",
+                            "start": 54,
+                            "end": 60
+                          },
+                          {
+                            "type": "TSStringKeyword",
+                            "start": 63,
+                            "end": 69
+                          }
+                        ],
+                        "start": 54,
+                        "end": 69
+                      },
+                      "start": 52,
+                      "end": 69
+                    },
+                    "start": 47,
+                    "end": 69
+                  }
+                ],
+                "start": 45,
+                "end": 71
+              },
+              "start": 43,
+              "end": 71
+            },
+            "start": 38,
+            "end": 71
+          },
+          "init": {
+            "type": "TSAsExpression",
+            "expression": {
+              "type": "Literal",
+              "value": null,
+              "start": 74,
+              "end": 78
+            },
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 82,
+              "end": 85
+            },
+            "start": 74,
+            "end": 85
+          },
+          "start": 38,
+          "end": 85
+        }
+      ],
+      "kind": "const",
+      "start": 32,
+      "end": 86
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "isNumber",
+        "start": 99,
+        "end": 107
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "obj",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 113,
+              "end": 116
+            },
+            "start": 111,
+            "end": 116
+          },
+          "start": 108,
+          "end": 116
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "value": true,
+              "start": 147,
+              "end": 151
+            },
+            "start": 140,
+            "end": 152
+          }
+        ],
+        "start": 133,
+        "end": 191
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "obj",
+            "start": 119,
+            "end": 122
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 126,
+              "end": 132
+            },
+            "start": 126,
+            "end": 132
+          },
+          "start": 119,
+          "end": 132
+        },
+        "start": 117,
+        "end": 132
+      },
+      "start": 90,
+      "end": 191
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "typeof",
+          "prefix": true,
+          "argument": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "SequenceExpression",
+              "expressions": [
+                {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "otherValue",
+                    "start": 207,
+                    "end": 217
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 207,
+                  "end": 219
+                },
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 221,
+                  "end": 226
+                }
+              ],
+              "start": 207,
+              "end": 226
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "inner",
+              "start": 228,
+              "end": 233
+            },
+            "computed": false,
+            "optional": false,
+            "start": 206,
+            "end": 233
+          },
+          "start": 199,
+          "end": 233
+        },
+        "right": {
+          "type": "Literal",
+          "value": "number",
+          "start": 238,
+          "end": 246
+        },
+        "start": 199,
+        "end": 246
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 261,
+                  "end": 262
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "value",
+                    "start": 265,
+                    "end": 270
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "inner",
+                    "start": 271,
+                    "end": 276
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 265,
+                  "end": 276
+                },
+                "start": 261,
+                "end": 276
+              }
+            ],
+            "kind": "const",
+            "start": 255,
+            "end": 277
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 302,
+                      "end": 308
+                    },
+                    "start": 300,
+                    "end": 308
+                  },
+                  "start": 299,
+                  "end": 308
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "SequenceExpression",
+                    "expressions": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "otherValue",
+                          "start": 312,
+                          "end": 322
+                        },
+                        "arguments": [],
+                        "optional": false,
+                        "start": 312,
+                        "end": 324
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "value",
+                        "start": 326,
+                        "end": 331
+                      }
+                    ],
+                    "start": 312,
+                    "end": 331
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "inner",
+                    "start": 333,
+                    "end": 338
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 311,
+                  "end": 338
+                },
+                "start": 299,
+                "end": 338
+              }
+            ],
+            "kind": "const",
+            "start": 293,
+            "end": 339
+          }
+        ],
+        "start": 248,
+        "end": 384
+      },
+      "alternate": null,
+      "start": 195,
+      "end": 384
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "isNumber",
+          "start": 392,
+          "end": 400
+        },
+        "arguments": [
+          {
+            "type": "MemberExpression",
+            "object": {
+              "type": "SequenceExpression",
+              "expressions": [
+                {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "otherValue",
+                    "start": 402,
+                    "end": 412
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 402,
+                  "end": 414
+                },
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 416,
+                  "end": 421
+                }
+              ],
+              "start": 402,
+              "end": 421
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "inner",
+              "start": 423,
+              "end": 428
+            },
+            "computed": false,
+            "optional": false,
+            "start": 401,
+            "end": 428
+          }
+        ],
+        "optional": false,
+        "start": 392,
+        "end": 429
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 444,
+                  "end": 445
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "value",
+                    "start": 448,
+                    "end": 453
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "inner",
+                    "start": 454,
+                    "end": 459
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 448,
+                  "end": 459
+                },
+                "start": 444,
+                "end": 459
+              }
+            ],
+            "kind": "const",
+            "start": 438,
+            "end": 460
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 485,
+                      "end": 491
+                    },
+                    "start": 483,
+                    "end": 491
+                  },
+                  "start": 482,
+                  "end": 491
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "SequenceExpression",
+                    "expressions": [
+                      {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "otherValue",
+                          "start": 495,
+                          "end": 505
+                        },
+                        "arguments": [],
+                        "optional": false,
+                        "start": 495,
+                        "end": 507
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "value",
+                        "start": 509,
+                        "end": 514
+                      }
+                    ],
+                    "start": 495,
+                    "end": 514
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "inner",
+                    "start": 516,
+                    "end": 521
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 494,
+                  "end": 521
+                },
+                "start": 482,
+                "end": 521
+              }
+            ],
+            "kind": "const",
+            "start": 476,
+            "end": 522
+          }
+        ],
+        "start": 431,
+        "end": 567
+      },
+      "alternate": null,
+      "start": 388,
+      "end": 567
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 567
+}

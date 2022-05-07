@@ -1,0 +1,296 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 200,
+              "end": 203
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 207,
+                    "end": 213
+                  },
+                  "start": 205,
+                  "end": 213
+                },
+                "start": 204,
+                "end": 213
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 216,
+                  "end": 217
+                },
+                "start": 216,
+                "end": 217
+              },
+              "start": 214,
+              "end": 217
+            },
+            "start": 200,
+            "end": 218
+          }
+        ],
+        "start": 193,
+        "end": 221
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "I",
+        "start": 188,
+        "end": 189
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 190,
+              "end": 191
+            },
+            "start": 190,
+            "end": 191
+          }
+        ],
+        "start": 189,
+        "end": 192
+      },
+      "start": 178,
+      "end": 221
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 266,
+        "end": 269
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 235,
+        "end": 236
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "I",
+            "start": 245,
+            "end": 246
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSNumberKeyword",
+                "start": 247,
+                "end": 253
+              }
+            ],
+            "start": 246,
+            "end": 254
+          },
+          "start": 245,
+          "end": 254
+        },
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "I",
+            "start": 256,
+            "end": 257
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSStringKeyword",
+                "start": 258,
+                "end": 264
+              }
+            ],
+            "start": 257,
+            "end": 265
+          },
+          "start": 256,
+          "end": 265
+        }
+      ],
+      "start": 225,
+      "end": 269
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "A",
+                  "start": 280,
+                  "end": 281
+                },
+                "start": 280,
+                "end": 281
+              },
+              "start": 278,
+              "end": 281
+            },
+            "start": 277,
+            "end": 281
+          },
+          "init": null,
+          "start": 277,
+          "end": 281
+        }
+      ],
+      "kind": "var",
+      "start": 273,
+      "end": 282
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r",
+            "start": 303,
+            "end": 304
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 307,
+                "end": 308
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 309,
+                "end": 312
+              },
+              "computed": false,
+              "optional": false,
+              "start": 307,
+              "end": 312
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 313,
+                "end": 314
+              }
+            ],
+            "optional": false,
+            "start": 307,
+            "end": 315
+          },
+          "start": 303,
+          "end": 315
+        }
+      ],
+      "kind": "var",
+      "start": 299,
+      "end": 316
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r2",
+            "start": 334,
+            "end": 336
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 339,
+                "end": 340
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 341,
+                "end": 344
+              },
+              "computed": false,
+              "optional": false,
+              "start": 339,
+              "end": 344
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "",
+                "start": 345,
+                "end": 347
+              }
+            ],
+            "optional": false,
+            "start": 339,
+            "end": 348
+          },
+          "start": 334,
+          "end": 348
+        }
+      ],
+      "kind": "var",
+      "start": 330,
+      "end": 349
+    }
+  ],
+  "sourceType": "script",
+  "start": 178,
+  "end": 360
+}

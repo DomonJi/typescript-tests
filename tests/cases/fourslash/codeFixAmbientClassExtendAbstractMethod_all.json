@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 191,
+            "end": 197
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 198,
+            "end": 208
+          },
+          "computed": false,
+          "optional": false,
+          "start": 191,
+          "end": 208
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 215,
+                  "end": 220
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixClassDoesntImplementInheritedAbstractMember",
+                  "start": 222,
+                  "end": 270
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 215,
+                "end": 270
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 276,
+                  "end": 293
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement all inherited abstract classes",
+                  "start": 295,
+                  "end": 337
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 276,
+                "end": 337
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 343,
+                  "end": 357
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A {\n    abstract m(): void;\n    abstract n(): void;\n}\ndeclare class B extends A {\n    m(): void;\n    n(): void;\n}\ndeclare class C extends A {\n    m(): void;\n    n(): void;\n}",
+                        "cooked": "abstract class A {\n    abstract m(): void;\n    abstract n(): void;\n}\ndeclare class B extends A {\n    m(): void;\n    n(): void;\n}\ndeclare class C extends A {\n    m(): void;\n    n(): void;\n}"
+                      },
+                      "tail": true,
+                      "start": 359,
+                      "end": 549
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 359,
+                  "end": 549
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 343,
+                "end": 549
+              }
+            ],
+            "start": 209,
+            "end": 552
+          }
+        ],
+        "optional": false,
+        "start": 191,
+        "end": 553
+      },
+      "start": 191,
+      "end": 554
+    }
+  ],
+  "sourceType": "script",
+  "start": 191,
+  "end": 555
+}

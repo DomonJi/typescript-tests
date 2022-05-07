@@ -1,0 +1,88 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "Literal",
+        "value": "./foo",
+        "start": 112,
+        "end": 119
+      },
+      "exportKind": "value",
+      "start": 97,
+      "end": 120
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 163,
+        "end": 166
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "AwaitExpression",
+              "argument": {
+                "type": "ImportExpression",
+                "source": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "AwaitExpression",
+                    "argument": {
+                      "type": "ImportExpression",
+                      "source": {
+                        "type": "Literal",
+                        "value": "./foo",
+                        "start": 210,
+                        "end": 217
+                      },
+                      "attributes": null,
+                      "start": 203,
+                      "end": 218
+                    },
+                    "start": 197,
+                    "end": 218
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "default",
+                    "start": 220,
+                    "end": 227
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 196,
+                  "end": 227
+                },
+                "attributes": null,
+                "start": 189,
+                "end": 228
+              },
+              "start": 183,
+              "end": 228
+            },
+            "start": 176,
+            "end": 229
+          }
+        ],
+        "start": 169,
+        "end": 232
+      },
+      "start": 148,
+      "end": 232
+    }
+  ],
+  "sourceType": "module",
+  "start": 97,
+  "end": 232
+}

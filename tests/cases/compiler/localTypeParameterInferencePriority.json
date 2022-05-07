@@ -1,0 +1,737 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "UnrollOnHover",
+          "start": 12,
+          "end": 25
+        },
+        "typeAnnotation": {
+          "type": "TSConditionalType",
+          "checkType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "O",
+              "start": 46,
+              "end": 47
+            },
+            "start": 46,
+            "end": 47
+          },
+          "extendsType": {
+            "type": "TSObjectKeyword",
+            "start": 56,
+            "end": 62
+          },
+          "trueType": {
+            "type": "TSMappedType",
+            "typeParameter": {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "K",
+                "start": 73,
+                "end": 74
+              },
+              "constraint": {
+                "type": "TSTypeOperator",
+                "operator": "keyof",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "O",
+                    "start": 84,
+                    "end": 85
+                  },
+                  "start": 84,
+                  "end": 85
+                },
+                "start": 78,
+                "end": 85
+              },
+              "start": 73,
+              "end": 85
+            },
+            "nameType": null,
+            "typeAnnotation": {
+              "type": "TSIndexedAccessType",
+              "objectType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "O",
+                  "start": 88,
+                  "end": 89
+                },
+                "start": 88,
+                "end": 89
+              },
+              "indexType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "K",
+                  "start": 90,
+                  "end": 91
+                },
+                "start": 90,
+                "end": 91
+              },
+              "start": 88,
+              "end": 92
+            },
+            "start": 70,
+            "end": 95
+          },
+          "falseType": {
+            "type": "TSNeverKeyword",
+            "start": 103,
+            "end": 108
+          },
+          "start": 46,
+          "end": 108
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "O",
+                "start": 26,
+                "end": 27
+              },
+              "constraint": {
+                "type": "TSObjectKeyword",
+                "start": 36,
+                "end": 42
+              },
+              "start": 26,
+              "end": 42
+            }
+          ],
+          "start": 25,
+          "end": 43
+        },
+        "start": 7,
+        "end": 109
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 0,
+      "end": 109
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Schema",
+          "start": 127,
+          "end": 133
+        },
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Record",
+            "start": 136,
+            "end": 142
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSStringKeyword",
+                "start": 143,
+                "end": 149
+              },
+              {
+                "type": "TSUnknownKeyword",
+                "start": 151,
+                "end": 158
+              }
+            ],
+            "start": 142,
+            "end": 159
+          },
+          "start": 136,
+          "end": 159
+        },
+        "start": 122,
+        "end": 160
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 115,
+      "end": 160
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Table",
+        "start": 168,
+        "end": 173
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "__schema",
+              "start": 200,
+              "end": 208
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "S",
+                  "start": 211,
+                  "end": 212
+                },
+                "start": 211,
+                "end": 212
+              },
+              "start": 209,
+              "end": 212
+            },
+            "definite": true,
+            "start": 200,
+            "end": 213
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "getRows",
+              "start": 268,
+              "end": 275
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "TSNonNullExpression",
+                      "expression": {
+                        "type": "Literal",
+                        "value": null,
+                        "start": 349,
+                        "end": 353
+                      },
+                      "start": 349,
+                      "end": 354
+                    },
+                    "start": 342,
+                    "end": 354
+                  }
+                ],
+                "start": 331,
+                "end": 361
+              },
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Array",
+                    "start": 298,
+                    "end": 303
+                  },
+                  "typeParameters": {
+                    "type": "TSTypeParameterInstantiation",
+                    "params": [
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "UnrollOnHover",
+                          "start": 304,
+                          "end": 317
+                        },
+                        "typeParameters": {
+                          "type": "TSTypeParameterInstantiation",
+                          "params": [
+                            {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "Pick",
+                                "start": 318,
+                                "end": 322
+                              },
+                              "typeParameters": {
+                                "type": "TSTypeParameterInstantiation",
+                                "params": [
+                                  {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "S",
+                                      "start": 323,
+                                      "end": 324
+                                    },
+                                    "start": 323,
+                                    "end": 324
+                                  },
+                                  {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "C",
+                                      "start": 326,
+                                      "end": 327
+                                    },
+                                    "start": 326,
+                                    "end": 327
+                                  }
+                                ],
+                                "start": 322,
+                                "end": 328
+                              },
+                              "start": 318,
+                              "end": 328
+                            }
+                          ],
+                          "start": 317,
+                          "end": 329
+                        },
+                        "start": 304,
+                        "end": 329
+                      }
+                    ],
+                    "start": 303,
+                    "end": 330
+                  },
+                  "start": 298,
+                  "end": 330
+                },
+                "start": 296,
+                "end": 330
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterDeclaration",
+                "params": [
+                  {
+                    "type": "TSTypeParameter",
+                    "name": {
+                      "type": "Identifier",
+                      "name": "C",
+                      "start": 276,
+                      "end": 277
+                    },
+                    "constraint": {
+                      "type": "TSTypeOperator",
+                      "operator": "keyof",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "S",
+                          "start": 292,
+                          "end": 293
+                        },
+                        "start": 292,
+                        "end": 293
+                      },
+                      "start": 286,
+                      "end": 293
+                    },
+                    "start": 276,
+                    "end": 293
+                  }
+                ],
+                "start": 275,
+                "end": 294
+              },
+              "start": 275,
+              "end": 361
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 268,
+            "end": 361
+          }
+        ],
+        "start": 193,
+        "end": 364
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "S",
+              "start": 174,
+              "end": 175
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Schema",
+                "start": 184,
+                "end": 190
+              },
+              "start": 184,
+              "end": 190
+            },
+            "start": 174,
+            "end": 190
+          }
+        ],
+        "start": 173,
+        "end": 191
+      },
+      "start": 162,
+      "end": 364
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ColumnSelectViewImp",
+        "start": 374,
+        "end": 393
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 429,
+        "end": 432
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Table",
+        "start": 420,
+        "end": 425
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "S",
+              "start": 426,
+              "end": 427
+            },
+            "start": 426,
+            "end": 427
+          }
+        ],
+        "start": 425,
+        "end": 428
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "S",
+              "start": 394,
+              "end": 395
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Schema",
+                "start": 404,
+                "end": 410
+              },
+              "start": 404,
+              "end": 410
+            },
+            "start": 394,
+            "end": 410
+          }
+        ],
+        "start": 393,
+        "end": 411
+      },
+      "start": 368,
+      "end": 432
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "ColumnSelectView1",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSConstructorType",
+                "params": [],
+                "abstract": false,
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Table",
+                      "start": 491,
+                      "end": 496
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "UnrollOnHover",
+                            "start": 497,
+                            "end": 510
+                          },
+                          "typeParameters": {
+                            "type": "TSTypeParameterInstantiation",
+                            "params": [
+                              {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "S",
+                                  "start": 511,
+                                  "end": 512
+                                },
+                                "start": 511,
+                                "end": 512
+                              }
+                            ],
+                            "start": 510,
+                            "end": 513
+                          },
+                          "start": 497,
+                          "end": 513
+                        }
+                      ],
+                      "start": 496,
+                      "end": 514
+                    },
+                    "start": 491,
+                    "end": 514
+                  },
+                  "start": 488,
+                  "end": 514
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterDeclaration",
+                  "params": [
+                    {
+                      "type": "TSTypeParameter",
+                      "name": {
+                        "type": "Identifier",
+                        "name": "S",
+                        "start": 468,
+                        "end": 469
+                      },
+                      "constraint": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "Schema",
+                          "start": 478,
+                          "end": 484
+                        },
+                        "start": 478,
+                        "end": 484
+                      },
+                      "start": 468,
+                      "end": 484
+                    }
+                  ],
+                  "start": 467,
+                  "end": 485
+                },
+                "start": 463,
+                "end": 514
+              },
+              "start": 461,
+              "end": 514
+            },
+            "start": 444,
+            "end": 514
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "ColumnSelectViewImp",
+            "start": 517,
+            "end": 536
+          },
+          "start": 444,
+          "end": 536
+        }
+      ],
+      "kind": "const",
+      "start": 438,
+      "end": 537
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "ColumnSelectView2",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSConstructorType",
+                "params": [],
+                "abstract": false,
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Table",
+                      "start": 592,
+                      "end": 597
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "UnrollOnHover",
+                            "start": 598,
+                            "end": 611
+                          },
+                          "typeParameters": {
+                            "type": "TSTypeParameterInstantiation",
+                            "params": [
+                              {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "S",
+                                  "start": 612,
+                                  "end": 613
+                                },
+                                "start": 612,
+                                "end": 613
+                              }
+                            ],
+                            "start": 611,
+                            "end": 614
+                          },
+                          "start": 598,
+                          "end": 614
+                        }
+                      ],
+                      "start": 597,
+                      "end": 615
+                    },
+                    "start": 592,
+                    "end": 615
+                  },
+                  "start": 589,
+                  "end": 615
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterDeclaration",
+                  "params": [
+                    {
+                      "type": "TSTypeParameter",
+                      "name": {
+                        "type": "Identifier",
+                        "name": "S",
+                        "start": 569,
+                        "end": 570
+                      },
+                      "constraint": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "Schema",
+                          "start": 579,
+                          "end": 585
+                        },
+                        "start": 579,
+                        "end": 585
+                      },
+                      "start": 569,
+                      "end": 585
+                    }
+                  ],
+                  "start": 568,
+                  "end": 586
+                },
+                "start": 564,
+                "end": 615
+              },
+              "start": 562,
+              "end": 615
+            },
+            "start": 545,
+            "end": 615
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "Table",
+            "start": 618,
+            "end": 623
+          },
+          "start": 545,
+          "end": 623
+        }
+      ],
+      "kind": "const",
+      "start": 539,
+      "end": 624
+    }
+  ],
+  "sourceType": "module",
+  "start": 0,
+  "end": 624
+}

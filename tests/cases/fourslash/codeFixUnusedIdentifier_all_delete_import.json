@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 1399,
+            "end": 1405
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 1406,
+            "end": 1416
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1399,
+          "end": 1416
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 1423,
+                  "end": 1428
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "unusedIdentifier_deleteImports",
+                  "start": 1430,
+                  "end": 1462
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1423,
+                "end": 1462
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 1468,
+                  "end": 1485
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 1487,
+                        "end": 1489
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 1490,
+                        "end": 1501
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1487,
+                      "end": 1501
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Delete_all_unused_imports",
+                      "start": 1502,
+                      "end": 1527
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1487,
+                    "end": 1527
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 1528,
+                    "end": 1535
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 1487,
+                  "end": 1535
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1468,
+                "end": 1535
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 1541,
+                  "end": 1555
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "import { used1 } from \"foo\";\nimport { used2 } from \"foo\";\nused1; used2;\n\nfunction f(a, b) {\n    const x = 0;\n}\nfunction g(a, b, c) { return a; }\nf; g;\n\ninterface I {\n    m(x: number): void;\n}\n\nclass C implements I {\n    m(x: number): void {} // Does not remove 'x', which is inherited\n    n(x: number): void {}\n    private [\"o\"](): void {}\n}\nC;\n\ndeclare function takesCb(cb: (x: number, y: string) => void): void;\ntakesCb((x, y) => {});\ntakesCb((x, y) => { x; });\ntakesCb((x, y) => { y; });\n\nfunction fn1(x: number, y: string): void {}\ntakesCb(fn1);\n\nfunction fn2(x: number, y: string): void { x; }\ntakesCb(fn2);\n\nfunction fn3(x: number, y: string): void { y; }\ntakesCb(fn3);\n\nx => {\n    const y = 0;\n};\n\n{\n    let a, b;\n}\nfor (let i = 0, j = 0; ;) {}\nfor (const x of []) {}\nfor (const y in {}) {}\n\nexport type First<T, U> = T;\nexport interface ISecond<T, U> { u: U; }\nexport const cls = class<T, U> { u: U; };\nexport class Ctu<T, U> {}\nexport type Length<T> = T extends ArrayLike<infer U> ? number : never; // Not affected, can't delete",
+                        "cooked": "import { used1 } from \"foo\";\nimport { used2 } from \"foo\";\nused1; used2;\n\nfunction f(a, b) {\n    const x = 0;\n}\nfunction g(a, b, c) { return a; }\nf; g;\n\ninterface I {\n    m(x: number): void;\n}\n\nclass C implements I {\n    m(x: number): void {} // Does not remove 'x', which is inherited\n    n(x: number): void {}\n    private [\"o\"](): void {}\n}\nC;\n\ndeclare function takesCb(cb: (x: number, y: string) => void): void;\ntakesCb((x, y) => {});\ntakesCb((x, y) => { x; });\ntakesCb((x, y) => { y; });\n\nfunction fn1(x: number, y: string): void {}\ntakesCb(fn1);\n\nfunction fn2(x: number, y: string): void { x; }\ntakesCb(fn2);\n\nfunction fn3(x: number, y: string): void { y; }\ntakesCb(fn3);\n\nx => {\n    const y = 0;\n};\n\n{\n    let a, b;\n}\nfor (let i = 0, j = 0; ;) {}\nfor (const x of []) {}\nfor (const y in {}) {}\n\nexport type First<T, U> = T;\nexport interface ISecond<T, U> { u: U; }\nexport const cls = class<T, U> { u: U; };\nexport class Ctu<T, U> {}\nexport type Length<T> = T extends ArrayLike<infer U> ? number : never; // Not affected, can't delete"
+                      },
+                      "tail": true,
+                      "start": 1557,
+                      "end": 2596
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 1557,
+                  "end": 2596
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1541,
+                "end": 2596
+              }
+            ],
+            "start": 1417,
+            "end": 2599
+          }
+        ],
+        "optional": false,
+        "start": 1399,
+        "end": 2600
+      },
+      "start": 1399,
+      "end": 2601
+    }
+  ],
+  "sourceType": "script",
+  "start": 1399,
+  "end": 2602
+}

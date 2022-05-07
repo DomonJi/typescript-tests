@@ -1,0 +1,3329 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 6,
+        "end": 7
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 10,
+              "end": 11
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 13,
+                "end": 19
+              },
+              "start": 11,
+              "end": 19
+            },
+            "start": 10,
+            "end": 20
+          }
+        ],
+        "start": 8,
+        "end": 22
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 22
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 30,
+        "end": 31
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 34,
+              "end": 35
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 37,
+                "end": 43
+              },
+              "start": 35,
+              "end": 43
+            },
+            "start": 34,
+            "end": 44
+          }
+        ],
+        "start": 32,
+        "end": 46
+      },
+      "superClass": null,
+      "start": 24,
+      "end": 46
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "negativeClassesTest",
+        "start": 59,
+        "end": 78
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "A",
+                    "start": 82,
+                    "end": 83
+                  },
+                  "start": 82,
+                  "end": 83
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "B",
+                    "start": 86,
+                    "end": 87
+                  },
+                  "start": 86,
+                  "end": 87
+                }
+              ],
+              "start": 82,
+              "end": 87
+            },
+            "start": 80,
+            "end": 87
+          },
+          "start": 79,
+          "end": 87
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 100,
+                "end": 103
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 107,
+                "end": 108
+              },
+              "start": 100,
+              "end": 108
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 121,
+                        "end": 122
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 123,
+                        "end": 124
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 121,
+                      "end": 124
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 127,
+                      "end": 130
+                    },
+                    "start": 121,
+                    "end": 130
+                  },
+                  "start": 121,
+                  "end": 131
+                }
+              ],
+              "start": 110,
+              "end": 138
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 155,
+                        "end": 156
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 157,
+                        "end": 158
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 155,
+                      "end": 158
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 161,
+                      "end": 164
+                    },
+                    "start": 155,
+                    "end": 164
+                  },
+                  "start": 155,
+                  "end": 165
+                }
+              ],
+              "start": 144,
+              "end": 172
+            },
+            "start": 96,
+            "end": 172
+          }
+        ],
+        "start": 89,
+        "end": 175
+      },
+      "start": 50,
+      "end": 175
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "positiveClassesTest",
+        "start": 188,
+        "end": 207
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "A",
+                    "start": 211,
+                    "end": 212
+                  },
+                  "start": 211,
+                  "end": 212
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "B",
+                    "start": 215,
+                    "end": 216
+                  },
+                  "start": 215,
+                  "end": 216
+                }
+              ],
+              "start": 211,
+              "end": 216
+            },
+            "start": 209,
+            "end": 216
+          },
+          "start": 208,
+          "end": 216
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 229,
+                "end": 232
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 236,
+                "end": 237
+              },
+              "start": 229,
+              "end": 237
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 250,
+                        "end": 251
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 252,
+                        "end": 253
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 250,
+                      "end": 253
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 256,
+                      "end": 259
+                    },
+                    "start": 250,
+                    "end": 259
+                  },
+                  "start": 250,
+                  "end": 260
+                }
+              ],
+              "start": 239,
+              "end": 267
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 284,
+                        "end": 285
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 286,
+                        "end": 287
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 284,
+                      "end": 287
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 290,
+                      "end": 293
+                    },
+                    "start": 284,
+                    "end": 293
+                  },
+                  "start": 284,
+                  "end": 294
+                }
+              ],
+              "start": 273,
+              "end": 301
+            },
+            "start": 225,
+            "end": 301
+          }
+        ],
+        "start": 218,
+        "end": 304
+      },
+      "start": 179,
+      "end": 304
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "AWithOptionalProp",
+        "start": 314,
+        "end": 331
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 334,
+              "end": 335
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 338,
+                "end": 344
+              },
+              "start": 336,
+              "end": 344
+            },
+            "optional": true,
+            "start": 334,
+            "end": 345
+          }
+        ],
+        "start": 332,
+        "end": 347
+      },
+      "superClass": null,
+      "start": 308,
+      "end": 347
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "BWithOptionalProp",
+        "start": 355,
+        "end": 372
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 375,
+              "end": 376
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 379,
+                "end": 385
+              },
+              "start": 377,
+              "end": 385
+            },
+            "optional": true,
+            "start": 375,
+            "end": 386
+          }
+        ],
+        "start": 373,
+        "end": 388
+      },
+      "superClass": null,
+      "start": 349,
+      "end": 388
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "positiveTestClassesWithOptionalProperties",
+        "start": 401,
+        "end": 442
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "AWithOptionalProp",
+                    "start": 446,
+                    "end": 463
+                  },
+                  "start": 446,
+                  "end": 463
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "BWithOptionalProp",
+                    "start": 466,
+                    "end": 483
+                  },
+                  "start": 466,
+                  "end": 483
+                }
+              ],
+              "start": 446,
+              "end": 483
+            },
+            "start": 444,
+            "end": 483
+          },
+          "start": 443,
+          "end": 483
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 496,
+                "end": 499
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 503,
+                "end": 504
+              },
+              "start": 496,
+              "end": 504
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 517,
+                        "end": 518
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 519,
+                        "end": 520
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 517,
+                      "end": 520
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 523,
+                      "end": 526
+                    },
+                    "start": 517,
+                    "end": 526
+                  },
+                  "start": 517,
+                  "end": 527
+                }
+              ],
+              "start": 506,
+              "end": 534
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 551,
+                        "end": 552
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 553,
+                        "end": 554
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 551,
+                      "end": 554
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 557,
+                      "end": 560
+                    },
+                    "start": 551,
+                    "end": 560
+                  },
+                  "start": 551,
+                  "end": 561
+                }
+              ],
+              "start": 540,
+              "end": 568
+            },
+            "start": 492,
+            "end": 568
+          }
+        ],
+        "start": 485,
+        "end": 571
+      },
+      "start": 392,
+      "end": 571
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "AWithMethod",
+        "start": 581,
+        "end": 592
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 600,
+              "end": 601
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": "",
+                      "start": 621,
+                      "end": 623
+                    },
+                    "start": 614,
+                    "end": 624
+                  }
+                ],
+                "start": 612,
+                "end": 626
+              },
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 605,
+                  "end": 611
+                },
+                "start": 603,
+                "end": 611
+              },
+              "start": 601,
+              "end": 626
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 600,
+            "end": 626
+          }
+        ],
+        "start": 593,
+        "end": 629
+      },
+      "superClass": null,
+      "start": 575,
+      "end": 629
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "BWithMethod",
+        "start": 639,
+        "end": 650
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 658,
+              "end": 659
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": "",
+                      "start": 679,
+                      "end": 681
+                    },
+                    "start": 672,
+                    "end": 682
+                  }
+                ],
+                "start": 670,
+                "end": 684
+              },
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 663,
+                  "end": 669
+                },
+                "start": 661,
+                "end": 669
+              },
+              "start": 659,
+              "end": 684
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 658,
+            "end": 684
+          }
+        ],
+        "start": 651,
+        "end": 687
+      },
+      "superClass": null,
+      "start": 633,
+      "end": 687
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "negativeTestClassesWithMembers",
+        "start": 700,
+        "end": 730
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "AWithMethod",
+                    "start": 734,
+                    "end": 745
+                  },
+                  "start": 734,
+                  "end": 745
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "BWithMethod",
+                    "start": 748,
+                    "end": 759
+                  },
+                  "start": 748,
+                  "end": 759
+                }
+              ],
+              "start": 734,
+              "end": 759
+            },
+            "start": 732,
+            "end": 759
+          },
+          "start": 731,
+          "end": 759
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 772,
+                "end": 775
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 779,
+                "end": 780
+              },
+              "start": 772,
+              "end": 780
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 793,
+                        "end": 794
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 795,
+                        "end": 796
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 793,
+                      "end": 796
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 793,
+                    "end": 798
+                  },
+                  "start": 793,
+                  "end": 799
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 809,
+                        "end": 810
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 811,
+                        "end": 812
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 809,
+                      "end": 812
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 809,
+                    "end": 814
+                  },
+                  "start": 809,
+                  "end": 815
+                }
+              ],
+              "start": 782,
+              "end": 822
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [],
+              "start": 828,
+              "end": 836
+            },
+            "start": 768,
+            "end": 836
+          }
+        ],
+        "start": 761,
+        "end": 839
+      },
+      "start": 691,
+      "end": 839
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "negativeTestClassesWithMemberMissingInBothClasses",
+        "start": 852,
+        "end": 901
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "AWithMethod",
+                    "start": 905,
+                    "end": 916
+                  },
+                  "start": 905,
+                  "end": 916
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "BWithMethod",
+                    "start": 919,
+                    "end": 930
+                  },
+                  "start": 919,
+                  "end": 930
+                }
+              ],
+              "start": 905,
+              "end": 930
+            },
+            "start": 903,
+            "end": 930
+          },
+          "start": 902,
+          "end": 930
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "c",
+                "start": 943,
+                "end": 946
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 950,
+                "end": 951
+              },
+              "start": 943,
+              "end": 951
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 964,
+                        "end": 965
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 966,
+                        "end": 967
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 964,
+                      "end": 967
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 964,
+                    "end": 969
+                  },
+                  "start": 964,
+                  "end": 970
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 980,
+                        "end": 981
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 982,
+                        "end": 983
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 980,
+                      "end": 983
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 980,
+                    "end": 985
+                  },
+                  "start": 980,
+                  "end": 986
+                }
+              ],
+              "start": 953,
+              "end": 993
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 1010,
+                        "end": 1011
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 1012,
+                        "end": 1013
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1010,
+                      "end": 1013
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 1010,
+                    "end": 1015
+                  },
+                  "start": 1010,
+                  "end": 1016
+                },
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 1026,
+                        "end": 1027
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 1028,
+                        "end": 1029
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1026,
+                      "end": 1029
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 1026,
+                    "end": 1031
+                  },
+                  "start": 1026,
+                  "end": 1032
+                }
+              ],
+              "start": 999,
+              "end": 1039
+            },
+            "start": 939,
+            "end": 1039
+          }
+        ],
+        "start": 932,
+        "end": 1042
+      },
+      "start": 843,
+      "end": 1042
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 1052,
+        "end": 1053
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 1056,
+              "end": 1057
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 1059,
+                "end": 1065
+              },
+              "start": 1057,
+              "end": 1065
+            },
+            "start": 1056,
+            "end": 1066
+          }
+        ],
+        "start": 1054,
+        "end": 1068
+      },
+      "superClass": null,
+      "start": 1046,
+      "end": 1068
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "D",
+        "start": 1076,
+        "end": 1077
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 1080,
+              "end": 1081
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 1083,
+                "end": 1089
+              },
+              "start": 1081,
+              "end": 1089
+            },
+            "start": 1080,
+            "end": 1090
+          }
+        ],
+        "start": 1078,
+        "end": 1092
+      },
+      "superClass": null,
+      "start": 1070,
+      "end": 1092
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "negativeMultipleClassesTest",
+        "start": 1105,
+        "end": 1132
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "A",
+                    "start": 1136,
+                    "end": 1137
+                  },
+                  "start": 1136,
+                  "end": 1137
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "B",
+                    "start": 1140,
+                    "end": 1141
+                  },
+                  "start": 1140,
+                  "end": 1141
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 1144,
+                    "end": 1145
+                  },
+                  "start": 1144,
+                  "end": 1145
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "D",
+                    "start": 1148,
+                    "end": 1149
+                  },
+                  "start": 1148,
+                  "end": 1149
+                }
+              ],
+              "start": 1136,
+              "end": 1149
+            },
+            "start": 1134,
+            "end": 1149
+          },
+          "start": 1133,
+          "end": 1149
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 1162,
+                "end": 1165
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 1169,
+                "end": 1170
+              },
+              "start": 1162,
+              "end": 1170
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 1183,
+                        "end": 1184
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 1185,
+                        "end": 1186
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1183,
+                      "end": 1186
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 1189,
+                      "end": 1192
+                    },
+                    "start": 1183,
+                    "end": 1192
+                  },
+                  "start": 1183,
+                  "end": 1193
+                }
+              ],
+              "start": 1172,
+              "end": 1200
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 1217,
+                        "end": 1218
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 1219,
+                        "end": 1220
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1217,
+                      "end": 1220
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 1223,
+                      "end": 1226
+                    },
+                    "start": 1217,
+                    "end": 1226
+                  },
+                  "start": 1217,
+                  "end": 1227
+                }
+              ],
+              "start": 1206,
+              "end": 1234
+            },
+            "start": 1158,
+            "end": 1234
+          }
+        ],
+        "start": 1151,
+        "end": 1237
+      },
+      "start": 1096,
+      "end": 1237
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ClassWithUnionProp",
+        "start": 1247,
+        "end": 1265
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "prop",
+              "start": 1268,
+              "end": 1272
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "A",
+                      "start": 1274,
+                      "end": 1275
+                    },
+                    "start": 1274,
+                    "end": 1275
+                  },
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "B",
+                      "start": 1278,
+                      "end": 1279
+                    },
+                    "start": 1278,
+                    "end": 1279
+                  }
+                ],
+                "start": 1274,
+                "end": 1279
+              },
+              "start": 1272,
+              "end": 1279
+            },
+            "start": 1268,
+            "end": 1279
+          }
+        ],
+        "start": 1266,
+        "end": 1281
+      },
+      "superClass": null,
+      "start": 1241,
+      "end": 1281
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "negativePropTest",
+        "start": 1294,
+        "end": 1310
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "ClassWithUnionProp",
+                "start": 1314,
+                "end": 1332
+              },
+              "start": 1314,
+              "end": 1332
+            },
+            "start": 1312,
+            "end": 1332
+          },
+          "start": 1311,
+          "end": 1332
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 1345,
+                "end": 1348
+              },
+              "right": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 1352,
+                  "end": 1353
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "prop",
+                  "start": 1354,
+                  "end": 1358
+                },
+                "computed": false,
+                "optional": false,
+                "start": 1352,
+                "end": 1358
+              },
+              "start": 1345,
+              "end": 1358
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "y",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 1378,
+                            "end": 1384
+                          },
+                          "start": 1376,
+                          "end": 1384
+                        },
+                        "start": 1375,
+                        "end": 1384
+                      },
+                      "init": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 1387,
+                            "end": 1388
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "prop",
+                            "start": 1389,
+                            "end": 1393
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 1387,
+                          "end": 1393
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "b",
+                          "start": 1394,
+                          "end": 1395
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1387,
+                        "end": 1395
+                      },
+                      "start": 1375,
+                      "end": 1395
+                    }
+                  ],
+                  "kind": "let",
+                  "start": 1371,
+                  "end": 1396
+                }
+              ],
+              "start": 1360,
+              "end": 1403
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "z",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 1427,
+                            "end": 1433
+                          },
+                          "start": 1425,
+                          "end": 1433
+                        },
+                        "start": 1424,
+                        "end": 1433
+                      },
+                      "init": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 1436,
+                            "end": 1437
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "prop",
+                            "start": 1438,
+                            "end": 1442
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 1436,
+                          "end": 1442
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 1443,
+                          "end": 1444
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1436,
+                        "end": 1444
+                      },
+                      "start": 1424,
+                      "end": 1444
+                    }
+                  ],
+                  "kind": "let",
+                  "start": 1420,
+                  "end": 1445
+                }
+              ],
+              "start": 1409,
+              "end": 1452
+            },
+            "start": 1341,
+            "end": 1452
+          }
+        ],
+        "start": 1334,
+        "end": 1455
+      },
+      "start": 1285,
+      "end": 1455
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "NegativeClassTest",
+        "start": 1465,
+        "end": 1482
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "prop",
+              "start": 1500,
+              "end": 1504
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "A",
+                      "start": 1506,
+                      "end": 1507
+                    },
+                    "start": 1506,
+                    "end": 1507
+                  },
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "B",
+                      "start": 1510,
+                      "end": 1511
+                    },
+                    "start": 1510,
+                    "end": 1511
+                  }
+                ],
+                "start": 1506,
+                "end": 1511
+              },
+              "start": 1504,
+              "end": 1511
+            },
+            "accessibility": "protected",
+            "start": 1490,
+            "end": 1512
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "inThis",
+              "start": 1518,
+              "end": 1524
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "in",
+                      "left": {
+                        "type": "Literal",
+                        "value": "a",
+                        "start": 1542,
+                        "end": 1545
+                      },
+                      "right": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 1549,
+                          "end": 1553
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "prop",
+                          "start": 1554,
+                          "end": 1558
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1549,
+                        "end": 1558
+                      },
+                      "start": 1542,
+                      "end": 1558
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "VariableDeclaration",
+                          "declarations": [
+                            {
+                              "type": "VariableDeclarator",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "z",
+                                "typeAnnotation": {
+                                  "type": "TSTypeAnnotation",
+                                  "typeAnnotation": {
+                                    "type": "TSNumberKeyword",
+                                    "start": 1582,
+                                    "end": 1588
+                                  },
+                                  "start": 1580,
+                                  "end": 1588
+                                },
+                                "start": 1579,
+                                "end": 1588
+                              },
+                              "init": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "ThisExpression",
+                                    "start": 1591,
+                                    "end": 1595
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "prop",
+                                    "start": 1596,
+                                    "end": 1600
+                                  },
+                                  "computed": false,
+                                  "optional": false,
+                                  "start": 1591,
+                                  "end": 1600
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "b",
+                                  "start": 1601,
+                                  "end": 1602
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 1591,
+                                "end": 1602
+                              },
+                              "start": 1579,
+                              "end": 1602
+                            }
+                          ],
+                          "kind": "let",
+                          "start": 1575,
+                          "end": 1603
+                        }
+                      ],
+                      "start": 1560,
+                      "end": 1614
+                    },
+                    "alternate": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "VariableDeclaration",
+                          "declarations": [
+                            {
+                              "type": "VariableDeclarator",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "y",
+                                "typeAnnotation": {
+                                  "type": "TSTypeAnnotation",
+                                  "typeAnnotation": {
+                                    "type": "TSStringKeyword",
+                                    "start": 1642,
+                                    "end": 1648
+                                  },
+                                  "start": 1640,
+                                  "end": 1648
+                                },
+                                "start": 1639,
+                                "end": 1648
+                              },
+                              "init": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "ThisExpression",
+                                    "start": 1651,
+                                    "end": 1655
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "prop",
+                                    "start": 1656,
+                                    "end": 1660
+                                  },
+                                  "computed": false,
+                                  "optional": false,
+                                  "start": 1651,
+                                  "end": 1660
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "a",
+                                  "start": 1661,
+                                  "end": 1662
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 1651,
+                                "end": 1662
+                              },
+                              "start": 1639,
+                              "end": 1662
+                            }
+                          ],
+                          "kind": "let",
+                          "start": 1635,
+                          "end": 1663
+                        }
+                      ],
+                      "start": 1620,
+                      "end": 1674
+                    },
+                    "start": 1538,
+                    "end": 1674
+                  }
+                ],
+                "start": 1527,
+                "end": 1681
+              },
+              "params": [],
+              "start": 1524,
+              "end": 1681
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 1518,
+            "end": 1681
+          }
+        ],
+        "start": 1483,
+        "end": 1684
+      },
+      "superClass": null,
+      "start": 1459,
+      "end": 1684
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "UnreachableCodeDetection",
+        "start": 1694,
+        "end": 1718
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 1726,
+              "end": 1727
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 1729,
+                "end": 1735
+              },
+              "start": 1727,
+              "end": 1735
+            },
+            "start": 1726,
+            "end": 1736
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "inThis",
+              "start": 1742,
+              "end": 1748
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "in",
+                      "left": {
+                        "type": "Literal",
+                        "value": "a",
+                        "start": 1766,
+                        "end": 1769
+                      },
+                      "right": {
+                        "type": "ThisExpression",
+                        "start": 1773,
+                        "end": 1777
+                      },
+                      "start": 1766,
+                      "end": 1777
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 1779,
+                      "end": 1791
+                    },
+                    "alternate": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "VariableDeclaration",
+                          "declarations": [
+                            {
+                              "type": "VariableDeclarator",
+                              "id": {
+                                "type": "Identifier",
+                                "name": "y",
+                                "start": 1816,
+                                "end": 1817
+                              },
+                              "init": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "ThisExpression",
+                                  "start": 1820,
+                                  "end": 1824
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "a",
+                                  "start": 1825,
+                                  "end": 1826
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 1820,
+                                "end": 1826
+                              },
+                              "start": 1816,
+                              "end": 1826
+                            }
+                          ],
+                          "kind": "let",
+                          "start": 1812,
+                          "end": 1827
+                        }
+                      ],
+                      "start": 1797,
+                      "end": 1838
+                    },
+                    "start": 1762,
+                    "end": 1838
+                  }
+                ],
+                "start": 1751,
+                "end": 1845
+              },
+              "params": [],
+              "start": 1748,
+              "end": 1845
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 1742,
+            "end": 1845
+          }
+        ],
+        "start": 1719,
+        "end": 1848
+      },
+      "superClass": null,
+      "start": 1688,
+      "end": 1848
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "positiveIntersectionTest",
+        "start": 1861,
+        "end": 1885
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSIntersectionType",
+              "types": [
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 1891,
+                        "end": 1892
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 1894,
+                          "end": 1900
+                        },
+                        "start": 1892,
+                        "end": 1900
+                      },
+                      "start": 1891,
+                      "end": 1900
+                    }
+                  ],
+                  "start": 1889,
+                  "end": 1902
+                },
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 1907,
+                        "end": 1908
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 1910,
+                          "end": 1916
+                        },
+                        "start": 1908,
+                        "end": 1916
+                      },
+                      "start": 1907,
+                      "end": 1916
+                    }
+                  ],
+                  "start": 1905,
+                  "end": 1918
+                }
+              ],
+              "start": 1889,
+              "end": 1918
+            },
+            "start": 1887,
+            "end": 1918
+          },
+          "start": 1886,
+          "end": 1918
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "a",
+                "start": 1931,
+                "end": 1934
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 1938,
+                "end": 1939
+              },
+              "start": 1931,
+              "end": 1939
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "s",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 1959,
+                            "end": 1965
+                          },
+                          "start": 1957,
+                          "end": 1965
+                        },
+                        "start": 1956,
+                        "end": 1965
+                      },
+                      "init": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "x",
+                          "start": 1968,
+                          "end": 1969
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 1970,
+                          "end": 1971
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1968,
+                        "end": 1971
+                      },
+                      "start": 1956,
+                      "end": 1971
+                    }
+                  ],
+                  "kind": "let",
+                  "start": 1952,
+                  "end": 1972
+                }
+              ],
+              "start": 1941,
+              "end": 1979
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "n",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSNeverKeyword",
+                            "start": 2003,
+                            "end": 2008
+                          },
+                          "start": 2001,
+                          "end": 2008
+                        },
+                        "start": 2000,
+                        "end": 2008
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 2011,
+                        "end": 2012
+                      },
+                      "start": 2000,
+                      "end": 2012
+                    }
+                  ],
+                  "kind": "let",
+                  "start": 1996,
+                  "end": 2013
+                }
+              ],
+              "start": 1985,
+              "end": 2020
+            },
+            "start": 1927,
+            "end": 2020
+          }
+        ],
+        "start": 1920,
+        "end": 2023
+      },
+      "start": 1852,
+      "end": 2023
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "error",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Error",
+                  "start": 2070,
+                  "end": 2075
+                },
+                "start": 2070,
+                "end": 2075
+              },
+              "start": 2068,
+              "end": 2075
+            },
+            "start": 2063,
+            "end": 2075
+          },
+          "init": null,
+          "start": 2063,
+          "end": 2075
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 2049,
+      "end": 2076
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "in",
+        "left": {
+          "type": "Literal",
+          "value": "extra",
+          "start": 2082,
+          "end": 2089
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "error",
+          "start": 2093,
+          "end": 2098
+        },
+        "start": 2082,
+        "end": 2098
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "Identifier",
+              "name": "error",
+              "start": 2107,
+              "end": 2112
+            },
+            "start": 2107,
+            "end": 2112
+          }
+        ],
+        "start": 2100,
+        "end": 2130
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "Identifier",
+              "name": "error",
+              "start": 2143,
+              "end": 2148
+            },
+            "start": 2143,
+            "end": 2148
+          }
+        ],
+        "start": 2136,
+        "end": 2160
+      },
+      "start": 2078,
+      "end": 2160
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "narrowsToNever",
+        "start": 2173,
+        "end": 2187
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "l",
+                        "start": 2193,
+                        "end": 2194
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSNumberKeyword",
+                          "start": 2196,
+                          "end": 2202
+                        },
+                        "start": 2194,
+                        "end": 2202
+                      },
+                      "start": 2193,
+                      "end": 2202
+                    }
+                  ],
+                  "start": 2191,
+                  "end": 2204
+                },
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "r",
+                        "start": 2209,
+                        "end": 2210
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSNumberKeyword",
+                          "start": 2212,
+                          "end": 2218
+                        },
+                        "start": 2210,
+                        "end": 2218
+                      },
+                      "start": 2209,
+                      "end": 2218
+                    }
+                  ],
+                  "start": 2207,
+                  "end": 2220
+                }
+              ],
+              "start": 2191,
+              "end": 2220
+            },
+            "start": 2189,
+            "end": 2220
+          },
+          "start": 2188,
+          "end": 2220
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "v",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 2236,
+                      "end": 2242
+                    },
+                    "start": 2234,
+                    "end": 2242
+                  },
+                  "start": 2233,
+                  "end": 2242
+                },
+                "init": null,
+                "start": 2233,
+                "end": 2242
+              }
+            ],
+            "kind": "let",
+            "start": 2229,
+            "end": 2243
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "l",
+                "start": 2253,
+                "end": 2256
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 2260,
+                "end": 2261
+              },
+              "start": 2253,
+              "end": 2261
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "v",
+                      "start": 2274,
+                      "end": 2275
+                    },
+                    "right": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 2278,
+                        "end": 2279
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "l",
+                        "start": 2280,
+                        "end": 2281
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 2278,
+                      "end": 2281
+                    },
+                    "start": 2274,
+                    "end": 2281
+                  },
+                  "start": 2274,
+                  "end": 2282
+                }
+              ],
+              "start": 2263,
+              "end": 2289
+            },
+            "alternate": {
+              "type": "IfStatement",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "in",
+                "left": {
+                  "type": "Literal",
+                  "value": "r",
+                  "start": 2304,
+                  "end": 2307
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 2311,
+                  "end": 2312
+                },
+                "start": 2304,
+                "end": 2312
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "v",
+                        "start": 2325,
+                        "end": 2326
+                      },
+                      "right": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "x",
+                          "start": 2329,
+                          "end": 2330
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "r",
+                          "start": 2331,
+                          "end": 2332
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 2329,
+                        "end": 2332
+                      },
+                      "start": 2325,
+                      "end": 2332
+                    },
+                    "start": 2325,
+                    "end": 2333
+                  }
+                ],
+                "start": 2314,
+                "end": 2340
+              },
+              "alternate": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "v",
+                        "start": 2362,
+                        "end": 2363
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 2366,
+                        "end": 2367
+                      },
+                      "start": 2362,
+                      "end": 2367
+                    },
+                    "start": 2362,
+                    "end": 2367
+                  }
+                ],
+                "start": 2351,
+                "end": 2374
+              },
+              "start": 2300,
+              "end": 2374
+            },
+            "start": 2249,
+            "end": 2374
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "v",
+              "start": 2387,
+              "end": 2388
+            },
+            "start": 2380,
+            "end": 2389
+          }
+        ],
+        "start": 2222,
+        "end": 2392
+      },
+      "start": 2164,
+      "end": 2392
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "AOrB",
+        "start": 2401,
+        "end": 2405
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeLiteral",
+            "members": [
+              {
+                "type": "TSPropertySignature",
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "name": "aProp",
+                  "start": 2410,
+                  "end": 2415
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 2417,
+                    "end": 2423
+                  },
+                  "start": 2415,
+                  "end": 2423
+                },
+                "start": 2410,
+                "end": 2423
+              }
+            ],
+            "start": 2408,
+            "end": 2425
+          },
+          {
+            "type": "TSTypeLiteral",
+            "members": [
+              {
+                "type": "TSPropertySignature",
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "name": "bProp",
+                  "start": 2430,
+                  "end": 2435
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 2437,
+                    "end": 2443
+                  },
+                  "start": 2435,
+                  "end": 2443
+                },
+                "start": 2430,
+                "end": 2443
+              }
+            ],
+            "start": 2428,
+            "end": 2445
+          }
+        ],
+        "start": 2408,
+        "end": 2445
+      },
+      "start": 2396,
+      "end": 2446
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "isAOrB",
+        "start": 2465,
+        "end": 2471
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnknownKeyword",
+              "start": 2475,
+              "end": 2482
+            },
+            "start": 2473,
+            "end": 2482
+          },
+          "start": 2472,
+          "end": 2482
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 2485,
+            "end": 2486
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "AOrB",
+                "start": 2490,
+                "end": 2494
+              },
+              "start": 2490,
+              "end": 2494
+            },
+            "start": 2490,
+            "end": 2494
+          },
+          "start": 2485,
+          "end": 2494
+        },
+        "start": 2483,
+        "end": 2494
+      },
+      "declare": true,
+      "start": 2448,
+      "end": 2495
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnknownKeyword",
+                "start": 2514,
+                "end": 2521
+              },
+              "start": 2512,
+              "end": 2521
+            },
+            "start": 2511,
+            "end": 2521
+          },
+          "init": null,
+          "start": 2511,
+          "end": 2521
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 2499,
+      "end": 2522
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "isAOrB",
+          "start": 2528,
+          "end": 2534
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "x",
+            "start": 2535,
+            "end": 2536
+          }
+        ],
+        "optional": false,
+        "start": 2528,
+        "end": 2537
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "aProp",
+                "start": 2550,
+                "end": 2557
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 2561,
+                "end": 2562
+              },
+              "start": 2550,
+              "end": 2562
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "x",
+                      "start": 2575,
+                      "end": 2576
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "aProp",
+                      "start": 2577,
+                      "end": 2582
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 2575,
+                    "end": 2582
+                  },
+                  "start": 2575,
+                  "end": 2583
+                }
+              ],
+              "start": 2564,
+              "end": 2590
+            },
+            "alternate": {
+              "type": "IfStatement",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "in",
+                "left": {
+                  "type": "Literal",
+                  "value": "bProp",
+                  "start": 2605,
+                  "end": 2612
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 2616,
+                  "end": 2617
+                },
+                "start": 2605,
+                "end": 2617
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 2630,
+                        "end": 2631
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "bProp",
+                        "start": 2632,
+                        "end": 2637
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 2630,
+                      "end": 2637
+                    },
+                    "start": 2630,
+                    "end": 2638
+                  }
+                ],
+                "start": 2619,
+                "end": 2645
+              },
+              "alternate": {
+                "type": "IfStatement",
+                "test": {
+                  "type": "BinaryExpression",
+                  "operator": "in",
+                  "left": {
+                    "type": "Literal",
+                    "value": "cProp",
+                    "start": 2722,
+                    "end": 2729
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 2733,
+                    "end": 2734
+                  },
+                  "start": 2722,
+                  "end": 2734
+                },
+                "consequent": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "_never",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSNeverKeyword",
+                                "start": 2761,
+                                "end": 2766
+                              },
+                              "start": 2759,
+                              "end": 2766
+                            },
+                            "start": 2753,
+                            "end": 2766
+                          },
+                          "init": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 2769,
+                            "end": 2770
+                          },
+                          "start": 2753,
+                          "end": 2770
+                        }
+                      ],
+                      "kind": "const",
+                      "start": 2747,
+                      "end": 2771
+                    }
+                  ],
+                  "start": 2736,
+                  "end": 2778
+                },
+                "alternate": null,
+                "start": 2718,
+                "end": 2778
+              },
+              "start": 2601,
+              "end": 2778
+            },
+            "start": 2546,
+            "end": 2778
+          }
+        ],
+        "start": 2539,
+        "end": 2781
+      },
+      "alternate": null,
+      "start": 2524,
+      "end": 2781
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "negativeIntersectionTest",
+        "start": 2794,
+        "end": 2818
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "in",
+              "left": {
+                "type": "Literal",
+                "value": "ontouchstart",
+                "start": 2832,
+                "end": 2846
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "window",
+                "start": 2850,
+                "end": 2856
+              },
+              "start": 2832,
+              "end": 2856
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "window",
+                      "start": 2869,
+                      "end": 2875
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "ontouchstart",
+                      "start": 2876,
+                      "end": 2888
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 2869,
+                    "end": 2888
+                  },
+                  "start": 2869,
+                  "end": 2888
+                }
+              ],
+              "start": 2858,
+              "end": 2895
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "window",
+                      "start": 2912,
+                      "end": 2918
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "ontouchstart",
+                      "start": 2919,
+                      "end": 2931
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 2912,
+                    "end": 2931
+                  },
+                  "start": 2912,
+                  "end": 2931
+                }
+              ],
+              "start": 2901,
+              "end": 2938
+            },
+            "start": 2828,
+            "end": 2938
+          }
+        ],
+        "start": 2821,
+        "end": 2941
+      },
+      "start": 2785,
+      "end": 2941
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 2943
+}

@@ -1,0 +1,212 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "recursive",
+        "start": 9,
+        "end": 18
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 31,
+                  "end": 32
+                },
+                "init": {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "subkey",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "T",
+                            "start": 47,
+                            "end": 48
+                          },
+                          "start": 47,
+                          "end": 48
+                        },
+                        "start": 45,
+                        "end": 48
+                      },
+                      "start": 39,
+                      "end": 48
+                    }
+                  ],
+                  "body": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "recursive",
+                      "start": 53,
+                      "end": 62
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 53,
+                    "end": 64
+                  },
+                  "async": false,
+                  "expression": true,
+                  "typeParameters": {
+                    "type": "TSTypeParameterDeclaration",
+                    "params": [
+                      {
+                        "type": "TSTypeParameter",
+                        "name": {
+                          "type": "Identifier",
+                          "name": "T",
+                          "start": 36,
+                          "end": 37
+                        },
+                        "start": 36,
+                        "end": 37
+                      }
+                    ],
+                    "start": 35,
+                    "end": 38
+                  },
+                  "start": 35,
+                  "end": 64
+                },
+                "start": 31,
+                "end": 64
+              }
+            ],
+            "kind": "let",
+            "start": 27,
+            "end": 65
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "TSAsExpression",
+              "expression": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 77,
+                "end": 78
+              },
+              "typeAnnotation": {
+                "type": "TSIntersectionType",
+                "types": [
+                  {
+                    "type": "TSTypeQuery",
+                    "exprName": {
+                      "type": "Identifier",
+                      "name": "x",
+                      "start": 89,
+                      "end": 90
+                    },
+                    "start": 82,
+                    "end": 90
+                  },
+                  {
+                    "type": "TSTypeLiteral",
+                    "members": [
+                      {
+                        "type": "TSPropertySignature",
+                        "computed": false,
+                        "key": {
+                          "type": "Identifier",
+                          "name": "p",
+                          "start": 95,
+                          "end": 96
+                        },
+                        "start": 95,
+                        "end": 96
+                      }
+                    ],
+                    "start": 93,
+                    "end": 98
+                  }
+                ],
+                "start": 82,
+                "end": 98
+              },
+              "start": 77,
+              "end": 98
+            },
+            "start": 70,
+            "end": 99
+          }
+        ],
+        "start": 21,
+        "end": 101
+      },
+      "start": 0,
+      "end": 101
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "result",
+            "start": 107,
+            "end": 113
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "recursive",
+                "start": 116,
+                "end": 125
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 116,
+              "end": 127
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 128,
+                "end": 129
+              }
+            ],
+            "optional": false,
+            "start": 116,
+            "end": 130
+          },
+          "start": 107,
+          "end": 130
+        }
+      ],
+      "kind": "let",
+      "start": 103,
+      "end": 130
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 131
+}

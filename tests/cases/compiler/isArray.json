@@ -1,0 +1,162 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "maybeArray",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 16,
+                    "end": 22
+                  },
+                  {
+                    "type": "TSArrayType",
+                    "elementType": {
+                      "type": "TSNumberKeyword",
+                      "start": 25,
+                      "end": 31
+                    },
+                    "start": 25,
+                    "end": 33
+                  }
+                ],
+                "start": 16,
+                "end": 33
+              },
+              "start": 14,
+              "end": 33
+            },
+            "start": 4,
+            "end": 33
+          },
+          "init": null,
+          "start": 4,
+          "end": 33
+        }
+      ],
+      "kind": "var",
+      "start": 0,
+      "end": 34
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "Array",
+            "start": 44,
+            "end": 49
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "isArray",
+            "start": 50,
+            "end": 57
+          },
+          "computed": false,
+          "optional": false,
+          "start": 44,
+          "end": 57
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "maybeArray",
+            "start": 58,
+            "end": 68
+          }
+        ],
+        "optional": false,
+        "start": 44,
+        "end": 69
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "maybeArray",
+                "start": 78,
+                "end": 88
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "length",
+                "start": 89,
+                "end": 95
+              },
+              "computed": false,
+              "optional": false,
+              "start": 78,
+              "end": 95
+            },
+            "start": 78,
+            "end": 96
+          }
+        ],
+        "start": 71,
+        "end": 105
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "maybeArray",
+                  "start": 119,
+                  "end": 129
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "toFixed",
+                  "start": 130,
+                  "end": 137
+                },
+                "computed": false,
+                "optional": false,
+                "start": 119,
+                "end": 137
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 119,
+              "end": 139
+            },
+            "start": 119,
+            "end": 140
+          }
+        ],
+        "start": 112,
+        "end": 149
+      },
+      "start": 40,
+      "end": 149
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 149
+}

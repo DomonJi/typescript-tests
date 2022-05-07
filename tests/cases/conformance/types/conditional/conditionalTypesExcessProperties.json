@@ -1,0 +1,420 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Something",
+        "start": 5,
+        "end": 14
+      },
+      "typeAnnotation": {
+        "type": "TSIntersectionType",
+        "types": [
+          {
+            "type": "TSTypeLiteral",
+            "members": [
+              {
+                "type": "TSPropertySignature",
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "name": "test",
+                  "start": 22,
+                  "end": 26
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 28,
+                    "end": 34
+                  },
+                  "start": 26,
+                  "end": 34
+                },
+                "start": 22,
+                "end": 34
+              }
+            ],
+            "start": 20,
+            "end": 36
+          },
+          {
+            "type": "TSConditionalType",
+            "checkType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 41,
+                "end": 42
+              },
+              "start": 41,
+              "end": 42
+            },
+            "extendsType": {
+              "type": "TSObjectKeyword",
+              "start": 51,
+              "end": 57
+            },
+            "trueType": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "arg",
+                    "start": 66,
+                    "end": 69
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 71,
+                        "end": 72
+                      },
+                      "start": 71,
+                      "end": 72
+                    },
+                    "start": 69,
+                    "end": 72
+                  },
+                  "start": 66,
+                  "end": 72
+                }
+              ],
+              "start": 60,
+              "end": 74
+            },
+            "falseType": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "optional": true,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "arg",
+                    "start": 83,
+                    "end": 86
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSUndefinedKeyword",
+                      "start": 89,
+                      "end": 98
+                    },
+                    "start": 87,
+                    "end": 98
+                  },
+                  "start": 83,
+                  "end": 98
+                }
+              ],
+              "start": 77,
+              "end": 104
+            },
+            "start": 41,
+            "end": 104
+          }
+        ],
+        "start": 20,
+        "end": 105
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 15,
+              "end": 16
+            },
+            "start": 15,
+            "end": 16
+          }
+        ],
+        "start": 14,
+        "end": 17
+      },
+      "start": 0,
+      "end": 106
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "testFunc2",
+        "start": 117,
+        "end": 126
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "A",
+                "start": 148,
+                "end": 149
+              },
+              "start": 148,
+              "end": 149
+            },
+            "start": 146,
+            "end": 149
+          },
+          "start": 145,
+          "end": 149
+        },
+        {
+          "type": "Identifier",
+          "name": "sa",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Something",
+                "start": 155,
+                "end": 164
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "A",
+                      "start": 165,
+                      "end": 166
+                    },
+                    "start": 165,
+                    "end": 166
+                  }
+                ],
+                "start": 164,
+                "end": 167
+              },
+              "start": 155,
+              "end": 167
+            },
+            "start": 153,
+            "end": 167
+          },
+          "start": 151,
+          "end": 167
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "sa",
+                "start": 175,
+                "end": 177
+              },
+              "right": {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "test",
+                      "start": 182,
+                      "end": 186
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "hi",
+                      "start": 188,
+                      "end": 192
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 182,
+                    "end": 192
+                  },
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "arg",
+                      "start": 194,
+                      "end": 197
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 199,
+                      "end": 200
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 194,
+                    "end": 200
+                  }
+                ],
+                "start": 180,
+                "end": 202
+              },
+              "start": 175,
+              "end": 202
+            },
+            "start": 175,
+            "end": 203
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "sa",
+                "start": 259,
+                "end": 261
+              },
+              "right": {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "test",
+                      "start": 266,
+                      "end": 270
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "bye",
+                      "start": 272,
+                      "end": 277
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 266,
+                    "end": 277
+                  },
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "arg",
+                      "start": 279,
+                      "end": 282
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 284,
+                      "end": 285
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 279,
+                    "end": 285
+                  },
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "arr",
+                      "start": 287,
+                      "end": 290
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 292,
+                      "end": 293
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 287,
+                    "end": 293
+                  }
+                ],
+                "start": 264,
+                "end": 295
+              },
+              "start": 259,
+              "end": 295
+            },
+            "start": 259,
+            "end": 295
+          }
+        ],
+        "start": 169,
+        "end": 307
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 127,
+              "end": 128
+            },
+            "constraint": {
+              "type": "TSObjectKeyword",
+              "start": 137,
+              "end": 143
+            },
+            "start": 127,
+            "end": 143
+          }
+        ],
+        "start": 126,
+        "end": 144
+      },
+      "start": 108,
+      "end": 307
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 308
+}

@@ -1,0 +1,629 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "myNull",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNullKeyword",
+                "start": 59,
+                "end": 63
+              },
+              "start": 57,
+              "end": 63
+            },
+            "start": 51,
+            "end": 63
+          },
+          "init": {
+            "type": "Literal",
+            "value": null,
+            "start": 66,
+            "end": 70
+          },
+          "start": 51,
+          "end": 70
+        }
+      ],
+      "kind": "const",
+      "start": 45,
+      "end": 71
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "objWithValMaybeNull",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSPropertySignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "val",
+                      "start": 102,
+                      "end": 105
+                    },
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSUnionType",
+                        "types": [
+                          {
+                            "type": "TSNumberKeyword",
+                            "start": 107,
+                            "end": 113
+                          },
+                          {
+                            "type": "TSNullKeyword",
+                            "start": 116,
+                            "end": 120
+                          }
+                        ],
+                        "start": 107,
+                        "end": 120
+                      },
+                      "start": 105,
+                      "end": 120
+                    },
+                    "start": 102,
+                    "end": 120
+                  }
+                ],
+                "start": 100,
+                "end": 122
+              },
+              "start": 98,
+              "end": 122
+            },
+            "start": 79,
+            "end": 122
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "val",
+                  "start": 127,
+                  "end": 130
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 1,
+                  "start": 132,
+                  "end": 133
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 127,
+                "end": 133
+              }
+            ],
+            "start": 125,
+            "end": 135
+          },
+          "start": 79,
+          "end": 135
+        }
+      ],
+      "kind": "const",
+      "start": 73,
+      "end": 136
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "addOne",
+            "start": 144,
+            "end": 150
+          },
+          "init": {
+            "type": "FunctionExpression",
+            "id": null,
+            "generator": false,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "num",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 168,
+                    "end": 174
+                  },
+                  "start": 166,
+                  "end": 174
+                },
+                "start": 163,
+                "end": 174
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "num",
+                      "start": 190,
+                      "end": 193
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 1,
+                      "start": 196,
+                      "end": 197
+                    },
+                    "start": 190,
+                    "end": 197
+                  },
+                  "start": 183,
+                  "end": 198
+                }
+              ],
+              "start": 176,
+              "end": 201
+            },
+            "async": false,
+            "expression": false,
+            "start": 153,
+            "end": 201
+          },
+          "start": 144,
+          "end": 201
+        }
+      ],
+      "kind": "const",
+      "start": 138,
+      "end": 201
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "!==",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "objWithValMaybeNull",
+            "start": 209,
+            "end": 228
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "val",
+            "start": 229,
+            "end": 232
+          },
+          "computed": false,
+          "optional": false,
+          "start": 209,
+          "end": 232
+        },
+        "right": {
+          "type": "Literal",
+          "value": null,
+          "start": 237,
+          "end": 241
+        },
+        "start": 209,
+        "end": 241
+      },
+      "consequent": {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "addOne",
+            "start": 248,
+            "end": 254
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "objWithValMaybeNull",
+                "start": 255,
+                "end": 274
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "val",
+                "start": 275,
+                "end": 278
+              },
+              "computed": false,
+              "optional": false,
+              "start": 255,
+              "end": 278
+            }
+          ],
+          "optional": false,
+          "start": 248,
+          "end": 279
+        },
+        "start": 248,
+        "end": 280
+      },
+      "alternate": null,
+      "start": 205,
+      "end": 280
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "!==",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "objWithValMaybeNull",
+            "start": 286,
+            "end": 305
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "val",
+            "start": 306,
+            "end": 309
+          },
+          "computed": false,
+          "optional": false,
+          "start": 286,
+          "end": 309
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "myNull",
+          "start": 314,
+          "end": 320
+        },
+        "start": 286,
+        "end": 320
+      },
+      "consequent": {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "addOne",
+            "start": 327,
+            "end": 333
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "objWithValMaybeNull",
+                "start": 334,
+                "end": 353
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "val",
+                "start": 354,
+                "end": 357
+              },
+              "computed": false,
+              "optional": false,
+              "start": 334,
+              "end": 357
+            }
+          ],
+          "optional": false,
+          "start": 327,
+          "end": 358
+        },
+        "start": 327,
+        "end": 359
+      },
+      "alternate": null,
+      "start": 282,
+      "end": 359
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "objWithValMaybeNull",
+            "start": 367,
+            "end": 386
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "val",
+            "start": 387,
+            "end": 390
+          },
+          "computed": false,
+          "optional": false,
+          "start": 367,
+          "end": 390
+        },
+        "right": {
+          "type": "Literal",
+          "value": null,
+          "start": 395,
+          "end": 399
+        },
+        "start": 367,
+        "end": 399
+      },
+      "consequent": {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "addOne",
+            "start": 406,
+            "end": 412
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "objWithValMaybeNull",
+                "start": 413,
+                "end": 432
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "val",
+                "start": 433,
+                "end": 436
+              },
+              "computed": false,
+              "optional": false,
+              "start": 413,
+              "end": 436
+            }
+          ],
+          "optional": false,
+          "start": 406,
+          "end": 437
+        },
+        "start": 406,
+        "end": 438
+      },
+      "alternate": null,
+      "start": 363,
+      "end": 438
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "objWithValMaybeNull",
+            "start": 456,
+            "end": 475
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "val",
+            "start": 476,
+            "end": 479
+          },
+          "computed": false,
+          "optional": false,
+          "start": 456,
+          "end": 479
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "myNull",
+          "start": 484,
+          "end": 490
+        },
+        "start": 456,
+        "end": 490
+      },
+      "consequent": {
+        "type": "ExpressionStatement",
+        "expression": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "addOne",
+            "start": 497,
+            "end": 503
+          },
+          "arguments": [
+            {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "objWithValMaybeNull",
+                "start": 504,
+                "end": 523
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "val",
+                "start": 524,
+                "end": 527
+              },
+              "computed": false,
+              "optional": false,
+              "start": 504,
+              "end": 527
+            }
+          ],
+          "optional": false,
+          "start": 497,
+          "end": 528
+        },
+        "start": 497,
+        "end": 529
+      },
+      "alternate": null,
+      "start": 452,
+      "end": 529
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 554,
+        "end": 555
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSNumberKeyword",
+                  "start": 559,
+                  "end": 565
+                },
+                {
+                  "type": "TSNullKeyword",
+                  "start": 568,
+                  "end": 572
+                }
+              ],
+              "start": 559,
+              "end": 572
+            },
+            "start": 557,
+            "end": 572
+          },
+          "start": 556,
+          "end": 572
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 584,
+                "end": 585
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "myNull",
+                "start": 590,
+                "end": 596
+              },
+              "start": 584,
+              "end": 596
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "s",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 618,
+                            "end": 624
+                          },
+                          "start": 616,
+                          "end": 624
+                        },
+                        "start": 615,
+                        "end": 624
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 627,
+                        "end": 628
+                      },
+                      "start": 615,
+                      "end": 628
+                    }
+                  ],
+                  "kind": "const",
+                  "start": 609,
+                  "end": 629
+                }
+              ],
+              "start": 598,
+              "end": 646
+            },
+            "alternate": null,
+            "start": 581,
+            "end": 646
+          }
+        ],
+        "start": 574,
+        "end": 649
+      },
+      "start": 545,
+      "end": 649
+    }
+  ],
+  "sourceType": "script",
+  "start": 45,
+  "end": 651
+}

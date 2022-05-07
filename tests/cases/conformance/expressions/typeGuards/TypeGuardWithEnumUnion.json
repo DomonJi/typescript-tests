@@ -1,0 +1,790 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSEnumDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Color",
+        "start": 5,
+        "end": 10
+      },
+      "members": [
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "R",
+            "start": 13,
+            "end": 14
+          },
+          "start": 13,
+          "end": 14
+        },
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "G",
+            "start": 16,
+            "end": 17
+          },
+          "start": 16,
+          "end": 17
+        },
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "B",
+            "start": 19,
+            "end": 20
+          },
+          "start": 19,
+          "end": 20
+        }
+      ],
+      "start": 0,
+      "end": 22
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f1",
+        "start": 35,
+        "end": 37
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Color",
+                    "start": 41,
+                    "end": 46
+                  },
+                  "start": 41,
+                  "end": 46
+                },
+                {
+                  "type": "TSStringKeyword",
+                  "start": 49,
+                  "end": 55
+                }
+              ],
+              "start": 41,
+              "end": 55
+            },
+            "start": 39,
+            "end": 55
+          },
+          "start": 38,
+          "end": 55
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 75,
+                  "end": 76
+                },
+                "start": 68,
+                "end": 76
+              },
+              "right": {
+                "type": "Literal",
+                "value": "number",
+                "start": 81,
+                "end": 89
+              },
+              "start": 68,
+              "end": 89
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "y",
+                        "start": 106,
+                        "end": 107
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 110,
+                        "end": 111
+                      },
+                      "start": 106,
+                      "end": 111
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 102,
+                  "end": 112
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "y",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "Color",
+                              "start": 129,
+                              "end": 134
+                            },
+                            "start": 129,
+                            "end": 134
+                          },
+                          "start": 127,
+                          "end": 134
+                        },
+                        "start": 126,
+                        "end": 134
+                      },
+                      "init": null,
+                      "start": 126,
+                      "end": 134
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 122,
+                  "end": 135
+                }
+              ],
+              "start": 91,
+              "end": 142
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "z",
+                        "start": 168,
+                        "end": 169
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 172,
+                        "end": 173
+                      },
+                      "start": 168,
+                      "end": 173
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 164,
+                  "end": 174
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "z",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 191,
+                            "end": 197
+                          },
+                          "start": 189,
+                          "end": 197
+                        },
+                        "start": 188,
+                        "end": 197
+                      },
+                      "init": null,
+                      "start": 188,
+                      "end": 197
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 184,
+                  "end": 198
+                }
+              ],
+              "start": 153,
+              "end": 205
+            },
+            "start": 64,
+            "end": 205
+          }
+        ],
+        "start": 57,
+        "end": 208
+      },
+      "start": 26,
+      "end": 208
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f2",
+        "start": 221,
+        "end": 223
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Color",
+                    "start": 227,
+                    "end": 232
+                  },
+                  "start": 227,
+                  "end": 232
+                },
+                {
+                  "type": "TSStringKeyword",
+                  "start": 235,
+                  "end": 241
+                },
+                {
+                  "type": "TSArrayType",
+                  "elementType": {
+                    "type": "TSStringKeyword",
+                    "start": 244,
+                    "end": 250
+                  },
+                  "start": 244,
+                  "end": 252
+                }
+              ],
+              "start": 227,
+              "end": 252
+            },
+            "start": 225,
+            "end": 252
+          },
+          "start": 224,
+          "end": 252
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 272,
+                  "end": 273
+                },
+                "start": 265,
+                "end": 273
+              },
+              "right": {
+                "type": "Literal",
+                "value": "object",
+                "start": 278,
+                "end": 286
+              },
+              "start": 265,
+              "end": 286
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "y",
+                        "start": 303,
+                        "end": 304
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 307,
+                        "end": 308
+                      },
+                      "start": 303,
+                      "end": 308
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 299,
+                  "end": 309
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "y",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSArrayType",
+                            "elementType": {
+                              "type": "TSStringKeyword",
+                              "start": 326,
+                              "end": 332
+                            },
+                            "start": 326,
+                            "end": 334
+                          },
+                          "start": 324,
+                          "end": 334
+                        },
+                        "start": 323,
+                        "end": 334
+                      },
+                      "init": null,
+                      "start": 323,
+                      "end": 334
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 319,
+                  "end": 335
+                }
+              ],
+              "start": 288,
+              "end": 342
+            },
+            "alternate": null,
+            "start": 261,
+            "end": 342
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 359,
+                  "end": 360
+                },
+                "start": 352,
+                "end": 360
+              },
+              "right": {
+                "type": "Literal",
+                "value": "number",
+                "start": 365,
+                "end": 373
+              },
+              "start": 352,
+              "end": 373
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "z",
+                        "start": 390,
+                        "end": 391
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 394,
+                        "end": 395
+                      },
+                      "start": 390,
+                      "end": 395
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 386,
+                  "end": 396
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "z",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "Color",
+                              "start": 413,
+                              "end": 418
+                            },
+                            "start": 413,
+                            "end": 418
+                          },
+                          "start": 411,
+                          "end": 418
+                        },
+                        "start": 410,
+                        "end": 418
+                      },
+                      "init": null,
+                      "start": 410,
+                      "end": 418
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 406,
+                  "end": 419
+                }
+              ],
+              "start": 375,
+              "end": 426
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "w",
+                        "start": 452,
+                        "end": 453
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 456,
+                        "end": 457
+                      },
+                      "start": 452,
+                      "end": 457
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 448,
+                  "end": 458
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "w",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSUnionType",
+                            "types": [
+                              {
+                                "type": "TSStringKeyword",
+                                "start": 475,
+                                "end": 481
+                              },
+                              {
+                                "type": "TSArrayType",
+                                "elementType": {
+                                  "type": "TSStringKeyword",
+                                  "start": 484,
+                                  "end": 490
+                                },
+                                "start": 484,
+                                "end": 492
+                              }
+                            ],
+                            "start": 475,
+                            "end": 492
+                          },
+                          "start": 473,
+                          "end": 492
+                        },
+                        "start": 472,
+                        "end": 492
+                      },
+                      "init": null,
+                      "start": 472,
+                      "end": 492
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 468,
+                  "end": 493
+                }
+              ],
+              "start": 437,
+              "end": 500
+            },
+            "start": 348,
+            "end": 500
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 517,
+                  "end": 518
+                },
+                "start": 510,
+                "end": 518
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 523,
+                "end": 531
+              },
+              "start": 510,
+              "end": 531
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 548,
+                        "end": 549
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 552,
+                        "end": 553
+                      },
+                      "start": 548,
+                      "end": 553
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 544,
+                  "end": 554
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 571,
+                            "end": 577
+                          },
+                          "start": 569,
+                          "end": 577
+                        },
+                        "start": 568,
+                        "end": 577
+                      },
+                      "init": null,
+                      "start": 568,
+                      "end": 577
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 564,
+                  "end": 578
+                }
+              ],
+              "start": 533,
+              "end": 585
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "start": 611,
+                        "end": 612
+                      },
+                      "init": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 615,
+                        "end": 616
+                      },
+                      "start": 611,
+                      "end": 616
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 607,
+                  "end": 617
+                },
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "b",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSUnionType",
+                            "types": [
+                              {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "Color",
+                                  "start": 634,
+                                  "end": 639
+                                },
+                                "start": 634,
+                                "end": 639
+                              },
+                              {
+                                "type": "TSArrayType",
+                                "elementType": {
+                                  "type": "TSStringKeyword",
+                                  "start": 642,
+                                  "end": 648
+                                },
+                                "start": 642,
+                                "end": 650
+                              }
+                            ],
+                            "start": 634,
+                            "end": 650
+                          },
+                          "start": 632,
+                          "end": 650
+                        },
+                        "start": 631,
+                        "end": 650
+                      },
+                      "init": null,
+                      "start": 631,
+                      "end": 650
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 627,
+                  "end": 651
+                }
+              ],
+              "start": 596,
+              "end": 658
+            },
+            "start": 506,
+            "end": 658
+          }
+        ],
+        "start": 254,
+        "end": 661
+      },
+      "start": 212,
+      "end": 661
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 663
+}

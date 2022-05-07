@@ -1,0 +1,253 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "TreeNode",
+        "start": 5,
+        "end": 13
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "name",
+              "start": 23,
+              "end": 27
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 29,
+                "end": 35
+              },
+              "start": 27,
+              "end": 35
+            },
+            "start": 23,
+            "end": 36
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "parent",
+              "start": 42,
+              "end": 48
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TreeNode",
+                  "start": 50,
+                  "end": 58
+                },
+                "start": 50,
+                "end": 58
+              },
+              "start": 48,
+              "end": 58
+            },
+            "start": 42,
+            "end": 59
+          }
+        ],
+        "start": 16,
+        "end": 62
+      },
+      "start": 0,
+      "end": 62
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "TreeNodeMiddleman",
+        "start": 71,
+        "end": 88
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "name",
+              "start": 98,
+              "end": 102
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 104,
+                "end": 110
+              },
+              "start": 102,
+              "end": 110
+            },
+            "start": 98,
+            "end": 111
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "parent",
+              "start": 117,
+              "end": 123
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TreeNode",
+                  "start": 125,
+                  "end": 133
+                },
+                "start": 125,
+                "end": 133
+              },
+              "start": 123,
+              "end": 133
+            },
+            "start": 117,
+            "end": 134
+          }
+        ],
+        "start": 91,
+        "end": 137
+      },
+      "start": 66,
+      "end": 137
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "nodes",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "TreeNodeMiddleman",
+                    "start": 152,
+                    "end": 169
+                  },
+                  "start": 152,
+                  "end": 169
+                },
+                "start": 152,
+                "end": 171
+              },
+              "start": 150,
+              "end": 171
+            },
+            "start": 145,
+            "end": 171
+          },
+          "init": null,
+          "start": 145,
+          "end": 171
+        }
+      ],
+      "kind": "var",
+      "start": 141,
+      "end": 172
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "nodes",
+            "start": 174,
+            "end": 179
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "map",
+            "start": 180,
+            "end": 183
+          },
+          "computed": false,
+          "optional": false,
+          "start": 174,
+          "end": 183
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "n",
+                "start": 184,
+                "end": 185
+              }
+            ],
+            "body": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "n",
+                "start": 189,
+                "end": 190
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "name",
+                "start": 191,
+                "end": 195
+              },
+              "computed": false,
+              "optional": false,
+              "start": 189,
+              "end": 195
+            },
+            "async": false,
+            "expression": true,
+            "start": 184,
+            "end": 195
+          }
+        ],
+        "optional": false,
+        "start": 174,
+        "end": 196
+      },
+      "start": 174,
+      "end": 197
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 199
+}

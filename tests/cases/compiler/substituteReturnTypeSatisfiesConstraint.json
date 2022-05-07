@@ -1,0 +1,280 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M",
+        "start": 5,
+        "end": 6
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "p",
+              "start": 11,
+              "end": 12
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 14,
+                "end": 20
+              },
+              "start": 12,
+              "end": 20
+            },
+            "start": 11,
+            "end": 20
+          }
+        ],
+        "start": 9,
+        "end": 22
+      },
+      "start": 0,
+      "end": 23
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "O",
+        "start": 30,
+        "end": 31
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "m",
+              "start": 36,
+              "end": 37
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "M",
+                      "start": 45,
+                      "end": 46
+                    },
+                    "start": 45,
+                    "end": 46
+                  },
+                  "start": 42,
+                  "end": 46
+                },
+                "start": 39,
+                "end": 46
+              },
+              "start": 37,
+              "end": 46
+            },
+            "start": 36,
+            "end": 46
+          }
+        ],
+        "start": 34,
+        "end": 48
+      },
+      "start": 25,
+      "end": 49
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "X",
+        "start": 56,
+        "end": 57
+      },
+      "typeAnnotation": {
+        "type": "TSTypeReference",
+        "typeName": {
+          "type": "Identifier",
+          "name": "T",
+          "start": 73,
+          "end": 74
+        },
+        "start": 73,
+        "end": 74
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 58,
+              "end": 59
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "M",
+                "start": 68,
+                "end": 69
+              },
+              "start": 68,
+              "end": 69
+            },
+            "start": 58,
+            "end": 69
+          }
+        ],
+        "start": 57,
+        "end": 70
+      },
+      "start": 51,
+      "end": 75
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "FFG",
+        "start": 82,
+        "end": 85
+      },
+      "typeAnnotation": {
+        "type": "TSConditionalType",
+        "checkType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 91,
+            "end": 92
+          },
+          "start": 91,
+          "end": 92
+        },
+        "extendsType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "O",
+            "start": 101,
+            "end": 102
+          },
+          "start": 101,
+          "end": 102
+        },
+        "trueType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "X",
+            "start": 105,
+            "end": 106
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ReturnType",
+                  "start": 107,
+                  "end": 117
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSIndexedAccessType",
+                      "objectType": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "T",
+                          "start": 118,
+                          "end": 119
+                        },
+                        "start": 118,
+                        "end": 119
+                      },
+                      "indexType": {
+                        "type": "TSLiteralType",
+                        "literal": {
+                          "type": "Literal",
+                          "value": "m",
+                          "start": 120,
+                          "end": 123
+                        },
+                        "start": 120,
+                        "end": 123
+                      },
+                      "start": 118,
+                      "end": 124
+                    }
+                  ],
+                  "start": 117,
+                  "end": 125
+                },
+                "start": 107,
+                "end": 125
+              }
+            ],
+            "start": 106,
+            "end": 126
+          },
+          "start": 105,
+          "end": 126
+        },
+        "falseType": {
+          "type": "TSNeverKeyword",
+          "start": 129,
+          "end": 134
+        },
+        "start": 91,
+        "end": 134
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 86,
+              "end": 87
+            },
+            "start": 86,
+            "end": 87
+          }
+        ],
+        "start": 85,
+        "end": 88
+      },
+      "start": 77,
+      "end": 135
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 147
+}

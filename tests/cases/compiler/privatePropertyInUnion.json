@@ -1,0 +1,294 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Type",
+        "start": 49,
+        "end": 53
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSStringKeyword",
+            "start": 56,
+            "end": 62
+          },
+          {
+            "type": "TSObjectKeyword",
+            "start": 65,
+            "end": 71
+          }
+        ],
+        "start": 56,
+        "end": 71
+      },
+      "start": 44,
+      "end": 72
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "SyncableObject",
+        "start": 82,
+        "end": 96
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 110,
+              "end": 113
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnknownKeyword",
+                "start": 115,
+                "end": 122
+              },
+              "start": 113,
+              "end": 122
+            },
+            "accessibility": "private",
+            "start": 102,
+            "end": 123
+          }
+        ],
+        "start": 97,
+        "end": 126
+      },
+      "superClass": null,
+      "start": 76,
+      "end": 126
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 179,
+        "end": 181
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "SyncableRef",
+        "start": 140,
+        "end": 151
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 152,
+              "end": 153
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "ISyncableObject",
+                "start": 162,
+                "end": 177
+              },
+              "start": 162,
+              "end": 177
+            },
+            "start": 152,
+            "end": 177
+          }
+        ],
+        "start": 151,
+        "end": 178
+      },
+      "start": 130,
+      "end": 181
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 246,
+        "end": 248
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "ISyncableObject",
+        "start": 195,
+        "end": 210
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 211,
+              "end": 212
+            },
+            "default": {
+              "type": "TSObjectKeyword",
+              "start": 215,
+              "end": 221
+            },
+            "start": 211,
+            "end": 221
+          }
+        ],
+        "start": 210,
+        "end": 222
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "SyncableObject",
+            "start": 231,
+            "end": 245
+          },
+          "start": 231,
+          "end": 245
+        }
+      ],
+      "start": 185,
+      "end": 248
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "__ValueDescriptorType",
+        "start": 257,
+        "end": 278
+      },
+      "typeAnnotation": {
+        "type": "TSConditionalType",
+        "checkType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 308,
+            "end": 309
+          },
+          "start": 308,
+          "end": 309
+        },
+        "extendsType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "ISyncableObject",
+            "start": 318,
+            "end": 333
+          },
+          "start": 318,
+          "end": 333
+        },
+        "trueType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "SyncableRef",
+            "start": 336,
+            "end": 347
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 348,
+                  "end": 349
+                },
+                "start": 348,
+                "end": 349
+              }
+            ],
+            "start": 347,
+            "end": 350
+          },
+          "start": 336,
+          "end": 350
+        },
+        "falseType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 353,
+            "end": 354
+          },
+          "start": 353,
+          "end": 354
+        },
+        "start": 308,
+        "end": 354
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 279,
+              "end": 280
+            },
+            "constraint": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 289,
+                  "end": 295
+                },
+                {
+                  "type": "TSObjectKeyword",
+                  "start": 298,
+                  "end": 304
+                }
+              ],
+              "start": 289,
+              "end": 304
+            },
+            "start": 279,
+            "end": 304
+          }
+        ],
+        "start": 278,
+        "end": 305
+      },
+      "start": 252,
+      "end": 355
+    }
+  ],
+  "sourceType": "script",
+  "start": 44,
+  "end": 357
+}

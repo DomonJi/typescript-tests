@@ -1,0 +1,308 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 35,
+        "end": 38
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "p",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 42,
+              "end": 48
+            },
+            "start": 40,
+            "end": 48
+          },
+          "start": 39,
+          "end": 48
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 51,
+          "end": 55
+        },
+        "start": 49,
+        "end": 55
+      },
+      "declare": true,
+      "start": 18,
+      "end": 56
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "fn",
+        "start": 69,
+        "end": 71
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "one",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 125,
+                "end": 126
+              },
+              "start": 125,
+              "end": 126
+            },
+            "start": 123,
+            "end": 126
+          },
+          "start": 120,
+          "end": 126
+        },
+        {
+          "type": "Identifier",
+          "name": "two",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "U",
+                "start": 133,
+                "end": 134
+              },
+              "start": 133,
+              "end": 134
+            },
+            "start": 131,
+            "end": 134
+          },
+          "start": 128,
+          "end": 134
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "three",
+                  "start": 147,
+                  "end": 152
+                },
+                "init": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Boolean",
+                      "start": 155,
+                      "end": 162
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 155,
+                    "end": 164
+                  },
+                  "consequent": {
+                    "type": "Identifier",
+                    "name": "one",
+                    "start": 167,
+                    "end": 170
+                  },
+                  "alternate": {
+                    "type": "Identifier",
+                    "name": "two",
+                    "start": 173,
+                    "end": 176
+                  },
+                  "start": 155,
+                  "end": 176
+                },
+                "start": 147,
+                "end": 176
+              }
+            ],
+            "kind": "let",
+            "start": 143,
+            "end": 177
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 183,
+                "end": 186
+              },
+              "arguments": [
+                {
+                  "type": "TSNonNullExpression",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "one",
+                    "start": 187,
+                    "end": 190
+                  },
+                  "start": 187,
+                  "end": 191
+                }
+              ],
+              "optional": false,
+              "start": 183,
+              "end": 192
+            },
+            "start": 183,
+            "end": 193
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 199,
+                "end": 202
+              },
+              "arguments": [
+                {
+                  "type": "TSNonNullExpression",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "two",
+                    "start": 203,
+                    "end": 206
+                  },
+                  "start": 203,
+                  "end": 207
+                }
+              ],
+              "optional": false,
+              "start": 199,
+              "end": 208
+            },
+            "start": 199,
+            "end": 209
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 215,
+                "end": 218
+              },
+              "arguments": [
+                {
+                  "type": "TSNonNullExpression",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "three",
+                    "start": 219,
+                    "end": 224
+                  },
+                  "start": 219,
+                  "end": 225
+                }
+              ],
+              "optional": false,
+              "start": 215,
+              "end": 226
+            },
+            "start": 215,
+            "end": 227
+          }
+        ],
+        "start": 136,
+        "end": 264
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 72,
+              "end": 73
+            },
+            "constraint": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 82,
+                  "end": 88
+                },
+                {
+                  "type": "TSUndefinedKeyword",
+                  "start": 91,
+                  "end": 100
+                }
+              ],
+              "start": 82,
+              "end": 100
+            },
+            "start": 72,
+            "end": 100
+          },
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "U",
+              "start": 102,
+              "end": 103
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 112,
+              "end": 118
+            },
+            "start": 102,
+            "end": 118
+          }
+        ],
+        "start": 71,
+        "end": 119
+      },
+      "start": 60,
+      "end": 264
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 264
+}

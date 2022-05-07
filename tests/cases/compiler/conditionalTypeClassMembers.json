@@ -1,0 +1,342 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyRecord",
+        "start": 14,
+        "end": 22
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 38,
+              "end": 39
+            },
+            "value": {
+              "type": "TSEmptyBodyFunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": null,
+              "params": [],
+              "start": 39,
+              "end": 42
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "private",
+            "start": 30,
+            "end": 42
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 48,
+              "end": 49
+            },
+            "value": {
+              "type": "TSEmptyBodyFunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": null,
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSUnknownKeyword",
+                  "start": 53,
+                  "end": 60
+                },
+                "start": 51,
+                "end": 60
+              },
+              "start": 49,
+              "end": 61
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 48,
+            "end": 61
+          }
+        ],
+        "start": 23,
+        "end": 64
+      },
+      "superClass": null,
+      "declare": true,
+      "start": 0,
+      "end": 64
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MySet",
+        "start": 82,
+        "end": 87
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "item",
+              "start": 125,
+              "end": 129
+            },
+            "value": {
+              "type": "TSEmptyBodyFunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": null,
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "TSet",
+                    "start": 133,
+                    "end": 137
+                  },
+                  "start": 133,
+                  "end": 137
+                },
+                "start": 131,
+                "end": 137
+              },
+              "start": 129,
+              "end": 138
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 118,
+            "end": 138
+          }
+        ],
+        "start": 111,
+        "end": 141
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TSet",
+              "start": 88,
+              "end": 92
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "MyRecord",
+                "start": 101,
+                "end": 109
+              },
+              "start": 101,
+              "end": 109
+            },
+            "start": 88,
+            "end": 109
+          }
+        ],
+        "start": 87,
+        "end": 110
+      },
+      "declare": true,
+      "start": 68,
+      "end": 141
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "DS",
+        "start": 150,
+        "end": 152
+      },
+      "typeAnnotation": {
+        "type": "TSConditionalType",
+        "checkType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "TRec",
+            "start": 207,
+            "end": 211
+          },
+          "start": 207,
+          "end": 211
+        },
+        "extendsType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "MyRecord",
+            "start": 220,
+            "end": 228
+          },
+          "start": 220,
+          "end": 228
+        },
+        "trueType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "MySet",
+            "start": 231,
+            "end": 236
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TRec",
+                  "start": 237,
+                  "end": 241
+                },
+                "start": 237,
+                "end": 241
+              }
+            ],
+            "start": 236,
+            "end": 242
+          },
+          "start": 231,
+          "end": 242
+        },
+        "falseType": {
+          "type": "TSArrayType",
+          "elementType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "TRec",
+              "start": 245,
+              "end": 249
+            },
+            "start": 245,
+            "end": 249
+          },
+          "start": 245,
+          "end": 251
+        },
+        "start": 207,
+        "end": 251
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TRec",
+              "start": 153,
+              "end": 157
+            },
+            "constraint": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "MyRecord",
+                    "start": 166,
+                    "end": 174
+                  },
+                  "start": 166,
+                  "end": 174
+                },
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSIndexSignature",
+                      "parameters": [
+                        {
+                          "type": "Identifier",
+                          "name": "key",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSStringKeyword",
+                              "start": 185,
+                              "end": 191
+                            },
+                            "start": 183,
+                            "end": 191
+                          },
+                          "start": 180,
+                          "end": 191
+                        }
+                      ],
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSUnknownKeyword",
+                          "start": 194,
+                          "end": 201
+                        },
+                        "start": 192,
+                        "end": 201
+                      },
+                      "start": 179,
+                      "end": 201
+                    }
+                  ],
+                  "start": 177,
+                  "end": 203
+                }
+              ],
+              "start": 166,
+              "end": 203
+            },
+            "start": 153,
+            "end": 203
+          }
+        ],
+        "start": 152,
+        "end": 204
+      },
+      "start": 145,
+      "end": 252
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 252
+}

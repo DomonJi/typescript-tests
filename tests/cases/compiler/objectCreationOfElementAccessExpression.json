@@ -1,0 +1,1359 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Food",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "amount",
+              "start": 26,
+              "end": 32
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 34,
+                "end": 40
+              },
+              "start": 32,
+              "end": 40
+            },
+            "accessibility": "private",
+            "start": 18,
+            "end": 41
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 47,
+              "end": 58
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "name",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSStringKeyword",
+                        "start": 72,
+                        "end": 78
+                      },
+                      "start": 70,
+                      "end": 78
+                    },
+                    "start": 66,
+                    "end": 78
+                  },
+                  "start": 59,
+                  "end": 78
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 91,
+                          "end": 95
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "amount",
+                          "start": 96,
+                          "end": 102
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 91,
+                        "end": 102
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 100,
+                        "start": 105,
+                        "end": 108
+                      },
+                      "start": 91,
+                      "end": 108
+                    },
+                    "start": 91,
+                    "end": 109
+                  }
+                ],
+                "start": 80,
+                "end": 116
+              },
+              "start": 58,
+              "end": 116
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 47,
+            "end": 116
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "eat",
+              "start": 129,
+              "end": 132
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "-=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 174,
+                          "end": 178
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "amount",
+                          "start": 179,
+                          "end": 185
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 174,
+                        "end": 185
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "amountToEat",
+                        "start": 189,
+                        "end": 200
+                      },
+                      "start": 174,
+                      "end": 200
+                    },
+                    "start": 174,
+                    "end": 201
+                  },
+                  {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "<=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 215,
+                          "end": 219
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "amount",
+                          "start": 220,
+                          "end": 226
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 215,
+                        "end": 226
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": 0,
+                        "start": 230,
+                        "end": 231
+                      },
+                      "start": 215,
+                      "end": 231
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "ThisExpression",
+                                "start": 248,
+                                "end": 252
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "amount",
+                                "start": 253,
+                                "end": 259
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 248,
+                              "end": 259
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 0,
+                              "start": 262,
+                              "end": 263
+                            },
+                            "start": 248,
+                            "end": 263
+                          },
+                          "start": 248,
+                          "end": 264
+                        },
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": false,
+                            "start": 285,
+                            "end": 290
+                          },
+                          "start": 278,
+                          "end": 291
+                        }
+                      ],
+                      "start": 233,
+                      "end": 302
+                    },
+                    "alternate": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "Literal",
+                            "value": true,
+                            "start": 339,
+                            "end": 343
+                          },
+                          "start": 332,
+                          "end": 344
+                        }
+                      ],
+                      "start": 317,
+                      "end": 355
+                    },
+                    "start": 211,
+                    "end": 355
+                  }
+                ],
+                "start": 163,
+                "end": 362
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "amountToEat",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 146,
+                      "end": 152
+                    },
+                    "start": 144,
+                    "end": 152
+                  },
+                  "start": 133,
+                  "end": 152
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSBooleanKeyword",
+                  "start": 155,
+                  "end": 162
+                },
+                "start": 153,
+                "end": 162
+              },
+              "start": 132,
+              "end": 362
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 122,
+            "end": 362
+          }
+        ],
+        "start": 11,
+        "end": 365
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 365
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MonsterFood",
+        "start": 373,
+        "end": 384
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 405,
+              "end": 416
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "name",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 423,
+                      "end": 429
+                    },
+                    "start": 421,
+                    "end": 429
+                  },
+                  "start": 417,
+                  "end": 429
+                },
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "flavor",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSStringKeyword",
+                        "start": 446,
+                        "end": 452
+                      },
+                      "start": 444,
+                      "end": 452
+                    },
+                    "start": 438,
+                    "end": 452
+                  },
+                  "start": 431,
+                  "end": 452
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 465,
+                        "end": 470
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "name",
+                          "start": 471,
+                          "end": 475
+                        }
+                      ],
+                      "optional": false,
+                      "start": 465,
+                      "end": 476
+                    },
+                    "start": 465,
+                    "end": 477
+                  }
+                ],
+                "start": 454,
+                "end": 484
+              },
+              "start": 416,
+              "end": 484
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 405,
+            "end": 484
+          }
+        ],
+        "start": 398,
+        "end": 487
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Food",
+        "start": 393,
+        "end": 397
+      },
+      "start": 367,
+      "end": 487
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "IceCream",
+        "start": 495,
+        "end": 503
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "isDairyFree",
+              "start": 539,
+              "end": 550
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 552,
+                "end": 559
+              },
+              "start": 550,
+              "end": 559
+            },
+            "accessibility": "private",
+            "start": 531,
+            "end": 560
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 566,
+              "end": 577
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "flavor",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSStringKeyword",
+                        "start": 593,
+                        "end": 599
+                      },
+                      "start": 591,
+                      "end": 599
+                    },
+                    "start": 585,
+                    "end": 599
+                  },
+                  "start": 578,
+                  "end": 599
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 612,
+                        "end": 617
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "Ice Cream",
+                          "start": 618,
+                          "end": 629
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "flavor",
+                          "start": 631,
+                          "end": 637
+                        }
+                      ],
+                      "optional": false,
+                      "start": 612,
+                      "end": 638
+                    },
+                    "start": 612,
+                    "end": 639
+                  }
+                ],
+                "start": 601,
+                "end": 646
+              },
+              "start": 577,
+              "end": 646
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 566,
+            "end": 646
+          }
+        ],
+        "start": 524,
+        "end": 649
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "MonsterFood",
+        "start": 512,
+        "end": 523
+      },
+      "start": 489,
+      "end": 649
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Cookie",
+        "start": 657,
+        "end": 663
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 691,
+              "end": 702
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "flavor",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSStringKeyword",
+                        "start": 718,
+                        "end": 724
+                      },
+                      "start": 716,
+                      "end": 724
+                    },
+                    "start": 710,
+                    "end": 724
+                  },
+                  "start": 703,
+                  "end": 724
+                },
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "isGlutenFree",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSBooleanKeyword",
+                        "start": 747,
+                        "end": 754
+                      },
+                      "start": 745,
+                      "end": 754
+                    },
+                    "start": 733,
+                    "end": 754
+                  },
+                  "start": 726,
+                  "end": 754
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 767,
+                        "end": 772
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "Cookie",
+                          "start": 773,
+                          "end": 781
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "flavor",
+                          "start": 783,
+                          "end": 789
+                        }
+                      ],
+                      "optional": false,
+                      "start": 767,
+                      "end": 790
+                    },
+                    "start": 767,
+                    "end": 791
+                  }
+                ],
+                "start": 756,
+                "end": 798
+              },
+              "start": 702,
+              "end": 798
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 691,
+            "end": 798
+          }
+        ],
+        "start": 684,
+        "end": 801
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "MonsterFood",
+        "start": 672,
+        "end": 683
+      },
+      "start": 651,
+      "end": 801
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "PetFood",
+        "start": 809,
+        "end": 816
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 837,
+              "end": 848
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "name",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 855,
+                      "end": 861
+                    },
+                    "start": 853,
+                    "end": 861
+                  },
+                  "start": 849,
+                  "end": 861
+                },
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "whereToBuy",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 882,
+                        "end": 888
+                      },
+                      "start": 880,
+                      "end": 888
+                    },
+                    "start": 870,
+                    "end": 888
+                  },
+                  "start": 863,
+                  "end": 888
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 901,
+                        "end": 906
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "name",
+                          "start": 907,
+                          "end": 911
+                        }
+                      ],
+                      "optional": false,
+                      "start": 901,
+                      "end": 912
+                    },
+                    "start": 901,
+                    "end": 913
+                  }
+                ],
+                "start": 890,
+                "end": 920
+              },
+              "start": 848,
+              "end": 920
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 837,
+            "end": 920
+          }
+        ],
+        "start": 830,
+        "end": 923
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Food",
+        "start": 825,
+        "end": 829
+      },
+      "start": 803,
+      "end": 923
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ExpensiveOrganicDogFood",
+        "start": 931,
+        "end": 954
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 978,
+              "end": 989
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "whereToBuy",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 1009,
+                        "end": 1015
+                      },
+                      "start": 1007,
+                      "end": 1015
+                    },
+                    "start": 997,
+                    "end": 1015
+                  },
+                  "start": 990,
+                  "end": 1015
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 1028,
+                        "end": 1033
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "Origen",
+                          "start": 1034,
+                          "end": 1042
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "whereToBuy",
+                          "start": 1044,
+                          "end": 1054
+                        }
+                      ],
+                      "optional": false,
+                      "start": 1028,
+                      "end": 1055
+                    },
+                    "start": 1028,
+                    "end": 1056
+                  }
+                ],
+                "start": 1017,
+                "end": 1063
+              },
+              "start": 989,
+              "end": 1063
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 978,
+            "end": 1063
+          }
+        ],
+        "start": 971,
+        "end": 1066
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "PetFood",
+        "start": 963,
+        "end": 970
+      },
+      "start": 925,
+      "end": 1066
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ExpensiveOrganicCatFood",
+        "start": 1074,
+        "end": 1097
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 1121,
+              "end": 1132
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "whereToBuy",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 1152,
+                        "end": 1158
+                      },
+                      "start": 1150,
+                      "end": 1158
+                    },
+                    "start": 1140,
+                    "end": 1158
+                  },
+                  "start": 1133,
+                  "end": 1158
+                },
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "containsFish",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSBooleanKeyword",
+                        "start": 1181,
+                        "end": 1188
+                      },
+                      "start": 1179,
+                      "end": 1188
+                    },
+                    "start": 1167,
+                    "end": 1188
+                  },
+                  "start": 1160,
+                  "end": 1188
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 1201,
+                        "end": 1206
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "Nature's Logic",
+                          "start": 1207,
+                          "end": 1223
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "whereToBuy",
+                          "start": 1225,
+                          "end": 1235
+                        }
+                      ],
+                      "optional": false,
+                      "start": 1201,
+                      "end": 1236
+                    },
+                    "start": 1201,
+                    "end": 1237
+                  }
+                ],
+                "start": 1190,
+                "end": 1244
+              },
+              "start": 1132,
+              "end": 1244
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 1121,
+            "end": 1244
+          }
+        ],
+        "start": 1114,
+        "end": 1247
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "PetFood",
+        "start": 1106,
+        "end": 1113
+      },
+      "start": 1068,
+      "end": 1247
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Slug",
+        "start": 1255,
+        "end": 1259
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 1260,
+        "end": 1294
+      },
+      "superClass": null,
+      "start": 1249,
+      "end": 1294
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foods",
+            "start": 1401,
+            "end": 1406
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "PetFood",
+                "start": 1413,
+                "end": 1420
+              },
+              "property": {
+                "type": "SequenceExpression",
+                "expressions": [
+                  {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "IceCream",
+                      "start": 1425,
+                      "end": 1433
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Mint chocolate chip",
+                        "start": 1434,
+                        "end": 1455
+                      }
+                    ],
+                    "start": 1421,
+                    "end": 1456
+                  },
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Cookie",
+                      "start": 1459,
+                      "end": 1465
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Chocolate chip",
+                        "start": 1466,
+                        "end": 1482
+                      },
+                      {
+                        "type": "Literal",
+                        "value": false,
+                        "start": 1484,
+                        "end": 1489
+                      }
+                    ],
+                    "optional": false,
+                    "start": 1459,
+                    "end": 1490
+                  },
+                  {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Cookie",
+                      "start": 1497,
+                      "end": 1503
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Peanut butter",
+                        "start": 1504,
+                        "end": 1519
+                      },
+                      {
+                        "type": "Literal",
+                        "value": true,
+                        "start": 1521,
+                        "end": 1525
+                      }
+                    ],
+                    "start": 1493,
+                    "end": 1526
+                  }
+                ],
+                "start": 1421,
+                "end": 1526
+              },
+              "computed": true,
+              "optional": false,
+              "start": 1413,
+              "end": 1527
+            },
+            "arguments": [],
+            "start": 1409,
+            "end": 1527
+          },
+          "start": 1401,
+          "end": 1527
+        }
+      ],
+      "kind": "var",
+      "start": 1397,
+      "end": 1528
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foods2",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "MonsterFood",
+                    "start": 1542,
+                    "end": 1553
+                  },
+                  "start": 1542,
+                  "end": 1553
+                },
+                "start": 1542,
+                "end": 1555
+              },
+              "start": 1540,
+              "end": 1555
+            },
+            "start": 1534,
+            "end": 1555
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "PetFood",
+                "start": 1562,
+                "end": 1569
+              },
+              "property": {
+                "type": "SequenceExpression",
+                "expressions": [
+                  {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "IceCream",
+                      "start": 1574,
+                      "end": 1582
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Mint chocolate chip",
+                        "start": 1583,
+                        "end": 1604
+                      }
+                    ],
+                    "start": 1570,
+                    "end": 1605
+                  },
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Cookie",
+                      "start": 1608,
+                      "end": 1614
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Chocolate chip",
+                        "start": 1615,
+                        "end": 1631
+                      },
+                      {
+                        "type": "Literal",
+                        "value": false,
+                        "start": 1633,
+                        "end": 1638
+                      }
+                    ],
+                    "optional": false,
+                    "start": 1608,
+                    "end": 1639
+                  },
+                  {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Cookie",
+                      "start": 1646,
+                      "end": 1652
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Peanut butter",
+                        "start": 1653,
+                        "end": 1668
+                      },
+                      {
+                        "type": "Literal",
+                        "value": true,
+                        "start": 1670,
+                        "end": 1674
+                      }
+                    ],
+                    "start": 1642,
+                    "end": 1675
+                  }
+                ],
+                "start": 1570,
+                "end": 1675
+              },
+              "computed": true,
+              "optional": false,
+              "start": 1562,
+              "end": 1676
+            },
+            "arguments": [],
+            "start": 1558,
+            "end": 1676
+          },
+          "start": 1534,
+          "end": 1676
+        }
+      ],
+      "kind": "var",
+      "start": 1530,
+      "end": 1677
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 1679
+}

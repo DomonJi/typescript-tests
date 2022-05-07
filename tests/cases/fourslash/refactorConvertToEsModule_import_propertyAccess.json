@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 378,
+            "end": 384
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 385,
+            "end": 392
+          },
+          "computed": false,
+          "optional": false,
+          "start": 378,
+          "end": 392
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 400,
+                  "end": 411
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert to ES module",
+                  "start": 413,
+                  "end": 435
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 400,
+                "end": 435
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 442,
+                  "end": 456
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "import x from \"x\";\r\nimport { c as a } from \"b\";\r\nimport { a } from \"a\";\r\nimport { d } from \"c\";\r\nconst [a, b] = d;\r\nimport { a as _a } from \"c\";\r\nconst [a, b] = _a; // Test that we avoid shadowing the earlier local variable 'a' from 'const [a,b] = d;'.\r\nx; a; b;",
+                        "cooked": "import x from \"x\";\nimport { c as a } from \"b\";\nimport { a } from \"a\";\nimport { d } from \"c\";\nconst [a, b] = d;\nimport { a as _a } from \"c\";\nconst [a, b] = _a; // Test that we avoid shadowing the earlier local variable 'a' from 'const [a,b] = d;'.\nx; a; b;"
+                      },
+                      "tail": true,
+                      "start": 459,
+                      "end": 723
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 459,
+                  "end": 723
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 442,
+                "end": 723
+              }
+            ],
+            "start": 393,
+            "end": 727
+          }
+        ],
+        "optional": false,
+        "start": 378,
+        "end": 728
+      },
+      "start": 378,
+      "end": 729
+    }
+  ],
+  "sourceType": "script",
+  "start": 378,
+  "end": 731
+}

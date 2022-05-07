@@ -1,0 +1,462 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Events",
+        "start": 7,
+        "end": 13
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSInterfaceDeclaration",
+              "body": {
+                "type": "TSInterfaceBody",
+                "body": [
+                  {
+                    "type": "TSCallSignatureDeclaration",
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "value",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSAnyKeyword",
+                            "start": 73,
+                            "end": 76
+                          },
+                          "start": 72,
+                          "end": 76
+                        },
+                        "start": 67,
+                        "end": 76
+                      }
+                    ],
+                    "returnType": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSVoidKeyword",
+                        "start": 78,
+                        "end": 82
+                      },
+                      "start": 77,
+                      "end": 82
+                    },
+                    "start": 66,
+                    "end": 83
+                  }
+                ],
+                "start": 55,
+                "end": 90
+              },
+              "id": {
+                "type": "Identifier",
+                "name": "ListenerCallback",
+                "start": 38,
+                "end": 54
+              },
+              "start": 28,
+              "end": 90
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "type",
+            "assertions": [],
+            "start": 21,
+            "end": 90
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "EventEmitter",
+                "start": 109,
+                "end": 121
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "addListener",
+                      "start": 141,
+                      "end": 152
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [],
+                        "start": 193,
+                        "end": 206
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "type",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSStringKeyword",
+                              "start": 158,
+                              "end": 164
+                            },
+                            "start": 157,
+                            "end": 164
+                          },
+                          "start": 153,
+                          "end": 164
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "listener",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "ListenerCallback",
+                                "start": 175,
+                                "end": 191
+                              },
+                              "start": 175,
+                              "end": 191
+                            },
+                            "start": 174,
+                            "end": 191
+                          },
+                          "start": 166,
+                          "end": 191
+                        }
+                      ],
+                      "start": 152,
+                      "end": 206
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 134,
+                    "end": 206
+                  }
+                ],
+                "start": 122,
+                "end": 213
+              },
+              "superClass": null,
+              "start": 103,
+              "end": 213
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 96,
+            "end": 213
+          }
+        ],
+        "start": 14,
+        "end": 216
+      },
+      "start": 0,
+      "end": 216
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Consumer",
+        "start": 227,
+        "end": 235
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "EventEmitterConsummer",
+              "start": 249,
+              "end": 270
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "MethodDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "constructor",
+                    "start": 282,
+                    "end": 293
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "TSParameterProperty",
+                        "accessibility": "private",
+                        "parameter": {
+                          "type": "Identifier",
+                          "name": "emitter",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "TSQualifiedName",
+                                "left": {
+                                  "type": "Identifier",
+                                  "name": "Events",
+                                  "start": 312,
+                                  "end": 318
+                                },
+                                "right": {
+                                  "type": "Identifier",
+                                  "name": "EventEmitter",
+                                  "start": 319,
+                                  "end": 331
+                                },
+                                "start": 312,
+                                "end": 331
+                              },
+                              "start": 312,
+                              "end": 331
+                            },
+                            "start": 310,
+                            "end": 331
+                          },
+                          "start": 303,
+                          "end": 331
+                        },
+                        "start": 295,
+                        "end": 331
+                      }
+                    ],
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 333,
+                      "end": 336
+                    },
+                    "start": 294,
+                    "end": 336
+                  },
+                  "computed": false,
+                  "static": false,
+                  "kind": "constructor",
+                  "override": false,
+                  "start": 282,
+                  "end": 336
+                },
+                {
+                  "type": "MethodDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "register",
+                    "start": 356,
+                    "end": 364
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "ThisExpression",
+                                  "start": 382,
+                                  "end": 386
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "emitter",
+                                  "start": 387,
+                                  "end": 394
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 382,
+                                "end": 394
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "addListener",
+                                "start": 395,
+                                "end": 406
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 382,
+                              "end": 406
+                            },
+                            "arguments": [
+                              {
+                                "type": "Literal",
+                                "value": "change",
+                                "start": 407,
+                                "end": 415
+                              },
+                              {
+                                "type": "ArrowFunctionExpression",
+                                "generator": false,
+                                "id": null,
+                                "params": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "e",
+                                    "start": 418,
+                                    "end": 419
+                                  }
+                                ],
+                                "body": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "object": {
+                                            "type": "ThisExpression",
+                                            "start": 443,
+                                            "end": 447
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "changed",
+                                            "start": 448,
+                                            "end": 455
+                                          },
+                                          "computed": false,
+                                          "optional": false,
+                                          "start": 443,
+                                          "end": 455
+                                        },
+                                        "arguments": [],
+                                        "optional": false,
+                                        "start": 443,
+                                        "end": 457
+                                      },
+                                      "start": 443,
+                                      "end": 458
+                                    }
+                                  ],
+                                  "start": 424,
+                                  "end": 473
+                                },
+                                "async": false,
+                                "expression": false,
+                                "start": 417,
+                                "end": 473
+                              }
+                            ],
+                            "optional": false,
+                            "start": 382,
+                            "end": 474
+                          },
+                          "start": 382,
+                          "end": 475
+                        }
+                      ],
+                      "start": 367,
+                      "end": 486
+                    },
+                    "params": [],
+                    "start": 364,
+                    "end": 486
+                  },
+                  "computed": false,
+                  "static": false,
+                  "kind": "method",
+                  "override": false,
+                  "accessibility": "private",
+                  "start": 348,
+                  "end": 486
+                },
+                {
+                  "type": "MethodDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "changed",
+                    "start": 512,
+                    "end": 519
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 522,
+                      "end": 534
+                    },
+                    "params": [],
+                    "start": 519,
+                    "end": 534
+                  },
+                  "computed": false,
+                  "static": false,
+                  "kind": "method",
+                  "override": false,
+                  "accessibility": "private",
+                  "start": 504,
+                  "end": 534
+                }
+              ],
+              "start": 271,
+              "end": 541
+            },
+            "superClass": null,
+            "start": 243,
+            "end": 541
+          }
+        ],
+        "start": 236,
+        "end": 544
+      },
+      "start": 220,
+      "end": 544
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 544
+}

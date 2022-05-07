@@ -1,0 +1,217 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "stringOrNumber",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSStringKeyword",
+                    "start": 20,
+                    "end": 26
+                  },
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 29,
+                    "end": 35
+                  }
+                ],
+                "start": 20,
+                "end": 35
+              },
+              "start": 18,
+              "end": 35
+            },
+            "start": 4,
+            "end": 35
+          },
+          "init": null,
+          "start": 4,
+          "end": 35
+        }
+      ],
+      "kind": "let",
+      "start": 0,
+      "end": 36
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "typeof",
+          "prefix": true,
+          "argument": {
+            "type": "Identifier",
+            "name": "stringOrNumber",
+            "start": 51,
+            "end": 65
+          },
+          "start": 44,
+          "end": 65
+        },
+        "right": {
+          "type": "Literal",
+          "value": "number",
+          "start": 70,
+          "end": 78
+        },
+        "start": 44,
+        "end": 78
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "stringOrNumber",
+                  "start": 98,
+                  "end": 112
+                },
+                "start": 91,
+                "end": 112
+              },
+              "right": {
+                "type": "Literal",
+                "value": "number",
+                "start": 117,
+                "end": 125
+              },
+              "start": 91,
+              "end": 125
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "stringOrNumber",
+                    "start": 138,
+                    "end": 152
+                  },
+                  "start": 138,
+                  "end": 153
+                }
+              ],
+              "start": 127,
+              "end": 160
+            },
+            "alternate": null,
+            "start": 87,
+            "end": 160
+          }
+        ],
+        "start": 80,
+        "end": 163
+      },
+      "alternate": null,
+      "start": 40,
+      "end": 163
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "===",
+          "left": {
+            "type": "UnaryExpression",
+            "operator": "typeof",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "stringOrNumber",
+              "start": 178,
+              "end": 192
+            },
+            "start": 171,
+            "end": 192
+          },
+          "right": {
+            "type": "Literal",
+            "value": "number",
+            "start": 197,
+            "end": 205
+          },
+          "start": 171,
+          "end": 205
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!==",
+          "left": {
+            "type": "UnaryExpression",
+            "operator": "typeof",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "stringOrNumber",
+              "start": 216,
+              "end": 230
+            },
+            "start": 209,
+            "end": 230
+          },
+          "right": {
+            "type": "Literal",
+            "value": "number",
+            "start": 235,
+            "end": 243
+          },
+          "start": 209,
+          "end": 243
+        },
+        "start": 171,
+        "end": 243
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "Identifier",
+              "name": "stringOrNumber",
+              "start": 252,
+              "end": 266
+            },
+            "start": 252,
+            "end": 267
+          }
+        ],
+        "start": 245,
+        "end": 270
+      },
+      "alternate": null,
+      "start": 167,
+      "end": 270
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 272
+}

@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 262,
+            "end": 266
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 267,
+            "end": 273
+          },
+          "computed": false,
+          "optional": false,
+          "start": 262,
+          "end": 273
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 274,
+            "end": 277
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 279,
+            "end": 282
+          }
+        ],
+        "optional": false,
+        "start": 262,
+        "end": 283
+      },
+      "start": 262,
+      "end": 284
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 286,
+            "end": 290
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 291,
+            "end": 304
+          },
+          "computed": false,
+          "optional": false,
+          "start": 286,
+          "end": 304
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 312,
+                  "end": 324
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert parameters to destructured object",
+                  "start": 326,
+                  "end": 369
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 312,
+                "end": 369
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 376,
+                  "end": 386
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert parameters to destructured object",
+                  "start": 388,
+                  "end": 431
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 376,
+                "end": 431
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 438,
+                  "end": 455
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert parameters to destructured object",
+                  "start": 457,
+                  "end": 500
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 438,
+                "end": 500
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 507,
+                  "end": 517
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "function buildName({ firstName, middleName, restOfName = [] }: { firstName: string; middleName?: string; restOfName?: string[]; }) { }\r\nlet employeeName = buildName({ firstName: \"Joseph\", middleName: \"Samuel\", restOfName: [\"Lucas\", \"MacKinzie\"] });\r\nlet myName = buildName({ firstName: \"Joseph\" });",
+                        "cooked": "function buildName({ firstName, middleName, restOfName = [] }: { firstName: string; middleName?: string; restOfName?: string[]; }) { }\nlet employeeName = buildName({ firstName: \"Joseph\", middleName: \"Samuel\", restOfName: [\"Lucas\", \"MacKinzie\"] });\nlet myName = buildName({ firstName: \"Joseph\" });"
+                      },
+                      "tail": true,
+                      "start": 519,
+                      "end": 819
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 519,
+                  "end": 819
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 507,
+                "end": 819
+              }
+            ],
+            "start": 305,
+            "end": 822
+          }
+        ],
+        "optional": false,
+        "start": 286,
+        "end": 823
+      },
+      "start": 286,
+      "end": 824
+    }
+  ],
+  "sourceType": "script",
+  "start": 262,
+  "end": 824
+}

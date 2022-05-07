@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 9,
+        "end": 12
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "RestElement",
+          "argument": {
+            "type": "Identifier",
+            "name": "rest",
+            "start": 16,
+            "end": 20
+          },
+          "start": 13,
+          "end": 20
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 40,
+                      "end": 46
+                    },
+                    "start": 38,
+                    "end": 46
+                  },
+                  "start": 37,
+                  "end": 46
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "rest",
+                    "start": 49,
+                    "end": 53
+                  },
+                  "property": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 54,
+                    "end": 55
+                  },
+                  "computed": true,
+                  "optional": false,
+                  "start": 49,
+                  "end": 56
+                },
+                "start": 37,
+                "end": 56
+              }
+            ],
+            "kind": "var",
+            "start": 33,
+            "end": 57
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 71,
+              "end": 72
+            },
+            "start": 64,
+            "end": 73
+          }
+        ],
+        "start": 22,
+        "end": 79
+      },
+      "start": 0,
+      "end": 79
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 83
+}

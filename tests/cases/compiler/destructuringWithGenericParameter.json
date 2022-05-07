@@ -1,0 +1,429 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "GenericClass",
+        "start": 6,
+        "end": 18
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "payload",
+              "start": 29,
+              "end": 36
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 38,
+                  "end": 39
+                },
+                "start": 38,
+                "end": 39
+              },
+              "start": 36,
+              "end": 39
+            },
+            "start": 29,
+            "end": 40
+          }
+        ],
+        "start": 22,
+        "end": 43
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 19,
+              "end": 20
+            },
+            "start": 19,
+            "end": 20
+          }
+        ],
+        "start": 18,
+        "end": 21
+      },
+      "start": 0,
+      "end": 43
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "genericObject",
+            "start": 51,
+            "end": 64
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "GenericClass",
+              "start": 71,
+              "end": 83
+            },
+            "arguments": [],
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "greeting",
+                        "start": 86,
+                        "end": 94
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 96,
+                          "end": 102
+                        },
+                        "start": 94,
+                        "end": 102
+                      },
+                      "start": 86,
+                      "end": 102
+                    }
+                  ],
+                  "start": 84,
+                  "end": 104
+                }
+              ],
+              "start": 83,
+              "end": 105
+            },
+            "start": 67,
+            "end": 107
+          },
+          "start": 51,
+          "end": 107
+        }
+      ],
+      "kind": "var",
+      "start": 47,
+      "end": 108
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "genericFunction",
+        "start": 121,
+        "end": 136
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "object",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "GenericClass",
+                "start": 148,
+                "end": 160
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 161,
+                      "end": 162
+                    },
+                    "start": 161,
+                    "end": 162
+                  }
+                ],
+                "start": 160,
+                "end": 163
+              },
+              "start": 148,
+              "end": 163
+            },
+            "start": 146,
+            "end": 163
+          },
+          "start": 140,
+          "end": 163
+        },
+        {
+          "type": "Identifier",
+          "name": "callback",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "payload",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 185,
+                        "end": 186
+                      },
+                      "start": 185,
+                      "end": 186
+                    },
+                    "start": 183,
+                    "end": 186
+                  },
+                  "start": 176,
+                  "end": 186
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSVoidKeyword",
+                  "start": 191,
+                  "end": 195
+                },
+                "start": 188,
+                "end": 195
+              },
+              "start": 175,
+              "end": 195
+            },
+            "start": 173,
+            "end": 195
+          },
+          "start": 165,
+          "end": 195
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "callback",
+                "start": 204,
+                "end": 212
+              },
+              "arguments": [
+                {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "object",
+                    "start": 213,
+                    "end": 219
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "payload",
+                    "start": 220,
+                    "end": 227
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 213,
+                  "end": 227
+                }
+              ],
+              "optional": false,
+              "start": 204,
+              "end": 228
+            },
+            "start": 204,
+            "end": 229
+          }
+        ],
+        "start": 197,
+        "end": 232
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 137,
+              "end": 138
+            },
+            "start": 137,
+            "end": 138
+          }
+        ],
+        "start": 136,
+        "end": 139
+      },
+      "start": 112,
+      "end": 232
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "genericFunction",
+          "start": 236,
+          "end": 251
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "genericObject",
+            "start": 252,
+            "end": 265
+          },
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "ObjectPattern",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "greeting",
+                      "start": 269,
+                      "end": 277
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "name": "greeting",
+                      "start": 269,
+                      "end": 277
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": true,
+                    "kind": "init",
+                    "start": 269,
+                    "end": 277
+                  }
+                ],
+                "start": 268,
+                "end": 278
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "s",
+                        "start": 294,
+                        "end": 295
+                      },
+                      "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "greeting",
+                            "start": 298,
+                            "end": 306
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "toLocaleLowerCase",
+                            "start": 307,
+                            "end": 324
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 298,
+                          "end": 324
+                        },
+                        "arguments": [],
+                        "optional": false,
+                        "start": 298,
+                        "end": 326
+                      },
+                      "start": 294,
+                      "end": 326
+                    }
+                  ],
+                  "kind": "var",
+                  "start": 290,
+                  "end": 327
+                }
+              ],
+              "start": 283,
+              "end": 368
+            },
+            "async": false,
+            "expression": false,
+            "start": 267,
+            "end": 368
+          }
+        ],
+        "optional": false,
+        "start": 236,
+        "end": 369
+      },
+      "start": 236,
+      "end": 370
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 372
+}

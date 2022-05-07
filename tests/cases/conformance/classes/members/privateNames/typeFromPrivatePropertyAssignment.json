@@ -1,0 +1,274 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 25,
+        "end": 28
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 33,
+              "end": 36
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 39,
+                "end": 45
+              },
+              "start": 37,
+              "end": 45
+            },
+            "start": 33,
+            "end": 45
+          }
+        ],
+        "start": 31,
+        "end": 47
+      },
+      "start": 20,
+      "end": 48
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 56,
+        "end": 57
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "PrivateIdentifier",
+              "name": "a",
+              "start": 64,
+              "end": 66
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 69,
+                  "end": 72
+                },
+                "start": 69,
+                "end": 72
+              },
+              "start": 67,
+              "end": 72
+            },
+            "optional": true,
+            "start": 64,
+            "end": 73
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "PrivateIdentifier",
+              "name": "b",
+              "start": 78,
+              "end": 80
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 83,
+                  "end": 86
+                },
+                "start": 83,
+                "end": 86
+              },
+              "start": 81,
+              "end": 86
+            },
+            "optional": true,
+            "start": 78,
+            "end": 87
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "m",
+              "start": 93,
+              "end": 94
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 113,
+                          "end": 114
+                        },
+                        "init": {
+                          "type": "LogicalExpression",
+                          "operator": "||",
+                          "left": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 117,
+                              "end": 121
+                            },
+                            "property": {
+                              "type": "PrivateIdentifier",
+                              "name": "a",
+                              "start": 122,
+                              "end": 124
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 117,
+                            "end": 124
+                          },
+                          "right": {
+                            "type": "ObjectExpression",
+                            "properties": [],
+                            "start": 128,
+                            "end": 130
+                          },
+                          "start": 117,
+                          "end": 130
+                        },
+                        "start": 113,
+                        "end": 130
+                      }
+                    ],
+                    "kind": "const",
+                    "start": 107,
+                    "end": 131
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 140,
+                          "end": 144
+                        },
+                        "property": {
+                          "type": "PrivateIdentifier",
+                          "name": "b",
+                          "start": 145,
+                          "end": 147
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 140,
+                        "end": 147
+                      },
+                      "right": {
+                        "type": "LogicalExpression",
+                        "operator": "||",
+                        "left": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 150,
+                            "end": 154
+                          },
+                          "property": {
+                            "type": "PrivateIdentifier",
+                            "name": "b",
+                            "start": 155,
+                            "end": 157
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 150,
+                          "end": 157
+                        },
+                        "right": {
+                          "type": "ObjectExpression",
+                          "properties": [],
+                          "start": 161,
+                          "end": 163
+                        },
+                        "start": 150,
+                        "end": 163
+                      },
+                      "start": 140,
+                      "end": 163
+                    },
+                    "start": 140,
+                    "end": 164
+                  }
+                ],
+                "start": 97,
+                "end": 170
+              },
+              "params": [],
+              "start": 94,
+              "end": 170
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 93,
+            "end": 170
+          }
+        ],
+        "start": 58,
+        "end": 172
+      },
+      "superClass": null,
+      "start": 50,
+      "end": 172
+    }
+  ],
+  "sourceType": "script",
+  "start": 20,
+  "end": 173
+}

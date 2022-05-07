@@ -1,0 +1,260 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "TypeScript",
+        "start": 7,
+        "end": 17
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSModuleDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "CompilerDiagnostics",
+                "start": 39,
+                "end": 58
+              },
+              "body": {
+                "type": "TSModuleBlock",
+                "body": [
+                  {
+                    "type": "ExportNamedDeclaration",
+                    "declaration": {
+                      "type": "TSInterfaceDeclaration",
+                      "body": {
+                        "type": "TSInterfaceBody",
+                        "body": [
+                          {
+                            "type": "TSMethodSignature",
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "name": "Alert",
+                              "start": 122,
+                              "end": 127
+                            },
+                            "params": [
+                              {
+                                "type": "Identifier",
+                                "name": "output",
+                                "typeAnnotation": {
+                                  "type": "TSTypeAnnotation",
+                                  "typeAnnotation": {
+                                    "type": "TSStringKeyword",
+                                    "start": 136,
+                                    "end": 142
+                                  },
+                                  "start": 134,
+                                  "end": 142
+                                },
+                                "start": 128,
+                                "end": 142
+                              }
+                            ],
+                            "kind": "method",
+                            "returnType": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSVoidKeyword",
+                                "start": 145,
+                                "end": 149
+                              },
+                              "start": 143,
+                              "end": 149
+                            },
+                            "start": 122,
+                            "end": 150
+                          }
+                        ],
+                        "start": 107,
+                        "end": 161
+                      },
+                      "id": {
+                        "type": "Identifier",
+                        "name": "IDiagnosticWriter",
+                        "start": 89,
+                        "end": 106
+                      },
+                      "start": 79,
+                      "end": 161
+                    },
+                    "specifiers": [],
+                    "source": null,
+                    "exportKind": "type",
+                    "assertions": [],
+                    "start": 72,
+                    "end": 161
+                  },
+                  {
+                    "type": "ExportNamedDeclaration",
+                    "declaration": {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "diagnosticWriter",
+                            "start": 184,
+                            "end": 200
+                          },
+                          "init": {
+                            "type": "Literal",
+                            "value": null,
+                            "start": 203,
+                            "end": 207
+                          },
+                          "start": 184,
+                          "end": 207
+                        }
+                      ],
+                      "kind": "var",
+                      "start": 180,
+                      "end": 208
+                    },
+                    "specifiers": [],
+                    "source": null,
+                    "exportKind": "value",
+                    "assertions": [],
+                    "start": 173,
+                    "end": 208
+                  },
+                  {
+                    "type": "ExportNamedDeclaration",
+                    "declaration": {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "Alert",
+                        "start": 236,
+                        "end": 241
+                      },
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "output",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSStringKeyword",
+                              "start": 250,
+                              "end": 256
+                            },
+                            "start": 248,
+                            "end": 256
+                          },
+                          "start": 242,
+                          "end": 256
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "IfStatement",
+                            "test": {
+                              "type": "Identifier",
+                              "name": "diagnosticWriter",
+                              "start": 277,
+                              "end": 293
+                            },
+                            "consequent": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "diagnosticWriter",
+                                        "start": 314,
+                                        "end": 330
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "Alert",
+                                        "start": 331,
+                                        "end": 336
+                                      },
+                                      "computed": false,
+                                      "optional": false,
+                                      "start": 314,
+                                      "end": 336
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "output",
+                                        "start": 337,
+                                        "end": 343
+                                      }
+                                    ],
+                                    "optional": false,
+                                    "start": 314,
+                                    "end": 344
+                                  },
+                                  "start": 314,
+                                  "end": 345
+                                }
+                              ],
+                              "start": 295,
+                              "end": 360
+                            },
+                            "alternate": null,
+                            "start": 273,
+                            "end": 360
+                          }
+                        ],
+                        "start": 258,
+                        "end": 371
+                      },
+                      "start": 227,
+                      "end": 371
+                    },
+                    "specifiers": [],
+                    "source": null,
+                    "exportKind": "value",
+                    "assertions": [],
+                    "start": 220,
+                    "end": 371
+                  }
+                ],
+                "start": 59,
+                "end": 378
+              },
+              "start": 32,
+              "end": 378
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 25,
+            "end": 378
+          }
+        ],
+        "start": 18,
+        "end": 381
+      },
+      "start": 0,
+      "end": 381
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 383
+}

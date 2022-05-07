@@ -1,0 +1,121 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "bar",
+        "start": 126,
+        "end": 129
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "value": 2,
+              "start": 145,
+              "end": 146
+            },
+            "start": 138,
+            "end": 147
+          }
+        ],
+        "start": 132,
+        "end": 149
+      },
+      "start": 111,
+      "end": 149
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 166,
+        "end": 169
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "ClassExpression",
+                "id": null,
+                "body": {
+                  "type": "ClassBody",
+                  "body": [
+                    {
+                      "type": "PropertyDefinition",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "baz",
+                        "start": 205,
+                        "end": 208
+                      },
+                      "value": {
+                        "type": "AwaitExpression",
+                        "argument": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "bar",
+                            "start": 217,
+                            "end": 220
+                          },
+                          "arguments": [],
+                          "optional": false,
+                          "start": 217,
+                          "end": 222
+                        },
+                        "start": 211,
+                        "end": 222
+                      },
+                      "computed": false,
+                      "static": false,
+                      "declare": false,
+                      "override": false,
+                      "start": 205,
+                      "end": 223
+                    }
+                  ],
+                  "start": 195,
+                  "end": 229
+                },
+                "superClass": null,
+                "start": 189,
+                "end": 229
+              },
+              "arguments": [],
+              "start": 185,
+              "end": 229
+            },
+            "start": 178,
+            "end": 230
+          }
+        ],
+        "start": 172,
+        "end": 232
+      },
+      "start": 151,
+      "end": 232
+    }
+  ],
+  "sourceType": "script",
+  "start": 111,
+  "end": 233
+}

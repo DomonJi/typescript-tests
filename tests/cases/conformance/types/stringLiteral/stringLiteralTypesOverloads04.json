@@ -1,0 +1,190 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 43,
+        "end": 44
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "p",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSUnionType",
+                      "types": [
+                        {
+                          "type": "TSLiteralType",
+                          "literal": {
+                            "type": "Literal",
+                            "value": "foo",
+                            "start": 52,
+                            "end": 57
+                          },
+                          "start": 52,
+                          "end": 57
+                        },
+                        {
+                          "type": "TSLiteralType",
+                          "literal": {
+                            "type": "Literal",
+                            "value": "bar",
+                            "start": 60,
+                            "end": 65
+                          },
+                          "start": 60,
+                          "end": 65
+                        }
+                      ],
+                      "start": 52,
+                      "end": 65
+                    },
+                    "start": 50,
+                    "end": 65
+                  },
+                  "start": 49,
+                  "end": 65
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSLiteralType",
+                  "literal": {
+                    "type": "Literal",
+                    "value": "foo",
+                    "start": 70,
+                    "end": 75
+                  },
+                  "start": 70,
+                  "end": 75
+                },
+                "start": 67,
+                "end": 75
+              },
+              "start": 48,
+              "end": 75
+            },
+            "start": 46,
+            "end": 75
+          },
+          "start": 45,
+          "end": 75
+        }
+      ],
+      "declare": true,
+      "start": 26,
+      "end": 77
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "f",
+          "start": 81,
+          "end": 82
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "y",
+                "start": 83,
+                "end": 84
+              }
+            ],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "z",
+                        "start": 101,
+                        "end": 102
+                      },
+                      "init": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "y",
+                          "start": 105,
+                          "end": 106
+                        },
+                        "right": {
+                          "type": "Literal",
+                          "value": "foo",
+                          "start": 109,
+                          "end": 114
+                        },
+                        "start": 105,
+                        "end": 114
+                      },
+                      "start": 101,
+                      "end": 114
+                    }
+                  ],
+                  "kind": "const",
+                  "start": 95,
+                  "end": 115
+                },
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "z",
+                    "start": 128,
+                    "end": 129
+                  },
+                  "start": 121,
+                  "end": 130
+                }
+              ],
+              "start": 88,
+              "end": 133
+            },
+            "async": false,
+            "expression": false,
+            "start": 83,
+            "end": 133
+          }
+        ],
+        "optional": false,
+        "start": 81,
+        "end": 134
+      },
+      "start": 81,
+      "end": 134
+    }
+  ],
+  "sourceType": "script",
+  "start": 26,
+  "end": 134
+}

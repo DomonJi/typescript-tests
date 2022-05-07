@@ -1,0 +1,374 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 21,
+              "end": 22
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 24,
+                "end": 30
+              },
+              "start": 22,
+              "end": 30
+            },
+            "accessibility": "private",
+            "start": 13,
+            "end": 31
+          }
+        ],
+        "start": 11,
+        "end": 33
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 33
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 41,
+        "end": 48
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 72,
+              "end": 73
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 75,
+                "end": 81
+              },
+              "start": 73,
+              "end": 81
+            },
+            "accessibility": "private",
+            "start": 64,
+            "end": 82
+          }
+        ],
+        "start": 62,
+        "end": 84
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 57,
+        "end": 61
+      },
+      "start": 35,
+      "end": 84
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "i",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 169,
+                    "end": 175
+                  },
+                  "start": 167,
+                  "end": 175
+                },
+                "start": 166,
+                "end": 175
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Base",
+                  "start": 178,
+                  "end": 182
+                },
+                "start": 178,
+                "end": 182
+              },
+              "start": 176,
+              "end": 182
+            },
+            "start": 165,
+            "end": 183
+          }
+        ],
+        "start": 158,
+        "end": 186
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 154,
+        "end": 157
+      },
+      "start": 144,
+      "end": 186
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "i",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 247,
+                    "end": 253
+                  },
+                  "start": 245,
+                  "end": 253
+                },
+                "start": 244,
+                "end": 253
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TBase",
+                  "start": 256,
+                  "end": 261
+                },
+                "start": 256,
+                "end": 261
+              },
+              "start": 254,
+              "end": 261
+            },
+            "start": 243,
+            "end": 262
+          }
+        ],
+        "start": 236,
+        "end": 265
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "FooOf",
+        "start": 198,
+        "end": 203
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TBase",
+              "start": 204,
+              "end": 209
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Base",
+                "start": 218,
+                "end": 222
+              },
+              "start": 218,
+              "end": 222
+            },
+            "start": 204,
+            "end": 222
+          }
+        ],
+        "start": 203,
+        "end": 223
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 232,
+            "end": 235
+          },
+          "start": 232,
+          "end": 235
+        }
+      ],
+      "start": 188,
+      "end": 265
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "FooOf",
+                  "start": 274,
+                  "end": 279
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Derived",
+                        "start": 280,
+                        "end": 287
+                      },
+                      "start": 280,
+                      "end": 287
+                    }
+                  ],
+                  "start": 279,
+                  "end": 288
+                },
+                "start": 274,
+                "end": 288
+              },
+              "start": 272,
+              "end": 288
+            },
+            "start": 271,
+            "end": 288
+          },
+          "init": {
+            "type": "Literal",
+            "value": null,
+            "start": 291,
+            "end": 295
+          },
+          "start": 271,
+          "end": 295
+        }
+      ],
+      "kind": "var",
+      "start": 267,
+      "end": 296
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Derived",
+                  "start": 305,
+                  "end": 312
+                },
+                "start": 305,
+                "end": 312
+              },
+              "start": 303,
+              "end": 312
+            },
+            "start": 302,
+            "end": 312
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 315,
+              "end": 316
+            },
+            "property": {
+              "type": "Literal",
+              "value": 0,
+              "start": 317,
+              "end": 318
+            },
+            "computed": true,
+            "optional": false,
+            "start": 315,
+            "end": 319
+          },
+          "start": 302,
+          "end": 319
+        }
+      ],
+      "kind": "var",
+      "start": 298,
+      "end": 320
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 554
+}

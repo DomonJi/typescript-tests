@@ -1,0 +1,176 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Message",
+        "start": 6,
+        "end": 13
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "value",
+              "start": 21,
+              "end": 26
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 28,
+                "end": 34
+              },
+              "start": 26,
+              "end": 34
+            },
+            "start": 21,
+            "end": 35
+          }
+        ],
+        "start": 14,
+        "end": 38
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 38
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "saySize",
+        "start": 51,
+        "end": 58
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "message",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Message",
+                    "start": 68,
+                    "end": 75
+                  },
+                  "start": 68,
+                  "end": 75
+                },
+                {
+                  "type": "TSArrayType",
+                  "elementType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Message",
+                      "start": 78,
+                      "end": 85
+                    },
+                    "start": 78,
+                    "end": 85
+                  },
+                  "start": 78,
+                  "end": 87
+                }
+              ],
+              "start": 68,
+              "end": 87
+            },
+            "start": 66,
+            "end": 87
+          },
+          "start": 59,
+          "end": 87
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "instanceof",
+              "left": {
+                "type": "Identifier",
+                "name": "message",
+                "start": 100,
+                "end": 107
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "Array",
+                "start": 119,
+                "end": 124
+              },
+              "start": 100,
+              "end": 124
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "message",
+                      "start": 144,
+                      "end": 151
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "length",
+                      "start": 152,
+                      "end": 158
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 144,
+                    "end": 158
+                  },
+                  "start": 137,
+                  "end": 159
+                }
+              ],
+              "start": 126,
+              "end": 202
+            },
+            "alternate": null,
+            "start": 96,
+            "end": 202
+          }
+        ],
+        "start": 89,
+        "end": 205
+      },
+      "start": 42,
+      "end": 205
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 207
+}

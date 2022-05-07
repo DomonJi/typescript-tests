@@ -1,0 +1,243 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 33,
+        "end": 36
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "foox",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 109,
+                "end": 110
+              },
+              "start": 109,
+              "end": 110
+            },
+            "start": 107,
+            "end": 110
+          },
+          "start": 103,
+          "end": 110
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 112,
+        "end": 115
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 37,
+              "end": 38
+            },
+            "constraint": {
+              "type": "TSMappedType",
+              "typeParameter": {
+                "type": "TSTypeParameter",
+                "name": {
+                  "type": "Identifier",
+                  "name": "K",
+                  "start": 50,
+                  "end": 51
+                },
+                "constraint": {
+                  "type": "TSTypeOperator",
+                  "operator": "keyof",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 61,
+                      "end": 62
+                    },
+                    "start": 61,
+                    "end": 62
+                  },
+                  "start": 55,
+                  "end": 62
+                },
+                "start": 50,
+                "end": 62
+              },
+              "nameType": {
+                "type": "TSTemplateLiteralType",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "",
+                      "cooked": ""
+                    },
+                    "tail": false,
+                    "start": 66,
+                    "end": 69
+                  },
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "y",
+                      "cooked": "y"
+                    },
+                    "tail": true,
+                    "start": 87,
+                    "end": 90
+                  }
+                ],
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Extract",
+                      "start": 69,
+                      "end": 76
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "K",
+                            "start": 77,
+                            "end": 78
+                          },
+                          "start": 77,
+                          "end": 78
+                        },
+                        {
+                          "type": "TSStringKeyword",
+                          "start": 80,
+                          "end": 86
+                        }
+                      ],
+                      "start": 76,
+                      "end": 87
+                    },
+                    "start": 69,
+                    "end": 87
+                  }
+                ],
+                "start": 66,
+                "end": 90
+              },
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 93,
+                "end": 99
+              },
+              "start": 47,
+              "end": 101
+            },
+            "start": 37,
+            "end": 101
+          }
+        ],
+        "start": 36,
+        "end": 102
+      },
+      "start": 24,
+      "end": 115
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "start": 125,
+            "end": 126
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 131,
+                  "end": 132
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 1,
+                  "start": 134,
+                  "end": 135
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 131,
+                "end": 135
+              }
+            ],
+            "start": 129,
+            "end": 137
+          },
+          "start": 125,
+          "end": 137
+        }
+      ],
+      "kind": "const",
+      "start": 119,
+      "end": 138
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 142,
+          "end": 145
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "c",
+            "start": 146,
+            "end": 147
+          }
+        ],
+        "optional": false,
+        "start": 142,
+        "end": 148
+      },
+      "start": 142,
+      "end": 149
+    }
+  ],
+  "sourceType": "script",
+  "start": 24,
+  "end": 151
+}

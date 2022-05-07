@@ -1,0 +1,400 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./parent",
+        "start": 76,
+        "end": 86
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "ParentThing",
+            "start": 57,
+            "end": 68
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "ParentThing",
+            "start": 57,
+            "end": 68
+          },
+          "importKind": "value",
+          "start": 57,
+          "end": 68
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 48,
+      "end": 87
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Literal",
+        "value": "./parent",
+        "start": 106,
+        "end": 116
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSInterfaceDeclaration",
+            "body": {
+              "type": "TSInterfaceBody",
+              "body": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "add",
+                    "start": 157,
+                    "end": 160
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSFunctionType",
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "a",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSNumberKeyword",
+                              "start": 166,
+                              "end": 172
+                            },
+                            "start": 164,
+                            "end": 172
+                          },
+                          "start": 163,
+                          "end": 172
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "b",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSNumberKeyword",
+                              "start": 177,
+                              "end": 183
+                            },
+                            "start": 175,
+                            "end": 183
+                          },
+                          "start": 174,
+                          "end": 183
+                        }
+                      ],
+                      "returnType": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSNumberKeyword",
+                          "start": 188,
+                          "end": 194
+                        },
+                        "start": 185,
+                        "end": 194
+                      },
+                      "start": 162,
+                      "end": 194
+                    },
+                    "start": 160,
+                    "end": 194
+                  },
+                  "start": 157,
+                  "end": 195
+                }
+              ],
+              "start": 146,
+              "end": 202
+            },
+            "id": {
+              "type": "Identifier",
+              "name": "ParentThing",
+              "start": 134,
+              "end": 145
+            },
+            "start": 124,
+            "end": 202
+          }
+        ],
+        "start": 117,
+        "end": 205
+      },
+      "declare": true,
+      "start": 91,
+      "end": 205
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "child1",
+          "start": 225,
+          "end": 231
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "prototype",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ParentThing",
+                  "start": 243,
+                  "end": 254
+                },
+                "start": 243,
+                "end": 254
+              },
+              "start": 241,
+              "end": 254
+            },
+            "start": 232,
+            "end": 254
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "prototype",
+                    "start": 263,
+                    "end": 272
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "add",
+                    "start": 273,
+                    "end": 276
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 263,
+                  "end": 276
+                },
+                "right": {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "a",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSNumberKeyword",
+                          "start": 283,
+                          "end": 289
+                        },
+                        "start": 281,
+                        "end": 289
+                      },
+                      "start": 280,
+                      "end": 289
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "b",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSNumberKeyword",
+                          "start": 294,
+                          "end": 300
+                        },
+                        "start": 292,
+                        "end": 300
+                      },
+                      "start": 291,
+                      "end": 300
+                    }
+                  ],
+                  "body": {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 305,
+                      "end": 306
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "b",
+                      "start": 309,
+                      "end": 310
+                    },
+                    "start": 305,
+                    "end": 310
+                  },
+                  "async": false,
+                  "expression": true,
+                  "start": 279,
+                  "end": 310
+                },
+                "start": 263,
+                "end": 310
+              },
+              "start": 263,
+              "end": 311
+            }
+          ],
+          "start": 256,
+          "end": 314
+        },
+        "start": 216,
+        "end": 314
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 209,
+      "end": 314
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./child1",
+        "start": 366,
+        "end": 376
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "child1",
+            "start": 352,
+            "end": 358
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "child1",
+            "start": 352,
+            "end": 358
+          },
+          "importKind": "value",
+          "start": 352,
+          "end": 358
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 343,
+      "end": 377
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "ParentThing",
+          "start": 486,
+          "end": 497
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "start": 521,
+          "end": 523
+        },
+        "superClass": null,
+        "implements": [
+          {
+            "type": "TSClassImplements",
+            "expression": {
+              "type": "Identifier",
+              "name": "ParentThing",
+              "start": 509,
+              "end": 520
+            },
+            "start": 509,
+            "end": 520
+          }
+        ],
+        "start": 480,
+        "end": 523
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 473,
+      "end": 523
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "child1",
+          "start": 527,
+          "end": 533
+        },
+        "arguments": [
+          {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "ParentThing",
+              "start": 534,
+              "end": 545
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "prototype",
+              "start": 546,
+              "end": 555
+            },
+            "computed": false,
+            "optional": false,
+            "start": 534,
+            "end": 555
+          }
+        ],
+        "optional": false,
+        "start": 527,
+        "end": 556
+      },
+      "start": 527,
+      "end": 557
+    }
+  ],
+  "sourceType": "module",
+  "start": 48,
+  "end": 557
+}

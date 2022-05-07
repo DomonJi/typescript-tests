@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 214,
+            "end": 220
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 221,
+            "end": 231
+          },
+          "computed": false,
+          "optional": false,
+          "start": 214,
+          "end": 231
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 239,
+                  "end": 244
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixAwaitInSyncFunction",
+                  "start": 246,
+                  "end": 270
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 239,
+                "end": 270
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 277,
+                  "end": 294
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add all missing 'async' modifiers",
+                  "start": 296,
+                  "end": 331
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 277,
+                "end": 331
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 338,
+                  "end": 352
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "async function f() {\r\n    await Promise.resolve();\r\n    await Promise.resolve();\r\n}\r\n\r\nconst g = async () => {\r\n    await f();\r\n    await f();\r\n}",
+                        "cooked": "async function f() {\n    await Promise.resolve();\n    await Promise.resolve();\n}\n\nconst g = async () => {\n    await f();\n    await f();\n}"
+                      },
+                      "tail": true,
+                      "start": 355,
+                      "end": 502
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 355,
+                  "end": 502
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 338,
+                "end": 502
+              }
+            ],
+            "start": 232,
+            "end": 506
+          }
+        ],
+        "optional": false,
+        "start": 214,
+        "end": 507
+      },
+      "start": 214,
+      "end": 508
+    }
+  ],
+  "sourceType": "script",
+  "start": 214,
+  "end": 510
+}

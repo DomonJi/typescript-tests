@@ -1,0 +1,327 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "takeObject",
+        "start": 31,
+        "end": 41
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "o",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSObjectKeyword",
+              "start": 45,
+              "end": 51
+            },
+            "start": 43,
+            "end": 51
+          },
+          "start": 42,
+          "end": 51
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 53,
+        "end": 55
+      },
+      "start": 22,
+      "end": 55
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "returnObject",
+        "start": 65,
+        "end": 77
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ObjectExpression",
+              "properties": [],
+              "start": 101,
+              "end": 103
+            },
+            "start": 94,
+            "end": 104
+          }
+        ],
+        "start": 88,
+        "end": 106
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSObjectKeyword",
+          "start": 81,
+          "end": 87
+        },
+        "start": 79,
+        "end": 87
+      },
+      "start": 56,
+      "end": 106
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "nonPrimitive",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSObjectKeyword",
+                "start": 126,
+                "end": 132
+              },
+              "start": 124,
+              "end": 132
+            },
+            "start": 112,
+            "end": 132
+          },
+          "init": null,
+          "start": 112,
+          "end": 132
+        }
+      ],
+      "kind": "var",
+      "start": 108,
+      "end": 133
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "primitive",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 149,
+                "end": 156
+              },
+              "start": 147,
+              "end": 156
+            },
+            "start": 138,
+            "end": 156
+          },
+          "init": null,
+          "start": 138,
+          "end": 156
+        }
+      ],
+      "kind": "var",
+      "start": 134,
+      "end": 157
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "takeObject",
+          "start": 159,
+          "end": 169
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "nonPrimitive",
+            "start": 170,
+            "end": 182
+          }
+        ],
+        "optional": false,
+        "start": 159,
+        "end": 183
+      },
+      "start": 159,
+      "end": 184
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "nonPrimitive",
+          "start": 185,
+          "end": 197
+        },
+        "right": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "returnObject",
+            "start": 200,
+            "end": 212
+          },
+          "arguments": [],
+          "optional": false,
+          "start": 200,
+          "end": 214
+        },
+        "start": 185,
+        "end": 214
+      },
+      "start": 185,
+      "end": 215
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "takeObject",
+          "start": 217,
+          "end": 227
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "primitive",
+            "start": 228,
+            "end": 237
+          }
+        ],
+        "optional": false,
+        "start": 217,
+        "end": 238
+      },
+      "start": 217,
+      "end": 239
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "primitive",
+          "start": 256,
+          "end": 265
+        },
+        "right": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "returnObject",
+            "start": 268,
+            "end": 280
+          },
+          "arguments": [],
+          "optional": false,
+          "start": 268,
+          "end": 282
+        },
+        "start": 256,
+        "end": 282
+      },
+      "start": 256,
+      "end": 283
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "returnError",
+        "start": 310,
+        "end": 321
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "ret",
+                  "start": 342,
+                  "end": 345
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": 123,
+                  "start": 348,
+                  "end": 351
+                },
+                "start": 342,
+                "end": 351
+              }
+            ],
+            "kind": "var",
+            "start": 338,
+            "end": 352
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "ret",
+              "start": 364,
+              "end": 367
+            },
+            "start": 357,
+            "end": 368
+          }
+        ],
+        "start": 332,
+        "end": 386
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSObjectKeyword",
+          "start": 325,
+          "end": 331
+        },
+        "start": 323,
+        "end": 331
+      },
+      "start": 301,
+      "end": 386
+    }
+  ],
+  "sourceType": "script",
+  "start": 22,
+  "end": 387
+}

@@ -1,0 +1,725 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "CharacterInfo",
+        "start": 47,
+        "end": 60
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "isDecimalDigit",
+              "start": 82,
+              "end": 96
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "LogicalExpression",
+                      "operator": "&&",
+                      "left": {
+                        "type": "BinaryExpression",
+                        "operator": ">=",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "start": 135,
+                          "end": 136
+                        },
+                        "right": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "CharacterCodes",
+                            "start": 140,
+                            "end": 154
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "_0",
+                            "start": 155,
+                            "end": 157
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 140,
+                          "end": 157
+                        },
+                        "start": 135,
+                        "end": 157
+                      },
+                      "right": {
+                        "type": "BinaryExpression",
+                        "operator": "<=",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "start": 161,
+                          "end": 162
+                        },
+                        "right": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "CharacterCodes",
+                            "start": 166,
+                            "end": 180
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "_9",
+                            "start": 181,
+                            "end": 183
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 166,
+                          "end": 183
+                        },
+                        "start": 161,
+                        "end": 183
+                      },
+                      "start": 135,
+                      "end": 183
+                    },
+                    "start": 128,
+                    "end": 184
+                  }
+                ],
+                "start": 117,
+                "end": 191
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "c",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 100,
+                      "end": 106
+                    },
+                    "start": 98,
+                    "end": 106
+                  },
+                  "start": 97,
+                  "end": 106
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSBooleanKeyword",
+                  "start": 109,
+                  "end": 116
+                },
+                "start": 107,
+                "end": 116
+              },
+              "start": 96,
+              "end": 191
+            },
+            "computed": false,
+            "static": true,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 68,
+            "end": 191
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "isHexDigit",
+              "start": 213,
+              "end": 223
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "LogicalExpression",
+                      "operator": "||",
+                      "left": {
+                        "type": "LogicalExpression",
+                        "operator": "||",
+                        "left": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "isDecimalDigit",
+                            "start": 262,
+                            "end": 276
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 277,
+                              "end": 278
+                            }
+                          ],
+                          "optional": false,
+                          "start": 262,
+                          "end": 279
+                        },
+                        "right": {
+                          "type": "LogicalExpression",
+                          "operator": "&&",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": ">=",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 300,
+                              "end": 301
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "CharacterCodes",
+                                "start": 305,
+                                "end": 319
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "A",
+                                "start": 320,
+                                "end": 321
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 305,
+                              "end": 321
+                            },
+                            "start": 300,
+                            "end": 321
+                          },
+                          "right": {
+                            "type": "BinaryExpression",
+                            "operator": "<=",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 325,
+                              "end": 326
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "CharacterCodes",
+                                "start": 330,
+                                "end": 344
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "F",
+                                "start": 345,
+                                "end": 346
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 330,
+                              "end": 346
+                            },
+                            "start": 325,
+                            "end": 346
+                          },
+                          "start": 300,
+                          "end": 346
+                        },
+                        "start": 262,
+                        "end": 347
+                      },
+                      "right": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                          "type": "BinaryExpression",
+                          "operator": ">=",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "c",
+                            "start": 368,
+                            "end": 369
+                          },
+                          "right": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "CharacterCodes",
+                              "start": 373,
+                              "end": 387
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "a",
+                              "start": 388,
+                              "end": 389
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 373,
+                            "end": 389
+                          },
+                          "start": 368,
+                          "end": 389
+                        },
+                        "right": {
+                          "type": "BinaryExpression",
+                          "operator": "<=",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "c",
+                            "start": 393,
+                            "end": 394
+                          },
+                          "right": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "CharacterCodes",
+                              "start": 398,
+                              "end": 412
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "f",
+                              "start": 413,
+                              "end": 414
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 398,
+                            "end": 414
+                          },
+                          "start": 393,
+                          "end": 414
+                        },
+                        "start": 368,
+                        "end": 414
+                      },
+                      "start": 262,
+                      "end": 415
+                    },
+                    "start": 255,
+                    "end": 416
+                  }
+                ],
+                "start": 244,
+                "end": 423
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "c",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 227,
+                      "end": 233
+                    },
+                    "start": 225,
+                    "end": 233
+                  },
+                  "start": 224,
+                  "end": 233
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSBooleanKeyword",
+                  "start": 236,
+                  "end": 243
+                },
+                "start": 234,
+                "end": 243
+              },
+              "start": 223,
+              "end": 423
+            },
+            "computed": false,
+            "static": true,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 199,
+            "end": 423
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "hexValue",
+              "start": 445,
+              "end": 453
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "Debug",
+                          "start": 484,
+                          "end": 489
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "assert",
+                          "start": 490,
+                          "end": 496
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 484,
+                        "end": 496
+                      },
+                      "arguments": [
+                        {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "isHexDigit",
+                            "start": 497,
+                            "end": 507
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 508,
+                              "end": 509
+                            }
+                          ],
+                          "optional": false,
+                          "start": 497,
+                          "end": 510
+                        }
+                      ],
+                      "optional": false,
+                      "start": 484,
+                      "end": 511
+                    },
+                    "start": 484,
+                    "end": 512
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ConditionalExpression",
+                      "test": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "isDecimalDigit",
+                          "start": 529,
+                          "end": 543
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "c",
+                            "start": 544,
+                            "end": 545
+                          }
+                        ],
+                        "optional": false,
+                        "start": 529,
+                        "end": 546
+                      },
+                      "consequent": {
+                        "type": "BinaryExpression",
+                        "operator": "-",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "start": 563,
+                          "end": 564
+                        },
+                        "right": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "CharacterCodes",
+                            "start": 567,
+                            "end": 581
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "_0",
+                            "start": 582,
+                            "end": 584
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 567,
+                          "end": 584
+                        },
+                        "start": 563,
+                        "end": 584
+                      },
+                      "alternate": {
+                        "type": "ConditionalExpression",
+                        "test": {
+                          "type": "LogicalExpression",
+                          "operator": "&&",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": ">=",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 602,
+                              "end": 603
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "CharacterCodes",
+                                "start": 607,
+                                "end": 621
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "A",
+                                "start": 622,
+                                "end": 623
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 607,
+                              "end": 623
+                            },
+                            "start": 602,
+                            "end": 623
+                          },
+                          "right": {
+                            "type": "BinaryExpression",
+                            "operator": "<=",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 627,
+                              "end": 628
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "CharacterCodes",
+                                "start": 632,
+                                "end": 646
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "F",
+                                "start": 647,
+                                "end": 648
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 632,
+                              "end": 648
+                            },
+                            "start": 627,
+                            "end": 648
+                          },
+                          "start": 602,
+                          "end": 648
+                        },
+                        "consequent": {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": "-",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 669,
+                              "end": 670
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "CharacterCodes",
+                                "start": 673,
+                                "end": 687
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "A",
+                                "start": 688,
+                                "end": 689
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 673,
+                              "end": 689
+                            },
+                            "start": 669,
+                            "end": 689
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 10,
+                            "start": 692,
+                            "end": 694
+                          },
+                          "start": 669,
+                          "end": 694
+                        },
+                        "alternate": {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": "-",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "c",
+                              "start": 714,
+                              "end": 715
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "CharacterCodes",
+                                "start": 718,
+                                "end": 732
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "a",
+                                "start": 733,
+                                "end": 734
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 718,
+                              "end": 734
+                            },
+                            "start": 714,
+                            "end": 734
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 10,
+                            "start": 737,
+                            "end": 739
+                          },
+                          "start": 714,
+                          "end": 739
+                        },
+                        "start": 601,
+                        "end": 739
+                      },
+                      "start": 529,
+                      "end": 739
+                    },
+                    "start": 522,
+                    "end": 740
+                  }
+                ],
+                "start": 473,
+                "end": 747
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "c",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 457,
+                      "end": 463
+                    },
+                    "start": 455,
+                    "end": 463
+                  },
+                  "start": 454,
+                  "end": 463
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSNumberKeyword",
+                  "start": 466,
+                  "end": 472
+                },
+                "start": 464,
+                "end": 472
+              },
+              "start": 453,
+              "end": 747
+            },
+            "computed": false,
+            "static": true,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 431,
+            "end": 747
+          }
+        ],
+        "start": 61,
+        "end": 750
+      },
+      "superClass": null,
+      "start": 41,
+      "end": 750
+    }
+  ],
+  "sourceType": "script",
+  "start": 41,
+  "end": 754
+}

@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 220,
+            "end": 226
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 227,
+            "end": 234
+          },
+          "computed": false,
+          "optional": false,
+          "start": 220,
+          "end": 234
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 242,
+                  "end": 253
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I1'",
+                  "start": 255,
+                  "end": 281
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 242,
+                "end": 281
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 288,
+                  "end": 302
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class C1 { }\r\nabstract class C2 {\r\n    abstract fＡ<T extends number>(): T;\r\n}\r\ninterface I1 extends C1, C2 { }\r\nclass C3 implements I1 {\r\n    fＡ<T extends number>(): T {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "abstract class C1 { }\nabstract class C2 {\n    abstract fＡ<T extends number>(): T;\n}\ninterface I1 extends C1, C2 { }\nclass C3 implements I1 {\n    fＡ<T extends number>(): T {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 305,
+                      "end": 548
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 305,
+                  "end": 548
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 288,
+                "end": 548
+              }
+            ],
+            "start": 235,
+            "end": 552
+          }
+        ],
+        "optional": false,
+        "start": 220,
+        "end": 553
+      },
+      "start": 220,
+      "end": 554
+    }
+  ],
+  "sourceType": "script",
+  "start": 220,
+  "end": 556
+}

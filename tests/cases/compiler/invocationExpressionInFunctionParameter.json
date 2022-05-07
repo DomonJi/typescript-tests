@@ -1,0 +1,99 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo1",
+        "start": 9,
+        "end": 13
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "val",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 19,
+              "end": 25
+            },
+            "start": 17,
+            "end": 25
+          },
+          "start": 14,
+          "end": 25
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 27,
+        "end": 31
+      },
+      "start": 0,
+      "end": 31
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo3",
+        "start": 42,
+        "end": 46
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "AssignmentPattern",
+          "left": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 47,
+            "end": 48
+          },
+          "right": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "foo1",
+              "start": 51,
+              "end": 55
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 123,
+                "start": 56,
+                "end": 59
+              }
+            ],
+            "optional": false,
+            "start": 51,
+            "end": 60
+          },
+          "start": 47,
+          "end": 60
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 62,
+        "end": 100
+      },
+      "start": 33,
+      "end": 100
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 100
+}

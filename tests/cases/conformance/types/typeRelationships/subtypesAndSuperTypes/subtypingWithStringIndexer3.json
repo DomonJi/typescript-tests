@@ -1,0 +1,935 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 81,
+              "end": 84
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 86,
+                "end": 92
+              },
+              "start": 84,
+              "end": 92
+            },
+            "start": 81,
+            "end": 93
+          }
+        ],
+        "start": 79,
+        "end": 95
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 74,
+        "end": 78
+      },
+      "start": 64,
+      "end": 95
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 130,
+              "end": 133
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 135,
+                "end": 141
+              },
+              "start": 133,
+              "end": 141
+            },
+            "start": 130,
+            "end": 142
+          }
+        ],
+        "start": 128,
+        "end": 144
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 107,
+        "end": 114
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Base",
+            "start": 123,
+            "end": 127
+          },
+          "start": 123,
+          "end": 127
+        }
+      ],
+      "start": 97,
+      "end": 144
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "baz",
+              "start": 183,
+              "end": 186
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 188,
+                "end": 194
+              },
+              "start": 186,
+              "end": 194
+            },
+            "start": 183,
+            "end": 195
+          }
+        ],
+        "start": 181,
+        "end": 197
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Derived2",
+        "start": 156,
+        "end": 164
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Derived",
+            "start": 173,
+            "end": 180
+          },
+          "start": 173,
+          "end": 180
+        }
+      ],
+      "start": 146,
+      "end": 197
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 207,
+        "end": 208
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 220,
+                    "end": 226
+                  },
+                  "start": 218,
+                  "end": 226
+                },
+                "start": 217,
+                "end": 226
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Derived",
+                  "start": 229,
+                  "end": 236
+                },
+                "start": 229,
+                "end": 236
+              },
+              "start": 227,
+              "end": 236
+            },
+            "start": 216,
+            "end": 237
+          }
+        ],
+        "start": 209,
+        "end": 240
+      },
+      "superClass": null,
+      "start": 201,
+      "end": 240
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 250,
+        "end": 251
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 273,
+                    "end": 279
+                  },
+                  "start": 271,
+                  "end": 279
+                },
+                "start": 270,
+                "end": 279
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Base",
+                  "start": 282,
+                  "end": 286
+                },
+                "start": 282,
+                "end": 286
+              },
+              "start": 280,
+              "end": 286
+            },
+            "start": 269,
+            "end": 287
+          }
+        ],
+        "start": 262,
+        "end": 299
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 260,
+        "end": 261
+      },
+      "start": 244,
+      "end": 299
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "B2",
+        "start": 309,
+        "end": 311
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 333,
+                    "end": 339
+                  },
+                  "start": 331,
+                  "end": 339
+                },
+                "start": 330,
+                "end": 339
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Derived2",
+                  "start": 342,
+                  "end": 350
+                },
+                "start": 342,
+                "end": 350
+              },
+              "start": 340,
+              "end": 350
+            },
+            "start": 329,
+            "end": 351
+          }
+        ],
+        "start": 322,
+        "end": 360
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 320,
+        "end": 321
+      },
+      "start": 303,
+      "end": 360
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Generics",
+        "start": 371,
+        "end": 379
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 393,
+              "end": 394
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "TSIndexSignature",
+                  "parameters": [
+                    {
+                      "type": "Identifier",
+                      "name": "x",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 429,
+                          "end": 435
+                        },
+                        "start": 427,
+                        "end": 435
+                      },
+                      "start": 426,
+                      "end": 435
+                    }
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 438,
+                        "end": 439
+                      },
+                      "start": 438,
+                      "end": 439
+                    },
+                    "start": 436,
+                    "end": 439
+                  },
+                  "start": 425,
+                  "end": 440
+                }
+              ],
+              "start": 414,
+              "end": 447
+            },
+            "superClass": null,
+            "typeParameters": {
+              "type": "TSTypeParameterDeclaration",
+              "params": [
+                {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 395,
+                    "end": 396
+                  },
+                  "constraint": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Derived",
+                      "start": 405,
+                      "end": 412
+                    },
+                    "start": 405,
+                    "end": 412
+                  },
+                  "start": 395,
+                  "end": 412
+                }
+              ],
+              "start": 394,
+              "end": 413
+            },
+            "start": 387,
+            "end": 447
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "B",
+              "start": 461,
+              "end": 462
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "TSIndexSignature",
+                  "parameters": [
+                    {
+                      "type": "Identifier",
+                      "name": "x",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 494,
+                          "end": 500
+                        },
+                        "start": 492,
+                        "end": 500
+                      },
+                      "start": 491,
+                      "end": 500
+                    }
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Derived",
+                        "start": 503,
+                        "end": 510
+                      },
+                      "start": 503,
+                      "end": 510
+                    },
+                    "start": 501,
+                    "end": 510
+                  },
+                  "start": 490,
+                  "end": 511
+                }
+              ],
+              "start": 479,
+              "end": 527
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 471,
+              "end": 472
+            },
+            "superTypeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Base",
+                    "start": 473,
+                    "end": 477
+                  },
+                  "start": 473,
+                  "end": 477
+                }
+              ],
+              "start": 472,
+              "end": 478
+            },
+            "start": 455,
+            "end": 527
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "B2",
+              "start": 541,
+              "end": 543
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "TSIndexSignature",
+                  "parameters": [
+                    {
+                      "type": "Identifier",
+                      "name": "x",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 578,
+                          "end": 584
+                        },
+                        "start": 576,
+                        "end": 584
+                      },
+                      "start": 575,
+                      "end": 584
+                    }
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Derived2",
+                        "start": 587,
+                        "end": 595
+                      },
+                      "start": 587,
+                      "end": 595
+                    },
+                    "start": 585,
+                    "end": 595
+                  },
+                  "start": 574,
+                  "end": 596
+                }
+              ],
+              "start": 563,
+              "end": 609
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 552,
+              "end": 553
+            },
+            "superTypeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Derived",
+                    "start": 554,
+                    "end": 561
+                  },
+                  "start": 554,
+                  "end": 561
+                }
+              ],
+              "start": 553,
+              "end": 562
+            },
+            "start": 535,
+            "end": 609
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "B3",
+              "start": 623,
+              "end": 625
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "TSIndexSignature",
+                  "parameters": [
+                    {
+                      "type": "Identifier",
+                      "name": "x",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 673,
+                          "end": 679
+                        },
+                        "start": 671,
+                        "end": 679
+                      },
+                      "start": 670,
+                      "end": 679
+                    }
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Base",
+                        "start": 682,
+                        "end": 686
+                      },
+                      "start": 682,
+                      "end": 686
+                    },
+                    "start": 680,
+                    "end": 686
+                  },
+                  "start": 669,
+                  "end": 687
+                }
+              ],
+              "start": 658,
+              "end": 703
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 653,
+              "end": 654
+            },
+            "superTypeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 655,
+                    "end": 656
+                  },
+                  "start": 655,
+                  "end": 656
+                }
+              ],
+              "start": 654,
+              "end": 657
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterDeclaration",
+              "params": [
+                {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 626,
+                    "end": 627
+                  },
+                  "constraint": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Derived",
+                      "start": 636,
+                      "end": 643
+                    },
+                    "start": 636,
+                    "end": 643
+                  },
+                  "start": 626,
+                  "end": 643
+                }
+              ],
+              "start": 625,
+              "end": 644
+            },
+            "start": 617,
+            "end": 703
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "B4",
+              "start": 717,
+              "end": 719
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "TSIndexSignature",
+                  "parameters": [
+                    {
+                      "type": "Identifier",
+                      "name": "x",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 767,
+                          "end": 773
+                        },
+                        "start": 765,
+                        "end": 773
+                      },
+                      "start": 764,
+                      "end": 773
+                    }
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Derived",
+                        "start": 776,
+                        "end": 783
+                      },
+                      "start": 776,
+                      "end": 783
+                    },
+                    "start": 774,
+                    "end": 783
+                  },
+                  "start": 763,
+                  "end": 784
+                }
+              ],
+              "start": 752,
+              "end": 800
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 747,
+              "end": 748
+            },
+            "superTypeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 749,
+                    "end": 750
+                  },
+                  "start": 749,
+                  "end": 750
+                }
+              ],
+              "start": 748,
+              "end": 751
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterDeclaration",
+              "params": [
+                {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 720,
+                    "end": 721
+                  },
+                  "constraint": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Derived",
+                      "start": 730,
+                      "end": 737
+                    },
+                    "start": 730,
+                    "end": 737
+                  },
+                  "start": 720,
+                  "end": 737
+                }
+              ],
+              "start": 719,
+              "end": 738
+            },
+            "start": 711,
+            "end": 800
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "B5",
+              "start": 814,
+              "end": 816
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "TSIndexSignature",
+                  "parameters": [
+                    {
+                      "type": "Identifier",
+                      "name": "x",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 865,
+                          "end": 871
+                        },
+                        "start": 863,
+                        "end": 871
+                      },
+                      "start": 862,
+                      "end": 871
+                    }
+                  ],
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Derived2",
+                        "start": 874,
+                        "end": 882
+                      },
+                      "start": 874,
+                      "end": 882
+                    },
+                    "start": 872,
+                    "end": 882
+                  },
+                  "start": 861,
+                  "end": 883
+                }
+              ],
+              "start": 850,
+              "end": 899
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 845,
+              "end": 846
+            },
+            "superTypeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 847,
+                    "end": 848
+                  },
+                  "start": 847,
+                  "end": 848
+                }
+              ],
+              "start": 846,
+              "end": 849
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterDeclaration",
+              "params": [
+                {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 817,
+                    "end": 818
+                  },
+                  "constraint": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Derived2",
+                      "start": 827,
+                      "end": 835
+                    },
+                    "start": 827,
+                    "end": 835
+                  },
+                  "start": 817,
+                  "end": 835
+                }
+              ],
+              "start": 816,
+              "end": 836
+            },
+            "start": 808,
+            "end": 899
+          }
+        ],
+        "start": 380,
+        "end": 902
+      },
+      "start": 364,
+      "end": 902
+    }
+  ],
+  "sourceType": "script",
+  "start": 64,
+  "end": 902
+}

@@ -1,0 +1,741 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "React",
+        "start": 128,
+        "end": 133
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "react",
+          "start": 144,
+          "end": 151
+        },
+        "start": 136,
+        "end": 152
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 121,
+      "end": 153
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "Name",
+              "start": 180,
+              "end": 184
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 186,
+                "end": 192
+              },
+              "start": 184,
+              "end": 192
+            },
+            "start": 180,
+            "end": 193
+          }
+        ],
+        "start": 173,
+        "end": 196
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IUser",
+        "start": 167,
+        "end": 172
+      },
+      "start": 157,
+      "end": 196
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "children",
+              "start": 233,
+              "end": 241
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "user",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "IUser",
+                          "start": 250,
+                          "end": 255
+                        },
+                        "start": 250,
+                        "end": 255
+                      },
+                      "start": 248,
+                      "end": 255
+                    },
+                    "start": 244,
+                    "end": 255
+                  }
+                ],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "TSQualifiedName",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "JSX",
+                        "start": 260,
+                        "end": 263
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "Element",
+                        "start": 264,
+                        "end": 271
+                      },
+                      "start": 260,
+                      "end": 271
+                    },
+                    "start": 260,
+                    "end": 271
+                  },
+                  "start": 257,
+                  "end": 271
+                },
+                "start": 243,
+                "end": 271
+              },
+              "start": 241,
+              "end": 271
+            },
+            "start": 233,
+            "end": 272
+          }
+        ],
+        "start": 226,
+        "end": 275
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IFetchUserProps",
+        "start": 210,
+        "end": 225
+      },
+      "start": 200,
+      "end": 275
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "FetchUser",
+        "start": 285,
+        "end": 294
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "render",
+              "start": 348,
+              "end": 354
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ConditionalExpression",
+                      "test": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 375,
+                          "end": 379
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "state",
+                          "start": 380,
+                          "end": 385
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 375,
+                        "end": 385
+                      },
+                      "consequent": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 401,
+                              "end": 405
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "props",
+                              "start": 406,
+                              "end": 411
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 401,
+                            "end": 411
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "children",
+                            "start": 412,
+                            "end": 420
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 401,
+                          "end": 420
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "ThisExpression",
+                                "start": 421,
+                                "end": 425
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "state",
+                                "start": 426,
+                                "end": 431
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 421,
+                              "end": 431
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "result",
+                              "start": 432,
+                              "end": 438
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 421,
+                            "end": 438
+                          }
+                        ],
+                        "optional": false,
+                        "start": 401,
+                        "end": 439
+                      },
+                      "alternate": {
+                        "type": "Literal",
+                        "value": null,
+                        "start": 455,
+                        "end": 459
+                      },
+                      "start": 375,
+                      "end": 459
+                    },
+                    "start": 368,
+                    "end": 460
+                  }
+                ],
+                "start": 357,
+                "end": 467
+              },
+              "params": [],
+              "start": 354,
+              "end": 467
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 348,
+            "end": 467
+          }
+        ],
+        "start": 341,
+        "end": 470
+      },
+      "superClass": {
+        "type": "MemberExpression",
+        "object": {
+          "type": "Identifier",
+          "name": "React",
+          "start": 303,
+          "end": 308
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "Component",
+          "start": 309,
+          "end": 318
+        },
+        "computed": false,
+        "optional": false,
+        "start": 303,
+        "end": 318
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "IFetchUserProps",
+              "start": 319,
+              "end": 334
+            },
+            "start": 319,
+            "end": 334
+          },
+          {
+            "type": "TSAnyKeyword",
+            "start": 336,
+            "end": 339
+          }
+        ],
+        "start": 318,
+        "end": 340
+      },
+      "start": 279,
+      "end": 470
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "UserName",
+        "start": 493,
+        "end": 501
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "JSXElement",
+              "openingElement": {
+                "type": "JSXOpeningElement",
+                "selfClosing": false,
+                "name": {
+                  "type": "JSXIdentifier",
+                  "name": "FetchUser",
+                  "start": 530,
+                  "end": 539
+                },
+                "attributes": [],
+                "start": 529,
+                "end": 540
+              },
+              "closingElement": {
+                "type": "JSXClosingElement",
+                "name": {
+                  "type": "JSXIdentifier",
+                  "name": "FetchUser",
+                  "start": 634,
+                  "end": 643
+                },
+                "start": 632,
+                "end": 644
+              },
+              "children": [
+                {
+                  "type": "JSXText",
+                  "value": "\r\n            ",
+                  "raw": "\r\n            ",
+                  "start": 540,
+                  "end": 554
+                },
+                {
+                  "type": "JSXExpressionContainer",
+                  "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "generator": false,
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "user",
+                        "start": 556,
+                        "end": 560
+                      }
+                    ],
+                    "body": {
+                      "type": "JSXElement",
+                      "openingElement": {
+                        "type": "JSXOpeningElement",
+                        "selfClosing": false,
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "name": "h1",
+                          "start": 584,
+                          "end": 586
+                        },
+                        "attributes": [],
+                        "start": 583,
+                        "end": 587
+                      },
+                      "closingElement": {
+                        "type": "JSXClosingElement",
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "name": "h1",
+                          "start": 602,
+                          "end": 604
+                        },
+                        "start": 600,
+                        "end": 605
+                      },
+                      "children": [
+                        {
+                          "type": "JSXExpressionContainer",
+                          "expression": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "user",
+                              "start": 589,
+                              "end": 593
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "NAme",
+                              "start": 594,
+                              "end": 598
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 589,
+                            "end": 598
+                          },
+                          "start": 587,
+                          "end": 600
+                        }
+                      ],
+                      "start": 583,
+                      "end": 605
+                    },
+                    "async": false,
+                    "expression": true,
+                    "start": 556,
+                    "end": 620
+                  },
+                  "start": 554,
+                  "end": 622
+                },
+                {
+                  "type": "JSXText",
+                  "value": "\r\n        ",
+                  "raw": "\r\n        ",
+                  "start": 622,
+                  "end": 632
+                }
+              ],
+              "start": 529,
+              "end": 644
+            },
+            "start": 511,
+            "end": 652
+          }
+        ],
+        "start": 504,
+        "end": 655
+      },
+      "start": 484,
+      "end": 655
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "UserName1",
+        "start": 668,
+        "end": 677
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "JSXElement",
+              "openingElement": {
+                "type": "JSXOpeningElement",
+                "selfClosing": false,
+                "name": {
+                  "type": "JSXIdentifier",
+                  "name": "FetchUser",
+                  "start": 706,
+                  "end": 715
+                },
+                "attributes": [],
+                "start": 705,
+                "end": 716
+              },
+              "closingElement": {
+                "type": "JSXClosingElement",
+                "name": {
+                  "type": "JSXIdentifier",
+                  "name": "FetchUser",
+                  "start": 910,
+                  "end": 919
+                },
+                "start": 908,
+                "end": 920
+              },
+              "children": [
+                {
+                  "type": "JSXText",
+                  "value": "\r\n\r\n\r\n            \r\n            ",
+                  "raw": "\r\n\r\n\r\n            \r\n            ",
+                  "start": 716,
+                  "end": 748
+                },
+                {
+                  "type": "JSXExpressionContainer",
+                  "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "generator": false,
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "user",
+                        "start": 750,
+                        "end": 754
+                      }
+                    ],
+                    "body": {
+                      "type": "JSXElement",
+                      "openingElement": {
+                        "type": "JSXOpeningElement",
+                        "selfClosing": false,
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "name": "h1",
+                          "start": 778,
+                          "end": 780
+                        },
+                        "attributes": [],
+                        "start": 777,
+                        "end": 781
+                      },
+                      "closingElement": {
+                        "type": "JSXClosingElement",
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "name": "h1",
+                          "start": 796,
+                          "end": 798
+                        },
+                        "start": 794,
+                        "end": 799
+                      },
+                      "children": [
+                        {
+                          "type": "JSXExpressionContainer",
+                          "expression": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "user",
+                              "start": 783,
+                              "end": 787
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "Name",
+                              "start": 788,
+                              "end": 792
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 783,
+                            "end": 792
+                          },
+                          "start": 781,
+                          "end": 794
+                        }
+                      ],
+                      "start": 777,
+                      "end": 799
+                    },
+                    "async": false,
+                    "expression": true,
+                    "start": 750,
+                    "end": 814
+                  },
+                  "start": 748,
+                  "end": 816
+                },
+                {
+                  "type": "JSXText",
+                  "value": "\r\n            ",
+                  "raw": "\r\n            ",
+                  "start": 816,
+                  "end": 830
+                },
+                {
+                  "type": "JSXExpressionContainer",
+                  "expression": {
+                    "type": "ArrowFunctionExpression",
+                    "generator": false,
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "user",
+                        "start": 832,
+                        "end": 836
+                      }
+                    ],
+                    "body": {
+                      "type": "JSXElement",
+                      "openingElement": {
+                        "type": "JSXOpeningElement",
+                        "selfClosing": false,
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "name": "h1",
+                          "start": 860,
+                          "end": 862
+                        },
+                        "attributes": [],
+                        "start": 859,
+                        "end": 863
+                      },
+                      "closingElement": {
+                        "type": "JSXClosingElement",
+                        "name": {
+                          "type": "JSXIdentifier",
+                          "name": "h1",
+                          "start": 878,
+                          "end": 880
+                        },
+                        "start": 876,
+                        "end": 881
+                      },
+                      "children": [
+                        {
+                          "type": "JSXExpressionContainer",
+                          "expression": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "user",
+                              "start": 865,
+                              "end": 869
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "Name",
+                              "start": 870,
+                              "end": 874
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 865,
+                            "end": 874
+                          },
+                          "start": 863,
+                          "end": 876
+                        }
+                      ],
+                      "start": 859,
+                      "end": 881
+                    },
+                    "async": false,
+                    "expression": true,
+                    "start": 832,
+                    "end": 896
+                  },
+                  "start": 830,
+                  "end": 898
+                },
+                {
+                  "type": "JSXText",
+                  "value": "\r\n        ",
+                  "raw": "\r\n        ",
+                  "start": 898,
+                  "end": 908
+                }
+              ],
+              "start": 705,
+              "end": 920
+            },
+            "start": 687,
+            "end": 928
+          }
+        ],
+        "start": 680,
+        "end": 931
+      },
+      "start": 659,
+      "end": 931
+    }
+  ],
+  "sourceType": "module",
+  "start": 121,
+  "end": 931
+}

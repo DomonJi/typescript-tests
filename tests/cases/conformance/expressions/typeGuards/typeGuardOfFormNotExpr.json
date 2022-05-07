@@ -1,0 +1,1002 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "str",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 9,
+                "end": 15
+              },
+              "start": 7,
+              "end": 15
+            },
+            "start": 4,
+            "end": 15
+          },
+          "init": null,
+          "start": 4,
+          "end": 15
+        }
+      ],
+      "kind": "var",
+      "start": 0,
+      "end": 16
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "bool",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 28,
+                "end": 35
+              },
+              "start": 26,
+              "end": 35
+            },
+            "start": 22,
+            "end": 35
+          },
+          "init": null,
+          "start": 22,
+          "end": 35
+        }
+      ],
+      "kind": "var",
+      "start": 18,
+      "end": 36
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "num",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 47,
+                "end": 53
+              },
+              "start": 45,
+              "end": 53
+            },
+            "start": 42,
+            "end": 53
+          },
+          "init": null,
+          "start": 42,
+          "end": 53
+        }
+      ],
+      "kind": "var",
+      "start": 38,
+      "end": 54
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "strOrNum",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSStringKeyword",
+                    "start": 70,
+                    "end": 76
+                  },
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 79,
+                    "end": 85
+                  }
+                ],
+                "start": 70,
+                "end": 85
+              },
+              "start": 68,
+              "end": 85
+            },
+            "start": 60,
+            "end": 85
+          },
+          "init": null,
+          "start": 60,
+          "end": 85
+        }
+      ],
+      "kind": "var",
+      "start": 56,
+      "end": 86
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "strOrNumOrBool",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSStringKeyword",
+                    "start": 108,
+                    "end": 114
+                  },
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 117,
+                    "end": 123
+                  },
+                  {
+                    "type": "TSBooleanKeyword",
+                    "start": 126,
+                    "end": 133
+                  }
+                ],
+                "start": 108,
+                "end": 133
+              },
+              "start": 106,
+              "end": 133
+            },
+            "start": 92,
+            "end": 133
+          },
+          "init": null,
+          "start": 92,
+          "end": 133
+        }
+      ],
+      "kind": "var",
+      "start": 88,
+      "end": 134
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "numOrBool",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 151,
+                    "end": 157
+                  },
+                  {
+                    "type": "TSBooleanKeyword",
+                    "start": 160,
+                    "end": 167
+                  }
+                ],
+                "start": 151,
+                "end": 167
+              },
+              "start": 149,
+              "end": 167
+            },
+            "start": 140,
+            "end": 167
+          },
+          "init": null,
+          "start": 140,
+          "end": 167
+        }
+      ],
+      "kind": "var",
+      "start": 136,
+      "end": 168
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "UnaryExpression",
+        "operator": "!",
+        "prefix": true,
+        "argument": {
+          "type": "BinaryExpression",
+          "operator": "===",
+          "left": {
+            "type": "UnaryExpression",
+            "operator": "typeof",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "strOrNum",
+              "start": 359,
+              "end": 367
+            },
+            "start": 352,
+            "end": 367
+          },
+          "right": {
+            "type": "Literal",
+            "value": "string",
+            "start": 372,
+            "end": 380
+          },
+          "start": 352,
+          "end": 380
+        },
+        "start": 350,
+        "end": 381
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "Identifier",
+                "name": "num",
+                "start": 390,
+                "end": 393
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNum",
+                "start": 398,
+                "end": 406
+              },
+              "start": 390,
+              "end": 406
+            },
+            "start": 390,
+            "end": 407
+          }
+        ],
+        "start": 383,
+        "end": 420
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "str",
+                "start": 434,
+                "end": 437
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNum",
+                "start": 440,
+                "end": 448
+              },
+              "start": 434,
+              "end": 448
+            },
+            "start": 434,
+            "end": 449
+          }
+        ],
+        "start": 427,
+        "end": 462
+      },
+      "start": 346,
+      "end": 462
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "UnaryExpression",
+        "operator": "!",
+        "prefix": true,
+        "argument": {
+          "type": "LogicalExpression",
+          "operator": "||",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 509,
+                "end": 523
+              },
+              "start": 502,
+              "end": 523
+            },
+            "right": {
+              "type": "Literal",
+              "value": "string",
+              "start": 528,
+              "end": 536
+            },
+            "start": 502,
+            "end": 536
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 547,
+                "end": 561
+              },
+              "start": 540,
+              "end": 561
+            },
+            "right": {
+              "type": "Literal",
+              "value": "number",
+              "start": 566,
+              "end": 574
+            },
+            "start": 540,
+            "end": 574
+          },
+          "start": 502,
+          "end": 574
+        },
+        "start": 500,
+        "end": 575
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "bool",
+                "start": 584,
+                "end": 588
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 591,
+                "end": 605
+              },
+              "start": 584,
+              "end": 605
+            },
+            "start": 584,
+            "end": 606
+          }
+        ],
+        "start": 577,
+        "end": 620
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "strOrNum",
+                "start": 634,
+                "end": 642
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 645,
+                "end": 659
+              },
+              "start": 634,
+              "end": 659
+            },
+            "start": 634,
+            "end": 660
+          }
+        ],
+        "start": 627,
+        "end": 682
+      },
+      "start": 496,
+      "end": 682
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "LogicalExpression",
+        "operator": "||",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "!",
+          "prefix": true,
+          "argument": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 732,
+                "end": 746
+              },
+              "start": 725,
+              "end": 746
+            },
+            "right": {
+              "type": "Literal",
+              "value": "string",
+              "start": 751,
+              "end": 759
+            },
+            "start": 725,
+            "end": 759
+          },
+          "start": 723,
+          "end": 760
+        },
+        "right": {
+          "type": "UnaryExpression",
+          "operator": "!",
+          "prefix": true,
+          "argument": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 773,
+                "end": 787
+              },
+              "start": 766,
+              "end": 787
+            },
+            "right": {
+              "type": "Literal",
+              "value": "number",
+              "start": 792,
+              "end": 800
+            },
+            "start": 766,
+            "end": 800
+          },
+          "start": 764,
+          "end": 801
+        },
+        "start": 723,
+        "end": 801
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "strOrNum",
+                "start": 810,
+                "end": 818
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 821,
+                "end": 835
+              },
+              "start": 810,
+              "end": 835
+            },
+            "start": 810,
+            "end": 836
+          }
+        ],
+        "start": 803,
+        "end": 858
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "bool",
+                "start": 872,
+                "end": 876
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 879,
+                "end": 893
+              },
+              "start": 872,
+              "end": 893
+            },
+            "start": 872,
+            "end": 894
+          }
+        ],
+        "start": 865,
+        "end": 908
+      },
+      "start": 719,
+      "end": 908
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "UnaryExpression",
+        "operator": "!",
+        "prefix": true,
+        "argument": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 955,
+                "end": 969
+              },
+              "start": 948,
+              "end": 969
+            },
+            "right": {
+              "type": "Literal",
+              "value": "string",
+              "start": 974,
+              "end": 982
+            },
+            "start": 948,
+            "end": 982
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 993,
+                "end": 1007
+              },
+              "start": 986,
+              "end": 1007
+            },
+            "right": {
+              "type": "Literal",
+              "value": "number",
+              "start": 1012,
+              "end": 1020
+            },
+            "start": 986,
+            "end": 1020
+          },
+          "start": 948,
+          "end": 1020
+        },
+        "start": 946,
+        "end": 1021
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "strOrNum",
+                "start": 1030,
+                "end": 1038
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1041,
+                "end": 1055
+              },
+              "start": 1030,
+              "end": 1055
+            },
+            "start": 1030,
+            "end": 1056
+          }
+        ],
+        "start": 1023,
+        "end": 1078
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "bool",
+                "start": 1092,
+                "end": 1096
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1099,
+                "end": 1113
+              },
+              "start": 1092,
+              "end": 1113
+            },
+            "start": 1092,
+            "end": 1114
+          }
+        ],
+        "start": 1085,
+        "end": 1128
+      },
+      "start": 942,
+      "end": 1128
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "!",
+          "prefix": true,
+          "argument": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1178,
+                "end": 1192
+              },
+              "start": 1171,
+              "end": 1192
+            },
+            "right": {
+              "type": "Literal",
+              "value": "string",
+              "start": 1197,
+              "end": 1205
+            },
+            "start": 1171,
+            "end": 1205
+          },
+          "start": 1169,
+          "end": 1206
+        },
+        "right": {
+          "type": "UnaryExpression",
+          "operator": "!",
+          "prefix": true,
+          "argument": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1219,
+                "end": 1233
+              },
+              "start": 1212,
+              "end": 1233
+            },
+            "right": {
+              "type": "Literal",
+              "value": "number",
+              "start": 1238,
+              "end": 1246
+            },
+            "start": 1212,
+            "end": 1246
+          },
+          "start": 1210,
+          "end": 1247
+        },
+        "start": 1169,
+        "end": 1247
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "bool",
+                "start": 1256,
+                "end": 1260
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1263,
+                "end": 1277
+              },
+              "start": 1256,
+              "end": 1277
+            },
+            "start": 1256,
+            "end": 1278
+          }
+        ],
+        "start": 1249,
+        "end": 1292
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "strOrNum",
+                "start": 1306,
+                "end": 1314
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1317,
+                "end": 1331
+              },
+              "start": 1306,
+              "end": 1331
+            },
+            "start": 1306,
+            "end": 1332
+          }
+        ],
+        "start": 1299,
+        "end": 1354
+      },
+      "start": 1165,
+      "end": 1354
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "!",
+          "prefix": true,
+          "argument": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "UnaryExpression",
+              "operator": "typeof",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1401,
+                "end": 1415
+              },
+              "start": 1394,
+              "end": 1415
+            },
+            "right": {
+              "type": "Literal",
+              "value": "string",
+              "start": 1420,
+              "end": 1428
+            },
+            "start": 1394,
+            "end": 1428
+          },
+          "start": 1392,
+          "end": 1429
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": "!==",
+          "left": {
+            "type": "Identifier",
+            "name": "numOrBool",
+            "start": 1433,
+            "end": 1442
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "strOrNumOrBool",
+            "start": 1447,
+            "end": 1461
+          },
+          "start": 1433,
+          "end": 1461
+        },
+        "start": 1392,
+        "end": 1461
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "numOrBool",
+                "start": 1470,
+                "end": 1479
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNumOrBool",
+                "start": 1482,
+                "end": 1496
+              },
+              "start": 1470,
+              "end": 1496
+            },
+            "start": 1470,
+            "end": 1497
+          }
+        ],
+        "start": 1463,
+        "end": 1520
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "r1",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSUnionType",
+                      "types": [
+                        {
+                          "type": "TSStringKeyword",
+                          "start": 1542,
+                          "end": 1548
+                        },
+                        {
+                          "type": "TSNumberKeyword",
+                          "start": 1551,
+                          "end": 1557
+                        },
+                        {
+                          "type": "TSBooleanKeyword",
+                          "start": 1560,
+                          "end": 1567
+                        }
+                      ],
+                      "start": 1542,
+                      "end": 1567
+                    },
+                    "start": 1540,
+                    "end": 1567
+                  },
+                  "start": 1538,
+                  "end": 1567
+                },
+                "init": {
+                  "type": "Identifier",
+                  "name": "strOrNumOrBool",
+                  "start": 1570,
+                  "end": 1584
+                },
+                "start": 1538,
+                "end": 1584
+              }
+            ],
+            "kind": "var",
+            "start": 1534,
+            "end": 1585
+          }
+        ],
+        "start": 1527,
+        "end": 1617
+      },
+      "start": 1388,
+      "end": 1617
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 1617
+}

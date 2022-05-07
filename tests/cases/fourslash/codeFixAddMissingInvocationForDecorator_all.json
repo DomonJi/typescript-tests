@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 179,
+            "end": 185
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 186,
+            "end": 196
+          },
+          "computed": false,
+          "optional": false,
+          "start": 179,
+          "end": 196
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 203,
+                  "end": 208
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addMissingInvocationForDecorator",
+                  "start": 210,
+                  "end": 244
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 203,
+                "end": 244
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 250,
+                  "end": 267
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add '()' to all uncalled decorators",
+                  "start": 269,
+                  "end": 306
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 250,
+                "end": 306
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 312,
+                  "end": 326
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "declare function foo(): (...args: any[]) => void;\nclass C {\n    @foo()\n    bar() {}\n\n    @foo()\n    baz() {}\n}",
+                        "cooked": "declare function foo(): (...args: any[]) => void;\nclass C {\n    @foo()\n    bar() {}\n\n    @foo()\n    baz() {}\n}"
+                      },
+                      "tail": true,
+                      "start": 328,
+                      "end": 440
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 328,
+                  "end": 440
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 312,
+                "end": 440
+              }
+            ],
+            "start": 197,
+            "end": 442
+          }
+        ],
+        "optional": false,
+        "start": 179,
+        "end": 443
+      },
+      "start": 179,
+      "end": 444
+    }
+  ],
+  "sourceType": "script",
+  "start": 179,
+  "end": 445
+}

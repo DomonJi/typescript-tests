@@ -1,0 +1,255 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "otherValue",
+            "start": 6,
+            "end": 16
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "Literal",
+              "value": true,
+              "start": 25,
+              "end": 29
+            },
+            "async": false,
+            "expression": true,
+            "start": 19,
+            "end": 29
+          },
+          "start": 6,
+          "end": 29
+        }
+      ],
+      "kind": "const",
+      "start": 0,
+      "end": 30
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 46,
+                    "end": 52
+                  },
+                  {
+                    "type": "TSStringKeyword",
+                    "start": 55,
+                    "end": 61
+                  }
+                ],
+                "start": 46,
+                "end": 61
+              },
+              "start": 44,
+              "end": 61
+            },
+            "start": 38,
+            "end": 61
+          },
+          "init": {
+            "type": "TSAsExpression",
+            "expression": {
+              "type": "Literal",
+              "value": null,
+              "start": 64,
+              "end": 68
+            },
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 72,
+              "end": 75
+            },
+            "start": 64,
+            "end": 75
+          },
+          "start": 38,
+          "end": 75
+        }
+      ],
+      "kind": "const",
+      "start": 32,
+      "end": 76
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "isNumber",
+        "start": 89,
+        "end": 97
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "obj",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 103,
+              "end": 106
+            },
+            "start": 101,
+            "end": 106
+          },
+          "start": 98,
+          "end": 106
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "value": true,
+              "start": 137,
+              "end": 141
+            },
+            "start": 130,
+            "end": 142
+          }
+        ],
+        "start": 123,
+        "end": 181
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "obj",
+            "start": 109,
+            "end": 112
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 116,
+              "end": 122
+            },
+            "start": 116,
+            "end": 122
+          },
+          "start": 109,
+          "end": 122
+        },
+        "start": 107,
+        "end": 122
+      },
+      "start": 80,
+      "end": 181
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "isNumber",
+          "start": 210,
+          "end": 218
+        },
+        "arguments": [
+          {
+            "type": "SequenceExpression",
+            "expressions": [
+              {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "otherValue",
+                  "start": 220,
+                  "end": 230
+                },
+                "arguments": [],
+                "optional": false,
+                "start": 220,
+                "end": 232
+              },
+              {
+                "type": "Identifier",
+                "name": "value",
+                "start": 234,
+                "end": 239
+              }
+            ],
+            "start": 220,
+            "end": 239
+          }
+        ],
+        "optional": false,
+        "start": 210,
+        "end": 241
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "start": 256,
+                  "end": 257
+                },
+                "init": {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 260,
+                  "end": 265
+                },
+                "start": 256,
+                "end": 265
+              }
+            ],
+            "kind": "const",
+            "start": 250,
+            "end": 266
+          }
+        ],
+        "start": 243,
+        "end": 311
+      },
+      "alternate": null,
+      "start": 206,
+      "end": 311
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 311
+}

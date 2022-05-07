@@ -1,0 +1,352 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "alias",
+        "start": 53,
+        "end": 58
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "foo",
+          "start": 69,
+          "end": 74
+        },
+        "start": 61,
+        "end": 75
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 46,
+      "end": 76
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "cls",
+        "start": 84,
+        "end": 87
+      },
+      "moduleReference": {
+        "type": "TSQualifiedName",
+        "left": {
+          "type": "Identifier",
+          "name": "alias",
+          "start": 90,
+          "end": 95
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "Class",
+          "start": 96,
+          "end": 101
+        },
+        "start": 90,
+        "end": 101
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 77,
+      "end": 102
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "cls2",
+        "start": 117,
+        "end": 121
+      },
+      "moduleReference": {
+        "type": "TSQualifiedName",
+        "left": {
+          "type": "Identifier",
+          "name": "alias",
+          "start": 124,
+          "end": 129
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "Class",
+          "start": 130,
+          "end": 135
+        },
+        "start": 124,
+        "end": 135
+      },
+      "importKind": "value",
+      "isExport": true,
+      "start": 103,
+      "end": 136
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 142,
+            "end": 143
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "alias",
+                "start": 150,
+                "end": 155
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "Class",
+                "start": 156,
+                "end": 161
+              },
+              "computed": false,
+              "optional": false,
+              "start": 150,
+              "end": 161
+            },
+            "arguments": [],
+            "start": 146,
+            "end": 163
+          },
+          "start": 142,
+          "end": 163
+        }
+      ],
+      "kind": "let",
+      "start": 138,
+      "end": 164
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "start": 169,
+            "end": 170
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "cls",
+              "start": 177,
+              "end": 180
+            },
+            "arguments": [],
+            "start": 173,
+            "end": 182
+          },
+          "start": 169,
+          "end": 182
+        }
+      ],
+      "kind": "let",
+      "start": 165,
+      "end": 183
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "z",
+            "start": 188,
+            "end": 189
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "cls2",
+              "start": 196,
+              "end": 200
+            },
+            "arguments": [],
+            "start": 192,
+            "end": 202
+          },
+          "start": 188,
+          "end": 202
+        }
+      ],
+      "kind": "let",
+      "start": 184,
+      "end": 203
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M",
+        "start": 212,
+        "end": 213
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSImportEqualsDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "cls",
+              "start": 232,
+              "end": 235
+            },
+            "moduleReference": {
+              "type": "TSQualifiedName",
+              "left": {
+                "type": "Identifier",
+                "name": "alias",
+                "start": 238,
+                "end": 243
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "Class",
+                "start": 244,
+                "end": 249
+              },
+              "start": 238,
+              "end": 249
+            },
+            "importKind": "value",
+            "isExport": true,
+            "start": 218,
+            "end": 250
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 257,
+                  "end": 258
+                },
+                "init": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "alias",
+                      "start": 265,
+                      "end": 270
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Class",
+                      "start": 271,
+                      "end": 276
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 265,
+                    "end": 276
+                  },
+                  "arguments": [],
+                  "start": 261,
+                  "end": 278
+                },
+                "start": 257,
+                "end": 278
+              }
+            ],
+            "kind": "let",
+            "start": 253,
+            "end": 279
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "y",
+                  "start": 286,
+                  "end": 287
+                },
+                "init": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "cls",
+                    "start": 294,
+                    "end": 297
+                  },
+                  "arguments": [],
+                  "start": 290,
+                  "end": 299
+                },
+                "start": 286,
+                "end": 299
+              }
+            ],
+            "kind": "let",
+            "start": 282,
+            "end": 300
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "z",
+                  "start": 308,
+                  "end": 309
+                },
+                "init": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "cls2",
+                    "start": 316,
+                    "end": 320
+                  },
+                  "arguments": [],
+                  "start": 312,
+                  "end": 322
+                },
+                "start": 308,
+                "end": 322
+              }
+            ],
+            "kind": "let",
+            "start": 304,
+            "end": 323
+          }
+        ],
+        "start": 214,
+        "end": 325
+      },
+      "start": 205,
+      "end": 325
+    }
+  ],
+  "sourceType": "module",
+  "start": 46,
+  "end": 328
+}

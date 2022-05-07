@@ -1,0 +1,1043 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "abc",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "ABC",
+                  "start": 35,
+                  "end": 40
+                },
+                "start": 35,
+                "end": 40
+              },
+              "start": 33,
+              "end": 40
+            },
+            "start": 30,
+            "end": 40
+          },
+          "init": {
+            "type": "Literal",
+            "value": "ABC",
+            "start": 43,
+            "end": 48
+          },
+          "start": 30,
+          "end": 48
+        }
+      ],
+      "kind": "let",
+      "start": 26,
+      "end": 49
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "xyz",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "XYZ",
+                  "start": 60,
+                  "end": 65
+                },
+                "start": 60,
+                "end": 65
+              },
+              "start": 58,
+              "end": 65
+            },
+            "start": 55,
+            "end": 65
+          },
+          "init": {
+            "type": "Literal",
+            "value": "XYZ",
+            "start": 68,
+            "end": 73
+          },
+          "start": 55,
+          "end": 73
+        }
+      ],
+      "kind": "let",
+      "start": 51,
+      "end": 74
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "abcOrXyz",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "ABC",
+                      "start": 90,
+                      "end": 95
+                    },
+                    "start": 90,
+                    "end": 95
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "XYZ",
+                      "start": 98,
+                      "end": 103
+                    },
+                    "start": 98,
+                    "end": 103
+                  }
+                ],
+                "start": 90,
+                "end": 103
+              },
+              "start": 88,
+              "end": 103
+            },
+            "start": 80,
+            "end": 103
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "||",
+            "left": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 106,
+              "end": 109
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "xyz",
+              "start": 113,
+              "end": 116
+            },
+            "start": 106,
+            "end": 116
+          },
+          "start": 80,
+          "end": 116
+        }
+      ],
+      "kind": "let",
+      "start": 76,
+      "end": 117
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "abcOrXyzOrNumber",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "ABC",
+                      "start": 141,
+                      "end": 146
+                    },
+                    "start": 141,
+                    "end": 146
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "XYZ",
+                      "start": 149,
+                      "end": 154
+                    },
+                    "start": 149,
+                    "end": 154
+                  },
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 157,
+                    "end": 163
+                  }
+                ],
+                "start": 141,
+                "end": 163
+              },
+              "start": 139,
+              "end": 163
+            },
+            "start": 123,
+            "end": 163
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "||",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 166,
+              "end": 174
+            },
+            "right": {
+              "type": "Literal",
+              "value": 100,
+              "start": 178,
+              "end": 181
+            },
+            "start": 166,
+            "end": 181
+          },
+          "start": 123,
+          "end": 181
+        }
+      ],
+      "kind": "let",
+      "start": 119,
+      "end": 182
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "a",
+            "start": 190,
+            "end": 191
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Literal",
+              "value": "",
+              "start": 194,
+              "end": 196
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 199,
+              "end": 202
+            },
+            "start": 194,
+            "end": 202
+          },
+          "start": 190,
+          "end": 202
+        }
+      ],
+      "kind": "let",
+      "start": 186,
+      "end": 203
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "b",
+            "start": 209,
+            "end": 210
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 213,
+              "end": 216
+            },
+            "right": {
+              "type": "Literal",
+              "value": "",
+              "start": 219,
+              "end": 221
+            },
+            "start": 213,
+            "end": 221
+          },
+          "start": 209,
+          "end": 221
+        }
+      ],
+      "kind": "let",
+      "start": 205,
+      "end": 222
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "start": 228,
+            "end": 229
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Literal",
+              "value": 10,
+              "start": 232,
+              "end": 234
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 237,
+              "end": 240
+            },
+            "start": 232,
+            "end": 240
+          },
+          "start": 228,
+          "end": 240
+        }
+      ],
+      "kind": "let",
+      "start": 224,
+      "end": 241
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d",
+            "start": 247,
+            "end": 248
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 251,
+              "end": 254
+            },
+            "right": {
+              "type": "Literal",
+              "value": 10,
+              "start": 257,
+              "end": 259
+            },
+            "start": 251,
+            "end": 259
+          },
+          "start": 247,
+          "end": 259
+        }
+      ],
+      "kind": "let",
+      "start": 243,
+      "end": 260
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "e",
+            "start": 266,
+            "end": 267
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "xyz",
+              "start": 270,
+              "end": 273
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 276,
+              "end": 279
+            },
+            "start": 270,
+            "end": 279
+          },
+          "start": 266,
+          "end": 279
+        }
+      ],
+      "kind": "let",
+      "start": 262,
+      "end": 280
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "f",
+            "start": 286,
+            "end": 287
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 290,
+              "end": 293
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "xyz",
+              "start": 296,
+              "end": 299
+            },
+            "start": 290,
+            "end": 299
+          },
+          "start": 286,
+          "end": 299
+        }
+      ],
+      "kind": "let",
+      "start": 282,
+      "end": 300
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "g",
+            "start": 306,
+            "end": 307
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Literal",
+              "value": true,
+              "start": 310,
+              "end": 314
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 317,
+              "end": 320
+            },
+            "start": 310,
+            "end": 320
+          },
+          "start": 306,
+          "end": 320
+        }
+      ],
+      "kind": "let",
+      "start": 302,
+      "end": 321
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "h",
+            "start": 327,
+            "end": 328
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 331,
+              "end": 334
+            },
+            "right": {
+              "type": "Literal",
+              "value": true,
+              "start": 337,
+              "end": 341
+            },
+            "start": 331,
+            "end": 341
+          },
+          "start": 327,
+          "end": 341
+        }
+      ],
+      "kind": "let",
+      "start": 323,
+      "end": 342
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "i",
+            "start": 348,
+            "end": 349
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "BinaryExpression",
+              "operator": "+",
+              "left": {
+                "type": "Identifier",
+                "name": "abc",
+                "start": 352,
+                "end": 355
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "abcOrXyz",
+                "start": 358,
+                "end": 366
+              },
+              "start": 352,
+              "end": 366
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "xyz",
+              "start": 369,
+              "end": 372
+            },
+            "start": 352,
+            "end": 372
+          },
+          "start": 348,
+          "end": 372
+        }
+      ],
+      "kind": "let",
+      "start": 344,
+      "end": 373
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "j",
+            "start": 379,
+            "end": 380
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 383,
+              "end": 391
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 394,
+              "end": 402
+            },
+            "start": 383,
+            "end": 402
+          },
+          "start": 379,
+          "end": 402
+        }
+      ],
+      "kind": "let",
+      "start": 375,
+      "end": 403
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "k",
+            "start": 409,
+            "end": 410
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "+",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 414,
+              "end": 422
+            },
+            "start": 413,
+            "end": 422
+          },
+          "start": 409,
+          "end": 422
+        }
+      ],
+      "kind": "let",
+      "start": 405,
+      "end": 423
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "l",
+            "start": 429,
+            "end": 430
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "-",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 434,
+              "end": 442
+            },
+            "start": 433,
+            "end": 442
+          },
+          "start": 429,
+          "end": 442
+        }
+      ],
+      "kind": "let",
+      "start": 425,
+      "end": 443
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "m",
+            "start": 449,
+            "end": 450
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 453,
+              "end": 469
+            },
+            "right": {
+              "type": "Literal",
+              "value": "",
+              "start": 472,
+              "end": 474
+            },
+            "start": 453,
+            "end": 474
+          },
+          "start": 449,
+          "end": 474
+        }
+      ],
+      "kind": "let",
+      "start": 445,
+      "end": 475
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "n",
+            "start": 481,
+            "end": 482
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Literal",
+              "value": "",
+              "start": 485,
+              "end": 487
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 490,
+              "end": 506
+            },
+            "start": 485,
+            "end": 506
+          },
+          "start": 481,
+          "end": 506
+        }
+      ],
+      "kind": "let",
+      "start": 477,
+      "end": 507
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "o",
+            "start": 513,
+            "end": 514
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 517,
+              "end": 533
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 536,
+              "end": 544
+            },
+            "start": 517,
+            "end": 544
+          },
+          "start": 513,
+          "end": 544
+        }
+      ],
+      "kind": "let",
+      "start": 509,
+      "end": 545
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "p",
+            "start": 551,
+            "end": 552
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "+",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 555,
+              "end": 563
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 566,
+              "end": 582
+            },
+            "start": 555,
+            "end": 582
+          },
+          "start": 551,
+          "end": 582
+        }
+      ],
+      "kind": "let",
+      "start": 547,
+      "end": 583
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "q",
+            "start": 589,
+            "end": 590
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "!",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 594,
+              "end": 610
+            },
+            "start": 593,
+            "end": 610
+          },
+          "start": 589,
+          "end": 610
+        }
+      ],
+      "kind": "let",
+      "start": 585,
+      "end": 611
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r",
+            "start": 617,
+            "end": 618
+          },
+          "init": {
+            "type": "UnaryExpression",
+            "operator": "~",
+            "prefix": true,
+            "argument": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 622,
+              "end": 638
+            },
+            "start": 621,
+            "end": 638
+          },
+          "start": 617,
+          "end": 638
+        }
+      ],
+      "kind": "let",
+      "start": 613,
+      "end": 639
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "s",
+            "start": 645,
+            "end": 646
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "<",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 649,
+              "end": 665
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 668,
+              "end": 684
+            },
+            "start": 649,
+            "end": 684
+          },
+          "start": 645,
+          "end": 684
+        }
+      ],
+      "kind": "let",
+      "start": 641,
+      "end": 685
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "t",
+            "start": 691,
+            "end": 692
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": ">=",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 695,
+              "end": 711
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 715,
+              "end": 723
+            },
+            "start": 695,
+            "end": 723
+          },
+          "start": 691,
+          "end": 723
+        }
+      ],
+      "kind": "let",
+      "start": 687,
+      "end": 724
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "u",
+            "start": 730,
+            "end": 731
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "Identifier",
+              "name": "abc",
+              "start": 734,
+              "end": 737
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 742,
+              "end": 750
+            },
+            "start": 734,
+            "end": 750
+          },
+          "start": 730,
+          "end": 750
+        }
+      ],
+      "kind": "let",
+      "start": 726,
+      "end": 751
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "v",
+            "start": 757,
+            "end": 758
+          },
+          "init": {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "Identifier",
+              "name": "abcOrXyz",
+              "start": 761,
+              "end": 769
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "abcOrXyzOrNumber",
+              "start": 774,
+              "end": 790
+            },
+            "start": 761,
+            "end": 790
+          },
+          "start": 757,
+          "end": 790
+        }
+      ],
+      "kind": "let",
+      "start": 753,
+      "end": 791
+    }
+  ],
+  "sourceType": "script",
+  "start": 26,
+  "end": 791
+}

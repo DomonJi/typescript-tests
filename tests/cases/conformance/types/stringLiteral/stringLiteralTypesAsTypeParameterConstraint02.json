@@ -1,0 +1,285 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 35,
+        "end": 38
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "f",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 63,
+                        "end": 64
+                      },
+                      "start": 63,
+                      "end": 64
+                    },
+                    "start": 61,
+                    "end": 64
+                  },
+                  "start": 60,
+                  "end": 64
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 69,
+                    "end": 70
+                  },
+                  "start": 69,
+                  "end": 70
+                },
+                "start": 66,
+                "end": 70
+              },
+              "start": 59,
+              "end": 70
+            },
+            "start": 57,
+            "end": 70
+          },
+          "start": 56,
+          "end": 70
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "f",
+              "start": 86,
+              "end": 87
+            },
+            "start": 79,
+            "end": 88
+          }
+        ],
+        "start": 72,
+        "end": 91
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 39,
+              "end": 40
+            },
+            "constraint": {
+              "type": "TSLiteralType",
+              "literal": {
+                "type": "Literal",
+                "value": "foo",
+                "start": 49,
+                "end": 54
+              },
+              "start": 49,
+              "end": 54
+            },
+            "start": 39,
+            "end": 54
+          }
+        ],
+        "start": 38,
+        "end": 55
+      },
+      "start": 26,
+      "end": 91
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "f",
+            "start": 99,
+            "end": 100
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 103,
+              "end": 106
+            },
+            "arguments": [
+              {
+                "type": "ArrowFunctionExpression",
+                "generator": false,
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "y",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSUnionType",
+                        "types": [
+                          {
+                            "type": "TSLiteralType",
+                            "literal": {
+                              "type": "Literal",
+                              "value": "foo",
+                              "start": 111,
+                              "end": 116
+                            },
+                            "start": 111,
+                            "end": 116
+                          },
+                          {
+                            "type": "TSLiteralType",
+                            "literal": {
+                              "type": "Literal",
+                              "value": "bar",
+                              "start": 119,
+                              "end": 124
+                            },
+                            "start": 119,
+                            "end": 124
+                          }
+                        ],
+                        "start": 111,
+                        "end": 124
+                      },
+                      "start": 109,
+                      "end": 124
+                    },
+                    "start": 108,
+                    "end": 124
+                  }
+                ],
+                "body": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "===",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "y",
+                      "start": 129,
+                      "end": 130
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "foo",
+                      "start": 135,
+                      "end": 140
+                    },
+                    "start": 129,
+                    "end": 140
+                  },
+                  "consequent": {
+                    "type": "Identifier",
+                    "name": "y",
+                    "start": 143,
+                    "end": 144
+                  },
+                  "alternate": {
+                    "type": "Literal",
+                    "value": "foo",
+                    "start": 147,
+                    "end": 152
+                  },
+                  "start": 129,
+                  "end": 152
+                },
+                "async": false,
+                "expression": true,
+                "start": 107,
+                "end": 152
+              }
+            ],
+            "optional": false,
+            "start": 103,
+            "end": 153
+          },
+          "start": 99,
+          "end": 153
+        }
+      ],
+      "kind": "let",
+      "start": 95,
+      "end": 154
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "fResult",
+            "start": 160,
+            "end": 167
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "f",
+              "start": 170,
+              "end": 171
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "foo",
+                "start": 172,
+                "end": 177
+              }
+            ],
+            "optional": false,
+            "start": 170,
+            "end": 178
+          },
+          "start": 160,
+          "end": 178
+        }
+      ],
+      "kind": "let",
+      "start": 156,
+      "end": 179
+    }
+  ],
+  "sourceType": "script",
+  "start": 26,
+  "end": 179
+}

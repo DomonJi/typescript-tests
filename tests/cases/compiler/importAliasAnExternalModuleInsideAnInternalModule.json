@@ -1,0 +1,170 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "m",
+          "start": 88,
+          "end": 89
+        },
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [
+            {
+              "type": "ExportNamedDeclaration",
+              "declaration": {
+                "type": "FunctionDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 113,
+                  "end": 116
+                },
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [],
+                  "start": 119,
+                  "end": 122
+                },
+                "start": 104,
+                "end": 122
+              },
+              "specifiers": [],
+              "source": null,
+              "exportKind": "value",
+              "assertions": [],
+              "start": 97,
+              "end": 122
+            }
+          ],
+          "start": 90,
+          "end": 125
+        },
+        "start": 81,
+        "end": 125
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 74,
+      "end": 125
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "r",
+        "start": 211,
+        "end": 212
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "./importAliasAnExternalModuleInsideAnInternalModule_file0",
+          "start": 223,
+          "end": 282
+        },
+        "start": 215,
+        "end": 283
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 204,
+      "end": 284
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "m_private",
+        "start": 293,
+        "end": 302
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSImportEqualsDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 375,
+              "end": 376
+            },
+            "moduleReference": {
+              "type": "Identifier",
+              "name": "r",
+              "start": 379,
+              "end": 380
+            },
+            "importKind": "value",
+            "isExport": true,
+            "start": 361,
+            "end": 381
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 399,
+                    "end": 400
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "m",
+                    "start": 401,
+                    "end": 402
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 399,
+                  "end": 402
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 403,
+                  "end": 406
+                },
+                "computed": false,
+                "optional": false,
+                "start": 399,
+                "end": 406
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 399,
+              "end": 408
+            },
+            "start": 399,
+            "end": 409
+          }
+        ],
+        "start": 303,
+        "end": 412
+      },
+      "start": 286,
+      "end": 412
+    }
+  ],
+  "sourceType": "module",
+  "start": 74,
+  "end": 414
+}

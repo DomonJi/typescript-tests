@@ -1,0 +1,177 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 114,
+        "end": 118
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 125,
+              "end": 126
+            },
+            "value": {
+              "type": "Literal",
+              "value": 1,
+              "start": 129,
+              "end": 130
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 125,
+            "end": 131
+          }
+        ],
+        "start": 119,
+        "end": 135
+      },
+      "superClass": null,
+      "start": 108,
+      "end": 135
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 147,
+        "end": 154
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 174,
+              "end": 175
+            },
+            "value": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "ThisExpression",
+                "start": 178,
+                "end": 182
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "a",
+                "start": 183,
+                "end": 184
+              },
+              "computed": false,
+              "optional": false,
+              "start": 178,
+              "end": 184
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 174,
+            "end": 199
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 207,
+              "end": 218
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "a",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 229,
+                        "end": 235
+                      },
+                      "start": 227,
+                      "end": 235
+                    },
+                    "start": 226,
+                    "end": 235
+                  },
+                  "start": 219,
+                  "end": 235
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 247,
+                        "end": 252
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 247,
+                      "end": 254
+                    },
+                    "start": 247,
+                    "end": 255
+                  }
+                ],
+                "start": 237,
+                "end": 261
+              },
+              "start": 218,
+              "end": 261
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 207,
+            "end": 261
+          }
+        ],
+        "start": 168,
+        "end": 265
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 163,
+        "end": 167
+      },
+      "start": 141,
+      "end": 265
+    }
+  ],
+  "sourceType": "script",
+  "start": 108,
+  "end": 268
+}

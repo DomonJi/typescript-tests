@@ -1,0 +1,206 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Super",
+          "start": 86,
+          "end": 91
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "PropertyDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 94,
+                "end": 97
+              },
+              "value": null,
+              "computed": false,
+              "static": false,
+              "declare": false,
+              "override": false,
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 99,
+                  "end": 105
+                },
+                "start": 97,
+                "end": 105
+              },
+              "start": 94,
+              "end": 106
+            }
+          ],
+          "start": 92,
+          "end": 108
+        },
+        "superClass": null,
+        "start": 80,
+        "end": 108
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 73,
+      "end": 108
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 224,
+        "end": 227
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "./importUsedInExtendsList1_require",
+          "start": 238,
+          "end": 274
+        },
+        "start": 230,
+        "end": 275
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 217,
+      "end": 276
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Sub",
+        "start": 284,
+        "end": 287
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 306,
+        "end": 309
+      },
+      "superClass": {
+        "type": "MemberExpression",
+        "object": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 296,
+          "end": 299
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "Super",
+          "start": 300,
+          "end": 305
+        },
+        "computed": false,
+        "optional": false,
+        "start": 296,
+        "end": 305
+      },
+      "start": 278,
+      "end": 309
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "s",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Sub",
+                  "start": 318,
+                  "end": 321
+                },
+                "start": 318,
+                "end": 321
+              },
+              "start": 316,
+              "end": 321
+            },
+            "start": 315,
+            "end": 321
+          },
+          "init": null,
+          "start": 315,
+          "end": 321
+        }
+      ],
+      "kind": "var",
+      "start": 311,
+      "end": 322
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 331,
+                "end": 337
+              },
+              "start": 329,
+              "end": 337
+            },
+            "start": 328,
+            "end": 337
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "s",
+              "start": 340,
+              "end": 341
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 342,
+              "end": 345
+            },
+            "computed": false,
+            "optional": false,
+            "start": 340,
+            "end": 345
+          },
+          "start": 328,
+          "end": 345
+        }
+      ],
+      "kind": "var",
+      "start": 324,
+      "end": 346
+    }
+  ],
+  "sourceType": "module",
+  "start": 73,
+  "end": 348
+}

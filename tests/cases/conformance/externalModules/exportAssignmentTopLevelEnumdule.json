@@ -1,0 +1,257 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSEnumDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 46,
+        "end": 49
+      },
+      "members": [
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "red",
+            "start": 54,
+            "end": 57
+          },
+          "start": 54,
+          "end": 57
+        },
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "green",
+            "start": 59,
+            "end": 64
+          },
+          "start": 59,
+          "end": 64
+        },
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "blue",
+            "start": 66,
+            "end": 70
+          },
+          "start": 66,
+          "end": 70
+        }
+      ],
+      "start": 41,
+      "end": 73
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 82,
+        "end": 85
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "answer",
+                    "start": 101,
+                    "end": 107
+                  },
+                  "init": {
+                    "type": "Literal",
+                    "value": 42,
+                    "start": 110,
+                    "end": 112
+                  },
+                  "start": 101,
+                  "end": 112
+                }
+              ],
+              "kind": "var",
+              "start": 97,
+              "end": 113
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 90,
+            "end": 113
+          }
+        ],
+        "start": 86,
+        "end": 116
+      },
+      "start": 75,
+      "end": 116
+    },
+    {
+      "type": "TSExportAssignment",
+      "expression": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 127,
+        "end": 130
+      },
+      "start": 118,
+      "end": 131
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 166,
+        "end": 169
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "./foo_0",
+          "start": 180,
+          "end": 189
+        },
+        "start": 172,
+        "end": 190
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 159,
+      "end": 191
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "color",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 204,
+                  "end": 207
+                },
+                "start": 204,
+                "end": 207
+              },
+              "start": 202,
+              "end": 207
+            },
+            "start": 197,
+            "end": 207
+          },
+          "init": null,
+          "start": 197,
+          "end": 207
+        }
+      ],
+      "kind": "var",
+      "start": 193,
+      "end": 208
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "Identifier",
+          "name": "color",
+          "start": 213,
+          "end": 218
+        },
+        "right": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 223,
+            "end": 226
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "green",
+            "start": 227,
+            "end": 232
+          },
+          "computed": false,
+          "optional": false,
+          "start": 223,
+          "end": 232
+        },
+        "start": 213,
+        "end": 232
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "color",
+                "start": 237,
+                "end": 242
+              },
+              "right": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 245,
+                  "end": 248
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "answer",
+                  "start": 249,
+                  "end": 255
+                },
+                "computed": false,
+                "optional": false,
+                "start": 245,
+                "end": 255
+              },
+              "start": 237,
+              "end": 255
+            },
+            "start": 237,
+            "end": 256
+          }
+        ],
+        "start": 233,
+        "end": 259
+      },
+      "alternate": null,
+      "start": 210,
+      "end": 259
+    }
+  ],
+  "sourceType": "module",
+  "start": 41,
+  "end": 261
+}

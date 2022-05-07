@@ -1,0 +1,179 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "foo",
+                  "start": 8,
+                  "end": 13
+                },
+                "start": 8,
+                "end": 13
+              },
+              "start": 6,
+              "end": 13
+            },
+            "start": 5,
+            "end": 13
+          },
+          "init": null,
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "kind": "let",
+      "start": 1,
+      "end": 14
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "foo",
+                      "start": 23,
+                      "end": 28
+                    },
+                    "start": 23,
+                    "end": 28
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "bar",
+                      "start": 31,
+                      "end": 36
+                    },
+                    "start": 31,
+                    "end": 36
+                  }
+                ],
+                "start": 23,
+                "end": 36
+              },
+              "start": 21,
+              "end": 36
+            },
+            "start": 20,
+            "end": 36
+          },
+          "init": null,
+          "start": 20,
+          "end": 36
+        }
+      ],
+      "kind": "let",
+      "start": 16,
+      "end": 37
+    },
+    {
+      "type": "SwitchStatement",
+      "discriminant": {
+        "type": "Identifier",
+        "name": "x",
+        "start": 50,
+        "end": 51
+      },
+      "cases": [
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "Literal",
+            "value": "foo",
+            "start": 65,
+            "end": 70
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 81,
+              "end": 87
+            }
+          ],
+          "start": 60,
+          "end": 87
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "Literal",
+            "value": "bar",
+            "start": 98,
+            "end": 103
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 114,
+              "end": 120
+            }
+          ],
+          "start": 93,
+          "end": 120
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "Identifier",
+            "name": "y",
+            "start": 131,
+            "end": 132
+          },
+          "consequent": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "Identifier",
+                "name": "y",
+                "start": 143,
+                "end": 144
+              },
+              "start": 143,
+              "end": 145
+            },
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 155,
+              "end": 161
+            }
+          ],
+          "start": 126,
+          "end": 161
+        }
+      ],
+      "start": 42,
+      "end": 164
+    }
+  ],
+  "sourceType": "script",
+  "start": 1,
+  "end": 166
+}

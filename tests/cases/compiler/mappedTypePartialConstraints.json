@@ -1,0 +1,283 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "something",
+              "start": 51,
+              "end": 60
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 62,
+                "end": 68
+              },
+              "start": 60,
+              "end": 68
+            },
+            "start": 51,
+            "end": 69
+          }
+        ],
+        "start": 46,
+        "end": 72
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "MyInterface",
+        "start": 34,
+        "end": 45
+      },
+      "start": 24,
+      "end": 72
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyClass",
+        "start": 82,
+        "end": 89
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "doIt",
+              "start": 118,
+              "end": 122
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 142,
+                "end": 144
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "data",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Partial",
+                        "start": 130,
+                        "end": 137
+                      },
+                      "typeParameters": {
+                        "type": "TSTypeParameterInstantiation",
+                        "params": [
+                          {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "T",
+                              "start": 138,
+                              "end": 139
+                            },
+                            "start": 138,
+                            "end": 139
+                          }
+                        ],
+                        "start": 137,
+                        "end": 140
+                      },
+                      "start": 130,
+                      "end": 140
+                    },
+                    "start": 128,
+                    "end": 140
+                  },
+                  "start": 123,
+                  "end": 140
+                }
+              ],
+              "start": 122,
+              "end": 144
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 118,
+            "end": 144
+          }
+        ],
+        "start": 113,
+        "end": 147
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 90,
+              "end": 91
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "MyInterface",
+                "start": 100,
+                "end": 111
+              },
+              "start": 100,
+              "end": 111
+            },
+            "start": 90,
+            "end": 111
+          }
+        ],
+        "start": 89,
+        "end": 112
+      },
+      "start": 76,
+      "end": 147
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MySubClass",
+        "start": 157,
+        "end": 167
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 197,
+        "end": 199
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "MyClass",
+        "start": 176,
+        "end": 183
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "MyInterface",
+              "start": 184,
+              "end": 195
+            },
+            "start": 184,
+            "end": 195
+          }
+        ],
+        "start": 183,
+        "end": 196
+      },
+      "start": 151,
+      "end": 199
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "fn",
+        "start": 212,
+        "end": 214
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "arg",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeQuery",
+              "exprName": {
+                "type": "Identifier",
+                "name": "MyClass",
+                "start": 227,
+                "end": 234
+              },
+              "start": 220,
+              "end": 234
+            },
+            "start": 218,
+            "end": 234
+          },
+          "start": 215,
+          "end": 234
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 236,
+        "end": 238
+      },
+      "start": 203,
+      "end": 238
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 238,
+      "end": 239
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "fn",
+          "start": 243,
+          "end": 245
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "MySubClass",
+            "start": 246,
+            "end": 256
+          }
+        ],
+        "optional": false,
+        "start": 243,
+        "end": 257
+      },
+      "start": 243,
+      "end": 258
+    }
+  ],
+  "sourceType": "script",
+  "start": 24,
+  "end": 260
+}

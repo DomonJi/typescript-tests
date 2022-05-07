@@ -1,0 +1,214 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "log",
+        "start": 46,
+        "end": 49
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "s",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 53,
+              "end": 59
+            },
+            "start": 51,
+            "end": 59
+          },
+          "start": 50,
+          "end": 59
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 62,
+          "end": 66
+        },
+        "start": 60,
+        "end": 66
+      },
+      "declare": true,
+      "start": 29,
+      "end": 67
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "get",
+        "start": 86,
+        "end": 89
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSNumberKeyword",
+          "start": 93,
+          "end": 99
+        },
+        "start": 91,
+        "end": 99
+      },
+      "declare": true,
+      "start": 69,
+      "end": 100
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "main1",
+        "start": 113,
+        "end": 118
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "TryStatement",
+            "block": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "get",
+                      "start": 159,
+                      "end": 162
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 159,
+                    "end": 164
+                  },
+                  "start": 152,
+                  "end": 165
+                }
+              ],
+              "start": 141,
+              "end": 172
+            },
+            "handler": {
+              "type": "CatchClause",
+              "param": {
+                "type": "Identifier",
+                "name": "e",
+                "start": 184,
+                "end": 185
+              },
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "log",
+                        "start": 198,
+                        "end": 201
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "in catch",
+                          "start": 202,
+                          "end": 212
+                        }
+                      ],
+                      "optional": false,
+                      "start": 198,
+                      "end": 213
+                    },
+                    "start": 198,
+                    "end": 214
+                  }
+                ],
+                "start": 187,
+                "end": 221
+              },
+              "start": 178,
+              "end": 221
+            },
+            "finalizer": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "log",
+                      "start": 246,
+                      "end": 249
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "in finally",
+                        "start": 250,
+                        "end": 262
+                      }
+                    ],
+                    "optional": false,
+                    "start": 246,
+                    "end": 263
+                  },
+                  "start": 246,
+                  "end": 264
+                }
+              ],
+              "start": 235,
+              "end": 271
+            },
+            "start": 137,
+            "end": 271
+          }
+        ],
+        "start": 130,
+        "end": 274
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSNumberKeyword",
+          "start": 123,
+          "end": 129
+        },
+        "start": 121,
+        "end": 129
+      },
+      "start": 104,
+      "end": 274
+    }
+  ],
+  "sourceType": "script",
+  "start": 29,
+  "end": 274
+}

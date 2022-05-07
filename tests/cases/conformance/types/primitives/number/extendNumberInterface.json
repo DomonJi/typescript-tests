@@ -1,0 +1,380 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "doStuff",
+              "start": 24,
+              "end": 31
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 35,
+                "end": 41
+              },
+              "start": 33,
+              "end": 41
+            },
+            "start": 24,
+            "end": 42
+          },
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "doOtherStuff",
+              "start": 48,
+              "end": 60
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 66,
+                      "end": 67
+                    },
+                    "start": 66,
+                    "end": 67
+                  },
+                  "start": 65,
+                  "end": 67
+                },
+                "start": 64,
+                "end": 67
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 70,
+                  "end": 71
+                },
+                "start": 70,
+                "end": 71
+              },
+              "start": 68,
+              "end": 71
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterDeclaration",
+              "params": [
+                {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 61,
+                    "end": 62
+                  },
+                  "start": 61,
+                  "end": 62
+                }
+              ],
+              "start": 60,
+              "end": 63
+            },
+            "start": 48,
+            "end": 72
+          }
+        ],
+        "start": 17,
+        "end": 75
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Number",
+        "start": 10,
+        "end": 16
+      },
+      "start": 0,
+      "end": 75
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 83,
+            "end": 84
+          },
+          "init": {
+            "type": "Literal",
+            "value": 1,
+            "start": 87,
+            "end": 88
+          },
+          "start": 83,
+          "end": 88
+        }
+      ],
+      "kind": "var",
+      "start": 79,
+      "end": 89
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "a",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 98,
+                "end": 104
+              },
+              "start": 96,
+              "end": 104
+            },
+            "start": 95,
+            "end": 104
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 107,
+                "end": 108
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "doStuff",
+                "start": 109,
+                "end": 116
+              },
+              "computed": false,
+              "optional": false,
+              "start": 107,
+              "end": 116
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 107,
+            "end": 118
+          },
+          "start": 95,
+          "end": 118
+        }
+      ],
+      "kind": "var",
+      "start": 91,
+      "end": 119
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "b",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 128,
+                "end": 134
+              },
+              "start": 126,
+              "end": 134
+            },
+            "start": 125,
+            "end": 134
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 137,
+                "end": 138
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "doOtherStuff",
+                "start": 139,
+                "end": 151
+              },
+              "computed": false,
+              "optional": false,
+              "start": 137,
+              "end": 151
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "hm",
+                "start": 152,
+                "end": 156
+              }
+            ],
+            "optional": false,
+            "start": 137,
+            "end": 157
+          },
+          "start": 125,
+          "end": 157
+        }
+      ],
+      "kind": "var",
+      "start": 121,
+      "end": 158
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 167,
+                "end": 173
+              },
+              "start": 165,
+              "end": 173
+            },
+            "start": 164,
+            "end": 173
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 176,
+                "end": 177
+              },
+              "property": {
+                "type": "Literal",
+                "value": "doStuff",
+                "start": 178,
+                "end": 187
+              },
+              "computed": true,
+              "optional": false,
+              "start": 176,
+              "end": 188
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 176,
+            "end": 190
+          },
+          "start": 164,
+          "end": 190
+        }
+      ],
+      "kind": "var",
+      "start": 160,
+      "end": 191
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 200,
+                "end": 206
+              },
+              "start": 198,
+              "end": 206
+            },
+            "start": 197,
+            "end": 206
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 209,
+                "end": 210
+              },
+              "property": {
+                "type": "Literal",
+                "value": "doOtherStuff",
+                "start": 211,
+                "end": 225
+              },
+              "computed": true,
+              "optional": false,
+              "start": 209,
+              "end": 226
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "hm",
+                "start": 227,
+                "end": 231
+              }
+            ],
+            "optional": false,
+            "start": 209,
+            "end": 232
+          },
+          "start": 197,
+          "end": 232
+        }
+      ],
+      "kind": "var",
+      "start": 193,
+      "end": 233
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 233
+}

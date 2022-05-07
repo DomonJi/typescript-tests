@@ -1,0 +1,178 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 145,
+              "end": 146
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 148,
+                "end": 154
+              },
+              "start": 146,
+              "end": 154
+            },
+            "start": 145,
+            "end": 155
+          }
+        ],
+        "start": 138,
+        "end": 158
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Item",
+        "start": 133,
+        "end": 137
+      },
+      "start": 123,
+      "end": 158
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "getItems",
+        "start": 177,
+        "end": 185
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSArrayType",
+          "elementType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "Item",
+              "start": 189,
+              "end": 193
+            },
+            "start": 189,
+            "end": 193
+          },
+          "start": 189,
+          "end": 195
+        },
+        "start": 187,
+        "end": 195
+      },
+      "declare": true,
+      "start": 160,
+      "end": 196
+    },
+    {
+      "type": "TSExportAssignment",
+      "expression": {
+        "type": "Identifier",
+        "name": "getItems",
+        "start": 207,
+        "end": 215
+      },
+      "start": 198,
+      "end": 216
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "items",
+            "start": 250,
+            "end": 255
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "require",
+                "start": 258,
+                "end": 265
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "./some-mod",
+                  "start": 266,
+                  "end": 278
+                }
+              ],
+              "optional": false,
+              "start": 258,
+              "end": 279
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 258,
+            "end": 281
+          },
+          "start": 250,
+          "end": 281
+        }
+      ],
+      "kind": "const",
+      "start": 244,
+      "end": 282
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "module",
+            "start": 284,
+            "end": 290
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "exports",
+            "start": 291,
+            "end": 298
+          },
+          "computed": false,
+          "optional": false,
+          "start": 284,
+          "end": 298
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "items",
+          "start": 301,
+          "end": 306
+        },
+        "start": 284,
+        "end": 306
+      },
+      "start": 284,
+      "end": 307
+    }
+  ],
+  "sourceType": "module",
+  "start": 123,
+  "end": 307
+}

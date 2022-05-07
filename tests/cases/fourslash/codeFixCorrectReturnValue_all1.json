@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 1155,
+            "end": 1161
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 1162,
+            "end": 1172
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1155,
+          "end": 1172
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 1179,
+                  "end": 1184
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixAddReturnStatement",
+                  "start": 1186,
+                  "end": 1209
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1179,
+                "end": 1209
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 1215,
+                  "end": 1232
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add all missing return statement",
+                  "start": 1234,
+                  "end": 1268
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1215,
+                "end": 1268
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 1274,
+                  "end": 1288
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface A {\n    bar: string\n}\n\nfunction foo1 (_a: () => number ) { }\nfoo1(() => {\n    return 1\n})\nfunction foo2 (_a: () => A) { }\nfoo2(() => {\n    return { bar: '1' }\n})\nfoo2(() => {\n    return { bar: '1' }\n})\nfunction foo3 (_a: () => A | number) { }\nfoo3(() => {\n    return 1\n})\nfoo3(() => {\n    return { bar: '1' }\n})\n\nfunction bar1 (): number {\n    return 1\n}\nfunction bar2 (): A {\n    return { bar: '1' }\n}\nfunction bar3 (): A {\n    return { bar: '1' }\n}\nfunction bar4 (): A | number {\n    return 1\n}\nfunction bar5(): A | number {\n    return { bar: '1' }\n}\nconst baz1: () => number = () => {\n    return 1\n}\nconst baz2: () => A = () => {\n    return { bar: '1' }\n}\nconst baz3: () => A = () => {\n    return { bar: '1' }\n}\nconst baz4: ((() => number) | (() => A)) = () => {\n    return 1\n}\nconst baz5: ((() => number) | (() => A)) = () => {\n    return { bar: '1' }\n}\nconst baz6: () => number = () => { return 1 }\n\nconst test: { a: () => A } = { a: () => { return { bar: '1' } } }",
+                        "cooked": "interface A {\n    bar: string\n}\n\nfunction foo1 (_a: () => number ) { }\nfoo1(() => {\n    return 1\n})\nfunction foo2 (_a: () => A) { }\nfoo2(() => {\n    return { bar: '1' }\n})\nfoo2(() => {\n    return { bar: '1' }\n})\nfunction foo3 (_a: () => A | number) { }\nfoo3(() => {\n    return 1\n})\nfoo3(() => {\n    return { bar: '1' }\n})\n\nfunction bar1 (): number {\n    return 1\n}\nfunction bar2 (): A {\n    return { bar: '1' }\n}\nfunction bar3 (): A {\n    return { bar: '1' }\n}\nfunction bar4 (): A | number {\n    return 1\n}\nfunction bar5(): A | number {\n    return { bar: '1' }\n}\nconst baz1: () => number = () => {\n    return 1\n}\nconst baz2: () => A = () => {\n    return { bar: '1' }\n}\nconst baz3: () => A = () => {\n    return { bar: '1' }\n}\nconst baz4: ((() => number) | (() => A)) = () => {\n    return 1\n}\nconst baz5: ((() => number) | (() => A)) = () => {\n    return { bar: '1' }\n}\nconst baz6: () => number = () => { return 1 }\n\nconst test: { a: () => A } = { a: () => { return { bar: '1' } } }"
+                      },
+                      "tail": true,
+                      "start": 1290,
+                      "end": 2272
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 1290,
+                  "end": 2272
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1274,
+                "end": 2272
+              }
+            ],
+            "start": 1173,
+            "end": 2275
+          }
+        ],
+        "optional": false,
+        "start": 1155,
+        "end": 2276
+      },
+      "start": 1155,
+      "end": 2277
+    }
+  ],
+  "sourceType": "script",
+  "start": 1155,
+  "end": 2277
+}

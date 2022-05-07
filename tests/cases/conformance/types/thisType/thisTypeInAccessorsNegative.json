@@ -1,0 +1,495 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "n",
+              "start": 85,
+              "end": 86
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 88,
+                "end": 94
+              },
+              "start": 86,
+              "end": 94
+            },
+            "start": 85,
+            "end": 95
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 100,
+              "end": 101
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 103,
+                "end": 109
+              },
+              "start": 101,
+              "end": 109
+            },
+            "start": 100,
+            "end": 110
+          }
+        ],
+        "start": 79,
+        "end": 112
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 75,
+        "end": 78
+      },
+      "start": 65,
+      "end": 112
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "wrong",
+              "start": 133,
+              "end": 138
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "place",
+                      "start": 140,
+                      "end": 147
+                    },
+                    "start": 140,
+                    "end": 147
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "time",
+                      "start": 150,
+                      "end": 156
+                    },
+                    "start": 150,
+                    "end": 156
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "method",
+                      "start": 159,
+                      "end": 167
+                    },
+                    "start": 159,
+                    "end": 167
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "technique",
+                      "start": 170,
+                      "end": 181
+                    },
+                    "start": 170,
+                    "end": 181
+                  }
+                ],
+                "start": 140,
+                "end": 181
+              },
+              "start": 138,
+              "end": 181
+            },
+            "start": 133,
+            "end": 182
+          }
+        ],
+        "start": 127,
+        "end": 184
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Bar",
+        "start": 123,
+        "end": 126
+      },
+      "start": 113,
+      "end": 184
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "mismatch",
+            "start": 191,
+            "end": 199
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "n",
+                  "start": 208,
+                  "end": 209
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 13,
+                  "start": 211,
+                  "end": 213
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 208,
+                "end": 213
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 223,
+                  "end": 224
+                },
+                "value": {
+                  "type": "FunctionExpression",
+                  "id": null,
+                  "generator": false,
+                  "expression": false,
+                  "async": false,
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 245,
+                            "end": 249
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "n",
+                            "start": 250,
+                            "end": 251
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 245,
+                          "end": 251
+                        },
+                        "start": 238,
+                        "end": 252
+                      }
+                    ],
+                    "start": 236,
+                    "end": 254
+                  },
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "this",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "Foo",
+                            "start": 231,
+                            "end": 234
+                          },
+                          "start": 231,
+                          "end": 234
+                        },
+                        "start": 229,
+                        "end": 234
+                      },
+                      "start": 225,
+                      "end": 234
+                    }
+                  ],
+                  "start": 224,
+                  "end": 254
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "get",
+                "start": 219,
+                "end": 254
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 264,
+                  "end": 265
+                },
+                "value": {
+                  "type": "FunctionExpression",
+                  "id": null,
+                  "generator": false,
+                  "expression": false,
+                  "async": false,
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 282,
+                              "end": 286
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "wrong",
+                              "start": 287,
+                              "end": 292
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 282,
+                            "end": 292
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "method",
+                            "start": 295,
+                            "end": 303
+                          },
+                          "start": 282,
+                          "end": 303
+                        },
+                        "start": 282,
+                        "end": 304
+                      }
+                    ],
+                    "start": 280,
+                    "end": 306
+                  },
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "this",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "Bar",
+                            "start": 272,
+                            "end": 275
+                          },
+                          "start": 272,
+                          "end": 275
+                        },
+                        "start": 270,
+                        "end": 275
+                      },
+                      "start": 266,
+                      "end": 275
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "n",
+                      "start": 277,
+                      "end": 278
+                    }
+                  ],
+                  "start": 265,
+                  "end": 306
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "set",
+                "start": 260,
+                "end": 306
+              }
+            ],
+            "start": 202,
+            "end": 308
+          },
+          "start": 191,
+          "end": 308
+        }
+      ],
+      "kind": "const",
+      "start": 185,
+      "end": 308
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "contextual",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 327,
+                  "end": 330
+                },
+                "start": 327,
+                "end": 330
+              },
+              "start": 325,
+              "end": 330
+            },
+            "start": 315,
+            "end": 330
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "n",
+                  "start": 339,
+                  "end": 340
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 16,
+                  "start": 342,
+                  "end": 344
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 339,
+                "end": 344
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 354,
+                  "end": 355
+                },
+                "value": {
+                  "type": "FunctionExpression",
+                  "id": null,
+                  "generator": false,
+                  "expression": false,
+                  "async": false,
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 367,
+                            "end": 371
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "n",
+                            "start": 372,
+                            "end": 373
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 367,
+                          "end": 373
+                        },
+                        "start": 360,
+                        "end": 374
+                      }
+                    ],
+                    "start": 358,
+                    "end": 376
+                  },
+                  "params": [],
+                  "start": 355,
+                  "end": 376
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "get",
+                "start": 350,
+                "end": 376
+              }
+            ],
+            "start": 333,
+            "end": 378
+          },
+          "start": 315,
+          "end": 378
+        }
+      ],
+      "kind": "const",
+      "start": 309,
+      "end": 378
+    }
+  ],
+  "sourceType": "script",
+  "start": 65,
+  "end": 379
+}

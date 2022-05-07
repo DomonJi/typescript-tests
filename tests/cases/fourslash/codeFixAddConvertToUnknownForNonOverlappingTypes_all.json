@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 172,
+            "end": 178
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 179,
+            "end": 189
+          },
+          "computed": false,
+          "optional": false,
+          "start": 172,
+          "end": 189
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 197,
+                  "end": 202
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addConvertToUnknownForNonOverlappingTypes",
+                  "start": 204,
+                  "end": 247
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 197,
+                "end": 247
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 254,
+                  "end": 271
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add 'unknown' to all conversions of non-overlapping types",
+                  "start": 273,
+                  "end": 332
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 254,
+                "end": 332
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 339,
+                  "end": 353
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "const s1 = 1 as unknown as string;\r\nconst o1 = s + \" word\" as unknown as object;\r\n\r\nconst s2 = <string><unknown>2;\r\nconst o2 = <object><unknown>s2;",
+                        "cooked": "const s1 = 1 as unknown as string;\nconst o1 = s + \" word\" as unknown as object;\n\nconst s2 = <string><unknown>2;\nconst o2 = <object><unknown>s2;"
+                      },
+                      "tail": true,
+                      "start": 356,
+                      "end": 505
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 356,
+                  "end": 505
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 339,
+                "end": 505
+              }
+            ],
+            "start": 190,
+            "end": 508
+          }
+        ],
+        "optional": false,
+        "start": 172,
+        "end": 509
+      },
+      "start": 172,
+      "end": 510
+    }
+  ],
+  "sourceType": "script",
+  "start": 172,
+  "end": 510
+}

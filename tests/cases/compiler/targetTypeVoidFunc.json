@@ -1,0 +1,192 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f1",
+        "start": 9,
+        "end": 11
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": null,
+                    "start": 63,
+                    "end": 70
+                  }
+                ],
+                "start": 61,
+                "end": 72
+              },
+              "async": false,
+              "expression": false,
+              "start": 49,
+              "end": 72
+            },
+            "start": 42,
+            "end": 72
+          }
+        ],
+        "start": 35,
+        "end": 75
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeLiteral",
+          "members": [
+            {
+              "type": "TSConstructSignatureDeclaration",
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSNumberKeyword",
+                  "start": 25,
+                  "end": 31
+                },
+                "start": 23,
+                "end": 31
+              },
+              "start": 17,
+              "end": 32
+            }
+          ],
+          "start": 15,
+          "end": 34
+        },
+        "start": 13,
+        "end": 34
+      },
+      "start": 0,
+      "end": 75
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 75,
+      "end": 76
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 85,
+            "end": 86
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "f1",
+              "start": 89,
+              "end": 91
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 89,
+            "end": 93
+          },
+          "start": 85,
+          "end": 93
+        }
+      ],
+      "kind": "var",
+      "start": 81,
+      "end": 94
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "start": 100,
+            "end": 101
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 108,
+              "end": 109
+            },
+            "arguments": [],
+            "start": 104,
+            "end": 111
+          },
+          "start": 100,
+          "end": 111
+        }
+      ],
+      "kind": "var",
+      "start": 96,
+      "end": 112
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "z",
+            "start": 118,
+            "end": 119
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "f1",
+                "start": 127,
+                "end": 129
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 127,
+              "end": 131
+            },
+            "arguments": [],
+            "start": 122,
+            "end": 134
+          },
+          "start": 118,
+          "end": 134
+        }
+      ],
+      "kind": "var",
+      "start": 114,
+      "end": 135
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 135
+}

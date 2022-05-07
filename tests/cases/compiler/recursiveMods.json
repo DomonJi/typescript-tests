@@ -1,0 +1,345 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Foo",
+          "start": 70,
+          "end": 73
+        },
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [
+            {
+              "type": "ExportNamedDeclaration",
+              "declaration": {
+                "type": "ClassDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "C",
+                  "start": 91,
+                  "end": 92
+                },
+                "body": {
+                  "type": "ClassBody",
+                  "body": [],
+                  "start": 93,
+                  "end": 95
+                },
+                "superClass": null,
+                "start": 85,
+                "end": 95
+              },
+              "specifiers": [],
+              "source": null,
+              "exportKind": "value",
+              "assertions": [],
+              "start": 78,
+              "end": 95
+            }
+          ],
+          "start": 74,
+          "end": 98
+        },
+        "start": 63,
+        "end": 98
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 56,
+      "end": 98
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Foo",
+          "start": 116,
+          "end": 119
+        },
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [
+            {
+              "type": "FunctionDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "Bar",
+                "start": 135,
+                "end": 138
+              },
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "Literal",
+                      "value": true,
+                      "start": 154,
+                      "end": 158
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ReturnStatement",
+                          "argument": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "Bar",
+                              "start": 169,
+                              "end": 172
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 169,
+                            "end": 174
+                          },
+                          "start": 162,
+                          "end": 175
+                        }
+                      ],
+                      "start": 160,
+                      "end": 176
+                    },
+                    "alternate": null,
+                    "start": 150,
+                    "end": 176
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "NewExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "C",
+                        "start": 191,
+                        "end": 192
+                      },
+                      "arguments": [],
+                      "start": 187,
+                      "end": 194
+                    },
+                    "start": 180,
+                    "end": 195
+                  }
+                ],
+                "start": 145,
+                "end": 199
+              },
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 143,
+                    "end": 144
+                  },
+                  "start": 143,
+                  "end": 144
+                },
+                "start": 141,
+                "end": 144
+              },
+              "start": 126,
+              "end": 199
+            },
+            {
+              "type": "FunctionDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "Baz",
+                "start": 213,
+                "end": 216
+              },
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "start": 232,
+                          "end": 233
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "Baz",
+                            "start": 236,
+                            "end": 239
+                          },
+                          "arguments": [],
+                          "optional": false,
+                          "start": 236,
+                          "end": 241
+                        },
+                        "start": 232,
+                        "end": 241
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 228,
+                    "end": 242
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "Bar",
+                        "start": 253,
+                        "end": 256
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 253,
+                      "end": 258
+                    },
+                    "start": 246,
+                    "end": 259
+                  }
+                ],
+                "start": 223,
+                "end": 263
+              },
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 221,
+                    "end": 222
+                  },
+                  "start": 221,
+                  "end": 222
+                },
+                "start": 219,
+                "end": 222
+              },
+              "start": 204,
+              "end": 263
+            },
+            {
+              "type": "FunctionDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "Gar",
+                "start": 277,
+                "end": 280
+              },
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "c",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "C",
+                                "start": 296,
+                                "end": 297
+                              },
+                              "start": 296,
+                              "end": 297
+                            },
+                            "start": 294,
+                            "end": 297
+                          },
+                          "start": 292,
+                          "end": 297
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "Baz",
+                            "start": 300,
+                            "end": 303
+                          },
+                          "arguments": [],
+                          "optional": false,
+                          "start": 300,
+                          "end": 305
+                        },
+                        "start": 292,
+                        "end": 305
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 288,
+                    "end": 306
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": null,
+                    "start": 310,
+                    "end": 317
+                  }
+                ],
+                "start": 283,
+                "end": 321
+              },
+              "start": 268,
+              "end": 321
+            }
+          ],
+          "start": 120,
+          "end": 327
+        },
+        "start": 109,
+        "end": 327
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 102,
+      "end": 327
+    }
+  ],
+  "sourceType": "module",
+  "start": 56,
+  "end": 329
+}

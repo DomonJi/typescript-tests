@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 335,
+            "end": 341
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 342,
+            "end": 349
+          },
+          "computed": false,
+          "optional": false,
+          "start": 335,
+          "end": 349
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 357,
+                  "end": 368
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement inherited abstract class",
+                  "start": 370,
+                  "end": 406
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 357,
+                "end": 406
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 413,
+                  "end": 427
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A {\r\n    abstract f(a: number, b: string): boolean;\r\n    abstract f(a: number, b: string): this;\r\n    abstract f(a: string, b: number): Function;\r\n    abstract f(a: string): Function;\r\n    abstract foo(): number;\r\n}\r\n\r\nclass C extends A {\r\n    f(a: number, b: string): boolean;\r\n    f(a: number, b: string): this;\r\n    f(a: string, b: number): Function;\r\n    f(a: string): Function;\r\n    f(a: unknown, b?: unknown): boolean | Function | this {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    foo(): number {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "abstract class A {\n    abstract f(a: number, b: string): boolean;\n    abstract f(a: number, b: string): this;\n    abstract f(a: string, b: number): Function;\n    abstract f(a: string): Function;\n    abstract foo(): number;\n}\n\nclass C extends A {\n    f(a: number, b: string): boolean;\n    f(a: number, b: string): this;\n    f(a: string, b: number): Function;\n    f(a: string): Function;\n    f(a: unknown, b?: unknown): boolean | Function | this {\n        throw new Error(\"Method not implemented.\");\n    }\n    foo(): number {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 430,
+                      "end": 1034
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 430,
+                  "end": 1034
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 413,
+                "end": 1034
+              }
+            ],
+            "start": 350,
+            "end": 1037
+          }
+        ],
+        "optional": false,
+        "start": 335,
+        "end": 1038
+      },
+      "start": 335,
+      "end": 1039
+    }
+  ],
+  "sourceType": "script",
+  "start": 335,
+  "end": 1041
+}

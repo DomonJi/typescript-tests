@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 327,
+            "end": 333
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 334,
+            "end": 344
+          },
+          "computed": false,
+          "optional": false,
+          "start": 327,
+          "end": 344
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 351,
+                  "end": 356
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "unusedIdentifier_prefix",
+                  "start": 358,
+                  "end": 383
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 351,
+                "end": 383
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 389,
+                  "end": 406
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Prefix all unused declarations with '_' where possible",
+                  "start": 408,
+                  "end": 464
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 389,
+                "end": 464
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 470,
+                  "end": 484
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "/**\n * @param _a First parameter.\n * @param _b Second parameter.\n */ \nfunction f(_a, _b) {\n    const x = 0; // Can't be prefixed, ignored\n}\ntype Length<T> = T extends ArrayLike<infer _U> ? number : never;",
+                        "cooked": "/**\n * @param _a First parameter.\n * @param _b Second parameter.\n */ \nfunction f(_a, _b) {\n    const x = 0; // Can't be prefixed, ignored\n}\ntype Length<T> = T extends ArrayLike<infer _U> ? number : never;"
+                      },
+                      "tail": true,
+                      "start": 486,
+                      "end": 692
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 486,
+                  "end": 692
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 470,
+                "end": 692
+              }
+            ],
+            "start": 345,
+            "end": 695
+          }
+        ],
+        "optional": false,
+        "start": 327,
+        "end": 696
+      },
+      "start": 327,
+      "end": 697
+    }
+  ],
+  "sourceType": "script",
+  "start": 327,
+  "end": 698
+}

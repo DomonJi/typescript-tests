@@ -1,0 +1,89 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "format",
+            "start": 502,
+            "end": 508
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "document",
+            "start": 509,
+            "end": 517
+          },
+          "computed": false,
+          "optional": false,
+          "start": 502,
+          "end": 517
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 502,
+        "end": 519
+      },
+      "start": 502,
+      "end": 520
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 522,
+            "end": 528
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "currentFileContentIs",
+            "start": 529,
+            "end": 549
+          },
+          "computed": false,
+          "optional": false,
+          "start": 522,
+          "end": 549
+        },
+        "arguments": [
+          {
+            "type": "TemplateLiteral",
+            "quasis": [
+              {
+                "type": "TemplateElement",
+                "value": {
+                  "raw": "z$ = this.store.select(this.fake())\r\n    .ofType(\r\n        'ACTION',\r\n        'ACTION-2'\r\n    )\r\n    .pipe(\r\n        filter(x => !!x),\r\n        switchMap(() =>\r\n            this.store.select(this.menuSelector.getAll('x'))\r\n                .pipe(\r\n                    tap(x => {\r\n                        this.x = !x;\r\n                    })\r\n                )\r\n        )\r\n    );\r\n\r\n1\r\n    .toFixed(\r\n        2);",
+                  "cooked": "z$ = this.store.select(this.fake())\n    .ofType(\n        'ACTION',\n        'ACTION-2'\n    )\n    .pipe(\n        filter(x => !!x),\n        switchMap(() =>\n            this.store.select(this.menuSelector.getAll('x'))\n                .pipe(\n                    tap(x => {\n                        this.x = !x;\n                    })\n                )\n        )\n    );\n\n1\n    .toFixed(\n        2);"
+                },
+                "tail": true,
+                "start": 550,
+                "end": 962
+              }
+            ],
+            "expressions": [],
+            "start": 550,
+            "end": 962
+          }
+        ],
+        "optional": false,
+        "start": 522,
+        "end": 965
+      },
+      "start": 522,
+      "end": 966
+    }
+  ],
+  "sourceType": "script",
+  "start": 502,
+  "end": 968
+}

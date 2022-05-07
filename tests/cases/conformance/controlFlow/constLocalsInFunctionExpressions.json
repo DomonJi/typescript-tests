@@ -1,0 +1,792 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "getStringOrNumber",
+        "start": 17,
+        "end": 34
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSUnionType",
+          "types": [
+            {
+              "type": "TSStringKeyword",
+              "start": 38,
+              "end": 44
+            },
+            {
+              "type": "TSNumberKeyword",
+              "start": 47,
+              "end": 53
+            }
+          ],
+          "start": 38,
+          "end": 53
+        },
+        "start": 36,
+        "end": 53
+      },
+      "declare": true,
+      "start": 0,
+      "end": 54
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f1",
+        "start": 67,
+        "end": 69
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 85,
+                  "end": 86
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "getStringOrNumber",
+                    "start": 89,
+                    "end": 106
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 89,
+                  "end": 108
+                },
+                "start": 85,
+                "end": 108
+              }
+            ],
+            "kind": "const",
+            "start": 79,
+            "end": 109
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 126,
+                  "end": 127
+                },
+                "start": 119,
+                "end": 127
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 132,
+                "end": 140
+              },
+              "start": 119,
+              "end": 140
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "f",
+                        "start": 159,
+                        "end": 160
+                      },
+                      "init": {
+                        "type": "ArrowFunctionExpression",
+                        "generator": false,
+                        "id": null,
+                        "params": [],
+                        "body": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 169,
+                            "end": 170
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "length",
+                            "start": 171,
+                            "end": 177
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 169,
+                          "end": 177
+                        },
+                        "async": false,
+                        "expression": true,
+                        "start": 163,
+                        "end": 177
+                      },
+                      "start": 159,
+                      "end": 177
+                    }
+                  ],
+                  "kind": "const",
+                  "start": 153,
+                  "end": 178
+                }
+              ],
+              "start": 142,
+              "end": 185
+            },
+            "alternate": null,
+            "start": 115,
+            "end": 185
+          }
+        ],
+        "start": 72,
+        "end": 188
+      },
+      "start": 58,
+      "end": 188
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f2",
+        "start": 201,
+        "end": 203
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 219,
+                  "end": 220
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "getStringOrNumber",
+                    "start": 223,
+                    "end": 240
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 223,
+                  "end": 242
+                },
+                "start": 219,
+                "end": 242
+              }
+            ],
+            "kind": "const",
+            "start": 213,
+            "end": 243
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 260,
+                  "end": 261
+                },
+                "start": 253,
+                "end": 261
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 266,
+                "end": 274
+              },
+              "start": 253,
+              "end": 274
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": null,
+                  "start": 287,
+                  "end": 294
+                }
+              ],
+              "start": 276,
+              "end": 301
+            },
+            "alternate": null,
+            "start": 249,
+            "end": 301
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "f",
+                  "start": 313,
+                  "end": 314
+                },
+                "init": {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [],
+                  "body": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "x",
+                      "start": 323,
+                      "end": 324
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "length",
+                      "start": 325,
+                      "end": 331
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 323,
+                    "end": 331
+                  },
+                  "async": false,
+                  "expression": true,
+                  "start": 317,
+                  "end": 331
+                },
+                "start": 313,
+                "end": 331
+              }
+            ],
+            "kind": "const",
+            "start": 307,
+            "end": 332
+          }
+        ],
+        "start": 206,
+        "end": 335
+      },
+      "start": 192,
+      "end": 335
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f3",
+        "start": 348,
+        "end": 350
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 366,
+                  "end": 367
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "getStringOrNumber",
+                    "start": 370,
+                    "end": 387
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 370,
+                  "end": 389
+                },
+                "start": 366,
+                "end": 389
+              }
+            ],
+            "kind": "const",
+            "start": 360,
+            "end": 390
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 407,
+                  "end": 408
+                },
+                "start": 400,
+                "end": 408
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 413,
+                "end": 421
+              },
+              "start": 400,
+              "end": 421
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "f",
+                        "start": 440,
+                        "end": 441
+                      },
+                      "init": {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "generator": false,
+                        "params": [],
+                        "body": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ReturnStatement",
+                              "argument": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "x",
+                                  "start": 464,
+                                  "end": 465
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "length",
+                                  "start": 466,
+                                  "end": 472
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 464,
+                                "end": 472
+                              },
+                              "start": 457,
+                              "end": 473
+                            }
+                          ],
+                          "start": 455,
+                          "end": 475
+                        },
+                        "async": false,
+                        "expression": false,
+                        "start": 444,
+                        "end": 475
+                      },
+                      "start": 440,
+                      "end": 475
+                    }
+                  ],
+                  "kind": "const",
+                  "start": 434,
+                  "end": 476
+                }
+              ],
+              "start": 423,
+              "end": 483
+            },
+            "alternate": null,
+            "start": 396,
+            "end": 483
+          }
+        ],
+        "start": 353,
+        "end": 486
+      },
+      "start": 339,
+      "end": 486
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f4",
+        "start": 499,
+        "end": 501
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 517,
+                  "end": 518
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "getStringOrNumber",
+                    "start": 521,
+                    "end": 538
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 521,
+                  "end": 540
+                },
+                "start": 517,
+                "end": 540
+              }
+            ],
+            "kind": "const",
+            "start": 511,
+            "end": 541
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 558,
+                  "end": 559
+                },
+                "start": 551,
+                "end": 559
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 564,
+                "end": 572
+              },
+              "start": 551,
+              "end": 572
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": null,
+                  "start": 585,
+                  "end": 592
+                }
+              ],
+              "start": 574,
+              "end": 599
+            },
+            "alternate": null,
+            "start": 547,
+            "end": 599
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "f",
+                  "start": 611,
+                  "end": 612
+                },
+                "init": {
+                  "type": "FunctionExpression",
+                  "id": null,
+                  "generator": false,
+                  "params": [],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 635,
+                            "end": 636
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "length",
+                            "start": 637,
+                            "end": 643
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 635,
+                          "end": 643
+                        },
+                        "start": 628,
+                        "end": 644
+                      }
+                    ],
+                    "start": 626,
+                    "end": 646
+                  },
+                  "async": false,
+                  "expression": false,
+                  "start": 615,
+                  "end": 646
+                },
+                "start": 611,
+                "end": 646
+              }
+            ],
+            "kind": "const",
+            "start": 605,
+            "end": 647
+          }
+        ],
+        "start": 504,
+        "end": 650
+      },
+      "start": 490,
+      "end": 650
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f5",
+        "start": 663,
+        "end": 665
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 681,
+                  "end": 682
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "getStringOrNumber",
+                    "start": 685,
+                    "end": 702
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 685,
+                  "end": 704
+                },
+                "start": 681,
+                "end": 704
+              }
+            ],
+            "kind": "const",
+            "start": 675,
+            "end": 705
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 722,
+                  "end": 723
+                },
+                "start": 715,
+                "end": 723
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 728,
+                "end": 736
+              },
+              "start": 715,
+              "end": 736
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "f",
+                        "start": 755,
+                        "end": 756
+                      },
+                      "init": {
+                        "type": "ArrowFunctionExpression",
+                        "generator": false,
+                        "id": null,
+                        "params": [],
+                        "body": {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [],
+                          "body": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "x",
+                              "start": 771,
+                              "end": 772
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "length",
+                              "start": 773,
+                              "end": 779
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 771,
+                            "end": 779
+                          },
+                          "async": false,
+                          "expression": true,
+                          "start": 765,
+                          "end": 779
+                        },
+                        "async": false,
+                        "expression": true,
+                        "start": 759,
+                        "end": 779
+                      },
+                      "start": 755,
+                      "end": 779
+                    }
+                  ],
+                  "kind": "const",
+                  "start": 749,
+                  "end": 780
+                }
+              ],
+              "start": 738,
+              "end": 787
+            },
+            "alternate": null,
+            "start": 711,
+            "end": 787
+          }
+        ],
+        "start": 668,
+        "end": 790
+      },
+      "start": 654,
+      "end": 790
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 790
+}

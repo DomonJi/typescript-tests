@@ -1,0 +1,301 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "envVar",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSStringKeyword",
+                    "start": 49,
+                    "end": 55
+                  },
+                  {
+                    "type": "TSUndefinedKeyword",
+                    "start": 58,
+                    "end": 67
+                  }
+                ],
+                "start": 49,
+                "end": 67
+              },
+              "start": 47,
+              "end": 67
+            },
+            "start": 41,
+            "end": 67
+          },
+          "init": null,
+          "start": 41,
+          "end": 67
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 27,
+      "end": 68
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "typeof",
+          "prefix": true,
+          "argument": {
+            "type": "Identifier",
+            "name": "envVar",
+            "start": 80,
+            "end": 86
+          },
+          "start": 73,
+          "end": 86
+        },
+        "right": {
+          "type": "TemplateLiteral",
+          "quasis": [
+            {
+              "type": "TemplateElement",
+              "value": {
+                "raw": "string",
+                "cooked": "string"
+              },
+              "tail": true,
+              "start": 91,
+              "end": 99
+            }
+          ],
+          "expressions": [],
+          "start": 91,
+          "end": 99
+        },
+        "start": 73,
+        "end": 99
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "envVar",
+                  "start": 105,
+                  "end": 111
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "slice",
+                  "start": 112,
+                  "end": 117
+                },
+                "computed": false,
+                "optional": false,
+                "start": 105,
+                "end": 117
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 118,
+                  "end": 119
+                }
+              ],
+              "optional": false,
+              "start": 105,
+              "end": 120
+            },
+            "start": 105,
+            "end": 120
+          }
+        ],
+        "start": 101,
+        "end": 122
+      },
+      "alternate": null,
+      "start": 69,
+      "end": 122
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "obj",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeLiteral",
+                    "members": [
+                      {
+                        "type": "TSPropertySignature",
+                        "computed": false,
+                        "key": {
+                          "type": "Identifier",
+                          "name": "test",
+                          "start": 144,
+                          "end": 148
+                        },
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 150,
+                            "end": 156
+                          },
+                          "start": 148,
+                          "end": 156
+                        },
+                        "start": 144,
+                        "end": 156
+                      }
+                    ],
+                    "start": 143,
+                    "end": 157
+                  },
+                  {
+                    "type": "TSTypeLiteral",
+                    "members": [],
+                    "start": 160,
+                    "end": 162
+                  }
+                ],
+                "start": 143,
+                "end": 162
+              },
+              "start": 141,
+              "end": 162
+            },
+            "start": 138,
+            "end": 162
+          },
+          "init": null,
+          "start": 138,
+          "end": 162
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 124,
+      "end": 162
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "in",
+        "left": {
+          "type": "TemplateLiteral",
+          "quasis": [
+            {
+              "type": "TemplateElement",
+              "value": {
+                "raw": "test",
+                "cooked": "test"
+              },
+              "tail": true,
+              "start": 167,
+              "end": 173
+            }
+          ],
+          "expressions": [],
+          "start": 167,
+          "end": 173
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "obj",
+          "start": 177,
+          "end": 180
+        },
+        "start": 167,
+        "end": 180
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "obj",
+                    "start": 186,
+                    "end": 189
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "test",
+                    "start": 190,
+                    "end": 194
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 186,
+                  "end": 194
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "slice",
+                  "start": 195,
+                  "end": 200
+                },
+                "computed": false,
+                "optional": false,
+                "start": 186,
+                "end": 200
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 201,
+                  "end": 202
+                }
+              ],
+              "optional": false,
+              "start": 186,
+              "end": 203
+            },
+            "start": 186,
+            "end": 203
+          }
+        ],
+        "start": 182,
+        "end": 205
+      },
+      "alternate": null,
+      "start": 163,
+      "end": 205
+    }
+  ],
+  "sourceType": "script",
+  "start": 27,
+  "end": 206
+}

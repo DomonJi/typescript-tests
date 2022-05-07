@@ -1,0 +1,269 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "doThing",
+        "start": 9,
+        "end": 16
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "n",
+                    "start": 22,
+                    "end": 23
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 25,
+                      "end": 31
+                    },
+                    "start": 23,
+                    "end": 31
+                  },
+                  "start": 22,
+                  "end": 31
+                }
+              ],
+              "start": 20,
+              "end": 33
+            },
+            "start": 18,
+            "end": 33
+          },
+          "start": 17,
+          "end": 33
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 35,
+        "end": 38
+      },
+      "start": 0,
+      "end": 38
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 46,
+        "end": 47
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "n",
+              "start": 62,
+              "end": 63
+            },
+            "value": null,
+            "computed": false,
+            "static": true,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 65,
+                "end": 71
+              },
+              "start": 63,
+              "end": 71
+            },
+            "start": 55,
+            "end": 72
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "p",
+              "start": 78,
+              "end": 79
+            },
+            "value": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThing",
+                "start": 82,
+                "end": 89
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "A",
+                  "start": 90,
+                  "end": 91
+                }
+              ],
+              "optional": false,
+              "start": 82,
+              "end": 92
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 78,
+            "end": 93
+          }
+        ],
+        "start": 48,
+        "end": 102
+      },
+      "superClass": null,
+      "start": 40,
+      "end": 102
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 110,
+        "end": 111
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "p1",
+              "start": 129,
+              "end": 131
+            },
+            "value": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThing",
+                "start": 134,
+                "end": 141
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "A",
+                  "start": 142,
+                  "end": 143
+                }
+              ],
+              "optional": false,
+              "start": 134,
+              "end": 144
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 129,
+            "end": 145
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "p2",
+              "start": 157,
+              "end": 159
+            },
+            "value": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThing",
+                "start": 162,
+                "end": 169
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "B",
+                  "start": 170,
+                  "end": 171
+                }
+              ],
+              "optional": false,
+              "start": 162,
+              "end": 172
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 157,
+            "end": 173
+          }
+        ],
+        "start": 122,
+        "end": 182
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 120,
+        "end": 121
+      },
+      "start": 104,
+      "end": 182
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "doThing",
+          "start": 184,
+          "end": 191
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "B",
+            "start": 192,
+            "end": 193
+          }
+        ],
+        "optional": false,
+        "start": 184,
+        "end": 194
+      },
+      "start": 184,
+      "end": 195
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 202
+}

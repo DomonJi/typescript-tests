@@ -1,0 +1,199 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 502,
+            "end": 506
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "file",
+            "start": 507,
+            "end": 511
+          },
+          "computed": false,
+          "optional": false,
+          "start": 502,
+          "end": 511
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "foo.tsx",
+            "start": 512,
+            "end": 521
+          }
+        ],
+        "optional": false,
+        "start": 502,
+        "end": 522
+      },
+      "start": 502,
+      "end": 523
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 525,
+            "end": 531
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 532,
+            "end": 542
+          },
+          "computed": false,
+          "optional": false,
+          "start": 525,
+          "end": 542
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 550,
+                  "end": 555
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingAttributes",
+                  "start": 557,
+                  "end": 579
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 550,
+                "end": 579
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 586,
+                  "end": 603
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 605,
+                        "end": 607
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 608,
+                        "end": 619
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 605,
+                      "end": 619
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Add_all_missing_attributes",
+                      "start": 620,
+                      "end": 646
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 605,
+                    "end": 646
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 647,
+                    "end": 654
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 605,
+                  "end": 654
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 586,
+                "end": 654
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 661,
+                  "end": 675
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface P {\r\n    a: number;\r\n    b: string;\r\n    c: number[];\r\n    d: any;\r\n}\r\nconst A = ({ a, b, c, d }: P) =>\r\n    <div>{a}{b}{c}{d}</div>;\r\nconst props = { a: 1, b: \"\" };\r\n\r\nconst C1 = () =>\r\n    <A a={1} b={\"\"} c={[]} d={undefined}></A>\r\nconst C2 = () =>\r\n    <A c={[]} d={undefined} {...props}></A>\r\nconst C3 = () =>\r\n    <A d={undefined} c={[]} {...props}></A>\r\nconst C4 = () =>\r\n    <A a={0} b={\"\"} c={[]} d={undefined}></A>",
+                        "cooked": "interface P {\n    a: number;\n    b: string;\n    c: number[];\n    d: any;\n}\nconst A = ({ a, b, c, d }: P) =>\n    <div>{a}{b}{c}{d}</div>;\nconst props = { a: 1, b: \"\" };\n\nconst C1 = () =>\n    <A a={1} b={\"\"} c={[]} d={undefined}></A>\nconst C2 = () =>\n    <A c={[]} d={undefined} {...props}></A>\nconst C3 = () =>\n    <A d={undefined} c={[]} {...props}></A>\nconst C4 = () =>\n    <A a={0} b={\"\"} c={[]} d={undefined}></A>"
+                      },
+                      "tail": true,
+                      "start": 678,
+                      "end": 1113
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 678,
+                  "end": 1113
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 661,
+                "end": 1113
+              }
+            ],
+            "start": 543,
+            "end": 1116
+          }
+        ],
+        "optional": false,
+        "start": 525,
+        "end": 1117
+      },
+      "start": 525,
+      "end": 1118
+    }
+  ],
+  "sourceType": "script",
+  "start": 502,
+  "end": 1120
+}

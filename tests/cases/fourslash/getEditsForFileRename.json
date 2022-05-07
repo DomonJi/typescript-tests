@@ -1,0 +1,195 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 580,
+            "end": 586
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "getEditsForFileRename",
+            "start": 587,
+            "end": 608
+          },
+          "computed": false,
+          "optional": false,
+          "start": 580,
+          "end": 608
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "oldPath",
+                  "start": 615,
+                  "end": 622
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "/src/old.ts",
+                  "start": 624,
+                  "end": 637
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 615,
+                "end": 637
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newPath",
+                  "start": 643,
+                  "end": 650
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "/src/new.ts",
+                  "start": 652,
+                  "end": 665
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 643,
+                "end": 665
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContents",
+                  "start": 671,
+                  "end": 686
+                },
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "/a.ts",
+                        "start": 698,
+                        "end": 705
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": "/// <reference path=\"./src/new.ts\" />\nimport old from \"./src/new\";",
+                        "start": 707,
+                        "end": 776
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 698,
+                      "end": 776
+                    },
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "/src/a.ts",
+                        "start": 786,
+                        "end": 797
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": "/// <reference path=\"./new.ts\" />\nimport old from \"./new\";",
+                        "start": 799,
+                        "end": 860
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 786,
+                      "end": 860
+                    },
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "/src/foo/a.ts",
+                        "start": 870,
+                        "end": 885
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": "/// <reference path=\"../new.ts\" />\nimport old from \"../new\";",
+                        "start": 887,
+                        "end": 950
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 870,
+                      "end": 950
+                    },
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "/tsconfig.json",
+                        "start": 960,
+                        "end": 976
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": "{ \"files\": [\"a.ts\", \"src/a.ts\", \"src/foo/a.ts\", \"src/new.ts\"] }",
+                        "start": 978,
+                        "end": 1043
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 960,
+                      "end": 1043
+                    }
+                  ],
+                  "start": 688,
+                  "end": 1050
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 671,
+                "end": 1050
+              }
+            ],
+            "start": 609,
+            "end": 1053
+          }
+        ],
+        "optional": false,
+        "start": 580,
+        "end": 1054
+      },
+      "start": 580,
+      "end": 1055
+    }
+  ],
+  "sourceType": "script",
+  "start": 580,
+  "end": 1056
+}

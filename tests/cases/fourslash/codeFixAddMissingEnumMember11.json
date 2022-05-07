@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 185,
+            "end": 191
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 192,
+            "end": 199
+          },
+          "computed": false,
+          "optional": false,
+          "start": 185,
+          "end": 199
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 206,
+                  "end": 217
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add missing enum member 'c'",
+                  "start": 219,
+                  "end": 248
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 206,
+                "end": 248
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 254,
+                  "end": 268
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "enum E {\n    a,\n    b = 1,\n    c = \"123\"\n}\nenum A {\n    a = E.c    \n}\nenum B {\n    b = A.a,\n    c\n}\nB.c",
+                        "cooked": "enum E {\n    a,\n    b = 1,\n    c = \"123\"\n}\nenum A {\n    a = E.c    \n}\nenum B {\n    b = A.a,\n    c\n}\nB.c"
+                      },
+                      "tail": true,
+                      "start": 270,
+                      "end": 375
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 270,
+                  "end": 375
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 254,
+                "end": 375
+              }
+            ],
+            "start": 200,
+            "end": 377
+          }
+        ],
+        "optional": false,
+        "start": 185,
+        "end": 378
+      },
+      "start": 185,
+      "end": 379
+    }
+  ],
+  "sourceType": "script",
+  "start": 185,
+  "end": 380
+}

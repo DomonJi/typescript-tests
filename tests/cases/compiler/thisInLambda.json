@@ -1,0 +1,335 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 6,
+        "end": 9
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 17,
+              "end": 18
+            },
+            "value": {
+              "type": "Literal",
+              "value": "hello",
+              "start": 21,
+              "end": 28
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 17,
+            "end": 29
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 35,
+              "end": 38
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression",
+                        "start": 52,
+                        "end": 56
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 57,
+                        "end": 58
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 52,
+                      "end": 58
+                    },
+                    "start": 52,
+                    "end": 59
+                  },
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "f",
+                          "start": 97,
+                          "end": 98
+                        },
+                        "init": {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [],
+                          "body": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 107,
+                              "end": 111
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "x",
+                              "start": 112,
+                              "end": 113
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 107,
+                            "end": 113
+                          },
+                          "async": false,
+                          "expression": true,
+                          "start": 101,
+                          "end": 113
+                        },
+                        "start": 97,
+                        "end": 113
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 93,
+                    "end": 114
+                  }
+                ],
+                "start": 41,
+                "end": 160
+              },
+              "params": [],
+              "start": 38,
+              "end": 160
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 35,
+            "end": 160
+          }
+        ],
+        "start": 10,
+        "end": 163
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 163
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "myFn",
+        "start": 176,
+        "end": 180
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 183,
+              "end": 186
+            },
+            "start": 182,
+            "end": 186
+          },
+          "start": 181,
+          "end": 186
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 188,
+        "end": 191
+      },
+      "start": 167,
+      "end": 191
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "myCls",
+        "start": 199,
+        "end": 204
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 212,
+              "end": 223
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "myFn",
+                        "start": 238,
+                        "end": 242
+                      },
+                      "arguments": [
+                        {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "myFn",
+                                    "start": 264,
+                                    "end": 268
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "ArrowFunctionExpression",
+                                      "generator": false,
+                                      "id": null,
+                                      "params": [],
+                                      "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                          {
+                                            "type": "VariableDeclaration",
+                                            "declarations": [
+                                              {
+                                                "type": "VariableDeclarator",
+                                                "id": {
+                                                  "type": "Identifier",
+                                                  "name": "x",
+                                                  "start": 298,
+                                                  "end": 299
+                                                },
+                                                "init": {
+                                                  "type": "ThisExpression",
+                                                  "start": 302,
+                                                  "end": 306
+                                                },
+                                                "start": 298,
+                                                "end": 306
+                                              }
+                                            ],
+                                            "kind": "var",
+                                            "start": 294,
+                                            "end": 307
+                                          }
+                                        ],
+                                        "start": 275,
+                                        "end": 322
+                                      },
+                                      "async": false,
+                                      "expression": false,
+                                      "start": 269,
+                                      "end": 322
+                                    }
+                                  ],
+                                  "optional": false,
+                                  "start": 264,
+                                  "end": 323
+                                },
+                                "start": 264,
+                                "end": 324
+                              }
+                            ],
+                            "start": 249,
+                            "end": 335
+                          },
+                          "async": false,
+                          "expression": false,
+                          "start": 243,
+                          "end": 335
+                        }
+                      ],
+                      "optional": false,
+                      "start": 238,
+                      "end": 336
+                    },
+                    "start": 238,
+                    "end": 337
+                  }
+                ],
+                "start": 227,
+                "end": 344
+              },
+              "start": 224,
+              "end": 344
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 212,
+            "end": 344
+          }
+        ],
+        "start": 205,
+        "end": 347
+      },
+      "superClass": null,
+      "start": 193,
+      "end": 347
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 347
+}

@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 379,
+            "end": 383
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 384,
+            "end": 390
+          },
+          "computed": false,
+          "optional": false,
+          "start": 379,
+          "end": 390
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 391,
+            "end": 394
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 396,
+            "end": 399
+          }
+        ],
+        "optional": false,
+        "start": 379,
+        "end": 400
+      },
+      "start": 379,
+      "end": 401
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 403,
+            "end": 407
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 408,
+            "end": 421
+          },
+          "computed": false,
+          "optional": false,
+          "start": 403,
+          "end": 421
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 429,
+                  "end": 441
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Infer function return type",
+                  "start": 443,
+                  "end": 471
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 429,
+                "end": 471
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 478,
+                  "end": 488
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Infer function return type",
+                  "start": 490,
+                  "end": 518
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 478,
+                "end": 518
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 525,
+                  "end": 542
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Infer function return type",
+                  "start": 544,
+                  "end": 572
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 525,
+                "end": 572
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 579,
+                  "end": 589
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface F1 { x: number; y: number; }\r\ntype T1 = [number, number];\r\n\r\nfunction foo(num: number): number | F1 | T1 {\r\n   switch (num) {\r\n      case 1:\r\n         return { x: num, y: num } as F1;\r\n      case 2:\r\n         return [num, num] as T1;\r\n      default:\r\n         return num;\r\n   }\r\n}",
+                        "cooked": "interface F1 { x: number; y: number; }\ntype T1 = [number, number];\n\nfunction foo(num: number): number | F1 | T1 {\n   switch (num) {\n      case 1:\n         return { x: num, y: num } as F1;\n      case 2:\n         return [num, num] as T1;\n      default:\n         return num;\n   }\n}"
+                      },
+                      "tail": true,
+                      "start": 592,
+                      "end": 884
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 592,
+                  "end": 884
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 579,
+                "end": 884
+              }
+            ],
+            "start": 422,
+            "end": 887
+          }
+        ],
+        "optional": false,
+        "start": 403,
+        "end": 888
+      },
+      "start": 403,
+      "end": 889
+    }
+  ],
+  "sourceType": "script",
+  "start": 379,
+  "end": 891
+}

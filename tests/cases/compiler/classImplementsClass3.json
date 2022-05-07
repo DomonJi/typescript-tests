@@ -1,0 +1,296 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 6,
+        "end": 7
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 10,
+              "end": 13
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": 1,
+                      "start": 33,
+                      "end": 34
+                    },
+                    "start": 26,
+                    "end": 35
+                  }
+                ],
+                "start": 24,
+                "end": 37
+              },
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSNumberKeyword",
+                  "start": 17,
+                  "end": 23
+                },
+                "start": 15,
+                "end": 23
+              },
+              "start": 13,
+              "end": 37
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 10,
+            "end": 37
+          }
+        ],
+        "start": 8,
+        "end": 39
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 39
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 47,
+        "end": 48
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 69,
+              "end": 72
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": 1,
+                      "start": 93,
+                      "end": 94
+                    },
+                    "start": 86,
+                    "end": 95
+                  }
+                ],
+                "start": 75,
+                "end": 102
+              },
+              "params": [],
+              "start": 72,
+              "end": 102
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 69,
+            "end": 102
+          }
+        ],
+        "start": 62,
+        "end": 105
+      },
+      "superClass": null,
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "name": "A",
+            "start": 60,
+            "end": 61
+          },
+          "start": 60,
+          "end": 61
+        }
+      ],
+      "start": 41,
+      "end": 105
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C2",
+        "start": 115,
+        "end": 117
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 128,
+        "end": 130
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 126,
+        "end": 127
+      },
+      "start": 109,
+      "end": 130
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "C",
+                  "start": 155,
+                  "end": 156
+                },
+                "start": 155,
+                "end": 156
+              },
+              "start": 153,
+              "end": 156
+            },
+            "start": 152,
+            "end": 156
+          },
+          "init": null,
+          "start": 152,
+          "end": 156
+        }
+      ],
+      "kind": "var",
+      "start": 148,
+      "end": 157
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c2",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "C2",
+                  "start": 167,
+                  "end": 169
+                },
+                "start": 167,
+                "end": 169
+              },
+              "start": 165,
+              "end": 169
+            },
+            "start": 163,
+            "end": 169
+          },
+          "init": null,
+          "start": 163,
+          "end": 169
+        }
+      ],
+      "kind": "var",
+      "start": 159,
+      "end": 170
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "c",
+          "start": 172,
+          "end": 173
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "c2",
+          "start": 176,
+          "end": 178
+        },
+        "start": 172,
+        "end": 178
+      },
+      "start": 172,
+      "end": 179
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "c2",
+          "start": 181,
+          "end": 183
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "c",
+          "start": 186,
+          "end": 187
+        },
+        "start": 181,
+        "end": 187
+      },
+      "start": 181,
+      "end": 188
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 188
+}

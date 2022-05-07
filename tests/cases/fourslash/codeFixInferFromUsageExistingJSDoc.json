@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 1197,
+            "end": 1203
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 1204,
+            "end": 1214
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1197,
+          "end": 1214
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 1221,
+                  "end": 1226
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "inferFromUsage",
+                  "start": 1228,
+                  "end": 1244
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1221,
+                "end": 1244
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 1250,
+                  "end": 1267
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Infer all types from usage",
+                  "start": 1269,
+                  "end": 1297
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1250,
+                "end": 1297
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 1303,
+                  "end": 1317
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "/**\n * 1\n * 2\n * @param {number} x no types here!\n * @param x a duplicate!\n * @param y yy\n * @param z zz\n */\nfunction f(x) {\n    return x * 1\n}\n\nvar o = {\n    // intrusive comment (should not be deleted)\n    /**\n     * 1\n     * 2\n     * 3\n     * @returns {number} First one\n     * @see {also}\n     * @return Second one\n     * @extends {C<number>} nothing really\n     * @class\n     * @this {*} doesn't make sense here\n     * @enum {wat}\n     * @typedef {number} Meter or something\n     * @typedef {Object} Position Comment!\n     * @property {number} x what a horrible place for a type\n     * @property {number} y please don't do this\n     * @template {string} T postfix comment\n     * @callback Action not sure what this will do\n     * @param {T} thing\n     * @returns {string} oh no\n     */\n    get m() { return undefined }\n}\no.m = 1",
+                        "cooked": "/**\n * 1\n * 2\n * @param {number} x no types here!\n * @param x a duplicate!\n * @param y yy\n * @param z zz\n */\nfunction f(x) {\n    return x * 1\n}\n\nvar o = {\n    // intrusive comment (should not be deleted)\n    /**\n     * 1\n     * 2\n     * 3\n     * @returns {number} First one\n     * @see {also}\n     * @return Second one\n     * @extends {C<number>} nothing really\n     * @class\n     * @this {*} doesn't make sense here\n     * @enum {wat}\n     * @typedef {number} Meter or something\n     * @typedef {Object} Position Comment!\n     * @property {number} x what a horrible place for a type\n     * @property {number} y please don't do this\n     * @template {string} T postfix comment\n     * @callback Action not sure what this will do\n     * @param {T} thing\n     * @returns {string} oh no\n     */\n    get m() { return undefined }\n}\no.m = 1"
+                      },
+                      "tail": true,
+                      "start": 1319,
+                      "end": 2154
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 1319,
+                  "end": 2154
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1303,
+                "end": 2154
+              }
+            ],
+            "start": 1215,
+            "end": 2157
+          }
+        ],
+        "optional": false,
+        "start": 1197,
+        "end": 2158
+      },
+      "start": 1197,
+      "end": 2159
+    }
+  ],
+  "sourceType": "script",
+  "start": 1197,
+  "end": 2161
+}

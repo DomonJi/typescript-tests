@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 699,
+            "end": 705
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 706,
+            "end": 716
+          },
+          "computed": false,
+          "optional": false,
+          "start": 699,
+          "end": 716
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 723,
+                  "end": 728
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixReturnTypeInAsyncFunction",
+                  "start": 730,
+                  "end": 760
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 723,
+                "end": 760
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 766,
+                  "end": 783
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 785,
+                        "end": 787
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 788,
+                        "end": 799
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 785,
+                      "end": 799
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Fix_all_incorrect_return_type_of_an_async_functions",
+                      "start": 800,
+                      "end": 851
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 785,
+                    "end": 851
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 852,
+                    "end": 859
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 785,
+                  "end": 859
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 766,
+                "end": 859
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 865,
+                  "end": 879
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "declare class Thenable { then(): void; }\ninterface Foo<T> {}\ntype Bar = \"a\" | \"b\";\n\nasync function f1(): Promise<number> {}\nasync function f2(): Promise<boolean> {}\nasync function f3(): Promise<string> {}\nasync function f4(): Promise<void> {}\nasync function f5(): Promise<null> {}\nasync function f6(): Promise<undefined> {}\nasync function f7(): Promise<any> {}\nasync function f8(): Promise<symbol> {}\n\nasync function f9(): Promise<Foo<number>> {}\nasync function f10(): Promise<Bar> {}\nasync function f11(): Promise<string> {}\nasync function f12(): Promise<void> {}\nasync function f13(): Promise<void> {}\n\nasync function f14(): Promise<string | symbol> {}",
+                        "cooked": "declare class Thenable { then(): void; }\ninterface Foo<T> {}\ntype Bar = \"a\" | \"b\";\n\nasync function f1(): Promise<number> {}\nasync function f2(): Promise<boolean> {}\nasync function f3(): Promise<string> {}\nasync function f4(): Promise<void> {}\nasync function f5(): Promise<null> {}\nasync function f6(): Promise<undefined> {}\nasync function f7(): Promise<any> {}\nasync function f8(): Promise<symbol> {}\n\nasync function f9(): Promise<Foo<number>> {}\nasync function f10(): Promise<Bar> {}\nasync function f11(): Promise<string> {}\nasync function f12(): Promise<void> {}\nasync function f13(): Promise<void> {}\n\nasync function f14(): Promise<string | symbol> {}"
+                      },
+                      "tail": true,
+                      "start": 881,
+                      "end": 1537
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 881,
+                  "end": 1537
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 865,
+                "end": 1537
+              }
+            ],
+            "start": 717,
+            "end": 1539
+          }
+        ],
+        "optional": false,
+        "start": 699,
+        "end": 1540
+      },
+      "start": 699,
+      "end": 1541
+    }
+  ],
+  "sourceType": "script",
+  "start": 699,
+  "end": 1542
+}

@@ -1,0 +1,532 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "menuItemsVariant",
+              "start": 176,
+              "end": 192
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "MenuItemVariant",
+                  "start": 195,
+                  "end": 210
+                },
+                "start": 195,
+                "end": 210
+              },
+              "start": 193,
+              "end": 210
+            },
+            "start": 176,
+            "end": 211
+          }
+        ],
+        "start": 169,
+        "end": 214
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IData",
+        "start": 96,
+        "end": 101
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "MenuItemVariant",
+              "start": 102,
+              "end": 117
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "ListItemVariant",
+                "start": 126,
+                "end": 141
+              },
+              "start": 126,
+              "end": 141
+            },
+            "default": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "TSQualifiedName",
+                "left": {
+                  "type": "Identifier",
+                  "name": "ListItemVariant",
+                  "start": 144,
+                  "end": 159
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "OneLine",
+                  "start": 160,
+                  "end": 167
+                },
+                "start": 144,
+                "end": 167
+              },
+              "start": 144,
+              "end": 167
+            },
+            "start": 102,
+            "end": 167
+          }
+        ],
+        "start": 101,
+        "end": 168
+      },
+      "start": 86,
+      "end": 214
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Menu",
+        "start": 227,
+        "end": 231
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "data",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "IData",
+                "start": 305,
+                "end": 310
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "MenuItemVariant",
+                      "start": 311,
+                      "end": 326
+                    },
+                    "start": 311,
+                    "end": 326
+                  }
+                ],
+                "start": 310,
+                "end": 327
+              },
+              "start": 305,
+              "end": 327
+            },
+            "start": 303,
+            "end": 327
+          },
+          "start": 299,
+          "end": 327
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "listItemVariant",
+                  "start": 342,
+                  "end": 357
+                },
+                "init": {
+                  "type": "LogicalExpression",
+                  "operator": "??",
+                  "left": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "data",
+                      "start": 360,
+                      "end": 364
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "menuItemsVariant",
+                      "start": 365,
+                      "end": 381
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 360,
+                    "end": 381
+                  },
+                  "right": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "ListItemVariant",
+                      "start": 385,
+                      "end": 400
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "OneLine",
+                      "start": 401,
+                      "end": 408
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 385,
+                    "end": 408
+                  },
+                  "start": 360,
+                  "end": 408
+                },
+                "start": 342,
+                "end": 408
+              }
+            ],
+            "kind": "const",
+            "start": 336,
+            "end": 409
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "JSXElement",
+              "openingElement": {
+                "type": "JSXOpeningElement",
+                "selfClosing": true,
+                "name": {
+                  "type": "JSXIdentifier",
+                  "name": "ListItem",
+                  "start": 423,
+                  "end": 431
+                },
+                "attributes": [
+                  {
+                    "type": "JSXAttribute",
+                    "name": {
+                      "type": "JSXIdentifier",
+                      "name": "variant",
+                      "start": 432,
+                      "end": 439
+                    },
+                    "value": {
+                      "type": "JSXExpressionContainer",
+                      "expression": {
+                        "type": "Identifier",
+                        "name": "listItemVariant",
+                        "start": 441,
+                        "end": 456
+                      },
+                      "start": 440,
+                      "end": 457
+                    },
+                    "start": 432,
+                    "end": 457
+                  }
+                ],
+                "start": 422,
+                "end": 460
+              },
+              "closingElement": null,
+              "children": [],
+              "start": 422,
+              "end": 460
+            },
+            "start": 415,
+            "end": 461
+          }
+        ],
+        "start": 329,
+        "end": 464
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "MenuItemVariant",
+              "start": 232,
+              "end": 247
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "ListItemVariant",
+                "start": 256,
+                "end": 271
+              },
+              "start": 256,
+              "end": 271
+            },
+            "default": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "TSQualifiedName",
+                "left": {
+                  "type": "Identifier",
+                  "name": "ListItemVariant",
+                  "start": 274,
+                  "end": 289
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "OneLine",
+                  "start": 290,
+                  "end": 297
+                },
+                "start": 274,
+                "end": 297
+              },
+              "start": 274,
+              "end": 297
+            },
+            "start": 232,
+            "end": 297
+          }
+        ],
+        "start": 231,
+        "end": 298
+      },
+      "start": 218,
+      "end": 464
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "IListItemData",
+        "start": 473,
+        "end": 486
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeLiteral",
+            "members": [
+              {
+                "type": "TSPropertySignature",
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "name": "variant",
+                  "start": 491,
+                  "end": 498
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "TSQualifiedName",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "ListItemVariant",
+                        "start": 500,
+                        "end": 515
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "Avatar",
+                        "start": 516,
+                        "end": 522
+                      },
+                      "start": 500,
+                      "end": 522
+                    },
+                    "start": 500,
+                    "end": 522
+                  },
+                  "start": 498,
+                  "end": 522
+                },
+                "start": 491,
+                "end": 523
+              }
+            ],
+            "start": 489,
+            "end": 525
+          },
+          {
+            "type": "TSTypeLiteral",
+            "members": [
+              {
+                "type": "TSPropertySignature",
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "name": "variant",
+                  "start": 530,
+                  "end": 537
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "TSQualifiedName",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "ListItemVariant",
+                        "start": 539,
+                        "end": 554
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "OneLine",
+                        "start": 555,
+                        "end": 562
+                      },
+                      "start": 539,
+                      "end": 562
+                    },
+                    "start": 539,
+                    "end": 562
+                  },
+                  "start": 537,
+                  "end": 562
+                },
+                "start": 530,
+                "end": 563
+              }
+            ],
+            "start": 528,
+            "end": 565
+          }
+        ],
+        "start": 489,
+        "end": 565
+      },
+      "start": 468,
+      "end": 566
+    },
+    {
+      "type": "TSEnumDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ListItemVariant",
+        "start": 575,
+        "end": 590
+      },
+      "members": [
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "OneLine",
+            "start": 598,
+            "end": 605
+          },
+          "start": 598,
+          "end": 605
+        },
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "Avatar",
+            "start": 612,
+            "end": 618
+          },
+          "start": 612,
+          "end": 618
+        }
+      ],
+      "start": 570,
+      "end": 622
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ListItem",
+        "start": 635,
+        "end": 643
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "_data",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "IListItemData",
+                "start": 651,
+                "end": 664
+              },
+              "start": 651,
+              "end": 664
+            },
+            "start": 649,
+            "end": 664
+          },
+          "start": 644,
+          "end": 664
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "value": null,
+              "start": 680,
+              "end": 684
+            },
+            "start": 673,
+            "end": 685
+          }
+        ],
+        "start": 666,
+        "end": 689
+      },
+      "start": 626,
+      "end": 689
+    }
+  ],
+  "sourceType": "script",
+  "start": 86,
+  "end": 691
+}

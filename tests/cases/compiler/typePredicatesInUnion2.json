@@ -1,0 +1,245 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "isString",
+        "start": 17,
+        "end": 25
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 29,
+              "end": 32
+            },
+            "start": 27,
+            "end": 32
+          },
+          "start": 26,
+          "end": 32
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 35,
+            "end": 36
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 40,
+              "end": 46
+            },
+            "start": 40,
+            "end": 46
+          },
+          "start": 35,
+          "end": 46
+        },
+        "start": 33,
+        "end": 46
+      },
+      "declare": true,
+      "start": 0,
+      "end": 47
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "isNumber",
+        "start": 66,
+        "end": 74
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 78,
+              "end": 81
+            },
+            "start": 76,
+            "end": 81
+          },
+          "start": 75,
+          "end": 81
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 84,
+            "end": 85
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 89,
+              "end": 95
+            },
+            "start": 89,
+            "end": 95
+          },
+          "start": 84,
+          "end": 95
+        },
+        "start": 82,
+        "end": 95
+      },
+      "declare": true,
+      "start": 49,
+      "end": 96
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 115,
+        "end": 116
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "p",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeQuery",
+                  "exprName": {
+                    "type": "Identifier",
+                    "name": "isString",
+                    "start": 127,
+                    "end": 135
+                  },
+                  "start": 120,
+                  "end": 135
+                },
+                {
+                  "type": "TSTypeQuery",
+                  "exprName": {
+                    "type": "Identifier",
+                    "name": "isNumber",
+                    "start": 145,
+                    "end": 153
+                  },
+                  "start": 138,
+                  "end": 153
+                }
+              ],
+              "start": 120,
+              "end": 153
+            },
+            "start": 118,
+            "end": 153
+          },
+          "start": 117,
+          "end": 153
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 156,
+          "end": 160
+        },
+        "start": 154,
+        "end": 160
+      },
+      "declare": true,
+      "start": 98,
+      "end": 161
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "f",
+          "start": 163,
+          "end": 164
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "isString",
+            "start": 165,
+            "end": 173
+          }
+        ],
+        "optional": false,
+        "start": 163,
+        "end": 174
+      },
+      "start": 163,
+      "end": 175
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "f",
+          "start": 177,
+          "end": 178
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "isNumber",
+            "start": 179,
+            "end": 187
+          }
+        ],
+        "optional": false,
+        "start": 177,
+        "end": 188
+      },
+      "start": 177,
+      "end": 189
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 191
+}

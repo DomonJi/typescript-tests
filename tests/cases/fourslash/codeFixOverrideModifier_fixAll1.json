@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 843,
+            "end": 849
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 850,
+            "end": 860
+          },
+          "computed": false,
+          "optional": false,
+          "start": 843,
+          "end": 860
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 868,
+                  "end": 873
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixAddOverrideModifier",
+                  "start": 875,
+                  "end": 899
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 868,
+                "end": 899
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 906,
+                  "end": 923
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add all missing 'override' modifiers",
+                  "start": 925,
+                  "end": 963
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 906,
+                "end": 963
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 970,
+                  "end": 984
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class B {\r\n    foo (v: string) {}\r\n    fooo (v: string) {}\r\n}\r\nclass D extends B {\r\n    override foo (v: string) {}\r\n    override fooo (v: string) {}\r\n    override bar(v: string) {}\r\n}\r\nclass C {\r\n    override foo(v: string) {}\r\n}\r\nfunction f () {\r\n    return class extends B {\r\n        override foo (v: string) {}\r\n        override fooo (v: string) {}\r\n        override bar(v: string) {}\r\n    }\r\n}\r\nclass E extends (class {\r\n    foo () { }\r\n    bar () { }\r\n}) {\r\n    override foo () { }\r\n    override bar () { }\r\n    baz() {}\r\n    override bazz () {}\r\n}\r\nfunction ff () {\r\n    return class {\r\n        override foo () {}\r\n    }\r\n}",
+                        "cooked": "class B {\n    foo (v: string) {}\n    fooo (v: string) {}\n}\nclass D extends B {\n    override foo (v: string) {}\n    override fooo (v: string) {}\n    override bar(v: string) {}\n}\nclass C {\n    override foo(v: string) {}\n}\nfunction f () {\n    return class extends B {\n        override foo (v: string) {}\n        override fooo (v: string) {}\n        override bar(v: string) {}\n    }\n}\nclass E extends (class {\n    foo () { }\n    bar () { }\n}) {\n    override foo () { }\n    override bar () { }\n    baz() {}\n    override bazz () {}\n}\nfunction ff () {\n    return class {\n        override foo () {}\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 986,
+                      "end": 1618
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 986,
+                  "end": 1618
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 970,
+                "end": 1618
+              }
+            ],
+            "start": 861,
+            "end": 1621
+          }
+        ],
+        "optional": false,
+        "start": 843,
+        "end": 1622
+      },
+      "start": 843,
+      "end": 1622
+    }
+  ],
+  "sourceType": "script",
+  "start": 843,
+  "end": 1626
+}

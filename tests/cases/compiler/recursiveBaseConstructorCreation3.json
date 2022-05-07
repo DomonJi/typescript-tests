@@ -1,0 +1,247 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "base",
+        "start": 14,
+        "end": 18
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 22,
+        "end": 26
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 19,
+              "end": 20
+            },
+            "start": 19,
+            "end": 20
+          }
+        ],
+        "start": 18,
+        "end": 21
+      },
+      "declare": true,
+      "start": 0,
+      "end": 26
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "abc",
+        "start": 42,
+        "end": 45
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 72,
+              "end": 75
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "xyz",
+                  "start": 77,
+                  "end": 80
+                },
+                "start": 77,
+                "end": 80
+              },
+              "start": 75,
+              "end": 80
+            },
+            "start": 72,
+            "end": 81
+          }
+        ],
+        "start": 65,
+        "end": 84
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "base",
+        "start": 57,
+        "end": 61
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 62,
+              "end": 63
+            },
+            "start": 62,
+            "end": 63
+          }
+        ],
+        "start": 61,
+        "end": 64
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 46,
+              "end": 47
+            },
+            "start": 46,
+            "end": 47
+          }
+        ],
+        "start": 45,
+        "end": 48
+      },
+      "declare": true,
+      "start": 28,
+      "end": 84
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "xyz",
+        "start": 100,
+        "end": 103
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 116,
+        "end": 120
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "abc",
+        "start": 112,
+        "end": 115
+      },
+      "declare": true,
+      "start": 86,
+      "end": 120
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "bar",
+            "start": 128,
+            "end": 131
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "xyz",
+              "start": 138,
+              "end": 141
+            },
+            "arguments": [],
+            "start": 134,
+            "end": 143
+          },
+          "start": 128,
+          "end": 143
+        }
+      ],
+      "kind": "var",
+      "start": 124,
+      "end": 144
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "xyz",
+                  "start": 189,
+                  "end": 192
+                },
+                "start": 189,
+                "end": 192
+              },
+              "start": 187,
+              "end": 192
+            },
+            "start": 186,
+            "end": 192
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 195,
+              "end": 198
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 199,
+              "end": 202
+            },
+            "computed": false,
+            "optional": false,
+            "start": 195,
+            "end": 202
+          },
+          "start": 186,
+          "end": 202
+        }
+      ],
+      "kind": "var",
+      "start": 182,
+      "end": 203
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 203
+}

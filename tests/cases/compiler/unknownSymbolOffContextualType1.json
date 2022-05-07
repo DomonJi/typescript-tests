@@ -1,0 +1,624 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "document",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Document",
+                  "start": 22,
+                  "end": 30
+                },
+                "start": 22,
+                "end": 30
+              },
+              "start": 20,
+              "end": 30
+            },
+            "start": 12,
+            "end": 30
+          },
+          "init": null,
+          "start": 12,
+          "end": 30
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 0,
+      "end": 31
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "getElementById",
+              "start": 59,
+              "end": 73
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "elementId",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 85,
+                    "end": 91
+                  },
+                  "start": 83,
+                  "end": 91
+                },
+                "start": 74,
+                "end": 91
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "HTMLElement",
+                  "start": 94,
+                  "end": 105
+                },
+                "start": 94,
+                "end": 105
+              },
+              "start": 92,
+              "end": 105
+            },
+            "start": 59,
+            "end": 106
+          }
+        ],
+        "start": 52,
+        "end": 109
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Document",
+        "start": 43,
+        "end": 51
+      },
+      "start": 33,
+      "end": 109
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "isDisabled",
+              "start": 140,
+              "end": 150
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 152,
+                "end": 159
+              },
+              "start": 150,
+              "end": 159
+            },
+            "start": 140,
+            "end": 160
+          }
+        ],
+        "start": 133,
+        "end": 163
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "HTMLElement",
+        "start": 121,
+        "end": 132
+      },
+      "start": 111,
+      "end": 163
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getMaxWidth",
+        "start": 174,
+        "end": 185
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "elementNames",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSStringKeyword",
+                "start": 200,
+                "end": 206
+              },
+              "start": 200,
+              "end": 208
+            },
+            "start": 198,
+            "end": 208
+          },
+          "start": 186,
+          "end": 208
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "elements",
+                  "start": 221,
+                  "end": 229
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "elementNames",
+                      "start": 232,
+                      "end": 244
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "map",
+                      "start": 245,
+                      "end": 248
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 232,
+                    "end": 248
+                  },
+                  "arguments": [
+                    {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "name",
+                          "start": 259,
+                          "end": 263
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "document",
+                                  "start": 283,
+                                  "end": 291
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "getElementById",
+                                  "start": 292,
+                                  "end": 306
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 283,
+                                "end": 306
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "start": 307,
+                                  "end": 311
+                                }
+                              ],
+                              "optional": false,
+                              "start": 283,
+                              "end": 312
+                            },
+                            "start": 276,
+                            "end": 313
+                          }
+                        ],
+                        "start": 265,
+                        "end": 320
+                      },
+                      "async": false,
+                      "expression": false,
+                      "start": 249,
+                      "end": 320
+                    }
+                  ],
+                  "optional": false,
+                  "start": 232,
+                  "end": 321
+                },
+                "start": 221,
+                "end": 321
+              }
+            ],
+            "kind": "var",
+            "start": 217,
+            "end": 322
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "enabled",
+                  "start": 332,
+                  "end": 339
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "elements",
+                      "start": 342,
+                      "end": 350
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "filter",
+                      "start": 351,
+                      "end": 357
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 342,
+                    "end": 357
+                  },
+                  "arguments": [
+                    {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "e",
+                          "start": 368,
+                          "end": 369
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "UnaryExpression",
+                              "operator": "!",
+                              "prefix": true,
+                              "argument": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "e",
+                                  "start": 390,
+                                  "end": 391
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "isDisabled",
+                                  "start": 392,
+                                  "end": 402
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 390,
+                                "end": 402
+                              },
+                              "start": 389,
+                              "end": 402
+                            },
+                            "start": 382,
+                            "end": 403
+                          }
+                        ],
+                        "start": 371,
+                        "end": 410
+                      },
+                      "async": false,
+                      "expression": false,
+                      "start": 358,
+                      "end": 410
+                    }
+                  ],
+                  "optional": false,
+                  "start": 342,
+                  "end": 411
+                },
+                "start": 332,
+                "end": 411
+              }
+            ],
+            "kind": "var",
+            "start": 328,
+            "end": 412
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "widths",
+                  "start": 422,
+                  "end": 428
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "enabled",
+                      "start": 431,
+                      "end": 438
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "map",
+                      "start": 439,
+                      "end": 442
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 431,
+                    "end": 442
+                  },
+                  "arguments": [
+                    {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "e",
+                          "start": 453,
+                          "end": 454
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "e",
+                                "start": 474,
+                                "end": 475
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "xyxyxyx",
+                                "start": 476,
+                                "end": 483
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 474,
+                              "end": 483
+                            },
+                            "start": 467,
+                            "end": 484
+                          }
+                        ],
+                        "start": 456,
+                        "end": 515
+                      },
+                      "async": false,
+                      "expression": false,
+                      "start": 443,
+                      "end": 515
+                    }
+                  ],
+                  "optional": false,
+                  "start": 431,
+                  "end": 516
+                },
+                "start": 422,
+                "end": 516
+              }
+            ],
+            "kind": "var",
+            "start": 418,
+            "end": 517
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "maxWidth",
+                  "start": 527,
+                  "end": 535
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "widths",
+                      "start": 538,
+                      "end": 544
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "reduce",
+                      "start": 545,
+                      "end": 551
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 538,
+                    "end": 551
+                  },
+                  "arguments": [
+                    {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 562,
+                          "end": 563
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "b",
+                          "start": 565,
+                          "end": 566
+                        }
+                      ],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "ConditionalExpression",
+                              "test": {
+                                "type": "BinaryExpression",
+                                "operator": ">",
+                                "left": {
+                                  "type": "Identifier",
+                                  "name": "a",
+                                  "start": 586,
+                                  "end": 587
+                                },
+                                "right": {
+                                  "type": "Identifier",
+                                  "name": "b",
+                                  "start": 590,
+                                  "end": 591
+                                },
+                                "start": 586,
+                                "end": 591
+                              },
+                              "consequent": {
+                                "type": "Identifier",
+                                "name": "a",
+                                "start": 594,
+                                "end": 595
+                              },
+                              "alternate": {
+                                "type": "Identifier",
+                                "name": "b",
+                                "start": 598,
+                                "end": 599
+                              },
+                              "start": 586,
+                              "end": 599
+                            },
+                            "start": 579,
+                            "end": 600
+                          }
+                        ],
+                        "start": 568,
+                        "end": 607
+                      },
+                      "async": false,
+                      "expression": false,
+                      "start": 552,
+                      "end": 607
+                    }
+                  ],
+                  "optional": false,
+                  "start": 538,
+                  "end": 608
+                },
+                "start": 527,
+                "end": 608
+              }
+            ],
+            "kind": "var",
+            "start": 523,
+            "end": 609
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "maxWidth",
+              "start": 622,
+              "end": 630
+            },
+            "start": 615,
+            "end": 631
+          }
+        ],
+        "start": 210,
+        "end": 634
+      },
+      "start": 165,
+      "end": 634
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 636
+}

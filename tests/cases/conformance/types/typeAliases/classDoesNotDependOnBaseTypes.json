@@ -1,0 +1,275 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StringTree",
+        "start": 5,
+        "end": 15
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSStringKeyword",
+            "start": 18,
+            "end": 24
+          },
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "StringTreeCollection",
+              "start": 27,
+              "end": 47
+            },
+            "start": 27,
+            "end": 47
+          }
+        ],
+        "start": 18,
+        "end": 47
+      },
+      "start": 0,
+      "end": 48
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StringTreeCollectionBase",
+        "start": 56,
+        "end": 80
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "n",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 92,
+                    "end": 98
+                  },
+                  "start": 90,
+                  "end": 98
+                },
+                "start": 89,
+                "end": 98
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "StringTree",
+                  "start": 101,
+                  "end": 111
+                },
+                "start": 101,
+                "end": 111
+              },
+              "start": 99,
+              "end": 111
+            },
+            "start": 88,
+            "end": 112
+          }
+        ],
+        "start": 81,
+        "end": 115
+      },
+      "superClass": null,
+      "start": 50,
+      "end": 115
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StringTreeCollection",
+        "start": 125,
+        "end": 145
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 179,
+        "end": 182
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "StringTreeCollectionBase",
+        "start": 154,
+        "end": 178
+      },
+      "start": 119,
+      "end": 182
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "StringTree",
+                  "start": 193,
+                  "end": 203
+                },
+                "start": 193,
+                "end": 203
+              },
+              "start": 191,
+              "end": 203
+            },
+            "start": 190,
+            "end": 203
+          },
+          "init": null,
+          "start": 190,
+          "end": 203
+        }
+      ],
+      "kind": "var",
+      "start": 186,
+      "end": 204
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "!==",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "typeof",
+          "prefix": true,
+          "argument": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 217,
+            "end": 218
+          },
+          "start": 210,
+          "end": 218
+        },
+        "right": {
+          "type": "Literal",
+          "value": "string",
+          "start": 223,
+          "end": 231
+        },
+        "start": 210,
+        "end": 231
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 240,
+                  "end": 241
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 242,
+                  "end": 243
+                },
+                "computed": true,
+                "optional": false,
+                "start": 240,
+                "end": 244
+              },
+              "right": {
+                "type": "Literal",
+                "value": "",
+                "start": 247,
+                "end": 249
+              },
+              "start": 240,
+              "end": 249
+            },
+            "start": 240,
+            "end": 250
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 256,
+                  "end": 257
+                },
+                "property": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 258,
+                  "end": 259
+                },
+                "computed": true,
+                "optional": false,
+                "start": 256,
+                "end": 260
+              },
+              "right": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "StringTreeCollection",
+                  "start": 267,
+                  "end": 287
+                },
+                "arguments": [],
+                "start": 263,
+                "end": 287
+              },
+              "start": 256,
+              "end": 287
+            },
+            "start": 256,
+            "end": 288
+          }
+        ],
+        "start": 233,
+        "end": 291
+      },
+      "alternate": null,
+      "start": 206,
+      "end": 291
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 291
+}

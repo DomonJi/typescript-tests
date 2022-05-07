@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 554,
+            "end": 560
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 561,
+            "end": 571
+          },
+          "computed": false,
+          "optional": false,
+          "start": 554,
+          "end": 571
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 578,
+                  "end": 583
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addMissingPropertyUndefinedType",
+                  "start": 585,
+                  "end": 618
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 578,
+                "end": 618
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 624,
+                  "end": 641
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add undefined type to all uninitialized properties",
+                  "start": 643,
+                  "end": 695
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 624,
+                "end": 695
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 701,
+                  "end": 715
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A { abstract a (); }\n\nclass TT { constructor () {} }\n\nclass AT extends A { a () {} }\n\nclass Foo {}\n\nclass T {\n\n    a: string | undefined;\n\n    static b: string;\n\n    private c: string | undefined;\n\n    d: number | undefined;\n\n    e: string | number | undefined;\n\n    f: 1 | undefined;\n\n    g: \"123\" | \"456\" | undefined;\n\n    h: boolean | undefined;\n\n    i: TT | undefined;\n\n    j: A | undefined;\n\n    k: AT | undefined;\n\n    l: Foo | undefined;\n}",
+                        "cooked": "abstract class A { abstract a (); }\n\nclass TT { constructor () {} }\n\nclass AT extends A { a () {} }\n\nclass Foo {}\n\nclass T {\n\n    a: string | undefined;\n\n    static b: string;\n\n    private c: string | undefined;\n\n    d: number | undefined;\n\n    e: string | number | undefined;\n\n    f: 1 | undefined;\n\n    g: \"123\" | \"456\" | undefined;\n\n    h: boolean | undefined;\n\n    i: TT | undefined;\n\n    j: A | undefined;\n\n    k: AT | undefined;\n\n    l: Foo | undefined;\n}"
+                      },
+                      "tail": true,
+                      "start": 717,
+                      "end": 1180
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 717,
+                  "end": 1180
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 701,
+                "end": 1180
+              }
+            ],
+            "start": 572,
+            "end": 1182
+          }
+        ],
+        "optional": false,
+        "start": 554,
+        "end": 1183
+      },
+      "start": 554,
+      "end": 1184
+    }
+  ],
+  "sourceType": "script",
+  "start": 554,
+  "end": 1184
+}

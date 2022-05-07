@@ -1,0 +1,228 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "B",
+          "start": 71,
+          "end": 72
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "print",
+                "start": 80,
+                "end": 85
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "Literal",
+                        "value": "I am B",
+                        "start": 97,
+                        "end": 105
+                      },
+                      "start": 90,
+                      "end": 105
+                    }
+                  ],
+                  "start": 88,
+                  "end": 106
+                },
+                "params": [],
+                "start": 85,
+                "end": 106
+              },
+              "computed": false,
+              "static": false,
+              "kind": "method",
+              "override": false,
+              "start": 80,
+              "end": 106
+            }
+          ],
+          "start": 73,
+          "end": 109
+        },
+        "superClass": null,
+        "start": 65,
+        "end": 109
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 58,
+      "end": 109
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 148,
+        "end": 151
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 167,
+              "end": 168
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [],
+              "start": 201,
+              "end": 203
+            },
+            "superClass": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "AwaitExpression",
+                "argument": {
+                  "type": "ImportExpression",
+                  "source": {
+                    "type": "Literal",
+                    "value": "./0",
+                    "start": 191,
+                    "end": 196
+                  },
+                  "attributes": null,
+                  "start": 184,
+                  "end": 197
+                },
+                "start": 178,
+                "end": 197
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "B",
+                "start": 199,
+                "end": 200
+              },
+              "computed": false,
+              "optional": false,
+              "start": 177,
+              "end": 200
+            },
+            "start": 161,
+            "end": 203
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "c",
+                  "start": 213,
+                  "end": 214
+                },
+                "init": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 221,
+                    "end": 222
+                  },
+                  "arguments": [],
+                  "start": 217,
+                  "end": 224
+                },
+                "start": 213,
+                "end": 224
+              }
+            ],
+            "kind": "var",
+            "start": 209,
+            "end": 225
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "c",
+                  "start": 231,
+                  "end": 232
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "print",
+                  "start": 233,
+                  "end": 238
+                },
+                "computed": false,
+                "optional": false,
+                "start": 231,
+                "end": 238
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 231,
+              "end": 240
+            },
+            "start": 231,
+            "end": 241
+          }
+        ],
+        "start": 154,
+        "end": 244
+      },
+      "start": 133,
+      "end": 244
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 246,
+          "end": 249
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 246,
+        "end": 251
+      },
+      "start": 246,
+      "end": 252
+    }
+  ],
+  "sourceType": "module",
+  "start": 58,
+  "end": 252
+}

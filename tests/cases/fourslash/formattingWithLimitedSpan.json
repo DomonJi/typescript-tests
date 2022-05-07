@@ -1,0 +1,253 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ForStatement",
+      "init": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "i",
+              "start": 206,
+              "end": 207
+            },
+            "init": {
+              "type": "Literal",
+              "value": 1,
+              "start": 210,
+              "end": 211
+            },
+            "start": 206,
+            "end": 211
+          }
+        ],
+        "kind": "var",
+        "start": 202,
+        "end": 211
+      },
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "<",
+        "left": {
+          "type": "Identifier",
+          "name": "i",
+          "start": 213,
+          "end": 214
+        },
+        "right": {
+          "type": "Literal",
+          "value": 4,
+          "start": 217,
+          "end": 218
+        },
+        "start": 213,
+        "end": 218
+      },
+      "update": {
+        "type": "UpdateExpression",
+        "operator": "++",
+        "prefix": false,
+        "argument": {
+          "type": "Identifier",
+          "name": "i",
+          "start": 220,
+          "end": 221
+        },
+        "start": 220,
+        "end": 223
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "markerString",
+                  "start": 236,
+                  "end": 248
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "i",
+                      "start": 251,
+                      "end": 252
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "toString",
+                      "start": 253,
+                      "end": 261
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 251,
+                    "end": 261
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 251,
+                  "end": 263
+                },
+                "start": 236,
+                "end": 263
+              }
+            ],
+            "kind": "var",
+            "start": 232,
+            "end": 264
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "goTo",
+                  "start": 270,
+                  "end": 274
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "marker",
+                  "start": 275,
+                  "end": 281
+                },
+                "computed": false,
+                "optional": false,
+                "start": 270,
+                "end": 281
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "markerString",
+                  "start": 282,
+                  "end": 294
+                }
+              ],
+              "optional": false,
+              "start": 270,
+              "end": 295
+            },
+            "start": 270,
+            "end": 296
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "format",
+                  "start": 302,
+                  "end": 308
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "selection",
+                  "start": 309,
+                  "end": 318
+                },
+                "computed": false,
+                "optional": false,
+                "start": 302,
+                "end": 318
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "markerString",
+                  "start": 319,
+                  "end": 331
+                },
+                {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "left": {
+                    "type": "Literal",
+                    "value": "end",
+                    "start": 333,
+                    "end": 338
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "markerString",
+                    "start": 341,
+                    "end": 353
+                  },
+                  "start": 333,
+                  "end": 353
+                }
+              ],
+              "optional": false,
+              "start": 302,
+              "end": 354
+            },
+            "start": 302,
+            "end": 355
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "verify",
+                  "start": 361,
+                  "end": 367
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "currentLineContentIs",
+                  "start": 368,
+                  "end": 388
+                },
+                "computed": false,
+                "optional": false,
+                "start": 361,
+                "end": 388
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "    debugger;",
+                  "start": 389,
+                  "end": 404
+                }
+              ],
+              "optional": false,
+              "start": 361,
+              "end": 405
+            },
+            "start": 361,
+            "end": 406
+          }
+        ],
+        "start": 225,
+        "end": 409
+      },
+      "start": 197,
+      "end": 409
+    }
+  ],
+  "sourceType": "script",
+  "start": 197,
+  "end": 409
+}

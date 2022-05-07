@@ -1,0 +1,163 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "prop",
+              "start": 32,
+              "end": 36
+            },
+            "start": 32,
+            "end": 36
+          }
+        ],
+        "start": 30,
+        "end": 38
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 26,
+        "end": 29
+      },
+      "start": 16,
+      "end": 38
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSSymbolKeyword",
+                    "start": 47,
+                    "end": 53
+                  },
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Foo",
+                      "start": 56,
+                      "end": 59
+                    },
+                    "start": 56,
+                    "end": 59
+                  }
+                ],
+                "start": 47,
+                "end": 59
+              },
+              "start": 45,
+              "end": 59
+            },
+            "start": 44,
+            "end": 59
+          },
+          "init": null,
+          "start": 44,
+          "end": 59
+        }
+      ],
+      "kind": "var",
+      "start": 40,
+      "end": 60
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Identifier",
+        "name": "x",
+        "start": 64,
+        "end": 65
+      },
+      "start": 64,
+      "end": 66
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "UnaryExpression",
+          "operator": "typeof",
+          "prefix": true,
+          "argument": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 79,
+            "end": 80
+          },
+          "start": 72,
+          "end": 80
+        },
+        "right": {
+          "type": "Literal",
+          "value": "object",
+          "start": 85,
+          "end": 93
+        },
+        "start": 72,
+        "end": 93
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 102,
+              "end": 103
+            },
+            "start": 102,
+            "end": 104
+          }
+        ],
+        "start": 95,
+        "end": 107
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 121,
+              "end": 122
+            },
+            "start": 121,
+            "end": 123
+          }
+        ],
+        "start": 114,
+        "end": 126
+      },
+      "start": 68,
+      "end": 126
+    }
+  ],
+  "sourceType": "script",
+  "start": 16,
+  "end": 126
+}

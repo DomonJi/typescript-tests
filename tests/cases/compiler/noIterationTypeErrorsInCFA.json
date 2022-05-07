@@ -1,0 +1,291 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "d",
+              "start": 59,
+              "end": 60
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSVoidKeyword",
+                "start": 64,
+                "end": 68
+              },
+              "start": 62,
+              "end": 68
+            },
+            "start": 59,
+            "end": 68
+          }
+        ],
+        "start": 52,
+        "end": 71
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "F",
+        "start": 50,
+        "end": 51
+      },
+      "start": 40,
+      "end": 71
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "doRemove",
+          "start": 89,
+          "end": 97
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "dds",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "F",
+                      "start": 103,
+                      "end": 104
+                    },
+                    "start": 103,
+                    "end": 104
+                  },
+                  {
+                    "type": "TSArrayType",
+                    "elementType": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "F",
+                        "start": 107,
+                        "end": 108
+                      },
+                      "start": 107,
+                      "end": 108
+                    },
+                    "start": 107,
+                    "end": 110
+                  }
+                ],
+                "start": 103,
+                "end": 110
+              },
+              "start": 101,
+              "end": 110
+            },
+            "start": 98,
+            "end": 110
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "IfStatement",
+              "test": {
+                "type": "UnaryExpression",
+                "operator": "!",
+                "prefix": true,
+                "argument": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "Array",
+                      "start": 124,
+                      "end": 129
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "isArray",
+                      "start": 130,
+                      "end": 137
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 124,
+                    "end": 137
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "dds",
+                      "start": 138,
+                      "end": 141
+                    }
+                  ],
+                  "optional": false,
+                  "start": 124,
+                  "end": 142
+                },
+                "start": 123,
+                "end": 142
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "dds",
+                        "start": 155,
+                        "end": 158
+                      },
+                      "right": {
+                        "type": "ArrayExpression",
+                        "elements": [
+                          {
+                            "type": "Identifier",
+                            "name": "dds",
+                            "start": 162,
+                            "end": 165
+                          }
+                        ],
+                        "start": 161,
+                        "end": 166
+                      },
+                      "start": 155,
+                      "end": 166
+                    },
+                    "start": 155,
+                    "end": 166
+                  }
+                ],
+                "start": 144,
+                "end": 173
+              },
+              "alternate": null,
+              "start": 119,
+              "end": 173
+            },
+            {
+              "type": "ForOfStatement",
+              "left": {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "n",
+                      "start": 188,
+                      "end": 189
+                    },
+                    "init": null,
+                    "start": 188,
+                    "end": 189
+                  }
+                ],
+                "kind": "let",
+                "start": 184,
+                "end": 189
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "dds",
+                "start": 193,
+                "end": 196
+              },
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "n",
+                          "start": 209,
+                          "end": 210
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "d",
+                          "start": 211,
+                          "end": 212
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 209,
+                        "end": 212
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 209,
+                      "end": 214
+                    },
+                    "start": 209,
+                    "end": 214
+                  }
+                ],
+                "start": 198,
+                "end": 221
+              },
+              "await": false,
+              "start": 179,
+              "end": 221
+            },
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "Identifier",
+                "name": "dds",
+                "start": 234,
+                "end": 237
+              },
+              "start": 227,
+              "end": 237
+            }
+          ],
+          "start": 112,
+          "end": 240
+        },
+        "start": 80,
+        "end": 240
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 73,
+      "end": 240
+    }
+  ],
+  "sourceType": "module",
+  "start": 40,
+  "end": 242
+}

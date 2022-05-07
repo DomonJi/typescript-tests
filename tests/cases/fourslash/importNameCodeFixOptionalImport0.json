@@ -1,0 +1,83 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 250,
+            "end": 256
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "importFixAtPosition",
+            "start": 257,
+            "end": 276
+          },
+          "computed": false,
+          "optional": false,
+          "start": 250,
+          "end": 276
+        },
+        "arguments": [
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import * as ns from \"./foo\";\r\nns.foo();",
+                      "cooked": "import * as ns from \"./foo\";\nns.foo();"
+                    },
+                    "tail": true,
+                    "start": 280,
+                    "end": 321
+                  }
+                ],
+                "expressions": [],
+                "start": 280,
+                "end": 321
+              },
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import * as ns from \"./foo\";\r\nimport { foo } from \"./foo\";\r\nfoo();",
+                      "cooked": "import * as ns from \"./foo\";\nimport { foo } from \"./foo\";\nfoo();"
+                    },
+                    "tail": true,
+                    "start": 326,
+                    "end": 394
+                  }
+                ],
+                "expressions": [],
+                "start": 326,
+                "end": 394
+              }
+            ],
+            "start": 277,
+            "end": 398
+          }
+        ],
+        "optional": false,
+        "start": 250,
+        "end": 399
+      },
+      "start": 250,
+      "end": 400
+    }
+  ],
+  "sourceType": "script",
+  "start": 250,
+  "end": 402
+}

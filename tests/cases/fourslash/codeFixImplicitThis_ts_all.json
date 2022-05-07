@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 245,
+            "end": 251
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 252,
+            "end": 262
+          },
+          "computed": false,
+          "optional": false,
+          "start": 245,
+          "end": 262
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 269,
+                  "end": 274
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixImplicitThis",
+                  "start": 276,
+                  "end": 293
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 269,
+                "end": 293
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 299,
+                  "end": 316
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Fix all implicit-'this' errors",
+                  "start": 318,
+                  "end": 350
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 299,
+                "end": 350
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 356,
+                  "end": 370
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class C {\n    m() {\n        const f = () => {\n            this;\n        }\n        const g = () => {\n            this;\n        };\n    }\n}",
+                        "cooked": "class C {\n    m() {\n        const f = () => {\n            this;\n        }\n        const g = () => {\n            this;\n        };\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 372,
+                      "end": 510
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 372,
+                  "end": 510
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 356,
+                "end": 510
+              }
+            ],
+            "start": 263,
+            "end": 513
+          }
+        ],
+        "optional": false,
+        "start": 245,
+        "end": 514
+      },
+      "start": 245,
+      "end": 515
+    }
+  ],
+  "sourceType": "script",
+  "start": 245,
+  "end": 516
+}

@@ -1,0 +1,199 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Validation",
+        "start": 64,
+        "end": 74
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "lettersRegexp",
+                  "start": 88,
+                  "end": 101
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": {},
+                  "regex": {
+                    "pattern": "^[A-Za-z]+$",
+                    "flags": ""
+                  },
+                  "start": 104,
+                  "end": 117
+                },
+                "start": 88,
+                "end": 117
+              }
+            ],
+            "kind": "const",
+            "start": 82,
+            "end": 118
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "numberRegexp",
+                  "start": 130,
+                  "end": 142
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": {},
+                  "regex": {
+                    "pattern": "^[0-9]+$",
+                    "flags": ""
+                  },
+                  "start": 145,
+                  "end": 155
+                },
+                "start": 130,
+                "end": 155
+              }
+            ],
+            "kind": "const",
+            "start": 124,
+            "end": 156
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "LettersOnlyValidator",
+                "start": 177,
+                "end": 197
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "isAcceptable",
+                      "start": 209,
+                      "end": 221
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "lettersRegexp",
+                                  "start": 256,
+                                  "end": 269
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "test",
+                                  "start": 270,
+                                  "end": 274
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 256,
+                                "end": 274
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "s2",
+                                  "start": 275,
+                                  "end": 277
+                                }
+                              ],
+                              "optional": false,
+                              "start": 256,
+                              "end": 278
+                            },
+                            "start": 249,
+                            "end": 279
+                          }
+                        ],
+                        "start": 234,
+                        "end": 290
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "s2",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSStringKeyword",
+                              "start": 226,
+                              "end": 232
+                            },
+                            "start": 224,
+                            "end": 232
+                          },
+                          "start": 222,
+                          "end": 232
+                        }
+                      ],
+                      "start": 221,
+                      "end": 290
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 209,
+                    "end": 290
+                  }
+                ],
+                "start": 198,
+                "end": 297
+              },
+              "superClass": null,
+              "start": 171,
+              "end": 297
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 164,
+            "end": 297
+          }
+        ],
+        "start": 75,
+        "end": 300
+      },
+      "start": 54,
+      "end": 300
+    }
+  ],
+  "sourceType": "script",
+  "start": 54,
+  "end": 300
+}

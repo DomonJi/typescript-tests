@@ -1,0 +1,321 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "pred",
+              "start": 18,
+              "end": 22
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeLiteral",
+                    "members": [],
+                    "start": 26,
+                    "end": 28
+                  },
+                  "start": 24,
+                  "end": 28
+                },
+                "start": 23,
+                "end": 28
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypePredicate",
+                "asserts": false,
+                "parameterName": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 31,
+                  "end": 32
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSBooleanKeyword",
+                    "start": 36,
+                    "end": 43
+                  },
+                  "start": 36,
+                  "end": 43
+                },
+                "start": 31,
+                "end": 43
+              },
+              "start": 29,
+              "end": 43
+            },
+            "start": 18,
+            "end": 44
+          }
+        ],
+        "start": 12,
+        "end": 46
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 10,
+        "end": 11
+      },
+      "start": 0,
+      "end": 46
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "pred",
+              "start": 65,
+              "end": 69
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeLiteral",
+                    "members": [],
+                    "start": 73,
+                    "end": 75
+                  },
+                  "start": 71,
+                  "end": 75
+                },
+                "start": 70,
+                "end": 75
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypePredicate",
+                "asserts": false,
+                "parameterName": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 78,
+                  "end": 79
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 83,
+                    "end": 89
+                  },
+                  "start": 83,
+                  "end": 89
+                },
+                "start": 78,
+                "end": 89
+              },
+              "start": 76,
+              "end": 89
+            },
+            "start": 65,
+            "end": 90
+          }
+        ],
+        "start": 59,
+        "end": 92
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 57,
+        "end": 58
+      },
+      "start": 47,
+      "end": 92
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Or",
+        "start": 99,
+        "end": 101
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 104,
+              "end": 105
+            },
+            "start": 104,
+            "end": 105
+          },
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "B",
+              "start": 108,
+              "end": 109
+            },
+            "start": 108,
+            "end": 109
+          }
+        ],
+        "start": 104,
+        "end": 109
+      },
+      "start": 94,
+      "end": 110
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 121,
+        "end": 122
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "o",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Or",
+                "start": 126,
+                "end": 128
+              },
+              "start": 126,
+              "end": 128
+            },
+            "start": 124,
+            "end": 128
+          },
+          "start": 123,
+          "end": 128
+        },
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeLiteral",
+              "members": [],
+              "start": 133,
+              "end": 135
+            },
+            "start": 131,
+            "end": 135
+          },
+          "start": 130,
+          "end": 135
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "o",
+                  "start": 147,
+                  "end": 148
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "pred",
+                  "start": 149,
+                  "end": 153
+                },
+                "computed": false,
+                "optional": false,
+                "start": 147,
+                "end": 153
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 154,
+                  "end": 155
+                }
+              ],
+              "optional": false,
+              "start": 147,
+              "end": 156
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 168,
+                    "end": 169
+                  },
+                  "start": 168,
+                  "end": 170
+                }
+              ],
+              "start": 158,
+              "end": 176
+            },
+            "alternate": null,
+            "start": 143,
+            "end": 176
+          }
+        ],
+        "start": 137,
+        "end": 178
+      },
+      "start": 112,
+      "end": 178
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 179
+}

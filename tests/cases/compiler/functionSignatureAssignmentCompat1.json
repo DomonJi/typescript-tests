@@ -1,0 +1,374 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSCallSignatureDeclaration",
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "eventEmitter",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 43,
+                    "end": 49
+                  },
+                  "start": 41,
+                  "end": 49
+                },
+                "start": 29,
+                "end": 49
+              },
+              {
+                "type": "Identifier",
+                "name": "buffer",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 59,
+                    "end": 65
+                  },
+                  "start": 57,
+                  "end": 65
+                },
+                "start": 51,
+                "end": 65
+              }
+            ],
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSVoidKeyword",
+                "start": 68,
+                "end": 72
+              },
+              "start": 66,
+              "end": 72
+            },
+            "start": 28,
+            "end": 73
+          }
+        ],
+        "start": 21,
+        "end": 76
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "ParserFunc",
+        "start": 10,
+        "end": 20
+      },
+      "start": 0,
+      "end": 76
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "raw",
+              "start": 103,
+              "end": 106
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ParserFunc",
+                  "start": 108,
+                  "end": 118
+                },
+                "start": 108,
+                "end": 118
+              },
+              "start": 106,
+              "end": 118
+            },
+            "start": 103,
+            "end": 119
+          },
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "readline",
+              "start": 125,
+              "end": 133
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "delimiter",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 146,
+                    "end": 152
+                  },
+                  "start": 144,
+                  "end": 152
+                },
+                "optional": true,
+                "start": 134,
+                "end": 152
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ParserFunc",
+                  "start": 155,
+                  "end": 165
+                },
+                "start": 155,
+                "end": 165
+              },
+              "start": 153,
+              "end": 165
+            },
+            "start": 125,
+            "end": 166
+          }
+        ],
+        "start": 96,
+        "end": 169
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Parsers",
+        "start": 88,
+        "end": 95
+      },
+      "start": 78,
+      "end": 169
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "parsers",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Parsers",
+                  "start": 184,
+                  "end": 191
+                },
+                "start": 184,
+                "end": 191
+              },
+              "start": 182,
+              "end": 191
+            },
+            "start": 175,
+            "end": 191
+          },
+          "init": null,
+          "start": 175,
+          "end": 191
+        }
+      ],
+      "kind": "var",
+      "start": 171,
+      "end": 192
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ParserFunc",
+                  "start": 201,
+                  "end": 211
+                },
+                "start": 201,
+                "end": 211
+              },
+              "start": 199,
+              "end": 211
+            },
+            "start": 198,
+            "end": 211
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "parsers",
+              "start": 214,
+              "end": 221
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "raw",
+              "start": 222,
+              "end": 225
+            },
+            "computed": false,
+            "optional": false,
+            "start": 214,
+            "end": 225
+          },
+          "start": 198,
+          "end": 225
+        }
+      ],
+      "kind": "var",
+      "start": 194,
+      "end": 226
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ParserFunc",
+                  "start": 242,
+                  "end": 252
+                },
+                "start": 242,
+                "end": 252
+              },
+              "start": 240,
+              "end": 252
+            },
+            "start": 239,
+            "end": 252
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "parsers",
+              "start": 255,
+              "end": 262
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "readline",
+              "start": 263,
+              "end": 271
+            },
+            "computed": false,
+            "optional": false,
+            "start": 255,
+            "end": 271
+          },
+          "start": 239,
+          "end": 271
+        }
+      ],
+      "kind": "var",
+      "start": 235,
+      "end": 272
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "e",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ParserFunc",
+                  "start": 291,
+                  "end": 301
+                },
+                "start": 291,
+                "end": 301
+              },
+              "start": 289,
+              "end": 301
+            },
+            "start": 288,
+            "end": 301
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "parsers",
+                "start": 304,
+                "end": 311
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "readline",
+                "start": 312,
+                "end": 320
+              },
+              "computed": false,
+              "optional": false,
+              "start": 304,
+              "end": 320
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 304,
+            "end": 322
+          },
+          "start": 288,
+          "end": 322
+        }
+      ],
+      "kind": "var",
+      "start": 284,
+      "end": 323
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 329
+}

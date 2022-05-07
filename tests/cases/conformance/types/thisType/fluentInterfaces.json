@@ -1,0 +1,281 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 19,
+              "end": 22
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSThisType",
+                "start": 26,
+                "end": 30
+              },
+              "start": 24,
+              "end": 30
+            },
+            "start": 19,
+            "end": 31
+          }
+        ],
+        "start": 12,
+        "end": 34
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 10,
+        "end": 11
+      },
+      "start": 0,
+      "end": 34
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 65,
+              "end": 68
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSThisType",
+                "start": 72,
+                "end": 76
+              },
+              "start": 70,
+              "end": 76
+            },
+            "start": 65,
+            "end": 77
+          }
+        ],
+        "start": 58,
+        "end": 80
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 46,
+        "end": 47
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "A",
+            "start": 56,
+            "end": 57
+          },
+          "start": 56,
+          "end": 57
+        }
+      ],
+      "start": 36,
+      "end": 80
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "baz",
+              "start": 111,
+              "end": 114
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSThisType",
+                "start": 118,
+                "end": 122
+              },
+              "start": 116,
+              "end": 122
+            },
+            "start": 111,
+            "end": 123
+          }
+        ],
+        "start": 104,
+        "end": 126
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 92,
+        "end": 93
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "B",
+            "start": 102,
+            "end": 103
+          },
+          "start": 102,
+          "end": 103
+        }
+      ],
+      "start": 82,
+      "end": 126
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "C",
+                  "start": 135,
+                  "end": 136
+                },
+                "start": 135,
+                "end": 136
+              },
+              "start": 133,
+              "end": 136
+            },
+            "start": 132,
+            "end": 136
+          },
+          "init": null,
+          "start": 132,
+          "end": 136
+        }
+      ],
+      "kind": "var",
+      "start": 128,
+      "end": 137
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "z",
+            "start": 143,
+            "end": 144
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "c",
+                        "start": 147,
+                        "end": 148
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 149,
+                        "end": 152
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 147,
+                      "end": 152
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 147,
+                    "end": 154
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "bar",
+                    "start": 155,
+                    "end": 158
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 147,
+                  "end": 158
+                },
+                "arguments": [],
+                "optional": false,
+                "start": 147,
+                "end": 160
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "baz",
+                "start": 161,
+                "end": 164
+              },
+              "computed": false,
+              "optional": false,
+              "start": 147,
+              "end": 164
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 147,
+            "end": 166
+          },
+          "start": 143,
+          "end": 166
+        }
+      ],
+      "kind": "var",
+      "start": 139,
+      "end": 167
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 188
+}

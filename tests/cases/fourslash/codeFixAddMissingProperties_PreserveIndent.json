@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 298,
+            "end": 304
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 305,
+            "end": 315
+          },
+          "computed": false,
+          "optional": false,
+          "start": 298,
+          "end": 315
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 323,
+                  "end": 328
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingProperties",
+                  "start": 330,
+                  "end": 352
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 323,
+                "end": 352
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 359,
+                  "end": 376
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 378,
+                        "end": 380
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 381,
+                        "end": 392
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 378,
+                      "end": 392
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Add_all_missing_properties",
+                      "start": 393,
+                      "end": 419
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 378,
+                    "end": 419
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 420,
+                    "end": 427
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 378,
+                  "end": 427
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 359,
+                "end": 427
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 434,
+                  "end": 448
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface Test {\r\n    foo: string;\r\n    bar(a: string): void;\r\n}\r\nfunction f (_spec: any) {}\r\nfunction g (_spec: Test) {}\r\nf(() => {\r\n    g({\r\n        foo: \"\",\r\n        bar: function(a: string): void {\r\n            throw new Error(\"Function not implemented.\");\r\n        }\r\n    });\r\n    g(\r\n    {\r\n        foo: \"\",\r\n        bar: function(a: string): void {\r\n            throw new Error(\"Function not implemented.\");\r\n        }\r\n    });\r\n    g(\r\n      {\r\n          foo: \"\",\r\n          bar: function(a: string): void {\r\n              throw new Error(\"Function not implemented.\");\r\n          }\r\n      }\r\n    );\r\n});",
+                        "cooked": "interface Test {\n    foo: string;\n    bar(a: string): void;\n}\nfunction f (_spec: any) {}\nfunction g (_spec: Test) {}\nf(() => {\n    g({\n        foo: \"\",\n        bar: function(a: string): void {\n            throw new Error(\"Function not implemented.\");\n        }\n    });\n    g(\n    {\n        foo: \"\",\n        bar: function(a: string): void {\n            throw new Error(\"Function not implemented.\");\n        }\n    });\n    g(\n      {\n          foo: \"\",\n          bar: function(a: string): void {\n              throw new Error(\"Function not implemented.\");\n          }\n      }\n    );\n});"
+                      },
+                      "tail": true,
+                      "start": 450,
+                      "end": 1063
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 450,
+                  "end": 1063
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 434,
+                "end": 1063
+              }
+            ],
+            "start": 316,
+            "end": 1067
+          }
+        ],
+        "optional": false,
+        "start": 298,
+        "end": 1068
+      },
+      "start": 298,
+      "end": 1069
+    }
+  ],
+  "sourceType": "script",
+  "start": 298,
+  "end": 1071
+}

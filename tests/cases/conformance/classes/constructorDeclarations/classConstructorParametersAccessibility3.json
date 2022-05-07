@@ -1,0 +1,267 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 18,
+              "end": 29
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "protected",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "p",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 43,
+                        "end": 49
+                      },
+                      "start": 41,
+                      "end": 49
+                    },
+                    "start": 40,
+                    "end": 49
+                  },
+                  "start": 30,
+                  "end": 49
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 51,
+                "end": 54
+              },
+              "start": 29,
+              "end": 54
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 18,
+            "end": 54
+          }
+        ],
+        "start": 11,
+        "end": 57
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 57
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 67,
+        "end": 74
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 95,
+              "end": 106
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "p",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 117,
+                        "end": 123
+                      },
+                      "start": 115,
+                      "end": 123
+                    },
+                    "start": 114,
+                    "end": 123
+                  },
+                  "start": 107,
+                  "end": 123
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 136,
+                        "end": 141
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "p",
+                          "start": 142,
+                          "end": 143
+                        }
+                      ],
+                      "optional": false,
+                      "start": 136,
+                      "end": 144
+                    },
+                    "start": 136,
+                    "end": 145
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression",
+                        "start": 155,
+                        "end": 159
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "p",
+                        "start": 160,
+                        "end": 161
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 155,
+                      "end": 161
+                    },
+                    "start": 155,
+                    "end": 162
+                  }
+                ],
+                "start": 125,
+                "end": 175
+              },
+              "start": 106,
+              "end": 175
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 95,
+            "end": 175
+          }
+        ],
+        "start": 88,
+        "end": 178
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 83,
+        "end": 87
+      },
+      "start": 61,
+      "end": 178
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Derived",
+                  "start": 189,
+                  "end": 196
+                },
+                "start": 189,
+                "end": 196
+              },
+              "start": 187,
+              "end": 196
+            },
+            "start": 186,
+            "end": 196
+          },
+          "init": null,
+          "start": 186,
+          "end": 196
+        }
+      ],
+      "kind": "var",
+      "start": 182,
+      "end": 197
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "MemberExpression",
+        "object": {
+          "type": "Identifier",
+          "name": "d",
+          "start": 199,
+          "end": 200
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "p",
+          "start": 201,
+          "end": 202
+        },
+        "computed": false,
+        "optional": false,
+        "start": 199,
+        "end": 202
+      },
+      "start": 199,
+      "end": 203
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 218
+}

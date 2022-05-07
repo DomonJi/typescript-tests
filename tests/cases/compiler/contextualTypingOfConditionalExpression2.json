@@ -1,0 +1,312 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 6,
+        "end": 7
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 15,
+              "end": 18
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 20,
+                "end": 26
+              },
+              "start": 18,
+              "end": 26
+            },
+            "start": 15,
+            "end": 27
+          }
+        ],
+        "start": 8,
+        "end": 30
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 30
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 38,
+        "end": 39
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 57,
+              "end": 60
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 62,
+                "end": 68
+              },
+              "start": 60,
+              "end": 68
+            },
+            "start": 57,
+            "end": 69
+          }
+        ],
+        "start": 50,
+        "end": 72
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 48,
+        "end": 49
+      },
+      "start": 32,
+      "end": 72
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 80,
+        "end": 81
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "baz",
+              "start": 99,
+              "end": 102
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 104,
+                "end": 110
+              },
+              "start": 102,
+              "end": 110
+            },
+            "start": 99,
+            "end": 111
+          }
+        ],
+        "start": 92,
+        "end": 114
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 90,
+        "end": 91
+      },
+      "start": 74,
+      "end": 114
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x2",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "a",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "A",
+                          "start": 130,
+                          "end": 131
+                        },
+                        "start": 130,
+                        "end": 131
+                      },
+                      "start": 128,
+                      "end": 131
+                    },
+                    "start": 127,
+                    "end": 131
+                  }
+                ],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSVoidKeyword",
+                    "start": 136,
+                    "end": 140
+                  },
+                  "start": 133,
+                  "end": 140
+                },
+                "start": 126,
+                "end": 140
+              },
+              "start": 124,
+              "end": 140
+            },
+            "start": 122,
+            "end": 140
+          },
+          "init": {
+            "type": "ConditionalExpression",
+            "test": {
+              "type": "Literal",
+              "value": true,
+              "start": 143,
+              "end": 147
+            },
+            "consequent": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "a",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "C",
+                        "start": 154,
+                        "end": 155
+                      },
+                      "start": 154,
+                      "end": 155
+                    },
+                    "start": 152,
+                    "end": 155
+                  },
+                  "start": 151,
+                  "end": 155
+                }
+              ],
+              "body": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 160,
+                  "end": 161
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 162,
+                  "end": 165
+                },
+                "computed": false,
+                "optional": false,
+                "start": 160,
+                "end": 165
+              },
+              "async": false,
+              "expression": true,
+              "start": 150,
+              "end": 165
+            },
+            "alternate": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "b",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 172,
+                      "end": 178
+                    },
+                    "start": 170,
+                    "end": 178
+                  },
+                  "start": 169,
+                  "end": 178
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 183,
+                "end": 186
+              },
+              "async": false,
+              "expression": false,
+              "start": 168,
+              "end": 186
+            },
+            "start": 143,
+            "end": 186
+          },
+          "start": 122,
+          "end": 186
+        }
+      ],
+      "kind": "var",
+      "start": 118,
+      "end": 187
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 189
+}

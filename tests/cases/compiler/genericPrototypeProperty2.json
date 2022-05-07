@@ -1,0 +1,293 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 24,
+              "end": 25
+            },
+            "start": 24,
+            "end": 25
+          }
+        ],
+        "start": 22,
+        "end": 27
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "EventTarget",
+        "start": 10,
+        "end": 21
+      },
+      "start": 0,
+      "end": 27
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "BaseEvent",
+        "start": 35,
+        "end": 44
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "target",
+              "start": 51,
+              "end": 57
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "EventTarget",
+                  "start": 59,
+                  "end": 70
+                },
+                "start": 59,
+                "end": 70
+              },
+              "start": 57,
+              "end": 70
+            },
+            "start": 51,
+            "end": 71
+          }
+        ],
+        "start": 45,
+        "end": 73
+      },
+      "superClass": null,
+      "start": 29,
+      "end": 73
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyEvent",
+        "start": 81,
+        "end": 88
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "target",
+              "start": 136,
+              "end": 142
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 144,
+                  "end": 145
+                },
+                "start": 144,
+                "end": 145
+              },
+              "start": 142,
+              "end": 145
+            },
+            "start": 136,
+            "end": 146
+          }
+        ],
+        "start": 130,
+        "end": 148
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "BaseEvent",
+        "start": 120,
+        "end": 129
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 89,
+              "end": 90
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "EventTarget",
+                "start": 99,
+                "end": 110
+              },
+              "start": 99,
+              "end": 110
+            },
+            "start": 89,
+            "end": 110
+          }
+        ],
+        "start": 88,
+        "end": 111
+      },
+      "start": 75,
+      "end": 148
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "BaseEventWrapper",
+        "start": 155,
+        "end": 171
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "t",
+              "start": 178,
+              "end": 179
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "BaseEvent",
+                  "start": 181,
+                  "end": 190
+                },
+                "start": 181,
+                "end": 190
+              },
+              "start": 179,
+              "end": 190
+            },
+            "start": 178,
+            "end": 191
+          }
+        ],
+        "start": 172,
+        "end": 193
+      },
+      "superClass": null,
+      "start": 149,
+      "end": 193
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyEventWrapper",
+        "start": 201,
+        "end": 215
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "t",
+              "start": 247,
+              "end": 248
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "MyEvent",
+                  "start": 250,
+                  "end": 257
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSAnyKeyword",
+                      "start": 258,
+                      "end": 261
+                    }
+                  ],
+                  "start": 257,
+                  "end": 262
+                },
+                "start": 250,
+                "end": 262
+              },
+              "start": 248,
+              "end": 262
+            },
+            "start": 247,
+            "end": 263
+          }
+        ],
+        "start": 241,
+        "end": 352
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "BaseEventWrapper",
+        "start": 224,
+        "end": 240
+      },
+      "start": 195,
+      "end": 352
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 352
+}

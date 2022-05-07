@@ -1,0 +1,346 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f1",
+        "start": 9,
+        "end": 11
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "c1",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Function",
+                "start": 16,
+                "end": 24
+              },
+              "start": 16,
+              "end": 24
+            },
+            "start": 14,
+            "end": 24
+          },
+          "start": 12,
+          "end": 24
+        },
+        {
+          "type": "Identifier",
+          "name": "c2",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSObjectKeyword",
+                  "start": 36,
+                  "end": 42
+                },
+                "start": 33,
+                "end": 42
+              },
+              "start": 30,
+              "end": 42
+            },
+            "start": 28,
+            "end": 42
+          },
+          "start": 26,
+          "end": 42
+        },
+        {
+          "type": "Identifier",
+          "name": "callable",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeQuery",
+                  "exprName": {
+                    "type": "Identifier",
+                    "name": "c1",
+                    "start": 62,
+                    "end": 64
+                  },
+                  "start": 55,
+                  "end": 64
+                },
+                {
+                  "type": "TSTypeQuery",
+                  "exprName": {
+                    "type": "Identifier",
+                    "name": "c2",
+                    "start": 74,
+                    "end": 76
+                  },
+                  "start": 67,
+                  "end": 76
+                }
+              ],
+              "start": 55,
+              "end": 76
+            },
+            "start": 53,
+            "end": 76
+          },
+          "start": 45,
+          "end": 76
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 91,
+                  "end": 92
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "c1",
+                    "start": 95,
+                    "end": 97
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 95,
+                  "end": 99
+                },
+                "start": 91,
+                "end": 99
+              }
+            ],
+            "kind": "const",
+            "start": 85,
+            "end": 100
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "start": 112,
+                  "end": 113
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "c2",
+                    "start": 116,
+                    "end": 118
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 116,
+                  "end": 120
+                },
+                "start": 112,
+                "end": 120
+              }
+            ],
+            "kind": "const",
+            "start": 106,
+            "end": 121
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "c",
+                  "start": 133,
+                  "end": 134
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "callable",
+                    "start": 137,
+                    "end": 145
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 137,
+                  "end": 147
+                },
+                "start": 133,
+                "end": 147
+              }
+            ],
+            "kind": "const",
+            "start": 127,
+            "end": 148
+          }
+        ],
+        "start": 78,
+        "end": 151
+      },
+      "start": 0,
+      "end": 151
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f2",
+        "start": 164,
+        "end": 166
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "fetcherParams",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSObjectKeyword",
+                  "start": 182,
+                  "end": 188
+                },
+                {
+                  "type": "TSFunctionType",
+                  "params": [],
+                  "returnType": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSObjectKeyword",
+                      "start": 198,
+                      "end": 204
+                    },
+                    "start": 195,
+                    "end": 204
+                  },
+                  "start": 192,
+                  "end": 204
+                }
+              ],
+              "start": 182,
+              "end": 205
+            },
+            "start": 180,
+            "end": 205
+          },
+          "start": 167,
+          "end": 205
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "data",
+                  "start": 220,
+                  "end": 224
+                },
+                "init": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "===",
+                    "left": {
+                      "type": "UnaryExpression",
+                      "operator": "typeof",
+                      "prefix": true,
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "fetcherParams",
+                        "start": 234,
+                        "end": 247
+                      },
+                      "start": 227,
+                      "end": 247
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "function",
+                      "start": 252,
+                      "end": 262
+                    },
+                    "start": 227,
+                    "end": 262
+                  },
+                  "consequent": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "fetcherParams",
+                      "start": 274,
+                      "end": 287
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 274,
+                    "end": 289
+                  },
+                  "alternate": {
+                    "type": "Identifier",
+                    "name": "fetcherParams",
+                    "start": 301,
+                    "end": 314
+                  },
+                  "start": 227,
+                  "end": 314
+                },
+                "start": 220,
+                "end": 314
+              }
+            ],
+            "kind": "const",
+            "start": 214,
+            "end": 314
+          }
+        ],
+        "start": 207,
+        "end": 317
+      },
+      "start": 155,
+      "end": 317
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 319
+}

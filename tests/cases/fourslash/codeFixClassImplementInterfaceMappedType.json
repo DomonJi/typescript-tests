@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 154,
+            "end": 160
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 161,
+            "end": 168
+          },
+          "computed": false,
+          "optional": false,
+          "start": 154,
+          "end": 168
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 176,
+                  "end": 187
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I<Y>'",
+                  "start": 189,
+                  "end": 217
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 176,
+                "end": 217
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 224,
+                  "end": 238
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface I<X> {\r\n    x: { readonly [K in keyof X]: X[K] };\r\n}\r\nclass C<Y> implements I<Y> {\r\n    x: { readonly [K in keyof Y]: Y[K]; };\r\n}",
+                        "cooked": "interface I<X> {\n    x: { readonly [K in keyof X]: X[K] };\n}\nclass C<Y> implements I<Y> {\n    x: { readonly [K in keyof Y]: Y[K]; };\n}"
+                      },
+                      "tail": true,
+                      "start": 241,
+                      "end": 382
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 241,
+                  "end": 382
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 224,
+                "end": 382
+              }
+            ],
+            "start": 169,
+            "end": 386
+          }
+        ],
+        "optional": false,
+        "start": 154,
+        "end": 387
+      },
+      "start": 154,
+      "end": 388
+    }
+  ],
+  "sourceType": "script",
+  "start": 154,
+  "end": 390
+}

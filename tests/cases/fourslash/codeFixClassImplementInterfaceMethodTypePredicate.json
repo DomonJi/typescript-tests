@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 157,
+            "end": 163
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 164,
+            "end": 171
+          },
+          "computed": false,
+          "optional": false,
+          "start": 157,
+          "end": 171
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 179,
+                  "end": 190
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I'",
+                  "start": 192,
+                  "end": 217
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 179,
+                "end": 217
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 224,
+                  "end": 238
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface I {\r\n    f(i: any): i is I;\r\n    f(): this is I;\r\n}\r\n\r\nclass C implements I {\r\n    f(i: any): i is I;\r\n    f(): this is I;\r\n    f(i?: unknown): boolean {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "interface I {\n    f(i: any): i is I;\n    f(): this is I;\n}\n\nclass C implements I {\n    f(i: any): i is I;\n    f(): this is I;\n    f(i?: unknown): boolean {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 241,
+                      "end": 469
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 241,
+                  "end": 469
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 224,
+                "end": 469
+              }
+            ],
+            "start": 172,
+            "end": 473
+          }
+        ],
+        "optional": false,
+        "start": 157,
+        "end": 474
+      },
+      "start": 157,
+      "end": 475
+    }
+  ],
+  "sourceType": "script",
+  "start": 157,
+  "end": 477
+}

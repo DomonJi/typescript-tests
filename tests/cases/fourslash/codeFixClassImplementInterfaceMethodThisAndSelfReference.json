@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 143,
+            "end": 149
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 150,
+            "end": 157
+          },
+          "computed": false,
+          "optional": false,
+          "start": 143,
+          "end": 157
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 165,
+                  "end": 176
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I'",
+                  "start": 178,
+                  "end": 203
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 165,
+                "end": 203
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 210,
+                  "end": 224
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface I {\r\n    f(x: number, y: this): I\r\n}\r\n\r\nclass C implements I {\r\n    f(x: number, y: this): I {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "interface I {\n    f(x: number, y: this): I\n}\n\nclass C implements I {\n    f(x: number, y: this): I {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 227,
+                      "end": 396
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 227,
+                  "end": 396
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 210,
+                "end": 396
+              }
+            ],
+            "start": 158,
+            "end": 400
+          }
+        ],
+        "optional": false,
+        "start": 143,
+        "end": 401
+      },
+      "start": 143,
+      "end": 402
+    }
+  ],
+  "sourceType": "script",
+  "start": 143,
+  "end": 404
+}

@@ -1,0 +1,715 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Primitive",
+          "start": 99,
+          "end": 108
+        },
+        "typeAnnotation": {
+          "type": "TSUnionType",
+          "types": [
+            {
+              "type": "TSNumberKeyword",
+              "start": 111,
+              "end": 117
+            },
+            {
+              "type": "TSStringKeyword",
+              "start": 120,
+              "end": 126
+            },
+            {
+              "type": "TSBooleanKeyword",
+              "start": 129,
+              "end": 136
+            },
+            {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Date",
+                "start": 139,
+                "end": 143
+              },
+              "start": 139,
+              "end": 143
+            }
+          ],
+          "start": 111,
+          "end": 143
+        },
+        "start": 94,
+        "end": 144
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 87,
+      "end": 144
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "valueOf",
+              "start": 295,
+              "end": 302
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 306,
+                "end": 312
+              },
+              "start": 304,
+              "end": 312
+            },
+            "start": 295,
+            "end": 313
+          }
+        ],
+        "start": 288,
+        "end": 316
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Numeric",
+        "start": 280,
+        "end": 287
+      },
+      "start": 270,
+      "end": 316
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "NumCoercible",
+        "start": 365,
+        "end": 377
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 392,
+              "end": 393
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 395,
+                "end": 401
+              },
+              "start": 393,
+              "end": 401
+            },
+            "accessibility": "public",
+            "start": 385,
+            "end": 402
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 410,
+              "end": 421
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "a",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 425,
+                      "end": 431
+                    },
+                    "start": 423,
+                    "end": 431
+                  },
+                  "start": 422,
+                  "end": 431
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 444,
+                          "end": 448
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 449,
+                          "end": 450
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 444,
+                        "end": 450
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 453,
+                        "end": 454
+                      },
+                      "start": 444,
+                      "end": 454
+                    },
+                    "start": 444,
+                    "end": 455
+                  }
+                ],
+                "start": 433,
+                "end": 462
+              },
+              "start": 421,
+              "end": 462
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 410,
+            "end": 462
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "valueOf",
+              "start": 475,
+              "end": 482
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression",
+                        "start": 503,
+                        "end": 507
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "a",
+                        "start": 508,
+                        "end": 509
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 503,
+                      "end": 509
+                    },
+                    "start": 496,
+                    "end": 510
+                  }
+                ],
+                "start": 485,
+                "end": 517
+              },
+              "params": [],
+              "start": 482,
+              "end": 517
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 468,
+            "end": 517
+          }
+        ],
+        "start": 378,
+        "end": 520
+      },
+      "superClass": null,
+      "start": 359,
+      "end": 520
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "extent",
+          "start": 593,
+          "end": 599
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "array",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Array",
+                  "start": 626,
+                  "end": 631
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSUnionType",
+                      "types": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "T",
+                            "start": 632,
+                            "end": 633
+                          },
+                          "start": 632,
+                          "end": 633
+                        },
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "Primitive",
+                            "start": 636,
+                            "end": 645
+                          },
+                          "start": 636,
+                          "end": 645
+                        }
+                      ],
+                      "start": 632,
+                      "end": 645
+                    }
+                  ],
+                  "start": 631,
+                  "end": 646
+                },
+                "start": 626,
+                "end": 646
+              },
+              "start": 624,
+              "end": 646
+            },
+            "start": 619,
+            "end": 646
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 720,
+                    "end": 729
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 731,
+                    "end": 740
+                  }
+                ],
+                "start": 719,
+                "end": 741
+              },
+              "start": 712,
+              "end": 742
+            }
+          ],
+          "start": 705,
+          "end": 745
+        },
+        "returnType": {
+          "type": "TSTypeAnnotation",
+          "typeAnnotation": {
+            "type": "TSUnionType",
+            "types": [
+              {
+                "type": "TSTupleType",
+                "elementTypes": [
+                  {
+                    "type": "TSUnionType",
+                    "types": [
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "T",
+                          "start": 650,
+                          "end": 651
+                        },
+                        "start": 650,
+                        "end": 651
+                      },
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "Primitive",
+                          "start": 654,
+                          "end": 663
+                        },
+                        "start": 654,
+                        "end": 663
+                      }
+                    ],
+                    "start": 650,
+                    "end": 663
+                  },
+                  {
+                    "type": "TSUnionType",
+                    "types": [
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "T",
+                          "start": 665,
+                          "end": 666
+                        },
+                        "start": 665,
+                        "end": 666
+                      },
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "Primitive",
+                          "start": 669,
+                          "end": 678
+                        },
+                        "start": 669,
+                        "end": 678
+                      }
+                    ],
+                    "start": 665,
+                    "end": 678
+                  }
+                ],
+                "start": 649,
+                "end": 679
+              },
+              {
+                "type": "TSTupleType",
+                "elementTypes": [
+                  {
+                    "type": "TSUndefinedKeyword",
+                    "start": 683,
+                    "end": 692
+                  },
+                  {
+                    "type": "TSUndefinedKeyword",
+                    "start": 694,
+                    "end": 703
+                  }
+                ],
+                "start": 682,
+                "end": 704
+              }
+            ],
+            "start": 649,
+            "end": 704
+          },
+          "start": 647,
+          "end": 704
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 600,
+                "end": 601
+              },
+              "constraint": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Numeric",
+                  "start": 610,
+                  "end": 617
+                },
+                "start": 610,
+                "end": 617
+              },
+              "start": 600,
+              "end": 617
+            }
+          ],
+          "start": 599,
+          "end": 618
+        },
+        "start": 584,
+        "end": 745
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 577,
+      "end": 745
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "extentMixed",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTupleType",
+                    "elementTypes": [
+                      {
+                        "type": "TSUnionType",
+                        "types": [
+                          {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "Primitive",
+                              "start": 769,
+                              "end": 778
+                            },
+                            "start": 769,
+                            "end": 778
+                          },
+                          {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "NumCoercible",
+                              "start": 781,
+                              "end": 793
+                            },
+                            "start": 781,
+                            "end": 793
+                          }
+                        ],
+                        "start": 769,
+                        "end": 793
+                      },
+                      {
+                        "type": "TSUnionType",
+                        "types": [
+                          {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "Primitive",
+                              "start": 795,
+                              "end": 804
+                            },
+                            "start": 795,
+                            "end": 804
+                          },
+                          {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "NumCoercible",
+                              "start": 807,
+                              "end": 819
+                            },
+                            "start": 807,
+                            "end": 819
+                          }
+                        ],
+                        "start": 795,
+                        "end": 819
+                      }
+                    ],
+                    "start": 768,
+                    "end": 820
+                  },
+                  {
+                    "type": "TSTupleType",
+                    "elementTypes": [
+                      {
+                        "type": "TSUndefinedKeyword",
+                        "start": 824,
+                        "end": 833
+                      },
+                      {
+                        "type": "TSUndefinedKeyword",
+                        "start": 835,
+                        "end": 844
+                      }
+                    ],
+                    "start": 823,
+                    "end": 845
+                  }
+                ],
+                "start": 768,
+                "end": 845
+              },
+              "start": 766,
+              "end": 845
+            },
+            "start": 755,
+            "end": 845
+          },
+          "init": null,
+          "start": 755,
+          "end": 845
+        }
+      ],
+      "kind": "let",
+      "start": 751,
+      "end": 846
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "extentMixed",
+          "start": 848,
+          "end": 859
+        },
+        "right": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "extent",
+            "start": 862,
+            "end": 868
+          },
+          "arguments": [
+            {
+              "type": "ArrayExpression",
+              "elements": [
+                {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "NumCoercible",
+                    "start": 874,
+                    "end": 886
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": 10,
+                      "start": 887,
+                      "end": 889
+                    }
+                  ],
+                  "start": 870,
+                  "end": 890
+                },
+                {
+                  "type": "Literal",
+                  "value": 13,
+                  "start": 892,
+                  "end": 894
+                },
+                {
+                  "type": "Literal",
+                  "value": "12",
+                  "start": 896,
+                  "end": 900
+                },
+                {
+                  "type": "Literal",
+                  "value": true,
+                  "start": 902,
+                  "end": 906
+                }
+              ],
+              "start": 869,
+              "end": 907
+            }
+          ],
+          "optional": false,
+          "start": 862,
+          "end": 908
+        },
+        "start": 848,
+        "end": 908
+      },
+      "start": 848,
+      "end": 909
+    }
+  ],
+  "sourceType": "module",
+  "start": 87,
+  "end": 911
+}

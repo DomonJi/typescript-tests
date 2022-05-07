@@ -1,0 +1,285 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "isFoo",
+        "start": 17,
+        "end": 22
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 30,
+              "end": 36
+            },
+            "start": 28,
+            "end": 36
+          },
+          "start": 23,
+          "end": 36
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "value",
+            "start": 40,
+            "end": 45
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSLiteralType",
+              "literal": {
+                "type": "Literal",
+                "value": "foo",
+                "start": 49,
+                "end": 54
+              },
+              "start": 49,
+              "end": 54
+            },
+            "start": 49,
+            "end": 54
+          },
+          "start": 40,
+          "end": 54
+        },
+        "start": 38,
+        "end": 54
+      },
+      "declare": true,
+      "start": 0,
+      "end": 55
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "doThis",
+        "start": 74,
+        "end": 80
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSLiteralType",
+              "literal": {
+                "type": "Literal",
+                "value": "foo",
+                "start": 88,
+                "end": 93
+              },
+              "start": 88,
+              "end": 93
+            },
+            "start": 86,
+            "end": 93
+          },
+          "start": 81,
+          "end": 93
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 96,
+          "end": 100
+        },
+        "start": 94,
+        "end": 100
+      },
+      "declare": true,
+      "start": 57,
+      "end": 101
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "doThat",
+        "start": 120,
+        "end": 126
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 134,
+              "end": 140
+            },
+            "start": 132,
+            "end": 140
+          },
+          "start": 127,
+          "end": 140
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 144,
+          "end": 148
+        },
+        "start": 142,
+        "end": 148
+      },
+      "declare": true,
+      "start": 103,
+      "end": 149
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 162,
+                "end": 168
+              },
+              "start": 160,
+              "end": 168
+            },
+            "start": 155,
+            "end": 168
+          },
+          "init": null,
+          "start": 155,
+          "end": 168
+        }
+      ],
+      "kind": "let",
+      "start": 151,
+      "end": 169
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "isFoo",
+          "start": 175,
+          "end": 180
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "value",
+            "start": 181,
+            "end": 186
+          }
+        ],
+        "optional": false,
+        "start": 175,
+        "end": 187
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThis",
+                "start": 196,
+                "end": 202
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 203,
+                  "end": 208
+                }
+              ],
+              "optional": false,
+              "start": 196,
+              "end": 209
+            },
+            "start": 196,
+            "end": 210
+          }
+        ],
+        "start": 189,
+        "end": 213
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThat",
+                "start": 226,
+                "end": 232
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 233,
+                  "end": 238
+                }
+              ],
+              "optional": false,
+              "start": 226,
+              "end": 239
+            },
+            "start": 226,
+            "end": 240
+          }
+        ],
+        "start": 219,
+        "end": 243
+      },
+      "start": 171,
+      "end": 243
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 247
+}

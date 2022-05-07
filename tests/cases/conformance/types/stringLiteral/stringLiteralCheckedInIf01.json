@@ -1,0 +1,272 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "S",
+        "start": 8,
+        "end": 9
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "a",
+              "start": 12,
+              "end": 15
+            },
+            "start": 12,
+            "end": 15
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "b",
+              "start": 18,
+              "end": 21
+            },
+            "start": 18,
+            "end": 21
+          }
+        ],
+        "start": 12,
+        "end": 21
+      },
+      "start": 3,
+      "end": 22
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "T",
+        "start": 29,
+        "end": 30
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSArrayType",
+            "elementType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "S",
+                "start": 33,
+                "end": 34
+              },
+              "start": 33,
+              "end": 34
+            },
+            "start": 33,
+            "end": 36
+          },
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "S",
+              "start": 39,
+              "end": 40
+            },
+            "start": 39,
+            "end": 40
+          }
+        ],
+        "start": 33,
+        "end": 40
+      },
+      "start": 24,
+      "end": 41
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 54,
+        "end": 55
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "foo",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 61,
+                "end": 62
+              },
+              "start": 61,
+              "end": 62
+            },
+            "start": 59,
+            "end": 62
+          },
+          "start": 56,
+          "end": 62
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 75,
+                "end": 78
+              },
+              "right": {
+                "type": "Literal",
+                "value": "a",
+                "start": 83,
+                "end": 86
+              },
+              "start": 75,
+              "end": 86
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 106,
+                    "end": 109
+                  },
+                  "start": 99,
+                  "end": 110
+                }
+              ],
+              "start": 88,
+              "end": 117
+            },
+            "alternate": {
+              "type": "IfStatement",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "===",
+                "left": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 132,
+                  "end": 135
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": "b",
+                  "start": 140,
+                  "end": 143
+                },
+                "start": 132,
+                "end": 143
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Identifier",
+                      "name": "foo",
+                      "start": 163,
+                      "end": 166
+                    },
+                    "start": 156,
+                    "end": 167
+                  }
+                ],
+                "start": 145,
+                "end": 174
+              },
+              "alternate": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "TSAsExpression",
+                        "expression": {
+                          "type": "Identifier",
+                          "name": "foo",
+                          "start": 205,
+                          "end": 208
+                        },
+                        "typeAnnotation": {
+                          "type": "TSArrayType",
+                          "elementType": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "S",
+                              "start": 212,
+                              "end": 213
+                            },
+                            "start": 212,
+                            "end": 213
+                          },
+                          "start": 212,
+                          "end": 215
+                        },
+                        "start": 205,
+                        "end": 215
+                      },
+                      "property": {
+                        "type": "Literal",
+                        "value": 0,
+                        "start": 217,
+                        "end": 218
+                      },
+                      "computed": true,
+                      "optional": false,
+                      "start": 204,
+                      "end": 219
+                    },
+                    "start": 197,
+                    "end": 220
+                  }
+                ],
+                "start": 185,
+                "end": 227
+              },
+              "start": 128,
+              "end": 227
+            },
+            "start": 71,
+            "end": 227
+          }
+        ],
+        "start": 64,
+        "end": 230
+      },
+      "start": 45,
+      "end": 230
+    }
+  ],
+  "sourceType": "script",
+  "start": 3,
+  "end": 230
+}

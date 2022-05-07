@@ -1,0 +1,84 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSEnumDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "TopLevelEnum",
+        "start": 5,
+        "end": 17
+      },
+      "members": [
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "ThisWasAllowedButShouldNotBe",
+            "start": 25,
+            "end": 53
+          },
+          "initializer": {
+            "type": "ThisExpression",
+            "start": 56,
+            "end": 60
+          },
+          "start": 25,
+          "end": 60
+        }
+      ],
+      "start": 0,
+      "end": 88
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ModuleEnum",
+        "start": 99,
+        "end": 109
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSEnumDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "EnumInModule",
+              "start": 122,
+              "end": 134
+            },
+            "members": [
+              {
+                "type": "TSEnumMember",
+                "id": {
+                  "type": "Identifier",
+                  "name": "WasADifferentError",
+                  "start": 146,
+                  "end": 164
+                },
+                "initializer": {
+                  "type": "ThisExpression",
+                  "start": 167,
+                  "end": 171
+                },
+                "start": 146,
+                "end": 171
+              }
+            ],
+            "start": 117,
+            "end": 225
+          }
+        ],
+        "start": 110,
+        "end": 228
+      },
+      "start": 92,
+      "end": 228
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 228
+}

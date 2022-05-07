@@ -1,0 +1,135 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "v",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSAnyKeyword",
+                  "start": 7,
+                  "end": 10
+                },
+                "start": 7,
+                "end": 12
+              },
+              "start": 5,
+              "end": 12
+            },
+            "start": 4,
+            "end": 12
+          },
+          "init": null,
+          "start": 4,
+          "end": 12
+        }
+      ],
+      "kind": "var",
+      "start": 0,
+      "end": 13
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 26,
+        "end": 29
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "AssignmentPattern",
+          "left": {
+            "type": "Identifier",
+            "name": "a",
+            "start": 30,
+            "end": 31
+          },
+          "right": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 34,
+              "end": 37
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 34,
+            "end": 39
+          },
+          "start": 30,
+          "end": 39
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 41,
+        "end": 44
+      },
+      "start": 17,
+      "end": 44
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "bar",
+        "start": 57,
+        "end": 60
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "AssignmentPattern",
+          "left": {
+            "type": "Identifier",
+            "name": "a",
+            "start": 61,
+            "end": 62
+          },
+          "right": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 65,
+              "end": 68
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 65,
+            "end": 70
+          },
+          "start": 61,
+          "end": 70
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 72,
+        "end": 76
+      },
+      "start": 48,
+      "end": 76
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 76
+}

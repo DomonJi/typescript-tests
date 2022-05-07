@@ -1,0 +1,263 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "console",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSMethodSignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "log",
+                      "start": 42,
+                      "end": 45
+                    },
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "message",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSAnyKeyword",
+                            "start": 56,
+                            "end": 59
+                          },
+                          "start": 54,
+                          "end": 59
+                        },
+                        "optional": true,
+                        "start": 46,
+                        "end": 59
+                      },
+                      {
+                        "type": "RestElement",
+                        "argument": {
+                          "type": "Identifier",
+                          "name": "optionalParams",
+                          "start": 64,
+                          "end": 78
+                        },
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSArrayType",
+                            "elementType": {
+                              "type": "TSAnyKeyword",
+                              "start": 80,
+                              "end": 83
+                            },
+                            "start": 80,
+                            "end": 85
+                          },
+                          "start": 78,
+                          "end": 85
+                        },
+                        "start": 61,
+                        "end": 85
+                      }
+                    ],
+                    "kind": "method",
+                    "returnType": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSVoidKeyword",
+                        "start": 88,
+                        "end": 92
+                      },
+                      "start": 86,
+                      "end": 92
+                    },
+                    "start": 42,
+                    "end": 93
+                  }
+                ],
+                "start": 35,
+                "end": 96
+              },
+              "start": 33,
+              "end": 96
+            },
+            "start": 26,
+            "end": 96
+          },
+          "init": null,
+          "start": 26,
+          "end": 96
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 14,
+      "end": 97
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Greeter",
+        "start": 105,
+        "end": 112
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 120,
+              "end": 131
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "message",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 141,
+                      "end": 147
+                    },
+                    "start": 139,
+                    "end": 147
+                  },
+                  "start": 132,
+                  "end": 147
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 149,
+                "end": 157
+              },
+              "start": 131,
+              "end": 157
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 120,
+            "end": 157
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "messageHandler",
+              "start": 165,
+              "end": 179
+            },
+            "value": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "message",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 192,
+                      "end": 198
+                    },
+                    "start": 190,
+                    "end": 198
+                  },
+                  "start": 183,
+                  "end": 198
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "console",
+                          "start": 214,
+                          "end": 221
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "log",
+                          "start": 222,
+                          "end": 225
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 214,
+                        "end": 225
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "message",
+                          "start": 226,
+                          "end": 233
+                        }
+                      ],
+                      "optional": false,
+                      "start": 214,
+                      "end": 234
+                    },
+                    "start": 214,
+                    "end": 235
+                  }
+                ],
+                "start": 203,
+                "end": 268
+              },
+              "async": false,
+              "expression": false,
+              "start": 182,
+              "end": 268
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 165,
+            "end": 268
+          }
+        ],
+        "start": 113,
+        "end": 271
+      },
+      "superClass": null,
+      "start": 99,
+      "end": 271
+    }
+  ],
+  "sourceType": "script",
+  "start": 14,
+  "end": 271
+}

@@ -1,0 +1,630 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 18,
+              "end": 19
+            },
+            "value": {
+              "type": "Literal",
+              "value": 1,
+              "start": 22,
+              "end": 23
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 18,
+            "end": 24
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 30,
+              "end": 41
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 45,
+                      "end": 51
+                    },
+                    "start": 43,
+                    "end": 51
+                  },
+                  "start": 42,
+                  "end": 51
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 55,
+                          "end": 59
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 60,
+                          "end": 61
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 55,
+                        "end": 61
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 64,
+                        "end": 65
+                      },
+                      "start": 55,
+                      "end": 65
+                    },
+                    "start": 55,
+                    "end": 66
+                  }
+                ],
+                "start": 53,
+                "end": 68
+              },
+              "start": 41,
+              "end": 68
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 30,
+            "end": 68
+          }
+        ],
+        "start": 11,
+        "end": 71
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 71
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 81,
+        "end": 88
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 109,
+              "end": 110
+            },
+            "value": {
+              "type": "Literal",
+              "value": 1,
+              "start": 113,
+              "end": 114
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 109,
+            "end": 114
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "y",
+              "start": 120,
+              "end": 121
+            },
+            "value": {
+              "type": "Literal",
+              "value": "hello",
+              "start": 124,
+              "end": 131
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 120,
+            "end": 132
+          }
+        ],
+        "start": 102,
+        "end": 135
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 97,
+        "end": 101
+      },
+      "start": 75,
+      "end": 135
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r",
+            "start": 143,
+            "end": 144
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "Derived",
+              "start": 151,
+              "end": 158
+            },
+            "arguments": [],
+            "start": 147,
+            "end": 160
+          },
+          "start": 143,
+          "end": 160
+        }
+      ],
+      "kind": "var",
+      "start": 139,
+      "end": 161
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r2",
+            "start": 176,
+            "end": 178
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "Derived",
+              "start": 185,
+              "end": 192
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 193,
+                "end": 194
+              }
+            ],
+            "start": 181,
+            "end": 195
+          },
+          "start": 176,
+          "end": 195
+        }
+      ],
+      "kind": "var",
+      "start": 172,
+      "end": 196
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base2",
+        "start": 207,
+        "end": 212
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 223,
+              "end": 224
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 226,
+                  "end": 227
+                },
+                "start": 226,
+                "end": 227
+              },
+              "start": 224,
+              "end": 227
+            },
+            "start": 223,
+            "end": 228
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 234,
+              "end": 245
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 249,
+                        "end": 250
+                      },
+                      "start": 249,
+                      "end": 250
+                    },
+                    "start": 247,
+                    "end": 250
+                  },
+                  "start": 246,
+                  "end": 250
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 254,
+                          "end": 258
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "a",
+                          "start": 259,
+                          "end": 260
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 254,
+                        "end": 260
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 263,
+                        "end": 264
+                      },
+                      "start": 254,
+                      "end": 264
+                    },
+                    "start": 254,
+                    "end": 265
+                  }
+                ],
+                "start": 252,
+                "end": 267
+              },
+              "start": 245,
+              "end": 267
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 234,
+            "end": 267
+          }
+        ],
+        "start": 216,
+        "end": 270
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 213,
+              "end": 214
+            },
+            "start": 213,
+            "end": 214
+          }
+        ],
+        "start": 212,
+        "end": 215
+      },
+      "start": 201,
+      "end": 270
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "D",
+        "start": 280,
+        "end": 281
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 322,
+              "end": 323
+            },
+            "value": {
+              "type": "Literal",
+              "value": 2,
+              "start": 326,
+              "end": 327
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 322,
+            "end": 327
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "y",
+              "start": 333,
+              "end": 334
+            },
+            "value": {
+              "type": "Literal",
+              "value": null,
+              "start": 340,
+              "end": 344
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 336,
+                  "end": 337
+                },
+                "start": 336,
+                "end": 337
+              },
+              "start": 334,
+              "end": 337
+            },
+            "start": 333,
+            "end": 345
+          }
+        ],
+        "start": 315,
+        "end": 348
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base2",
+        "start": 306,
+        "end": 311
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 312,
+              "end": 313
+            },
+            "start": 312,
+            "end": 313
+          }
+        ],
+        "start": 311,
+        "end": 314
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 282,
+              "end": 283
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Date",
+                "start": 292,
+                "end": 296
+              },
+              "start": 292,
+              "end": 296
+            },
+            "start": 282,
+            "end": 296
+          }
+        ],
+        "start": 281,
+        "end": 297
+      },
+      "start": 274,
+      "end": 348
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d",
+            "start": 356,
+            "end": 357
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "D",
+              "start": 364,
+              "end": 365
+            },
+            "arguments": [],
+            "start": 360,
+            "end": 367
+          },
+          "start": 356,
+          "end": 367
+        }
+      ],
+      "kind": "var",
+      "start": 352,
+      "end": 368
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "d2",
+            "start": 383,
+            "end": 385
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "D",
+              "start": 392,
+              "end": 393
+            },
+            "arguments": [
+              {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Date",
+                  "start": 398,
+                  "end": 402
+                },
+                "arguments": [],
+                "start": 394,
+                "end": 404
+              }
+            ],
+            "start": 388,
+            "end": 405
+          },
+          "start": 383,
+          "end": 405
+        }
+      ],
+      "kind": "var",
+      "start": 379,
+      "end": 406
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 412
+}

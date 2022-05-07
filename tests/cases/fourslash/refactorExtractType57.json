@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 368,
+            "end": 372
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 373,
+            "end": 379
+          },
+          "computed": false,
+          "optional": false,
+          "start": 368,
+          "end": 379
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 380,
+            "end": 383
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 385,
+            "end": 388
+          }
+        ],
+        "optional": false,
+        "start": 368,
+        "end": 389
+      },
+      "start": 368,
+      "end": 390
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 392,
+            "end": 396
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 397,
+            "end": 410
+          },
+          "computed": false,
+          "optional": false,
+          "start": 392,
+          "end": 410
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 418,
+                  "end": 430
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract type",
+                  "start": 432,
+                  "end": 446
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 418,
+                "end": 446
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 453,
+                  "end": 463
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract to type alias",
+                  "start": 465,
+                  "end": 488
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 453,
+                "end": 488
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 495,
+                  "end": 512
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract to type alias",
+                  "start": 514,
+                  "end": 537
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 495,
+                "end": 537
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 544,
+                  "end": 554
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "function id<T>(x: T): T {\r\n    return (() => {\r\n        type /*RENAME*/NewType = typeof x;\r\n\r\n        const s: NewType = x;\r\n        return s;\r\n    })();\r\n}",
+                        "cooked": "function id<T>(x: T): T {\n    return (() => {\n        type /*RENAME*/NewType = typeof x;\n\n        const s: NewType = x;\n        return s;\n    })();\n}"
+                      },
+                      "tail": true,
+                      "start": 556,
+                      "end": 714
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 556,
+                  "end": 714
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 544,
+                "end": 714
+              }
+            ],
+            "start": 411,
+            "end": 718
+          }
+        ],
+        "optional": false,
+        "start": 392,
+        "end": 719
+      },
+      "start": 392,
+      "end": 720
+    }
+  ],
+  "sourceType": "script",
+  "start": 368,
+  "end": 722
+}

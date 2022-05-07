@@ -1,0 +1,259 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 25,
+        "end": 28
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "RestElement",
+          "argument": {
+            "type": "Identifier",
+            "name": "s",
+            "start": 32,
+            "end": 33
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSSymbolKeyword",
+                "start": 35,
+                "end": 41
+              },
+              "start": 35,
+              "end": 43
+            },
+            "start": 33,
+            "end": 43
+          },
+          "start": 29,
+          "end": 43
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 45,
+        "end": 48
+      },
+      "start": 16,
+      "end": 48
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "SymbolIterator",
+        "start": 56,
+        "end": 70
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "next",
+              "start": 78,
+              "end": 82
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "value",
+                            "start": 118,
+                            "end": 123
+                          },
+                          "value": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Identifier",
+                              "name": "Symbol",
+                              "start": 125,
+                              "end": 131
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 125,
+                            "end": 133
+                          },
+                          "computed": false,
+                          "method": false,
+                          "shorthand": false,
+                          "kind": "init",
+                          "start": 118,
+                          "end": 133
+                        },
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "done",
+                            "start": 148,
+                            "end": 152
+                          },
+                          "value": {
+                            "type": "Literal",
+                            "value": false,
+                            "start": 154,
+                            "end": 159
+                          },
+                          "computed": false,
+                          "method": false,
+                          "shorthand": false,
+                          "kind": "init",
+                          "start": 148,
+                          "end": 159
+                        }
+                      ],
+                      "start": 103,
+                      "end": 170
+                    },
+                    "start": 96,
+                    "end": 171
+                  }
+                ],
+                "start": 85,
+                "end": 178
+              },
+              "params": [],
+              "start": 82,
+              "end": 178
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 78,
+            "end": 178
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Symbol",
+                "start": 187,
+                "end": 193
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "iterator",
+                "start": 194,
+                "end": 202
+              },
+              "computed": false,
+              "optional": false,
+              "start": 187,
+              "end": 202
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ThisExpression",
+                      "start": 224,
+                      "end": 228
+                    },
+                    "start": 217,
+                    "end": 229
+                  }
+                ],
+                "start": 206,
+                "end": 236
+              },
+              "params": [],
+              "start": 203,
+              "end": 236
+            },
+            "computed": true,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 186,
+            "end": 236
+          }
+        ],
+        "start": 71,
+        "end": 239
+      },
+      "superClass": null,
+      "start": 50,
+      "end": 239
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 243,
+          "end": 246
+        },
+        "arguments": [
+          {
+            "type": "SpreadElement",
+            "argument": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "SymbolIterator",
+                "start": 254,
+                "end": 268
+              },
+              "arguments": [],
+              "start": 250,
+              "end": 268
+            },
+            "start": 247,
+            "end": 268
+          }
+        ],
+        "optional": false,
+        "start": 243,
+        "end": 269
+      },
+      "start": 243,
+      "end": 270
+    }
+  ],
+  "sourceType": "script",
+  "start": 16,
+  "end": 270
+}

@@ -1,0 +1,267 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 23,
+        "end": 26
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSArrayType",
+            "elementType": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSNumberKeyword",
+                  "start": 30,
+                  "end": 36
+                },
+                {
+                  "type": "TSUndefinedKeyword",
+                  "start": 39,
+                  "end": 48
+                }
+              ],
+              "start": 30,
+              "end": 48
+            },
+            "start": 29,
+            "end": 51
+          },
+          {
+            "type": "TSUndefinedKeyword",
+            "start": 54,
+            "end": 63
+          }
+        ],
+        "start": 29,
+        "end": 63
+      },
+      "start": 18,
+      "end": 64
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 77,
+                  "end": 80
+                },
+                "start": 77,
+                "end": 80
+              },
+              "start": 75,
+              "end": 80
+            },
+            "start": 72,
+            "end": 80
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 84,
+                "end": 85
+              },
+              {
+                "type": "Literal",
+                "value": 2,
+                "start": 87,
+                "end": 88
+              },
+              {
+                "type": "Literal",
+                "value": 3,
+                "start": 90,
+                "end": 91
+              }
+            ],
+            "start": 83,
+            "end": 92
+          },
+          "start": 72,
+          "end": 92
+        }
+      ],
+      "kind": "const",
+      "start": 66,
+      "end": 93
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "index",
+            "start": 100,
+            "end": 105
+          },
+          "init": {
+            "type": "Literal",
+            "value": 1,
+            "start": 108,
+            "end": 109
+          },
+          "start": 100,
+          "end": 109
+        }
+      ],
+      "kind": "const",
+      "start": 94,
+      "end": 110
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "LogicalExpression",
+        "operator": "&&",
+        "left": {
+          "type": "LogicalExpression",
+          "operator": "&&",
+          "left": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "left": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 116,
+              "end": 119
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "undefined",
+              "start": 124,
+              "end": 133
+            },
+            "start": 116,
+            "end": 133
+          },
+          "right": {
+            "type": "BinaryExpression",
+            "operator": "!==",
+            "left": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 137,
+                "end": 140
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "index",
+                "start": 141,
+                "end": 146
+              },
+              "computed": true,
+              "optional": false,
+              "start": 137,
+              "end": 147
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "undefined",
+              "start": 152,
+              "end": 161
+            },
+            "start": 137,
+            "end": 161
+          },
+          "start": 116,
+          "end": 161
+        },
+        "right": {
+          "type": "BinaryExpression",
+          "operator": ">=",
+          "left": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 165,
+              "end": 168
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "index",
+              "start": 169,
+              "end": 174
+            },
+            "computed": true,
+            "optional": false,
+            "start": 165,
+            "end": 175
+          },
+          "right": {
+            "type": "Literal",
+            "value": 0,
+            "start": 179,
+            "end": 180
+          },
+          "start": 165,
+          "end": 180
+        },
+        "start": 116,
+        "end": 180
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 188,
+                "end": 191
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "index",
+                "start": 192,
+                "end": 197
+              },
+              "computed": true,
+              "optional": false,
+              "start": 188,
+              "end": 198
+            },
+            "start": 188,
+            "end": 198
+          }
+        ],
+        "start": 182,
+        "end": 210
+      },
+      "alternate": null,
+      "start": 112,
+      "end": 210
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 211
+}

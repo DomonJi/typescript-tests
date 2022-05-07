@@ -1,0 +1,443 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "cond",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 42,
+                "end": 49
+              },
+              "start": 40,
+              "end": 49
+            },
+            "start": 36,
+            "end": 49
+          },
+          "init": null,
+          "start": 36,
+          "end": 49
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 24,
+      "end": 50
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo1",
+        "start": 63,
+        "end": 67
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSUnionType",
+                      "types": [
+                        {
+                          "type": "TSStringKeyword",
+                          "start": 84,
+                          "end": 90
+                        },
+                        {
+                          "type": "TSNumberKeyword",
+                          "start": 93,
+                          "end": 99
+                        },
+                        {
+                          "type": "TSBooleanKeyword",
+                          "start": 102,
+                          "end": 109
+                        }
+                      ],
+                      "start": 84,
+                      "end": 109
+                    },
+                    "start": 82,
+                    "end": 109
+                  },
+                  "start": 81,
+                  "end": 109
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 112,
+                  "end": 113
+                },
+                "start": 81,
+                "end": 113
+              }
+            ],
+            "kind": "let",
+            "start": 77,
+            "end": 114
+          },
+          {
+            "type": "WhileStatement",
+            "test": {
+              "type": "Identifier",
+              "name": "cond",
+              "start": 127,
+              "end": 131
+            },
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "===",
+                    "left": {
+                      "type": "UnaryExpression",
+                      "operator": "typeof",
+                      "prefix": true,
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 155,
+                        "end": 156
+                      },
+                      "start": 148,
+                      "end": 156
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "string",
+                      "start": 161,
+                      "end": 169
+                    },
+                    "start": 148,
+                    "end": 169
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 186,
+                            "end": 187
+                          },
+                          "right": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "x",
+                                "start": 190,
+                                "end": 191
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "slice",
+                                "start": 192,
+                                "end": 197
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 190,
+                              "end": 197
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 190,
+                            "end": 199
+                          },
+                          "start": 186,
+                          "end": 199
+                        },
+                        "start": 186,
+                        "end": 200
+                      }
+                    ],
+                    "start": 171,
+                    "end": 211
+                  },
+                  "alternate": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 241,
+                            "end": 242
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "abc",
+                            "start": 245,
+                            "end": 250
+                          },
+                          "start": 241,
+                          "end": 250
+                        },
+                        "start": 241,
+                        "end": 251
+                      }
+                    ],
+                    "start": 226,
+                    "end": 262
+                  },
+                  "start": 144,
+                  "end": 262
+                }
+              ],
+              "start": 133,
+              "end": 269
+            },
+            "start": 120,
+            "end": 269
+          }
+        ],
+        "start": 70,
+        "end": 272
+      },
+      "start": 54,
+      "end": 272
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo2",
+        "start": 285,
+        "end": 289
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSUnionType",
+                      "types": [
+                        {
+                          "type": "TSStringKeyword",
+                          "start": 306,
+                          "end": 312
+                        },
+                        {
+                          "type": "TSNumberKeyword",
+                          "start": 315,
+                          "end": 321
+                        },
+                        {
+                          "type": "TSBooleanKeyword",
+                          "start": 324,
+                          "end": 331
+                        }
+                      ],
+                      "start": 306,
+                      "end": 331
+                    },
+                    "start": 304,
+                    "end": 331
+                  },
+                  "start": 303,
+                  "end": 331
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 334,
+                  "end": 335
+                },
+                "start": 303,
+                "end": 335
+              }
+            ],
+            "kind": "let",
+            "start": 299,
+            "end": 336
+          },
+          {
+            "type": "WhileStatement",
+            "test": {
+              "type": "Identifier",
+              "name": "cond",
+              "start": 349,
+              "end": 353
+            },
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "IfStatement",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "===",
+                    "left": {
+                      "type": "UnaryExpression",
+                      "operator": "typeof",
+                      "prefix": true,
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 377,
+                        "end": 378
+                      },
+                      "start": 370,
+                      "end": 378
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "number",
+                      "start": 383,
+                      "end": 391
+                    },
+                    "start": 370,
+                    "end": 391
+                  },
+                  "consequent": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 408,
+                            "end": 409
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": "abc",
+                            "start": 412,
+                            "end": 417
+                          },
+                          "start": 408,
+                          "end": 417
+                        },
+                        "start": 408,
+                        "end": 418
+                      }
+                    ],
+                    "start": 393,
+                    "end": 429
+                  },
+                  "alternate": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "AssignmentExpression",
+                          "operator": "=",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "x",
+                            "start": 459,
+                            "end": 460
+                          },
+                          "right": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "x",
+                                "start": 463,
+                                "end": 464
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "slice",
+                                "start": 465,
+                                "end": 470
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 463,
+                              "end": 470
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 463,
+                            "end": 472
+                          },
+                          "start": 459,
+                          "end": 472
+                        },
+                        "start": 459,
+                        "end": 473
+                      }
+                    ],
+                    "start": 444,
+                    "end": 484
+                  },
+                  "start": 366,
+                  "end": 484
+                }
+              ],
+              "start": 355,
+              "end": 491
+            },
+            "start": 342,
+            "end": 491
+          }
+        ],
+        "start": 292,
+        "end": 494
+      },
+      "start": 276,
+      "end": 494
+    }
+  ],
+  "sourceType": "script",
+  "start": 24,
+  "end": 494
+}

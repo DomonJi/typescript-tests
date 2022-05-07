@@ -1,0 +1,180 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 22,
+        "end": 25
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 28,
+              "end": 29
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 31,
+                "end": 37
+              },
+              "start": 29,
+              "end": 37
+            },
+            "start": 28,
+            "end": 37
+          }
+        ],
+        "start": 26,
+        "end": 39
+      },
+      "superClass": null,
+      "start": 16,
+      "end": 39
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Baz",
+        "start": 47,
+        "end": 50
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "z",
+              "start": 53,
+              "end": 54
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 56,
+                "end": 62
+              },
+              "start": 54,
+              "end": 62
+            },
+            "start": 53,
+            "end": 62
+          }
+        ],
+        "start": 51,
+        "end": 64
+      },
+      "superClass": null,
+      "start": 41,
+      "end": 64
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "g",
+        "start": 76,
+        "end": 77
+      },
+      "generator": true,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "delegate": true,
+              "argument": {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Foo",
+                      "start": 99,
+                      "end": 102
+                    },
+                    "arguments": [],
+                    "start": 95,
+                    "end": 102
+                  }
+                ],
+                "start": 94,
+                "end": 103
+              },
+              "start": 87,
+              "end": 103
+            },
+            "start": 87,
+            "end": 104
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "delegate": true,
+              "argument": {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Baz",
+                      "start": 122,
+                      "end": 125
+                    },
+                    "arguments": [],
+                    "start": 118,
+                    "end": 125
+                  }
+                ],
+                "start": 117,
+                "end": 126
+              },
+              "start": 110,
+              "end": 126
+            },
+            "start": 110,
+            "end": 127
+          }
+        ],
+        "start": 80,
+        "end": 130
+      },
+      "start": 66,
+      "end": 130
+    }
+  ],
+  "sourceType": "script",
+  "start": 16,
+  "end": 130
+}

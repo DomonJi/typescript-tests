@@ -1,0 +1,189 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 22,
+        "end": 25
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 28,
+              "end": 29
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 31,
+                "end": 37
+              },
+              "start": 29,
+              "end": 37
+            },
+            "start": 28,
+            "end": 37
+          }
+        ],
+        "start": 26,
+        "end": 39
+      },
+      "superClass": null,
+      "start": 16,
+      "end": 39
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Baz",
+        "start": 47,
+        "end": 50
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "z",
+              "start": 53,
+              "end": 54
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 56,
+                "end": 62
+              },
+              "start": 54,
+              "end": 62
+            },
+            "start": 53,
+            "end": 62
+          }
+        ],
+        "start": 51,
+        "end": 64
+      },
+      "superClass": null,
+      "start": 41,
+      "end": 64
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "g",
+        "start": 76,
+        "end": 77
+      },
+      "generator": true,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "delegate": false,
+              "argument": null,
+              "start": 110,
+              "end": 115
+            },
+            "start": 110,
+            "end": 116
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "delegate": false,
+              "argument": {
+                "type": "NewExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "Baz",
+                  "start": 132,
+                  "end": 135
+                },
+                "arguments": [],
+                "start": 128,
+                "end": 135
+              },
+              "start": 122,
+              "end": 135
+            },
+            "start": 122,
+            "end": 136
+          }
+        ],
+        "start": 103,
+        "end": 139
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "IterableIterator",
+            "start": 81,
+            "end": 97
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 98,
+                  "end": 101
+                },
+                "start": 98,
+                "end": 101
+              }
+            ],
+            "start": 97,
+            "end": 102
+          },
+          "start": 81,
+          "end": 102
+        },
+        "start": 79,
+        "end": 102
+      },
+      "start": 66,
+      "end": 139
+    }
+  ],
+  "sourceType": "script",
+  "start": 16,
+  "end": 139
+}

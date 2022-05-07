@@ -1,0 +1,287 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "test",
+        "start": 7,
+        "end": 11
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "A",
+                "start": 32,
+                "end": 33
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "foo",
+                      "start": 45,
+                      "end": 48
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [],
+                        "start": 51,
+                        "end": 63
+                      },
+                      "params": [],
+                      "start": 48,
+                      "end": 63
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 45,
+                    "end": 63
+                  }
+                ],
+                "start": 34,
+                "end": 70
+              },
+              "superClass": null,
+              "start": 26,
+              "end": 70
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 19,
+            "end": 70
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "B",
+                "start": 89,
+                "end": 90
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "bar",
+                      "start": 112,
+                      "end": 115
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [],
+                        "start": 139,
+                        "end": 151
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "callback",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSFunctionType",
+                              "params": [],
+                              "returnType": {
+                                "type": "TSTypeAnnotation",
+                                "typeAnnotation": {
+                                  "type": "TSVoidKeyword",
+                                  "start": 132,
+                                  "end": 136
+                                },
+                                "start": 129,
+                                "end": 136
+                              },
+                              "start": 126,
+                              "end": 136
+                            },
+                            "start": 124,
+                            "end": 136
+                          },
+                          "start": 116,
+                          "end": 136
+                        }
+                      ],
+                      "start": 115,
+                      "end": 151
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 112,
+                    "end": 151
+                  },
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "runme",
+                      "start": 161,
+                      "end": 166
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "ThisExpression",
+                                  "start": 184,
+                                  "end": 188
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "bar",
+                                  "start": 189,
+                                  "end": 192
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 184,
+                                "end": 192
+                              },
+                              "arguments": [
+                                {
+                                  "type": "ArrowFunctionExpression",
+                                  "generator": false,
+                                  "id": null,
+                                  "params": [],
+                                  "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "MemberExpression",
+                                            "object": {
+                                              "type": "Super",
+                                              "start": 218,
+                                              "end": 223
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "foo",
+                                              "start": 224,
+                                              "end": 227
+                                            },
+                                            "computed": false,
+                                            "optional": false,
+                                            "start": 218,
+                                            "end": 227
+                                          },
+                                          "arguments": [],
+                                          "optional": false,
+                                          "start": 218,
+                                          "end": 229
+                                        },
+                                        "start": 218,
+                                        "end": 230
+                                      }
+                                    ],
+                                    "start": 199,
+                                    "end": 245
+                                  },
+                                  "async": false,
+                                  "expression": false,
+                                  "start": 193,
+                                  "end": 245
+                                }
+                              ],
+                              "optional": false,
+                              "start": 184,
+                              "end": 246
+                            },
+                            "start": 184,
+                            "end": 247
+                          }
+                        ],
+                        "start": 169,
+                        "end": 258
+                      },
+                      "params": [],
+                      "start": 166,
+                      "end": 258
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 161,
+                    "end": 258
+                  }
+                ],
+                "start": 101,
+                "end": 265
+              },
+              "superClass": {
+                "type": "Identifier",
+                "name": "A",
+                "start": 99,
+                "end": 100
+              },
+              "start": 83,
+              "end": 265
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 76,
+            "end": 265
+          }
+        ],
+        "start": 12,
+        "end": 268
+      },
+      "start": 0,
+      "end": 268
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 268
+}

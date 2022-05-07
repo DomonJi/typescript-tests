@@ -1,0 +1,530 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Mapped",
+        "start": 43,
+        "end": 49
+      },
+      "typeAnnotation": {
+        "type": "TSMappedType",
+        "typeParameter": {
+          "type": "TSTypeParameter",
+          "name": {
+            "type": "Identifier",
+            "name": "K",
+            "start": 58,
+            "end": 59
+          },
+          "constraint": {
+            "type": "TSTypeOperator",
+            "operator": "keyof",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 69,
+                "end": 70
+              },
+              "start": 69,
+              "end": 70
+            },
+            "start": 63,
+            "end": 70
+          },
+          "start": 58,
+          "end": 70
+        },
+        "nameType": null,
+        "typeAnnotation": {
+          "type": "TSTypeLiteral",
+          "members": [
+            {
+              "type": "TSPropertySignature",
+              "computed": false,
+              "key": {
+                "type": "Identifier",
+                "name": "name",
+                "start": 75,
+                "end": 79
+              },
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSIndexedAccessType",
+                  "objectType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 81,
+                      "end": 82
+                    },
+                    "start": 81,
+                    "end": 82
+                  },
+                  "indexType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "K",
+                      "start": 83,
+                      "end": 84
+                    },
+                    "start": 83,
+                    "end": 84
+                  },
+                  "start": 81,
+                  "end": 85
+                },
+                "start": 79,
+                "end": 85
+              },
+              "start": 75,
+              "end": 85
+            }
+          ],
+          "start": 73,
+          "end": 87
+        },
+        "start": 55,
+        "end": 89
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 50,
+              "end": 51
+            },
+            "start": 50,
+            "end": 51
+          }
+        ],
+        "start": 49,
+        "end": 52
+      },
+      "start": 38,
+      "end": 90
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "InferFromMapped",
+        "start": 97,
+        "end": 112
+      },
+      "typeAnnotation": {
+        "type": "TSConditionalType",
+        "checkType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 118,
+            "end": 119
+          },
+          "start": 118,
+          "end": 119
+        },
+        "extendsType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Mapped",
+            "start": 128,
+            "end": 134
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSInferType",
+                "typeParameter": {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "R",
+                    "start": 141,
+                    "end": 142
+                  },
+                  "start": 141,
+                  "end": 142
+                },
+                "start": 135,
+                "end": 142
+              }
+            ],
+            "start": 134,
+            "end": 143
+          },
+          "start": 128,
+          "end": 143
+        },
+        "trueType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "R",
+            "start": 146,
+            "end": 147
+          },
+          "start": 146,
+          "end": 147
+        },
+        "falseType": {
+          "type": "TSNeverKeyword",
+          "start": 150,
+          "end": 155
+        },
+        "start": 118,
+        "end": 155
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 113,
+              "end": 114
+            },
+            "start": 113,
+            "end": 114
+          }
+        ],
+        "start": 112,
+        "end": 115
+      },
+      "start": 92,
+      "end": 156
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "LiteralType",
+        "start": 295,
+        "end": 306
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "first",
+              "start": 313,
+              "end": 318
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "first",
+                  "start": 320,
+                  "end": 327
+                },
+                "start": 320,
+                "end": 327
+              },
+              "start": 318,
+              "end": 327
+            },
+            "start": 313,
+            "end": 328
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "second",
+              "start": 331,
+              "end": 337
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "second",
+                  "start": 339,
+                  "end": 347
+                },
+                "start": 339,
+                "end": 347
+              },
+              "start": 337,
+              "end": 347
+            },
+            "start": 331,
+            "end": 348
+          }
+        ],
+        "start": 309,
+        "end": 351
+      },
+      "start": 290,
+      "end": 351
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MappedLiteralType",
+        "start": 358,
+        "end": 375
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "first",
+              "start": 382,
+              "end": 387
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSPropertySignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "name",
+                      "start": 391,
+                      "end": 395
+                    },
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSLiteralType",
+                        "literal": {
+                          "type": "Literal",
+                          "value": "first",
+                          "start": 397,
+                          "end": 404
+                        },
+                        "start": 397,
+                        "end": 404
+                      },
+                      "start": 395,
+                      "end": 404
+                    },
+                    "start": 391,
+                    "end": 404
+                  }
+                ],
+                "start": 389,
+                "end": 406
+              },
+              "start": 387,
+              "end": 406
+            },
+            "start": 382,
+            "end": 407
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "second",
+              "start": 410,
+              "end": 416
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSPropertySignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "name",
+                      "start": 420,
+                      "end": 424
+                    },
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSLiteralType",
+                        "literal": {
+                          "type": "Literal",
+                          "value": "second",
+                          "start": 426,
+                          "end": 434
+                        },
+                        "start": 426,
+                        "end": 434
+                      },
+                      "start": 424,
+                      "end": 434
+                    },
+                    "start": 420,
+                    "end": 434
+                  }
+                ],
+                "start": 418,
+                "end": 436
+              },
+              "start": 416,
+              "end": 436
+            },
+            "start": 410,
+            "end": 437
+          }
+        ],
+        "start": 378,
+        "end": 440
+      },
+      "start": 353,
+      "end": 441
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Inferred",
+        "start": 450,
+        "end": 458
+      },
+      "typeAnnotation": {
+        "type": "TSTypeReference",
+        "typeName": {
+          "type": "Identifier",
+          "name": "InferFromMapped",
+          "start": 461,
+          "end": 476
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterInstantiation",
+          "params": [
+            {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "MappedLiteralType",
+                "start": 477,
+                "end": 494
+              },
+              "start": 477,
+              "end": 494
+            }
+          ],
+          "start": 476,
+          "end": 495
+        },
+        "start": 461,
+        "end": 495
+      },
+      "start": 445,
+      "end": 496
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Test1",
+        "start": 538,
+        "end": 543
+      },
+      "typeAnnotation": {
+        "type": "TSConditionalType",
+        "checkType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Inferred",
+            "start": 546,
+            "end": 554
+          },
+          "start": 546,
+          "end": 554
+        },
+        "extendsType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Record",
+            "start": 563,
+            "end": 569
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSAnyKeyword",
+                "start": 570,
+                "end": 573
+              },
+              {
+                "type": "TSStringKeyword",
+                "start": 575,
+                "end": 581
+              }
+            ],
+            "start": 569,
+            "end": 582
+          },
+          "start": 563,
+          "end": 582
+        },
+        "trueType": {
+          "type": "TSLiteralType",
+          "literal": {
+            "type": "Literal",
+            "value": true,
+            "start": 585,
+            "end": 589
+          },
+          "start": 585,
+          "end": 589
+        },
+        "falseType": {
+          "type": "TSLiteralType",
+          "literal": {
+            "type": "Literal",
+            "value": false,
+            "start": 592,
+            "end": 597
+          },
+          "start": 592,
+          "end": 597
+        },
+        "start": 546,
+        "end": 597
+      },
+      "start": 533,
+      "end": 598
+    }
+  ],
+  "sourceType": "script",
+  "start": 38,
+  "end": 598
+}

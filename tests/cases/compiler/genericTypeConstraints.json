@@ -1,0 +1,214 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 6,
+        "end": 9
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "fooMethod",
+              "start": 16,
+              "end": 25
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 28,
+                "end": 30
+              },
+              "params": [],
+              "start": 25,
+              "end": 30
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 16,
+            "end": 30
+          }
+        ],
+        "start": 10,
+        "end": 32
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 32
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "FooExtended",
+        "start": 40,
+        "end": 51
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 52,
+        "end": 55
+      },
+      "superClass": null,
+      "start": 34,
+      "end": 55
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Bar",
+        "start": 63,
+        "end": 66
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 82,
+        "end": 85
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 67,
+              "end": 68
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Foo",
+                "start": 77,
+                "end": 80
+              },
+              "start": 77,
+              "end": 80
+            },
+            "start": 67,
+            "end": 80
+          }
+        ],
+        "start": 66,
+        "end": 81
+      },
+      "start": 57,
+      "end": 85
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "BarExtended",
+        "start": 93,
+        "end": 104
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 136,
+              "end": 147
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 160,
+                        "end": 165
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 160,
+                      "end": 167
+                    },
+                    "start": 160,
+                    "end": 168
+                  }
+                ],
+                "start": 150,
+                "end": 174
+              },
+              "start": 147,
+              "end": 174
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 136,
+            "end": 174
+          }
+        ],
+        "start": 130,
+        "end": 176
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Bar",
+        "start": 113,
+        "end": 116
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "FooExtended",
+              "start": 117,
+              "end": 128
+            },
+            "start": 117,
+            "end": 128
+          }
+        ],
+        "start": 116,
+        "end": 129
+      },
+      "start": 87,
+      "end": 176
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 176
+}

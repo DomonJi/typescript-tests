@@ -1,0 +1,323 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "compareTo",
+              "start": 56,
+              "end": 65
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 72,
+                      "end": 73
+                    },
+                    "start": 72,
+                    "end": 73
+                  },
+                  "start": 70,
+                  "end": 73
+                },
+                "start": 69,
+                "end": 73
+              },
+              {
+                "type": "Identifier",
+                "name": "y",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "U",
+                      "start": 78,
+                      "end": 79
+                    },
+                    "start": 78,
+                    "end": 79
+                  },
+                  "start": 76,
+                  "end": 79
+                },
+                "start": 75,
+                "end": 79
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "U",
+                  "start": 82,
+                  "end": 83
+                },
+                "start": 82,
+                "end": 83
+              },
+              "start": 80,
+              "end": 83
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterDeclaration",
+              "params": [
+                {
+                  "type": "TSTypeParameter",
+                  "name": {
+                    "type": "Identifier",
+                    "name": "U",
+                    "start": 66,
+                    "end": 67
+                  },
+                  "start": 66,
+                  "end": 67
+                }
+              ],
+              "start": 65,
+              "end": 68
+            },
+            "start": 56,
+            "end": 84
+          }
+        ],
+        "start": 49,
+        "end": 87
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Comparer",
+        "start": 37,
+        "end": 45
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 46,
+              "end": 47
+            },
+            "start": 46,
+            "end": 47
+          }
+        ],
+        "start": 45,
+        "end": 48
+      },
+      "start": 27,
+      "end": 87
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Comparer",
+                  "start": 98,
+                  "end": 106
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSAnyKeyword",
+                      "start": 107,
+                      "end": 110
+                    }
+                  ],
+                  "start": 106,
+                  "end": 111
+                },
+                "start": 98,
+                "end": 111
+              },
+              "start": 96,
+              "end": 111
+            },
+            "start": 95,
+            "end": 111
+          },
+          "init": null,
+          "start": 95,
+          "end": 111
+        }
+      ],
+      "kind": "var",
+      "start": 91,
+      "end": 112
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "c",
+          "start": 114,
+          "end": 115
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "Property",
+              "key": {
+                "type": "Identifier",
+                "name": "compareTo",
+                "start": 120,
+                "end": 129
+              },
+              "value": {
+                "type": "ArrowFunctionExpression",
+                "generator": false,
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 132,
+                    "end": 133
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "y",
+                    "start": 135,
+                    "end": 136
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "y",
+                        "start": 150,
+                        "end": 151
+                      },
+                      "start": 143,
+                      "end": 152
+                    }
+                  ],
+                  "start": 141,
+                  "end": 154
+                },
+                "async": false,
+                "expression": false,
+                "start": 131,
+                "end": 154
+              },
+              "computed": false,
+              "method": false,
+              "shorthand": false,
+              "kind": "init",
+              "start": 120,
+              "end": 154
+            }
+          ],
+          "start": 118,
+          "end": 156
+        },
+        "start": 114,
+        "end": 156
+      },
+      "start": 114,
+      "end": 157
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "r",
+            "start": 163,
+            "end": 164
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "c",
+                "start": 167,
+                "end": 168
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "compareTo",
+                "start": 169,
+                "end": 178
+              },
+              "computed": false,
+              "optional": false,
+              "start": 167,
+              "end": 178
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 179,
+                "end": 180
+              },
+              {
+                "type": "Literal",
+                "value": "",
+                "start": 182,
+                "end": 184
+              }
+            ],
+            "optional": false,
+            "start": 167,
+            "end": 185
+          },
+          "start": 163,
+          "end": 185
+        }
+      ],
+      "kind": "var",
+      "start": 159,
+      "end": 186
+    }
+  ],
+  "sourceType": "script",
+  "start": 27,
+  "end": 186
+}

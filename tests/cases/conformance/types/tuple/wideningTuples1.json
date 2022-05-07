@@ -1,0 +1,169 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 41,
+        "end": 44
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 65,
+                "end": 66
+              },
+              "start": 65,
+              "end": 66
+            },
+            "start": 63,
+            "end": 66
+          },
+          "start": 62,
+          "end": 66
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 69,
+            "end": 70
+          },
+          "start": 69,
+          "end": 70
+        },
+        "start": 67,
+        "end": 70
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 45,
+              "end": 46
+            },
+            "constraint": {
+              "type": "TSTupleType",
+              "elementTypes": [
+                {
+                  "type": "TSAnyKeyword",
+                  "start": 56,
+                  "end": 59
+                }
+              ],
+              "start": 55,
+              "end": 60
+            },
+            "start": 45,
+            "end": 60
+          }
+        ],
+        "start": 44,
+        "end": 61
+      },
+      "start": 24,
+      "end": 71
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "start": 79,
+            "end": 80
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 83,
+              "end": 86
+            },
+            "arguments": [
+              {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 88,
+                    "end": 97
+                  }
+                ],
+                "start": 87,
+                "end": 98
+              }
+            ],
+            "optional": false,
+            "start": 83,
+            "end": 99
+          },
+          "start": 79,
+          "end": 99
+        }
+      ],
+      "kind": "var",
+      "start": 75,
+      "end": 100
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "y",
+          "start": 102,
+          "end": 103
+        },
+        "right": {
+          "type": "ArrayExpression",
+          "elements": [
+            {
+              "type": "Literal",
+              "value": "",
+              "start": 107,
+              "end": 109
+            }
+          ],
+          "start": 106,
+          "end": 110
+        },
+        "start": 102,
+        "end": 110
+      },
+      "start": 102,
+      "end": 111
+    }
+  ],
+  "sourceType": "script",
+  "start": 24,
+  "end": 111
+}

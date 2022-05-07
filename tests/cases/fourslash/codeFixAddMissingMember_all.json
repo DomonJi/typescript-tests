@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 553,
+            "end": 559
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 560,
+            "end": 570
+          },
+          "computed": false,
+          "optional": false,
+          "start": 553,
+          "end": 570
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 578,
+                  "end": 583
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingMember",
+                  "start": 585,
+                  "end": 603
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 578,
+                "end": 603
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 610,
+                  "end": 627
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add all missing members",
+                  "start": 629,
+                  "end": 654
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 610,
+                "end": 654
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 661,
+                  "end": 675
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class C {\r\n    x: number;\r\n    method() {\r\n        this.x = 0;\r\n        this.y();\r\n        this.x = \"\";\r\n    }\r\n    y() {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}\r\n\r\nclass D extends C {}\r\nclass E extends D {\r\n    ex: number;\r\n    method() {\r\n        this.x = 0;\r\n        this.ex = 0;\r\n    }\r\n}\r\n\r\nclass Unrelated {\r\n    x: number;\r\n    method() {\r\n        this.x = 0;\r\n    }\r\n}\r\n\r\nenum En {\r\n    A\r\n}\r\nEn.A;\r\n\r\ntype T = {\r\n    x: any;\r\n    y: number;\r\n    test(arg0: number, arg1: number);\r\n};\r\nfunction foo(t: T) {\r\n    t.x;\r\n    t.y = 1;\r\n    t.test(1, 2);\r\n}",
+                        "cooked": "class C {\n    x: number;\n    method() {\n        this.x = 0;\n        this.y();\n        this.x = \"\";\n    }\n    y() {\n        throw new Error(\"Method not implemented.\");\n    }\n}\n\nclass D extends C {}\nclass E extends D {\n    ex: number;\n    method() {\n        this.x = 0;\n        this.ex = 0;\n    }\n}\n\nclass Unrelated {\n    x: number;\n    method() {\n        this.x = 0;\n    }\n}\n\nenum En {\n    A\n}\nEn.A;\n\ntype T = {\n    x: any;\n    y: number;\n    test(arg0: number, arg1: number);\n};\nfunction foo(t: T) {\n    t.x;\n    t.y = 1;\n    t.test(1, 2);\n}"
+                      },
+                      "tail": true,
+                      "start": 678,
+                      "end": 1263
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 678,
+                  "end": 1263
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 661,
+                "end": 1263
+              }
+            ],
+            "start": 571,
+            "end": 1267
+          }
+        ],
+        "optional": false,
+        "start": 553,
+        "end": 1268
+      },
+      "start": 553,
+      "end": 1269
+    }
+  ],
+  "sourceType": "script",
+  "start": 553,
+  "end": 1271
+}

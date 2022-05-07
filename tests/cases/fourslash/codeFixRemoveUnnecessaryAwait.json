@@ -1,0 +1,314 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 371,
+            "end": 377
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 378,
+            "end": 385
+          },
+          "computed": false,
+          "optional": false,
+          "start": 371,
+          "end": 385
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 390,
+                  "end": 401
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 403,
+                        "end": 405
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 406,
+                        "end": 417
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 403,
+                      "end": 417
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Remove_unnecessary_await",
+                      "start": 418,
+                      "end": 442
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 403,
+                    "end": 442
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 443,
+                    "end": 450
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 403,
+                  "end": 450
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 390,
+                "end": 450
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "index",
+                  "start": 454,
+                  "end": 459
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 461,
+                  "end": 462
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 454,
+                "end": 462
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 466,
+                  "end": 480
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "declare class C { foo(): void }\ndeclare function getC(): { Class: C };\ndeclare function foo(): string;\nasync function f() {\n  \"\";\n  await 0;\n  (await foo()).toLowerCase();\n  (await 0).toFixed();\n  (await new C).foo();\n  (await function() { }());\n  new (await getC()).Class();\n}",
+                        "cooked": "declare class C { foo(): void }\ndeclare function getC(): { Class: C };\ndeclare function foo(): string;\nasync function f() {\n  \"\";\n  await 0;\n  (await foo()).toLowerCase();\n  (await 0).toFixed();\n  (await new C).foo();\n  (await function() { }());\n  new (await getC()).Class();\n}"
+                      },
+                      "tail": true,
+                      "start": 482,
+                      "end": 761
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 482,
+                  "end": 761
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 466,
+                "end": 761
+              }
+            ],
+            "start": 386,
+            "end": 763
+          }
+        ],
+        "optional": false,
+        "start": 371,
+        "end": 764
+      },
+      "start": 371,
+      "end": 765
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 767,
+            "end": 773
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 774,
+            "end": 784
+          },
+          "computed": false,
+          "optional": false,
+          "start": 767,
+          "end": 784
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 789,
+                  "end": 806
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 808,
+                        "end": 810
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 811,
+                        "end": 822
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 808,
+                      "end": 822
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Remove_all_unnecessary_uses_of_await",
+                      "start": 823,
+                      "end": 859
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 808,
+                    "end": 859
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 860,
+                    "end": 867
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 808,
+                  "end": 867
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 789,
+                "end": 867
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 871,
+                  "end": 876
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "removeUnnecessaryAwait",
+                  "start": 878,
+                  "end": 902
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 871,
+                "end": 902
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 906,
+                  "end": 920
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "declare class C { foo(): void }\ndeclare function getC(): { Class: C };\ndeclare function foo(): string;\nasync function f() {\n  \"\";\n  0;\n  foo().toLowerCase();\n  (0).toFixed();\n  (new C).foo();\n  (function() { } ());\n  new (getC()).Class();\n}",
+                        "cooked": "declare class C { foo(): void }\ndeclare function getC(): { Class: C };\ndeclare function foo(): string;\nasync function f() {\n  \"\";\n  0;\n  foo().toLowerCase();\n  (0).toFixed();\n  (new C).foo();\n  (function() { } ());\n  new (getC()).Class();\n}"
+                      },
+                      "tail": true,
+                      "start": 922,
+                      "end": 1164
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 922,
+                  "end": 1164
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 906,
+                "end": 1164
+              }
+            ],
+            "start": 785,
+            "end": 1166
+          }
+        ],
+        "optional": false,
+        "start": 767,
+        "end": 1167
+      },
+      "start": 767,
+      "end": 1168
+    }
+  ],
+  "sourceType": "script",
+  "start": 371,
+  "end": 1169
+}

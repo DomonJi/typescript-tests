@@ -1,0 +1,567 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "ClassInterface",
+          "start": 32,
+          "end": 46
+        },
+        "typeAnnotation": {
+          "type": "TSMappedType",
+          "typeParameter": {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "key",
+              "start": 60,
+              "end": 63
+            },
+            "constraint": {
+              "type": "TSTypeOperator",
+              "operator": "keyof",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "C",
+                  "start": 73,
+                  "end": 74
+                },
+                "start": 73,
+                "end": 74
+              },
+              "start": 67,
+              "end": 74
+            },
+            "start": 60,
+            "end": 74
+          },
+          "nameType": null,
+          "typeAnnotation": {
+            "type": "TSIndexedAccessType",
+            "objectType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "C",
+                "start": 77,
+                "end": 78
+              },
+              "start": 77,
+              "end": 78
+            },
+            "indexType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "key",
+                "start": 79,
+                "end": 82
+              },
+              "start": 79,
+              "end": 82
+            },
+            "start": 77,
+            "end": 83
+          },
+          "start": 52,
+          "end": 87
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "C",
+                "start": 47,
+                "end": 48
+              },
+              "start": 47,
+              "end": 48
+            }
+          ],
+          "start": 46,
+          "end": 49
+        },
+        "start": 27,
+        "end": 87
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 20,
+      "end": 87
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "InstanceInterface",
+        "start": 96,
+        "end": 113
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSConstructSignatureDeclaration",
+            "params": [
+              {
+                "type": "RestElement",
+                "argument": {
+                  "type": "Identifier",
+                  "name": "args",
+                  "start": 133,
+                  "end": 137
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSArrayType",
+                    "elementType": {
+                      "type": "TSAnyKeyword",
+                      "start": 139,
+                      "end": 142
+                    },
+                    "start": 139,
+                    "end": 144
+                  },
+                  "start": 137,
+                  "end": 144
+                },
+                "start": 130,
+                "end": 144
+              }
+            ],
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "I",
+                  "start": 147,
+                  "end": 148
+                },
+                "start": 147,
+                "end": 148
+              },
+              "start": 145,
+              "end": 148
+            },
+            "start": 126,
+            "end": 148
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "prototype",
+              "start": 154,
+              "end": 163
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "I",
+                  "start": 165,
+                  "end": 166
+                },
+                "start": 165,
+                "end": 166
+              },
+              "start": 163,
+              "end": 166
+            },
+            "start": 154,
+            "end": 166
+          }
+        ],
+        "start": 119,
+        "end": 169
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "I",
+              "start": 114,
+              "end": 115
+            },
+            "start": 114,
+            "end": 115
+          }
+        ],
+        "start": 113,
+        "end": 116
+      },
+      "start": 91,
+      "end": 169
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Constructor",
+        "start": 178,
+        "end": 189
+      },
+      "typeAnnotation": {
+        "type": "TSIntersectionType",
+        "types": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "ClassInterface",
+              "start": 219,
+              "end": 233
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 234,
+                    "end": 235
+                  },
+                  "start": 234,
+                  "end": 235
+                }
+              ],
+              "start": 233,
+              "end": 236
+            },
+            "start": 219,
+            "end": 236
+          },
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "InstanceInterface",
+              "start": 239,
+              "end": 256
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "I",
+                    "start": 257,
+                    "end": 258
+                  },
+                  "start": 257,
+                  "end": 258
+                }
+              ],
+              "start": 256,
+              "end": 259
+            },
+            "start": 239,
+            "end": 259
+          }
+        ],
+        "start": 219,
+        "end": 259
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "I",
+              "start": 190,
+              "end": 191
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Object",
+                "start": 200,
+                "end": 206
+              },
+              "start": 200,
+              "end": 206
+            },
+            "start": 190,
+            "end": 206
+          },
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 208,
+              "end": 209
+            },
+            "default": {
+              "type": "TSAnyKeyword",
+              "start": 212,
+              "end": 215
+            },
+            "start": 208,
+            "end": 215
+          }
+        ],
+        "start": 189,
+        "end": 216
+      },
+      "start": 173,
+      "end": 259
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "cloneClass",
+        "start": 272,
+        "end": 282
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "OriginalClass",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 325,
+                "end": 326
+              },
+              "start": 325,
+              "end": 326
+            },
+            "start": 323,
+            "end": 326
+          },
+          "start": 310,
+          "end": 326
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "AnotherOriginalClass",
+              "start": 344,
+              "end": 364
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "MethodDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "constructor",
+                    "start": 398,
+                    "end": 409
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "RestElement",
+                        "argument": {
+                          "type": "Identifier",
+                          "name": "args",
+                          "start": 413,
+                          "end": 417
+                        },
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSArrayType",
+                            "elementType": {
+                              "type": "TSAnyKeyword",
+                              "start": 419,
+                              "end": 422
+                            },
+                            "start": 419,
+                            "end": 424
+                          },
+                          "start": 417,
+                          "end": 424
+                        },
+                        "start": 410,
+                        "end": 424
+                      }
+                    ],
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "Super",
+                              "start": 441,
+                              "end": 446
+                            },
+                            "arguments": [
+                              {
+                                "type": "SpreadElement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "args",
+                                  "start": 450,
+                                  "end": 454
+                                },
+                                "start": 447,
+                                "end": 454
+                              }
+                            ],
+                            "optional": false,
+                            "start": 441,
+                            "end": 455
+                          },
+                          "start": 441,
+                          "end": 455
+                        }
+                      ],
+                      "start": 426,
+                      "end": 466
+                    },
+                    "start": 409,
+                    "end": 466
+                  },
+                  "computed": false,
+                  "static": false,
+                  "kind": "constructor",
+                  "override": false,
+                  "start": 398,
+                  "end": 466
+                }
+              ],
+              "start": 387,
+              "end": 473
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "OriginalClass",
+              "start": 373,
+              "end": 386
+            },
+            "start": 338,
+            "end": 473
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "AnotherOriginalClass",
+              "start": 486,
+              "end": 506
+            },
+            "start": 479,
+            "end": 506
+          }
+        ],
+        "start": 331,
+        "end": 509
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 329,
+            "end": 330
+          },
+          "start": 329,
+          "end": 330
+        },
+        "start": 327,
+        "end": 330
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 283,
+              "end": 284
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Constructor",
+                "start": 293,
+                "end": 304
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeLiteral",
+                    "members": [],
+                    "start": 305,
+                    "end": 307
+                  }
+                ],
+                "start": 304,
+                "end": 308
+              },
+              "start": 293,
+              "end": 308
+            },
+            "start": 283,
+            "end": 308
+          }
+        ],
+        "start": 282,
+        "end": 309
+      },
+      "start": 263,
+      "end": 509
+    }
+  ],
+  "sourceType": "module",
+  "start": 20,
+  "end": 509
+}

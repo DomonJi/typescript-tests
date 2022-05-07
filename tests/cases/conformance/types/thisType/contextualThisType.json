@@ -1,0 +1,250 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 19,
+              "end": 20
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "p",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSThisType",
+                        "start": 26,
+                        "end": 30
+                      },
+                      "start": 24,
+                      "end": 30
+                    },
+                    "start": 23,
+                    "end": 30
+                  }
+                ],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSThisType",
+                    "start": 35,
+                    "end": 39
+                  },
+                  "start": 32,
+                  "end": 39
+                },
+                "start": 22,
+                "end": 39
+              },
+              "start": 20,
+              "end": 39
+            },
+            "start": 19,
+            "end": 40
+          }
+        ],
+        "start": 12,
+        "end": 43
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "X",
+        "start": 10,
+        "end": 11
+      },
+      "start": 0,
+      "end": 43
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 69,
+        "end": 73
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Y",
+        "start": 57,
+        "end": 58
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "X",
+            "start": 67,
+            "end": 68
+          },
+          "start": 67,
+          "end": 68
+        }
+      ],
+      "start": 47,
+      "end": 73
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Y",
+                  "start": 84,
+                  "end": 85
+                },
+                "start": 84,
+                "end": 85
+              },
+              "start": 82,
+              "end": 85
+            },
+            "start": 81,
+            "end": 85
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 95,
+                  "end": 96
+                },
+                "value": {
+                  "type": "FunctionExpression",
+                  "id": null,
+                  "generator": false,
+                  "expression": false,
+                  "async": false,
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ReturnStatement",
+                        "argument": {
+                          "type": "Identifier",
+                          "name": "p",
+                          "start": 118,
+                          "end": 119
+                        },
+                        "start": 111,
+                        "end": 120
+                      }
+                    ],
+                    "start": 100,
+                    "end": 127
+                  },
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "p",
+                      "start": 97,
+                      "end": 98
+                    }
+                  ],
+                  "start": 96,
+                  "end": 127
+                },
+                "computed": false,
+                "method": true,
+                "shorthand": false,
+                "kind": "init",
+                "start": 95,
+                "end": 127
+              }
+            ],
+            "start": 88,
+            "end": 130
+          },
+          "start": 81,
+          "end": 130
+        }
+      ],
+      "kind": "var",
+      "start": 77,
+      "end": 130
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "start": 138,
+            "end": 139
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 142,
+                "end": 143
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "a",
+                "start": 144,
+                "end": 145
+              },
+              "computed": false,
+              "optional": false,
+              "start": 142,
+              "end": 145
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "start": 146,
+                "end": 147
+              }
+            ],
+            "optional": false,
+            "start": 142,
+            "end": 148
+          },
+          "start": 138,
+          "end": 148
+        }
+      ],
+      "kind": "var",
+      "start": 134,
+      "end": 149
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 151
+}

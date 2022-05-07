@@ -1,0 +1,405 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "numTypedVariableCount",
+            "start": 732,
+            "end": 753
+          },
+          "init": {
+            "type": "Literal",
+            "value": 3,
+            "start": 756,
+            "end": 757
+          },
+          "start": 732,
+          "end": 757
+        }
+      ],
+      "kind": "var",
+      "start": 728,
+      "end": 758
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "strTypedVariableCount",
+            "start": 764,
+            "end": 785
+          },
+          "init": {
+            "type": "Literal",
+            "value": 3,
+            "start": 788,
+            "end": 789
+          },
+          "start": 764,
+          "end": 789
+        }
+      ],
+      "kind": "var",
+      "start": 760,
+      "end": 790
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "!==",
+        "left": {
+          "type": "BinaryExpression",
+          "operator": "+",
+          "left": {
+            "type": "Identifier",
+            "name": "numTypedVariableCount",
+            "start": 798,
+            "end": 819
+          },
+          "right": {
+            "type": "Identifier",
+            "name": "strTypedVariableCount",
+            "start": 822,
+            "end": 843
+          },
+          "start": 798,
+          "end": 843
+        },
+        "right": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "test",
+                "start": 848,
+                "end": 852
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "markers",
+                "start": 853,
+                "end": 860
+              },
+              "computed": false,
+              "optional": false,
+              "start": 848,
+              "end": 860
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 848,
+            "end": 862
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "length",
+            "start": 863,
+            "end": 869
+          },
+          "computed": false,
+          "optional": false,
+          "start": 848,
+          "end": 869
+        },
+        "start": 798,
+        "end": 869
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ThrowStatement",
+            "argument": {
+              "type": "Literal",
+              "value": "Unexpected number of markers in file.",
+              "start": 884,
+              "end": 923
+            },
+            "start": 878,
+            "end": 924
+          }
+        ],
+        "start": 871,
+        "end": 927
+      },
+      "alternate": null,
+      "start": 794,
+      "end": 927
+    },
+    {
+      "type": "ForStatement",
+      "init": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "i",
+              "start": 940,
+              "end": 941
+            },
+            "init": {
+              "type": "Literal",
+              "value": 0,
+              "start": 944,
+              "end": 945
+            },
+            "start": 940,
+            "end": 945
+          }
+        ],
+        "kind": "var",
+        "start": 936,
+        "end": 945
+      },
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "<",
+        "left": {
+          "type": "Identifier",
+          "name": "i",
+          "start": 947,
+          "end": 948
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "numTypedVariableCount",
+          "start": 951,
+          "end": 972
+        },
+        "start": 947,
+        "end": 972
+      },
+      "update": {
+        "type": "UpdateExpression",
+        "operator": "++",
+        "prefix": false,
+        "argument": {
+          "type": "Identifier",
+          "name": "i",
+          "start": 974,
+          "end": 975
+        },
+        "start": 974,
+        "end": 977
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "verify",
+                  "start": 986,
+                  "end": 992
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "quickInfoAt",
+                  "start": 993,
+                  "end": 1004
+                },
+                "computed": false,
+                "optional": false,
+                "start": 986,
+                "end": 1004
+              },
+              "arguments": [
+                {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "left": {
+                    "type": "Literal",
+                    "value": "",
+                    "start": 1005,
+                    "end": 1007
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "i",
+                    "start": 1010,
+                    "end": 1011
+                  },
+                  "start": 1005,
+                  "end": 1011
+                },
+                {
+                  "type": "Literal",
+                  "value": "(parameter) x: number",
+                  "start": 1013,
+                  "end": 1036
+                }
+              ],
+              "optional": false,
+              "start": 986,
+              "end": 1037
+            },
+            "start": 986,
+            "end": 1038
+          }
+        ],
+        "start": 979,
+        "end": 1041
+      },
+      "start": 931,
+      "end": 1041
+    },
+    {
+      "type": "ForStatement",
+      "init": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "i",
+              "start": 1054,
+              "end": 1055
+            },
+            "init": {
+              "type": "Literal",
+              "value": 0,
+              "start": 1058,
+              "end": 1059
+            },
+            "start": 1054,
+            "end": 1059
+          }
+        ],
+        "kind": "var",
+        "start": 1050,
+        "end": 1059
+      },
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "<",
+        "left": {
+          "type": "Identifier",
+          "name": "i",
+          "start": 1061,
+          "end": 1062
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "strTypedVariableCount",
+          "start": 1065,
+          "end": 1086
+        },
+        "start": 1061,
+        "end": 1086
+      },
+      "update": {
+        "type": "UpdateExpression",
+        "operator": "++",
+        "prefix": false,
+        "argument": {
+          "type": "Identifier",
+          "name": "i",
+          "start": 1088,
+          "end": 1089
+        },
+        "start": 1088,
+        "end": 1091
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "verify",
+                  "start": 1100,
+                  "end": 1106
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "quickInfoAt",
+                  "start": 1107,
+                  "end": 1118
+                },
+                "computed": false,
+                "optional": false,
+                "start": 1100,
+                "end": 1118
+              },
+              "arguments": [
+                {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "left": {
+                    "type": "Literal",
+                    "value": "",
+                    "start": 1119,
+                    "end": 1121
+                  },
+                  "right": {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "i",
+                      "start": 1125,
+                      "end": 1126
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "numTypedVariableCount",
+                      "start": 1129,
+                      "end": 1150
+                    },
+                    "start": 1125,
+                    "end": 1150
+                  },
+                  "start": 1119,
+                  "end": 1151
+                },
+                {
+                  "type": "Literal",
+                  "value": "(parameter) x: string",
+                  "start": 1153,
+                  "end": 1176
+                }
+              ],
+              "optional": false,
+              "start": 1100,
+              "end": 1177
+            },
+            "start": 1100,
+            "end": 1178
+          }
+        ],
+        "start": 1093,
+        "end": 1181
+      },
+      "start": 1045,
+      "end": 1181
+    }
+  ],
+  "sourceType": "script",
+  "start": 728,
+  "end": 1181
+}

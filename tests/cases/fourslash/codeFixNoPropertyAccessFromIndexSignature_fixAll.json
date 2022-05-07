@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 574,
+            "end": 580
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 581,
+            "end": 591
+          },
+          "computed": false,
+          "optional": false,
+          "start": 574,
+          "end": 591
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 599,
+                  "end": 604
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixNoPropertyAccessFromIndexSignature",
+                  "start": 606,
+                  "end": 645
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 599,
+                "end": 645
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 652,
+                  "end": 669
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 671,
+                        "end": 673
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 674,
+                        "end": 685
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 671,
+                      "end": 685
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Use_element_access_for_all_undeclared_properties",
+                      "start": 686,
+                      "end": 734
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 671,
+                    "end": 734
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 735,
+                    "end": 742
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 671,
+                  "end": 742
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 652,
+                "end": 742
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 749,
+                  "end": 763
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface A {\r\n    foo: string\r\n}\r\ninterface B {\r\n    [k: string]: string\r\n}\r\ninterface C {\r\n    foo: string\r\n    [k: string]: string\r\n}\r\ndeclare const a: A;\r\ndeclare const b: B;\r\ndeclare const c: C;\r\ndeclare const d: C | undefined;\r\na.foo;\r\na[\"foo\"];\r\nb[\"foo\"];\r\nb[\"foo\"];\r\nc.foo;\r\nc[\"foo\"];\r\nc[\"bar\"];\r\nc[\"bar\"];\r\nd?.foo;\r\nd?.[\"foo\"];\r\nd?.[\"bar\"];\r\nd?.[\"bar\"];",
+                        "cooked": "interface A {\n    foo: string\n}\ninterface B {\n    [k: string]: string\n}\ninterface C {\n    foo: string\n    [k: string]: string\n}\ndeclare const a: A;\ndeclare const b: B;\ndeclare const c: C;\ndeclare const d: C | undefined;\na.foo;\na[\"foo\"];\nb[\"foo\"];\nb[\"foo\"];\nc.foo;\nc[\"foo\"];\nc[\"bar\"];\nc[\"bar\"];\nd?.foo;\nd?.[\"foo\"];\nd?.[\"bar\"];\nd?.[\"bar\"];"
+                      },
+                      "tail": true,
+                      "start": 766,
+                      "end": 1130
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 766,
+                  "end": 1130
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 749,
+                "end": 1130
+              }
+            ],
+            "start": 592,
+            "end": 1134
+          }
+        ],
+        "optional": false,
+        "start": 574,
+        "end": 1135
+      },
+      "start": 574,
+      "end": 1136
+    }
+  ],
+  "sourceType": "script",
+  "start": 574,
+  "end": 1138
+}

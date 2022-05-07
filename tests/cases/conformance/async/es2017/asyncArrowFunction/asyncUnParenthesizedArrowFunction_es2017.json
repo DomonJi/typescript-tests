@@ -1,0 +1,191 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "someOtherFunction",
+        "start": 64,
+        "end": 81
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "i",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 85,
+              "end": 88
+            },
+            "start": 83,
+            "end": 88
+          },
+          "start": 82,
+          "end": 88
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Promise",
+            "start": 91,
+            "end": 98
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSVoidKeyword",
+                "start": 99,
+                "end": 103
+              }
+            ],
+            "start": 98,
+            "end": 104
+          },
+          "start": 91,
+          "end": 104
+        },
+        "start": 89,
+        "end": 104
+      },
+      "declare": true,
+      "start": 47,
+      "end": 105
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 113,
+            "end": 114
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "i",
+                "start": 123,
+                "end": 124
+              }
+            ],
+            "body": {
+              "type": "AwaitExpression",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "someOtherFunction",
+                  "start": 134,
+                  "end": 151
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "i",
+                    "start": 152,
+                    "end": 153
+                  }
+                ],
+                "optional": false,
+                "start": 134,
+                "end": 154
+              },
+              "start": 128,
+              "end": 154
+            },
+            "async": true,
+            "expression": true,
+            "start": 117,
+            "end": 154
+          },
+          "start": 113,
+          "end": 154
+        }
+      ],
+      "kind": "const",
+      "start": 107,
+      "end": 154
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x1",
+            "start": 162,
+            "end": 164
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "i",
+                "start": 174,
+                "end": 175
+              }
+            ],
+            "body": {
+              "type": "AwaitExpression",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "someOtherFunction",
+                  "start": 186,
+                  "end": 203
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "i",
+                    "start": 204,
+                    "end": 205
+                  }
+                ],
+                "optional": false,
+                "start": 186,
+                "end": 206
+              },
+              "start": 180,
+              "end": 206
+            },
+            "async": true,
+            "expression": true,
+            "start": 167,
+            "end": 206
+          },
+          "start": 162,
+          "end": 206
+        }
+      ],
+      "kind": "const",
+      "start": 156,
+      "end": 207
+    }
+  ],
+  "sourceType": "script",
+  "start": 47,
+  "end": 207
+}

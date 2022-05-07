@@ -1,0 +1,225 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 285,
+            "end": 289
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "file",
+            "start": 290,
+            "end": 294
+          },
+          "computed": false,
+          "optional": false,
+          "start": 285,
+          "end": 294
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "/b.ts",
+            "start": 295,
+            "end": 302
+          }
+        ],
+        "optional": false,
+        "start": 285,
+        "end": 303
+      },
+      "start": 285,
+      "end": 304
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 305,
+            "end": 309
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 310,
+            "end": 316
+          },
+          "computed": false,
+          "optional": false,
+          "start": 305,
+          "end": 316
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 317,
+            "end": 320
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 322,
+            "end": 325
+          }
+        ],
+        "optional": false,
+        "start": 305,
+        "end": 326
+      },
+      "start": 305,
+      "end": 327
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 328,
+            "end": 332
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 333,
+            "end": 346
+          },
+          "computed": false,
+          "optional": false,
+          "start": 328,
+          "end": 346
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 351,
+                  "end": 363
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract Symbol",
+                  "start": 365,
+                  "end": 381
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 351,
+                "end": 381
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 385,
+                  "end": 395
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "function_scope_1",
+                  "start": 397,
+                  "end": 415
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 385,
+                "end": 415
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 419,
+                  "end": 436
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract to function in module scope",
+                  "start": 438,
+                  "end": 475
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 419,
+                "end": 475
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 479,
+                  "end": 489
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "import { A, a } from \"./a\";\n\nfunction foo() {\n    const arg = a;\n    /*RENAME*/newFunction(arg);\n}\n\nfunction newFunction(arg: A) {\n    console.log(arg);\n}\n",
+                        "cooked": "import { A, a } from \"./a\";\n\nfunction foo() {\n    const arg = a;\n    /*RENAME*/newFunction(arg);\n}\n\nfunction newFunction(arg: A) {\n    console.log(arg);\n}\n"
+                      },
+                      "tail": true,
+                      "start": 491,
+                      "end": 648
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 491,
+                  "end": 648
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 479,
+                "end": 648
+              }
+            ],
+            "start": 347,
+            "end": 650
+          }
+        ],
+        "optional": false,
+        "start": 328,
+        "end": 651
+      },
+      "start": 328,
+      "end": 652
+    }
+  ],
+  "sourceType": "script",
+  "start": 285,
+  "end": 653
+}

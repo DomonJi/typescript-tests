@@ -1,0 +1,83 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 276,
+            "end": 282
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "importFixAtPosition",
+            "start": 283,
+            "end": 302
+          },
+          "computed": false,
+          "optional": false,
+          "start": 276,
+          "end": 302
+        },
+        "arguments": [
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import d, * as ns from \"./module\"   ;\r\nns.f1();",
+                      "cooked": "import d, * as ns from \"./module\"   ;\nns.f1();"
+                    },
+                    "tail": true,
+                    "start": 306,
+                    "end": 355
+                  }
+                ],
+                "expressions": [],
+                "start": 306,
+                "end": 355
+              },
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import d, * as ns from \"./module\"   ;\r\nimport { f1 } from \"./module\";\r\nf1();",
+                      "cooked": "import d, * as ns from \"./module\"   ;\nimport { f1 } from \"./module\";\nf1();"
+                    },
+                    "tail": true,
+                    "start": 358,
+                    "end": 436
+                  }
+                ],
+                "expressions": [],
+                "start": 358,
+                "end": 436
+              }
+            ],
+            "start": 303,
+            "end": 439
+          }
+        ],
+        "optional": false,
+        "start": 276,
+        "end": 440
+      },
+      "start": 276,
+      "end": 441
+    }
+  ],
+  "sourceType": "script",
+  "start": 276,
+  "end": 443
+}

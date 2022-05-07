@@ -1,0 +1,273 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Kind",
+        "start": 72,
+        "end": 76
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "one",
+              "start": 79,
+              "end": 84
+            },
+            "start": 79,
+            "end": 84
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "two",
+              "start": 87,
+              "end": 92
+            },
+            "start": 87,
+            "end": 92
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "three",
+              "start": 95,
+              "end": 102
+            },
+            "start": 95,
+            "end": 102
+          }
+        ],
+        "start": 79,
+        "end": 102
+      },
+      "start": 67,
+      "end": 103
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "getInterfaceFromString",
+        "start": 124,
+        "end": 146
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "options",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSIntersectionType",
+              "types": [
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "optional": true,
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "type",
+                        "start": 175,
+                        "end": 179
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "T",
+                            "start": 182,
+                            "end": 183
+                          },
+                          "start": 182,
+                          "end": 183
+                        },
+                        "start": 180,
+                        "end": 183
+                      },
+                      "start": 175,
+                      "end": 183
+                    }
+                  ],
+                  "start": 173,
+                  "end": 185
+                },
+                {
+                  "type": "TSTypeLiteral",
+                  "members": [
+                    {
+                      "type": "TSPropertySignature",
+                      "optional": true,
+                      "computed": false,
+                      "key": {
+                        "type": "Identifier",
+                        "name": "type",
+                        "start": 190,
+                        "end": 194
+                      },
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "Kind",
+                            "start": 197,
+                            "end": 201
+                          },
+                          "start": 197,
+                          "end": 201
+                        },
+                        "start": 195,
+                        "end": 201
+                      },
+                      "start": 190,
+                      "end": 201
+                    }
+                  ],
+                  "start": 188,
+                  "end": 203
+                }
+              ],
+              "start": 173,
+              "end": 203
+            },
+            "start": 171,
+            "end": 203
+          },
+          "optional": true,
+          "start": 163,
+          "end": 203
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 206,
+            "end": 207
+          },
+          "start": 206,
+          "end": 207
+        },
+        "start": 204,
+        "end": 207
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 147,
+              "end": 148
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Kind",
+                "start": 157,
+                "end": 161
+              },
+              "start": 157,
+              "end": 161
+            },
+            "start": 147,
+            "end": 161
+          }
+        ],
+        "start": 146,
+        "end": 162
+      },
+      "start": 107,
+      "end": 208
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "result",
+            "start": 218,
+            "end": 224
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "getInterfaceFromString",
+              "start": 227,
+              "end": 249
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "type",
+                      "start": 252,
+                      "end": 256
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "two",
+                      "start": 258,
+                      "end": 263
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 252,
+                    "end": 263
+                  }
+                ],
+                "start": 250,
+                "end": 265
+              }
+            ],
+            "optional": false,
+            "start": 227,
+            "end": 266
+          },
+          "start": 218,
+          "end": 266
+        }
+      ],
+      "kind": "const",
+      "start": 212,
+      "end": 267
+    }
+  ],
+  "sourceType": "script",
+  "start": 67,
+  "end": 269
+}

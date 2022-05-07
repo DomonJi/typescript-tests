@@ -1,0 +1,1952 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Key",
+          "start": 350,
+          "end": 353
+        },
+        "typeAnnotation": {
+          "type": "TSTypeOperator",
+          "operator": "keyof",
+          "typeAnnotation": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "U",
+              "start": 365,
+              "end": 366
+            },
+            "start": 365,
+            "end": 366
+          },
+          "start": 359,
+          "end": 366
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "U",
+                "start": 354,
+                "end": 355
+              },
+              "start": 354,
+              "end": 355
+            }
+          ],
+          "start": 353,
+          "end": 356
+        },
+        "start": 345,
+        "end": 367
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 338,
+      "end": 367
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Value",
+          "start": 381,
+          "end": 386
+        },
+        "typeAnnotation": {
+          "type": "TSIndexedAccessType",
+          "objectType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "U",
+              "start": 410,
+              "end": 411
+            },
+            "start": 410,
+            "end": 411
+          },
+          "indexType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "K",
+              "start": 412,
+              "end": 413
+            },
+            "start": 412,
+            "end": 413
+          },
+          "start": 410,
+          "end": 414
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "K",
+                "start": 387,
+                "end": 388
+              },
+              "constraint": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Key",
+                  "start": 397,
+                  "end": 400
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "U",
+                        "start": 401,
+                        "end": 402
+                      },
+                      "start": 401,
+                      "end": 402
+                    }
+                  ],
+                  "start": 400,
+                  "end": 403
+                },
+                "start": 397,
+                "end": 403
+              },
+              "start": 387,
+              "end": 403
+            },
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "U",
+                "start": 405,
+                "end": 406
+              },
+              "start": 405,
+              "end": 406
+            }
+          ],
+          "start": 386,
+          "end": 407
+        },
+        "start": 376,
+        "end": 415
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 369,
+      "end": 415
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "updateIfChanged",
+              "start": 430,
+              "end": 445
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "t",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 455,
+                        "end": 456
+                      },
+                      "start": 455,
+                      "end": 456
+                    },
+                    "start": 453,
+                    "end": 456
+                  },
+                  "start": 452,
+                  "end": 456
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "reduce",
+                          "start": 474,
+                          "end": 480
+                        },
+                        "init": {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [
+                            {
+                              "type": "Identifier",
+                              "name": "u",
+                              "typeAnnotation": {
+                                "type": "TSTypeAnnotation",
+                                "typeAnnotation": {
+                                  "type": "TSTypeReference",
+                                  "typeName": {
+                                    "type": "Identifier",
+                                    "name": "U",
+                                    "start": 490,
+                                    "end": 491
+                                  },
+                                  "start": 490,
+                                  "end": 491
+                                },
+                                "start": 488,
+                                "end": 491
+                              },
+                              "start": 487,
+                              "end": 491
+                            },
+                            {
+                              "type": "Identifier",
+                              "name": "update",
+                              "typeAnnotation": {
+                                "type": "TSTypeAnnotation",
+                                "typeAnnotation": {
+                                  "type": "TSFunctionType",
+                                  "params": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "u",
+                                      "typeAnnotation": {
+                                        "type": "TSTypeAnnotation",
+                                        "typeAnnotation": {
+                                          "type": "TSTypeReference",
+                                          "typeName": {
+                                            "type": "Identifier",
+                                            "name": "U",
+                                            "start": 505,
+                                            "end": 506
+                                          },
+                                          "start": 505,
+                                          "end": 506
+                                        },
+                                        "start": 503,
+                                        "end": 506
+                                      },
+                                      "start": 502,
+                                      "end": 506
+                                    }
+                                  ],
+                                  "returnType": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSTypeReference",
+                                      "typeName": {
+                                        "type": "Identifier",
+                                        "name": "T",
+                                        "start": 511,
+                                        "end": 512
+                                      },
+                                      "start": 511,
+                                      "end": 512
+                                    },
+                                    "start": 508,
+                                    "end": 512
+                                  },
+                                  "start": 501,
+                                  "end": 512
+                                },
+                                "start": 499,
+                                "end": 512
+                              },
+                              "start": 493,
+                              "end": 512
+                            }
+                          ],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "set",
+                                      "start": 534,
+                                      "end": 537
+                                    },
+                                    "init": {
+                                      "type": "ArrowFunctionExpression",
+                                      "generator": false,
+                                      "id": null,
+                                      "params": [
+                                        {
+                                          "type": "Identifier",
+                                          "name": "newU",
+                                          "typeAnnotation": {
+                                            "type": "TSTypeAnnotation",
+                                            "typeAnnotation": {
+                                              "type": "TSTypeReference",
+                                              "typeName": {
+                                                "type": "Identifier",
+                                                "name": "U",
+                                                "start": 547,
+                                                "end": 548
+                                              },
+                                              "start": 547,
+                                              "end": 548
+                                            },
+                                            "start": 545,
+                                            "end": 548
+                                          },
+                                          "start": 541,
+                                          "end": 548
+                                        }
+                                      ],
+                                      "body": {
+                                        "type": "ConditionalExpression",
+                                        "test": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "MemberExpression",
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Object",
+                                              "start": 553,
+                                              "end": 559
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "is",
+                                              "start": 560,
+                                              "end": 562
+                                            },
+                                            "computed": false,
+                                            "optional": false,
+                                            "start": 553,
+                                            "end": 562
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "u",
+                                              "start": 563,
+                                              "end": 564
+                                            },
+                                            {
+                                              "type": "Identifier",
+                                              "name": "newU",
+                                              "start": 566,
+                                              "end": 570
+                                            }
+                                          ],
+                                          "optional": false,
+                                          "start": 553,
+                                          "end": 571
+                                        },
+                                        "consequent": {
+                                          "type": "Identifier",
+                                          "name": "t",
+                                          "start": 574,
+                                          "end": 575
+                                        },
+                                        "alternate": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "Identifier",
+                                            "name": "update",
+                                            "start": 578,
+                                            "end": 584
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "newU",
+                                              "start": 585,
+                                              "end": 589
+                                            }
+                                          ],
+                                          "optional": false,
+                                          "start": 578,
+                                          "end": 590
+                                        },
+                                        "start": 553,
+                                        "end": 590
+                                      },
+                                      "async": false,
+                                      "expression": true,
+                                      "start": 540,
+                                      "end": 590
+                                    },
+                                    "start": 534,
+                                    "end": 590
+                                  }
+                                ],
+                                "kind": "const",
+                                "start": 528,
+                                "end": 591
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "Object",
+                                      "start": 608,
+                                      "end": 614
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "assign",
+                                      "start": 615,
+                                      "end": 621
+                                    },
+                                    "computed": false,
+                                    "optional": false,
+                                    "start": 608,
+                                    "end": 621
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "ArrowFunctionExpression",
+                                      "generator": false,
+                                      "id": null,
+                                      "params": [
+                                        {
+                                          "type": "Identifier",
+                                          "name": "key",
+                                          "typeAnnotation": {
+                                            "type": "TSTypeAnnotation",
+                                            "typeAnnotation": {
+                                              "type": "TSTypeReference",
+                                              "typeName": {
+                                                "type": "Identifier",
+                                                "name": "K",
+                                                "start": 660,
+                                                "end": 661
+                                              },
+                                              "start": 660,
+                                              "end": 661
+                                            },
+                                            "start": 658,
+                                            "end": 661
+                                          },
+                                          "start": 655,
+                                          "end": 661
+                                        }
+                                      ],
+                                      "body": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "Identifier",
+                                          "name": "reduce",
+                                          "start": 683,
+                                          "end": 689
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "TSAsExpression",
+                                            "expression": {
+                                              "type": "MemberExpression",
+                                              "object": {
+                                                "type": "Identifier",
+                                                "name": "u",
+                                                "start": 703,
+                                                "end": 704
+                                              },
+                                              "property": {
+                                                "type": "TSAsExpression",
+                                                "expression": {
+                                                  "type": "Identifier",
+                                                  "name": "key",
+                                                  "start": 705,
+                                                  "end": 708
+                                                },
+                                                "typeAnnotation": {
+                                                  "type": "TSTypeOperator",
+                                                  "operator": "keyof",
+                                                  "typeAnnotation": {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "U",
+                                                      "start": 718,
+                                                      "end": 719
+                                                    },
+                                                    "start": 718,
+                                                    "end": 719
+                                                  },
+                                                  "start": 712,
+                                                  "end": 719
+                                                },
+                                                "start": 705,
+                                                "end": 719
+                                              },
+                                              "computed": true,
+                                              "optional": false,
+                                              "start": 703,
+                                              "end": 720
+                                            },
+                                            "typeAnnotation": {
+                                              "type": "TSTypeReference",
+                                              "typeName": {
+                                                "type": "Identifier",
+                                                "name": "Value",
+                                                "start": 724,
+                                                "end": 729
+                                              },
+                                              "typeParameters": {
+                                                "type": "TSTypeParameterInstantiation",
+                                                "params": [
+                                                  {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "K",
+                                                      "start": 730,
+                                                      "end": 731
+                                                    },
+                                                    "start": 730,
+                                                    "end": 731
+                                                  },
+                                                  {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "U",
+                                                      "start": 733,
+                                                      "end": 734
+                                                    },
+                                                    "start": 733,
+                                                    "end": 734
+                                                  }
+                                                ],
+                                                "start": 729,
+                                                "end": 735
+                                              },
+                                              "start": 724,
+                                              "end": 735
+                                            },
+                                            "start": 703,
+                                            "end": 735
+                                          },
+                                          {
+                                            "type": "ArrowFunctionExpression",
+                                            "generator": false,
+                                            "id": null,
+                                            "params": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "v",
+                                                "typeAnnotation": {
+                                                  "type": "TSTypeAnnotation",
+                                                  "typeAnnotation": {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "Value",
+                                                      "start": 741,
+                                                      "end": 746
+                                                    },
+                                                    "typeParameters": {
+                                                      "type": "TSTypeParameterInstantiation",
+                                                      "params": [
+                                                        {
+                                                          "type": "TSTypeReference",
+                                                          "typeName": {
+                                                            "type": "Identifier",
+                                                            "name": "K",
+                                                            "start": 747,
+                                                            "end": 748
+                                                          },
+                                                          "start": 747,
+                                                          "end": 748
+                                                        },
+                                                        {
+                                                          "type": "TSTypeReference",
+                                                          "typeName": {
+                                                            "type": "Identifier",
+                                                            "name": "U",
+                                                            "start": 750,
+                                                            "end": 751
+                                                          },
+                                                          "start": 750,
+                                                          "end": 751
+                                                        }
+                                                      ],
+                                                      "start": 746,
+                                                      "end": 752
+                                                    },
+                                                    "start": 741,
+                                                    "end": 752
+                                                  },
+                                                  "start": 739,
+                                                  "end": 752
+                                                },
+                                                "start": 738,
+                                                "end": 752
+                                              }
+                                            ],
+                                            "body": {
+                                              "type": "BlockStatement",
+                                              "body": [
+                                                {
+                                                  "type": "ReturnStatement",
+                                                  "argument": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                      "type": "Identifier",
+                                                      "name": "update",
+                                                      "start": 787,
+                                                      "end": 793
+                                                    },
+                                                    "arguments": [
+                                                      {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                          "type": "MemberExpression",
+                                                          "object": {
+                                                            "type": "Identifier",
+                                                            "name": "Object",
+                                                            "start": 794,
+                                                            "end": 800
+                                                          },
+                                                          "property": {
+                                                            "type": "Identifier",
+                                                            "name": "assign",
+                                                            "start": 801,
+                                                            "end": 807
+                                                          },
+                                                          "computed": false,
+                                                          "optional": false,
+                                                          "start": 794,
+                                                          "end": 807
+                                                        },
+                                                        "arguments": [
+                                                          {
+                                                            "type": "ConditionalExpression",
+                                                            "test": {
+                                                              "type": "CallExpression",
+                                                              "callee": {
+                                                                "type": "MemberExpression",
+                                                                "object": {
+                                                                  "type": "Identifier",
+                                                                  "name": "Array",
+                                                                  "start": 808,
+                                                                  "end": 813
+                                                                },
+                                                                "property": {
+                                                                  "type": "Identifier",
+                                                                  "name": "isArray",
+                                                                  "start": 814,
+                                                                  "end": 821
+                                                                },
+                                                                "computed": false,
+                                                                "optional": false,
+                                                                "start": 808,
+                                                                "end": 821
+                                                              },
+                                                              "arguments": [
+                                                                {
+                                                                  "type": "Identifier",
+                                                                  "name": "u",
+                                                                  "start": 822,
+                                                                  "end": 823
+                                                                }
+                                                              ],
+                                                              "optional": false,
+                                                              "start": 808,
+                                                              "end": 824
+                                                            },
+                                                            "consequent": {
+                                                              "type": "ArrayExpression",
+                                                              "elements": [],
+                                                              "start": 827,
+                                                              "end": 829
+                                                            },
+                                                            "alternate": {
+                                                              "type": "ObjectExpression",
+                                                              "properties": [],
+                                                              "start": 832,
+                                                              "end": 834
+                                                            },
+                                                            "start": 808,
+                                                            "end": 834
+                                                          },
+                                                          {
+                                                            "type": "Identifier",
+                                                            "name": "u",
+                                                            "start": 836,
+                                                            "end": 837
+                                                          },
+                                                          {
+                                                            "type": "ObjectExpression",
+                                                            "properties": [
+                                                              {
+                                                                "type": "Property",
+                                                                "key": {
+                                                                  "type": "Identifier",
+                                                                  "name": "key",
+                                                                  "start": 842,
+                                                                  "end": 845
+                                                                },
+                                                                "value": {
+                                                                  "type": "Identifier",
+                                                                  "name": "v",
+                                                                  "start": 848,
+                                                                  "end": 849
+                                                                },
+                                                                "computed": true,
+                                                                "method": false,
+                                                                "shorthand": false,
+                                                                "kind": "init",
+                                                                "start": 841,
+                                                                "end": 849
+                                                              }
+                                                            ],
+                                                            "start": 839,
+                                                            "end": 851
+                                                          }
+                                                        ],
+                                                        "optional": false,
+                                                        "start": 794,
+                                                        "end": 852
+                                                      }
+                                                    ],
+                                                    "optional": false,
+                                                    "start": 787,
+                                                    "end": 853
+                                                  },
+                                                  "start": 780,
+                                                  "end": 854
+                                                }
+                                              ],
+                                              "start": 757,
+                                              "end": 873
+                                            },
+                                            "async": false,
+                                            "expression": false,
+                                            "start": 737,
+                                            "end": 873
+                                          }
+                                        ],
+                                        "optional": false,
+                                        "typeParameters": {
+                                          "type": "TSTypeParameterInstantiation",
+                                          "params": [
+                                            {
+                                              "type": "TSTypeReference",
+                                              "typeName": {
+                                                "type": "Identifier",
+                                                "name": "Value",
+                                                "start": 690,
+                                                "end": 695
+                                              },
+                                              "typeParameters": {
+                                                "type": "TSTypeParameterInstantiation",
+                                                "params": [
+                                                  {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "K",
+                                                      "start": 696,
+                                                      "end": 697
+                                                    },
+                                                    "start": 696,
+                                                    "end": 697
+                                                  },
+                                                  {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "U",
+                                                      "start": 699,
+                                                      "end": 700
+                                                    },
+                                                    "start": 699,
+                                                    "end": 700
+                                                  }
+                                                ],
+                                                "start": 695,
+                                                "end": 701
+                                              },
+                                              "start": 690,
+                                              "end": 701
+                                            }
+                                          ],
+                                          "start": 689,
+                                          "end": 702
+                                        },
+                                        "start": 683,
+                                        "end": 874
+                                      },
+                                      "async": false,
+                                      "expression": true,
+                                      "typeParameters": {
+                                        "type": "TSTypeParameterDeclaration",
+                                        "params": [
+                                          {
+                                            "type": "TSTypeParameter",
+                                            "name": {
+                                              "type": "Identifier",
+                                              "name": "K",
+                                              "start": 637,
+                                              "end": 638
+                                            },
+                                            "constraint": {
+                                              "type": "TSTypeReference",
+                                              "typeName": {
+                                                "type": "Identifier",
+                                                "name": "Key",
+                                                "start": 647,
+                                                "end": 650
+                                              },
+                                              "typeParameters": {
+                                                "type": "TSTypeParameterInstantiation",
+                                                "params": [
+                                                  {
+                                                    "type": "TSTypeReference",
+                                                    "typeName": {
+                                                      "type": "Identifier",
+                                                      "name": "U",
+                                                      "start": 651,
+                                                      "end": 652
+                                                    },
+                                                    "start": 651,
+                                                    "end": 652
+                                                  }
+                                                ],
+                                                "start": 650,
+                                                "end": 653
+                                              },
+                                              "start": 647,
+                                              "end": 653
+                                            },
+                                            "start": 637,
+                                            "end": 653
+                                          }
+                                        ],
+                                        "start": 636,
+                                        "end": 654
+                                      },
+                                      "start": 636,
+                                      "end": 874
+                                    },
+                                    {
+                                      "type": "ObjectExpression",
+                                      "properties": [
+                                        {
+                                          "type": "Property",
+                                          "key": {
+                                            "type": "Identifier",
+                                            "name": "map",
+                                            "start": 891,
+                                            "end": 894
+                                          },
+                                          "value": {
+                                            "type": "ArrowFunctionExpression",
+                                            "generator": false,
+                                            "id": null,
+                                            "params": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "updater",
+                                                "typeAnnotation": {
+                                                  "type": "TSTypeAnnotation",
+                                                  "typeAnnotation": {
+                                                    "type": "TSFunctionType",
+                                                    "params": [
+                                                      {
+                                                        "type": "Identifier",
+                                                        "name": "u",
+                                                        "typeAnnotation": {
+                                                          "type": "TSTypeAnnotation",
+                                                          "typeAnnotation": {
+                                                            "type": "TSTypeReference",
+                                                            "typeName": {
+                                                              "type": "Identifier",
+                                                              "name": "U",
+                                                              "start": 910,
+                                                              "end": 911
+                                                            },
+                                                            "start": 910,
+                                                            "end": 911
+                                                          },
+                                                          "start": 908,
+                                                          "end": 911
+                                                        },
+                                                        "start": 907,
+                                                        "end": 911
+                                                      }
+                                                    ],
+                                                    "returnType": {
+                                                      "type": "TSTypeAnnotation",
+                                                      "typeAnnotation": {
+                                                        "type": "TSTypeReference",
+                                                        "typeName": {
+                                                          "type": "Identifier",
+                                                          "name": "U",
+                                                          "start": 916,
+                                                          "end": 917
+                                                        },
+                                                        "start": 916,
+                                                        "end": 917
+                                                      },
+                                                      "start": 913,
+                                                      "end": 917
+                                                    },
+                                                    "start": 906,
+                                                    "end": 917
+                                                  },
+                                                  "start": 904,
+                                                  "end": 917
+                                                },
+                                                "start": 897,
+                                                "end": 917
+                                              }
+                                            ],
+                                            "body": {
+                                              "type": "CallExpression",
+                                              "callee": {
+                                                "type": "Identifier",
+                                                "name": "set",
+                                                "start": 922,
+                                                "end": 925
+                                              },
+                                              "arguments": [
+                                                {
+                                                  "type": "CallExpression",
+                                                  "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "updater",
+                                                    "start": 926,
+                                                    "end": 933
+                                                  },
+                                                  "arguments": [
+                                                    {
+                                                      "type": "Identifier",
+                                                      "name": "u",
+                                                      "start": 934,
+                                                      "end": 935
+                                                    }
+                                                  ],
+                                                  "optional": false,
+                                                  "start": 926,
+                                                  "end": 936
+                                                }
+                                              ],
+                                              "optional": false,
+                                              "start": 922,
+                                              "end": 937
+                                            },
+                                            "async": false,
+                                            "expression": true,
+                                            "start": 896,
+                                            "end": 937
+                                          },
+                                          "computed": false,
+                                          "method": false,
+                                          "shorthand": false,
+                                          "kind": "init",
+                                          "start": 891,
+                                          "end": 937
+                                        },
+                                        {
+                                          "type": "Property",
+                                          "key": {
+                                            "type": "Identifier",
+                                            "name": "set",
+                                            "start": 939,
+                                            "end": 942
+                                          },
+                                          "value": {
+                                            "type": "Identifier",
+                                            "name": "set",
+                                            "start": 939,
+                                            "end": 942
+                                          },
+                                          "computed": false,
+                                          "method": false,
+                                          "shorthand": true,
+                                          "kind": "init",
+                                          "start": 939,
+                                          "end": 942
+                                        }
+                                      ],
+                                      "start": 889,
+                                      "end": 944
+                                    }
+                                  ],
+                                  "optional": false,
+                                  "start": 608,
+                                  "end": 945
+                                },
+                                "start": 601,
+                                "end": 946
+                              }
+                            ],
+                            "start": 517,
+                            "end": 953
+                          },
+                          "async": false,
+                          "expression": false,
+                          "typeParameters": {
+                            "type": "TSTypeParameterDeclaration",
+                            "params": [
+                              {
+                                "type": "TSTypeParameter",
+                                "name": {
+                                  "type": "Identifier",
+                                  "name": "U",
+                                  "start": 484,
+                                  "end": 485
+                                },
+                                "start": 484,
+                                "end": 485
+                              }
+                            ],
+                            "start": 483,
+                            "end": 486
+                          },
+                          "start": 483,
+                          "end": 953
+                        },
+                        "start": 474,
+                        "end": 953
+                      }
+                    ],
+                    "kind": "const",
+                    "start": 468,
+                    "end": 954
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "reduce",
+                        "start": 967,
+                        "end": 973
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "name": "t",
+                          "start": 977,
+                          "end": 978
+                        },
+                        {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [
+                            {
+                              "type": "Identifier",
+                              "name": "t",
+                              "typeAnnotation": {
+                                "type": "TSTypeAnnotation",
+                                "typeAnnotation": {
+                                  "type": "TSTypeReference",
+                                  "typeName": {
+                                    "type": "Identifier",
+                                    "name": "T",
+                                    "start": 984,
+                                    "end": 985
+                                  },
+                                  "start": 984,
+                                  "end": 985
+                                },
+                                "start": 982,
+                                "end": 985
+                              },
+                              "start": 981,
+                              "end": 985
+                            }
+                          ],
+                          "body": {
+                            "type": "Identifier",
+                            "name": "t",
+                            "start": 990,
+                            "end": 991
+                          },
+                          "async": false,
+                          "expression": true,
+                          "start": 980,
+                          "end": 991
+                        }
+                      ],
+                      "optional": false,
+                      "typeParameters": {
+                        "type": "TSTypeParameterInstantiation",
+                        "params": [
+                          {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "T",
+                              "start": 974,
+                              "end": 975
+                            },
+                            "start": 974,
+                            "end": 975
+                          }
+                        ],
+                        "start": 973,
+                        "end": 976
+                      },
+                      "start": 967,
+                      "end": 992
+                    },
+                    "start": 960,
+                    "end": 993
+                  }
+                ],
+                "start": 461,
+                "end": 996
+              },
+              "async": false,
+              "expression": false,
+              "typeParameters": {
+                "type": "TSTypeParameterDeclaration",
+                "params": [
+                  {
+                    "type": "TSTypeParameter",
+                    "name": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 449,
+                      "end": 450
+                    },
+                    "start": 449,
+                    "end": 450
+                  }
+                ],
+                "start": 448,
+                "end": 451
+              },
+              "start": 448,
+              "end": 996
+            },
+            "start": 430,
+            "end": 996
+          }
+        ],
+        "kind": "const",
+        "start": 424,
+        "end": 997
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 417,
+      "end": 997
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "testRecFun",
+              "start": 1086,
+              "end": 1096
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "parent",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "T",
+                        "start": 1126,
+                        "end": 1127
+                      },
+                      "start": 1126,
+                      "end": 1127
+                    },
+                    "start": 1124,
+                    "end": 1127
+                  },
+                  "start": 1118,
+                  "end": 1127
+                }
+              ],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "result",
+                            "start": 1157,
+                            "end": 1163
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "name": "parent",
+                            "start": 1165,
+                            "end": 1171
+                          },
+                          "computed": false,
+                          "method": false,
+                          "shorthand": false,
+                          "kind": "init",
+                          "start": 1157,
+                          "end": 1171
+                        },
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "deeper",
+                            "start": 1182,
+                            "end": 1188
+                          },
+                          "value": {
+                            "type": "ArrowFunctionExpression",
+                            "generator": false,
+                            "id": null,
+                            "params": [
+                              {
+                                "type": "Identifier",
+                                "name": "child",
+                                "typeAnnotation": {
+                                  "type": "TSTypeAnnotation",
+                                  "typeAnnotation": {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "U",
+                                      "start": 1216,
+                                      "end": 1217
+                                    },
+                                    "start": 1216,
+                                    "end": 1217
+                                  },
+                                  "start": 1214,
+                                  "end": 1217
+                                },
+                                "start": 1209,
+                                "end": 1217
+                              }
+                            ],
+                            "body": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "testRecFun",
+                                "start": 1235,
+                                "end": 1245
+                              },
+                              "arguments": [
+                                {
+                                  "type": "ObjectExpression",
+                                  "properties": [
+                                    {
+                                      "type": "SpreadElement",
+                                      "argument": {
+                                        "type": "Identifier",
+                                        "name": "parent",
+                                        "start": 1258,
+                                        "end": 1264
+                                      },
+                                      "start": 1255,
+                                      "end": 1264
+                                    },
+                                    {
+                                      "type": "SpreadElement",
+                                      "argument": {
+                                        "type": "Identifier",
+                                        "name": "child",
+                                        "start": 1269,
+                                        "end": 1274
+                                      },
+                                      "start": 1266,
+                                      "end": 1274
+                                    }
+                                  ],
+                                  "start": 1253,
+                                  "end": 1276
+                                }
+                              ],
+                              "optional": false,
+                              "typeParameters": {
+                                "type": "TSTypeParameterInstantiation",
+                                "params": [
+                                  {
+                                    "type": "TSIntersectionType",
+                                    "types": [
+                                      {
+                                        "type": "TSTypeReference",
+                                        "typeName": {
+                                          "type": "Identifier",
+                                          "name": "T",
+                                          "start": 1246,
+                                          "end": 1247
+                                        },
+                                        "start": 1246,
+                                        "end": 1247
+                                      },
+                                      {
+                                        "type": "TSTypeReference",
+                                        "typeName": {
+                                          "type": "Identifier",
+                                          "name": "U",
+                                          "start": 1250,
+                                          "end": 1251
+                                        },
+                                        "start": 1250,
+                                        "end": 1251
+                                      }
+                                    ],
+                                    "start": 1246,
+                                    "end": 1251
+                                  }
+                                ],
+                                "start": 1245,
+                                "end": 1252
+                              },
+                              "start": 1235,
+                              "end": 1277
+                            },
+                            "async": false,
+                            "expression": true,
+                            "typeParameters": {
+                              "type": "TSTypeParameterDeclaration",
+                              "params": [
+                                {
+                                  "type": "TSTypeParameter",
+                                  "name": {
+                                    "type": "Identifier",
+                                    "name": "U",
+                                    "start": 1191,
+                                    "end": 1192
+                                  },
+                                  "constraint": {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "Object",
+                                      "start": 1201,
+                                      "end": 1207
+                                    },
+                                    "start": 1201,
+                                    "end": 1207
+                                  },
+                                  "start": 1191,
+                                  "end": 1207
+                                }
+                              ],
+                              "start": 1190,
+                              "end": 1208
+                            },
+                            "start": 1190,
+                            "end": 1277
+                          },
+                          "computed": false,
+                          "method": false,
+                          "shorthand": false,
+                          "kind": "init",
+                          "start": 1182,
+                          "end": 1277
+                        }
+                      ],
+                      "start": 1146,
+                      "end": 1284
+                    },
+                    "start": 1139,
+                    "end": 1285
+                  }
+                ],
+                "start": 1132,
+                "end": 1288
+              },
+              "async": false,
+              "expression": false,
+              "typeParameters": {
+                "type": "TSTypeParameterDeclaration",
+                "params": [
+                  {
+                    "type": "TSTypeParameter",
+                    "name": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 1100,
+                      "end": 1101
+                    },
+                    "constraint": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Object",
+                        "start": 1110,
+                        "end": 1116
+                      },
+                      "start": 1110,
+                      "end": 1116
+                    },
+                    "start": 1100,
+                    "end": 1116
+                  }
+                ],
+                "start": 1099,
+                "end": 1117
+              },
+              "start": 1099,
+              "end": 1288
+            },
+            "start": 1086,
+            "end": 1288
+          }
+        ],
+        "kind": "const",
+        "start": 1080,
+        "end": 1288
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 1073,
+      "end": 1288
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "p1",
+            "start": 1298,
+            "end": 1300
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "testRecFun",
+              "start": 1303,
+              "end": 1313
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "one",
+                      "start": 1316,
+                      "end": 1319
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "1",
+                      "start": 1321,
+                      "end": 1324
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 1316,
+                    "end": 1324
+                  }
+                ],
+                "start": 1314,
+                "end": 1326
+              }
+            ],
+            "optional": false,
+            "start": 1303,
+            "end": 1327
+          },
+          "start": 1298,
+          "end": 1327
+        }
+      ],
+      "kind": "let",
+      "start": 1294,
+      "end": 1327
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "void",
+        "prefix": true,
+        "argument": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "p1",
+              "start": 1334,
+              "end": 1336
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "result",
+              "start": 1337,
+              "end": 1343
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1334,
+            "end": 1343
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "one",
+            "start": 1344,
+            "end": 1347
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1334,
+          "end": 1347
+        },
+        "start": 1329,
+        "end": 1347
+      },
+      "start": 1329,
+      "end": 1348
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "p2",
+            "start": 1354,
+            "end": 1356
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "p1",
+                "start": 1359,
+                "end": 1361
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "deeper",
+                "start": 1362,
+                "end": 1368
+              },
+              "computed": false,
+              "optional": false,
+              "start": 1359,
+              "end": 1368
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "two",
+                      "start": 1371,
+                      "end": 1374
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "2",
+                      "start": 1376,
+                      "end": 1379
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 1371,
+                    "end": 1379
+                  }
+                ],
+                "start": 1369,
+                "end": 1381
+              }
+            ],
+            "optional": false,
+            "start": 1359,
+            "end": 1382
+          },
+          "start": 1354,
+          "end": 1382
+        }
+      ],
+      "kind": "let",
+      "start": 1350,
+      "end": 1382
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "void",
+        "prefix": true,
+        "argument": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "p2",
+              "start": 1389,
+              "end": 1391
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "result",
+              "start": 1392,
+              "end": 1398
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1389,
+            "end": 1398
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "one",
+            "start": 1399,
+            "end": 1402
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1389,
+          "end": 1402
+        },
+        "start": 1384,
+        "end": 1402
+      },
+      "start": 1384,
+      "end": 1403
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "void",
+        "prefix": true,
+        "argument": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "p2",
+              "start": 1410,
+              "end": 1412
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "result",
+              "start": 1413,
+              "end": 1419
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1410,
+            "end": 1419
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "two",
+            "start": 1420,
+            "end": 1423
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1410,
+          "end": 1423
+        },
+        "start": 1405,
+        "end": 1423
+      },
+      "start": 1405,
+      "end": 1424
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "p3",
+            "start": 1430,
+            "end": 1432
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "p2",
+                "start": 1435,
+                "end": 1437
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "deeper",
+                "start": 1438,
+                "end": 1444
+              },
+              "computed": false,
+              "optional": false,
+              "start": 1435,
+              "end": 1444
+            },
+            "arguments": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "three",
+                      "start": 1447,
+                      "end": 1452
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": "3",
+                      "start": 1454,
+                      "end": 1457
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 1447,
+                    "end": 1457
+                  }
+                ],
+                "start": 1445,
+                "end": 1459
+              }
+            ],
+            "optional": false,
+            "start": 1435,
+            "end": 1460
+          },
+          "start": 1430,
+          "end": 1460
+        }
+      ],
+      "kind": "let",
+      "start": 1426,
+      "end": 1460
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "void",
+        "prefix": true,
+        "argument": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "p3",
+              "start": 1467,
+              "end": 1469
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "result",
+              "start": 1470,
+              "end": 1476
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1467,
+            "end": 1476
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "one",
+            "start": 1477,
+            "end": 1480
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1467,
+          "end": 1480
+        },
+        "start": 1462,
+        "end": 1480
+      },
+      "start": 1462,
+      "end": 1481
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "void",
+        "prefix": true,
+        "argument": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "p3",
+              "start": 1488,
+              "end": 1490
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "result",
+              "start": 1491,
+              "end": 1497
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1488,
+            "end": 1497
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "two",
+            "start": 1498,
+            "end": 1501
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1488,
+          "end": 1501
+        },
+        "start": 1483,
+        "end": 1501
+      },
+      "start": 1483,
+      "end": 1502
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "void",
+        "prefix": true,
+        "argument": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "p3",
+              "start": 1509,
+              "end": 1511
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "result",
+              "start": 1512,
+              "end": 1518
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1509,
+            "end": 1518
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "three",
+            "start": 1519,
+            "end": 1524
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1509,
+          "end": 1524
+        },
+        "start": 1504,
+        "end": 1524
+      },
+      "start": 1504,
+      "end": 1525
+    }
+  ],
+  "sourceType": "module",
+  "start": 338,
+  "end": 1527
+}

@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 241,
+            "end": 245
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 246,
+            "end": 252
+          },
+          "computed": false,
+          "optional": false,
+          "start": 241,
+          "end": 252
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 253,
+            "end": 256
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 258,
+            "end": 261
+          }
+        ],
+        "optional": false,
+        "start": 241,
+        "end": 262
+      },
+      "start": 241,
+      "end": 263
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 265,
+            "end": 269
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 270,
+            "end": 283
+          },
+          "computed": false,
+          "optional": false,
+          "start": 265,
+          "end": 283
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 291,
+                  "end": 303
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert parameters to destructured object",
+                  "start": 305,
+                  "end": 348
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 291,
+                "end": 348
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 355,
+                  "end": 365
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert parameters to destructured object",
+                  "start": 367,
+                  "end": 410
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 355,
+                "end": 410
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 417,
+                  "end": 434
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert parameters to destructured object",
+                  "start": 436,
+                  "end": 479
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 417,
+                "end": 479
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 486,
+                  "end": 496
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class Foo {\r\n    bar({ t, s }: { t: string; s: string; }): string {\r\n        return s + t;\r\n    }\r\n}\r\nclass Bar extends Foo { }\r\nvar bar = new Bar();\r\nbar.bar({ t: \"a\", s: \"b\" });",
+                        "cooked": "class Foo {\n    bar({ t, s }: { t: string; s: string; }): string {\n        return s + t;\n    }\n}\nclass Bar extends Foo { }\nvar bar = new Bar();\nbar.bar({ t: \"a\", s: \"b\" });"
+                      },
+                      "tail": true,
+                      "start": 498,
+                      "end": 679
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 498,
+                  "end": 679
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 486,
+                "end": 679
+              }
+            ],
+            "start": 284,
+            "end": 682
+          }
+        ],
+        "optional": false,
+        "start": 265,
+        "end": 683
+      },
+      "start": 265,
+      "end": 684
+    }
+  ],
+  "sourceType": "script",
+  "start": 241,
+  "end": 684
+}

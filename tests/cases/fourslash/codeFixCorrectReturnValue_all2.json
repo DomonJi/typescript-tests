@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 1111,
+            "end": 1117
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 1118,
+            "end": 1128
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1111,
+          "end": 1128
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 1135,
+                  "end": 1140
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixRemoveBracesFromArrowFunctionBody",
+                  "start": 1142,
+                  "end": 1180
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1135,
+                "end": 1180
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 1186,
+                  "end": 1203
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 1205,
+                        "end": 1207
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 1208,
+                        "end": 1219
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1205,
+                      "end": 1219
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Remove_braces_from_all_arrow_function_bodies_with_relevant_issues",
+                      "start": 1220,
+                      "end": 1285
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1205,
+                    "end": 1285
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 1286,
+                    "end": 1293
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 1205,
+                  "end": 1293
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1186,
+                "end": 1293
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 1299,
+                  "end": 1313
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface A {\n    bar: string\n}\n\nfunction foo1 (_a: () => number ) { }\nfoo1(() => 1)\nfunction foo2 (_a: () => A) { }\nfoo2(() => ({ bar: '1' }))\nfoo2(() => ({ bar: '1' }))\nfunction foo3 (_a: () => A | number) { }\nfoo3(() => 1)\nfoo3(() => ({ bar: '1' }))\n\nfunction bar1 (): number {\n    1\n}\nfunction bar2 (): A {\n    { bar: '1' }\n}\nfunction bar3 (): A {\n    bar: '1'\n}\nfunction bar4 (): A | number {\n    1\n}\nfunction bar5(): A | number {\n    bar: '1'\n}\nconst baz1: () => number = () => 1\nconst baz2: () => A = () => ({ bar: '1' })\nconst baz3: () => A = () => ({ bar: '1' })\nconst baz4: ((() => number) | (() => A)) = () => 1\nconst baz5: ((() => number) | (() => A)) = () => ({ bar: '1' })\n\nconst test: { a: () => A } = { a: () => ({ bar: '1' }) }",
+                        "cooked": "interface A {\n    bar: string\n}\n\nfunction foo1 (_a: () => number ) { }\nfoo1(() => 1)\nfunction foo2 (_a: () => A) { }\nfoo2(() => ({ bar: '1' }))\nfoo2(() => ({ bar: '1' }))\nfunction foo3 (_a: () => A | number) { }\nfoo3(() => 1)\nfoo3(() => ({ bar: '1' }))\n\nfunction bar1 (): number {\n    1\n}\nfunction bar2 (): A {\n    { bar: '1' }\n}\nfunction bar3 (): A {\n    bar: '1'\n}\nfunction bar4 (): A | number {\n    1\n}\nfunction bar5(): A | number {\n    bar: '1'\n}\nconst baz1: () => number = () => 1\nconst baz2: () => A = () => ({ bar: '1' })\nconst baz3: () => A = () => ({ bar: '1' })\nconst baz4: ((() => number) | (() => A)) = () => 1\nconst baz5: ((() => number) | (() => A)) = () => ({ bar: '1' })\n\nconst test: { a: () => A } = { a: () => ({ bar: '1' }) }"
+                      },
+                      "tail": true,
+                      "start": 1315,
+                      "end": 2061
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 1315,
+                  "end": 2061
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1299,
+                "end": 2061
+              }
+            ],
+            "start": 1129,
+            "end": 2064
+          }
+        ],
+        "optional": false,
+        "start": 1111,
+        "end": 2065
+      },
+      "start": 1111,
+      "end": 2066
+    }
+  ],
+  "sourceType": "script",
+  "start": 1111,
+  "end": 2067
+}

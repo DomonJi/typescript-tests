@@ -1,0 +1,279 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 23,
+        "end": 26
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 29,
+              "end": 30
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 29,
+            "end": 30
+          }
+        ],
+        "start": 27,
+        "end": 32
+      },
+      "superClass": null,
+      "start": 17,
+      "end": 32
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Foo2",
+        "start": 40,
+        "end": 44
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 47,
+              "end": 48
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 47,
+            "end": 49
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "y",
+              "start": 50,
+              "end": 51
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 50,
+            "end": 51
+          }
+        ],
+        "start": 45,
+        "end": 53
+      },
+      "superClass": null,
+      "start": 34,
+      "end": 53
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 63,
+        "end": 64
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSIndexSignature",
+            "parameters": [
+              {
+                "type": "Identifier",
+                "name": "s",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSStringKeyword",
+                    "start": 76,
+                    "end": 82
+                  },
+                  "start": 74,
+                  "end": 82
+                },
+                "start": 73,
+                "end": 82
+              }
+            ],
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo2",
+                  "start": 85,
+                  "end": 89
+                },
+                "start": 85,
+                "end": 89
+              },
+              "start": 83,
+              "end": 89
+            },
+            "start": 72,
+            "end": 90
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Literal",
+              "value": "get1",
+              "start": 101,
+              "end": 107
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "NewExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "Foo",
+                        "start": 124,
+                        "end": 127
+                      },
+                      "arguments": [],
+                      "start": 120,
+                      "end": 127
+                    },
+                    "start": 113,
+                    "end": 127
+                  }
+                ],
+                "start": 111,
+                "end": 129
+              },
+              "params": [],
+              "start": 108,
+              "end": 129
+            },
+            "computed": true,
+            "static": false,
+            "kind": "get",
+            "override": false,
+            "start": 96,
+            "end": 129
+          }
+        ],
+        "start": 65,
+        "end": 132
+      },
+      "superClass": null,
+      "start": 57,
+      "end": 132
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "D",
+        "start": 142,
+        "end": 143
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Literal",
+              "value": "set1",
+              "start": 166,
+              "end": 172
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 182,
+                "end": 185
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "p",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Foo",
+                        "start": 177,
+                        "end": 180
+                      },
+                      "start": 177,
+                      "end": 180
+                    },
+                    "start": 175,
+                    "end": 180
+                  },
+                  "start": 174,
+                  "end": 180
+                }
+              ],
+              "start": 173,
+              "end": 185
+            },
+            "computed": true,
+            "static": false,
+            "kind": "set",
+            "override": false,
+            "start": 161,
+            "end": 185
+          }
+        ],
+        "start": 154,
+        "end": 188
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "C",
+        "start": 152,
+        "end": 153
+      },
+      "start": 136,
+      "end": 188
+    }
+  ],
+  "sourceType": "script",
+  "start": 17,
+  "end": 188
+}

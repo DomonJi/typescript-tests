@@ -1,0 +1,829 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Record",
+                  "start": 29,
+                  "end": 35
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSNeverKeyword",
+                      "start": 36,
+                      "end": 41
+                    },
+                    {
+                      "type": "TSNeverKeyword",
+                      "start": 43,
+                      "end": 48
+                    }
+                  ],
+                  "start": 35,
+                  "end": 49
+                },
+                "start": 29,
+                "end": 49
+              },
+              "start": 27,
+              "end": 49
+            },
+            "start": 24,
+            "end": 49
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [],
+            "start": 52,
+            "end": 54
+          },
+          "start": 24,
+          "end": 54
+        }
+      ],
+      "kind": "const",
+      "start": 18,
+      "end": 54
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 133,
+        "end": 135
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "RecordOfRecords",
+        "start": 74,
+        "end": 89
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Record",
+            "start": 98,
+            "end": 104
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeOperator",
+                "operator": "keyof",
+                "typeAnnotation": {
+                  "type": "TSAnyKeyword",
+                  "start": 111,
+                  "end": 114
+                },
+                "start": 105,
+                "end": 114
+              },
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "RecordOfRecords",
+                  "start": 116,
+                  "end": 131
+                },
+                "start": 116,
+                "end": 131
+              }
+            ],
+            "start": 104,
+            "end": 132
+          },
+          "start": 98,
+          "end": 132
+        }
+      ],
+      "start": 64,
+      "end": 135
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "recordOfRecords",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "RecordOfRecords",
+                  "start": 160,
+                  "end": 175
+                },
+                "start": 160,
+                "end": 175
+              },
+              "start": 158,
+              "end": 175
+            },
+            "start": 143,
+            "end": 175
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [],
+            "start": 178,
+            "end": 180
+          },
+          "start": 143,
+          "end": 180
+        }
+      ],
+      "kind": "const",
+      "start": 137,
+      "end": 180
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "recordOfRecords",
+            "start": 182,
+            "end": 197
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "propA",
+            "start": 198,
+            "end": 203
+          },
+          "computed": false,
+          "optional": false,
+          "start": 182,
+          "end": 203
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "SpreadElement",
+              "argument": {
+                "type": "ConditionalExpression",
+                "test": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 211,
+                    "end": 214
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 219,
+                    "end": 228
+                  },
+                  "start": 211,
+                  "end": 228
+                },
+                "consequent": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 232,
+                        "end": 235
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 232,
+                        "end": 235
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": true,
+                      "kind": "init",
+                      "start": 232,
+                      "end": 235
+                    }
+                  ],
+                  "start": 231,
+                  "end": 236
+                },
+                "alternate": {
+                  "type": "ObjectExpression",
+                  "properties": [],
+                  "start": 239,
+                  "end": 241
+                },
+                "start": 211,
+                "end": 241
+              },
+              "start": 207,
+              "end": 242
+            }
+          ],
+          "start": 206,
+          "end": 243
+        },
+        "start": 182,
+        "end": 243
+      },
+      "start": 182,
+      "end": 243
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "recordOfRecords",
+            "start": 251,
+            "end": 266
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "propB",
+            "start": 267,
+            "end": 272
+          },
+          "computed": false,
+          "optional": false,
+          "start": 251,
+          "end": 272
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "SpreadElement",
+              "argument": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 280,
+                  "end": 283
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 288,
+                        "end": 291
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 288,
+                        "end": 291
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": true,
+                      "kind": "init",
+                      "start": 288,
+                      "end": 291
+                    }
+                  ],
+                  "start": 287,
+                  "end": 292
+                },
+                "start": 280,
+                "end": 292
+              },
+              "start": 276,
+              "end": 293
+            }
+          ],
+          "start": 275,
+          "end": 294
+        },
+        "start": 251,
+        "end": 294
+      },
+      "start": 251,
+      "end": 294
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "recordOfRecords",
+            "start": 302,
+            "end": 317
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "propC",
+            "start": 318,
+            "end": 323
+          },
+          "computed": false,
+          "optional": false,
+          "start": 302,
+          "end": 323
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "SpreadElement",
+              "argument": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 331,
+                    "end": 334
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 339,
+                    "end": 348
+                  },
+                  "start": 331,
+                  "end": 348
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 353,
+                        "end": 356
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 353,
+                        "end": 356
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": true,
+                      "kind": "init",
+                      "start": 353,
+                      "end": 356
+                    }
+                  ],
+                  "start": 352,
+                  "end": 357
+                },
+                "start": 331,
+                "end": 357
+              },
+              "start": 327,
+              "end": 358
+            }
+          ],
+          "start": 326,
+          "end": 359
+        },
+        "start": 302,
+        "end": 359
+      },
+      "start": 302,
+      "end": 359
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 488,
+        "end": 490
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "RecordOfRecordsOrEmpty",
+        "start": 410,
+        "end": 432
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Record",
+            "start": 441,
+            "end": 447
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeOperator",
+                "operator": "keyof",
+                "typeAnnotation": {
+                  "type": "TSAnyKeyword",
+                  "start": 454,
+                  "end": 457
+                },
+                "start": 448,
+                "end": 457
+              },
+              {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "RecordOfRecordsOrEmpty",
+                      "start": 459,
+                      "end": 481
+                    },
+                    "start": 459,
+                    "end": 481
+                  },
+                  {
+                    "type": "TSTypeLiteral",
+                    "members": [],
+                    "start": 484,
+                    "end": 486
+                  }
+                ],
+                "start": 459,
+                "end": 486
+              }
+            ],
+            "start": 447,
+            "end": 487
+          },
+          "start": 441,
+          "end": 487
+        }
+      ],
+      "start": 400,
+      "end": 490
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "recordsOfRecordsOrEmpty",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "RecordOfRecordsOrEmpty",
+                  "start": 523,
+                  "end": 545
+                },
+                "start": 523,
+                "end": 545
+              },
+              "start": 521,
+              "end": 545
+            },
+            "start": 498,
+            "end": 545
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [],
+            "start": 548,
+            "end": 550
+          },
+          "start": 498,
+          "end": 550
+        }
+      ],
+      "kind": "const",
+      "start": 492,
+      "end": 550
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "recordsOfRecordsOrEmpty",
+            "start": 552,
+            "end": 575
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "propA",
+            "start": 576,
+            "end": 581
+          },
+          "computed": false,
+          "optional": false,
+          "start": 552,
+          "end": 581
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "SpreadElement",
+              "argument": {
+                "type": "ConditionalExpression",
+                "test": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 589,
+                    "end": 592
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 597,
+                    "end": 606
+                  },
+                  "start": 589,
+                  "end": 606
+                },
+                "consequent": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 610,
+                        "end": 613
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 610,
+                        "end": 613
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": true,
+                      "kind": "init",
+                      "start": 610,
+                      "end": 613
+                    }
+                  ],
+                  "start": 609,
+                  "end": 614
+                },
+                "alternate": {
+                  "type": "ObjectExpression",
+                  "properties": [],
+                  "start": 617,
+                  "end": 619
+                },
+                "start": 589,
+                "end": 619
+              },
+              "start": 585,
+              "end": 620
+            }
+          ],
+          "start": 584,
+          "end": 621
+        },
+        "start": 552,
+        "end": 621
+      },
+      "start": 552,
+      "end": 621
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "recordsOfRecordsOrEmpty",
+            "start": 629,
+            "end": 652
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "propB",
+            "start": 653,
+            "end": 658
+          },
+          "computed": false,
+          "optional": false,
+          "start": 629,
+          "end": 658
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "SpreadElement",
+              "argument": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 666,
+                  "end": 669
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 674,
+                        "end": 677
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 674,
+                        "end": 677
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": true,
+                      "kind": "init",
+                      "start": 674,
+                      "end": 677
+                    }
+                  ],
+                  "start": 673,
+                  "end": 678
+                },
+                "start": 666,
+                "end": 678
+              },
+              "start": 662,
+              "end": 679
+            }
+          ],
+          "start": 661,
+          "end": 680
+        },
+        "start": 629,
+        "end": 680
+      },
+      "start": 629,
+      "end": 680
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "recordsOfRecordsOrEmpty",
+            "start": 688,
+            "end": 711
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "propC",
+            "start": 712,
+            "end": 717
+          },
+          "computed": false,
+          "optional": false,
+          "start": 688,
+          "end": 717
+        },
+        "right": {
+          "type": "ObjectExpression",
+          "properties": [
+            {
+              "type": "SpreadElement",
+              "argument": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 725,
+                    "end": 728
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 733,
+                    "end": 742
+                  },
+                  "start": 725,
+                  "end": 742
+                },
+                "right": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 747,
+                        "end": 750
+                      },
+                      "value": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 747,
+                        "end": 750
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": true,
+                      "kind": "init",
+                      "start": 747,
+                      "end": 750
+                    }
+                  ],
+                  "start": 746,
+                  "end": 751
+                },
+                "start": 725,
+                "end": 751
+              },
+              "start": 721,
+              "end": 752
+            }
+          ],
+          "start": 720,
+          "end": 753
+        },
+        "start": 688,
+        "end": 753
+      },
+      "start": 688,
+      "end": 753
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 759
+}

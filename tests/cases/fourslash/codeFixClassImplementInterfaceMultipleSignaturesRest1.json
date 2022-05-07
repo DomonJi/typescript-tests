@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 249,
+            "end": 255
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 256,
+            "end": 263
+          },
+          "computed": false,
+          "optional": false,
+          "start": 249,
+          "end": 263
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 271,
+                  "end": 282
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I'",
+                  "start": 284,
+                  "end": 309
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 271,
+                "end": 309
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 316,
+                  "end": 330
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface I {\r\n    method(a: number, ...b: string[]): boolean;\r\n    method(a: string, ...b: number[]): Function;\r\n    method(a: string): Function;\r\n}\r\n\r\nclass C implements I {\r\n    method(a: number, ...b: string[]): boolean;\r\n    method(a: string, ...b: number[]): Function;\r\n    method(a: string): Function;\r\n    method(a: unknown, ...b?: unknown[]): boolean | Function {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "interface I {\n    method(a: number, ...b: string[]): boolean;\n    method(a: string, ...b: number[]): Function;\n    method(a: string): Function;\n}\n\nclass C implements I {\n    method(a: number, ...b: string[]): boolean;\n    method(a: string, ...b: number[]): Function;\n    method(a: string): Function;\n    method(a: unknown, ...b?: unknown[]): boolean | Function {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 333,
+                      "end": 770
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 333,
+                  "end": 770
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 316,
+                "end": 770
+              }
+            ],
+            "start": 264,
+            "end": 774
+          }
+        ],
+        "optional": false,
+        "start": 249,
+        "end": 775
+      },
+      "start": 249,
+      "end": 776
+    }
+  ],
+  "sourceType": "script",
+  "start": 249,
+  "end": 778
+}

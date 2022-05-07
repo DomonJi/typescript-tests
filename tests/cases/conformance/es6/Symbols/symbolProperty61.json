@@ -1,0 +1,724 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "global",
+        "start": 47,
+        "end": 53
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSInterfaceDeclaration",
+            "body": {
+              "type": "TSInterfaceBody",
+              "body": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "obs",
+                    "start": 101,
+                    "end": 104
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSSymbolKeyword",
+                      "start": 106,
+                      "end": 112
+                    },
+                    "start": 104,
+                    "end": 112
+                  },
+                  "readonly": true,
+                  "start": 92,
+                  "end": 112
+                }
+              ],
+              "start": 86,
+              "end": 116
+            },
+            "id": {
+              "type": "Identifier",
+              "name": "SymbolConstructor",
+              "start": 68,
+              "end": 85
+            },
+            "start": 58,
+            "end": 116
+          }
+        ],
+        "start": 54,
+        "end": 118
+      },
+      "declare": true,
+      "global": true,
+      "start": 39,
+      "end": 118
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "observable",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeQuery",
+                "exprName": {
+                  "type": "TSQualifiedName",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "Symbol",
+                    "start": 145,
+                    "end": 151
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "obs",
+                    "start": 152,
+                    "end": 155
+                  },
+                  "start": 145,
+                  "end": 155
+                },
+                "start": 138,
+                "end": 155
+              },
+              "start": 136,
+              "end": 155
+            },
+            "start": 126,
+            "end": 155
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "Symbol",
+              "start": 158,
+              "end": 164
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "obs",
+              "start": 165,
+              "end": 168
+            },
+            "computed": false,
+            "optional": false,
+            "start": 158,
+            "end": 168
+          },
+          "start": 126,
+          "end": 168
+        }
+      ],
+      "kind": "const",
+      "start": 120,
+      "end": 168
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "MyObservable",
+          "start": 183,
+          "end": 195
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "constructor",
+                "start": 205,
+                "end": 216
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "params": [
+                  {
+                    "type": "TSParameterProperty",
+                    "accessibility": "private",
+                    "parameter": {
+                      "type": "Identifier",
+                      "name": "_val",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "T",
+                            "start": 231,
+                            "end": 232
+                          },
+                          "start": 231,
+                          "end": 232
+                        },
+                        "start": 229,
+                        "end": 232
+                      },
+                      "start": 225,
+                      "end": 232
+                    },
+                    "start": 217,
+                    "end": 232
+                  }
+                ],
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [],
+                  "start": 234,
+                  "end": 236
+                },
+                "start": 216,
+                "end": 236
+              },
+              "computed": false,
+              "static": false,
+              "kind": "constructor",
+              "override": false,
+              "start": 205,
+              "end": 236
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "subscribe",
+                "start": 242,
+                "end": 251
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "next",
+                          "start": 286,
+                          "end": 290
+                        },
+                        "arguments": [
+                          {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 291,
+                              "end": 295
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "_val",
+                              "start": 296,
+                              "end": 300
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 291,
+                            "end": 300
+                          }
+                        ],
+                        "optional": false,
+                        "start": 286,
+                        "end": 301
+                      },
+                      "start": 286,
+                      "end": 301
+                    }
+                  ],
+                  "start": 276,
+                  "end": 307
+                },
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "next",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSFunctionType",
+                        "params": [
+                          {
+                            "type": "Identifier",
+                            "name": "val",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "T",
+                                  "start": 264,
+                                  "end": 265
+                                },
+                                "start": 264,
+                                "end": 265
+                              },
+                              "start": 262,
+                              "end": 265
+                            },
+                            "start": 259,
+                            "end": 265
+                          }
+                        ],
+                        "returnType": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSVoidKeyword",
+                            "start": 270,
+                            "end": 274
+                          },
+                          "start": 267,
+                          "end": 274
+                        },
+                        "start": 258,
+                        "end": 274
+                      },
+                      "start": 256,
+                      "end": 274
+                    },
+                    "start": 252,
+                    "end": 274
+                  }
+                ],
+                "start": 251,
+                "end": 307
+              },
+              "computed": false,
+              "static": false,
+              "kind": "method",
+              "override": false,
+              "start": 242,
+              "end": 307
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "observable",
+                "start": 314,
+                "end": 324
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "ThisExpression",
+                        "start": 345,
+                        "end": 349
+                      },
+                      "start": 338,
+                      "end": 349
+                    }
+                  ],
+                  "start": 328,
+                  "end": 355
+                },
+                "params": [],
+                "start": 325,
+                "end": 355
+              },
+              "computed": true,
+              "static": false,
+              "kind": "method",
+              "override": false,
+              "start": 313,
+              "end": 355
+            }
+          ],
+          "start": 199,
+          "end": 357
+        },
+        "superClass": null,
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 196,
+                "end": 197
+              },
+              "start": 196,
+              "end": 197
+            }
+          ],
+          "start": 195,
+          "end": 198
+        },
+        "start": 177,
+        "end": 357
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 170,
+      "end": 357
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "InteropObservable",
+        "start": 364,
+        "end": 381
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": true,
+            "key": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Symbol",
+                "start": 394,
+                "end": 400
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "obs",
+                "start": 401,
+                "end": 404
+              },
+              "computed": false,
+              "optional": false,
+              "start": 394,
+              "end": 404
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeLiteral",
+                    "members": [
+                      {
+                        "type": "TSMethodSignature",
+                        "computed": false,
+                        "key": {
+                          "type": "Identifier",
+                          "name": "subscribe",
+                          "start": 415,
+                          "end": 424
+                        },
+                        "params": [
+                          {
+                            "type": "Identifier",
+                            "name": "next",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSFunctionType",
+                                "params": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "val",
+                                    "typeAnnotation": {
+                                      "type": "TSTypeAnnotation",
+                                      "typeAnnotation": {
+                                        "type": "TSTypeReference",
+                                        "typeName": {
+                                          "type": "Identifier",
+                                          "name": "T",
+                                          "start": 437,
+                                          "end": 438
+                                        },
+                                        "start": 437,
+                                        "end": 438
+                                      },
+                                      "start": 435,
+                                      "end": 438
+                                    },
+                                    "start": 432,
+                                    "end": 438
+                                  }
+                                ],
+                                "returnType": {
+                                  "type": "TSTypeAnnotation",
+                                  "typeAnnotation": {
+                                    "type": "TSVoidKeyword",
+                                    "start": 443,
+                                    "end": 447
+                                  },
+                                  "start": 440,
+                                  "end": 447
+                                },
+                                "start": 431,
+                                "end": 447
+                              },
+                              "start": 429,
+                              "end": 447
+                            },
+                            "start": 425,
+                            "end": 447
+                          }
+                        ],
+                        "kind": "method",
+                        "returnType": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSVoidKeyword",
+                            "start": 450,
+                            "end": 454
+                          },
+                          "start": 448,
+                          "end": 454
+                        },
+                        "start": 415,
+                        "end": 454
+                      }
+                    ],
+                    "start": 413,
+                    "end": 456
+                  },
+                  "start": 410,
+                  "end": 456
+                },
+                "start": 407,
+                "end": 456
+              },
+              "start": 405,
+              "end": 456
+            },
+            "start": 393,
+            "end": 456
+          }
+        ],
+        "start": 387,
+        "end": 458
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 382,
+              "end": 383
+            },
+            "start": 382,
+            "end": 383
+          }
+        ],
+        "start": 381,
+        "end": 384
+      },
+      "start": 359,
+      "end": 458
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "from",
+        "start": 469,
+        "end": 473
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "obs",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "InteropObservable",
+                "start": 482,
+                "end": 499
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 500,
+                      "end": 501
+                    },
+                    "start": 500,
+                    "end": 501
+                  }
+                ],
+                "start": 499,
+                "end": 502
+              },
+              "start": 482,
+              "end": 502
+            },
+            "start": 480,
+            "end": 502
+          },
+          "start": 477,
+          "end": 502
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "obs",
+                  "start": 517,
+                  "end": 520
+                },
+                "property": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "Symbol",
+                    "start": 521,
+                    "end": 527
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "obs",
+                    "start": 528,
+                    "end": 531
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 521,
+                  "end": 531
+                },
+                "computed": true,
+                "optional": false,
+                "start": 517,
+                "end": 532
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 517,
+              "end": 534
+            },
+            "start": 510,
+            "end": 534
+          }
+        ],
+        "start": 504,
+        "end": 536
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 474,
+              "end": 475
+            },
+            "start": 474,
+            "end": 475
+          }
+        ],
+        "start": 473,
+        "end": 476
+      },
+      "start": 460,
+      "end": 536
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "from",
+          "start": 538,
+          "end": 542
+        },
+        "arguments": [
+          {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "MyObservable",
+              "start": 547,
+              "end": 559
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 42,
+                "start": 560,
+                "end": 562
+              }
+            ],
+            "start": 543,
+            "end": 563
+          }
+        ],
+        "optional": false,
+        "start": 538,
+        "end": 564
+      },
+      "start": 538,
+      "end": 564
+    }
+  ],
+  "sourceType": "module",
+  "start": 39,
+  "end": 565
+}

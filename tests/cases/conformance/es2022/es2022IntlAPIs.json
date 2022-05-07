@@ -1,0 +1,225 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "timezoneNames",
+            "start": 164,
+            "end": 177
+          },
+          "init": {
+            "type": "TSAsExpression",
+            "expression": {
+              "type": "ArrayExpression",
+              "elements": [
+                {
+                  "type": "Literal",
+                  "value": "short",
+                  "start": 181,
+                  "end": 188
+                },
+                {
+                  "type": "Literal",
+                  "value": "long",
+                  "start": 190,
+                  "end": 196
+                },
+                {
+                  "type": "Literal",
+                  "value": "shortOffset",
+                  "start": 198,
+                  "end": 211
+                },
+                {
+                  "type": "Literal",
+                  "value": "longOffset",
+                  "start": 213,
+                  "end": 225
+                },
+                {
+                  "type": "Literal",
+                  "value": "shortGeneric",
+                  "start": 227,
+                  "end": 241
+                },
+                {
+                  "type": "Literal",
+                  "value": "longGeneric",
+                  "start": 243,
+                  "end": 256
+                }
+              ],
+              "start": 180,
+              "end": 257
+            },
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "const",
+                "start": 261,
+                "end": 266
+              },
+              "start": 261,
+              "end": 266
+            },
+            "start": 180,
+            "end": 266
+          },
+          "start": 164,
+          "end": 266
+        }
+      ],
+      "kind": "const",
+      "start": 158,
+      "end": 267
+    },
+    {
+      "type": "ForOfStatement",
+      "left": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "zoneName",
+              "start": 279,
+              "end": 287
+            },
+            "init": null,
+            "start": 279,
+            "end": 287
+          }
+        ],
+        "kind": "const",
+        "start": 273,
+        "end": 287
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "timezoneNames",
+        "start": 291,
+        "end": 304
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "formatter",
+                  "start": 314,
+                  "end": 323
+                },
+                "init": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "Intl",
+                      "start": 330,
+                      "end": 334
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "DateTimeFormat",
+                      "start": 335,
+                      "end": 349
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 330,
+                    "end": 349
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "en-US",
+                      "start": 350,
+                      "end": 357
+                    },
+                    {
+                      "type": "ObjectExpression",
+                      "properties": [
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "timeZone",
+                            "start": 365,
+                            "end": 373
+                          },
+                          "value": {
+                            "type": "Literal",
+                            "value": "America/Los_Angeles",
+                            "start": 375,
+                            "end": 396
+                          },
+                          "computed": false,
+                          "method": false,
+                          "shorthand": false,
+                          "kind": "init",
+                          "start": 365,
+                          "end": 396
+                        },
+                        {
+                          "type": "Property",
+                          "key": {
+                            "type": "Identifier",
+                            "name": "timeZoneName",
+                            "start": 402,
+                            "end": 414
+                          },
+                          "value": {
+                            "type": "Identifier",
+                            "name": "zoneName",
+                            "start": 416,
+                            "end": 424
+                          },
+                          "computed": false,
+                          "method": false,
+                          "shorthand": false,
+                          "kind": "init",
+                          "start": 402,
+                          "end": 424
+                        }
+                      ],
+                      "start": 359,
+                      "end": 429
+                    }
+                  ],
+                  "start": 326,
+                  "end": 430
+                },
+                "start": 314,
+                "end": 430
+              }
+            ],
+            "kind": "var",
+            "start": 310,
+            "end": 431
+          }
+        ],
+        "start": 306,
+        "end": 433
+      },
+      "await": false,
+      "start": 268,
+      "end": 433
+    }
+  ],
+  "sourceType": "script",
+  "start": 158,
+  "end": 434
+}

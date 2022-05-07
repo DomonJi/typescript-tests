@@ -1,0 +1,311 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "m1",
+        "start": 7,
+        "end": 9
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "c1",
+                "start": 25,
+                "end": 27
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "PropertyDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 37,
+                      "end": 38
+                    },
+                    "value": null,
+                    "computed": false,
+                    "static": false,
+                    "declare": false,
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 30,
+                    "end": 39
+                  }
+                ],
+                "start": 28,
+                "end": 41
+              },
+              "superClass": null,
+              "start": 19,
+              "end": 41
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 12,
+            "end": 41
+          }
+        ],
+        "start": 10,
+        "end": 42
+      },
+      "start": 0,
+      "end": 42
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 53,
+        "end": 56
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "TSQualifiedName",
+                "left": {
+                  "type": "Identifier",
+                  "name": "m1",
+                  "start": 59,
+                  "end": 61
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "c1",
+                  "start": 62,
+                  "end": 64
+                },
+                "start": 59,
+                "end": 64
+              },
+              "start": 59,
+              "end": 64
+            },
+            "start": 58,
+            "end": 64
+          },
+          "start": 57,
+          "end": 64
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 67,
+                  "end": 68
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 69,
+                  "end": 70
+                },
+                "computed": false,
+                "optional": false,
+                "start": 67,
+                "end": 70
+              },
+              "right": {
+                "type": "Literal",
+                "value": 1,
+                "start": 73,
+                "end": 74
+              },
+              "start": 67,
+              "end": 74
+            },
+            "start": 67,
+            "end": 75
+          }
+        ],
+        "start": 65,
+        "end": 77
+      },
+      "start": 44,
+      "end": 77
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 77,
+      "end": 78
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "myC",
+            "start": 85,
+            "end": 88
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "m1",
+                "start": 95,
+                "end": 97
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "c1",
+                "start": 98,
+                "end": 100
+              },
+              "computed": false,
+              "optional": false,
+              "start": 95,
+              "end": 100
+            },
+            "arguments": [],
+            "start": 91,
+            "end": 102
+          },
+          "start": 85,
+          "end": 102
+        }
+      ],
+      "kind": "var",
+      "start": 81,
+      "end": 103
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 106,
+          "end": 109
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "myC",
+            "start": 110,
+            "end": 113
+          }
+        ],
+        "optional": false,
+        "start": 106,
+        "end": 114
+      },
+      "start": 106,
+      "end": 115
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 118,
+          "end": 121
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "myC",
+            "start": 122,
+            "end": 125
+          },
+          {
+            "type": "Identifier",
+            "name": "myC",
+            "start": 127,
+            "end": 130
+          }
+        ],
+        "optional": false,
+        "start": 118,
+        "end": 131
+      },
+      "start": 118,
+      "end": 132
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 135,
+          "end": 138
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": 4,
+            "start": 139,
+            "end": 140
+          }
+        ],
+        "optional": false,
+        "start": 135,
+        "end": 141
+      },
+      "start": 135,
+      "end": 142
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "foo",
+          "start": 144,
+          "end": 147
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 144,
+        "end": 149
+      },
+      "start": 144,
+      "end": 150
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 152
+}

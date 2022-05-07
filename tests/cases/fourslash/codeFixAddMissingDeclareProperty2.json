@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 207,
+            "end": 213
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 214,
+            "end": 224
+          },
+          "computed": false,
+          "optional": false,
+          "start": 207,
+          "end": 224
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 231,
+                  "end": 236
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addMissingDeclareProperty",
+                  "start": 238,
+                  "end": 265
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 231,
+                "end": 265
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 271,
+                  "end": 288
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Prefix all incorrect property declarations with 'declare'",
+                  "start": 290,
+                  "end": 349
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 271,
+                "end": 349
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 355,
+                  "end": 369
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class B {\n    p = 1\n}\nclass C extends B {\n    declare p: number\n}\nclass D extends B {\n    declare p: 1 | 2 | 3\n}",
+                        "cooked": "class B {\n    p = 1\n}\nclass C extends B {\n    declare p: number\n}\nclass D extends B {\n    declare p: 1 | 2 | 3\n}"
+                      },
+                      "tail": true,
+                      "start": 371,
+                      "end": 485
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 371,
+                  "end": 485
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 355,
+                "end": 485
+              }
+            ],
+            "start": 225,
+            "end": 487
+          }
+        ],
+        "optional": false,
+        "start": 207,
+        "end": 488
+      },
+      "start": 207,
+      "end": 489
+    }
+  ],
+  "sourceType": "script",
+  "start": 207,
+  "end": 490
+}

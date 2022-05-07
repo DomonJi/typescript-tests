@@ -1,0 +1,407 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Hash",
+        "start": 48,
+        "end": 52
+      },
+      "typeAnnotation": {
+        "type": "TSIntersectionType",
+        "types": [
+          {
+            "type": "TSStringKeyword",
+            "start": 55,
+            "end": 61
+          },
+          {
+            "type": "TSTypeLiteral",
+            "members": [
+              {
+                "type": "TSPropertySignature",
+                "computed": false,
+                "key": {
+                  "type": "Identifier",
+                  "name": "__hash",
+                  "start": 66,
+                  "end": 72
+                },
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": true,
+                      "start": 74,
+                      "end": 78
+                    },
+                    "start": 74,
+                    "end": 78
+                  },
+                  "start": 72,
+                  "end": 78
+                },
+                "start": 66,
+                "end": 78
+              }
+            ],
+            "start": 64,
+            "end": 80
+          }
+        ],
+        "start": 55,
+        "end": 80
+      },
+      "start": 43,
+      "end": 81
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getHashLength",
+        "start": 94,
+        "end": 107
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "hash",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Hash",
+                "start": 114,
+                "end": 118
+              },
+              "start": 114,
+              "end": 118
+            },
+            "start": 112,
+            "end": 118
+          },
+          "start": 108,
+          "end": 118
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "hash",
+                  "start": 146,
+                  "end": 150
+                },
+                "start": 139,
+                "end": 150
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 155,
+                "end": 163
+              },
+              "start": 139,
+              "end": 163
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ThrowStatement",
+                  "argument": {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Error",
+                      "start": 186,
+                      "end": 191
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "This doesn't look like a hash",
+                        "start": 192,
+                        "end": 223
+                      }
+                    ],
+                    "start": 182,
+                    "end": 224
+                  },
+                  "start": 176,
+                  "end": 225
+                }
+              ],
+              "start": 165,
+              "end": 232
+            },
+            "alternate": null,
+            "start": 135,
+            "end": 232
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "hash",
+                "start": 245,
+                "end": 249
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "length",
+                "start": 250,
+                "end": 256
+              },
+              "computed": false,
+              "optional": false,
+              "start": 245,
+              "end": 256
+            },
+            "start": 238,
+            "end": 257
+          }
+        ],
+        "start": 128,
+        "end": 260
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSNumberKeyword",
+          "start": 121,
+          "end": 127
+        },
+        "start": 119,
+        "end": 127
+      },
+      "start": 85,
+      "end": 260
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getHashLength2",
+        "start": 273,
+        "end": 287
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "hash",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSIntersectionType",
+              "types": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 325,
+                  "end": 331
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 334,
+                    "end": 335
+                  },
+                  "start": 334,
+                  "end": 335
+                }
+              ],
+              "start": 325,
+              "end": 335
+            },
+            "start": 323,
+            "end": 335
+          },
+          "start": 319,
+          "end": 335
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "hash",
+                  "start": 363,
+                  "end": 367
+                },
+                "start": 356,
+                "end": 367
+              },
+              "right": {
+                "type": "Literal",
+                "value": "string",
+                "start": 372,
+                "end": 380
+              },
+              "start": 356,
+              "end": 380
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ThrowStatement",
+                  "argument": {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Error",
+                      "start": 403,
+                      "end": 408
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "This doesn't look like a hash",
+                        "start": 409,
+                        "end": 440
+                      }
+                    ],
+                    "start": 399,
+                    "end": 441
+                  },
+                  "start": 393,
+                  "end": 442
+                }
+              ],
+              "start": 382,
+              "end": 449
+            },
+            "alternate": null,
+            "start": 352,
+            "end": 449
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "hash",
+                "start": 462,
+                "end": 466
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "length",
+                "start": 467,
+                "end": 473
+              },
+              "computed": false,
+              "optional": false,
+              "start": 462,
+              "end": 473
+            },
+            "start": 455,
+            "end": 474
+          }
+        ],
+        "start": 345,
+        "end": 477
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSNumberKeyword",
+          "start": 338,
+          "end": 344
+        },
+        "start": 336,
+        "end": 344
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 288,
+              "end": 289
+            },
+            "constraint": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "__tag__",
+                    "start": 300,
+                    "end": 307
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSUnknownKeyword",
+                      "start": 309,
+                      "end": 316
+                    },
+                    "start": 307,
+                    "end": 316
+                  },
+                  "start": 300,
+                  "end": 316
+                }
+              ],
+              "start": 298,
+              "end": 317
+            },
+            "start": 288,
+            "end": 317
+          }
+        ],
+        "start": 287,
+        "end": 318
+      },
+      "start": 264,
+      "end": 477
+    }
+  ],
+  "sourceType": "script",
+  "start": 43,
+  "end": 479
+}

@@ -1,0 +1,382 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "foo",
+                  "start": 8,
+                  "end": 13
+                },
+                "start": 8,
+                "end": 13
+              },
+              "start": 6,
+              "end": 13
+            },
+            "start": 5,
+            "end": 13
+          },
+          "init": null,
+          "start": 5,
+          "end": 13
+        }
+      ],
+      "kind": "let",
+      "start": 1,
+      "end": 14
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "foo",
+                      "start": 23,
+                      "end": 28
+                    },
+                    "start": 23,
+                    "end": 28
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "bar",
+                      "start": 31,
+                      "end": 36
+                    },
+                    "start": 31,
+                    "end": 36
+                  }
+                ],
+                "start": 23,
+                "end": 36
+              },
+              "start": 21,
+              "end": 36
+            },
+            "start": 20,
+            "end": 36
+          },
+          "init": null,
+          "start": 20,
+          "end": 36
+        }
+      ],
+      "kind": "let",
+      "start": 16,
+      "end": 37
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "randBool",
+        "start": 59,
+        "end": 67
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSBooleanKeyword",
+          "start": 71,
+          "end": 78
+        },
+        "start": 69,
+        "end": 78
+      },
+      "declare": true,
+      "start": 42,
+      "end": 79
+    },
+    {
+      "type": "SwitchStatement",
+      "discriminant": {
+        "type": "Identifier",
+        "name": "y",
+        "start": 91,
+        "end": 92
+      },
+      "cases": [
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "SequenceExpression",
+            "expressions": [
+              {
+                "type": "Literal",
+                "value": "foo",
+                "start": 106,
+                "end": 111
+              },
+              {
+                "type": "Identifier",
+                "name": "x",
+                "start": 113,
+                "end": 114
+              }
+            ],
+            "start": 106,
+            "end": 114
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 125,
+              "end": 131
+            }
+          ],
+          "start": 101,
+          "end": 131
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "SequenceExpression",
+            "expressions": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "start": 142,
+                "end": 143
+              },
+              {
+                "type": "Literal",
+                "value": "foo",
+                "start": 145,
+                "end": 150
+              }
+            ],
+            "start": 142,
+            "end": 150
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 161,
+              "end": 167
+            }
+          ],
+          "start": 137,
+          "end": 167
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "SequenceExpression",
+            "expressions": [
+              {
+                "type": "Identifier",
+                "name": "x",
+                "start": 178,
+                "end": 179
+              },
+              {
+                "type": "Literal",
+                "value": "baz",
+                "start": 181,
+                "end": 186
+              }
+            ],
+            "start": 178,
+            "end": 186
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 197,
+              "end": 203
+            }
+          ],
+          "start": 173,
+          "end": 203
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "SequenceExpression",
+            "expressions": [
+              {
+                "type": "Literal",
+                "value": "baz",
+                "start": 214,
+                "end": 219
+              },
+              {
+                "type": "Identifier",
+                "name": "x",
+                "start": 221,
+                "end": 222
+              }
+            ],
+            "start": 214,
+            "end": 222
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 233,
+              "end": 239
+            }
+          ],
+          "start": 209,
+          "end": 239
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "LogicalExpression",
+            "operator": "&&",
+            "left": {
+              "type": "Literal",
+              "value": "baz",
+              "start": 250,
+              "end": 255
+            },
+            "right": {
+              "type": "Literal",
+              "value": "bar",
+              "start": 259,
+              "end": 264
+            },
+            "start": 250,
+            "end": 264
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 275,
+              "end": 281
+            }
+          ],
+          "start": 245,
+          "end": 281
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "LogicalExpression",
+            "operator": "&&",
+            "left": {
+              "type": "Literal",
+              "value": "baz",
+              "start": 292,
+              "end": 297
+            },
+            "right": {
+              "type": "LogicalExpression",
+              "operator": "||",
+              "left": {
+                "type": "Literal",
+                "value": "foo",
+                "start": 302,
+                "end": 307
+              },
+              "right": {
+                "type": "Literal",
+                "value": "bar",
+                "start": 311,
+                "end": 316
+              },
+              "start": 302,
+              "end": 316
+            },
+            "start": 292,
+            "end": 317
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 328,
+              "end": 334
+            }
+          ],
+          "start": 287,
+          "end": 334
+        },
+        {
+          "type": "SwitchCase",
+          "test": {
+            "type": "LogicalExpression",
+            "operator": "&&",
+            "left": {
+              "type": "Literal",
+              "value": "bar",
+              "start": 345,
+              "end": 350
+            },
+            "right": {
+              "type": "LogicalExpression",
+              "operator": "||",
+              "left": {
+                "type": "Literal",
+                "value": "baz",
+                "start": 355,
+                "end": 360
+              },
+              "right": {
+                "type": "Literal",
+                "value": "bar",
+                "start": 364,
+                "end": 369
+              },
+              "start": 355,
+              "end": 369
+            },
+            "start": 345,
+            "end": 370
+          },
+          "consequent": [
+            {
+              "type": "BreakStatement",
+              "label": null,
+              "start": 381,
+              "end": 387
+            }
+          ],
+          "start": 340,
+          "end": 387
+        }
+      ],
+      "start": 83,
+      "end": 390
+    }
+  ],
+  "sourceType": "script",
+  "start": 1,
+  "end": 392
+}

@@ -1,0 +1,364 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSEnumDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Enum",
+        "start": 5,
+        "end": 9
+      },
+      "members": [
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "None",
+            "start": 12,
+            "end": 16
+          },
+          "initializer": {
+            "type": "Literal",
+            "value": 0,
+            "start": 19,
+            "end": 20
+          },
+          "start": 12,
+          "end": 20
+        }
+      ],
+      "start": 0,
+      "end": 22
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "enumType",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Enum",
+                  "start": 38,
+                  "end": 42
+                },
+                "start": 38,
+                "end": 42
+              },
+              "start": 36,
+              "end": 42
+            },
+            "start": 28,
+            "end": 42
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "Enum",
+              "start": 45,
+              "end": 49
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "None",
+              "start": 50,
+              "end": 54
+            },
+            "computed": false,
+            "optional": false,
+            "start": 45,
+            "end": 54
+          },
+          "start": 28,
+          "end": 54
+        }
+      ],
+      "kind": "var",
+      "start": 24,
+      "end": 55
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "numberType",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 73,
+                "end": 79
+              },
+              "start": 71,
+              "end": 79
+            },
+            "start": 61,
+            "end": 79
+          },
+          "init": {
+            "type": "Literal",
+            "value": 0,
+            "start": 82,
+            "end": 83
+          },
+          "start": 61,
+          "end": 83
+        }
+      ],
+      "kind": "var",
+      "start": 57,
+      "end": 84
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "anyType",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSAnyKeyword",
+                "start": 99,
+                "end": 102
+              },
+              "start": 97,
+              "end": 102
+            },
+            "start": 90,
+            "end": 102
+          },
+          "init": {
+            "type": "Literal",
+            "value": 0,
+            "start": 105,
+            "end": 106
+          },
+          "start": 90,
+          "end": 106
+        }
+      ],
+      "kind": "var",
+      "start": 86,
+      "end": 107
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "^",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 112,
+          "end": 120
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "numberType",
+          "start": 123,
+          "end": 133
+        },
+        "start": 112,
+        "end": 133
+      },
+      "start": 112,
+      "end": 134
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "^",
+        "left": {
+          "type": "Identifier",
+          "name": "numberType",
+          "start": 136,
+          "end": 146
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 149,
+          "end": 156
+        },
+        "start": 136,
+        "end": 156
+      },
+      "start": 136,
+      "end": 157
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "&",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 162,
+          "end": 170
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 173,
+          "end": 180
+        },
+        "start": 162,
+        "end": 180
+      },
+      "start": 162,
+      "end": 181
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "|",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 183,
+          "end": 191
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 194,
+          "end": 201
+        },
+        "start": 183,
+        "end": 201
+      },
+      "start": 183,
+      "end": 202
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "^",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 204,
+          "end": 212
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 215,
+          "end": 222
+        },
+        "start": 204,
+        "end": 222
+      },
+      "start": 204,
+      "end": 223
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "UnaryExpression",
+        "operator": "~",
+        "prefix": true,
+        "argument": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 226,
+          "end": 233
+        },
+        "start": 225,
+        "end": 233
+      },
+      "start": 225,
+      "end": 234
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "<<",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 236,
+          "end": 244
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 247,
+          "end": 254
+        },
+        "start": 236,
+        "end": 254
+      },
+      "start": 236,
+      "end": 255
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": ">>",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 257,
+          "end": 265
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 268,
+          "end": 275
+        },
+        "start": 257,
+        "end": 275
+      },
+      "start": 257,
+      "end": 276
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": ">>>",
+        "left": {
+          "type": "Identifier",
+          "name": "enumType",
+          "start": 278,
+          "end": 286
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "anyType",
+          "start": 290,
+          "end": 297
+        },
+        "start": 278,
+        "end": 297
+      },
+      "start": 278,
+      "end": 298
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 300
+}

@@ -1,0 +1,120 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "test",
+        "start": 75,
+        "end": 79
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "skip",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSBooleanKeyword",
+              "start": 86,
+              "end": 93
+            },
+            "start": 84,
+            "end": 93
+          },
+          "start": 80,
+          "end": 93
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "UnaryExpression",
+              "operator": "!",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "skip",
+                "start": 107,
+                "end": 111
+              },
+              "start": 106,
+              "end": 111
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AwaitExpression",
+                    "argument": {
+                      "type": "Literal",
+                      "value": 1,
+                      "start": 130,
+                      "end": 131
+                    },
+                    "start": 124,
+                    "end": 131
+                  },
+                  "start": 124,
+                  "end": 131
+                }
+              ],
+              "start": 113,
+              "end": 138
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ThrowStatement",
+                  "argument": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Error",
+                      "start": 166,
+                      "end": 171
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "test",
+                        "start": 172,
+                        "end": 178
+                      }
+                    ],
+                    "optional": false,
+                    "start": 166,
+                    "end": 179
+                  },
+                  "start": 160,
+                  "end": 179
+                }
+              ],
+              "start": 149,
+              "end": 186
+            },
+            "start": 102,
+            "end": 186
+          }
+        ],
+        "start": 95,
+        "end": 189
+      },
+      "start": 60,
+      "end": 189
+    }
+  ],
+  "sourceType": "script",
+  "start": 60,
+  "end": 189
+}

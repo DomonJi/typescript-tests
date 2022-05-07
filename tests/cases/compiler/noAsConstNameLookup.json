@@ -1,0 +1,788 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Store",
+        "start": 70,
+        "end": 75
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 80,
+              "end": 81
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": 123,
+                  "start": 83,
+                  "end": 86
+                },
+                "start": 83,
+                "end": 86
+              },
+              "start": 81,
+              "end": 86
+            },
+            "start": 80,
+            "end": 86
+          }
+        ],
+        "start": 78,
+        "end": 88
+      },
+      "start": 65,
+      "end": 88
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Cleaner",
+          "start": 102,
+          "end": 109
+        },
+        "typeAnnotation": {
+          "type": "TSFunctionType",
+          "params": [
+            {
+              "type": "Identifier",
+              "name": "runner",
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "FeatureRunner",
+                    "start": 138,
+                    "end": 151
+                  },
+                  "typeParameters": {
+                    "type": "TSTypeParameterInstantiation",
+                    "params": [
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "W",
+                          "start": 152,
+                          "end": 153
+                        },
+                        "start": 152,
+                        "end": 153
+                      }
+                    ],
+                    "start": 151,
+                    "end": 154
+                  },
+                  "start": 138,
+                  "end": 154
+                },
+                "start": 136,
+                "end": 154
+              },
+              "start": 130,
+              "end": 154
+            }
+          ],
+          "returnType": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Promise",
+                "start": 159,
+                "end": 166
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSAnyKeyword",
+                    "start": 167,
+                    "end": 170
+                  }
+                ],
+                "start": 166,
+                "end": 171
+              },
+              "start": 159,
+              "end": 171
+            },
+            "start": 156,
+            "end": 171
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterDeclaration",
+            "params": [
+              {
+                "type": "TSTypeParameter",
+                "name": {
+                  "type": "Identifier",
+                  "name": "W",
+                  "start": 113,
+                  "end": 114
+                },
+                "constraint": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Store",
+                    "start": 123,
+                    "end": 128
+                  },
+                  "start": 123,
+                  "end": 128
+                },
+                "start": 113,
+                "end": 128
+              }
+            ],
+            "start": 112,
+            "end": 129
+          },
+          "start": 112,
+          "end": 171
+        },
+        "start": 97,
+        "end": 171
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 90,
+      "end": 171
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "FeatureRunner",
+          "start": 188,
+          "end": 201
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "PropertyDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "cleaners",
+                "start": 243,
+                "end": 251
+              },
+              "value": {
+                "type": "ArrayExpression",
+                "elements": [],
+                "start": 265,
+                "end": 267
+              },
+              "computed": false,
+              "static": false,
+              "readonly": true,
+              "declare": false,
+              "override": false,
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSArrayType",
+                  "elementType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Cleaner",
+                      "start": 253,
+                      "end": 260
+                    },
+                    "start": 253,
+                    "end": 260
+                  },
+                  "start": 253,
+                  "end": 262
+                },
+                "start": 251,
+                "end": 262
+              },
+              "accessibility": "private",
+              "start": 226,
+              "end": 267
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "runFeature",
+                "start": 281,
+                "end": 291
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": true,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "objectWhichShouldBeConst",
+                            "start": 325,
+                            "end": 349
+                          },
+                          "init": {
+                            "type": "TSAsExpression",
+                            "expression": {
+                              "type": "ObjectExpression",
+                              "properties": [
+                                {
+                                  "type": "Property",
+                                  "key": {
+                                    "type": "Identifier",
+                                    "name": "flags",
+                                    "start": 367,
+                                    "end": 372
+                                  },
+                                  "value": {
+                                    "type": "ObjectExpression",
+                                    "properties": [],
+                                    "start": 374,
+                                    "end": 376
+                                  },
+                                  "computed": false,
+                                  "method": false,
+                                  "shorthand": false,
+                                  "kind": "init",
+                                  "start": 367,
+                                  "end": 376
+                                },
+                                {
+                                  "type": "Property",
+                                  "key": {
+                                    "type": "Identifier",
+                                    "name": "settings",
+                                    "start": 391,
+                                    "end": 399
+                                  },
+                                  "value": {
+                                    "type": "ObjectExpression",
+                                    "properties": [],
+                                    "start": 401,
+                                    "end": 403
+                                  },
+                                  "computed": false,
+                                  "method": false,
+                                  "shorthand": false,
+                                  "kind": "init",
+                                  "start": 391,
+                                  "end": 403
+                                }
+                              ],
+                              "start": 352,
+                              "end": 415
+                            },
+                            "typeAnnotation": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "const",
+                                "start": 419,
+                                "end": 424
+                              },
+                              "start": 419,
+                              "end": 424
+                            },
+                            "start": 352,
+                            "end": 424
+                          },
+                          "start": 325,
+                          "end": 424
+                        }
+                      ],
+                      "kind": "const",
+                      "start": 319,
+                      "end": 425
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "objectWhichShouldBeConst",
+                        "start": 442,
+                        "end": 466
+                      },
+                      "start": 435,
+                      "end": 466
+                    }
+                  ],
+                  "start": 308,
+                  "end": 473
+                },
+                "params": [],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Promise",
+                      "start": 295,
+                      "end": 302
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSAnyKeyword",
+                          "start": 303,
+                          "end": 306
+                        }
+                      ],
+                      "start": 302,
+                      "end": 307
+                    },
+                    "start": 295,
+                    "end": 307
+                  },
+                  "start": 293,
+                  "end": 307
+                },
+                "start": 291,
+                "end": 473
+              },
+              "computed": false,
+              "static": false,
+              "kind": "method",
+              "override": false,
+              "start": 275,
+              "end": 473
+            },
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "run",
+                "start": 487,
+                "end": 490
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": true,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "result",
+                            "start": 524,
+                            "end": 530
+                          },
+                          "init": {
+                            "type": "ObjectExpression",
+                            "properties": [],
+                            "start": 533,
+                            "end": 535
+                          },
+                          "start": 524,
+                          "end": 535
+                        }
+                      ],
+                      "kind": "const",
+                      "start": 518,
+                      "end": 535
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "ThisExpression",
+                              "start": 545,
+                              "end": 549
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "cleaners",
+                              "start": 550,
+                              "end": 558
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 545,
+                            "end": 558
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "forEach",
+                            "start": 559,
+                            "end": 566
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 545,
+                          "end": 566
+                        },
+                        "arguments": [
+                          {
+                            "type": "ArrowFunctionExpression",
+                            "generator": false,
+                            "id": null,
+                            "params": [
+                              {
+                                "type": "Identifier",
+                                "name": "c",
+                                "start": 567,
+                                "end": 568
+                              }
+                            ],
+                            "body": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "c",
+                                "start": 572,
+                                "end": 573
+                              },
+                              "arguments": [
+                                {
+                                  "type": "ThisExpression",
+                                  "start": 574,
+                                  "end": 578
+                                }
+                              ],
+                              "optional": false,
+                              "start": 572,
+                              "end": 579
+                            },
+                            "async": false,
+                            "expression": true,
+                            "start": 567,
+                            "end": 579
+                          }
+                        ],
+                        "optional": false,
+                        "start": 545,
+                        "end": 580
+                      },
+                      "start": 545,
+                      "end": 580
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "result",
+                        "start": 597,
+                        "end": 603
+                      },
+                      "start": 590,
+                      "end": 603
+                    }
+                  ],
+                  "start": 507,
+                  "end": 610
+                },
+                "params": [],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Promise",
+                      "start": 494,
+                      "end": 501
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSAnyKeyword",
+                          "start": 502,
+                          "end": 505
+                        }
+                      ],
+                      "start": 501,
+                      "end": 506
+                    },
+                    "start": 494,
+                    "end": 506
+                  },
+                  "start": 492,
+                  "end": 506
+                },
+                "start": 490,
+                "end": 610
+              },
+              "computed": false,
+              "static": false,
+              "kind": "method",
+              "override": false,
+              "start": 481,
+              "end": 610
+            }
+          ],
+          "start": 219,
+          "end": 613
+        },
+        "superClass": null,
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "W",
+                "start": 202,
+                "end": 203
+              },
+              "constraint": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Store",
+                  "start": 212,
+                  "end": 217
+                },
+                "start": 212,
+                "end": 217
+              },
+              "start": 202,
+              "end": 217
+            }
+          ],
+          "start": 201,
+          "end": 218
+        },
+        "start": 182,
+        "end": 613
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 175,
+      "end": 613
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "C",
+          "start": 630,
+          "end": 631
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "MethodDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "f",
+                "start": 642,
+                "end": 643
+              },
+              "value": {
+                "type": "FunctionExpression",
+                "id": null,
+                "generator": false,
+                "expression": false,
+                "async": false,
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "one",
+                            "start": 667,
+                            "end": 670
+                          },
+                          "init": {
+                            "type": "TSAsExpression",
+                            "expression": {
+                              "type": "Literal",
+                              "value": 1,
+                              "start": 673,
+                              "end": 674
+                            },
+                            "typeAnnotation": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "const",
+                                "start": 678,
+                                "end": 683
+                              },
+                              "start": 678,
+                              "end": 683
+                            },
+                            "start": 673,
+                            "end": 683
+                          },
+                          "start": 667,
+                          "end": 683
+                        }
+                      ],
+                      "kind": "let",
+                      "start": 663,
+                      "end": 684
+                    }
+                  ],
+                  "start": 652,
+                  "end": 691
+                },
+                "params": [],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSVoidKeyword",
+                    "start": 647,
+                    "end": 651
+                  },
+                  "start": 645,
+                  "end": 651
+                },
+                "start": 643,
+                "end": 691
+              },
+              "computed": false,
+              "static": false,
+              "kind": "method",
+              "override": false,
+              "start": 642,
+              "end": 691
+            }
+          ],
+          "start": 635,
+          "end": 694
+        },
+        "superClass": null,
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 632,
+                "end": 633
+              },
+              "start": 632,
+              "end": 633
+            }
+          ],
+          "start": 631,
+          "end": 634
+        },
+        "start": 624,
+        "end": 694
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 617,
+      "end": 694
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 700,
+              "end": 701
+            },
+            "arguments": [],
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 702,
+                  "end": 708
+                }
+              ],
+              "start": 701,
+              "end": 709
+            },
+            "start": 696,
+            "end": 711
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "f",
+            "start": 712,
+            "end": 713
+          },
+          "computed": false,
+          "optional": false,
+          "start": 696,
+          "end": 713
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 696,
+        "end": 715
+      },
+      "start": 696,
+      "end": 716
+    }
+  ],
+  "sourceType": "module",
+  "start": 65,
+  "end": 718
+}

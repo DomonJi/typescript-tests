@@ -1,0 +1,321 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "isFoo",
+        "start": 17,
+        "end": 22
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 30,
+              "end": 36
+            },
+            "start": 28,
+            "end": 36
+          },
+          "start": 23,
+          "end": 36
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "value",
+            "start": 40,
+            "end": 45
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSLiteralType",
+                  "literal": {
+                    "type": "Literal",
+                    "value": "foo",
+                    "start": 50,
+                    "end": 55
+                  },
+                  "start": 50,
+                  "end": 55
+                },
+                {
+                  "type": "TSLiteralType",
+                  "literal": {
+                    "type": "Literal",
+                    "value": "bar",
+                    "start": 58,
+                    "end": 63
+                  },
+                  "start": 58,
+                  "end": 63
+                }
+              ],
+              "start": 50,
+              "end": 63
+            },
+            "start": 50,
+            "end": 63
+          },
+          "start": 40,
+          "end": 64
+        },
+        "start": 38,
+        "end": 64
+      },
+      "declare": true,
+      "start": 0,
+      "end": 65
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "doThis",
+        "start": 84,
+        "end": 90
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSLiteralType",
+                  "literal": {
+                    "type": "Literal",
+                    "value": "foo",
+                    "start": 98,
+                    "end": 103
+                  },
+                  "start": 98,
+                  "end": 103
+                },
+                {
+                  "type": "TSLiteralType",
+                  "literal": {
+                    "type": "Literal",
+                    "value": "bar",
+                    "start": 106,
+                    "end": 111
+                  },
+                  "start": 106,
+                  "end": 111
+                }
+              ],
+              "start": 98,
+              "end": 111
+            },
+            "start": 96,
+            "end": 111
+          },
+          "start": 91,
+          "end": 111
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 114,
+          "end": 118
+        },
+        "start": 112,
+        "end": 118
+      },
+      "declare": true,
+      "start": 67,
+      "end": 119
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "doThat",
+        "start": 138,
+        "end": 144
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 152,
+              "end": 158
+            },
+            "start": 150,
+            "end": 158
+          },
+          "start": 145,
+          "end": 158
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 162,
+          "end": 166
+        },
+        "start": 160,
+        "end": 166
+      },
+      "declare": true,
+      "start": 121,
+      "end": 167
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 180,
+                "end": 186
+              },
+              "start": 178,
+              "end": 186
+            },
+            "start": 173,
+            "end": 186
+          },
+          "init": null,
+          "start": 173,
+          "end": 186
+        }
+      ],
+      "kind": "let",
+      "start": 169,
+      "end": 187
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "isFoo",
+          "start": 193,
+          "end": 198
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "value",
+            "start": 199,
+            "end": 204
+          }
+        ],
+        "optional": false,
+        "start": 193,
+        "end": 205
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThis",
+                "start": 214,
+                "end": 220
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 221,
+                  "end": 226
+                }
+              ],
+              "optional": false,
+              "start": 214,
+              "end": 227
+            },
+            "start": 214,
+            "end": 228
+          }
+        ],
+        "start": 207,
+        "end": 231
+      },
+      "alternate": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "doThat",
+                "start": 244,
+                "end": 250
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 251,
+                  "end": 256
+                }
+              ],
+              "optional": false,
+              "start": 244,
+              "end": 257
+            },
+            "start": 244,
+            "end": 258
+          }
+        ],
+        "start": 237,
+        "end": 261
+      },
+      "start": 189,
+      "end": 261
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 265
+}

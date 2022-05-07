@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 211,
+            "end": 217
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 218,
+            "end": 225
+          },
+          "computed": false,
+          "optional": false,
+          "start": 211,
+          "end": 225
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 233,
+                  "end": 244
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I'",
+                  "start": 246,
+                  "end": 271
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 233,
+                "end": 271
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 278,
+                  "end": 292
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface I {\r\n    [\"foo\"](o: any): boolean;\r\n    [\"x\"]: boolean;\r\n    [1](): string;\r\n    [2]: boolean;\r\n}\r\n\r\nclass C implements I {\r\n    [\"foo\"](o: any): boolean {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    [\"x\"]: boolean;\r\n    [1](): string {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    [2]: boolean;\r\n}",
+                        "cooked": "interface I {\n    [\"foo\"](o: any): boolean;\n    [\"x\"]: boolean;\n    [1](): string;\n    [2]: boolean;\n}\n\nclass C implements I {\n    [\"foo\"](o: any): boolean {\n        throw new Error(\"Method not implemented.\");\n    }\n    [\"x\"]: boolean;\n    [1](): string {\n        throw new Error(\"Method not implemented.\");\n    }\n    [2]: boolean;\n}"
+                      },
+                      "tail": true,
+                      "start": 295,
+                      "end": 646
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 295,
+                  "end": 646
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 278,
+                "end": 646
+              }
+            ],
+            "start": 226,
+            "end": 650
+          }
+        ],
+        "optional": false,
+        "start": 211,
+        "end": 651
+      },
+      "start": 211,
+      "end": 652
+    }
+  ],
+  "sourceType": "script",
+  "start": 211,
+  "end": 654
+}

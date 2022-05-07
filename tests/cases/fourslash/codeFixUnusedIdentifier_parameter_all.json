@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 878,
+            "end": 884
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 885,
+            "end": 895
+          },
+          "computed": false,
+          "optional": false,
+          "start": 878,
+          "end": 895
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 902,
+                  "end": 907
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "unusedIdentifier_delete",
+                  "start": 909,
+                  "end": 934
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 902,
+                "end": 934
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 940,
+                  "end": 957
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 959,
+                        "end": 961
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 962,
+                        "end": 973
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 959,
+                      "end": 973
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Delete_all_unused_declarations",
+                      "start": 974,
+                      "end": 1004
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 959,
+                    "end": 1004
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 1005,
+                    "end": 1012
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 959,
+                  "end": 1012
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 940,
+                "end": 1012
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 1018,
+                  "end": 1032
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "function f(a, b, { x, y }) { b; }\nf(0, 1, { x: 1, y: 1 });\nfunction g(b) { b; }\ng();\nfunction h(a) { a; }\nh(1);\nfunction i(x = 1) { }\ni();\n\nfunction container(o) {\n    const { x, y } = { x: 1, y: 2 }\n    const { a, b } = o\n    const [ z, ka ] = [ 3, 4 ]\n    const [ c, d ] = o\n}\n\nclass C {\n    m(a, b, c) { b; }\n    n(b) { b; }\n}\nnew C().m(0, 1, 2);\nnew C().n();\n\n// Test of deletedAncestors\nfunction a(a: any, unused: any) { a; }\nfunction b(a: any, unused: any) { a; }\nfunction c(a: any) { a; }\n\nb(1, {\n    prop: a(2, [\n        b(3, a(4, undefined)),\n    ]),\n});\nb(1, { prop: c() });",
+                        "cooked": "function f(a, b, { x, y }) { b; }\nf(0, 1, { x: 1, y: 1 });\nfunction g(b) { b; }\ng();\nfunction h(a) { a; }\nh(1);\nfunction i(x = 1) { }\ni();\n\nfunction container(o) {\n    const { x, y } = { x: 1, y: 2 }\n    const { a, b } = o\n    const [ z, ka ] = [ 3, 4 ]\n    const [ c, d ] = o\n}\n\nclass C {\n    m(a, b, c) { b; }\n    n(b) { b; }\n}\nnew C().m(0, 1, 2);\nnew C().n();\n\n// Test of deletedAncestors\nfunction a(a: any, unused: any) { a; }\nfunction b(a: any, unused: any) { a; }\nfunction c(a: any) { a; }\n\nb(1, {\n    prop: a(2, [\n        b(3, a(4, undefined)),\n    ]),\n});\nb(1, { prop: c() });"
+                      },
+                      "tail": true,
+                      "start": 1034,
+                      "end": 1620
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 1034,
+                  "end": 1620
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 1018,
+                "end": 1620
+              }
+            ],
+            "start": 896,
+            "end": 1623
+          }
+        ],
+        "optional": false,
+        "start": 878,
+        "end": 1624
+      },
+      "start": 878,
+      "end": 1625
+    }
+  ],
+  "sourceType": "script",
+  "start": 878,
+  "end": 1626
+}

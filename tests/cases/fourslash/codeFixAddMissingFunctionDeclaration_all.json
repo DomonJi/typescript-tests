@@ -1,0 +1,254 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 262,
+            "end": 266
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "file",
+            "start": 267,
+            "end": 271
+          },
+          "computed": false,
+          "optional": false,
+          "start": 262,
+          "end": 271
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "/foo.ts",
+            "start": 272,
+            "end": 281
+          }
+        ],
+        "optional": false,
+        "start": 262,
+        "end": 282
+      },
+      "start": 262,
+      "end": 283
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 285,
+            "end": 291
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 292,
+            "end": 302
+          },
+          "computed": false,
+          "optional": false,
+          "start": 285,
+          "end": 302
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 310,
+                  "end": 315
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingFunctionDeclaration",
+                  "start": 317,
+                  "end": 348
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 310,
+                "end": 348
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 355,
+                  "end": 372
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 374,
+                        "end": 376
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 377,
+                        "end": 388
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 374,
+                      "end": 388
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Add_all_missing_function_declarations",
+                      "start": 389,
+                      "end": 426
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 374,
+                    "end": 426
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 427,
+                    "end": 434
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 374,
+                  "end": 434
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 355,
+                "end": 434
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 441,
+                  "end": 455
+                },
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "/test.ts",
+                        "start": 468,
+                        "end": 478
+                      },
+                      "value": {
+                        "type": "TemplateLiteral",
+                        "quasis": [
+                          {
+                            "type": "TemplateElement",
+                            "value": {
+                              "raw": "export const x = 1;\r\n\r\nexport function f() {\r\n    throw new Error(\"Function not implemented.\");\r\n}\r\n",
+                              "cooked": "export const x = 1;\n\nexport function f() {\n    throw new Error(\"Function not implemented.\");\n}\n"
+                            },
+                            "tail": true,
+                            "start": 481,
+                            "end": 583
+                          }
+                        ],
+                        "expressions": [],
+                        "start": 481,
+                        "end": 583
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 468,
+                      "end": 583
+                    },
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Literal",
+                        "value": "/foo.ts",
+                        "start": 594,
+                        "end": 603
+                      },
+                      "value": {
+                        "type": "TemplateLiteral",
+                        "quasis": [
+                          {
+                            "type": "TemplateElement",
+                            "value": {
+                              "raw": "import * as test from \"./test\";\r\n\r\nnamespace Foo {\r\n    export const x = 0;\r\n\r\n    export function f() {\r\n        throw new Error(\"Function not implemented.\");\r\n    }\r\n}\r\n\r\ntest.f();\r\nFoo.f();\r\nf();\r\n\r\nfunction f() {\r\n    throw new Error(\"Function not implemented.\");\r\n}\r\n",
+                              "cooked": "import * as test from \"./test\";\n\nnamespace Foo {\n    export const x = 0;\n\n    export function f() {\n        throw new Error(\"Function not implemented.\");\n    }\n}\n\ntest.f();\nFoo.f();\nf();\n\nfunction f() {\n    throw new Error(\"Function not implemented.\");\n}\n"
+                            },
+                            "tail": true,
+                            "start": 606,
+                            "end": 880
+                          }
+                        ],
+                        "expressions": [],
+                        "start": 606,
+                        "end": 880
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 594,
+                      "end": 880
+                    }
+                  ],
+                  "start": 457,
+                  "end": 887
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 441,
+                "end": 887
+              }
+            ],
+            "start": 303,
+            "end": 890
+          }
+        ],
+        "optional": false,
+        "start": 285,
+        "end": 891
+      },
+      "start": 285,
+      "end": 892
+    }
+  ],
+  "sourceType": "script",
+  "start": 262,
+  "end": 894
+}

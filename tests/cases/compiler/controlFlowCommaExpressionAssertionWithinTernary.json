@@ -1,0 +1,241 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "assert",
+        "start": 35,
+        "end": 41
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 49,
+              "end": 52
+            },
+            "start": 47,
+            "end": 52
+          },
+          "start": 42,
+          "end": 52
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": true,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "value",
+            "start": 63,
+            "end": 68
+          },
+          "typeAnnotation": null,
+          "start": 55,
+          "end": 68
+        },
+        "start": 53,
+        "end": 68
+      },
+      "declare": true,
+      "start": 18,
+      "end": 69
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo2",
+        "start": 82,
+        "end": 86
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "param",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSNumberKeyword",
+                  "start": 94,
+                  "end": 100
+                },
+                {
+                  "type": "TSNullKeyword",
+                  "start": 103,
+                  "end": 107
+                },
+                {
+                  "type": "TSUndefinedKeyword",
+                  "start": 110,
+                  "end": 119
+                }
+              ],
+              "start": 94,
+              "end": 119
+            },
+            "start": 92,
+            "end": 119
+          },
+          "start": 87,
+          "end": 119
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "val",
+                  "start": 149,
+                  "end": 152
+                },
+                "init": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "param",
+                    "start": 155,
+                    "end": 160
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "undefined",
+                    "start": 165,
+                    "end": 174
+                  },
+                  "start": 155,
+                  "end": 174
+                },
+                "start": 149,
+                "end": 174
+              }
+            ],
+            "kind": "const",
+            "start": 143,
+            "end": 175
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ConditionalExpression",
+              "test": {
+                "type": "Identifier",
+                "name": "val",
+                "start": 188,
+                "end": 191
+              },
+              "consequent": {
+                "type": "SequenceExpression",
+                "expressions": [
+                  {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "assert",
+                      "start": 195,
+                      "end": 201
+                    },
+                    "arguments": [
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "!==",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "param",
+                          "start": 202,
+                          "end": 207
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "undefined",
+                          "start": 212,
+                          "end": 221
+                        },
+                        "start": 202,
+                        "end": 221
+                      }
+                    ],
+                    "optional": false,
+                    "start": 195,
+                    "end": 222
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "param",
+                    "start": 224,
+                    "end": 229
+                  }
+                ],
+                "start": 195,
+                "end": 229
+              },
+              "alternate": {
+                "type": "Literal",
+                "value": null,
+                "start": 233,
+                "end": 237
+              },
+              "start": 188,
+              "end": 237
+            },
+            "start": 181,
+            "end": 238
+          }
+        ],
+        "start": 136,
+        "end": 296
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSUnionType",
+          "types": [
+            {
+              "type": "TSNumberKeyword",
+              "start": 122,
+              "end": 128
+            },
+            {
+              "type": "TSNullKeyword",
+              "start": 131,
+              "end": 135
+            }
+          ],
+          "start": 122,
+          "end": 135
+        },
+        "start": 120,
+        "end": 135
+      },
+      "start": 73,
+      "end": 296
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 296
+}

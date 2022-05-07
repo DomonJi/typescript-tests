@@ -1,0 +1,113 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 144,
+            "end": 150
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 151,
+            "end": 158
+          },
+          "computed": false,
+          "optional": false,
+          "start": 144,
+          "end": 158
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 165,
+                  "end": 176
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "Convert 'SomeType' to mapped object type",
+                        "cooked": "Convert 'SomeType' to mapped object type"
+                      },
+                      "tail": true,
+                      "start": 178,
+                      "end": 220
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 178,
+                  "end": 220
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 165,
+                "end": 220
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 226,
+                  "end": 240
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "type K = \"foo\" | \"bar\";\ntype SomeType = {\n    [prop in K]: any;\n} & {\n    a: string;\n};",
+                        "cooked": "type K = \"foo\" | \"bar\";\ntype SomeType = {\n    [prop in K]: any;\n} & {\n    a: string;\n};"
+                      },
+                      "tail": true,
+                      "start": 242,
+                      "end": 331
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 242,
+                  "end": 331
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 226,
+                "end": 331
+              }
+            ],
+            "start": 159,
+            "end": 333
+          }
+        ],
+        "optional": false,
+        "start": 144,
+        "end": 334
+      },
+      "start": 144,
+      "end": 334
+    }
+  ],
+  "sourceType": "script",
+  "start": 144,
+  "end": 335
+}

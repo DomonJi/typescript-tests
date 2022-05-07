@@ -1,0 +1,267 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 331,
+            "end": 337
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAvailable",
+            "start": 338,
+            "end": 354
+          },
+          "computed": false,
+          "optional": false,
+          "start": 331,
+          "end": 354
+        },
+        "arguments": [
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "description",
+                      "start": 363,
+                      "end": 374
+                    },
+                    "value": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ts",
+                            "start": 376,
+                            "end": 378
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "Diagnostics",
+                            "start": 379,
+                            "end": 390
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 376,
+                          "end": 390
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "Add_undefined_to_optional_property_type",
+                          "start": 391,
+                          "end": 430
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 376,
+                        "end": 430
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "message",
+                        "start": 431,
+                        "end": 438
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 376,
+                      "end": 438
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 363,
+                    "end": 438
+                  }
+                ],
+                "start": 361,
+                "end": 440
+              }
+            ],
+            "start": 355,
+            "end": 442
+          }
+        ],
+        "optional": false,
+        "start": 331,
+        "end": 443
+      },
+      "start": 331,
+      "end": 444
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 446,
+            "end": 452
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 453,
+            "end": 460
+          },
+          "computed": false,
+          "optional": false,
+          "start": 446,
+          "end": 460
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 467,
+                  "end": 478
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 480,
+                        "end": 482
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 483,
+                        "end": 494
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 480,
+                      "end": 494
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Add_undefined_to_optional_property_type",
+                      "start": 495,
+                      "end": 534
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 480,
+                    "end": 534
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 535,
+                    "end": 542
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 480,
+                  "end": 542
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 467,
+                "end": 542
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "index",
+                  "start": 548,
+                  "end": 553
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 555,
+                  "end": 556
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 548,
+                "end": 556
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 562,
+                  "end": 576
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface ICP {\n    a?: number | undefined\n}\ninterface J {\n    a?: number | undefined\n}\ndeclare var j: J\nclass CP {\n    #icp: ICP\n    m() { this.#icp = j; console.log(this.#icp) }\n}",
+                        "cooked": "interface ICP {\n    a?: number | undefined\n}\ninterface J {\n    a?: number | undefined\n}\ndeclare var j: J\nclass CP {\n    #icp: ICP\n    m() { this.#icp = j; console.log(this.#icp) }\n}"
+                      },
+                      "tail": true,
+                      "start": 578,
+                      "end": 761
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 578,
+                  "end": 761
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 562,
+                "end": 761
+              }
+            ],
+            "start": 461,
+            "end": 764
+          }
+        ],
+        "optional": false,
+        "start": 446,
+        "end": 765
+      },
+      "start": 446,
+      "end": 766
+    }
+  ],
+  "sourceType": "script",
+  "start": 331,
+  "end": 768
+}

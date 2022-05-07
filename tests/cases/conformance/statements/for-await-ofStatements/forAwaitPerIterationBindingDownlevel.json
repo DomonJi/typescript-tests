@@ -1,0 +1,624 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "sleep",
+            "start": 106,
+            "end": 111
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "tm",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSNumberKeyword",
+                    "start": 119,
+                    "end": 125
+                  },
+                  "start": 117,
+                  "end": 125
+                },
+                "start": 115,
+                "end": 125
+              }
+            ],
+            "body": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "Promise",
+                "start": 134,
+                "end": 141
+              },
+              "arguments": [
+                {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "resolve",
+                      "start": 142,
+                      "end": 149
+                    }
+                  ],
+                  "body": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "setTimeout",
+                      "start": 153,
+                      "end": 163
+                    },
+                    "arguments": [
+                      {
+                        "type": "Identifier",
+                        "name": "resolve",
+                        "start": 164,
+                        "end": 171
+                      },
+                      {
+                        "type": "Identifier",
+                        "name": "tm",
+                        "start": 173,
+                        "end": 175
+                      }
+                    ],
+                    "optional": false,
+                    "start": 153,
+                    "end": 176
+                  },
+                  "async": false,
+                  "expression": true,
+                  "start": 142,
+                  "end": 176
+                }
+              ],
+              "start": 130,
+              "end": 177
+            },
+            "async": false,
+            "expression": true,
+            "start": 114,
+            "end": 177
+          },
+          "start": 106,
+          "end": 177
+        }
+      ],
+      "kind": "const",
+      "start": 100,
+      "end": 178
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "gen",
+        "start": 198,
+        "end": 201
+      },
+      "generator": true,
+      "expression": false,
+      "async": true,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "delegate": false,
+              "argument": {
+                "type": "Literal",
+                "value": 1,
+                "start": 217,
+                "end": 218
+              },
+              "start": 211,
+              "end": 218
+            },
+            "start": 211,
+            "end": 219
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AwaitExpression",
+              "argument": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "sleep",
+                  "start": 231,
+                  "end": 236
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": 1000,
+                    "start": 237,
+                    "end": 241
+                  }
+                ],
+                "optional": false,
+                "start": 231,
+                "end": 242
+              },
+              "start": 225,
+              "end": 242
+            },
+            "start": 225,
+            "end": 243
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "YieldExpression",
+              "delegate": false,
+              "argument": {
+                "type": "Literal",
+                "value": 2,
+                "start": 255,
+                "end": 256
+              },
+              "start": 249,
+              "end": 256
+            },
+            "start": 249,
+            "end": 257
+          }
+        ],
+        "start": 204,
+        "end": 260
+      },
+      "start": 182,
+      "end": 260
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "log",
+            "start": 270,
+            "end": 273
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "console",
+              "start": 276,
+              "end": 283
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "log",
+              "start": 284,
+              "end": 287
+            },
+            "computed": false,
+            "optional": false,
+            "start": 276,
+            "end": 287
+          },
+          "start": 270,
+          "end": 287
+        }
+      ],
+      "kind": "const",
+      "start": 264,
+      "end": 288
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "ArrowFunctionExpression",
+          "generator": false,
+          "id": null,
+          "params": [],
+          "body": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "ForOfStatement",
+                "left": {
+                  "type": "VariableDeclaration",
+                  "declarations": [
+                    {
+                      "type": "VariableDeclarator",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "outer",
+                        "start": 329,
+                        "end": 334
+                      },
+                      "init": null,
+                      "start": 329,
+                      "end": 334
+                    }
+                  ],
+                  "kind": "const",
+                  "start": 323,
+                  "end": 334
+                },
+                "right": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "gen",
+                    "start": 338,
+                    "end": 341
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 338,
+                  "end": 343
+                },
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "log",
+                          "start": 356,
+                          "end": 359
+                        },
+                        "arguments": [
+                          {
+                            "type": "TemplateLiteral",
+                            "quasis": [
+                              {
+                                "type": "TemplateElement",
+                                "value": {
+                                  "raw": "I'm loop ",
+                                  "cooked": "I'm loop "
+                                },
+                                "tail": false,
+                                "start": 360,
+                                "end": 372
+                              },
+                              {
+                                "type": "TemplateElement",
+                                "value": {
+                                  "raw": "",
+                                  "cooked": ""
+                                },
+                                "tail": true,
+                                "start": 377,
+                                "end": 379
+                              }
+                            ],
+                            "expressions": [
+                              {
+                                "type": "Identifier",
+                                "name": "outer",
+                                "start": 372,
+                                "end": 377
+                              }
+                            ],
+                            "start": 360,
+                            "end": 379
+                          }
+                        ],
+                        "optional": false,
+                        "start": 356,
+                        "end": 380
+                      },
+                      "start": 356,
+                      "end": 381
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "ArrowFunctionExpression",
+                          "generator": false,
+                          "id": null,
+                          "params": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "inner",
+                                      "start": 425,
+                                      "end": 430
+                                    },
+                                    "init": {
+                                      "type": "Identifier",
+                                      "name": "outer",
+                                      "start": 433,
+                                      "end": 438
+                                    },
+                                    "start": 425,
+                                    "end": 438
+                                  }
+                                ],
+                                "kind": "const",
+                                "start": 419,
+                                "end": 439
+                              },
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "AwaitExpression",
+                                  "argument": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "Identifier",
+                                      "name": "sleep",
+                                      "start": 459,
+                                      "end": 464
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": 2000,
+                                        "start": 465,
+                                        "end": 469
+                                      }
+                                    ],
+                                    "optional": false,
+                                    "start": 459,
+                                    "end": 470
+                                  },
+                                  "start": 453,
+                                  "end": 470
+                                },
+                                "start": 453,
+                                "end": 471
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "BinaryExpression",
+                                  "operator": "===",
+                                  "left": {
+                                    "type": "Identifier",
+                                    "name": "inner",
+                                    "start": 489,
+                                    "end": 494
+                                  },
+                                  "right": {
+                                    "type": "Identifier",
+                                    "name": "outer",
+                                    "start": 499,
+                                    "end": 504
+                                  },
+                                  "start": 489,
+                                  "end": 504
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "Identifier",
+                                          "name": "log",
+                                          "start": 525,
+                                          "end": 528
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "TemplateLiteral",
+                                            "quasis": [
+                                              {
+                                                "type": "TemplateElement",
+                                                "value": {
+                                                  "raw": "I'm loop ",
+                                                  "cooked": "I'm loop "
+                                                },
+                                                "tail": false,
+                                                "start": 529,
+                                                "end": 541
+                                              },
+                                              {
+                                                "type": "TemplateElement",
+                                                "value": {
+                                                  "raw": " and I know I'm loop ",
+                                                  "cooked": " and I know I'm loop "
+                                                },
+                                                "tail": false,
+                                                "start": 546,
+                                                "end": 570
+                                              },
+                                              {
+                                                "type": "TemplateElement",
+                                                "value": {
+                                                  "raw": "",
+                                                  "cooked": ""
+                                                },
+                                                "tail": true,
+                                                "start": 575,
+                                                "end": 577
+                                              }
+                                            ],
+                                            "expressions": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "inner",
+                                                "start": 541,
+                                                "end": 546
+                                              },
+                                              {
+                                                "type": "Identifier",
+                                                "name": "outer",
+                                                "start": 570,
+                                                "end": 575
+                                              }
+                                            ],
+                                            "start": 529,
+                                            "end": 577
+                                          }
+                                        ],
+                                        "optional": false,
+                                        "start": 525,
+                                        "end": 578
+                                      },
+                                      "start": 525,
+                                      "end": 579
+                                    }
+                                  ],
+                                  "start": 506,
+                                  "end": 594
+                                },
+                                "alternate": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "Identifier",
+                                          "name": "log",
+                                          "start": 619,
+                                          "end": 622
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "TemplateLiteral",
+                                            "quasis": [
+                                              {
+                                                "type": "TemplateElement",
+                                                "value": {
+                                                  "raw": "I'm loop ",
+                                                  "cooked": "I'm loop "
+                                                },
+                                                "tail": false,
+                                                "start": 623,
+                                                "end": 635
+                                              },
+                                              {
+                                                "type": "TemplateElement",
+                                                "value": {
+                                                  "raw": ", but I think I'm loop ",
+                                                  "cooked": ", but I think I'm loop "
+                                                },
+                                                "tail": false,
+                                                "start": 640,
+                                                "end": 666
+                                              },
+                                              {
+                                                "type": "TemplateElement",
+                                                "value": {
+                                                  "raw": "",
+                                                  "cooked": ""
+                                                },
+                                                "tail": true,
+                                                "start": 671,
+                                                "end": 673
+                                              }
+                                            ],
+                                            "expressions": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "inner",
+                                                "start": 635,
+                                                "end": 640
+                                              },
+                                              {
+                                                "type": "Identifier",
+                                                "name": "outer",
+                                                "start": 666,
+                                                "end": 671
+                                              }
+                                            ],
+                                            "start": 623,
+                                            "end": 673
+                                          }
+                                        ],
+                                        "optional": false,
+                                        "start": 619,
+                                        "end": 674
+                                      },
+                                      "start": 619,
+                                      "end": 675
+                                    }
+                                  ],
+                                  "start": 600,
+                                  "end": 690
+                                },
+                                "start": 485,
+                                "end": 690
+                              }
+                            ],
+                            "start": 404,
+                            "end": 701
+                          },
+                          "async": true,
+                          "expression": false,
+                          "start": 392,
+                          "end": 701
+                        },
+                        "arguments": [],
+                        "optional": false,
+                        "start": 391,
+                        "end": 704
+                      },
+                      "start": 391,
+                      "end": 705
+                    }
+                  ],
+                  "start": 345,
+                  "end": 712
+                },
+                "await": true,
+                "start": 312,
+                "end": 712
+              }
+            ],
+            "start": 305,
+            "end": 715
+          },
+          "async": true,
+          "expression": false,
+          "start": 293,
+          "end": 715
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 292,
+        "end": 718
+      },
+      "start": 292,
+      "end": 719
+    }
+  ],
+  "sourceType": "script",
+  "start": 100,
+  "end": 719
+}

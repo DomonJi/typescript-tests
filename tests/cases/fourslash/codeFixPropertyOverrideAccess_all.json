@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 256,
+            "end": 262
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 263,
+            "end": 273
+          },
+          "computed": false,
+          "optional": false,
+          "start": 256,
+          "end": 273
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 280,
+                  "end": 285
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixPropertyOverrideAccessor",
+                  "start": 287,
+                  "end": 316
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 280,
+                "end": 316
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 322,
+                  "end": 339
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors for all overriding properties",
+                  "start": 341,
+                  "end": 407
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 322,
+                "end": 407
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 413,
+                  "end": 427
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class A {\n    get x() { return 1 }\n}\nclass B extends A {\n    private _x = 2\n    public get x() {\n        return this._x\n    }\n    public set x(value) {\n        this._x = value\n    }\n}\nclass C {\n    get x() { return 3 }\n}\nclass D extends C {\n    private _x = 4\n    public get x() {\n        return this._x\n    }\n    public set x(value) {\n        this._x = value\n    }\n}",
+                        "cooked": "class A {\n    get x() { return 1 }\n}\nclass B extends A {\n    private _x = 2\n    public get x() {\n        return this._x\n    }\n    public set x(value) {\n        this._x = value\n    }\n}\nclass C {\n    get x() { return 3 }\n}\nclass D extends C {\n    private _x = 4\n    public get x() {\n        return this._x\n    }\n    public set x(value) {\n        this._x = value\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 429,
+                      "end": 798
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 429,
+                  "end": 798
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 413,
+                "end": 798
+              }
+            ],
+            "start": 274,
+            "end": 801
+          }
+        ],
+        "optional": false,
+        "start": 256,
+        "end": 802
+      },
+      "start": 256,
+      "end": 802
+    }
+  ],
+  "sourceType": "script",
+  "start": 256,
+  "end": 803
+}

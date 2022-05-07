@@ -1,0 +1,268 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "a",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 55,
+                "end": 61
+              },
+              "start": 53,
+              "end": 61
+            },
+            "start": 52,
+            "end": 61
+          },
+          "init": null,
+          "start": 52,
+          "end": 61
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 40,
+      "end": 62
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "p",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Promise",
+                  "start": 78,
+                  "end": 85
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSNumberKeyword",
+                      "start": 86,
+                      "end": 92
+                    }
+                  ],
+                  "start": 85,
+                  "end": 93
+                },
+                "start": 78,
+                "end": 93
+              },
+              "start": 76,
+              "end": 93
+            },
+            "start": 75,
+            "end": 93
+          },
+          "init": null,
+          "start": 75,
+          "end": 93
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 63,
+      "end": 94
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "before",
+        "start": 112,
+        "end": 118
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 122,
+          "end": 126
+        },
+        "start": 120,
+        "end": 126
+      },
+      "declare": true,
+      "start": 95,
+      "end": 127
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "after",
+        "start": 145,
+        "end": 150
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 154,
+          "end": 158
+        },
+        "start": 152,
+        "end": 158
+      },
+      "declare": true,
+      "start": 128,
+      "end": 159
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "func",
+        "start": 175,
+        "end": 179
+      },
+      "generator": false,
+      "expression": false,
+      "async": true,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "before",
+                "start": 203,
+                "end": 209
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 203,
+              "end": 211
+            },
+            "start": 203,
+            "end": 212
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "b",
+                  "start": 221,
+                  "end": 222
+                },
+                "init": {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "left": {
+                    "type": "AwaitExpression",
+                    "argument": {
+                      "type": "Identifier",
+                      "name": "p",
+                      "start": 231,
+                      "end": 232
+                    },
+                    "start": 225,
+                    "end": 232
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "a",
+                    "start": 235,
+                    "end": 236
+                  },
+                  "start": 225,
+                  "end": 236
+                },
+                "start": 221,
+                "end": 236
+              }
+            ],
+            "kind": "var",
+            "start": 217,
+            "end": 237
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "after",
+                "start": 242,
+                "end": 247
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 242,
+              "end": 249
+            },
+            "start": 242,
+            "end": 250
+          }
+        ],
+        "start": 197,
+        "end": 252
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Promise",
+            "start": 183,
+            "end": 190
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSVoidKeyword",
+                "start": 191,
+                "end": 195
+              }
+            ],
+            "start": 190,
+            "end": 196
+          },
+          "start": 183,
+          "end": 196
+        },
+        "start": 181,
+        "end": 196
+      },
+      "start": 160,
+      "end": 252
+    }
+  ],
+  "sourceType": "script",
+  "start": 40,
+  "end": 252
+}

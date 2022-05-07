@@ -1,0 +1,739 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Literal",
+        "value": "typescript",
+        "start": 212,
+        "end": 224
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSExportAssignment",
+            "expression": {
+              "type": "Identifier",
+              "name": "ts",
+              "start": 241,
+              "end": 243
+            },
+            "start": 232,
+            "end": 244
+          }
+        ],
+        "start": 225,
+        "end": 247
+      },
+      "declare": true,
+      "start": 197,
+      "end": 247
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "console",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSAnyKeyword",
+                "start": 533,
+                "end": 536
+              },
+              "start": 531,
+              "end": 536
+            },
+            "start": 524,
+            "end": 536
+          },
+          "init": null,
+          "start": 524,
+          "end": 536
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 512,
+      "end": 537
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ts",
+        "start": 548,
+        "end": 550
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "typescript",
+          "start": 561,
+          "end": 573
+        },
+        "start": 553,
+        "end": 574
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 541,
+      "end": 575
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "watchMain",
+        "start": 588,
+        "end": 597
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "configPath",
+                  "start": 613,
+                  "end": 623
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "ts",
+                      "start": 626,
+                      "end": 628
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "findConfigFile",
+                      "start": 629,
+                      "end": 643
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 626,
+                    "end": 643
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "./",
+                      "start": 659,
+                      "end": 663
+                    },
+                    {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ts",
+                          "start": 665,
+                          "end": 667
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "sys",
+                          "start": 668,
+                          "end": 671
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 665,
+                        "end": 671
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "fileExists",
+                        "start": 672,
+                        "end": 682
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 665,
+                      "end": 682
+                    },
+                    {
+                      "type": "Literal",
+                      "value": "tsconfig.json",
+                      "start": 684,
+                      "end": 699
+                    }
+                  ],
+                  "optional": false,
+                  "start": 626,
+                  "end": 700
+                },
+                "start": 613,
+                "end": 700
+              }
+            ],
+            "kind": "const",
+            "start": 607,
+            "end": 701
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "UnaryExpression",
+              "operator": "!",
+              "prefix": true,
+              "argument": {
+                "type": "Identifier",
+                "name": "configPath",
+                "start": 712,
+                "end": 722
+              },
+              "start": 711,
+              "end": 722
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ThrowStatement",
+                  "argument": {
+                    "type": "NewExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "Error",
+                      "start": 745,
+                      "end": 750
+                    },
+                    "arguments": [
+                      {
+                        "type": "Literal",
+                        "value": "Could not find a valid 'tsconfig.json'.",
+                        "start": 751,
+                        "end": 792
+                      }
+                    ],
+                    "start": 741,
+                    "end": 793
+                  },
+                  "start": 735,
+                  "end": 794
+                }
+              ],
+              "start": 724,
+              "end": 801
+            },
+            "alternate": null,
+            "start": 707,
+            "end": 801
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "host",
+                  "start": 1800,
+                  "end": 1804
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "ts",
+                      "start": 1807,
+                      "end": 1809
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "createWatchCompilerHost",
+                      "start": 1810,
+                      "end": 1833
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1807,
+                    "end": 1833
+                  },
+                  "arguments": [
+                    {
+                      "type": "Identifier",
+                      "name": "configPath",
+                      "start": 1834,
+                      "end": 1844
+                    },
+                    {
+                      "type": "ObjectExpression",
+                      "properties": [],
+                      "start": 1846,
+                      "end": 1848
+                    },
+                    {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 1850,
+                        "end": 1852
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "sys",
+                        "start": 1853,
+                        "end": 1856
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1850,
+                      "end": 1856
+                    }
+                  ],
+                  "optional": false,
+                  "start": 1807,
+                  "end": 1857
+                },
+                "start": 1800,
+                "end": 1857
+              }
+            ],
+            "kind": "const",
+            "start": 1794,
+            "end": 1858
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "origCreateProgram",
+                  "start": 2080,
+                  "end": 2097
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "host",
+                    "start": 2100,
+                    "end": 2104
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "createProgram",
+                    "start": 2105,
+                    "end": 2118
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 2100,
+                  "end": 2118
+                },
+                "start": 2080,
+                "end": 2118
+              }
+            ],
+            "kind": "const",
+            "start": 2074,
+            "end": 2119
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "host",
+                  "start": 2125,
+                  "end": 2129
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "createProgram",
+                  "start": 2130,
+                  "end": 2143
+                },
+                "computed": false,
+                "optional": false,
+                "start": 2125,
+                "end": 2143
+              },
+              "right": {
+                "type": "ArrowFunctionExpression",
+                "generator": false,
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "rootNames",
+                    "start": 2147,
+                    "end": 2156
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "options",
+                    "start": 2158,
+                    "end": 2165
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "host",
+                    "start": 2167,
+                    "end": 2171
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "oldProgram",
+                    "start": 2173,
+                    "end": 2183
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console",
+                            "start": 2199,
+                            "end": 2206
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log",
+                            "start": 2207,
+                            "end": 2210
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 2199,
+                          "end": 2210
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "** We're about to create the program! **",
+                            "start": 2211,
+                            "end": 2253
+                          }
+                        ],
+                        "optional": false,
+                        "start": 2199,
+                        "end": 2254
+                      },
+                      "start": 2199,
+                      "end": 2255
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "origCreateProgram",
+                          "start": 2272,
+                          "end": 2289
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "rootNames",
+                            "start": 2290,
+                            "end": 2299
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "options",
+                            "start": 2301,
+                            "end": 2308
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "host",
+                            "start": 2310,
+                            "end": 2314
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "oldProgram",
+                            "start": 2316,
+                            "end": 2326
+                          }
+                        ],
+                        "optional": false,
+                        "start": 2272,
+                        "end": 2327
+                      },
+                      "start": 2265,
+                      "end": 2328
+                    }
+                  ],
+                  "start": 2188,
+                  "end": 2335
+                },
+                "async": false,
+                "expression": false,
+                "start": 2146,
+                "end": 2335
+              },
+              "start": 2125,
+              "end": 2335
+            },
+            "start": 2125,
+            "end": 2335
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "origPostProgramCreate",
+                  "start": 2347,
+                  "end": 2368
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "host",
+                    "start": 2371,
+                    "end": 2375
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "afterProgramCreate",
+                    "start": 2376,
+                    "end": 2394
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 2371,
+                  "end": 2394
+                },
+                "start": 2347,
+                "end": 2394
+              }
+            ],
+            "kind": "const",
+            "start": 2341,
+            "end": 2395
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "host",
+                  "start": 2403,
+                  "end": 2407
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "afterProgramCreate",
+                  "start": 2408,
+                  "end": 2426
+                },
+                "computed": false,
+                "optional": false,
+                "start": 2403,
+                "end": 2426
+              },
+              "right": {
+                "type": "ArrowFunctionExpression",
+                "generator": false,
+                "id": null,
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "program",
+                    "start": 2429,
+                    "end": 2436
+                  }
+                ],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console",
+                            "start": 2451,
+                            "end": 2458
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log",
+                            "start": 2459,
+                            "end": 2462
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 2451,
+                          "end": 2462
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "** We finished making the program! **",
+                            "start": 2463,
+                            "end": 2502
+                          }
+                        ],
+                        "optional": false,
+                        "start": 2451,
+                        "end": 2503
+                      },
+                      "start": 2451,
+                      "end": 2504
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "TSNonNullExpression",
+                          "expression": {
+                            "type": "Identifier",
+                            "name": "origPostProgramCreate",
+                            "start": 2514,
+                            "end": 2535
+                          },
+                          "start": 2514,
+                          "end": 2536
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "program",
+                            "start": 2537,
+                            "end": 2544
+                          }
+                        ],
+                        "optional": false,
+                        "start": 2514,
+                        "end": 2545
+                      },
+                      "start": 2514,
+                      "end": 2546
+                    }
+                  ],
+                  "start": 2440,
+                  "end": 2553
+                },
+                "async": false,
+                "expression": false,
+                "start": 2429,
+                "end": 2553
+              },
+              "start": 2403,
+              "end": 2553
+            },
+            "start": 2403,
+            "end": 2554
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "ts",
+                  "start": 2669,
+                  "end": 2671
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "createWatchProgram",
+                  "start": 2672,
+                  "end": 2690
+                },
+                "computed": false,
+                "optional": false,
+                "start": 2669,
+                "end": 2690
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "host",
+                  "start": 2691,
+                  "end": 2695
+                }
+              ],
+              "optional": false,
+              "start": 2669,
+              "end": 2696
+            },
+            "start": 2669,
+            "end": 2697
+          }
+        ],
+        "start": 600,
+        "end": 2700
+      },
+      "start": 579,
+      "end": 2700
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "watchMain",
+          "start": 2704,
+          "end": 2713
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 2704,
+        "end": 2715
+      },
+      "start": 2704,
+      "end": 2716
+    }
+  ],
+  "sourceType": "module",
+  "start": 197,
+  "end": 2718
+}

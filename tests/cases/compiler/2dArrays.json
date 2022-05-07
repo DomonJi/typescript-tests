@@ -1,0 +1,289 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Cell",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 11,
+        "end": 14
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 14
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Ship",
+        "start": 22,
+        "end": 26
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "isSunk",
+              "start": 33,
+              "end": 39
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 41,
+                "end": 48
+              },
+              "start": 39,
+              "end": 48
+            },
+            "start": 33,
+            "end": 49
+          }
+        ],
+        "start": 27,
+        "end": 51
+      },
+      "superClass": null,
+      "start": 16,
+      "end": 51
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Board",
+        "start": 59,
+        "end": 64
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "ships",
+              "start": 71,
+              "end": 76
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Ship",
+                    "start": 78,
+                    "end": 82
+                  },
+                  "start": 78,
+                  "end": 82
+                },
+                "start": 78,
+                "end": 84
+              },
+              "start": 76,
+              "end": 84
+            },
+            "start": 71,
+            "end": 85
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "cells",
+              "start": 90,
+              "end": 95
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Cell",
+                    "start": 97,
+                    "end": 101
+                  },
+                  "start": 97,
+                  "end": 101
+                },
+                "start": 97,
+                "end": 103
+              },
+              "start": 95,
+              "end": 103
+            },
+            "start": 90,
+            "end": 104
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "allShipsSunk",
+              "start": 118,
+              "end": 130
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 150,
+                            "end": 154
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "ships",
+                            "start": 155,
+                            "end": 160
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 150,
+                          "end": 160
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "every",
+                          "start": 161,
+                          "end": 166
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 150,
+                        "end": 166
+                      },
+                      "arguments": [
+                        {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "generator": false,
+                          "params": [
+                            {
+                              "type": "Identifier",
+                              "name": "val",
+                              "start": 177,
+                              "end": 180
+                            }
+                          ],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "val",
+                                    "start": 191,
+                                    "end": 194
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "isSunk",
+                                    "start": 195,
+                                    "end": 201
+                                  },
+                                  "computed": false,
+                                  "optional": false,
+                                  "start": 191,
+                                  "end": 201
+                                },
+                                "start": 184,
+                                "end": 202
+                              }
+                            ],
+                            "start": 182,
+                            "end": 204
+                          },
+                          "async": false,
+                          "expression": false,
+                          "start": 167,
+                          "end": 204
+                        }
+                      ],
+                      "optional": false,
+                      "start": 150,
+                      "end": 205
+                    },
+                    "start": 143,
+                    "end": 206
+                  }
+                ],
+                "start": 133,
+                "end": 212
+              },
+              "params": [],
+              "start": 130,
+              "end": 212
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "private",
+            "start": 110,
+            "end": 212
+          }
+        ],
+        "start": 65,
+        "end": 218
+      },
+      "superClass": null,
+      "start": 53,
+      "end": 218
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 218
+}

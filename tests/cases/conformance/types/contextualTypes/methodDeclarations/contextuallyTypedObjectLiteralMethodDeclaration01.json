@@ -1,0 +1,800 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "numProp",
+              "start": 46,
+              "end": 53
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 55,
+                "end": 61
+              },
+              "start": 53,
+              "end": 61
+            },
+            "start": 46,
+            "end": 62
+          }
+        ],
+        "start": 39,
+        "end": 65
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 37,
+        "end": 38
+      },
+      "start": 27,
+      "end": 65
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "strProp",
+              "start": 89,
+              "end": 96
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 98,
+                "end": 104
+              },
+              "start": 96,
+              "end": 104
+            },
+            "start": 89,
+            "end": 105
+          }
+        ],
+        "start": 82,
+        "end": 108
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "B",
+        "start": 79,
+        "end": 80
+      },
+      "start": 69,
+      "end": 108
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "method1",
+              "start": 133,
+              "end": 140
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "arg",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "A",
+                      "start": 146,
+                      "end": 147
+                    },
+                    "start": 146,
+                    "end": 147
+                  },
+                  "start": 144,
+                  "end": 147
+                },
+                "start": 141,
+                "end": 147
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSVoidKeyword",
+                "start": 150,
+                "end": 154
+              },
+              "start": 148,
+              "end": 154
+            },
+            "start": 133,
+            "end": 155
+          },
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "method2",
+              "start": 161,
+              "end": 168
+            },
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "arg",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "B",
+                      "start": 174,
+                      "end": 175
+                    },
+                    "start": 174,
+                    "end": 175
+                  },
+                  "start": 172,
+                  "end": 175
+                },
+                "start": 169,
+                "end": 175
+              }
+            ],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSVoidKeyword",
+                "start": 178,
+                "end": 182
+              },
+              "start": 176,
+              "end": 182
+            },
+            "start": 161,
+            "end": 183
+          }
+        ],
+        "start": 126,
+        "end": 186
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 122,
+        "end": 125
+      },
+      "start": 112,
+      "end": 186
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getFoo1",
+        "start": 199,
+        "end": 206
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "method1",
+                    "start": 239,
+                    "end": 246
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "arg",
+                                "start": 267,
+                                "end": 270
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "numProp",
+                                "start": 271,
+                                "end": 278
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 267,
+                              "end": 278
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 10,
+                              "start": 281,
+                              "end": 283
+                            },
+                            "start": 267,
+                            "end": 283
+                          },
+                          "start": 267,
+                          "end": 284
+                        }
+                      ],
+                      "start": 252,
+                      "end": 295
+                    },
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "arg",
+                        "start": 247,
+                        "end": 250
+                      }
+                    ],
+                    "start": 246,
+                    "end": 295
+                  },
+                  "computed": false,
+                  "method": true,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 239,
+                  "end": 295
+                },
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "method2",
+                    "start": 306,
+                    "end": 313
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "arg",
+                                "start": 334,
+                                "end": 337
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "strProp",
+                                "start": 338,
+                                "end": 345
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 334,
+                              "end": 345
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": "hello",
+                              "start": 348,
+                              "end": 355
+                            },
+                            "start": 334,
+                            "end": 355
+                          },
+                          "start": 334,
+                          "end": 356
+                        }
+                      ],
+                      "start": 319,
+                      "end": 367
+                    },
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "arg",
+                        "start": 314,
+                        "end": 317
+                      }
+                    ],
+                    "start": 313,
+                    "end": 367
+                  },
+                  "computed": false,
+                  "method": true,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 306,
+                  "end": 367
+                }
+              ],
+              "start": 228,
+              "end": 374
+            },
+            "start": 221,
+            "end": 374
+          }
+        ],
+        "start": 214,
+        "end": 377
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 210,
+            "end": 213
+          },
+          "start": 210,
+          "end": 213
+        },
+        "start": 208,
+        "end": 213
+      },
+      "start": 190,
+      "end": 377
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getFoo2",
+        "start": 390,
+        "end": 397
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "method1",
+                    "start": 430,
+                    "end": 437
+                  },
+                  "value": {
+                    "type": "ArrowFunctionExpression",
+                    "generator": false,
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "arg",
+                        "start": 440,
+                        "end": 443
+                      }
+                    ],
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "arg",
+                                "start": 463,
+                                "end": 466
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "numProp",
+                                "start": 467,
+                                "end": 474
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 463,
+                              "end": 474
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 10,
+                              "start": 477,
+                              "end": 479
+                            },
+                            "start": 463,
+                            "end": 479
+                          },
+                          "start": 463,
+                          "end": 480
+                        }
+                      ],
+                      "start": 448,
+                      "end": 491
+                    },
+                    "async": false,
+                    "expression": false,
+                    "start": 439,
+                    "end": 491
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 430,
+                  "end": 491
+                },
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "method2",
+                    "start": 502,
+                    "end": 509
+                  },
+                  "value": {
+                    "type": "ArrowFunctionExpression",
+                    "generator": false,
+                    "id": null,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "arg",
+                        "start": 512,
+                        "end": 515
+                      }
+                    ],
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "arg",
+                                "start": 535,
+                                "end": 538
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "strProp",
+                                "start": 539,
+                                "end": 546
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 535,
+                              "end": 546
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": "hello",
+                              "start": 549,
+                              "end": 556
+                            },
+                            "start": 535,
+                            "end": 556
+                          },
+                          "start": 535,
+                          "end": 557
+                        }
+                      ],
+                      "start": 520,
+                      "end": 568
+                    },
+                    "async": false,
+                    "expression": false,
+                    "start": 511,
+                    "end": 568
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 502,
+                  "end": 568
+                }
+              ],
+              "start": 419,
+              "end": 575
+            },
+            "start": 412,
+            "end": 575
+          }
+        ],
+        "start": 405,
+        "end": 578
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 401,
+            "end": 404
+          },
+          "start": 401,
+          "end": 404
+        },
+        "start": 399,
+        "end": 404
+      },
+      "start": 381,
+      "end": 578
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "getFoo3",
+        "start": 591,
+        "end": 598
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ObjectExpression",
+              "properties": [
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "method1",
+                    "start": 631,
+                    "end": 638
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "arg",
+                        "start": 650,
+                        "end": 653
+                      }
+                    ],
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "arg",
+                                "start": 670,
+                                "end": 673
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "numProp",
+                                "start": 674,
+                                "end": 681
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 670,
+                              "end": 681
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 10,
+                              "start": 684,
+                              "end": 686
+                            },
+                            "start": 670,
+                            "end": 686
+                          },
+                          "start": 670,
+                          "end": 687
+                        }
+                      ],
+                      "start": 655,
+                      "end": 698
+                    },
+                    "async": false,
+                    "expression": false,
+                    "start": 640,
+                    "end": 698
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 631,
+                  "end": 698
+                },
+                {
+                  "type": "Property",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "method2",
+                    "start": 709,
+                    "end": 716
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "name": "arg",
+                        "start": 728,
+                        "end": 731
+                      }
+                    ],
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "arg",
+                                "start": 748,
+                                "end": 751
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "strProp",
+                                "start": 752,
+                                "end": 759
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 748,
+                              "end": 759
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": "hello",
+                              "start": 762,
+                              "end": 769
+                            },
+                            "start": 748,
+                            "end": 769
+                          },
+                          "start": 748,
+                          "end": 770
+                        }
+                      ],
+                      "start": 733,
+                      "end": 781
+                    },
+                    "async": false,
+                    "expression": false,
+                    "start": 718,
+                    "end": 781
+                  },
+                  "computed": false,
+                  "method": false,
+                  "shorthand": false,
+                  "kind": "init",
+                  "start": 709,
+                  "end": 781
+                }
+              ],
+              "start": 620,
+              "end": 788
+            },
+            "start": 613,
+            "end": 788
+          }
+        ],
+        "start": 606,
+        "end": 791
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 602,
+            "end": 605
+          },
+          "start": 602,
+          "end": 605
+        },
+        "start": 600,
+        "end": 605
+      },
+      "start": 582,
+      "end": 791
+    }
+  ],
+  "sourceType": "script",
+  "start": 27,
+  "end": 791
+}

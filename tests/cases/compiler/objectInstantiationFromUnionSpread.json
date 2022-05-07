@@ -1,0 +1,480 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "isSuccess",
+              "start": 64,
+              "end": 73
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": true,
+                  "start": 75,
+                  "end": 79
+                },
+                "start": 75,
+                "end": 79
+              },
+              "start": 73,
+              "end": 79
+            },
+            "start": 64,
+            "end": 80
+          }
+        ],
+        "start": 60,
+        "end": 82
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Success",
+        "start": 52,
+        "end": 59
+      },
+      "start": 42,
+      "end": 82
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "isSuccess",
+              "start": 103,
+              "end": 112
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": false,
+                  "start": 114,
+                  "end": 119
+                },
+                "start": 114,
+                "end": 119
+              },
+              "start": 112,
+              "end": 119
+            },
+            "start": 103,
+            "end": 120
+          }
+        ],
+        "start": 99,
+        "end": 122
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Fail",
+        "start": 94,
+        "end": 98
+      },
+      "start": 84,
+      "end": 122
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Item",
+        "start": 129,
+        "end": 133
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "Success",
+              "start": 136,
+              "end": 143
+            },
+            "start": 136,
+            "end": 143
+          },
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "Fail",
+              "start": 146,
+              "end": 150
+            },
+            "start": 146,
+            "end": 150
+          }
+        ],
+        "start": 136,
+        "end": 150
+      },
+      "start": 124,
+      "end": 151
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f1",
+        "start": 162,
+        "end": 164
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Item",
+                  "start": 168,
+                  "end": 172
+                },
+                "start": 168,
+                "end": 172
+              },
+              "start": 168,
+              "end": 174
+            },
+            "start": 166,
+            "end": 174
+          },
+          "start": 165,
+          "end": 174
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 180,
+                      "end": 181
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "map",
+                      "start": 182,
+                      "end": 185
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 180,
+                    "end": 185
+                  },
+                  "arguments": [
+                    {
+                      "type": "ArrowFunctionExpression",
+                      "generator": false,
+                      "id": null,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "item",
+                          "start": 186,
+                          "end": 190
+                        }
+                      ],
+                      "body": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                          {
+                            "type": "SpreadElement",
+                            "argument": {
+                              "type": "Identifier",
+                              "name": "item",
+                              "start": 200,
+                              "end": 204
+                            },
+                            "start": 197,
+                            "end": 204
+                          }
+                        ],
+                        "start": 195,
+                        "end": 206
+                      },
+                      "async": false,
+                      "expression": true,
+                      "start": 186,
+                      "end": 207
+                    }
+                  ],
+                  "optional": false,
+                  "start": 180,
+                  "end": 208
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "filter",
+                  "start": 209,
+                  "end": 215
+                },
+                "computed": false,
+                "optional": false,
+                "start": 180,
+                "end": 215
+              },
+              "arguments": [
+                {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "value",
+                      "start": 216,
+                      "end": 221
+                    }
+                  ],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [],
+                    "start": 225,
+                    "end": 227
+                  },
+                  "async": false,
+                  "expression": false,
+                  "start": 216,
+                  "end": 227
+                }
+              ],
+              "optional": false,
+              "start": 180,
+              "end": 228
+            },
+            "start": 180,
+            "end": 229
+          }
+        ],
+        "start": 176,
+        "end": 231
+      },
+      "start": 153,
+      "end": 231
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f2",
+        "start": 242,
+        "end": 244
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Item",
+                  "start": 251,
+                  "end": 255
+                },
+                "start": 251,
+                "end": 255
+              },
+              "start": 251,
+              "end": 257
+            },
+            "start": 249,
+            "end": 257
+          },
+          "start": 248,
+          "end": 257
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "a",
+                      "start": 263,
+                      "end": 264
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "map",
+                      "start": 265,
+                      "end": 268
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 263,
+                    "end": 268
+                  },
+                  "arguments": [
+                    {
+                      "type": "ArrowFunctionExpression",
+                      "generator": false,
+                      "id": null,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "item",
+                          "start": 269,
+                          "end": 273
+                        }
+                      ],
+                      "body": {
+                        "type": "ObjectExpression",
+                        "properties": [
+                          {
+                            "type": "SpreadElement",
+                            "argument": {
+                              "type": "Identifier",
+                              "name": "item",
+                              "start": 283,
+                              "end": 287
+                            },
+                            "start": 280,
+                            "end": 287
+                          }
+                        ],
+                        "start": 278,
+                        "end": 289
+                      },
+                      "async": false,
+                      "expression": true,
+                      "start": 269,
+                      "end": 290
+                    }
+                  ],
+                  "optional": false,
+                  "start": 263,
+                  "end": 291
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "filter",
+                  "start": 292,
+                  "end": 298
+                },
+                "computed": false,
+                "optional": false,
+                "start": 263,
+                "end": 298
+              },
+              "arguments": [
+                {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "value",
+                      "start": 299,
+                      "end": 304
+                    }
+                  ],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [],
+                    "start": 308,
+                    "end": 310
+                  },
+                  "async": false,
+                  "expression": false,
+                  "start": 299,
+                  "end": 310
+                }
+              ],
+              "optional": false,
+              "start": 263,
+              "end": 311
+            },
+            "start": 263,
+            "end": 312
+          }
+        ],
+        "start": 259,
+        "end": 314
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 245,
+              "end": 246
+            },
+            "start": 245,
+            "end": 246
+          }
+        ],
+        "start": 244,
+        "end": 247
+      },
+      "start": 233,
+      "end": 314
+    }
+  ],
+  "sourceType": "script",
+  "start": 42,
+  "end": 315
+}

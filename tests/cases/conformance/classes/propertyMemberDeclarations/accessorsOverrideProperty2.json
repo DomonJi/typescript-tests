@@ -1,0 +1,303 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 59,
+        "end": 63
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 68,
+              "end": 69
+            },
+            "value": {
+              "type": "Literal",
+              "value": 1,
+              "start": 72,
+              "end": 73
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 68,
+            "end": 74
+          }
+        ],
+        "start": 64,
+        "end": 76
+      },
+      "superClass": null,
+      "start": 53,
+      "end": 76
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 84,
+        "end": 91
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 113,
+              "end": 114
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": 2,
+                      "start": 126,
+                      "end": 127
+                    },
+                    "start": 119,
+                    "end": 128
+                  }
+                ],
+                "start": 117,
+                "end": 130
+              },
+              "params": [],
+              "start": 114,
+              "end": 130
+            },
+            "computed": false,
+            "static": false,
+            "kind": "get",
+            "override": false,
+            "start": 109,
+            "end": 130
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 159,
+              "end": 160
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "console",
+                          "start": 170,
+                          "end": 177
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "log",
+                          "start": 178,
+                          "end": 181
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 170,
+                        "end": 181
+                      },
+                      "arguments": [
+                        {
+                          "type": "TemplateLiteral",
+                          "quasis": [
+                            {
+                              "type": "TemplateElement",
+                              "value": {
+                                "raw": "x was set to ",
+                                "cooked": "x was set to "
+                              },
+                              "tail": false,
+                              "start": 182,
+                              "end": 198
+                            },
+                            {
+                              "type": "TemplateElement",
+                              "value": {
+                                "raw": "",
+                                "cooked": ""
+                              },
+                              "tail": true,
+                              "start": 203,
+                              "end": 205
+                            }
+                          ],
+                          "expressions": [
+                            {
+                              "type": "Identifier",
+                              "name": "value",
+                              "start": 198,
+                              "end": 203
+                            }
+                          ],
+                          "start": 182,
+                          "end": 205
+                        }
+                      ],
+                      "optional": false,
+                      "start": 170,
+                      "end": 206
+                    },
+                    "start": 170,
+                    "end": 207
+                  }
+                ],
+                "start": 168,
+                "end": 209
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 161,
+                  "end": 166
+                }
+              ],
+              "start": 160,
+              "end": 209
+            },
+            "computed": false,
+            "static": false,
+            "kind": "set",
+            "override": false,
+            "start": 155,
+            "end": 209
+          }
+        ],
+        "start": 105,
+        "end": 211
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 100,
+        "end": 104
+      },
+      "start": 78,
+      "end": 211
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "obj",
+            "start": 219,
+            "end": 222
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "Derived",
+              "start": 229,
+              "end": 236
+            },
+            "arguments": [],
+            "start": 225,
+            "end": 238
+          },
+          "start": 219,
+          "end": 238
+        }
+      ],
+      "kind": "const",
+      "start": 213,
+      "end": 239
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "console",
+            "start": 259,
+            "end": 266
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "log",
+            "start": 267,
+            "end": 270
+          },
+          "computed": false,
+          "optional": false,
+          "start": 259,
+          "end": 270
+        },
+        "arguments": [
+          {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "obj",
+              "start": 271,
+              "end": 274
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 275,
+              "end": 276
+            },
+            "computed": false,
+            "optional": false,
+            "start": 271,
+            "end": 276
+          }
+        ],
+        "optional": false,
+        "start": 259,
+        "end": 277
+      },
+      "start": 259,
+      "end": 278
+    }
+  ],
+  "sourceType": "script",
+  "start": 53,
+  "end": 284
+}

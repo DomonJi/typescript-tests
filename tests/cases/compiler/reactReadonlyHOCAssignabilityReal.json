@@ -1,0 +1,365 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "react",
+        "start": 102,
+        "end": 109
+      },
+      "specifiers": [
+        {
+          "type": "ImportNamespaceSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "React",
+            "start": 91,
+            "end": 96
+          },
+          "start": 86,
+          "end": 96
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 79,
+      "end": 110
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "myHigherOrderComponent",
+        "start": 123,
+        "end": 145
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "Inner",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "TSQualifiedName",
+                "left": {
+                  "type": "Identifier",
+                  "name": "React",
+                  "start": 156,
+                  "end": 161
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "ComponentClass",
+                  "start": 162,
+                  "end": 176
+                },
+                "start": 156,
+                "end": 176
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSIntersectionType",
+                    "types": [
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "P",
+                          "start": 177,
+                          "end": 178
+                        },
+                        "start": 177,
+                        "end": 178
+                      },
+                      {
+                        "type": "TSTypeLiteral",
+                        "members": [
+                          {
+                            "type": "TSPropertySignature",
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "name": "name",
+                              "start": 182,
+                              "end": 186
+                            },
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSStringKeyword",
+                                "start": 188,
+                                "end": 194
+                              },
+                              "start": 186,
+                              "end": 194
+                            },
+                            "start": 182,
+                            "end": 194
+                          }
+                        ],
+                        "start": 181,
+                        "end": 195
+                      }
+                    ],
+                    "start": 177,
+                    "end": 195
+                  }
+                ],
+                "start": 176,
+                "end": 196
+              },
+              "start": 156,
+              "end": 196
+            },
+            "start": 154,
+            "end": 196
+          },
+          "start": 149,
+          "end": 196
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ClassExpression",
+              "id": {
+                "type": "Identifier",
+                "name": "OuterComponent",
+                "start": 243,
+                "end": 257
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "render",
+                      "start": 296,
+                      "end": 302
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "JSXElement",
+                              "openingElement": {
+                                "type": "JSXOpeningElement",
+                                "selfClosing": true,
+                                "name": {
+                                  "type": "JSXIdentifier",
+                                  "name": "Inner",
+                                  "start": 328,
+                                  "end": 333
+                                },
+                                "attributes": [
+                                  {
+                                    "type": "JSXSpreadAttribute",
+                                    "argument": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "ThisExpression",
+                                        "start": 338,
+                                        "end": 342
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "props",
+                                        "start": 343,
+                                        "end": 348
+                                      },
+                                      "computed": false,
+                                      "optional": false,
+                                      "start": 338,
+                                      "end": 348
+                                    },
+                                    "start": 334,
+                                    "end": 349
+                                  },
+                                  {
+                                    "type": "JSXAttribute",
+                                    "name": {
+                                      "type": "JSXIdentifier",
+                                      "name": "name",
+                                      "start": 350,
+                                      "end": 354
+                                    },
+                                    "value": {
+                                      "type": "Literal",
+                                      "value": "Matt",
+                                      "start": 355,
+                                      "end": 361
+                                    },
+                                    "start": 350,
+                                    "end": 361
+                                  }
+                                ],
+                                "start": 327,
+                                "end": 363
+                              },
+                              "closingElement": null,
+                              "children": [],
+                              "start": 327,
+                              "end": 363
+                            },
+                            "start": 320,
+                            "end": 364
+                          }
+                        ],
+                        "start": 305,
+                        "end": 375
+                      },
+                      "params": [],
+                      "start": 302,
+                      "end": 375
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 296,
+                    "end": 375
+                  }
+                ],
+                "start": 285,
+                "end": 382
+              },
+              "superClass": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "React",
+                  "start": 266,
+                  "end": 271
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "Component",
+                  "start": 272,
+                  "end": 281
+                },
+                "computed": false,
+                "optional": false,
+                "start": 266,
+                "end": 281
+              },
+              "superTypeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "P",
+                      "start": 282,
+                      "end": 283
+                    },
+                    "start": 282,
+                    "end": 283
+                  }
+                ],
+                "start": 281,
+                "end": 284
+              },
+              "start": 237,
+              "end": 382
+            },
+            "start": 230,
+            "end": 383
+          }
+        ],
+        "start": 223,
+        "end": 386
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "TSQualifiedName",
+            "left": {
+              "type": "Identifier",
+              "name": "React",
+              "start": 199,
+              "end": 204
+            },
+            "right": {
+              "type": "Identifier",
+              "name": "ComponentClass",
+              "start": 205,
+              "end": 219
+            },
+            "start": 199,
+            "end": 219
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "P",
+                  "start": 220,
+                  "end": 221
+                },
+                "start": 220,
+                "end": 221
+              }
+            ],
+            "start": 219,
+            "end": 222
+          },
+          "start": 199,
+          "end": 222
+        },
+        "start": 197,
+        "end": 222
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "P",
+              "start": 146,
+              "end": 147
+            },
+            "start": 146,
+            "end": 147
+          }
+        ],
+        "start": 145,
+        "end": 148
+      },
+      "start": 114,
+      "end": 386
+    }
+  ],
+  "sourceType": "module",
+  "start": 79,
+  "end": 386
+}

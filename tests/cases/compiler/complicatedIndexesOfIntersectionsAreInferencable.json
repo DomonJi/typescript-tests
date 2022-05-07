@@ -1,0 +1,813 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "initialValues",
+              "start": 56,
+              "end": 69
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Values",
+                  "start": 71,
+                  "end": 77
+                },
+                "start": 71,
+                "end": 77
+              },
+              "start": 69,
+              "end": 77
+            },
+            "start": 56,
+            "end": 78
+          },
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "validate",
+              "start": 84,
+              "end": 92
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "props",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "Values",
+                          "start": 103,
+                          "end": 109
+                        },
+                        "start": 103,
+                        "end": 109
+                      },
+                      "start": 101,
+                      "end": 109
+                    },
+                    "start": 96,
+                    "end": 109
+                  }
+                ],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSVoidKeyword",
+                    "start": 114,
+                    "end": 118
+                  },
+                  "start": 111,
+                  "end": 118
+                },
+                "start": 95,
+                "end": 118
+              },
+              "start": 93,
+              "end": 118
+            },
+            "start": 84,
+            "end": 119
+          },
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "validateOnChange",
+              "start": 125,
+              "end": 141
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 144,
+                "end": 151
+              },
+              "start": 142,
+              "end": 151
+            },
+            "start": 125,
+            "end": 152
+          }
+        ],
+        "start": 49,
+        "end": 155
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "FormikConfig",
+        "start": 28,
+        "end": 40
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "Values",
+              "start": 41,
+              "end": 47
+            },
+            "start": 41,
+            "end": 47
+          }
+        ],
+        "start": 40,
+        "end": 48
+      },
+      "start": 18,
+      "end": 155
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "Func",
+        "start": 176,
+        "end": 180
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSConditionalType",
+              "checkType": {
+                "type": "TSStringKeyword",
+                "start": 225,
+                "end": 231
+              },
+              "extendsType": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "validate",
+                      "start": 240,
+                      "end": 250
+                    },
+                    "start": 240,
+                    "end": 250
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "initialValues",
+                      "start": 253,
+                      "end": 268
+                    },
+                    "start": 253,
+                    "end": 268
+                  },
+                  {
+                    "type": "TSTypeOperator",
+                    "operator": "keyof",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "ExtraProps",
+                        "start": 277,
+                        "end": 287
+                      },
+                      "start": 277,
+                      "end": 287
+                    },
+                    "start": 271,
+                    "end": 287
+                  }
+                ],
+                "start": 240,
+                "end": 287
+              },
+              "trueType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Readonly",
+                  "start": 299,
+                  "end": 307
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSIntersectionType",
+                      "types": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "FormikConfig",
+                            "start": 308,
+                            "end": 320
+                          },
+                          "typeParameters": {
+                            "type": "TSTypeParameterInstantiation",
+                            "params": [
+                              {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "Values",
+                                  "start": 321,
+                                  "end": 327
+                                },
+                                "start": 321,
+                                "end": 327
+                              }
+                            ],
+                            "start": 320,
+                            "end": 328
+                          },
+                          "start": 308,
+                          "end": 328
+                        },
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "ExtraProps",
+                            "start": 331,
+                            "end": 341
+                          },
+                          "start": 331,
+                          "end": 341
+                        }
+                      ],
+                      "start": 308,
+                      "end": 341
+                    }
+                  ],
+                  "start": 307,
+                  "end": 342
+                },
+                "start": 299,
+                "end": 342
+              },
+              "falseType": {
+                "type": "TSIntersectionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Pick",
+                      "start": 354,
+                      "end": 358
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "Readonly",
+                            "start": 359,
+                            "end": 367
+                          },
+                          "typeParameters": {
+                            "type": "TSTypeParameterInstantiation",
+                            "params": [
+                              {
+                                "type": "TSIntersectionType",
+                                "types": [
+                                  {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "FormikConfig",
+                                      "start": 368,
+                                      "end": 380
+                                    },
+                                    "typeParameters": {
+                                      "type": "TSTypeParameterInstantiation",
+                                      "params": [
+                                        {
+                                          "type": "TSTypeReference",
+                                          "typeName": {
+                                            "type": "Identifier",
+                                            "name": "Values",
+                                            "start": 381,
+                                            "end": 387
+                                          },
+                                          "start": 381,
+                                          "end": 387
+                                        }
+                                      ],
+                                      "start": 380,
+                                      "end": 388
+                                    },
+                                    "start": 368,
+                                    "end": 388
+                                  },
+                                  {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "ExtraProps",
+                                      "start": 391,
+                                      "end": 401
+                                    },
+                                    "start": 391,
+                                    "end": 401
+                                  }
+                                ],
+                                "start": 368,
+                                "end": 401
+                              }
+                            ],
+                            "start": 367,
+                            "end": 402
+                          },
+                          "start": 359,
+                          "end": 402
+                        },
+                        {
+                          "type": "TSUnionType",
+                          "types": [
+                            {
+                              "type": "TSLiteralType",
+                              "literal": {
+                                "type": "Literal",
+                                "value": "validate",
+                                "start": 404,
+                                "end": 414
+                              },
+                              "start": 404,
+                              "end": 414
+                            },
+                            {
+                              "type": "TSLiteralType",
+                              "literal": {
+                                "type": "Literal",
+                                "value": "initialValues",
+                                "start": 417,
+                                "end": 432
+                              },
+                              "start": 417,
+                              "end": 432
+                            },
+                            {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "Exclude",
+                                "start": 435,
+                                "end": 442
+                              },
+                              "typeParameters": {
+                                "type": "TSTypeParameterInstantiation",
+                                "params": [
+                                  {
+                                    "type": "TSTypeOperator",
+                                    "operator": "keyof",
+                                    "typeAnnotation": {
+                                      "type": "TSTypeReference",
+                                      "typeName": {
+                                        "type": "Identifier",
+                                        "name": "ExtraProps",
+                                        "start": 449,
+                                        "end": 459
+                                      },
+                                      "start": 449,
+                                      "end": 459
+                                    },
+                                    "start": 443,
+                                    "end": 459
+                                  },
+                                  {
+                                    "type": "TSLiteralType",
+                                    "literal": {
+                                      "type": "Literal",
+                                      "value": "validateOnChange",
+                                      "start": 461,
+                                      "end": 479
+                                    },
+                                    "start": 461,
+                                    "end": 479
+                                  }
+                                ],
+                                "start": 442,
+                                "end": 480
+                              },
+                              "start": 435,
+                              "end": 480
+                            }
+                          ],
+                          "start": 404,
+                          "end": 480
+                        }
+                      ],
+                      "start": 358,
+                      "end": 481
+                    },
+                    "start": 354,
+                    "end": 481
+                  },
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Partial",
+                      "start": 493,
+                      "end": 500
+                    },
+                    "typeParameters": {
+                      "type": "TSTypeParameterInstantiation",
+                      "params": [
+                        {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "Pick",
+                            "start": 501,
+                            "end": 505
+                          },
+                          "typeParameters": {
+                            "type": "TSTypeParameterInstantiation",
+                            "params": [
+                              {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "Readonly",
+                                  "start": 506,
+                                  "end": 514
+                                },
+                                "typeParameters": {
+                                  "type": "TSTypeParameterInstantiation",
+                                  "params": [
+                                    {
+                                      "type": "TSIntersectionType",
+                                      "types": [
+                                        {
+                                          "type": "TSTypeReference",
+                                          "typeName": {
+                                            "type": "Identifier",
+                                            "name": "FormikConfig",
+                                            "start": 515,
+                                            "end": 527
+                                          },
+                                          "typeParameters": {
+                                            "type": "TSTypeParameterInstantiation",
+                                            "params": [
+                                              {
+                                                "type": "TSTypeReference",
+                                                "typeName": {
+                                                  "type": "Identifier",
+                                                  "name": "Values",
+                                                  "start": 528,
+                                                  "end": 534
+                                                },
+                                                "start": 528,
+                                                "end": 534
+                                              }
+                                            ],
+                                            "start": 527,
+                                            "end": 535
+                                          },
+                                          "start": 515,
+                                          "end": 535
+                                        },
+                                        {
+                                          "type": "TSTypeReference",
+                                          "typeName": {
+                                            "type": "Identifier",
+                                            "name": "ExtraProps",
+                                            "start": 538,
+                                            "end": 548
+                                          },
+                                          "start": 538,
+                                          "end": 548
+                                        }
+                                      ],
+                                      "start": 515,
+                                      "end": 548
+                                    }
+                                  ],
+                                  "start": 514,
+                                  "end": 549
+                                },
+                                "start": 506,
+                                "end": 549
+                              },
+                              {
+                                "type": "TSUnionType",
+                                "types": [
+                                  {
+                                    "type": "TSLiteralType",
+                                    "literal": {
+                                      "type": "Literal",
+                                      "value": "validateOnChange",
+                                      "start": 551,
+                                      "end": 569
+                                    },
+                                    "start": 551,
+                                    "end": 569
+                                  },
+                                  {
+                                    "type": "TSTypeReference",
+                                    "typeName": {
+                                      "type": "Identifier",
+                                      "name": "Extract",
+                                      "start": 572,
+                                      "end": 579
+                                    },
+                                    "typeParameters": {
+                                      "type": "TSTypeParameterInstantiation",
+                                      "params": [
+                                        {
+                                          "type": "TSTypeOperator",
+                                          "operator": "keyof",
+                                          "typeAnnotation": {
+                                            "type": "TSTypeReference",
+                                            "typeName": {
+                                              "type": "Identifier",
+                                              "name": "ExtraProps",
+                                              "start": 586,
+                                              "end": 596
+                                            },
+                                            "start": 586,
+                                            "end": 596
+                                          },
+                                          "start": 580,
+                                          "end": 596
+                                        },
+                                        {
+                                          "type": "TSLiteralType",
+                                          "literal": {
+                                            "type": "Literal",
+                                            "value": "validateOnChange",
+                                            "start": 598,
+                                            "end": 616
+                                          },
+                                          "start": 598,
+                                          "end": 616
+                                        }
+                                      ],
+                                      "start": 579,
+                                      "end": 617
+                                    },
+                                    "start": 572,
+                                    "end": 617
+                                  }
+                                ],
+                                "start": 551,
+                                "end": 617
+                              }
+                            ],
+                            "start": 505,
+                            "end": 618
+                          },
+                          "start": 501,
+                          "end": 618
+                        }
+                      ],
+                      "start": 500,
+                      "end": 619
+                    },
+                    "start": 493,
+                    "end": 619
+                  }
+                ],
+                "start": 354,
+                "end": 619
+              },
+              "start": 225,
+              "end": 619
+            },
+            "start": 222,
+            "end": 620
+          },
+          "start": 221,
+          "end": 620
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 625,
+          "end": 629
+        },
+        "start": 623,
+        "end": 629
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "Values",
+              "start": 181,
+              "end": 187
+            },
+            "default": {
+              "type": "TSObjectKeyword",
+              "start": 190,
+              "end": 196
+            },
+            "start": 181,
+            "end": 196
+          },
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "ExtraProps",
+              "start": 198,
+              "end": 208
+            },
+            "default": {
+              "type": "TSTypeLiteral",
+              "members": [],
+              "start": 211,
+              "end": 213
+            },
+            "start": 198,
+            "end": 213
+          }
+        ],
+        "start": 180,
+        "end": 214
+      },
+      "start": 159,
+      "end": 630
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "Func",
+          "start": 634,
+          "end": 638
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "initialValues",
+                  "start": 646,
+                  "end": 659
+                },
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 672,
+                        "end": 675
+                      },
+                      "value": {
+                        "type": "Literal",
+                        "value": "",
+                        "start": 677,
+                        "end": 679
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 672,
+                      "end": 679
+                    }
+                  ],
+                  "start": 661,
+                  "end": 686
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 646,
+                "end": 686
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "validate",
+                  "start": 693,
+                  "end": 701
+                },
+                "value": {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "props",
+                      "start": 703,
+                      "end": 708
+                    }
+                  ],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "props",
+                            "start": 723,
+                            "end": 728
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "foo",
+                            "start": 729,
+                            "end": 732
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 723,
+                          "end": 732
+                        },
+                        "start": 723,
+                        "end": 733
+                      }
+                    ],
+                    "start": 712,
+                    "end": 740
+                  },
+                  "async": false,
+                  "expression": false,
+                  "start": 703,
+                  "end": 740
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 693,
+                "end": 740
+              }
+            ],
+            "start": 639,
+            "end": 743
+          }
+        ],
+        "optional": false,
+        "start": 634,
+        "end": 744
+      },
+      "start": 634,
+      "end": 745
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 745
+}

@@ -1,0 +1,253 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 18,
+              "end": 21
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSStringKeyword",
+                    "start": 23,
+                    "end": 29
+                  },
+                  {
+                    "type": "TSUndefinedKeyword",
+                    "start": 30,
+                    "end": 39
+                  }
+                ],
+                "start": 23,
+                "end": 39
+              },
+              "start": 21,
+              "end": 39
+            },
+            "start": 18,
+            "end": 39
+          }
+        ],
+        "start": 14,
+        "end": 41
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 10,
+        "end": 13
+      },
+      "start": 0,
+      "end": 41
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Str",
+        "start": 48,
+        "end": 51
+      },
+      "typeAnnotation": {
+        "type": "TSTypeReference",
+        "typeName": {
+          "type": "Identifier",
+          "name": "T",
+          "start": 72,
+          "end": 73
+        },
+        "start": 72,
+        "end": 73
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 52,
+              "end": 53
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 62,
+              "end": 68
+            },
+            "start": 52,
+            "end": 68
+          }
+        ],
+        "start": 51,
+        "end": 69
+      },
+      "start": 43,
+      "end": 73
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Bar",
+        "start": 80,
+        "end": 83
+      },
+      "typeAnnotation": {
+        "type": "TSConditionalType",
+        "checkType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "T",
+            "start": 92,
+            "end": 93
+          },
+          "start": 92,
+          "end": 93
+        },
+        "extendsType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 102,
+            "end": 105
+          },
+          "start": 102,
+          "end": 105
+        },
+        "trueType": {
+          "type": "TSConditionalType",
+          "checkType": {
+            "type": "TSIndexedAccessType",
+            "objectType": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 112,
+                "end": 113
+              },
+              "start": 112,
+              "end": 113
+            },
+            "indexType": {
+              "type": "TSLiteralType",
+              "literal": {
+                "type": "Literal",
+                "value": "foo",
+                "start": 114,
+                "end": 119
+              },
+              "start": 114,
+              "end": 119
+            },
+            "start": 112,
+            "end": 120
+          },
+          "extendsType": {
+            "type": "TSStringKeyword",
+            "start": 129,
+            "end": 135
+          },
+          "trueType": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "Str",
+              "start": 353,
+              "end": 356
+            },
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSIndexedAccessType",
+                  "objectType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 357,
+                      "end": 358
+                    },
+                    "start": 357,
+                    "end": 358
+                  },
+                  "indexType": {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "foo",
+                      "start": 359,
+                      "end": 364
+                    },
+                    "start": 359,
+                    "end": 364
+                  },
+                  "start": 357,
+                  "end": 365
+                }
+              ],
+              "start": 356,
+              "end": 366
+            },
+            "start": 353,
+            "end": 366
+          },
+          "falseType": {
+            "type": "TSNeverKeyword",
+            "start": 375,
+            "end": 380
+          },
+          "start": 112,
+          "end": 380
+        },
+        "falseType": {
+          "type": "TSNeverKeyword",
+          "start": 387,
+          "end": 392
+        },
+        "start": 92,
+        "end": 392
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 84,
+              "end": 85
+            },
+            "start": 84,
+            "end": 85
+          }
+        ],
+        "start": 83,
+        "end": 86
+      },
+      "start": 75,
+      "end": 392
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 392
+}

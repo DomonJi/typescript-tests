@@ -1,0 +1,160 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 558,
+            "end": 562
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "file",
+            "start": 563,
+            "end": 567
+          },
+          "computed": false,
+          "optional": false,
+          "start": 558,
+          "end": 567
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "bar.tsx",
+            "start": 568,
+            "end": 577
+          }
+        ],
+        "optional": false,
+        "start": 558,
+        "end": 578
+      },
+      "start": 558,
+      "end": 578
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 582,
+            "end": 588
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 589,
+            "end": 599
+          },
+          "computed": false,
+          "optional": false,
+          "start": 582,
+          "end": 599
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 607,
+                  "end": 612
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingImport",
+                  "start": 614,
+                  "end": 632
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 607,
+                "end": 632
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 639,
+                  "end": 656
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add all missing imports",
+                  "start": 658,
+                  "end": 683
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 639,
+                "end": 683
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 690,
+                  "end": 704
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "import Foo from \"./foo\";\r\n\r\nexport default function Bar(){\r\n    return <Foo></Foo>;\r\n}",
+                        "cooked": "import Foo from \"./foo\";\n\nexport default function Bar(){\n    return <Foo></Foo>;\n}"
+                      },
+                      "tail": true,
+                      "start": 707,
+                      "end": 795
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 707,
+                  "end": 795
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 690,
+                "end": 795
+              }
+            ],
+            "start": 600,
+            "end": 799
+          }
+        ],
+        "optional": false,
+        "start": 582,
+        "end": 800
+      },
+      "start": 582,
+      "end": 801
+    }
+  ],
+  "sourceType": "script",
+  "start": 558,
+  "end": 805
+}

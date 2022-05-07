@@ -1,0 +1,319 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "console",
+            "start": 26,
+            "end": 33
+          },
+          "init": null,
+          "start": 26,
+          "end": 33
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 14,
+      "end": 34
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Literal",
+        "value": "use strict",
+        "start": 36,
+        "end": 48
+      },
+      "start": 36,
+      "end": 49
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Test",
+        "start": 58,
+        "end": 62
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "Bug",
+                "start": 80,
+                "end": 83
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "getName",
+                      "start": 89,
+                      "end": 96
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "name",
+                              "start": 119,
+                              "end": 125
+                            },
+                            "start": 112,
+                            "end": 126
+                          }
+                        ],
+                        "start": 106,
+                        "end": 131
+                      },
+                      "params": [],
+                      "returnType": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 99,
+                          "end": 105
+                        },
+                        "start": 98,
+                        "end": 105
+                      },
+                      "start": 96,
+                      "end": 131
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 89,
+                    "end": 131
+                  },
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "bug",
+                      "start": 135,
+                      "end": 138
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "name",
+                                  "typeAnnotation": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSStringKeyword",
+                                      "start": 156,
+                                      "end": 162
+                                    },
+                                    "start": 155,
+                                    "end": 162
+                                  },
+                                  "start": 151,
+                                  "end": 162
+                                },
+                                "init": {
+                                  "type": "Literal",
+                                  "value": null,
+                                  "start": 164,
+                                  "end": 168
+                                },
+                                "start": 151,
+                                "end": 168
+                              }
+                            ],
+                            "kind": "var",
+                            "start": 147,
+                            "end": 169
+                          },
+                          {
+                            "type": "IfStatement",
+                            "test": {
+                              "type": "BinaryExpression",
+                              "operator": ">",
+                              "left": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "AssignmentExpression",
+                                  "operator": "=",
+                                  "left": {
+                                    "type": "Identifier",
+                                    "name": "name",
+                                    "start": 179,
+                                    "end": 183
+                                  },
+                                  "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "ThisExpression",
+                                        "start": 185,
+                                        "end": 189
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "getName",
+                                        "start": 190,
+                                        "end": 197
+                                      },
+                                      "computed": false,
+                                      "optional": false,
+                                      "start": 185,
+                                      "end": 197
+                                    },
+                                    "arguments": [],
+                                    "optional": false,
+                                    "start": 185,
+                                    "end": 199
+                                  },
+                                  "start": 179,
+                                  "end": 199
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "length",
+                                  "start": 201,
+                                  "end": 207
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 178,
+                                "end": 207
+                              },
+                              "right": {
+                                "type": "Literal",
+                                "value": 0,
+                                "start": 210,
+                                "end": 211
+                              },
+                              "start": 178,
+                              "end": 211
+                            },
+                            "consequent": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "console",
+                                        "start": 220,
+                                        "end": 227
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "log",
+                                        "start": 228,
+                                        "end": 231
+                                      },
+                                      "computed": false,
+                                      "optional": false,
+                                      "start": 220,
+                                      "end": 231
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "name",
+                                        "start": 232,
+                                        "end": 236
+                                      }
+                                    ],
+                                    "optional": false,
+                                    "start": 220,
+                                    "end": 237
+                                  },
+                                  "start": 220,
+                                  "end": 238
+                                }
+                              ],
+                              "start": 213,
+                              "end": 244
+                            },
+                            "alternate": null,
+                            "start": 174,
+                            "end": 244
+                          }
+                        ],
+                        "start": 141,
+                        "end": 249
+                      },
+                      "params": [],
+                      "start": 138,
+                      "end": 249
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "start": 135,
+                    "end": 249
+                  }
+                ],
+                "start": 84,
+                "end": 253
+              },
+              "superClass": null,
+              "start": 74,
+              "end": 253
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 67,
+            "end": 253
+          }
+        ],
+        "start": 63,
+        "end": 256
+      },
+      "start": 51,
+      "end": 256
+    }
+  ],
+  "sourceType": "script",
+  "start": 14,
+  "end": 265
+}

@@ -1,0 +1,844 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "assertIsElement",
+          "start": 60,
+          "end": 75
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "node",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Node",
+                      "start": 82,
+                      "end": 86
+                    },
+                    "start": 82,
+                    "end": 86
+                  },
+                  {
+                    "type": "TSNullKeyword",
+                    "start": 89,
+                    "end": 93
+                  }
+                ],
+                "start": 82,
+                "end": 93
+              },
+              "start": 80,
+              "end": 93
+            },
+            "start": 76,
+            "end": 93
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "nodeType",
+                    "start": 123,
+                    "end": 131
+                  },
+                  "init": {
+                    "type": "ConditionalExpression",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "===",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "node",
+                        "start": 134,
+                        "end": 138
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": null,
+                        "start": 143,
+                        "end": 147
+                      },
+                      "start": 134,
+                      "end": 147
+                    },
+                    "consequent": {
+                      "type": "Literal",
+                      "value": null,
+                      "start": 150,
+                      "end": 154
+                    },
+                    "alternate": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "node",
+                        "start": 157,
+                        "end": 161
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "nodeType",
+                        "start": 162,
+                        "end": 170
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 157,
+                      "end": 170
+                    },
+                    "start": 134,
+                    "end": 170
+                  },
+                  "start": 123,
+                  "end": 170
+                }
+              ],
+              "kind": "let",
+              "start": 119,
+              "end": 171
+            },
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "BinaryExpression",
+                "operator": "===",
+                "left": {
+                  "type": "Identifier",
+                  "name": "nodeType",
+                  "start": 184,
+                  "end": 192
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": 1,
+                  "start": 197,
+                  "end": 198
+                },
+                "start": 184,
+                "end": 198
+              },
+              "start": 177,
+              "end": 199
+            }
+          ],
+          "start": 112,
+          "end": 202
+        },
+        "returnType": {
+          "type": "TSTypeAnnotation",
+          "typeAnnotation": {
+            "type": "TSTypePredicate",
+            "asserts": false,
+            "parameterName": {
+              "type": "Identifier",
+              "name": "node",
+              "start": 96,
+              "end": 100
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Element",
+                  "start": 104,
+                  "end": 111
+                },
+                "start": 104,
+                "end": 111
+              },
+              "start": 104,
+              "end": 111
+            },
+            "start": 96,
+            "end": 111
+          },
+          "start": 94,
+          "end": 111
+        },
+        "start": 51,
+        "end": 202
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 44,
+      "end": 202
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "assertNodeTagName",
+          "start": 224,
+          "end": 241
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "node",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Node",
+                      "start": 326,
+                      "end": 330
+                    },
+                    "start": 326,
+                    "end": 330
+                  },
+                  {
+                    "type": "TSNullKeyword",
+                    "start": 333,
+                    "end": 337
+                  }
+                ],
+                "start": 326,
+                "end": 337
+              },
+              "start": 324,
+              "end": 337
+            },
+            "start": 320,
+            "end": 337
+          },
+          {
+            "type": "Identifier",
+            "name": "tagName",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 348,
+                  "end": 349
+                },
+                "start": 348,
+                "end": 349
+              },
+              "start": 346,
+              "end": 349
+            },
+            "start": 339,
+            "end": 349
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "IfStatement",
+              "test": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "assertIsElement",
+                  "start": 373,
+                  "end": 388
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "node",
+                    "start": 389,
+                    "end": 393
+                  }
+                ],
+                "optional": false,
+                "start": 373,
+                "end": 394
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "nodeTagName",
+                          "start": 413,
+                          "end": 424
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "node",
+                                "start": 427,
+                                "end": 431
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "tagName",
+                                "start": 432,
+                                "end": 439
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 427,
+                              "end": 439
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "toLowerCase",
+                              "start": 440,
+                              "end": 451
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 427,
+                            "end": 451
+                          },
+                          "arguments": [],
+                          "optional": false,
+                          "start": 427,
+                          "end": 453
+                        },
+                        "start": 413,
+                        "end": 453
+                      }
+                    ],
+                    "kind": "const",
+                    "start": 407,
+                    "end": 454
+                  },
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "BinaryExpression",
+                      "operator": "===",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "nodeTagName",
+                        "start": 472,
+                        "end": 483
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "tagName",
+                        "start": 488,
+                        "end": 495
+                      },
+                      "start": 472,
+                      "end": 495
+                    },
+                    "start": 465,
+                    "end": 496
+                  }
+                ],
+                "start": 396,
+                "end": 503
+              },
+              "alternate": null,
+              "start": 369,
+              "end": 503
+            },
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "Literal",
+                "value": false,
+                "start": 516,
+                "end": 521
+              },
+              "start": 509,
+              "end": 522
+            }
+          ],
+          "start": 362,
+          "end": 525
+        },
+        "returnType": {
+          "type": "TSTypeAnnotation",
+          "typeAnnotation": {
+            "type": "TSTypePredicate",
+            "asserts": false,
+            "parameterName": {
+              "type": "Identifier",
+              "name": "node",
+              "start": 352,
+              "end": 356
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "U",
+                  "start": 360,
+                  "end": 361
+                },
+                "start": 360,
+                "end": 361
+              },
+              "start": 360,
+              "end": 361
+            },
+            "start": 352,
+            "end": 361
+          },
+          "start": 350,
+          "end": 361
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 248,
+                "end": 249
+              },
+              "constraint": {
+                "type": "TSTypeOperator",
+                "operator": "keyof",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "ElementTagNameMap",
+                    "start": 264,
+                    "end": 281
+                  },
+                  "start": 264,
+                  "end": 281
+                },
+                "start": 258,
+                "end": 281
+              },
+              "start": 248,
+              "end": 281
+            },
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "U",
+                "start": 288,
+                "end": 289
+              },
+              "constraint": {
+                "type": "TSIndexedAccessType",
+                "objectType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "ElementTagNameMap",
+                    "start": 298,
+                    "end": 315
+                  },
+                  "start": 298,
+                  "end": 315
+                },
+                "indexType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "T",
+                    "start": 316,
+                    "end": 317
+                  },
+                  "start": 316,
+                  "end": 317
+                },
+                "start": 298,
+                "end": 318
+              },
+              "start": 288,
+              "end": 318
+            }
+          ],
+          "start": 241,
+          "end": 319
+        },
+        "start": 215,
+        "end": 525
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 208,
+      "end": 525
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "assertNodeProperty",
+          "start": 547,
+          "end": 565
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "node",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "Node",
+                      "start": 700,
+                      "end": 704
+                    },
+                    "start": 700,
+                    "end": 704
+                  },
+                  {
+                    "type": "TSNullKeyword",
+                    "start": 707,
+                    "end": 711
+                  }
+                ],
+                "start": 700,
+                "end": 711
+              },
+              "start": 698,
+              "end": 711
+            },
+            "start": 694,
+            "end": 711
+          },
+          {
+            "type": "Identifier",
+            "name": "tagName",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 722,
+                  "end": 723
+                },
+                "start": 722,
+                "end": 723
+              },
+              "start": 720,
+              "end": 723
+            },
+            "start": 713,
+            "end": 723
+          },
+          {
+            "type": "Identifier",
+            "name": "prop",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "P",
+                  "start": 731,
+                  "end": 732
+                },
+                "start": 731,
+                "end": 732
+              },
+              "start": 729,
+              "end": 732
+            },
+            "start": 725,
+            "end": 732
+          },
+          {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "V",
+                  "start": 741,
+                  "end": 742
+                },
+                "start": 741,
+                "end": 742
+              },
+              "start": 739,
+              "end": 742
+            },
+            "start": 734,
+            "end": 742
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "IfStatement",
+              "test": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "assertNodeTagName",
+                  "start": 755,
+                  "end": 772
+                },
+                "arguments": [
+                  {
+                    "type": "Identifier",
+                    "name": "node",
+                    "start": 773,
+                    "end": 777
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "tagName",
+                    "start": 779,
+                    "end": 786
+                  }
+                ],
+                "optional": false,
+                "start": 755,
+                "end": 787
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "node",
+                        "start": 800,
+                        "end": 804
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "prop",
+                        "start": 805,
+                        "end": 809
+                      },
+                      "computed": true,
+                      "optional": false,
+                      "start": 800,
+                      "end": 810
+                    },
+                    "start": 800,
+                    "end": 811
+                  }
+                ],
+                "start": 789,
+                "end": 818
+              },
+              "alternate": null,
+              "start": 751,
+              "end": 818
+            }
+          ],
+          "start": 744,
+          "end": 821
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 572,
+                "end": 573
+              },
+              "constraint": {
+                "type": "TSTypeOperator",
+                "operator": "keyof",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "ElementTagNameMap",
+                    "start": 588,
+                    "end": 605
+                  },
+                  "start": 588,
+                  "end": 605
+                },
+                "start": 582,
+                "end": 605
+              },
+              "start": 572,
+              "end": 605
+            },
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "P",
+                "start": 612,
+                "end": 613
+              },
+              "constraint": {
+                "type": "TSTypeOperator",
+                "operator": "keyof",
+                "typeAnnotation": {
+                  "type": "TSIndexedAccessType",
+                  "objectType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "ElementTagNameMap",
+                      "start": 628,
+                      "end": 645
+                    },
+                    "start": 628,
+                    "end": 645
+                  },
+                  "indexType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 646,
+                      "end": 647
+                    },
+                    "start": 646,
+                    "end": 647
+                  },
+                  "start": 628,
+                  "end": 648
+                },
+                "start": 622,
+                "end": 648
+              },
+              "start": 612,
+              "end": 648
+            },
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "V",
+                "start": 655,
+                "end": 656
+              },
+              "constraint": {
+                "type": "TSIndexedAccessType",
+                "objectType": {
+                  "type": "TSIndexedAccessType",
+                  "objectType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "HTMLElementTagNameMap",
+                      "start": 665,
+                      "end": 686
+                    },
+                    "start": 665,
+                    "end": 686
+                  },
+                  "indexType": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 687,
+                      "end": 688
+                    },
+                    "start": 687,
+                    "end": 688
+                  },
+                  "start": 665,
+                  "end": 689
+                },
+                "indexType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "P",
+                    "start": 690,
+                    "end": 691
+                  },
+                  "start": 690,
+                  "end": 691
+                },
+                "start": 665,
+                "end": 692
+              },
+              "start": 655,
+              "end": 692
+            }
+          ],
+          "start": 565,
+          "end": 693
+        },
+        "start": 538,
+        "end": 821
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 531,
+      "end": 821
+    }
+  ],
+  "sourceType": "module",
+  "start": 44,
+  "end": 823
+}

@@ -1,0 +1,199 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 558,
+            "end": 562
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "file",
+            "start": 563,
+            "end": 567
+          },
+          "computed": false,
+          "optional": false,
+          "start": 558,
+          "end": 567
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "imports.ts",
+            "start": 568,
+            "end": 580
+          }
+        ],
+        "optional": false,
+        "start": 558,
+        "end": 581
+      },
+      "start": 558,
+      "end": 582
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 583,
+            "end": 589
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 590,
+            "end": 600
+          },
+          "computed": false,
+          "optional": false,
+          "start": 583,
+          "end": 600
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 605,
+                  "end": 610
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "convertToTypeOnlyImport",
+                  "start": 612,
+                  "end": 637
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 605,
+                "end": 637
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 641,
+                  "end": 658
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 660,
+                        "end": 662
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 663,
+                        "end": 674
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 660,
+                      "end": 674
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Convert_all_imports_not_used_as_a_value_to_type_only_imports",
+                      "start": 675,
+                      "end": 735
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 660,
+                    "end": 735
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 736,
+                    "end": 743
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 660,
+                  "end": 743
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 641,
+                "end": 743
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 747,
+                  "end": 761
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "import type A from './exports1';\nimport type { B, C } from './exports1';\nimport type D from \"./exports2\";\nimport type * as others from \"./exports2\";\n\ndeclare const a: A;\ndeclare const b: B;\ndeclare const c: C;\ndeclare const d: D;\ndeclare const o: typeof others;\nconsole.log(a, b, c, d, o);",
+                        "cooked": "import type A from './exports1';\nimport type { B, C } from './exports1';\nimport type D from \"./exports2\";\nimport type * as others from \"./exports2\";\n\ndeclare const a: A;\ndeclare const b: B;\ndeclare const c: C;\ndeclare const d: D;\ndeclare const o: typeof others;\nconsole.log(a, b, c, d, o);"
+                      },
+                      "tail": true,
+                      "start": 763,
+                      "end": 1054
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 763,
+                  "end": 1054
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 747,
+                "end": 1054
+              }
+            ],
+            "start": 601,
+            "end": 1056
+          }
+        ],
+        "optional": false,
+        "start": 583,
+        "end": 1057
+      },
+      "start": 583,
+      "end": 1058
+    }
+  ],
+  "sourceType": "script",
+  "start": 558,
+  "end": 1059
+}

@@ -1,0 +1,289 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "test",
+        "start": 36,
+        "end": 40
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "strOrNull",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 52,
+                  "end": 58
+                },
+                {
+                  "type": "TSNullKeyword",
+                  "start": 61,
+                  "end": 65
+                }
+              ],
+              "start": 52,
+              "end": 65
+            },
+            "start": 50,
+            "end": 65
+          },
+          "start": 41,
+          "end": 65
+        },
+        {
+          "type": "Identifier",
+          "name": "strOrUndefined",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 83,
+                  "end": 89
+                },
+                {
+                  "type": "TSUndefinedKeyword",
+                  "start": 92,
+                  "end": 101
+                }
+              ],
+              "start": 83,
+              "end": 101
+            },
+            "start": 81,
+            "end": 101
+          },
+          "start": 67,
+          "end": 101
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "str",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 118,
+                      "end": 124
+                    },
+                    "start": 116,
+                    "end": 124
+                  },
+                  "start": 113,
+                  "end": 124
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": "original",
+                  "start": 127,
+                  "end": 137
+                },
+                "start": 113,
+                "end": 137
+              }
+            ],
+            "kind": "var",
+            "start": 109,
+            "end": 138
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "nil",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNullKeyword",
+                      "start": 152,
+                      "end": 156
+                    },
+                    "start": 150,
+                    "end": 156
+                  },
+                  "start": 147,
+                  "end": 156
+                },
+                "init": null,
+                "start": 147,
+                "end": 156
+              }
+            ],
+            "kind": "var",
+            "start": 143,
+            "end": 157
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "Literal",
+                "value": null,
+                "start": 166,
+                "end": 170
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrNull",
+                "start": 175,
+                "end": 184
+              },
+              "start": 166,
+              "end": 184
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "nil",
+                      "start": 196,
+                      "end": 199
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "strOrNull",
+                      "start": 202,
+                      "end": 211
+                    },
+                    "start": 196,
+                    "end": 211
+                  },
+                  "start": 196,
+                  "end": 212
+                }
+              ],
+              "start": 186,
+              "end": 218
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "str",
+                      "start": 238,
+                      "end": 241
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "strOrNull",
+                      "start": 244,
+                      "end": 253
+                    },
+                    "start": 238,
+                    "end": 253
+                  },
+                  "start": 238,
+                  "end": 254
+                }
+              ],
+              "start": 228,
+              "end": 260
+            },
+            "start": 162,
+            "end": 260
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "Identifier",
+                "name": "undefined",
+                "start": 269,
+                "end": 278
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "strOrUndefined",
+                "start": 283,
+                "end": 297
+              },
+              "start": 269,
+              "end": 297
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "str",
+                      "start": 309,
+                      "end": 312
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "strOrUndefined",
+                      "start": 315,
+                      "end": 329
+                    },
+                    "start": 309,
+                    "end": 329
+                  },
+                  "start": 309,
+                  "end": 330
+                }
+              ],
+              "start": 299,
+              "end": 336
+            },
+            "alternate": null,
+            "start": 265,
+            "end": 336
+          }
+        ],
+        "start": 103,
+        "end": 338
+      },
+      "start": 27,
+      "end": 338
+    }
+  ],
+  "sourceType": "script",
+  "start": 27,
+  "end": 339
+}

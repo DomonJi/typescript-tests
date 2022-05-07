@@ -1,0 +1,386 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 43,
+              "end": 44
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 46,
+                "end": 52
+              },
+              "start": 44,
+              "end": 52
+            },
+            "start": 43,
+            "end": 53
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 58,
+              "end": 59
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 61,
+                "end": 67
+              },
+              "start": 59,
+              "end": 67
+            },
+            "start": 58,
+            "end": 68
+          },
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "c",
+              "start": 73,
+              "end": 74
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 76,
+                "end": 83
+              },
+              "start": 74,
+              "end": 83
+            },
+            "start": 73,
+            "end": 84
+          }
+        ],
+        "start": 37,
+        "end": 86
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Foo",
+        "start": 33,
+        "end": 36
+      },
+      "start": 23,
+      "end": 86
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Bar",
+          "start": 100,
+          "end": 103
+        },
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Omit",
+            "start": 106,
+            "end": 110
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 111,
+                  "end": 114
+                },
+                "start": 111,
+                "end": 114
+              },
+              {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "c",
+                  "start": 116,
+                  "end": 119
+                },
+                "start": 116,
+                "end": 119
+              }
+            ],
+            "start": 110,
+            "end": 120
+          },
+          "start": 106,
+          "end": 120
+        },
+        "start": 95,
+        "end": 121
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 88,
+      "end": 121
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Baz",
+          "start": 134,
+          "end": 137
+        },
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Omit",
+            "start": 140,
+            "end": 144
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 145,
+                  "end": 148
+                },
+                "start": 145,
+                "end": 148
+              },
+              {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "b",
+                      "start": 150,
+                      "end": 153
+                    },
+                    "start": 150,
+                    "end": 153
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "c",
+                      "start": 156,
+                      "end": 159
+                    },
+                    "start": 156,
+                    "end": 159
+                  }
+                ],
+                "start": 150,
+                "end": 159
+              }
+            ],
+            "start": 144,
+            "end": 160
+          },
+          "start": 140,
+          "end": 160
+        },
+        "start": 129,
+        "end": 161
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 122,
+      "end": 161
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "getBarA",
+          "start": 179,
+          "end": 186
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "bar",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Bar",
+                  "start": 192,
+                  "end": 195
+                },
+                "start": 192,
+                "end": 195
+              },
+              "start": 190,
+              "end": 195
+            },
+            "start": 187,
+            "end": 195
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "bar",
+                  "start": 210,
+                  "end": 213
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 214,
+                  "end": 215
+                },
+                "computed": false,
+                "optional": false,
+                "start": 210,
+                "end": 215
+              },
+              "start": 203,
+              "end": 216
+            }
+          ],
+          "start": 197,
+          "end": 218
+        },
+        "start": 170,
+        "end": 218
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 163,
+      "end": 218
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "getBazA",
+          "start": 236,
+          "end": 243
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "baz",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Baz",
+                  "start": 249,
+                  "end": 252
+                },
+                "start": 249,
+                "end": 252
+              },
+              "start": 247,
+              "end": 252
+            },
+            "start": 244,
+            "end": 252
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ReturnStatement",
+              "argument": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "baz",
+                  "start": 267,
+                  "end": 270
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 271,
+                  "end": 272
+                },
+                "computed": false,
+                "optional": false,
+                "start": 267,
+                "end": 272
+              },
+              "start": 260,
+              "end": 273
+            }
+          ],
+          "start": 254,
+          "end": 275
+        },
+        "start": 227,
+        "end": 275
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 220,
+      "end": 275
+    }
+  ],
+  "sourceType": "module",
+  "start": 23,
+  "end": 277
+}

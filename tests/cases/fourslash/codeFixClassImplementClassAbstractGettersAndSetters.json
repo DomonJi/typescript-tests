@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 280,
+            "end": 286
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 287,
+            "end": 294
+          },
+          "computed": false,
+          "optional": false,
+          "start": 280,
+          "end": 294
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 302,
+                  "end": 313
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'A'",
+                  "start": 315,
+                  "end": 340
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 302,
+                "end": 340
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 347,
+                  "end": 361
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A {\r\n    abstract get a(): string;\r\n    abstract set a(newName: string);\r\n\r\n    abstract get b(): number;\r\n\r\n    abstract set c(arg: number | string);\r\n}\r\n\r\nclass C implements A {\r\n    get a(): string {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    set a(newName: string) {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    get b(): number {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n    set c(arg: string | number) {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "abstract class A {\n    abstract get a(): string;\n    abstract set a(newName: string);\n\n    abstract get b(): number;\n\n    abstract set c(arg: number | string);\n}\n\nclass C implements A {\n    get a(): string {\n        throw new Error(\"Method not implemented.\");\n    }\n    set a(newName: string) {\n        throw new Error(\"Method not implemented.\");\n    }\n    get b(): number {\n        throw new Error(\"Method not implemented.\");\n    }\n    set c(arg: string | number) {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 364,
+                      "end": 914
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 364,
+                  "end": 914
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 347,
+                "end": 914
+              }
+            ],
+            "start": 295,
+            "end": 918
+          }
+        ],
+        "optional": false,
+        "start": 280,
+        "end": 919
+      },
+      "start": 280,
+      "end": 920
+    }
+  ],
+  "sourceType": "script",
+  "start": 280,
+  "end": 922
+}

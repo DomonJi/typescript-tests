@@ -1,0 +1,171 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Foo",
+          "start": 82,
+          "end": 85
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "PropertyDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 88,
+                "end": 91
+              },
+              "value": null,
+              "computed": false,
+              "static": false,
+              "declare": false,
+              "override": false,
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 93,
+                  "end": 99
+                },
+                "start": 91,
+                "end": 99
+              },
+              "start": 88,
+              "end": 100
+            }
+          ],
+          "start": 86,
+          "end": 102
+        },
+        "superClass": null,
+        "start": 76,
+        "end": 102
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 69,
+      "end": 102
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Bar",
+        "start": 220,
+        "end": 223
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "instanceOfInExternalModules_require",
+          "start": 234,
+          "end": 271
+        },
+        "start": 226,
+        "end": 272
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 213,
+      "end": 273
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "IsFoo",
+        "start": 283,
+        "end": 288
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "value",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 296,
+              "end": 299
+            },
+            "start": 294,
+            "end": 299
+          },
+          "start": 289,
+          "end": 299
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "BinaryExpression",
+              "operator": "instanceof",
+              "left": {
+                "type": "Identifier",
+                "name": "value",
+                "start": 323,
+                "end": 328
+              },
+              "right": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "Bar",
+                  "start": 340,
+                  "end": 343
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "Foo",
+                  "start": 344,
+                  "end": 347
+                },
+                "computed": false,
+                "optional": false,
+                "start": 340,
+                "end": 347
+              },
+              "start": 323,
+              "end": 347
+            },
+            "start": 316,
+            "end": 348
+          }
+        ],
+        "start": 310,
+        "end": 350
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSBooleanKeyword",
+          "start": 302,
+          "end": 309
+        },
+        "start": 300,
+        "end": 309
+      },
+      "start": 274,
+      "end": 350
+    }
+  ],
+  "sourceType": "module",
+  "start": 69,
+  "end": 351
+}

@@ -1,0 +1,336 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Parent",
+        "start": 26,
+        "end": 32
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "PrivateIdentifier",
+              "name": "foo",
+              "start": 42,
+              "end": 46
+            },
+            "value": {
+              "type": "Literal",
+              "value": 3,
+              "start": 49,
+              "end": 50
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 42,
+            "end": 51
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "PrivateIdentifier",
+              "name": "bar",
+              "start": 63,
+              "end": 67
+            },
+            "value": {
+              "type": "Literal",
+              "value": 5,
+              "start": 70,
+              "end": 71
+            },
+            "computed": false,
+            "static": true,
+            "declare": false,
+            "override": false,
+            "start": 56,
+            "end": 72
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "accessChildProps",
+              "start": 77,
+              "end": 93
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "NewExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "Child",
+                          "start": 110,
+                          "end": 115
+                        },
+                        "arguments": [],
+                        "typeParameters": {
+                          "type": "TSTypeParameterInstantiation",
+                          "params": [
+                            {
+                              "type": "TSStringKeyword",
+                              "start": 116,
+                              "end": 122
+                            }
+                          ],
+                          "start": 115,
+                          "end": 123
+                        },
+                        "start": 106,
+                        "end": 125
+                      },
+                      "property": {
+                        "type": "PrivateIdentifier",
+                        "name": "foo",
+                        "start": 126,
+                        "end": 130
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 106,
+                      "end": 130
+                    },
+                    "start": 106,
+                    "end": 131
+                  },
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "Child",
+                        "start": 215,
+                        "end": 220
+                      },
+                      "property": {
+                        "type": "PrivateIdentifier",
+                        "name": "bar",
+                        "start": 221,
+                        "end": 225
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 215,
+                      "end": 225
+                    },
+                    "start": 215,
+                    "end": 226
+                  }
+                ],
+                "start": 96,
+                "end": 258
+              },
+              "params": [],
+              "start": 93,
+              "end": 258
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 77,
+            "end": 258
+          }
+        ],
+        "start": 36,
+        "end": 260
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 33,
+              "end": 34
+            },
+            "start": 33,
+            "end": 34
+          }
+        ],
+        "start": 32,
+        "end": 35
+      },
+      "start": 20,
+      "end": 260
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Child",
+        "start": 268,
+        "end": 273
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "PrivateIdentifier",
+              "name": "foo",
+              "start": 301,
+              "end": 305
+            },
+            "value": {
+              "type": "Literal",
+              "value": "foo",
+              "start": 308,
+              "end": 313
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 301,
+            "end": 314
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "PrivateIdentifier",
+              "name": "bar",
+              "start": 404,
+              "end": 408
+            },
+            "value": {
+              "type": "Literal",
+              "value": "bar",
+              "start": 411,
+              "end": 416
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 404,
+            "end": 417
+          }
+        ],
+        "start": 295,
+        "end": 431
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Parent",
+        "start": 285,
+        "end": 291
+      },
+      "superTypeParameters": {
+        "type": "TSTypeParameterInstantiation",
+        "params": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 292,
+              "end": 293
+            },
+            "start": 292,
+            "end": 293
+          }
+        ],
+        "start": 291,
+        "end": 294
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 274,
+              "end": 275
+            },
+            "start": 274,
+            "end": 275
+          }
+        ],
+        "start": 273,
+        "end": 276
+      },
+      "start": 262,
+      "end": 431
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "Parent",
+              "start": 437,
+              "end": 443
+            },
+            "arguments": [],
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSNumberKeyword",
+                  "start": 444,
+                  "end": 450
+                }
+              ],
+              "start": 443,
+              "end": 451
+            },
+            "start": 433,
+            "end": 453
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "accessChildProps",
+            "start": 454,
+            "end": 470
+          },
+          "computed": false,
+          "optional": false,
+          "start": 433,
+          "end": 470
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 433,
+        "end": 472
+      },
+      "start": 433,
+      "end": 473
+    }
+  ],
+  "sourceType": "script",
+  "start": 20,
+  "end": 474
+}

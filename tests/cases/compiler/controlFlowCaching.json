@@ -1,0 +1,3412 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 61,
+        "end": 62
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "dim",
+          "start": 63,
+          "end": 66
+        },
+        {
+          "type": "Identifier",
+          "name": "offsets",
+          "start": 68,
+          "end": 75
+        },
+        {
+          "type": "Identifier",
+          "name": "arr",
+          "start": 77,
+          "end": 80
+        },
+        {
+          "type": "Identifier",
+          "name": "acommon",
+          "start": 82,
+          "end": 89
+        },
+        {
+          "type": "Identifier",
+          "name": "centerAnchorLimit",
+          "start": 91,
+          "end": 108
+        },
+        {
+          "type": "Identifier",
+          "name": "g",
+          "start": 110,
+          "end": 111
+        },
+        {
+          "type": "Identifier",
+          "name": "has",
+          "start": 113,
+          "end": 116
+        },
+        {
+          "type": "Identifier",
+          "name": "lin",
+          "start": 118,
+          "end": 121
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "isRtl",
+                  "start": 134,
+                  "end": 139
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "ThisExpression",
+                      "start": 142,
+                      "end": 146
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "_isRtl",
+                      "start": 147,
+                      "end": 153
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 142,
+                    "end": 153
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 142,
+                  "end": 155
+                },
+                "start": 134,
+                "end": 155
+              }
+            ],
+            "kind": "var",
+            "start": 130,
+            "end": 156
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "o",
+                  "start": 211,
+                  "end": 212
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "ThisExpression",
+                    "start": 215,
+                    "end": 219
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "opt",
+                    "start": 220,
+                    "end": 223
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 215,
+                  "end": 223
+                },
+                "start": 211,
+                "end": 223
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "ta",
+                  "start": 225,
+                  "end": 227
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression",
+                        "start": 230,
+                        "end": 234
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "chart",
+                        "start": 235,
+                        "end": 240
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 230,
+                      "end": 240
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "theme",
+                      "start": 241,
+                      "end": 246
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 230,
+                    "end": 246
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "axis",
+                    "start": 247,
+                    "end": 251
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 230,
+                  "end": 251
+                },
+                "start": 225,
+                "end": 251
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "position",
+                  "start": 253,
+                  "end": 261
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "o",
+                    "start": 264,
+                    "end": 265
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "position",
+                    "start": 266,
+                    "end": 274
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 264,
+                  "end": 274
+                },
+                "start": 253,
+                "end": 274
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "leftBottom",
+                  "start": 285,
+                  "end": 295
+                },
+                "init": {
+                  "type": "BinaryExpression",
+                  "operator": "!==",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "position",
+                    "start": 298,
+                    "end": 306
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": "rightOrTop",
+                    "start": 311,
+                    "end": 323
+                  },
+                  "start": 298,
+                  "end": 323
+                },
+                "start": 285,
+                "end": 323
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "rotation",
+                  "start": 325,
+                  "end": 333
+                },
+                "init": {
+                  "type": "BinaryExpression",
+                  "operator": "%",
+                  "left": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 336,
+                      "end": 337
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "rotation",
+                      "start": 338,
+                      "end": 346
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 336,
+                    "end": 346
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": 360,
+                    "start": 349,
+                    "end": 352
+                  },
+                  "start": 336,
+                  "end": 352
+                },
+                "start": 325,
+                "end": 352
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "start",
+                  "start": 363,
+                  "end": 368
+                },
+                "init": null,
+                "start": 363,
+                "end": 368
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "stop",
+                  "start": 370,
+                  "end": 374
+                },
+                "init": null,
+                "start": 370,
+                "end": 374
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "titlePos",
+                  "start": 376,
+                  "end": 384
+                },
+                "init": null,
+                "start": 376,
+                "end": 384
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "titleRotation",
+                  "start": 386,
+                  "end": 399
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 402,
+                  "end": 403
+                },
+                "start": 386,
+                "end": 403
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "titleOffset",
+                  "start": 405,
+                  "end": 416
+                },
+                "init": null,
+                "start": 405,
+                "end": 416
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "axisVector",
+                  "start": 418,
+                  "end": 428
+                },
+                "init": null,
+                "start": 418,
+                "end": 428
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "tickVector",
+                  "start": 430,
+                  "end": 440
+                },
+                "init": null,
+                "start": 430,
+                "end": 440
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "anchorOffset",
+                  "start": 442,
+                  "end": 454
+                },
+                "init": null,
+                "start": 442,
+                "end": 454
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "labelOffset",
+                  "start": 456,
+                  "end": 467
+                },
+                "init": null,
+                "start": 456,
+                "end": 467
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "labelAlign",
+                  "start": 469,
+                  "end": 479
+                },
+                "init": null,
+                "start": 469,
+                "end": 479
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "labelGap",
+                  "start": 490,
+                  "end": 498
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "ThisExpression",
+                            "start": 501,
+                            "end": 505
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "chart",
+                            "start": 506,
+                            "end": 511
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 501,
+                          "end": 511
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "theme",
+                          "start": 512,
+                          "end": 517
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 501,
+                        "end": 517
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "axis",
+                        "start": 518,
+                        "end": 522
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 501,
+                      "end": 522
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "tick",
+                      "start": 523,
+                      "end": 527
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 501,
+                    "end": 527
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "labelGap",
+                    "start": 528,
+                    "end": 536
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 501,
+                  "end": 536
+                },
+                "start": 490,
+                "end": 536
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taFont",
+                  "start": 547,
+                  "end": 553
+                },
+                "init": {
+                  "type": "LogicalExpression",
+                  "operator": "||",
+                  "left": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "o",
+                        "start": 556,
+                        "end": 557
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "font",
+                        "start": 558,
+                        "end": 562
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 556,
+                      "end": 562
+                    },
+                    "right": {
+                      "type": "LogicalExpression",
+                      "operator": "&&",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ta",
+                          "start": 567,
+                          "end": 569
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "majorTick",
+                          "start": 570,
+                          "end": 579
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 567,
+                        "end": 579
+                      },
+                      "right": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ta",
+                            "start": 583,
+                            "end": 585
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "majorTick",
+                            "start": 586,
+                            "end": 595
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 583,
+                          "end": 595
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "font",
+                          "start": 596,
+                          "end": 600
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 583,
+                        "end": 600
+                      },
+                      "start": 567,
+                      "end": 600
+                    },
+                    "start": 556,
+                    "end": 601
+                  },
+                  "right": {
+                    "type": "LogicalExpression",
+                    "operator": "&&",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ta",
+                        "start": 606,
+                        "end": 608
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "tick",
+                        "start": 609,
+                        "end": 613
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 606,
+                      "end": 613
+                    },
+                    "right": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ta",
+                          "start": 617,
+                          "end": 619
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "tick",
+                          "start": 620,
+                          "end": 624
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 617,
+                        "end": 624
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "font",
+                        "start": 625,
+                        "end": 629
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 617,
+                      "end": 629
+                    },
+                    "start": 606,
+                    "end": 629
+                  },
+                  "start": 556,
+                  "end": 630
+                },
+                "start": 547,
+                "end": 630
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taTitleFont",
+                  "start": 641,
+                  "end": 652
+                },
+                "init": {
+                  "type": "LogicalExpression",
+                  "operator": "||",
+                  "left": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 655,
+                      "end": 656
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "titleFont",
+                      "start": 657,
+                      "end": 666
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 655,
+                    "end": 666
+                  },
+                  "right": {
+                    "type": "LogicalExpression",
+                    "operator": "&&",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ta",
+                        "start": 671,
+                        "end": 673
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "title",
+                        "start": 674,
+                        "end": 679
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 671,
+                      "end": 679
+                    },
+                    "right": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ta",
+                          "start": 683,
+                          "end": 685
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "title",
+                          "start": 686,
+                          "end": 691
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 683,
+                        "end": 691
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "font",
+                        "start": 692,
+                        "end": 696
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 683,
+                      "end": 696
+                    },
+                    "start": 671,
+                    "end": 696
+                  },
+                  "start": 655,
+                  "end": 697
+                },
+                "start": 641,
+                "end": 697
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taFontColor",
+                  "start": 708,
+                  "end": 719
+                },
+                "init": {
+                  "type": "LogicalExpression",
+                  "operator": "||",
+                  "left": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "LogicalExpression",
+                      "operator": "||",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "o",
+                          "start": 722,
+                          "end": 723
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "fontColor",
+                          "start": 724,
+                          "end": 733
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 722,
+                        "end": 733
+                      },
+                      "right": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ta",
+                            "start": 738,
+                            "end": 740
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "majorTick",
+                            "start": 741,
+                            "end": 750
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 738,
+                          "end": 750
+                        },
+                        "right": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "ta",
+                              "start": 754,
+                              "end": 756
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "majorTick",
+                              "start": 757,
+                              "end": 766
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 754,
+                            "end": 766
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "fontColor",
+                            "start": 767,
+                            "end": 776
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 754,
+                          "end": 776
+                        },
+                        "start": 738,
+                        "end": 776
+                      },
+                      "start": 722,
+                      "end": 777
+                    },
+                    "right": {
+                      "type": "LogicalExpression",
+                      "operator": "&&",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ta",
+                          "start": 782,
+                          "end": 784
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "tick",
+                          "start": 785,
+                          "end": 789
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 782,
+                        "end": 789
+                      },
+                      "right": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ta",
+                            "start": 793,
+                            "end": 795
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "tick",
+                            "start": 796,
+                            "end": 800
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 793,
+                          "end": 800
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "fontColor",
+                          "start": 801,
+                          "end": 810
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 793,
+                        "end": 810
+                      },
+                      "start": 782,
+                      "end": 810
+                    },
+                    "start": 722,
+                    "end": 811
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": "black",
+                    "start": 815,
+                    "end": 822
+                  },
+                  "start": 722,
+                  "end": 822
+                },
+                "start": 708,
+                "end": 822
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taTitleFontColor",
+                  "start": 833,
+                  "end": 849
+                },
+                "init": {
+                  "type": "LogicalExpression",
+                  "operator": "||",
+                  "left": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "o",
+                        "start": 852,
+                        "end": 853
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "titleFontColor",
+                        "start": 854,
+                        "end": 868
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 852,
+                      "end": 868
+                    },
+                    "right": {
+                      "type": "LogicalExpression",
+                      "operator": "&&",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ta",
+                          "start": 873,
+                          "end": 875
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "title",
+                          "start": 876,
+                          "end": 881
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 873,
+                        "end": 881
+                      },
+                      "right": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ta",
+                            "start": 885,
+                            "end": 887
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "title",
+                            "start": 888,
+                            "end": 893
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 885,
+                          "end": 893
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "fontColor",
+                          "start": 894,
+                          "end": 903
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 885,
+                        "end": 903
+                      },
+                      "start": 873,
+                      "end": 903
+                    },
+                    "start": 852,
+                    "end": 904
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": "black",
+                    "start": 908,
+                    "end": 915
+                  },
+                  "start": 852,
+                  "end": 915
+                },
+                "start": 833,
+                "end": 915
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taTitleGap",
+                  "start": 926,
+                  "end": 936
+                },
+                "init": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "==",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "o",
+                        "start": 940,
+                        "end": 941
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "titleGap",
+                        "start": 942,
+                        "end": 950
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 940,
+                      "end": 950
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 0,
+                      "start": 954,
+                      "end": 955
+                    },
+                    "start": 940,
+                    "end": 955
+                  },
+                  "consequent": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 959,
+                    "end": 960
+                  },
+                  "alternate": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "LogicalExpression",
+                      "operator": "||",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "o",
+                          "start": 963,
+                          "end": 964
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "titleGap",
+                          "start": 965,
+                          "end": 973
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 963,
+                        "end": 973
+                      },
+                      "right": {
+                        "type": "LogicalExpression",
+                        "operator": "&&",
+                        "left": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ta",
+                            "start": 978,
+                            "end": 980
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "title",
+                            "start": 981,
+                            "end": 986
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 978,
+                          "end": 986
+                        },
+                        "right": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "ta",
+                              "start": 990,
+                              "end": 992
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "title",
+                              "start": 993,
+                              "end": 998
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 990,
+                            "end": 998
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "gap",
+                            "start": 999,
+                            "end": 1002
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 990,
+                          "end": 1002
+                        },
+                        "start": 978,
+                        "end": 1002
+                      },
+                      "start": 963,
+                      "end": 1003
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 15,
+                      "start": 1007,
+                      "end": 1009
+                    },
+                    "start": 963,
+                    "end": 1009
+                  },
+                  "start": 939,
+                  "end": 1009
+                },
+                "start": 926,
+                "end": 1009
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taTitleOrientation",
+                  "start": 1020,
+                  "end": 1038
+                },
+                "init": {
+                  "type": "LogicalExpression",
+                  "operator": "||",
+                  "left": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "o",
+                        "start": 1041,
+                        "end": 1042
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "titleOrientation",
+                        "start": 1043,
+                        "end": 1059
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1041,
+                      "end": 1059
+                    },
+                    "right": {
+                      "type": "LogicalExpression",
+                      "operator": "&&",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "ta",
+                          "start": 1064,
+                          "end": 1066
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "title",
+                          "start": 1067,
+                          "end": 1072
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1064,
+                        "end": 1072
+                      },
+                      "right": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ta",
+                            "start": 1076,
+                            "end": 1078
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "title",
+                            "start": 1079,
+                            "end": 1084
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 1076,
+                          "end": 1084
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "orientation",
+                          "start": 1085,
+                          "end": 1096
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1076,
+                        "end": 1096
+                      },
+                      "start": 1064,
+                      "end": 1096
+                    },
+                    "start": 1041,
+                    "end": 1097
+                  },
+                  "right": {
+                    "type": "Literal",
+                    "value": "axis",
+                    "start": 1101,
+                    "end": 1107
+                  },
+                  "start": 1041,
+                  "end": 1107
+                },
+                "start": 1020,
+                "end": 1107
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taMajorTick",
+                  "start": 1118,
+                  "end": 1129
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 1132,
+                          "end": 1136
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "chart",
+                          "start": 1137,
+                          "end": 1142
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1132,
+                        "end": 1142
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "theme",
+                        "start": 1143,
+                        "end": 1148
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1132,
+                      "end": 1148
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "getTick",
+                      "start": 1149,
+                      "end": 1156
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1132,
+                    "end": 1156
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "major",
+                      "start": 1157,
+                      "end": 1164
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 1166,
+                      "end": 1167
+                    }
+                  ],
+                  "optional": false,
+                  "start": 1132,
+                  "end": 1168
+                },
+                "start": 1118,
+                "end": 1168
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taMinorTick",
+                  "start": 1179,
+                  "end": 1190
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 1193,
+                          "end": 1197
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "chart",
+                          "start": 1198,
+                          "end": 1203
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1193,
+                        "end": 1203
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "theme",
+                        "start": 1204,
+                        "end": 1209
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1193,
+                      "end": 1209
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "getTick",
+                      "start": 1210,
+                      "end": 1217
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1193,
+                    "end": 1217
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "minor",
+                      "start": 1218,
+                      "end": 1225
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 1227,
+                      "end": 1228
+                    }
+                  ],
+                  "optional": false,
+                  "start": 1193,
+                  "end": 1229
+                },
+                "start": 1179,
+                "end": 1229
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taMicroTick",
+                  "start": 1240,
+                  "end": 1251
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 1254,
+                          "end": 1258
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "chart",
+                          "start": 1259,
+                          "end": 1264
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1254,
+                        "end": 1264
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "theme",
+                        "start": 1265,
+                        "end": 1270
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1254,
+                      "end": 1270
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "getTick",
+                      "start": 1271,
+                      "end": 1278
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1254,
+                    "end": 1278
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "micro",
+                      "start": 1279,
+                      "end": 1286
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 1288,
+                      "end": 1289
+                    }
+                  ],
+                  "optional": false,
+                  "start": 1254,
+                  "end": 1290
+                },
+                "start": 1240,
+                "end": 1290
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "taStroke",
+                  "start": 1303,
+                  "end": 1311
+                },
+                "init": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "BinaryExpression",
+                    "operator": "in",
+                    "left": {
+                      "type": "Literal",
+                      "value": "stroke",
+                      "start": 1314,
+                      "end": 1322
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 1326,
+                      "end": 1327
+                    },
+                    "start": 1314,
+                    "end": 1327
+                  },
+                  "consequent": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "o",
+                      "start": 1330,
+                      "end": 1331
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "stroke",
+                      "start": 1332,
+                      "end": 1338
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1330,
+                    "end": 1338
+                  },
+                  "alternate": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "ta",
+                      "start": 1341,
+                      "end": 1343
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "stroke",
+                      "start": 1344,
+                      "end": 1350
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1341,
+                    "end": 1350
+                  },
+                  "start": 1314,
+                  "end": 1350
+                },
+                "start": 1303,
+                "end": 1350
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "size",
+                  "start": 1361,
+                  "end": 1365
+                },
+                "init": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "Identifier",
+                    "name": "taFont",
+                    "start": 1368,
+                    "end": 1374
+                  },
+                  "consequent": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "g",
+                        "start": 1377,
+                        "end": 1378
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "normalizedLength",
+                        "start": 1379,
+                        "end": 1395
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1377,
+                      "end": 1395
+                    },
+                    "arguments": [
+                      {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "g",
+                              "start": 1396,
+                              "end": 1397
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "splitFontString",
+                              "start": 1398,
+                              "end": 1413
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 1396,
+                            "end": 1413
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "taFont",
+                              "start": 1414,
+                              "end": 1420
+                            }
+                          ],
+                          "optional": false,
+                          "start": 1396,
+                          "end": 1421
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "size",
+                          "start": 1422,
+                          "end": 1426
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1396,
+                        "end": 1426
+                      }
+                    ],
+                    "optional": false,
+                    "start": 1377,
+                    "end": 1427
+                  },
+                  "alternate": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 1430,
+                    "end": 1431
+                  },
+                  "start": 1368,
+                  "end": 1431
+                },
+                "start": 1361,
+                "end": 1431
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "cosr",
+                  "start": 1442,
+                  "end": 1446
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "Math",
+                      "start": 1449,
+                      "end": 1453
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "abs",
+                      "start": 1454,
+                      "end": 1457
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1449,
+                    "end": 1457
+                  },
+                  "arguments": [
+                    {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "Math",
+                          "start": 1458,
+                          "end": 1462
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "cos",
+                          "start": 1463,
+                          "end": 1466
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1458,
+                        "end": 1466
+                      },
+                      "arguments": [
+                        {
+                          "type": "BinaryExpression",
+                          "operator": "/",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": "*",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "rotation",
+                              "start": 1467,
+                              "end": 1475
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "Math",
+                                "start": 1478,
+                                "end": 1482
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "PI",
+                                "start": 1483,
+                                "end": 1485
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 1478,
+                              "end": 1485
+                            },
+                            "start": 1467,
+                            "end": 1485
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 180,
+                            "start": 1488,
+                            "end": 1491
+                          },
+                          "start": 1467,
+                          "end": 1491
+                        }
+                      ],
+                      "optional": false,
+                      "start": 1458,
+                      "end": 1492
+                    }
+                  ],
+                  "optional": false,
+                  "start": 1449,
+                  "end": 1493
+                },
+                "start": 1442,
+                "end": 1493
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "sinr",
+                  "start": 1504,
+                  "end": 1508
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "Math",
+                      "start": 1511,
+                      "end": 1515
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "abs",
+                      "start": 1516,
+                      "end": 1519
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1511,
+                    "end": 1519
+                  },
+                  "arguments": [
+                    {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "Math",
+                          "start": 1520,
+                          "end": 1524
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "sin",
+                          "start": 1525,
+                          "end": 1528
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1520,
+                        "end": 1528
+                      },
+                      "arguments": [
+                        {
+                          "type": "BinaryExpression",
+                          "operator": "/",
+                          "left": {
+                            "type": "BinaryExpression",
+                            "operator": "*",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "rotation",
+                              "start": 1529,
+                              "end": 1537
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "Math",
+                                "start": 1540,
+                                "end": 1544
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "PI",
+                                "start": 1545,
+                                "end": 1547
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 1540,
+                              "end": 1547
+                            },
+                            "start": 1529,
+                            "end": 1547
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 180,
+                            "start": 1550,
+                            "end": 1553
+                          },
+                          "start": 1529,
+                          "end": 1553
+                        }
+                      ],
+                      "optional": false,
+                      "start": 1520,
+                      "end": 1554
+                    }
+                  ],
+                  "optional": false,
+                  "start": 1511,
+                  "end": 1555
+                },
+                "start": 1504,
+                "end": 1555
+              },
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "tsize",
+                  "start": 1566,
+                  "end": 1571
+                },
+                "init": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "Identifier",
+                    "name": "taTitleFont",
+                    "start": 1574,
+                    "end": 1585
+                  },
+                  "consequent": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "g",
+                        "start": 1588,
+                        "end": 1589
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "normalizedLength",
+                        "start": 1590,
+                        "end": 1606
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1588,
+                      "end": 1606
+                    },
+                    "arguments": [
+                      {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "g",
+                              "start": 1607,
+                              "end": 1608
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "splitFontString",
+                              "start": 1609,
+                              "end": 1624
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 1607,
+                            "end": 1624
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "taTitleFont",
+                              "start": 1625,
+                              "end": 1636
+                            }
+                          ],
+                          "optional": false,
+                          "start": 1607,
+                          "end": 1637
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "size",
+                          "start": 1638,
+                          "end": 1642
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1607,
+                        "end": 1642
+                      }
+                    ],
+                    "optional": false,
+                    "start": 1588,
+                    "end": 1643
+                  },
+                  "alternate": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 1646,
+                    "end": 1647
+                  },
+                  "start": 1574,
+                  "end": 1647
+                },
+                "start": 1566,
+                "end": 1647
+              }
+            ],
+            "kind": "var",
+            "start": 207,
+            "end": 1648
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "<",
+              "left": {
+                "type": "Identifier",
+                "name": "rotation",
+                "start": 1658,
+                "end": 1666
+              },
+              "right": {
+                "type": "Literal",
+                "value": 0,
+                "start": 1669,
+                "end": 1670
+              },
+              "start": 1658,
+              "end": 1670
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "+=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "rotation",
+                      "start": 1683,
+                      "end": 1691
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": 360,
+                      "start": 1695,
+                      "end": 1698
+                    },
+                    "start": 1683,
+                    "end": 1698
+                  },
+                  "start": 1683,
+                  "end": 1699
+                }
+              ],
+              "start": 1672,
+              "end": 1706
+            },
+            "alternate": null,
+            "start": 1654,
+            "end": 1706
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "cachedLabelW",
+                  "start": 1716,
+                  "end": 1728
+                },
+                "init": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "ThisExpression",
+                      "start": 1731,
+                      "end": 1735
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "_getMaxLabelSize",
+                      "start": 1736,
+                      "end": 1752
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1731,
+                    "end": 1752
+                  },
+                  "arguments": [],
+                  "optional": false,
+                  "start": 1731,
+                  "end": 1754
+                },
+                "start": 1716,
+                "end": 1754
+              }
+            ],
+            "kind": "var",
+            "start": 1712,
+            "end": 1755
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "cachedLabelW",
+                "start": 1761,
+                "end": 1773
+              },
+              "right": {
+                "type": "LogicalExpression",
+                "operator": "&&",
+                "left": {
+                  "type": "Identifier",
+                  "name": "cachedLabelW",
+                  "start": 1776,
+                  "end": 1788
+                },
+                "right": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "cachedLabelW",
+                    "start": 1792,
+                    "end": 1804
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "majLabelW",
+                    "start": 1805,
+                    "end": 1814
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 1792,
+                  "end": 1814
+                },
+                "start": 1776,
+                "end": 1814
+              },
+              "start": 1761,
+              "end": 1814
+            },
+            "start": 1761,
+            "end": 1815
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "titleOffset",
+                "start": 1821,
+                "end": 1832
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "left": {
+                    "type": "BinaryExpression",
+                    "operator": "+",
+                    "left": {
+                      "type": "BinaryExpression",
+                      "operator": "+",
+                      "left": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                          "type": "BinaryExpression",
+                          "operator": "*",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "size",
+                            "start": 1835,
+                            "end": 1839
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "cosr",
+                            "start": 1842,
+                            "end": 1846
+                          },
+                          "start": 1835,
+                          "end": 1846
+                        },
+                        "right": {
+                          "type": "BinaryExpression",
+                          "operator": "*",
+                          "left": {
+                            "type": "LogicalExpression",
+                            "operator": "||",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "cachedLabelW",
+                              "start": 1850,
+                              "end": 1862
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 0,
+                              "start": 1866,
+                              "end": 1867
+                            },
+                            "start": 1850,
+                            "end": 1867
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "sinr",
+                            "start": 1871,
+                            "end": 1875
+                          },
+                          "start": 1849,
+                          "end": 1875
+                        },
+                        "start": 1835,
+                        "end": 1875
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "labelGap",
+                        "start": 1878,
+                        "end": 1886
+                      },
+                      "start": 1835,
+                      "end": 1886
+                    },
+                    "right": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "Math",
+                          "start": 1889,
+                          "end": 1893
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "max",
+                          "start": 1894,
+                          "end": 1897
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 1889,
+                        "end": 1897
+                      },
+                      "arguments": [
+                        {
+                          "type": "ConditionalExpression",
+                          "test": {
+                            "type": "BinaryExpression",
+                            "operator": ">",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "taMajorTick",
+                                "start": 1898,
+                                "end": 1909
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "length",
+                                "start": 1910,
+                                "end": 1916
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 1898,
+                              "end": 1916
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 0,
+                              "start": 1919,
+                              "end": 1920
+                            },
+                            "start": 1898,
+                            "end": 1920
+                          },
+                          "consequent": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "taMajorTick",
+                              "start": 1923,
+                              "end": 1934
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "length",
+                              "start": 1935,
+                              "end": 1941
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 1923,
+                            "end": 1941
+                          },
+                          "alternate": {
+                            "type": "Literal",
+                            "value": 0,
+                            "start": 1944,
+                            "end": 1945
+                          },
+                          "start": 1898,
+                          "end": 1945
+                        },
+                        {
+                          "type": "ConditionalExpression",
+                          "test": {
+                            "type": "BinaryExpression",
+                            "operator": ">",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "taMinorTick",
+                                "start": 1956,
+                                "end": 1967
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "length",
+                                "start": 1968,
+                                "end": 1974
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 1956,
+                              "end": 1974
+                            },
+                            "right": {
+                              "type": "Literal",
+                              "value": 0,
+                              "start": 1977,
+                              "end": 1978
+                            },
+                            "start": 1956,
+                            "end": 1978
+                          },
+                          "consequent": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Identifier",
+                              "name": "taMinorTick",
+                              "start": 1981,
+                              "end": 1992
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "length",
+                              "start": 1993,
+                              "end": 1999
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 1981,
+                            "end": 1999
+                          },
+                          "alternate": {
+                            "type": "Literal",
+                            "value": 0,
+                            "start": 2002,
+                            "end": 2003
+                          },
+                          "start": 1956,
+                          "end": 2003
+                        }
+                      ],
+                      "optional": false,
+                      "start": 1889,
+                      "end": 2004
+                    },
+                    "start": 1835,
+                    "end": 2004
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "tsize",
+                    "start": 2016,
+                    "end": 2021
+                  },
+                  "start": 1835,
+                  "end": 2021
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "taTitleGap",
+                  "start": 2024,
+                  "end": 2034
+                },
+                "start": 1835,
+                "end": 2034
+              },
+              "start": 1821,
+              "end": 2034
+            },
+            "start": 1821,
+            "end": 2035
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "axisVector",
+                "start": 2041,
+                "end": 2051
+              },
+              "right": {
+                "type": "ObjectExpression",
+                "properties": [
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "x",
+                      "start": 2056,
+                      "end": 2057
+                    },
+                    "value": {
+                      "type": "ConditionalExpression",
+                      "test": {
+                        "type": "Identifier",
+                        "name": "isRtl",
+                        "start": 2059,
+                        "end": 2064
+                      },
+                      "consequent": {
+                        "type": "UnaryExpression",
+                        "operator": "-",
+                        "prefix": true,
+                        "argument": {
+                          "type": "Literal",
+                          "value": 1,
+                          "start": 2068,
+                          "end": 2069
+                        },
+                        "start": 2067,
+                        "end": 2069
+                      },
+                      "alternate": {
+                        "type": "Literal",
+                        "value": 1,
+                        "start": 2072,
+                        "end": 2073
+                      },
+                      "start": 2059,
+                      "end": 2073
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 2056,
+                    "end": 2073
+                  },
+                  {
+                    "type": "Property",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "y",
+                      "start": 2075,
+                      "end": 2076
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": 0,
+                      "start": 2078,
+                      "end": 2079
+                    },
+                    "computed": false,
+                    "method": false,
+                    "shorthand": false,
+                    "kind": "init",
+                    "start": 2075,
+                    "end": 2079
+                  }
+                ],
+                "start": 2054,
+                "end": 2081
+              },
+              "start": 2041,
+              "end": 2081
+            },
+            "start": 2041,
+            "end": 2082
+          },
+          {
+            "type": "SwitchStatement",
+            "discriminant": {
+              "type": "Identifier",
+              "name": "rotation",
+              "start": 2119,
+              "end": 2127
+            },
+            "cases": [
+              {
+                "type": "SwitchCase",
+                "test": null,
+                "consequent": [
+                  {
+                    "type": "IfStatement",
+                    "test": {
+                      "type": "BinaryExpression",
+                      "operator": "<",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "rotation",
+                        "start": 2166,
+                        "end": 2174
+                      },
+                      "right": {
+                        "type": "BinaryExpression",
+                        "operator": "-",
+                        "left": {
+                          "type": "Literal",
+                          "value": 90,
+                          "start": 2178,
+                          "end": 2180
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "centerAnchorLimit",
+                          "start": 2183,
+                          "end": 2200
+                        },
+                        "start": 2178,
+                        "end": 2200
+                      },
+                      "start": 2166,
+                      "end": 2201
+                    },
+                    "consequent": {
+                      "type": "BlockStatement",
+                      "body": [
+                        {
+                          "type": "ExpressionStatement",
+                          "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "Identifier",
+                                "name": "labelOffset",
+                                "start": 2222,
+                                "end": 2233
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "y",
+                                "start": 2234,
+                                "end": 2235
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 2222,
+                              "end": 2235
+                            },
+                            "right": {
+                              "type": "ConditionalExpression",
+                              "test": {
+                                "type": "Identifier",
+                                "name": "leftBottom",
+                                "start": 2238,
+                                "end": 2248
+                              },
+                              "consequent": {
+                                "type": "Identifier",
+                                "name": "size",
+                                "start": 2251,
+                                "end": 2255
+                              },
+                              "alternate": {
+                                "type": "Literal",
+                                "value": 0,
+                                "start": 2258,
+                                "end": 2259
+                              },
+                              "start": 2238,
+                              "end": 2259
+                            },
+                            "start": 2222,
+                            "end": 2259
+                          },
+                          "start": 2222,
+                          "end": 2260
+                        }
+                      ],
+                      "start": 2203,
+                      "end": 2275
+                    },
+                    "alternate": {
+                      "type": "IfStatement",
+                      "test": {
+                        "type": "BinaryExpression",
+                        "operator": "<",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "rotation",
+                          "start": 2285,
+                          "end": 2293
+                        },
+                        "right": {
+                          "type": "BinaryExpression",
+                          "operator": "+",
+                          "left": {
+                            "type": "Literal",
+                            "value": 90,
+                            "start": 2297,
+                            "end": 2299
+                          },
+                          "right": {
+                            "type": "Identifier",
+                            "name": "centerAnchorLimit",
+                            "start": 2302,
+                            "end": 2319
+                          },
+                          "start": 2297,
+                          "end": 2319
+                        },
+                        "start": 2285,
+                        "end": 2320
+                      },
+                      "consequent": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "labelOffset",
+                                  "start": 2341,
+                                  "end": 2352
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "x",
+                                  "start": 2353,
+                                  "end": 2354
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 2341,
+                                "end": 2354
+                              },
+                              "right": {
+                                "type": "BinaryExpression",
+                                "operator": "*",
+                                "left": {
+                                  "type": "UnaryExpression",
+                                  "operator": "-",
+                                  "prefix": true,
+                                  "argument": {
+                                    "type": "Identifier",
+                                    "name": "size",
+                                    "start": 2358,
+                                    "end": 2362
+                                  },
+                                  "start": 2357,
+                                  "end": 2362
+                                },
+                                "right": {
+                                  "type": "Literal",
+                                  "value": 0.4,
+                                  "start": 2365,
+                                  "end": 2368
+                                },
+                                "start": 2357,
+                                "end": 2368
+                              },
+                              "start": 2341,
+                              "end": 2368
+                            },
+                            "start": 2341,
+                            "end": 2369
+                          }
+                        ],
+                        "start": 2322,
+                        "end": 2384
+                      },
+                      "alternate": {
+                        "type": "IfStatement",
+                        "test": {
+                          "type": "BinaryExpression",
+                          "operator": "<",
+                          "left": {
+                            "type": "Identifier",
+                            "name": "rotation",
+                            "start": 2394,
+                            "end": 2402
+                          },
+                          "right": {
+                            "type": "Literal",
+                            "value": 180,
+                            "start": 2405,
+                            "end": 2408
+                          },
+                          "start": 2394,
+                          "end": 2408
+                        },
+                        "consequent": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ExpressionStatement",
+                              "expression": {
+                                "type": "AssignmentExpression",
+                                "operator": "=",
+                                "left": {
+                                  "type": "MemberExpression",
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "labelOffset",
+                                    "start": 2429,
+                                    "end": 2440
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "y",
+                                    "start": 2441,
+                                    "end": 2442
+                                  },
+                                  "computed": false,
+                                  "optional": false,
+                                  "start": 2429,
+                                  "end": 2442
+                                },
+                                "right": {
+                                  "type": "ConditionalExpression",
+                                  "test": {
+                                    "type": "Identifier",
+                                    "name": "leftBottom",
+                                    "start": 2445,
+                                    "end": 2455
+                                  },
+                                  "consequent": {
+                                    "type": "Literal",
+                                    "value": 0,
+                                    "start": 2458,
+                                    "end": 2459
+                                  },
+                                  "alternate": {
+                                    "type": "UnaryExpression",
+                                    "operator": "-",
+                                    "prefix": true,
+                                    "argument": {
+                                      "type": "Identifier",
+                                      "name": "size",
+                                      "start": 2463,
+                                      "end": 2467
+                                    },
+                                    "start": 2462,
+                                    "end": 2467
+                                  },
+                                  "start": 2445,
+                                  "end": 2467
+                                },
+                                "start": 2429,
+                                "end": 2467
+                              },
+                              "start": 2429,
+                              "end": 2468
+                            }
+                          ],
+                          "start": 2410,
+                          "end": 2483
+                        },
+                        "alternate": {
+                          "type": "IfStatement",
+                          "test": {
+                            "type": "BinaryExpression",
+                            "operator": "<",
+                            "left": {
+                              "type": "Identifier",
+                              "name": "rotation",
+                              "start": 2493,
+                              "end": 2501
+                            },
+                            "right": {
+                              "type": "BinaryExpression",
+                              "operator": "-",
+                              "left": {
+                                "type": "Literal",
+                                "value": 270,
+                                "start": 2505,
+                                "end": 2508
+                              },
+                              "right": {
+                                "type": "Identifier",
+                                "name": "centerAnchorLimit",
+                                "start": 2511,
+                                "end": 2528
+                              },
+                              "start": 2505,
+                              "end": 2528
+                            },
+                            "start": 2493,
+                            "end": 2529
+                          },
+                          "consequent": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "AssignmentExpression",
+                                  "operator": "=",
+                                  "left": {
+                                    "type": "MemberExpression",
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "labelOffset",
+                                      "start": 2550,
+                                      "end": 2561
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "y",
+                                      "start": 2562,
+                                      "end": 2563
+                                    },
+                                    "computed": false,
+                                    "optional": false,
+                                    "start": 2550,
+                                    "end": 2563
+                                  },
+                                  "right": {
+                                    "type": "ConditionalExpression",
+                                    "test": {
+                                      "type": "Identifier",
+                                      "name": "leftBottom",
+                                      "start": 2566,
+                                      "end": 2576
+                                    },
+                                    "consequent": {
+                                      "type": "Literal",
+                                      "value": 0,
+                                      "start": 2579,
+                                      "end": 2580
+                                    },
+                                    "alternate": {
+                                      "type": "UnaryExpression",
+                                      "operator": "-",
+                                      "prefix": true,
+                                      "argument": {
+                                        "type": "Identifier",
+                                        "name": "size",
+                                        "start": 2584,
+                                        "end": 2588
+                                      },
+                                      "start": 2583,
+                                      "end": 2588
+                                    },
+                                    "start": 2566,
+                                    "end": 2588
+                                  },
+                                  "start": 2550,
+                                  "end": 2588
+                                },
+                                "start": 2550,
+                                "end": 2589
+                              }
+                            ],
+                            "start": 2531,
+                            "end": 2604
+                          },
+                          "alternate": {
+                            "type": "IfStatement",
+                            "test": {
+                              "type": "BinaryExpression",
+                              "operator": "<",
+                              "left": {
+                                "type": "Identifier",
+                                "name": "rotation",
+                                "start": 2614,
+                                "end": 2622
+                              },
+                              "right": {
+                                "type": "BinaryExpression",
+                                "operator": "+",
+                                "left": {
+                                  "type": "Literal",
+                                  "value": 270,
+                                  "start": 2626,
+                                  "end": 2629
+                                },
+                                "right": {
+                                  "type": "Identifier",
+                                  "name": "centerAnchorLimit",
+                                  "start": 2632,
+                                  "end": 2649
+                                },
+                                "start": 2626,
+                                "end": 2649
+                              },
+                              "start": 2614,
+                              "end": 2650
+                            },
+                            "consequent": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "labelOffset",
+                                        "start": 2671,
+                                        "end": 2682
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "y",
+                                        "start": 2683,
+                                        "end": 2684
+                                      },
+                                      "computed": false,
+                                      "optional": false,
+                                      "start": 2671,
+                                      "end": 2684
+                                    },
+                                    "right": {
+                                      "type": "ConditionalExpression",
+                                      "test": {
+                                        "type": "Identifier",
+                                        "name": "leftBottom",
+                                        "start": 2687,
+                                        "end": 2697
+                                      },
+                                      "consequent": {
+                                        "type": "BinaryExpression",
+                                        "operator": "*",
+                                        "left": {
+                                          "type": "Identifier",
+                                          "name": "size",
+                                          "start": 2700,
+                                          "end": 2704
+                                        },
+                                        "right": {
+                                          "type": "Literal",
+                                          "value": 0.4,
+                                          "start": 2707,
+                                          "end": 2710
+                                        },
+                                        "start": 2700,
+                                        "end": 2710
+                                      },
+                                      "alternate": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "start": 2713,
+                                        "end": 2714
+                                      },
+                                      "start": 2687,
+                                      "end": 2714
+                                    },
+                                    "start": 2671,
+                                    "end": 2714
+                                  },
+                                  "start": 2671,
+                                  "end": 2715
+                                }
+                              ],
+                              "start": 2652,
+                              "end": 2730
+                            },
+                            "alternate": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                      "type": "MemberExpression",
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "labelOffset",
+                                        "start": 2755,
+                                        "end": 2766
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "y",
+                                        "start": 2767,
+                                        "end": 2768
+                                      },
+                                      "computed": false,
+                                      "optional": false,
+                                      "start": 2755,
+                                      "end": 2768
+                                    },
+                                    "right": {
+                                      "type": "ConditionalExpression",
+                                      "test": {
+                                        "type": "Identifier",
+                                        "name": "leftBottom",
+                                        "start": 2771,
+                                        "end": 2781
+                                      },
+                                      "consequent": {
+                                        "type": "Identifier",
+                                        "name": "size",
+                                        "start": 2784,
+                                        "end": 2788
+                                      },
+                                      "alternate": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "start": 2791,
+                                        "end": 2792
+                                      },
+                                      "start": 2771,
+                                      "end": 2792
+                                    },
+                                    "start": 2755,
+                                    "end": 2792
+                                  },
+                                  "start": 2755,
+                                  "end": 2793
+                                }
+                              ],
+                              "start": 2736,
+                              "end": 2808
+                            },
+                            "start": 2610,
+                            "end": 2808
+                          },
+                          "start": 2489,
+                          "end": 2808
+                        },
+                        "start": 2390,
+                        "end": 2808
+                      },
+                      "start": 2281,
+                      "end": 2808
+                    },
+                    "start": 2162,
+                    "end": 2808
+                  }
+                ],
+                "start": 2140,
+                "end": 2808
+              }
+            ],
+            "start": 2111,
+            "end": 2815
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "titleRotation",
+                "start": 2823,
+                "end": 2836
+              },
+              "right": {
+                "type": "ConditionalExpression",
+                "test": {
+                  "type": "LogicalExpression",
+                  "operator": "&&",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "taTitleOrientation",
+                    "start": 2840,
+                    "end": 2858
+                  },
+                  "right": {
+                    "type": "BinaryExpression",
+                    "operator": "==",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "taTitleOrientation",
+                      "start": 2862,
+                      "end": 2880
+                    },
+                    "right": {
+                      "type": "Literal",
+                      "value": "away",
+                      "start": 2884,
+                      "end": 2890
+                    },
+                    "start": 2862,
+                    "end": 2890
+                  },
+                  "start": 2840,
+                  "end": 2890
+                },
+                "consequent": {
+                  "type": "Literal",
+                  "value": 180,
+                  "start": 2894,
+                  "end": 2897
+                },
+                "alternate": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 2900,
+                  "end": 2901
+                },
+                "start": 2839,
+                "end": 2901
+              },
+              "start": 2823,
+              "end": 2901
+            },
+            "start": 2823,
+            "end": 2902
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "titlePos",
+                  "start": 2908,
+                  "end": 2916
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "y",
+                  "start": 2917,
+                  "end": 2918
+                },
+                "computed": false,
+                "optional": false,
+                "start": 2908,
+                "end": 2918
+              },
+              "right": {
+                "type": "BinaryExpression",
+                "operator": "+",
+                "left": {
+                  "type": "BinaryExpression",
+                  "operator": "-",
+                  "left": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "offsets",
+                      "start": 2921,
+                      "end": 2928
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "t",
+                      "start": 2929,
+                      "end": 2930
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 2921,
+                    "end": 2930
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "titleOffset",
+                    "start": 2933,
+                    "end": 2944
+                  },
+                  "start": 2921,
+                  "end": 2944
+                },
+                "right": {
+                  "type": "ConditionalExpression",
+                  "test": {
+                    "type": "Identifier",
+                    "name": "titleRotation",
+                    "start": 2948,
+                    "end": 2961
+                  },
+                  "consequent": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 2964,
+                    "end": 2965
+                  },
+                  "alternate": {
+                    "type": "Identifier",
+                    "name": "tsize",
+                    "start": 2968,
+                    "end": 2973
+                  },
+                  "start": 2948,
+                  "end": 2973
+                },
+                "start": 2921,
+                "end": 2974
+              },
+              "start": 2908,
+              "end": 2974
+            },
+            "start": 2908,
+            "end": 2975
+          },
+          {
+            "type": "SwitchStatement",
+            "discriminant": {
+              "type": "Identifier",
+              "name": "labelAlign",
+              "start": 2989,
+              "end": 2999
+            },
+            "cases": [
+              {
+                "type": "SwitchCase",
+                "test": {
+                  "type": "Literal",
+                  "value": "start",
+                  "start": 3017,
+                  "end": 3024
+                },
+                "consequent": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "labelAlign",
+                        "start": 3039,
+                        "end": 3049
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "end",
+                        "start": 3052,
+                        "end": 3057
+                      },
+                      "start": 3039,
+                      "end": 3057
+                    },
+                    "start": 3039,
+                    "end": 3058
+                  },
+                  {
+                    "type": "BreakStatement",
+                    "label": null,
+                    "start": 3072,
+                    "end": 3078
+                  }
+                ],
+                "start": 3012,
+                "end": 3078
+              },
+              {
+                "type": "SwitchCase",
+                "test": {
+                  "type": "Literal",
+                  "value": "end",
+                  "start": 3093,
+                  "end": 3098
+                },
+                "consequent": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "Identifier",
+                        "name": "labelAlign",
+                        "start": 3113,
+                        "end": 3123
+                      },
+                      "right": {
+                        "type": "Literal",
+                        "value": "start",
+                        "start": 3126,
+                        "end": 3133
+                      },
+                      "start": 3113,
+                      "end": 3133
+                    },
+                    "start": 3113,
+                    "end": 3134
+                  },
+                  {
+                    "type": "BreakStatement",
+                    "label": null,
+                    "start": 3148,
+                    "end": 3154
+                  }
+                ],
+                "start": 3088,
+                "end": 3154
+              },
+              {
+                "type": "SwitchCase",
+                "test": {
+                  "type": "Literal",
+                  "value": "middle",
+                  "start": 3169,
+                  "end": 3177
+                },
+                "consequent": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "-=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Identifier",
+                          "name": "labelOffset",
+                          "start": 3192,
+                          "end": 3203
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "y",
+                          "start": 3204,
+                          "end": 3205
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 3192,
+                        "end": 3205
+                      },
+                      "right": {
+                        "type": "Identifier",
+                        "name": "size",
+                        "start": 3209,
+                        "end": 3213
+                      },
+                      "start": 3192,
+                      "end": 3213
+                    },
+                    "start": 3192,
+                    "end": 3214
+                  },
+                  {
+                    "type": "BreakStatement",
+                    "label": null,
+                    "start": 3228,
+                    "end": 3234
+                  }
+                ],
+                "start": 3164,
+                "end": 3234
+              }
+            ],
+            "start": 2981,
+            "end": 3241
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "_",
+                  "start": 3253,
+                  "end": 3254
+                },
+                "init": {
+                  "type": "Identifier",
+                  "name": "rotation",
+                  "start": 3257,
+                  "end": 3265
+                },
+                "start": 3253,
+                "end": 3265
+              }
+            ],
+            "kind": "let",
+            "start": 3249,
+            "end": 3266
+          }
+        ],
+        "start": 123,
+        "end": 3269
+      },
+      "start": 52,
+      "end": 3269
+    }
+  ],
+  "sourceType": "script",
+  "start": 52,
+  "end": 3271
+}

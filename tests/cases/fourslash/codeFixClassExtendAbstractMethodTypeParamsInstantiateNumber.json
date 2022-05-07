@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 147,
+            "end": 153
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 154,
+            "end": 161
+          },
+          "computed": false,
+          "optional": false,
+          "start": 147,
+          "end": 161
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 169,
+                  "end": 180
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement inherited abstract class",
+                  "start": 182,
+                  "end": 218
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 169,
+                "end": 218
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 225,
+                  "end": 239
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A<T> {\r\n    abstract f(x: T): T;\r\n}\r\n\r\nclass C extends A<number> {\r\n    f(x: number): number {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "abstract class A<T> {\n    abstract f(x: T): T;\n}\n\nclass C extends A<number> {\n    f(x: number): number {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 242,
+                      "end": 416
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 242,
+                  "end": 416
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 225,
+                "end": 416
+              }
+            ],
+            "start": 162,
+            "end": 419
+          }
+        ],
+        "optional": false,
+        "start": 147,
+        "end": 420
+      },
+      "start": 147,
+      "end": 421
+    }
+  ],
+  "sourceType": "script",
+  "start": 147,
+  "end": 423
+}

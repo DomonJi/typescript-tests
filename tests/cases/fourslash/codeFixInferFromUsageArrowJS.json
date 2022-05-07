@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 215,
+            "end": 221
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 222,
+            "end": 232
+          },
+          "computed": false,
+          "optional": false,
+          "start": 215,
+          "end": 232
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 237,
+                  "end": 242
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "inferFromUsage",
+                  "start": 244,
+                  "end": 260
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 237,
+                "end": 260
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 264,
+                  "end": 281
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Infer all types from usage",
+                  "start": 283,
+                  "end": 311
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 264,
+                "end": 311
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 315,
+                  "end": 329
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "const foo = (/** @type {{ y: number; }} */ x) => x.y + 1;\nclass C {\n    m = (/** @type {{ y: number; }} */ x) => x.y + 1;\n}",
+                        "cooked": "const foo = (/** @type {{ y: number; }} */ x) => x.y + 1;\nclass C {\n    m = (/** @type {{ y: number; }} */ x) => x.y + 1;\n}"
+                      },
+                      "tail": true,
+                      "start": 331,
+                      "end": 456
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 331,
+                  "end": 456
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 315,
+                "end": 456
+              }
+            ],
+            "start": 233,
+            "end": 459
+          }
+        ],
+        "optional": false,
+        "start": 215,
+        "end": 460
+      },
+      "start": 215,
+      "end": 461
+    }
+  ],
+  "sourceType": "script",
+  "start": 215,
+  "end": 461
+}

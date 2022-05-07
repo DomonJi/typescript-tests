@@ -1,0 +1,179 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "resolver",
+        "start": 37,
+        "end": 45
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSFunctionType",
+          "params": [],
+          "returnType": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSVoidKeyword",
+              "start": 58,
+              "end": 62
+            },
+            "start": 55,
+            "end": 62
+          },
+          "start": 52,
+          "end": 62
+        },
+        "start": 50,
+        "end": 62
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 46,
+              "end": 47
+            },
+            "start": 46,
+            "end": 47
+          }
+        ],
+        "start": 45,
+        "end": 48
+      },
+      "start": 20,
+      "end": 63
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "wrapResolver",
+        "start": 82,
+        "end": 94
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "resolverFunction",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSVoidKeyword",
+                  "start": 122,
+                  "end": 126
+                },
+                "start": 119,
+                "end": 126
+              },
+              "start": 116,
+              "end": 126
+            },
+            "start": 114,
+            "end": 126
+          },
+          "start": 98,
+          "end": 126
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 129,
+          "end": 133
+        },
+        "start": 127,
+        "end": 133
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 95,
+              "end": 96
+            },
+            "start": 95,
+            "end": 96
+          }
+        ],
+        "start": 94,
+        "end": 97
+      },
+      "start": 65,
+      "end": 134
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "wrapResolver",
+          "start": 138,
+          "end": 150
+        },
+        "arguments": [
+          {
+            "type": "LogicalExpression",
+            "operator": "||",
+            "left": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "resolver",
+                "start": 151,
+                "end": 159
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 151,
+              "end": 161
+            },
+            "right": {
+              "type": "ArrayExpression",
+              "elements": [],
+              "start": 165,
+              "end": 167
+            },
+            "start": 151,
+            "end": 167
+          }
+        ],
+        "optional": false,
+        "start": 138,
+        "end": 168
+      },
+      "start": 138,
+      "end": 169
+    }
+  ],
+  "sourceType": "script",
+  "start": 20,
+  "end": 171
+}

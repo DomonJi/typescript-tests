@@ -1,0 +1,156 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 33,
+              "end": 36
+            },
+            "value": null,
+            "computed": false,
+            "static": true,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 38,
+                "end": 44
+              },
+              "start": 36,
+              "end": 44
+            },
+            "accessibility": "private",
+            "start": 18,
+            "end": 45
+          }
+        ],
+        "start": 11,
+        "end": 48
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 48
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Derived",
+        "start": 58,
+        "end": 65
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 93,
+              "end": 96
+            },
+            "value": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Base",
+                "start": 99,
+                "end": 103
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 104,
+                "end": 107
+              },
+              "computed": false,
+              "optional": false,
+              "start": 99,
+              "end": 107
+            },
+            "computed": false,
+            "static": true,
+            "declare": false,
+            "override": false,
+            "start": 86,
+            "end": 108
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bing",
+              "start": 123,
+              "end": 127
+            },
+            "value": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [],
+              "body": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "Base",
+                  "start": 136,
+                  "end": 140
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 141,
+                  "end": 144
+                },
+                "computed": false,
+                "optional": false,
+                "start": 136,
+                "end": 144
+              },
+              "async": false,
+              "expression": true,
+              "start": 130,
+              "end": 144
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 123,
+            "end": 145
+          }
+        ],
+        "start": 79,
+        "end": 157
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 74,
+        "end": 78
+      },
+      "start": 52,
+      "end": 157
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 157
+}

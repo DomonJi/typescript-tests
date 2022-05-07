@@ -1,0 +1,212 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "require",
+        "start": 107,
+        "end": 114
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "moduleName",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 127,
+              "end": 133
+            },
+            "start": 125,
+            "end": 133
+          },
+          "start": 115,
+          "end": 133
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSAnyKeyword",
+          "start": 136,
+          "end": 139
+        },
+        "start": 134,
+        "end": 139
+      },
+      "declare": true,
+      "start": 90,
+      "end": 140
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Literal",
+        "value": "fs",
+        "start": 159,
+        "end": 163
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSDeclareFunction",
+              "id": {
+                "type": "Identifier",
+                "name": "readFileSync",
+                "start": 187,
+                "end": 199
+              },
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "s",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 203,
+                      "end": 209
+                    },
+                    "start": 201,
+                    "end": 209
+                  },
+                  "start": 200,
+                  "end": 209
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 212,
+                  "end": 218
+                },
+                "start": 210,
+                "end": 218
+              },
+              "start": 178,
+              "end": 219
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 171,
+            "end": 219
+          }
+        ],
+        "start": 164,
+        "end": 222
+      },
+      "declare": true,
+      "start": 144,
+      "end": 222
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "fs",
+            "start": 291,
+            "end": 293
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "require",
+              "start": 296,
+              "end": 303
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "fs",
+                "start": 304,
+                "end": 308
+              }
+            ],
+            "optional": false,
+            "start": 296,
+            "end": 309
+          },
+          "start": 291,
+          "end": 309
+        }
+      ],
+      "kind": "const",
+      "start": 285,
+      "end": 310
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "text",
+            "start": 318,
+            "end": 322
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "fs",
+                "start": 325,
+                "end": 327
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "readFileSync",
+                "start": 328,
+                "end": 340
+              },
+              "computed": false,
+              "optional": false,
+              "start": 325,
+              "end": 340
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": "/a/b/c",
+                "start": 341,
+                "end": 349
+              }
+            ],
+            "optional": false,
+            "start": 325,
+            "end": 350
+          },
+          "start": 318,
+          "end": 350
+        }
+      ],
+      "kind": "const",
+      "start": 312,
+      "end": 351
+    }
+  ],
+  "sourceType": "script",
+  "start": 90,
+  "end": 351
+}

@@ -1,0 +1,1356 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "OuterMod",
+        "start": 11,
+        "end": 19
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "FunctionDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "someExportedOuterFunc",
+                "start": 40,
+                "end": 61
+              },
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "params": [],
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "UnaryExpression",
+                      "operator": "-",
+                      "prefix": true,
+                      "argument": {
+                        "type": "Literal",
+                        "value": 1,
+                        "start": 74,
+                        "end": 75
+                      },
+                      "start": 73,
+                      "end": 75
+                    },
+                    "start": 66,
+                    "end": 76
+                  }
+                ],
+                "start": 64,
+                "end": 78
+              },
+              "start": 31,
+              "end": 78
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 24,
+            "end": 78
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSModuleDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "OuterInnerMod",
+                "start": 97,
+                "end": 110
+              },
+              "body": {
+                "type": "TSModuleBlock",
+                "body": [
+                  {
+                    "type": "ExportNamedDeclaration",
+                    "declaration": {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "someExportedOuterInnerFunc",
+                        "start": 132,
+                        "end": 158
+                      },
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "params": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": "foo",
+                              "start": 170,
+                              "end": 175
+                            },
+                            "start": 163,
+                            "end": 176
+                          }
+                        ],
+                        "start": 161,
+                        "end": 178
+                      },
+                      "start": 123,
+                      "end": 178
+                    },
+                    "specifiers": [],
+                    "source": null,
+                    "exportKind": "value",
+                    "assertions": [],
+                    "start": 116,
+                    "end": 178
+                  }
+                ],
+                "start": 111,
+                "end": 182
+              },
+              "start": 90,
+              "end": 182
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 83,
+            "end": 182
+          }
+        ],
+        "start": 20,
+        "end": 185
+      },
+      "start": 4,
+      "end": 185
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "OuterInnerAlias",
+        "start": 196,
+        "end": 211
+      },
+      "moduleReference": {
+        "type": "TSQualifiedName",
+        "left": {
+          "type": "Identifier",
+          "name": "OuterMod",
+          "start": 214,
+          "end": 222
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "OuterInnerMod",
+          "start": 223,
+          "end": 236
+        },
+        "start": 214,
+        "end": 236
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 189,
+      "end": 237
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M",
+        "start": 248,
+        "end": 249
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSModuleDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "InnerMod",
+                "start": 270,
+                "end": 278
+              },
+              "body": {
+                "type": "TSModuleBlock",
+                "body": [
+                  {
+                    "type": "ExportNamedDeclaration",
+                    "declaration": {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "someExportedInnerFunc",
+                        "start": 300,
+                        "end": 321
+                      },
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "params": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "UnaryExpression",
+                              "operator": "-",
+                              "prefix": true,
+                              "argument": {
+                                "type": "Literal",
+                                "value": 2,
+                                "start": 334,
+                                "end": 335
+                              },
+                              "start": 333,
+                              "end": 335
+                            },
+                            "start": 326,
+                            "end": 336
+                          }
+                        ],
+                        "start": 324,
+                        "end": 338
+                      },
+                      "start": 291,
+                      "end": 338
+                    },
+                    "specifiers": [],
+                    "source": null,
+                    "exportKind": "value",
+                    "assertions": [],
+                    "start": 284,
+                    "end": 338
+                  }
+                ],
+                "start": 279,
+                "end": 342
+              },
+              "start": 263,
+              "end": 342
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 256,
+            "end": 342
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSEnumDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "E",
+                "start": 359,
+                "end": 360
+              },
+              "members": [
+                {
+                  "type": "TSEnumMember",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "A",
+                    "start": 366,
+                    "end": 367
+                  },
+                  "start": 366,
+                  "end": 367
+                },
+                {
+                  "type": "TSEnumMember",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "B",
+                    "start": 372,
+                    "end": 373
+                  },
+                  "start": 372,
+                  "end": 373
+                },
+                {
+                  "type": "TSEnumMember",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 378,
+                    "end": 379
+                  },
+                  "start": 378,
+                  "end": 379
+                }
+              ],
+              "start": 354,
+              "end": 384
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 347,
+            "end": 384
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 400,
+                    "end": 401
+                  },
+                  "init": {
+                    "type": "Literal",
+                    "value": 5,
+                    "start": 404,
+                    "end": 405
+                  },
+                  "start": 400,
+                  "end": 405
+                }
+              ],
+              "kind": "var",
+              "start": 396,
+              "end": 406
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 389,
+            "end": 406
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "exported_var",
+                    "start": 428,
+                    "end": 440
+                  },
+                  "init": null,
+                  "start": 428,
+                  "end": 440
+                }
+              ],
+              "kind": "var",
+              "declare": true,
+              "start": 416,
+              "end": 441
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "type",
+            "assertions": [],
+            "start": 409,
+            "end": 441
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "y",
+                  "start": 450,
+                  "end": 451
+                },
+                "init": {
+                  "type": "BinaryExpression",
+                  "operator": "+",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 454,
+                    "end": 455
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 458,
+                    "end": 459
+                  },
+                  "start": 454,
+                  "end": 459
+                },
+                "start": 450,
+                "end": 459
+              }
+            ],
+            "kind": "var",
+            "start": 446,
+            "end": 460
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSInterfaceDeclaration",
+              "body": {
+                "type": "TSInterfaceBody",
+                "body": [
+                  {
+                    "type": "TSMethodSignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "someMethod",
+                      "start": 491,
+                      "end": 501
+                    },
+                    "params": [],
+                    "kind": "method",
+                    "returnType": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSNumberKeyword",
+                        "start": 504,
+                        "end": 510
+                      },
+                      "start": 503,
+                      "end": 510
+                    },
+                    "start": 491,
+                    "end": 511
+                  }
+                ],
+                "start": 486,
+                "end": 515
+              },
+              "id": {
+                "type": "Identifier",
+                "name": "I",
+                "start": 484,
+                "end": 485
+              },
+              "start": 474,
+              "end": 515
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "type",
+            "assertions": [],
+            "start": 467,
+            "end": 515
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "B",
+              "start": 527,
+              "end": 528
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "PropertyDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "b",
+                    "start": 537,
+                    "end": 538
+                  },
+                  "value": {
+                    "type": "Literal",
+                    "value": 0,
+                    "start": 541,
+                    "end": 542
+                  },
+                  "computed": false,
+                  "static": false,
+                  "declare": false,
+                  "override": false,
+                  "accessibility": "public",
+                  "start": 530,
+                  "end": 543
+                }
+              ],
+              "start": 529,
+              "end": 544
+            },
+            "superClass": null,
+            "start": 521,
+            "end": 544
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "C",
+                "start": 563,
+                "end": 564
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "someMethodThatCallsAnOuterMethod",
+                      "start": 590,
+                      "end": 622
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "OuterInnerAlias",
+                                  "start": 633,
+                                  "end": 648
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "someExportedOuterInnerFunc",
+                                  "start": 649,
+                                  "end": 675
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 633,
+                                "end": 675
+                              },
+                              "arguments": [],
+                              "optional": false,
+                              "start": 633,
+                              "end": 677
+                            },
+                            "start": 626,
+                            "end": 678
+                          }
+                        ],
+                        "start": 625,
+                        "end": 679
+                      },
+                      "params": [],
+                      "start": 622,
+                      "end": 679
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 583,
+                    "end": 679
+                  },
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "someMethodThatCallsAnInnerMethod",
+                      "start": 690,
+                      "end": 722
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "InnerMod",
+                                  "start": 733,
+                                  "end": 741
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "someExportedInnerFunc",
+                                  "start": 742,
+                                  "end": 763
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 733,
+                                "end": 763
+                              },
+                              "arguments": [],
+                              "optional": false,
+                              "start": 733,
+                              "end": 765
+                            },
+                            "start": 726,
+                            "end": 766
+                          }
+                        ],
+                        "start": 725,
+                        "end": 767
+                      },
+                      "params": [],
+                      "start": 722,
+                      "end": 767
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 683,
+                    "end": 767
+                  },
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "someMethodThatCallsAnOuterInnerMethod",
+                      "start": 778,
+                      "end": 815
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "OuterMod",
+                                  "start": 826,
+                                  "end": 834
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "someExportedOuterFunc",
+                                  "start": 835,
+                                  "end": 856
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 826,
+                                "end": 856
+                              },
+                              "arguments": [],
+                              "optional": false,
+                              "start": 826,
+                              "end": 858
+                            },
+                            "start": 819,
+                            "end": 859
+                          }
+                        ],
+                        "start": 818,
+                        "end": 860
+                      },
+                      "params": [],
+                      "start": 815,
+                      "end": 860
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 771,
+                    "end": 860
+                  },
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "someMethod",
+                      "start": 871,
+                      "end": 881
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": 0,
+                              "start": 893,
+                              "end": 894
+                            },
+                            "start": 886,
+                            "end": 895
+                          }
+                        ],
+                        "start": 884,
+                        "end": 897
+                      },
+                      "params": [],
+                      "start": 881,
+                      "end": 897
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 864,
+                    "end": 897
+                  },
+                  {
+                    "type": "PropertyDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "someProp",
+                      "start": 908,
+                      "end": 916
+                    },
+                    "value": {
+                      "type": "Literal",
+                      "value": 1,
+                      "start": 919,
+                      "end": 920
+                    },
+                    "computed": false,
+                    "static": false,
+                    "declare": false,
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 901,
+                    "end": 921
+                  },
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "constructor",
+                      "start": 927,
+                      "end": 938
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "params": [],
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "FunctionDeclaration",
+                            "id": {
+                              "type": "Identifier",
+                              "name": "someInnerFunc",
+                              "start": 959,
+                              "end": 972
+                            },
+                            "generator": false,
+                            "expression": false,
+                            "async": false,
+                            "params": [],
+                            "body": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ReturnStatement",
+                                  "argument": {
+                                    "type": "Literal",
+                                    "value": 2,
+                                    "start": 984,
+                                    "end": 985
+                                  },
+                                  "start": 977,
+                                  "end": 986
+                                }
+                              ],
+                              "start": 975,
+                              "end": 988
+                            },
+                            "start": 950,
+                            "end": 988
+                          },
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "someInnerVar",
+                                  "start": 1006,
+                                  "end": 1018
+                                },
+                                "init": {
+                                  "type": "Literal",
+                                  "value": 3,
+                                  "start": 1021,
+                                  "end": 1022
+                                },
+                                "start": 1006,
+                                "end": 1022
+                              }
+                            ],
+                            "kind": "var",
+                            "start": 1002,
+                            "end": 1023
+                          }
+                        ],
+                        "start": 941,
+                        "end": 1028
+                      },
+                      "start": 938,
+                      "end": 1028
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "constructor",
+                    "override": false,
+                    "start": 927,
+                    "end": 1028
+                  }
+                ],
+                "start": 578,
+                "end": 1032
+              },
+              "superClass": null,
+              "implements": [
+                {
+                  "type": "TSClassImplements",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "I",
+                    "start": 576,
+                    "end": 577
+                  },
+                  "start": 576,
+                  "end": 577
+                }
+              ],
+              "start": 557,
+              "end": 1032
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 550,
+            "end": 1032
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "someModuleVar",
+                  "start": 1041,
+                  "end": 1054
+                },
+                "init": {
+                  "type": "Literal",
+                  "value": 4,
+                  "start": 1057,
+                  "end": 1058
+                },
+                "start": 1041,
+                "end": 1058
+              }
+            ],
+            "kind": "var",
+            "start": 1037,
+            "end": 1059
+          },
+          {
+            "type": "FunctionDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "someModuleFunction",
+              "start": 1073,
+              "end": 1091
+            },
+            "generator": false,
+            "expression": false,
+            "async": false,
+            "params": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "Literal",
+                    "value": 5,
+                    "start": 1103,
+                    "end": 1104
+                  },
+                  "start": 1096,
+                  "end": 1105
+                }
+              ],
+              "start": 1094,
+              "end": 1106
+            },
+            "start": 1064,
+            "end": 1106
+          }
+        ],
+        "start": 250,
+        "end": 1109
+      },
+      "start": 241,
+      "end": 1109
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M",
+        "start": 1120,
+        "end": 1121
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "c",
+                    "start": 1137,
+                    "end": 1138
+                  },
+                  "init": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 1141,
+                    "end": 1142
+                  },
+                  "start": 1137,
+                  "end": 1142
+                }
+              ],
+              "kind": "var",
+              "start": 1133,
+              "end": 1143
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 1126,
+            "end": 1143
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "meb",
+                    "start": 1157,
+                    "end": 1160
+                  },
+                  "init": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "M",
+                        "start": 1163,
+                        "end": 1164
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "E",
+                        "start": 1165,
+                        "end": 1166
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 1163,
+                      "end": 1166
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "B",
+                      "start": 1167,
+                      "end": 1168
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 1163,
+                    "end": 1168
+                  },
+                  "start": 1157,
+                  "end": 1168
+                }
+              ],
+              "kind": "var",
+              "start": 1153,
+              "end": 1169
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 1146,
+            "end": 1169
+          }
+        ],
+        "start": 1122,
+        "end": 1172
+      },
+      "start": 1113,
+      "end": 1172
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "cprime",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "TSQualifiedName",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "M",
+                    "start": 1189,
+                    "end": 1190
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "I",
+                    "start": 1191,
+                    "end": 1192
+                  },
+                  "start": 1189,
+                  "end": 1192
+                },
+                "start": 1189,
+                "end": 1192
+              },
+              "start": 1187,
+              "end": 1192
+            },
+            "start": 1180,
+            "end": 1192
+          },
+          "init": {
+            "type": "TSTypeAssertion",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "TSQualifiedName",
+                "left": {
+                  "type": "Identifier",
+                  "name": "M",
+                  "start": 1196,
+                  "end": 1197
+                },
+                "right": {
+                  "type": "Identifier",
+                  "name": "I",
+                  "start": 1198,
+                  "end": 1199
+                },
+                "start": 1196,
+                "end": 1199
+              },
+              "start": 1196,
+              "end": 1199
+            },
+            "expression": {
+              "type": "Literal",
+              "value": null,
+              "start": 1200,
+              "end": 1204
+            },
+            "start": 1195,
+            "end": 1204
+          },
+          "start": 1180,
+          "end": 1204
+        }
+      ],
+      "kind": "var",
+      "start": 1176,
+      "end": 1205
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "start": 1213,
+            "end": 1214
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "M",
+                "start": 1221,
+                "end": 1222
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "C",
+                "start": 1223,
+                "end": 1224
+              },
+              "computed": false,
+              "optional": false,
+              "start": 1221,
+              "end": 1224
+            },
+            "arguments": [],
+            "start": 1217,
+            "end": 1226
+          },
+          "start": 1213,
+          "end": 1226
+        }
+      ],
+      "kind": "var",
+      "start": 1209,
+      "end": 1227
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "z",
+            "start": 1233,
+            "end": 1234
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "M",
+              "start": 1237,
+              "end": 1238
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 1239,
+              "end": 1240
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1237,
+            "end": 1240
+          },
+          "start": 1233,
+          "end": 1240
+        }
+      ],
+      "kind": "var",
+      "start": 1229,
+      "end": 1241
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "alpha",
+            "start": 1247,
+            "end": 1252
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "M",
+                "start": 1255,
+                "end": 1256
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "E",
+                "start": 1257,
+                "end": 1258
+              },
+              "computed": false,
+              "optional": false,
+              "start": 1255,
+              "end": 1258
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 1259,
+              "end": 1260
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1255,
+            "end": 1260
+          },
+          "start": 1247,
+          "end": 1260
+        }
+      ],
+      "kind": "var",
+      "start": 1243,
+      "end": 1261
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "omega",
+            "start": 1267,
+            "end": 1272
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "M",
+              "start": 1275,
+              "end": 1276
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "exported_var",
+              "start": 1277,
+              "end": 1289
+            },
+            "computed": false,
+            "optional": false,
+            "start": 1275,
+            "end": 1289
+          },
+          "start": 1267,
+          "end": 1289
+        }
+      ],
+      "kind": "var",
+      "start": 1263,
+      "end": 1290
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "c",
+            "start": 1292,
+            "end": 1293
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "someMethodThatCallsAnOuterMethod",
+            "start": 1294,
+            "end": 1326
+          },
+          "computed": false,
+          "optional": false,
+          "start": 1292,
+          "end": 1326
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 1292,
+        "end": 1328
+      },
+      "start": 1292,
+      "end": 1329
+    }
+  ],
+  "sourceType": "script",
+  "start": 4,
+  "end": 1331
+}

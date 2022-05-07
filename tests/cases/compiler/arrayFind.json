@@ -1,0 +1,384 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "isNumber",
+        "start": 106,
+        "end": 114
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 118,
+              "end": 121
+            },
+            "start": 116,
+            "end": 121
+          },
+          "start": 115,
+          "end": 121
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 155,
+                  "end": 156
+                },
+                "start": 148,
+                "end": 156
+              },
+              "right": {
+                "type": "Literal",
+                "value": "number",
+                "start": 161,
+                "end": 169
+              },
+              "start": 148,
+              "end": 169
+            },
+            "start": 141,
+            "end": 170
+          }
+        ],
+        "start": 136,
+        "end": 173
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypePredicate",
+          "asserts": false,
+          "parameterName": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 124,
+            "end": 125
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 129,
+              "end": 135
+            },
+            "start": 129,
+            "end": 135
+          },
+          "start": 124,
+          "end": 135
+        },
+        "start": 122,
+        "end": 135
+      },
+      "start": 97,
+      "end": 173
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "arrayOfStringsNumbersAndBooleans",
+            "start": 183,
+            "end": 215
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": "string",
+                "start": 219,
+                "end": 227
+              },
+              {
+                "type": "Literal",
+                "value": false,
+                "start": 229,
+                "end": 234
+              },
+              {
+                "type": "Literal",
+                "value": 0,
+                "start": 236,
+                "end": 237
+              },
+              {
+                "type": "Literal",
+                "value": "strung",
+                "start": 239,
+                "end": 247
+              },
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 249,
+                "end": 250
+              },
+              {
+                "type": "Literal",
+                "value": true,
+                "start": 252,
+                "end": 256
+              }
+            ],
+            "start": 218,
+            "end": 257
+          },
+          "start": 183,
+          "end": 257
+        }
+      ],
+      "kind": "const",
+      "start": 177,
+      "end": 258
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foundNumber",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 279,
+                    "end": 285
+                  },
+                  {
+                    "type": "TSUndefinedKeyword",
+                    "start": 288,
+                    "end": 297
+                  }
+                ],
+                "start": 279,
+                "end": 297
+              },
+              "start": 277,
+              "end": 297
+            },
+            "start": 266,
+            "end": 297
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "arrayOfStringsNumbersAndBooleans",
+                "start": 300,
+                "end": 332
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "find",
+                "start": 333,
+                "end": 337
+              },
+              "computed": false,
+              "optional": false,
+              "start": 300,
+              "end": 337
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "isNumber",
+                "start": 338,
+                "end": 346
+              }
+            ],
+            "optional": false,
+            "start": 300,
+            "end": 347
+          },
+          "start": 266,
+          "end": 347
+        }
+      ],
+      "kind": "const",
+      "start": 260,
+      "end": 348
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "readonlyArrayOfStringsNumbersAndBooleans",
+            "start": 358,
+            "end": 398
+          },
+          "init": {
+            "type": "TSAsExpression",
+            "expression": {
+              "type": "Identifier",
+              "name": "arrayOfStringsNumbersAndBooleans",
+              "start": 401,
+              "end": 433
+            },
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "ReadonlyArray",
+                "start": 437,
+                "end": 450
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSUnionType",
+                    "types": [
+                      {
+                        "type": "TSStringKeyword",
+                        "start": 451,
+                        "end": 457
+                      },
+                      {
+                        "type": "TSNumberKeyword",
+                        "start": 460,
+                        "end": 466
+                      },
+                      {
+                        "type": "TSBooleanKeyword",
+                        "start": 469,
+                        "end": 476
+                      }
+                    ],
+                    "start": 451,
+                    "end": 476
+                  }
+                ],
+                "start": 450,
+                "end": 477
+              },
+              "start": 437,
+              "end": 477
+            },
+            "start": 401,
+            "end": 477
+          },
+          "start": 358,
+          "end": 477
+        }
+      ],
+      "kind": "const",
+      "start": 352,
+      "end": 478
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "readonlyFoundNumber",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 507,
+                    "end": 513
+                  },
+                  {
+                    "type": "TSUndefinedKeyword",
+                    "start": 516,
+                    "end": 525
+                  }
+                ],
+                "start": 507,
+                "end": 525
+              },
+              "start": 505,
+              "end": 525
+            },
+            "start": 486,
+            "end": 525
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "readonlyArrayOfStringsNumbersAndBooleans",
+                "start": 528,
+                "end": 568
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "find",
+                "start": 569,
+                "end": 573
+              },
+              "computed": false,
+              "optional": false,
+              "start": 528,
+              "end": 573
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "isNumber",
+                "start": 574,
+                "end": 582
+              }
+            ],
+            "optional": false,
+            "start": 528,
+            "end": 583
+          },
+          "start": 486,
+          "end": 583
+        }
+      ],
+      "kind": "const",
+      "start": 480,
+      "end": 584
+    }
+  ],
+  "sourceType": "script",
+  "start": 97,
+  "end": 586
+}

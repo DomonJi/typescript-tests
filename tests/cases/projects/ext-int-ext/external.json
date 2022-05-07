@@ -1,0 +1,120 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "a",
+        "start": 44,
+        "end": 45
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "external2",
+          "start": 56,
+          "end": 67
+        },
+        "start": 48,
+        "end": 68
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 37,
+      "end": 69
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "outer",
+            "start": 73,
+            "end": 78
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "b",
+            "start": 79,
+            "end": 80
+          },
+          "computed": false,
+          "optional": false,
+          "start": 73,
+          "end": 80
+        },
+        "right": {
+          "type": "Literal",
+          "value": "bar",
+          "start": 83,
+          "end": 88
+        },
+        "start": 73,
+        "end": 88
+      },
+      "start": 73,
+      "end": 89
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "c",
+            "start": 95,
+            "end": 96
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "a",
+                "start": 99,
+                "end": 100
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "square",
+                "start": 101,
+                "end": 107
+              },
+              "computed": false,
+              "optional": false,
+              "start": 99,
+              "end": 107
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 5,
+                "start": 108,
+                "end": 109
+              }
+            ],
+            "optional": false,
+            "start": 99,
+            "end": 110
+          },
+          "start": 95,
+          "end": 110
+        }
+      ],
+      "kind": "var",
+      "start": 91,
+      "end": 111
+    }
+  ],
+  "sourceType": "module",
+  "start": 37,
+  "end": 111
+}

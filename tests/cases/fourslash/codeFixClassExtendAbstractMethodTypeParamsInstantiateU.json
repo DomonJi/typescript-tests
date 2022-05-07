@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 145,
+            "end": 151
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 152,
+            "end": 159
+          },
+          "computed": false,
+          "optional": false,
+          "start": 145,
+          "end": 159
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 167,
+                  "end": 178
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement inherited abstract class",
+                  "start": 180,
+                  "end": 216
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 167,
+                "end": 216
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 223,
+                  "end": 237
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A<T> {\r\n    abstract f(x: T): T;\r\n}\r\n\r\nclass C<U> extends A<U> {\r\n    f(x: U): U {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "abstract class A<T> {\n    abstract f(x: T): T;\n}\n\nclass C<U> extends A<U> {\n    f(x: U): U {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 240,
+                      "end": 402
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 240,
+                  "end": 402
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 223,
+                "end": 402
+              }
+            ],
+            "start": 160,
+            "end": 405
+          }
+        ],
+        "optional": false,
+        "start": 145,
+        "end": 406
+      },
+      "start": 145,
+      "end": 407
+    }
+  ],
+  "sourceType": "script",
+  "start": 145,
+  "end": 409
+}

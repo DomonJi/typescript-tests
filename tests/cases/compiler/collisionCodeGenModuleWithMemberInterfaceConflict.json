@@ -1,0 +1,136 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "m1",
+        "start": 7,
+        "end": 9
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSInterfaceDeclaration",
+              "body": {
+                "type": "TSInterfaceBody",
+                "body": [],
+                "start": 37,
+                "end": 45
+              },
+              "id": {
+                "type": "Identifier",
+                "name": "m1",
+                "start": 34,
+                "end": 36
+              },
+              "start": 24,
+              "end": 45
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "type",
+            "assertions": [],
+            "start": 17,
+            "end": 45
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "m2",
+                "start": 64,
+                "end": 66
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [],
+                "start": 81,
+                "end": 89
+              },
+              "superClass": null,
+              "implements": [
+                {
+                  "type": "TSClassImplements",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "m1",
+                    "start": 78,
+                    "end": 80
+                  },
+                  "start": 78,
+                  "end": 80
+                }
+              ],
+              "start": 58,
+              "end": 89
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 51,
+            "end": 89
+          }
+        ],
+        "start": 10,
+        "end": 92
+      },
+      "start": 0,
+      "end": 92
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 98,
+            "end": 101
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "m1",
+                "start": 108,
+                "end": 110
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "m2",
+                "start": 111,
+                "end": 113
+              },
+              "computed": false,
+              "optional": false,
+              "start": 108,
+              "end": 113
+            },
+            "arguments": [],
+            "start": 104,
+            "end": 115
+          },
+          "start": 98,
+          "end": 115
+        }
+      ],
+      "kind": "var",
+      "start": 94,
+      "end": 116
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 116
+}

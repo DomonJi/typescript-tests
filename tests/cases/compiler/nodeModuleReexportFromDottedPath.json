@@ -1,0 +1,372 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSInterfaceDeclaration",
+        "body": {
+          "type": "TSInterfaceBody",
+          "body": [
+            {
+              "type": "TSPropertySignature",
+              "optional": true,
+              "computed": false,
+              "key": {
+                "type": "Identifier",
+                "name": "rejectOnNotFound",
+                "start": 122,
+                "end": 138
+              },
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSAnyKeyword",
+                  "start": 141,
+                  "end": 144
+                },
+                "start": 139,
+                "end": 144
+              },
+              "start": 122,
+              "end": 145
+            }
+          ],
+          "start": 117,
+          "end": 148
+        },
+        "id": {
+          "type": "Identifier",
+          "name": "PrismaClientOptions",
+          "start": 97,
+          "end": 116
+        },
+        "start": 87,
+        "end": 148
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 80,
+      "end": 148
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "PrismaClient",
+          "start": 165,
+          "end": 177
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "PropertyDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "fetcher",
+                "start": 244,
+                "end": 251
+              },
+              "value": null,
+              "computed": false,
+              "static": false,
+              "declare": false,
+              "override": false,
+              "accessibility": "private",
+              "start": 236,
+              "end": 252
+            }
+          ],
+          "start": 231,
+          "end": 255
+        },
+        "superClass": null,
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "T",
+                "start": 178,
+                "end": 179
+              },
+              "constraint": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "PrismaClientOptions",
+                  "start": 188,
+                  "end": 207
+                },
+                "start": 188,
+                "end": 207
+              },
+              "default": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "PrismaClientOptions",
+                  "start": 210,
+                  "end": 229
+                },
+                "start": 210,
+                "end": 229
+              },
+              "start": 178,
+              "end": 229
+            }
+          ],
+          "start": 177,
+          "end": 230
+        },
+        "start": 159,
+        "end": 255
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 152,
+      "end": 255
+    },
+    {
+      "type": "ExportAllDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": ".prisma/client",
+        "start": 328,
+        "end": 344
+      },
+      "exportKind": "value",
+      "exported": null,
+      "assertions": [],
+      "start": 314,
+      "end": 345
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "@prisma/client",
+        "start": 403,
+        "end": 419
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "PrismaClient",
+            "start": 383,
+            "end": 395
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "PrismaClient",
+            "start": 383,
+            "end": 395
+          },
+          "importKind": "value",
+          "start": 383,
+          "end": 395
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 374,
+      "end": 420
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "enhancePrisma",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSFunctionType",
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "client",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "TPrismaClientCtor",
+                          "start": 479,
+                          "end": 496
+                        },
+                        "start": 479,
+                        "end": 496
+                      },
+                      "start": 477,
+                      "end": 496
+                    },
+                    "start": 471,
+                    "end": 496
+                  }
+                ],
+                "returnType": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSIntersectionType",
+                    "types": [
+                      {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "TPrismaClientCtor",
+                          "start": 501,
+                          "end": 518
+                        },
+                        "start": 501,
+                        "end": 518
+                      },
+                      {
+                        "type": "TSTypeLiteral",
+                        "members": [
+                          {
+                            "type": "TSPropertySignature",
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "name": "enhanced",
+                              "start": 523,
+                              "end": 531
+                            },
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSUnknownKeyword",
+                                "start": 533,
+                                "end": 540
+                              },
+                              "start": 531,
+                              "end": 540
+                            },
+                            "start": 523,
+                            "end": 540
+                          }
+                        ],
+                        "start": 521,
+                        "end": 542
+                      }
+                    ],
+                    "start": 501,
+                    "end": 542
+                  },
+                  "start": 498,
+                  "end": 542
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterDeclaration",
+                  "params": [
+                    {
+                      "type": "TSTypeParameter",
+                      "name": {
+                        "type": "Identifier",
+                        "name": "TPrismaClientCtor",
+                        "start": 452,
+                        "end": 469
+                      },
+                      "start": 452,
+                      "end": 469
+                    }
+                  ],
+                  "start": 451,
+                  "end": 470
+                },
+                "start": 451,
+                "end": 542
+              },
+              "start": 449,
+              "end": 542
+            },
+            "start": 436,
+            "end": 542
+          },
+          "init": null,
+          "start": 436,
+          "end": 542
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 422,
+      "end": 543
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "EnhancedPrisma",
+            "start": 551,
+            "end": 565
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "enhancePrisma",
+              "start": 568,
+              "end": 581
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "PrismaClient",
+                "start": 582,
+                "end": 594
+              }
+            ],
+            "optional": false,
+            "start": 568,
+            "end": 595
+          },
+          "start": 551,
+          "end": 595
+        }
+      ],
+      "kind": "const",
+      "start": 545,
+      "end": 596
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "NewExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "EnhancedPrisma",
+          "start": 617,
+          "end": 631
+        },
+        "arguments": [],
+        "start": 613,
+        "end": 633
+      },
+      "exportKind": "value",
+      "start": 598,
+      "end": 634
+    }
+  ],
+  "sourceType": "module",
+  "start": 80,
+  "end": 636
+}

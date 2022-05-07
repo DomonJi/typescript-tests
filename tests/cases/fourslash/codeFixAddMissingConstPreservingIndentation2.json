@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 136,
+            "end": 142
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 143,
+            "end": 153
+          },
+          "computed": false,
+          "optional": false,
+          "start": 136,
+          "end": 153
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 161,
+                  "end": 166
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addMissingConst",
+                  "start": 168,
+                  "end": 185
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 161,
+                "end": 185
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 192,
+                  "end": 209
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Add 'const' to all unresolved variables",
+                  "start": 211,
+                  "end": 252
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 192,
+                "end": 252
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 259,
+                  "end": 273
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "const a = () => {\r\n    for (const x in []) {\r\n        const y = 0;\r\n    }\r\n};\r\nconst b = 3;",
+                        "cooked": "const a = () => {\n    for (const x in []) {\n        const y = 0;\n    }\n};\nconst b = 3;"
+                      },
+                      "tail": true,
+                      "start": 275,
+                      "end": 368
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 275,
+                  "end": 368
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 259,
+                "end": 368
+              }
+            ],
+            "start": 154,
+            "end": 371
+          }
+        ],
+        "optional": false,
+        "start": 136,
+        "end": 372
+      },
+      "start": 136,
+      "end": 373
+    }
+  ],
+  "sourceType": "script",
+  "start": 136,
+  "end": 375
+}

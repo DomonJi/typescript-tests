@@ -1,0 +1,553 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "verifyIndentationAfterNewLine",
+        "start": 126,
+        "end": 155
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "marker",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 164,
+              "end": 170
+            },
+            "start": 162,
+            "end": 170
+          },
+          "start": 156,
+          "end": 170
+        },
+        {
+          "type": "Identifier",
+          "name": "indentation",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 185,
+              "end": 191
+            },
+            "start": 183,
+            "end": 191
+          },
+          "start": 172,
+          "end": 191
+        },
+        {
+          "type": "Identifier",
+          "name": "positionWorkaround",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 213,
+              "end": 219
+            },
+            "start": 211,
+            "end": 219
+          },
+          "start": 193,
+          "end": 219
+        },
+        {
+          "type": "Identifier",
+          "name": "expectedText",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 235,
+              "end": 241
+            },
+            "start": 233,
+            "end": 241
+          },
+          "start": 221,
+          "end": 241
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "goTo",
+                  "start": 256,
+                  "end": 260
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "marker",
+                  "start": 261,
+                  "end": 267
+                },
+                "computed": false,
+                "optional": false,
+                "start": 256,
+                "end": 267
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "marker",
+                  "start": 268,
+                  "end": 274
+                }
+              ],
+              "optional": false,
+              "start": 256,
+              "end": 275
+            },
+            "start": 256,
+            "end": 276
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "edit",
+                  "start": 282,
+                  "end": 286
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "insert",
+                  "start": 287,
+                  "end": 293
+                },
+                "computed": false,
+                "optional": false,
+                "start": 282,
+                "end": 293
+              },
+              "arguments": [
+                {
+                  "type": "Literal",
+                  "value": "\n",
+                  "start": 294,
+                  "end": 298
+                }
+              ],
+              "optional": false,
+              "start": 282,
+              "end": 299
+            },
+            "start": 282,
+            "end": 300
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "goTo",
+                  "start": 358,
+                  "end": 362
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "position",
+                  "start": 363,
+                  "end": 371
+                },
+                "computed": false,
+                "optional": false,
+                "start": 358,
+                "end": 371
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "positionWorkaround",
+                  "start": 372,
+                  "end": 390
+                }
+              ],
+              "optional": false,
+              "start": 358,
+              "end": 391
+            },
+            "start": 358,
+            "end": 392
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "verify",
+                  "start": 398,
+                  "end": 404
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "textAtCaretIs",
+                  "start": 405,
+                  "end": 418
+                },
+                "computed": false,
+                "optional": false,
+                "start": 398,
+                "end": 418
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "expectedText",
+                  "start": 419,
+                  "end": 431
+                }
+              ],
+              "optional": false,
+              "start": 398,
+              "end": 432
+            },
+            "start": 398,
+            "end": 433
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "verify",
+                  "start": 439,
+                  "end": 445
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "indentationIs",
+                  "start": 446,
+                  "end": 459
+                },
+                "computed": false,
+                "optional": false,
+                "start": 439,
+                "end": 459
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "indentation",
+                  "start": 460,
+                  "end": 471
+                }
+              ],
+              "optional": false,
+              "start": 439,
+              "end": 472
+            },
+            "start": 439,
+            "end": 473
+          }
+        ],
+        "start": 249,
+        "end": 476
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 244,
+          "end": 248
+        },
+        "start": 242,
+        "end": 248
+      },
+      "start": 117,
+      "end": 476
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "verifyIndentationAfterNewLine",
+          "start": 480,
+          "end": 509
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "1",
+            "start": 510,
+            "end": 513
+          },
+          {
+            "type": "Literal",
+            "value": 4,
+            "start": 515,
+            "end": 516
+          },
+          {
+            "type": "Literal",
+            "value": 24,
+            "start": 518,
+            "end": 520
+          },
+          {
+            "type": "Literal",
+            "value": "(",
+            "start": 522,
+            "end": 525
+          }
+        ],
+        "optional": false,
+        "start": 480,
+        "end": 526
+      },
+      "start": 480,
+      "end": 527
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "verifyIndentationAfterNewLine",
+          "start": 529,
+          "end": 558
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "2",
+            "start": 559,
+            "end": 562
+          },
+          {
+            "type": "Literal",
+            "value": 8,
+            "start": 564,
+            "end": 565
+          },
+          {
+            "type": "Literal",
+            "value": 34,
+            "start": 567,
+            "end": 569
+          },
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 571,
+            "end": 574
+          }
+        ],
+        "optional": false,
+        "start": 529,
+        "end": 575
+      },
+      "start": 529,
+      "end": 576
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "verifyIndentationAfterNewLine",
+          "start": 578,
+          "end": 607
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "3",
+            "start": 608,
+            "end": 611
+          },
+          {
+            "type": "Literal",
+            "value": 8,
+            "start": 613,
+            "end": 614
+          },
+          {
+            "type": "Literal",
+            "value": 48,
+            "start": 616,
+            "end": 618
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 620,
+            "end": 623
+          }
+        ],
+        "optional": false,
+        "start": 578,
+        "end": 624
+      },
+      "start": 578,
+      "end": 625
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "verifyIndentationAfterNewLine",
+          "start": 627,
+          "end": 656
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "4",
+            "start": 657,
+            "end": 660
+          },
+          {
+            "type": "Literal",
+            "value": 12,
+            "start": 662,
+            "end": 664
+          },
+          {
+            "type": "Literal",
+            "value": 63,
+            "start": 666,
+            "end": 668
+          },
+          {
+            "type": "Literal",
+            "value": "B",
+            "start": 670,
+            "end": 673
+          }
+        ],
+        "optional": false,
+        "start": 627,
+        "end": 674
+      },
+      "start": 627,
+      "end": 675
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "verifyIndentationAfterNewLine",
+          "start": 677,
+          "end": 706
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "5",
+            "start": 707,
+            "end": 710
+          },
+          {
+            "type": "Literal",
+            "value": 8,
+            "start": 712,
+            "end": 713
+          },
+          {
+            "type": "Literal",
+            "value": 76,
+            "start": 715,
+            "end": 717
+          },
+          {
+            "type": "Literal",
+            "value": ",",
+            "start": 719,
+            "end": 722
+          }
+        ],
+        "optional": false,
+        "start": 677,
+        "end": 723
+      },
+      "start": 677,
+      "end": 724
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "verifyIndentationAfterNewLine",
+          "start": 726,
+          "end": 755
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "6",
+            "start": 756,
+            "end": 759
+          },
+          {
+            "type": "Literal",
+            "value": 8,
+            "start": 761,
+            "end": 762
+          },
+          {
+            "type": "Literal",
+            "value": 83,
+            "start": 764,
+            "end": 766
+          },
+          {
+            "type": "Literal",
+            "value": "",
+            "start": 768,
+            "end": 770
+          }
+        ],
+        "optional": false,
+        "start": 726,
+        "end": 771
+      },
+      "start": 726,
+      "end": 772
+    }
+  ],
+  "sourceType": "script",
+  "start": 117,
+  "end": 774
+}

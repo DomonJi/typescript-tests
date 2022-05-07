@@ -1,0 +1,178 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M1",
+        "start": 7,
+        "end": 9
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSInterfaceDeclaration",
+              "body": {
+                "type": "TSInterfaceBody",
+                "body": [
+                  {
+                    "type": "TSMethodSignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "foo",
+                      "start": 47,
+                      "end": 50
+                    },
+                    "params": [],
+                    "kind": "method",
+                    "start": 47,
+                    "end": 53
+                  }
+                ],
+                "start": 36,
+                "end": 60
+              },
+              "id": {
+                "type": "Identifier",
+                "name": "I",
+                "start": 34,
+                "end": 35
+              },
+              "start": 24,
+              "end": 60
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "type",
+            "assertions": [],
+            "start": 17,
+            "end": 60
+          }
+        ],
+        "start": 10,
+        "end": 63
+      },
+      "start": 0,
+      "end": 63
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M2",
+        "start": 74,
+        "end": 76
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSImportEqualsDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 91,
+              "end": 92
+            },
+            "moduleReference": {
+              "type": "TSQualifiedName",
+              "left": {
+                "type": "Identifier",
+                "name": "M1",
+                "start": 95,
+                "end": 97
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "I",
+                "start": 98,
+                "end": 99
+              },
+              "start": 95,
+              "end": 99
+            },
+            "importKind": "value",
+            "isExport": false,
+            "start": 84,
+            "end": 100
+          },
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "C",
+              "start": 112,
+              "end": 113
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "MethodDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 138,
+                    "end": 141
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 144,
+                      "end": 146
+                    },
+                    "params": [],
+                    "start": 141,
+                    "end": 146
+                  },
+                  "computed": false,
+                  "static": false,
+                  "kind": "method",
+                  "override": false,
+                  "start": 138,
+                  "end": 146
+                }
+              ],
+              "start": 127,
+              "end": 153
+            },
+            "superClass": null,
+            "implements": [
+              {
+                "type": "TSClassImplements",
+                "expression": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 125,
+                  "end": 126
+                },
+                "start": 125,
+                "end": 126
+              }
+            ],
+            "start": 106,
+            "end": 153
+          }
+        ],
+        "start": 77,
+        "end": 156
+      },
+      "start": 67,
+      "end": 156
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 156
+}

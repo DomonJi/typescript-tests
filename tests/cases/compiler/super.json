@@ -1,0 +1,603 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 6,
+        "end": 10
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 18,
+              "end": 29
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "x",
+                          "start": 47,
+                          "end": 48
+                        },
+                        "init": null,
+                        "start": 47,
+                        "end": 48
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 43,
+                    "end": 49
+                  }
+                ],
+                "start": 32,
+                "end": 56
+              },
+              "start": 29,
+              "end": 56
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 18,
+            "end": 56
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 69,
+              "end": 72
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": "base",
+                      "start": 93,
+                      "end": 99
+                    },
+                    "start": 86,
+                    "end": 100
+                  }
+                ],
+                "start": 75,
+                "end": 107
+              },
+              "params": [],
+              "start": 72,
+              "end": 107
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 62,
+            "end": 107
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 122,
+              "end": 125
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": "basebar",
+                      "start": 146,
+                      "end": 155
+                    },
+                    "start": 139,
+                    "end": 156
+                  }
+                ],
+                "start": 128,
+                "end": 163
+              },
+              "params": [],
+              "start": 125,
+              "end": 163
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 115,
+            "end": 163
+          }
+        ],
+        "start": 11,
+        "end": 166
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 166
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Sub1",
+        "start": 176,
+        "end": 180
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 208,
+              "end": 211
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "BinaryExpression",
+                      "operator": "+",
+                      "left": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                          "type": "Literal",
+                          "value": "sub1",
+                          "start": 232,
+                          "end": 238
+                        },
+                        "right": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Super",
+                              "start": 241,
+                              "end": 246
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "foo",
+                              "start": 247,
+                              "end": 250
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 241,
+                            "end": 250
+                          },
+                          "arguments": [],
+                          "optional": false,
+                          "start": 241,
+                          "end": 252
+                        },
+                        "start": 232,
+                        "end": 252
+                      },
+                      "right": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Super",
+                            "start": 255,
+                            "end": 260
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "bar",
+                            "start": 261,
+                            "end": 264
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 255,
+                          "end": 264
+                        },
+                        "arguments": [],
+                        "optional": false,
+                        "start": 255,
+                        "end": 266
+                      },
+                      "start": 232,
+                      "end": 266
+                    },
+                    "start": 225,
+                    "end": 267
+                  }
+                ],
+                "start": 214,
+                "end": 274
+              },
+              "params": [],
+              "start": 211,
+              "end": 274
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 201,
+            "end": 274
+          }
+        ],
+        "start": 194,
+        "end": 277
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Base",
+        "start": 189,
+        "end": 193
+      },
+      "start": 170,
+      "end": 277
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "SubSub1",
+        "start": 289,
+        "end": 296
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 324,
+              "end": 327
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "BinaryExpression",
+                      "operator": "+",
+                      "left": {
+                        "type": "Literal",
+                        "value": "subsub1",
+                        "start": 348,
+                        "end": 357
+                      },
+                      "right": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Super",
+                            "start": 360,
+                            "end": 365
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "foo",
+                            "start": 366,
+                            "end": 369
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 360,
+                          "end": 369
+                        },
+                        "arguments": [],
+                        "optional": false,
+                        "start": 360,
+                        "end": 371
+                      },
+                      "start": 348,
+                      "end": 371
+                    },
+                    "start": 341,
+                    "end": 372
+                  }
+                ],
+                "start": 330,
+                "end": 379
+              },
+              "params": [],
+              "start": 327,
+              "end": 379
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 317,
+            "end": 379
+          }
+        ],
+        "start": 310,
+        "end": 382
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Sub1",
+        "start": 305,
+        "end": 309
+      },
+      "start": 283,
+      "end": 382
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Base2",
+        "start": 392,
+        "end": 397
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 412,
+              "end": 415
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "Super",
+                          "start": 429,
+                          "end": 434
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "foo",
+                          "start": 435,
+                          "end": 438
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 429,
+                        "end": 438
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 429,
+                      "end": 440
+                    },
+                    "start": 429,
+                    "end": 441
+                  }
+                ],
+                "start": 418,
+                "end": 448
+              },
+              "params": [],
+              "start": 415,
+              "end": 448
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 405,
+            "end": 448
+          }
+        ],
+        "start": 398,
+        "end": 451
+      },
+      "superClass": null,
+      "start": 386,
+      "end": 451
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "s",
+            "start": 459,
+            "end": 460
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "Sub1",
+              "start": 467,
+              "end": 471
+            },
+            "arguments": [],
+            "start": 463,
+            "end": 473
+          },
+          "start": 459,
+          "end": 473
+        }
+      ],
+      "kind": "var",
+      "start": 455,
+      "end": 474
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "ss",
+            "start": 480,
+            "end": 482
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "SubSub1",
+              "start": 489,
+              "end": 496
+            },
+            "arguments": [],
+            "start": 485,
+            "end": 498
+          },
+          "start": 480,
+          "end": 498
+        }
+      ],
+      "kind": "var",
+      "start": 476,
+      "end": 499
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "BinaryExpression",
+        "operator": "+",
+        "left": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "s",
+              "start": 501,
+              "end": 502
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 503,
+              "end": 506
+            },
+            "computed": false,
+            "optional": false,
+            "start": 501,
+            "end": 506
+          },
+          "arguments": [],
+          "optional": false,
+          "start": 501,
+          "end": 508
+        },
+        "right": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "ss",
+              "start": 511,
+              "end": 513
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 514,
+              "end": 517
+            },
+            "computed": false,
+            "optional": false,
+            "start": 511,
+            "end": 517
+          },
+          "arguments": [],
+          "optional": false,
+          "start": 511,
+          "end": 519
+        },
+        "start": 501,
+        "end": 519
+      },
+      "start": 501,
+      "end": 520
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 524
+}

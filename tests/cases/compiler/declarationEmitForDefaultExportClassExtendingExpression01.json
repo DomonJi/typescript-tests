@@ -1,0 +1,234 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "getGreeting",
+              "start": 47,
+              "end": 58
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 62,
+                "end": 68
+              },
+              "start": 60,
+              "end": 68
+            },
+            "start": 47,
+            "end": 69
+          }
+        ],
+        "start": 41,
+        "end": 71
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Greeter",
+        "start": 33,
+        "end": 40
+      },
+      "start": 23,
+      "end": 71
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSConstructSignatureDeclaration",
+            "params": [],
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Greeter",
+                  "start": 116,
+                  "end": 123
+                },
+                "start": 116,
+                "end": 123
+              },
+              "start": 114,
+              "end": 123
+            },
+            "start": 108,
+            "end": 124
+          }
+        ],
+        "start": 102,
+        "end": 126
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "GreeterConstructor",
+        "start": 83,
+        "end": 101
+      },
+      "start": 73,
+      "end": 126
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "A",
+        "start": 134,
+        "end": 135
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "getGreeting",
+              "start": 142,
+              "end": 153
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "Literal",
+                      "value": "hello",
+                      "start": 173,
+                      "end": 180
+                    },
+                    "start": 166,
+                    "end": 181
+                  }
+                ],
+                "start": 156,
+                "end": 187
+              },
+              "params": [],
+              "start": 153,
+              "end": 187
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 142,
+            "end": 187
+          }
+        ],
+        "start": 136,
+        "end": 189
+      },
+      "superClass": null,
+      "start": 128,
+      "end": 189
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "getGreeterBase",
+            "start": 197,
+            "end": 211
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 240,
+              "end": 241
+            },
+            "async": false,
+            "expression": true,
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "GreeterConstructor",
+                  "start": 218,
+                  "end": 236
+                },
+                "start": 218,
+                "end": 236
+              },
+              "start": 216,
+              "end": 236
+            },
+            "start": 214,
+            "end": 241
+          },
+          "start": 197,
+          "end": 241
+        }
+      ],
+      "kind": "const",
+      "start": 191,
+      "end": 242
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": null,
+        "body": {
+          "type": "ClassBody",
+          "body": [],
+          "start": 290,
+          "end": 293
+        },
+        "superClass": {
+          "type": "CallExpression",
+          "callee": {
+            "type": "Identifier",
+            "name": "getGreeterBase",
+            "start": 273,
+            "end": 287
+          },
+          "arguments": [],
+          "optional": false,
+          "start": 273,
+          "end": 289
+        },
+        "start": 259,
+        "end": 293
+      },
+      "exportKind": "value",
+      "start": 244,
+      "end": 293
+    }
+  ],
+  "sourceType": "module",
+  "start": 23,
+  "end": 295
+}

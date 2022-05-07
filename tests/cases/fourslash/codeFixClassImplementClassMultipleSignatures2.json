@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 329,
+            "end": 335
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 336,
+            "end": 343
+          },
+          "computed": false,
+          "optional": false,
+          "start": 329,
+          "end": 343
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 351,
+                  "end": 362
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'A'",
+                  "start": 364,
+                  "end": 389
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 351,
+                "end": 389
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 396,
+                  "end": 410
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class A {\r\n    method(a: any, b: string): boolean;\r\n    method(a: string, b: number): Function;\r\n    method(a: string): Function;\r\n    method(a: string | number, b?: string | number): boolean | Function { return a + b as any; }\r\n}\r\nclass C implements A {\r\n    method(a: any, b: string): boolean;\r\n    method(a: string, b: number): Function;\r\n    method(a: string): Function;\r\n    method(a: string | number, b?: string | number): boolean | Function {\r\n        throw new Error(\"Method not implemented.\");\r\n    }\r\n}",
+                        "cooked": "class A {\n    method(a: any, b: string): boolean;\n    method(a: string, b: number): Function;\n    method(a: string): Function;\n    method(a: string | number, b?: string | number): boolean | Function { return a + b as any; }\n}\nclass C implements A {\n    method(a: any, b: string): boolean;\n    method(a: string, b: number): Function;\n    method(a: string): Function;\n    method(a: string | number, b?: string | number): boolean | Function {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 413,
+                      "end": 927
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 413,
+                  "end": 927
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 396,
+                "end": 927
+              }
+            ],
+            "start": 344,
+            "end": 931
+          }
+        ],
+        "optional": false,
+        "start": 329,
+        "end": 932
+      },
+      "start": 329,
+      "end": 933
+    }
+  ],
+  "sourceType": "script",
+  "start": 329,
+  "end": 935
+}

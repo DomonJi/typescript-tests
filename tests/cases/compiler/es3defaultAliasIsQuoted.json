@@ -1,0 +1,246 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Foo",
+          "start": 100,
+          "end": 103
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "PropertyDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "CONSTANT",
+                "start": 118,
+                "end": 126
+              },
+              "value": {
+                "type": "Literal",
+                "value": "Foo",
+                "start": 129,
+                "end": 134
+              },
+              "computed": false,
+              "static": true,
+              "declare": false,
+              "override": false,
+              "start": 111,
+              "end": 135
+            }
+          ],
+          "start": 104,
+          "end": 138
+        },
+        "superClass": null,
+        "start": 94,
+        "end": 138
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 87,
+      "end": 138
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "assert",
+          "start": 166,
+          "end": 172
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSBooleanKeyword",
+                "start": 180,
+                "end": 187
+              },
+              "start": 178,
+              "end": 187
+            },
+            "start": 173,
+            "end": 187
+          }
+        ],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "IfStatement",
+              "test": {
+                "type": "UnaryExpression",
+                "operator": "!",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "value",
+                  "start": 201,
+                  "end": 206
+                },
+                "start": 200,
+                "end": 206
+              },
+              "consequent": {
+                "type": "ThrowStatement",
+                "argument": {
+                  "type": "NewExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "Error",
+                    "start": 218,
+                    "end": 223
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "Assertion failed!",
+                      "start": 224,
+                      "end": 243
+                    }
+                  ],
+                  "start": 214,
+                  "end": 244
+                },
+                "start": 208,
+                "end": 245
+              },
+              "alternate": null,
+              "start": 196,
+              "end": 245
+            }
+          ],
+          "start": 189,
+          "end": 248
+        },
+        "start": 157,
+        "end": 248
+      },
+      "exportKind": "value",
+      "start": 142,
+      "end": 248
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./es3defaultAliasQuoted_file0",
+        "start": 335,
+        "end": 366
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 306,
+            "end": 309
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "Foo",
+            "start": 306,
+            "end": 309
+          },
+          "importKind": "value",
+          "start": 306,
+          "end": 309
+        },
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "assert",
+            "start": 322,
+            "end": 328
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "default",
+            "start": 311,
+            "end": 318
+          },
+          "importKind": "value",
+          "start": 311,
+          "end": 328
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 298,
+      "end": 367
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "assert",
+          "start": 369,
+          "end": 375
+        },
+        "arguments": [
+          {
+            "type": "BinaryExpression",
+            "operator": "===",
+            "left": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "Foo",
+                "start": 376,
+                "end": 379
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "CONSTANT",
+                "start": 380,
+                "end": 388
+              },
+              "computed": false,
+              "optional": false,
+              "start": 376,
+              "end": 388
+            },
+            "right": {
+              "type": "Literal",
+              "value": "Foo",
+              "start": 393,
+              "end": 398
+            },
+            "start": 376,
+            "end": 398
+          }
+        ],
+        "optional": false,
+        "start": 369,
+        "end": 399
+      },
+      "start": 369,
+      "end": 400
+    }
+  ],
+  "sourceType": "module",
+  "start": 87,
+  "end": 400
+}

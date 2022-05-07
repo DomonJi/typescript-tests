@@ -1,0 +1,295 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyBase",
+        "start": 6,
+        "end": 12
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "S1",
+              "start": 27,
+              "end": 29
+            },
+            "value": {
+              "type": "Literal",
+              "value": 5,
+              "start": 40,
+              "end": 41
+            },
+            "computed": false,
+            "static": true,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 31,
+                "end": 37
+              },
+              "start": 29,
+              "end": 37
+            },
+            "start": 20,
+            "end": 42
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "S2",
+              "start": 56,
+              "end": 58
+            },
+            "value": {
+              "type": "Literal",
+              "value": "test",
+              "start": 69,
+              "end": 75
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 60,
+                "end": 66
+              },
+              "start": 58,
+              "end": 66
+            },
+            "accessibility": "private",
+            "start": 48,
+            "end": 76
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "f",
+              "start": 82,
+              "end": 83
+            },
+            "value": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [],
+              "body": {
+                "type": "Literal",
+                "value": 5,
+                "start": 92,
+                "end": 93
+              },
+              "async": false,
+              "expression": true,
+              "start": 86,
+              "end": 93
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 82,
+            "end": 94
+          }
+        ],
+        "start": 13,
+        "end": 97
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 97
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyDerived",
+        "start": 107,
+        "end": 116
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 139,
+              "end": 142
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "l3",
+                          "start": 160,
+                          "end": 162
+                        },
+                        "init": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Super",
+                            "start": 165,
+                            "end": 170
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "S1",
+                            "start": 171,
+                            "end": 173
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 165,
+                          "end": 173
+                        },
+                        "start": 160,
+                        "end": 173
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 156,
+                    "end": 174
+                  },
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "l4",
+                          "start": 299,
+                          "end": 301
+                        },
+                        "init": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Super",
+                            "start": 304,
+                            "end": 309
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "S2",
+                            "start": 310,
+                            "end": 312
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 304,
+                          "end": 312
+                        },
+                        "start": 299,
+                        "end": 312
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 295,
+                    "end": 313
+                  },
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "l5",
+                          "start": 438,
+                          "end": 440
+                        },
+                        "init": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "MemberExpression",
+                            "object": {
+                              "type": "Super",
+                              "start": 443,
+                              "end": 448
+                            },
+                            "property": {
+                              "type": "Identifier",
+                              "name": "f",
+                              "start": 449,
+                              "end": 450
+                            },
+                            "computed": false,
+                            "optional": false,
+                            "start": 443,
+                            "end": 450
+                          },
+                          "arguments": [],
+                          "optional": false,
+                          "start": 443,
+                          "end": 452
+                        },
+                        "start": 438,
+                        "end": 452
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 434,
+                    "end": 453
+                  }
+                ],
+                "start": 145,
+                "end": 570
+              },
+              "params": [],
+              "start": 142,
+              "end": 570
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 139,
+            "end": 570
+          }
+        ],
+        "start": 132,
+        "end": 573
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "MyBase",
+        "start": 125,
+        "end": 131
+      },
+      "start": 101,
+      "end": 573
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 573
+}

@@ -1,0 +1,157 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "narrow",
+        "start": 23,
+        "end": 29
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSTypeOperator",
+                  "operator": "readonly",
+                  "typeAnnotation": {
+                    "type": "TSArrayType",
+                    "elementType": {
+                      "type": "TSNumberKeyword",
+                      "start": 42,
+                      "end": 48
+                    },
+                    "start": 42,
+                    "end": 50
+                  },
+                  "start": 33,
+                  "end": 50
+                },
+                {
+                  "type": "TSNumberKeyword",
+                  "start": 53,
+                  "end": 59
+                }
+              ],
+              "start": 33,
+              "end": 59
+            },
+            "start": 31,
+            "end": 59
+          },
+          "start": 30,
+          "end": 59
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "instanceof",
+              "left": {
+                "type": "Identifier",
+                "name": "x",
+                "start": 91,
+                "end": 92
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "Array",
+                "start": 104,
+                "end": 109
+              },
+              "start": 91,
+              "end": 109
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 129,
+                    "end": 130
+                  },
+                  "start": 122,
+                  "end": 131
+                }
+              ],
+              "start": 111,
+              "end": 138
+            },
+            "alternate": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ReturnStatement",
+                  "argument": {
+                    "type": "ArrayExpression",
+                    "elements": [
+                      {
+                        "type": "Identifier",
+                        "name": "x",
+                        "start": 163,
+                        "end": 164
+                      }
+                    ],
+                    "start": 162,
+                    "end": 165
+                  },
+                  "start": 155,
+                  "end": 166
+                }
+              ],
+              "start": 144,
+              "end": 173
+            },
+            "start": 87,
+            "end": 173
+          }
+        ],
+        "start": 80,
+        "end": 176
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTypeOperator",
+          "operator": "readonly",
+          "typeAnnotation": {
+            "type": "TSArrayType",
+            "elementType": {
+              "type": "TSNumberKeyword",
+              "start": 71,
+              "end": 77
+            },
+            "start": 71,
+            "end": 79
+          },
+          "start": 62,
+          "end": 79
+        },
+        "start": 60,
+        "end": 79
+      },
+      "start": 14,
+      "end": 176
+    }
+  ],
+  "sourceType": "script",
+  "start": 14,
+  "end": 176
+}

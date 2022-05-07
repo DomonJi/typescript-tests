@@ -1,0 +1,90 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 35,
+        "end": 36
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSUnionType",
+          "types": [
+            {
+              "type": "TSStringKeyword",
+              "start": 40,
+              "end": 46
+            },
+            {
+              "type": "TSUndefinedKeyword",
+              "start": 49,
+              "end": 58
+            }
+          ],
+          "start": 40,
+          "end": 58
+        },
+        "start": 38,
+        "end": 58
+      },
+      "declare": true,
+      "start": 18,
+      "end": 59
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "gg",
+            "start": 65,
+            "end": 67
+          },
+          "init": {
+            "type": "LogicalExpression",
+            "operator": "??",
+            "left": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "f",
+                "start": 70,
+                "end": 71
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 70,
+              "end": 73
+            },
+            "right": {
+              "type": "Literal",
+              "value": "foo",
+              "start": 77,
+              "end": 82
+            },
+            "start": 70,
+            "end": 82
+          },
+          "start": 65,
+          "end": 82
+        }
+      ],
+      "kind": "let",
+      "start": 61,
+      "end": 82
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 84
+}

@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 272,
+            "end": 278
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 279,
+            "end": 286
+          },
+          "computed": false,
+          "optional": false,
+          "start": 272,
+          "end": 286
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 292,
+                  "end": 303
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement interface 'I'",
+                  "start": 305,
+                  "end": 330
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 292,
+                "end": 330
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 335,
+                  "end": 349
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "\r\ninterface I {\r\n    x: number;\r\n    y: number;\r\n    z: number & { __iBrand: any };\r\n}\r\n\r\nclass C implements I {\r\n   constructor(public x: number) { }\r\n    z: number & { __iBrand: any; };\r\n   y: number;\r\n}",
+                        "cooked": "\ninterface I {\n    x: number;\n    y: number;\n    z: number & { __iBrand: any };\n}\n\nclass C implements I {\n   constructor(public x: number) { }\n    z: number & { __iBrand: any; };\n   y: number;\n}"
+                      },
+                      "tail": true,
+                      "start": 350,
+                      "end": 557
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 350,
+                  "end": 557
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 335,
+                "end": 557
+              }
+            ],
+            "start": 287,
+            "end": 561
+          }
+        ],
+        "optional": false,
+        "start": 272,
+        "end": 562
+      },
+      "start": 272,
+      "end": 563
+    }
+  ],
+  "sourceType": "script",
+  "start": 272,
+  "end": 567
+}

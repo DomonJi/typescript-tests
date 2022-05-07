@@ -1,0 +1,316 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "doubleAndReturnAsArray",
+        "start": 27,
+        "end": 49
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 53,
+              "end": 59
+            },
+            "start": 51,
+            "end": 59
+          },
+          "start": 50,
+          "end": 59
+        },
+        {
+          "type": "Identifier",
+          "name": "y",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 64,
+              "end": 70
+            },
+            "start": 62,
+            "end": 70
+          },
+          "start": 61,
+          "end": 70
+        },
+        {
+          "type": "Identifier",
+          "name": "z",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSNumberKeyword",
+              "start": 75,
+              "end": 81
+            },
+            "start": 73,
+            "end": 81
+          },
+          "start": 72,
+          "end": 81
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "blah",
+                  "start": 120,
+                  "end": 124
+                },
+                "init": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "Identifier",
+                    "name": "arguments",
+                    "start": 127,
+                    "end": 136
+                  },
+                  "property": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "Symbol",
+                      "start": 137,
+                      "end": 143
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "iterator",
+                      "start": 144,
+                      "end": 152
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 137,
+                    "end": 152
+                  },
+                  "computed": true,
+                  "optional": false,
+                  "start": 127,
+                  "end": 153
+                },
+                "start": 120,
+                "end": 153
+              }
+            ],
+            "kind": "let",
+            "start": 116,
+            "end": 154
+          },
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "result",
+                  "start": 166,
+                  "end": 172
+                },
+                "init": {
+                  "type": "ArrayExpression",
+                  "elements": [],
+                  "start": 175,
+                  "end": 177
+                },
+                "start": 166,
+                "end": 177
+              }
+            ],
+            "kind": "let",
+            "start": 162,
+            "end": 178
+          },
+          {
+            "type": "ForOfStatement",
+            "left": {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "arg",
+                    "start": 193,
+                    "end": 196
+                  },
+                  "init": null,
+                  "start": 193,
+                  "end": 196
+                }
+              ],
+              "kind": "let",
+              "start": 189,
+              "end": 196
+            },
+            "right": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "blah",
+                "start": 200,
+                "end": 204
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 200,
+              "end": 206
+            },
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "result",
+                        "start": 219,
+                        "end": 225
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "push",
+                        "start": 226,
+                        "end": 230
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 219,
+                      "end": 230
+                    },
+                    "arguments": [
+                      {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "arg",
+                          "start": 231,
+                          "end": 234
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "arg",
+                          "start": 237,
+                          "end": 240
+                        },
+                        "start": 231,
+                        "end": 240
+                      }
+                    ],
+                    "optional": false,
+                    "start": 219,
+                    "end": 241
+                  },
+                  "start": 219,
+                  "end": 242
+                }
+              ],
+              "start": 208,
+              "end": 249
+            },
+            "await": false,
+            "start": 184,
+            "end": 249
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "TSTypeAssertion",
+              "typeAnnotation": {
+                "type": "TSTupleType",
+                "elementTypes": [
+                  {
+                    "type": "TSAnyKeyword",
+                    "start": 264,
+                    "end": 267
+                  },
+                  {
+                    "type": "TSAnyKeyword",
+                    "start": 269,
+                    "end": 272
+                  },
+                  {
+                    "type": "TSAnyKeyword",
+                    "start": 274,
+                    "end": 277
+                  }
+                ],
+                "start": 263,
+                "end": 278
+              },
+              "expression": {
+                "type": "Identifier",
+                "name": "result",
+                "start": 279,
+                "end": 285
+              },
+              "start": 262,
+              "end": 285
+            },
+            "start": 255,
+            "end": 286
+          }
+        ],
+        "start": 109,
+        "end": 289
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSTupleType",
+          "elementTypes": [
+            {
+              "type": "TSNumberKeyword",
+              "start": 85,
+              "end": 91
+            },
+            {
+              "type": "TSNumberKeyword",
+              "start": 93,
+              "end": 99
+            },
+            {
+              "type": "TSNumberKeyword",
+              "start": 101,
+              "end": 107
+            }
+          ],
+          "start": 84,
+          "end": 108
+        },
+        "start": 82,
+        "end": 108
+      },
+      "start": 18,
+      "end": 289
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 293
+}

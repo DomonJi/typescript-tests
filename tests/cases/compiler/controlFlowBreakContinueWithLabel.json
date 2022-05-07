@@ -1,0 +1,260 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSEnumDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "User",
+        "start": 25,
+        "end": 29
+      },
+      "members": [
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "A",
+            "start": 32,
+            "end": 33
+          },
+          "start": 32,
+          "end": 33
+        },
+        {
+          "type": "TSEnumMember",
+          "id": {
+            "type": "Identifier",
+            "name": "B",
+            "start": 35,
+            "end": 36
+          },
+          "start": 35,
+          "end": 36
+        }
+      ],
+      "start": 20,
+      "end": 38
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "user",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "User",
+                  "start": 52,
+                  "end": 56
+                },
+                "start": 52,
+                "end": 56
+              },
+              "start": 50,
+              "end": 56
+            },
+            "start": 46,
+            "end": 56
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "User",
+              "start": 59,
+              "end": 63
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 64,
+              "end": 65
+            },
+            "computed": false,
+            "optional": false,
+            "start": 59,
+            "end": 65
+          },
+          "start": 46,
+          "end": 65
+        }
+      ],
+      "kind": "let",
+      "start": 42,
+      "end": 65
+    },
+    {
+      "type": "LabeledStatement",
+      "label": {
+        "type": "Identifier",
+        "name": "label",
+        "start": 69,
+        "end": 74
+      },
+      "body": {
+        "type": "WhileStatement",
+        "test": {
+          "type": "Literal",
+          "value": true,
+          "start": 83,
+          "end": 87
+        },
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "SwitchStatement",
+              "discriminant": {
+                "type": "Identifier",
+                "name": "user",
+                "start": 104,
+                "end": 108
+              },
+              "cases": [
+                {
+                  "type": "SwitchCase",
+                  "test": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "User",
+                      "start": 126,
+                      "end": 130
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "A",
+                      "start": 131,
+                      "end": 132
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 126,
+                    "end": 132
+                  },
+                  "consequent": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "user",
+                          "start": 147,
+                          "end": 151
+                        },
+                        "right": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "User",
+                            "start": 154,
+                            "end": 158
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "B",
+                            "start": 159,
+                            "end": 160
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 154,
+                          "end": 160
+                        },
+                        "start": 147,
+                        "end": 160
+                      },
+                      "start": 147,
+                      "end": 161
+                    },
+                    {
+                      "type": "ContinueStatement",
+                      "label": {
+                        "type": "Identifier",
+                        "name": "label",
+                        "start": 184,
+                        "end": 189
+                      },
+                      "start": 175,
+                      "end": 190
+                    }
+                  ],
+                  "start": 121,
+                  "end": 190
+                },
+                {
+                  "type": "SwitchCase",
+                  "test": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "Identifier",
+                      "name": "User",
+                      "start": 205,
+                      "end": 209
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "B",
+                      "start": 210,
+                      "end": 211
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 205,
+                    "end": 211
+                  },
+                  "consequent": [
+                    {
+                      "type": "BreakStatement",
+                      "label": {
+                        "type": "Identifier",
+                        "name": "label",
+                        "start": 232,
+                        "end": 237
+                      },
+                      "start": 226,
+                      "end": 238
+                    }
+                  ],
+                  "start": 200,
+                  "end": 238
+                }
+              ],
+              "start": 96,
+              "end": 245
+            }
+          ],
+          "start": 89,
+          "end": 248
+        },
+        "start": 76,
+        "end": 248
+      },
+      "start": 69,
+      "end": 248
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "Identifier",
+        "name": "user",
+        "start": 250,
+        "end": 254
+      },
+      "start": 250,
+      "end": 255
+    }
+  ],
+  "sourceType": "script",
+  "start": 20,
+  "end": 257
+}

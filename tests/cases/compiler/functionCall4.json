@@ -1,0 +1,147 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "foo",
+        "start": 9,
+        "end": 12
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Literal",
+              "value": "",
+              "start": 26,
+              "end": 28
+            },
+            "start": 19,
+            "end": 28
+          }
+        ],
+        "start": 18,
+        "end": 29
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSAnyKeyword",
+          "start": 15,
+          "end": 18
+        },
+        "start": 14,
+        "end": 18
+      },
+      "start": 0,
+      "end": 29
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 29,
+      "end": 30
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "bar",
+        "start": 42,
+        "end": 45
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 63,
+              "end": 66
+            },
+            "start": 56,
+            "end": 66
+          }
+        ],
+        "start": 55,
+        "end": 67
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSFunctionType",
+          "params": [],
+          "returnType": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 52,
+              "end": 55
+            },
+            "start": 50,
+            "end": 55
+          },
+          "start": 48,
+          "end": 55
+        },
+        "start": 47,
+        "end": 55
+      },
+      "start": 33,
+      "end": 67
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 67,
+      "end": 68
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 75,
+            "end": 76
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 79,
+              "end": 82
+            },
+            "arguments": [],
+            "optional": false,
+            "start": 79,
+            "end": 84
+          },
+          "start": 75,
+          "end": 84
+        }
+      ],
+      "kind": "var",
+      "start": 71,
+      "end": 85
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 85
+}

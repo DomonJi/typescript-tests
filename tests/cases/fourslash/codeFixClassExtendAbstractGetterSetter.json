@@ -1,0 +1,101 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 488,
+            "end": 494
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 495,
+            "end": 502
+          },
+          "computed": false,
+          "optional": false,
+          "start": 488,
+          "end": 502
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 509,
+                  "end": 520
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Implement inherited abstract class",
+                  "start": 522,
+                  "end": 558
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 509,
+                "end": 558
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 564,
+                  "end": 578
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "abstract class A {\n    abstract get a(): number | string;\n    abstract get b(): this;\n    abstract get c(): A;\n\n    abstract set d(arg: number | string);\n    abstract set e(arg: this);\n    abstract set f(arg: A);\n\n    abstract get g(): string;\n    abstract set g(newName: string);\n}\n\n// Don't need to add anything in this case.\nabstract class B extends A {}\n\nclass C extends A {\n    get a(): string | number {\n        throw new Error(\"Method not implemented.\");\n    }\n    get b(): this {\n        throw new Error(\"Method not implemented.\");\n    }\n    get c(): A {\n        throw new Error(\"Method not implemented.\");\n    }\n    set d(arg: string | number) {\n        throw new Error(\"Method not implemented.\");\n    }\n    set e(arg: this) {\n        throw new Error(\"Method not implemented.\");\n    }\n    set f(arg: A) {\n        throw new Error(\"Method not implemented.\");\n    }\n    get g(): string {\n        throw new Error(\"Method not implemented.\");\n    }\n    set g(newName: string) {\n        throw new Error(\"Method not implemented.\");\n    }\n}",
+                        "cooked": "abstract class A {\n    abstract get a(): number | string;\n    abstract get b(): this;\n    abstract get c(): A;\n\n    abstract set d(arg: number | string);\n    abstract set e(arg: this);\n    abstract set f(arg: A);\n\n    abstract get g(): string;\n    abstract set g(newName: string);\n}\n\n// Don't need to add anything in this case.\nabstract class B extends A {}\n\nclass C extends A {\n    get a(): string | number {\n        throw new Error(\"Method not implemented.\");\n    }\n    get b(): this {\n        throw new Error(\"Method not implemented.\");\n    }\n    get c(): A {\n        throw new Error(\"Method not implemented.\");\n    }\n    set d(arg: string | number) {\n        throw new Error(\"Method not implemented.\");\n    }\n    set e(arg: this) {\n        throw new Error(\"Method not implemented.\");\n    }\n    set f(arg: A) {\n        throw new Error(\"Method not implemented.\");\n    }\n    get g(): string {\n        throw new Error(\"Method not implemented.\");\n    }\n    set g(newName: string) {\n        throw new Error(\"Method not implemented.\");\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 580,
+                      "end": 1622
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 580,
+                  "end": 1622
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 564,
+                "end": 1622
+              }
+            ],
+            "start": 503,
+            "end": 1624
+          }
+        ],
+        "optional": false,
+        "start": 488,
+        "end": 1625
+      },
+      "start": 488,
+      "end": 1626
+    }
+  ],
+  "sourceType": "script",
+  "start": 488,
+  "end": 1627
+}

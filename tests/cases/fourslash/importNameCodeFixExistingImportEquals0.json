@@ -1,0 +1,83 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 256,
+            "end": 262
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "importFixAtPosition",
+            "start": 263,
+            "end": 282
+          },
+          "computed": false,
+          "optional": false,
+          "start": 256,
+          "end": 282
+        },
+        "arguments": [
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import ns = require(\"ambient-module\");\r\nvar x = ns.v1 + 5;",
+                      "cooked": "import ns = require(\"ambient-module\");\nvar x = ns.v1 + 5;"
+                    },
+                    "tail": true,
+                    "start": 286,
+                    "end": 346
+                  }
+                ],
+                "expressions": [],
+                "start": 286,
+                "end": 346
+              },
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import { v1 } from \"ambient-module\";\r\nimport ns = require(\"ambient-module\");\r\nvar x = v1 + 5;",
+                      "cooked": "import { v1 } from \"ambient-module\";\nimport ns = require(\"ambient-module\");\nvar x = v1 + 5;"
+                    },
+                    "tail": true,
+                    "start": 349,
+                    "end": 444
+                  }
+                ],
+                "expressions": [],
+                "start": 349,
+                "end": 444
+              }
+            ],
+            "start": 283,
+            "end": 448
+          }
+        ],
+        "optional": false,
+        "start": 256,
+        "end": 449
+      },
+      "start": 256,
+      "end": 450
+    }
+  ],
+  "sourceType": "script",
+  "start": 256,
+  "end": 452
+}

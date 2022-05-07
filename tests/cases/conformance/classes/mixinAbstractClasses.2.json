@@ -1,0 +1,434 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSMethodSignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "mixinMethod",
+              "start": 68,
+              "end": 79
+            },
+            "params": [],
+            "kind": "method",
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSVoidKeyword",
+                "start": 83,
+                "end": 87
+              },
+              "start": 81,
+              "end": 87
+            },
+            "start": 68,
+            "end": 88
+          }
+        ],
+        "start": 61,
+        "end": 91
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Mixin",
+        "start": 55,
+        "end": 60
+      },
+      "start": 45,
+      "end": 91
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Mixin",
+        "start": 104,
+        "end": 109
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "baseClass",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "TBaseClass",
+                "start": 176,
+                "end": 186
+              },
+              "start": 176,
+              "end": 186
+            },
+            "start": 174,
+            "end": 186
+          },
+          "start": 165,
+          "end": 186
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ClassDeclaration",
+            "id": {
+              "type": "Identifier",
+              "name": "MixinClass",
+              "start": 403,
+              "end": 413
+            },
+            "body": {
+              "type": "ClassBody",
+              "body": [
+                {
+                  "type": "MethodDefinition",
+                  "key": {
+                    "type": "Identifier",
+                    "name": "mixinMethod",
+                    "start": 460,
+                    "end": 471
+                  },
+                  "value": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "generator": false,
+                    "expression": false,
+                    "async": false,
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 474,
+                      "end": 486
+                    },
+                    "params": [],
+                    "start": 471,
+                    "end": 486
+                  },
+                  "computed": false,
+                  "static": false,
+                  "kind": "method",
+                  "override": false,
+                  "start": 460,
+                  "end": 486
+                }
+              ],
+              "start": 449,
+              "end": 493
+            },
+            "superClass": {
+              "type": "Identifier",
+              "name": "baseClass",
+              "start": 422,
+              "end": 431
+            },
+            "implements": [
+              {
+                "type": "TSClassImplements",
+                "expression": {
+                  "type": "Identifier",
+                  "name": "Mixin",
+                  "start": 443,
+                  "end": 448
+                },
+                "start": 443,
+                "end": 448
+              }
+            ],
+            "start": 397,
+            "end": 493
+          },
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "Identifier",
+              "name": "MixinClass",
+              "start": 506,
+              "end": 516
+            },
+            "start": 499,
+            "end": 517
+          }
+        ],
+        "start": 241,
+        "end": 520
+      },
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSIntersectionType",
+          "types": [
+            {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "TBaseClass",
+                "start": 189,
+                "end": 199
+              },
+              "start": 189,
+              "end": 199
+            },
+            {
+              "type": "TSConstructorType",
+              "params": [
+                {
+                  "type": "RestElement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "args",
+                    "start": 220,
+                    "end": 224
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSAnyKeyword",
+                      "start": 226,
+                      "end": 229
+                    },
+                    "start": 224,
+                    "end": 229
+                  },
+                  "start": 217,
+                  "end": 229
+                }
+              ],
+              "abstract": true,
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Mixin",
+                    "start": 234,
+                    "end": 239
+                  },
+                  "start": 234,
+                  "end": 239
+                },
+                "start": 231,
+                "end": 239
+              },
+              "start": 203,
+              "end": 239
+            }
+          ],
+          "start": 189,
+          "end": 240
+        },
+        "start": 187,
+        "end": 240
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TBaseClass",
+              "start": 110,
+              "end": 120
+            },
+            "constraint": {
+              "type": "TSConstructorType",
+              "params": [
+                {
+                  "type": "RestElement",
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "args",
+                    "start": 146,
+                    "end": 150
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSAnyKeyword",
+                      "start": 152,
+                      "end": 155
+                    },
+                    "start": 150,
+                    "end": 155
+                  },
+                  "start": 143,
+                  "end": 155
+                }
+              ],
+              "abstract": true,
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSAnyKeyword",
+                  "start": 160,
+                  "end": 163
+                },
+                "start": 157,
+                "end": 163
+              },
+              "start": 129,
+              "end": 163
+            },
+            "start": 110,
+            "end": 163
+          }
+        ],
+        "start": 109,
+        "end": 164
+      },
+      "start": 95,
+      "end": 520
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "AbstractBase",
+        "start": 539,
+        "end": 551
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "TSAbstractMethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "abstractBaseMethod",
+              "start": 568,
+              "end": 586
+            },
+            "value": {
+              "type": "TSEmptyBodyFunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": null,
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSVoidKeyword",
+                  "start": 590,
+                  "end": 594
+                },
+                "start": 588,
+                "end": 594
+              },
+              "start": 586,
+              "end": 595
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 559,
+            "end": 595
+          }
+        ],
+        "start": 552,
+        "end": 598
+      },
+      "superClass": null,
+      "abstract": true,
+      "start": 524,
+      "end": 598
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "MixedBase",
+            "start": 608,
+            "end": 617
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "Mixin",
+              "start": 620,
+              "end": 625
+            },
+            "arguments": [
+              {
+                "type": "Identifier",
+                "name": "AbstractBase",
+                "start": 626,
+                "end": 638
+              }
+            ],
+            "optional": false,
+            "start": 620,
+            "end": 639
+          },
+          "start": 608,
+          "end": 639
+        }
+      ],
+      "kind": "const",
+      "start": 602,
+      "end": 640
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "DerivedFromAbstract",
+        "start": 812,
+        "end": 831
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 850,
+        "end": 854
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "MixedBase",
+        "start": 840,
+        "end": 849
+      },
+      "start": 806,
+      "end": 854
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "NewExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "MixedBase",
+          "start": 930,
+          "end": 939
+        },
+        "arguments": [],
+        "start": 926,
+        "end": 941
+      },
+      "start": 926,
+      "end": 942
+    }
+  ],
+  "sourceType": "script",
+  "start": 45,
+  "end": 942
+}

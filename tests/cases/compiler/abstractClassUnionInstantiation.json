@@ -1,0 +1,726 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ConcreteA",
+        "start": 6,
+        "end": 15
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 16,
+        "end": 18
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 18
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ConcreteB",
+        "start": 25,
+        "end": 34
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 35,
+        "end": 37
+      },
+      "superClass": null,
+      "start": 19,
+      "end": 37
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "AbstractA",
+        "start": 53,
+        "end": 62
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "a",
+              "start": 65,
+              "end": 66
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 68,
+                "end": 74
+              },
+              "start": 66,
+              "end": 74
+            },
+            "start": 65,
+            "end": 75
+          }
+        ],
+        "start": 63,
+        "end": 77
+      },
+      "superClass": null,
+      "abstract": true,
+      "start": 38,
+      "end": 77
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "AbstractB",
+        "start": 93,
+        "end": 102
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "b",
+              "start": 105,
+              "end": 106
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 108,
+                "end": 114
+              },
+              "start": 106,
+              "end": 114
+            },
+            "start": 105,
+            "end": 115
+          }
+        ],
+        "start": 103,
+        "end": 117
+      },
+      "superClass": null,
+      "abstract": true,
+      "start": 78,
+      "end": 117
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Abstracts",
+        "start": 124,
+        "end": 133
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeQuery",
+            "exprName": {
+              "type": "Identifier",
+              "name": "AbstractA",
+              "start": 143,
+              "end": 152
+            },
+            "start": 136,
+            "end": 152
+          },
+          {
+            "type": "TSTypeQuery",
+            "exprName": {
+              "type": "Identifier",
+              "name": "AbstractB",
+              "start": 162,
+              "end": 171
+            },
+            "start": 155,
+            "end": 171
+          }
+        ],
+        "start": 136,
+        "end": 171
+      },
+      "start": 119,
+      "end": 172
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Concretes",
+        "start": 178,
+        "end": 187
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeQuery",
+            "exprName": {
+              "type": "Identifier",
+              "name": "ConcreteA",
+              "start": 197,
+              "end": 206
+            },
+            "start": 190,
+            "end": 206
+          },
+          {
+            "type": "TSTypeQuery",
+            "exprName": {
+              "type": "Identifier",
+              "name": "ConcreteB",
+              "start": 216,
+              "end": 225
+            },
+            "start": 209,
+            "end": 225
+          }
+        ],
+        "start": 190,
+        "end": 225
+      },
+      "start": 173,
+      "end": 226
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ConcretesOrAbstracts",
+        "start": 232,
+        "end": 252
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "Concretes",
+              "start": 255,
+              "end": 264
+            },
+            "start": 255,
+            "end": 264
+          },
+          {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "Abstracts",
+              "start": 267,
+              "end": 276
+            },
+            "start": 267,
+            "end": 276
+          }
+        ],
+        "start": 255,
+        "end": 276
+      },
+      "start": 227,
+      "end": 277
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "cls1",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "ConcretesOrAbstracts",
+                  "start": 299,
+                  "end": 319
+                },
+                "start": 299,
+                "end": 319
+              },
+              "start": 297,
+              "end": 319
+            },
+            "start": 293,
+            "end": 319
+          },
+          "init": null,
+          "start": 293,
+          "end": 319
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 279,
+      "end": 320
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "cls2",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Abstracts",
+                  "start": 341,
+                  "end": 350
+                },
+                "start": 341,
+                "end": 350
+              },
+              "start": 339,
+              "end": 350
+            },
+            "start": 335,
+            "end": 350
+          },
+          "init": null,
+          "start": 335,
+          "end": 350
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 321,
+      "end": 351
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "cls3",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Concretes",
+                  "start": 372,
+                  "end": 381
+                },
+                "start": 372,
+                "end": 381
+              },
+              "start": 370,
+              "end": 381
+            },
+            "start": 366,
+            "end": 381
+          },
+          "init": null,
+          "start": 366,
+          "end": 381
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 352,
+      "end": 382
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "NewExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "cls1",
+          "start": 388,
+          "end": 392
+        },
+        "arguments": [],
+        "start": 384,
+        "end": 394
+      },
+      "start": 384,
+      "end": 395
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "NewExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "cls2",
+          "start": 416,
+          "end": 420
+        },
+        "arguments": [],
+        "start": 412,
+        "end": 422
+      },
+      "start": 412,
+      "end": 423
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "NewExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "cls3",
+          "start": 444,
+          "end": 448
+        },
+        "arguments": [],
+        "start": 440,
+        "end": 450
+      },
+      "start": 440,
+      "end": 451
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Identifier",
+                "name": "ConcreteA",
+                "start": 469,
+                "end": 478
+              },
+              {
+                "type": "Identifier",
+                "name": "AbstractA",
+                "start": 480,
+                "end": 489
+              },
+              {
+                "type": "Identifier",
+                "name": "AbstractB",
+                "start": 491,
+                "end": 500
+              }
+            ],
+            "start": 468,
+            "end": 501
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "map",
+            "start": 502,
+            "end": 505
+          },
+          "computed": false,
+          "optional": false,
+          "start": 468,
+          "end": 505
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 506,
+                "end": 509
+              }
+            ],
+            "body": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 517,
+                "end": 520
+              },
+              "arguments": [],
+              "start": 513,
+              "end": 522
+            },
+            "async": false,
+            "expression": true,
+            "start": 506,
+            "end": 522
+          }
+        ],
+        "optional": false,
+        "start": 468,
+        "end": 523
+      },
+      "start": 468,
+      "end": 524
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Identifier",
+                "name": "AbstractA",
+                "start": 542,
+                "end": 551
+              },
+              {
+                "type": "Identifier",
+                "name": "AbstractB",
+                "start": 553,
+                "end": 562
+              },
+              {
+                "type": "Identifier",
+                "name": "ConcreteA",
+                "start": 564,
+                "end": 573
+              }
+            ],
+            "start": 541,
+            "end": 574
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "map",
+            "start": 575,
+            "end": 578
+          },
+          "computed": false,
+          "optional": false,
+          "start": 541,
+          "end": 578
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 579,
+                "end": 582
+              }
+            ],
+            "body": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 590,
+                "end": 593
+              },
+              "arguments": [],
+              "start": 586,
+              "end": 595
+            },
+            "async": false,
+            "expression": true,
+            "start": 579,
+            "end": 595
+          }
+        ],
+        "optional": false,
+        "start": 541,
+        "end": 596
+      },
+      "start": 541,
+      "end": 597
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Identifier",
+                "name": "ConcreteA",
+                "start": 615,
+                "end": 624
+              },
+              {
+                "type": "Identifier",
+                "name": "ConcreteB",
+                "start": 626,
+                "end": 635
+              }
+            ],
+            "start": 614,
+            "end": 636
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "map",
+            "start": 637,
+            "end": 640
+          },
+          "computed": false,
+          "optional": false,
+          "start": 614,
+          "end": 640
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 641,
+                "end": 644
+              }
+            ],
+            "body": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 652,
+                "end": 655
+              },
+              "arguments": [],
+              "start": 648,
+              "end": 657
+            },
+            "async": false,
+            "expression": true,
+            "start": 641,
+            "end": 657
+          }
+        ],
+        "optional": false,
+        "start": 614,
+        "end": 658
+      },
+      "start": 614,
+      "end": 659
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Identifier",
+                "name": "AbstractA",
+                "start": 676,
+                "end": 685
+              },
+              {
+                "type": "Identifier",
+                "name": "AbstractB",
+                "start": 687,
+                "end": 696
+              }
+            ],
+            "start": 675,
+            "end": 697
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "map",
+            "start": 698,
+            "end": 701
+          },
+          "computed": false,
+          "optional": false,
+          "start": 675,
+          "end": 701
+        },
+        "arguments": [
+          {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 702,
+                "end": 705
+              }
+            ],
+            "body": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "cls",
+                "start": 713,
+                "end": 716
+              },
+              "arguments": [],
+              "start": 709,
+              "end": 718
+            },
+            "async": false,
+            "expression": true,
+            "start": 702,
+            "end": 718
+          }
+        ],
+        "optional": false,
+        "start": 675,
+        "end": 719
+      },
+      "start": 675,
+      "end": 720
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 736
+}

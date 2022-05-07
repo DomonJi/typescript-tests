@@ -1,0 +1,142 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foge",
+            "start": 37,
+            "end": 41
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "SharedArrayBuffer",
+              "start": 48,
+              "end": 65
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 1024,
+                "start": 66,
+                "end": 70
+              }
+            ],
+            "start": 44,
+            "end": 71
+          },
+          "start": 37,
+          "end": 71
+        }
+      ],
+      "kind": "var",
+      "start": 33,
+      "end": 72
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "bar",
+            "start": 78,
+            "end": 81
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "foge",
+                "start": 84,
+                "end": 88
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "slice",
+                "start": 89,
+                "end": 94
+              },
+              "computed": false,
+              "optional": false,
+              "start": 84,
+              "end": 94
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 95,
+                "end": 96
+              },
+              {
+                "type": "Literal",
+                "value": 10,
+                "start": 98,
+                "end": 100
+              }
+            ],
+            "optional": false,
+            "start": 84,
+            "end": 101
+          },
+          "start": 78,
+          "end": 101
+        }
+      ],
+      "kind": "var",
+      "start": 74,
+      "end": 102
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "len",
+            "start": 108,
+            "end": 111
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "Identifier",
+              "name": "foge",
+              "start": 114,
+              "end": 118
+            },
+            "property": {
+              "type": "Identifier",
+              "name": "byteLength",
+              "start": 119,
+              "end": 129
+            },
+            "computed": false,
+            "optional": false,
+            "start": 114,
+            "end": 129
+          },
+          "start": 108,
+          "end": 129
+        }
+      ],
+      "kind": "var",
+      "start": 104,
+      "end": 130
+    }
+  ],
+  "sourceType": "script",
+  "start": 33,
+  "end": 130
+}

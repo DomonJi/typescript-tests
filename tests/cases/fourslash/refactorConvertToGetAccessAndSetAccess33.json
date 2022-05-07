@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 488,
+            "end": 492
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 493,
+            "end": 499
+          },
+          "computed": false,
+          "optional": false,
+          "start": 488,
+          "end": 499
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 500,
+            "end": 503
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 505,
+            "end": 508
+          }
+        ],
+        "optional": false,
+        "start": 488,
+        "end": 509
+      },
+      "start": 488,
+      "end": 510
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 511,
+            "end": 515
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 516,
+            "end": 529
+          },
+          "computed": false,
+          "optional": false,
+          "start": 511,
+          "end": 529
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 536,
+                  "end": 548
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors",
+                  "start": 550,
+                  "end": 586
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 536,
+                "end": 586
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 592,
+                  "end": 602
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors",
+                  "start": 604,
+                  "end": 640
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 592,
+                "end": 640
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 646,
+                  "end": 663
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors",
+                  "start": 665,
+                  "end": 701
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 646,
+                "end": 701
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 707,
+                  "end": 717
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "class A {\n    private readonly /*RENAME*/_a: number;\n    public get a(): number {\n        return this._a;\n    }\n    public b: number;\n    constructor () {\n        this._a = 1; // convert\n        this[\"_a\"]++; // convert\n        ++this._a; // convert\n        if (Math.random()) {\n            this._a = 2; // convert\n        }\n        console.log(this.a); // preserve\n        this.b = this.a; // preserve\n    }\n    foo () { this.a = 2; }\n}",
+                        "cooked": "class A {\n    private readonly /*RENAME*/_a: number;\n    public get a(): number {\n        return this._a;\n    }\n    public b: number;\n    constructor () {\n        this._a = 1; // convert\n        this[\"_a\"]++; // convert\n        ++this._a; // convert\n        if (Math.random()) {\n            this._a = 2; // convert\n        }\n        console.log(this.a); // preserve\n        this.b = this.a; // preserve\n    }\n    foo () { this.a = 2; }\n}"
+                      },
+                      "tail": true,
+                      "start": 719,
+                      "end": 1158
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 719,
+                  "end": 1158
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 707,
+                "end": 1158
+              }
+            ],
+            "start": 530,
+            "end": 1161
+          }
+        ],
+        "optional": false,
+        "start": 511,
+        "end": 1162
+      },
+      "start": 511,
+      "end": 1163
+    }
+  ],
+  "sourceType": "script",
+  "start": 488,
+  "end": 1164
+}

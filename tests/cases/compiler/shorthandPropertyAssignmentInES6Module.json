@@ -1,0 +1,269 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "x",
+              "start": 85,
+              "end": 86
+            },
+            "init": {
+              "type": "Literal",
+              "value": 1,
+              "start": 89,
+              "end": 90
+            },
+            "start": 85,
+            "end": 90
+          }
+        ],
+        "kind": "var",
+        "start": 81,
+        "end": 91
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 74,
+      "end": 91
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./existingModule",
+        "start": 134,
+        "end": 152
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 126,
+            "end": 127
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 126,
+            "end": 127
+          },
+          "importKind": "value",
+          "start": 126,
+          "end": 127
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 118,
+      "end": 153
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./missingModule",
+        "start": 173,
+        "end": 190
+      },
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 163,
+            "end": 166
+          },
+          "imported": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 163,
+            "end": 166
+          },
+          "importKind": "value",
+          "start": 163,
+          "end": 166
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 155,
+      "end": 191
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "use",
+        "start": 212,
+        "end": 215
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSAnyKeyword",
+              "start": 219,
+              "end": 222
+            },
+            "start": 217,
+            "end": 222
+          },
+          "start": 216,
+          "end": 222
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 225,
+          "end": 229
+        },
+        "start": 223,
+        "end": 229
+      },
+      "declare": true,
+      "start": 195,
+      "end": 230
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "test",
+            "start": 240,
+            "end": 244
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 249,
+                  "end": 250
+                },
+                "value": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 249,
+                  "end": 250
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": true,
+                "kind": "init",
+                "start": 249,
+                "end": 250
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 252,
+                  "end": 255
+                },
+                "value": {
+                  "type": "Identifier",
+                  "name": "foo",
+                  "start": 252,
+                  "end": 255
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": true,
+                "kind": "init",
+                "start": 252,
+                "end": 255
+              }
+            ],
+            "start": 247,
+            "end": 257
+          },
+          "start": 240,
+          "end": 257
+        }
+      ],
+      "kind": "const",
+      "start": 234,
+      "end": 258
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "use",
+          "start": 262,
+          "end": 265
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "x",
+            "start": 266,
+            "end": 267
+          }
+        ],
+        "optional": false,
+        "start": 262,
+        "end": 268
+      },
+      "start": 262,
+      "end": 269
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "use",
+          "start": 271,
+          "end": 274
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 275,
+            "end": 278
+          }
+        ],
+        "optional": false,
+        "start": 271,
+        "end": 279
+      },
+      "start": 271,
+      "end": 280
+    }
+  ],
+  "sourceType": "module",
+  "start": 74,
+  "end": 280
+}

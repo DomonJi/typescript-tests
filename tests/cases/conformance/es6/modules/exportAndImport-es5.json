@@ -1,0 +1,107 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "f1",
+          "start": 80,
+          "end": 82
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [],
+          "start": 85,
+          "end": 88
+        },
+        "start": 71,
+        "end": 88
+      },
+      "exportKind": "value",
+      "start": 56,
+      "end": 88
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./m1",
+        "start": 125,
+        "end": 131
+      },
+      "specifiers": [
+        {
+          "type": "ImportDefaultSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "f1",
+            "start": 117,
+            "end": 119
+          },
+          "start": 117,
+          "end": 119
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 110,
+      "end": 132
+    },
+    {
+      "type": "ExportDefaultDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "f2",
+          "start": 157,
+          "end": 159
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "ExpressionStatement",
+              "expression": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "Identifier",
+                  "name": "f1",
+                  "start": 168,
+                  "end": 170
+                },
+                "arguments": [],
+                "optional": false,
+                "start": 168,
+                "end": 172
+              },
+              "start": 168,
+              "end": 173
+            }
+          ],
+          "start": 162,
+          "end": 175
+        },
+        "start": 148,
+        "end": 175
+      },
+      "exportKind": "value",
+      "start": 133,
+      "end": 175
+    }
+  ],
+  "sourceType": "module",
+  "start": 56,
+  "end": 176
+}

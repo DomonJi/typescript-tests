@@ -1,0 +1,370 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Abstract",
+        "start": 6,
+        "end": 14
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 32,
+              "end": 43
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [],
+                "start": 46,
+                "end": 54
+              },
+              "start": 43,
+              "end": 54
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "accessibility": "protected",
+            "start": 22,
+            "end": 54
+          }
+        ],
+        "start": 15,
+        "end": 57
+      },
+      "superClass": null,
+      "start": 0,
+      "end": 57
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Concrete",
+        "start": 67,
+        "end": 75
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 93,
+        "end": 97
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Abstract",
+        "start": 84,
+        "end": 92
+      },
+      "start": 61,
+      "end": 97
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Constructor",
+        "start": 106,
+        "end": 117
+      },
+      "typeAnnotation": {
+        "type": "TSConstructorType",
+        "params": [
+          {
+            "type": "RestElement",
+            "argument": {
+              "type": "Identifier",
+              "name": "args",
+              "start": 136,
+              "end": 140
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSAnyKeyword",
+                  "start": 142,
+                  "end": 145
+                },
+                "start": 142,
+                "end": 147
+              },
+              "start": 140,
+              "end": 147
+            },
+            "start": 133,
+            "end": 147
+          }
+        ],
+        "abstract": false,
+        "returnType": {
+          "type": "TSTypeAnnotation",
+          "typeAnnotation": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 152,
+              "end": 153
+            },
+            "start": 152,
+            "end": 153
+          },
+          "start": 149,
+          "end": 153
+        },
+        "start": 128,
+        "end": 153
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 118,
+              "end": 119
+            },
+            "default": {
+              "type": "TSTypeLiteral",
+              "members": [],
+              "start": 122,
+              "end": 124
+            },
+            "start": 118,
+            "end": 124
+          }
+        ],
+        "start": 117,
+        "end": 125
+      },
+      "start": 101,
+      "end": 154
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Mixin",
+        "start": 167,
+        "end": 172
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "Base",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "TBase",
+                "start": 206,
+                "end": 211
+              },
+              "start": 206,
+              "end": 211
+            },
+            "start": 204,
+            "end": 211
+          },
+          "start": 200,
+          "end": 211
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "ClassExpression",
+              "id": null,
+              "body": {
+                "type": "ClassBody",
+                "body": [],
+                "start": 246,
+                "end": 254
+              },
+              "superClass": {
+                "type": "Identifier",
+                "name": "Base",
+                "start": 241,
+                "end": 245
+              },
+              "start": 227,
+              "end": 254
+            },
+            "start": 220,
+            "end": 255
+          }
+        ],
+        "start": 213,
+        "end": 258
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TBase",
+              "start": 173,
+              "end": 178
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Constructor",
+                "start": 187,
+                "end": 198
+              },
+              "start": 187,
+              "end": 198
+            },
+            "start": 173,
+            "end": 198
+          }
+        ],
+        "start": 172,
+        "end": 199
+      },
+      "start": 158,
+      "end": 258
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Empty",
+        "start": 268,
+        "end": 273
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [],
+        "start": 274,
+        "end": 278
+      },
+      "superClass": null,
+      "start": 262,
+      "end": 278
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "CrashTrigger",
+        "start": 288,
+        "end": 300
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "trigger",
+              "start": 336,
+              "end": 343
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "NewExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "Concrete",
+                        "start": 361,
+                        "end": 369
+                      },
+                      "arguments": [],
+                      "start": 357,
+                      "end": 371
+                    },
+                    "start": 357,
+                    "end": 372
+                  }
+                ],
+                "start": 346,
+                "end": 379
+              },
+              "params": [],
+              "start": 343,
+              "end": 379
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 329,
+            "end": 379
+          }
+        ],
+        "start": 322,
+        "end": 382
+      },
+      "superClass": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "Mixin",
+          "start": 309,
+          "end": 314
+        },
+        "arguments": [
+          {
+            "type": "Identifier",
+            "name": "Empty",
+            "start": 315,
+            "end": 320
+          }
+        ],
+        "optional": false,
+        "start": 309,
+        "end": 321
+      },
+      "start": 282,
+      "end": 382
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 382
+}

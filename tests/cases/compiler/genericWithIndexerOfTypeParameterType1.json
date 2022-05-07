@@ -1,0 +1,284 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "LazyArray",
+        "start": 6,
+        "end": 15
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "objects",
+              "start": 34,
+              "end": 41
+            },
+            "value": {
+              "type": "TSTypeAssertion",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSIndexSignature",
+                    "parameters": [
+                      {
+                        "type": "Identifier",
+                        "name": "objectId",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 58,
+                            "end": 64
+                          },
+                          "start": 56,
+                          "end": 64
+                        },
+                        "start": 48,
+                        "end": 64
+                      }
+                    ],
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "T",
+                          "start": 67,
+                          "end": 68
+                        },
+                        "start": 67,
+                        "end": 68
+                      },
+                      "start": 65,
+                      "end": 68
+                    },
+                    "start": 47,
+                    "end": 69
+                  }
+                ],
+                "start": 45,
+                "end": 71
+              },
+              "expression": {
+                "type": "ObjectExpression",
+                "properties": [],
+                "start": 72,
+                "end": 74
+              },
+              "start": 44,
+              "end": 74
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "accessibility": "private",
+            "start": 26,
+            "end": 75
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "array",
+              "start": 81,
+              "end": 86
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "ThisExpression",
+                        "start": 107,
+                        "end": 111
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "objects",
+                        "start": 112,
+                        "end": 119
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 107,
+                      "end": 119
+                    },
+                    "start": 100,
+                    "end": 120
+                  }
+                ],
+                "start": 89,
+                "end": 127
+              },
+              "params": [],
+              "start": 86,
+              "end": 127
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 81,
+            "end": 127
+          }
+        ],
+        "start": 19,
+        "end": 130
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 16,
+              "end": 17
+            },
+            "start": 16,
+            "end": 17
+          }
+        ],
+        "start": 15,
+        "end": 18
+      },
+      "start": 0,
+      "end": 130
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "lazyArray",
+            "start": 136,
+            "end": 145
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "LazyArray",
+              "start": 152,
+              "end": 161
+            },
+            "arguments": [],
+            "typeParameters": {
+              "type": "TSTypeParameterInstantiation",
+              "params": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 162,
+                  "end": 168
+                }
+              ],
+              "start": 161,
+              "end": 169
+            },
+            "start": 148,
+            "end": 171
+          },
+          "start": 136,
+          "end": 171
+        }
+      ],
+      "kind": "var",
+      "start": 132,
+      "end": 172
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "value",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSStringKeyword",
+                "start": 185,
+                "end": 191
+              },
+              "start": 183,
+              "end": 191
+            },
+            "start": 178,
+            "end": 191
+          },
+          "init": {
+            "type": "MemberExpression",
+            "object": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "lazyArray",
+                  "start": 194,
+                  "end": 203
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "array",
+                  "start": 204,
+                  "end": 209
+                },
+                "computed": false,
+                "optional": false,
+                "start": 194,
+                "end": 209
+              },
+              "arguments": [],
+              "optional": false,
+              "start": 194,
+              "end": 211
+            },
+            "property": {
+              "type": "Literal",
+              "value": "test",
+              "start": 212,
+              "end": 218
+            },
+            "computed": true,
+            "optional": false,
+            "start": 194,
+            "end": 219
+          },
+          "start": 178,
+          "end": 219
+        }
+      ],
+      "kind": "var",
+      "start": 174,
+      "end": 220
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 243
+}

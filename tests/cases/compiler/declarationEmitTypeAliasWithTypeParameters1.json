@@ -1,0 +1,248 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Bar",
+          "start": 38,
+          "end": 41
+        },
+        "typeAnnotation": {
+          "type": "TSFunctionType",
+          "params": [],
+          "returnType": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTupleType",
+              "elementTypes": [
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "X",
+                    "start": 57,
+                    "end": 58
+                  },
+                  "start": 57,
+                  "end": 58
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Y",
+                    "start": 60,
+                    "end": 61
+                  },
+                  "start": 60,
+                  "end": 61
+                }
+              ],
+              "start": 56,
+              "end": 62
+            },
+            "start": 53,
+            "end": 62
+          },
+          "start": 50,
+          "end": 62
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "X",
+                "start": 42,
+                "end": 43
+              },
+              "start": 42,
+              "end": 43
+            },
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "Y",
+                "start": 45,
+                "end": 46
+              },
+              "start": 45,
+              "end": 46
+            }
+          ],
+          "start": 41,
+          "end": 47
+        },
+        "start": 33,
+        "end": 63
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 26,
+      "end": 63
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSTypeAliasDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Foo",
+          "start": 77,
+          "end": 80
+        },
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "Bar",
+            "start": 86,
+            "end": 89
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSAnyKeyword",
+                "start": 90,
+                "end": 93
+              },
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Y",
+                  "start": 95,
+                  "end": 96
+                },
+                "start": 95,
+                "end": 96
+              }
+            ],
+            "start": 89,
+            "end": 97
+          },
+          "start": 86,
+          "end": 97
+        },
+        "typeParameters": {
+          "type": "TSTypeParameterDeclaration",
+          "params": [
+            {
+              "type": "TSTypeParameter",
+              "name": {
+                "type": "Identifier",
+                "name": "Y",
+                "start": 81,
+                "end": 82
+              },
+              "start": 81,
+              "end": 82
+            }
+          ],
+          "start": 80,
+          "end": 83
+        },
+        "start": 72,
+        "end": 98
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "type",
+      "assertions": [],
+      "start": 65,
+      "end": 98
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "y",
+              "start": 113,
+              "end": 114
+            },
+            "init": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "x",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Foo",
+                        "start": 121,
+                        "end": 124
+                      },
+                      "typeParameters": {
+                        "type": "TSTypeParameterInstantiation",
+                        "params": [
+                          {
+                            "type": "TSStringKeyword",
+                            "start": 125,
+                            "end": 131
+                          }
+                        ],
+                        "start": 124,
+                        "end": 132
+                      },
+                      "start": 121,
+                      "end": 132
+                    },
+                    "start": 119,
+                    "end": 132
+                  },
+                  "start": 118,
+                  "end": 132
+                }
+              ],
+              "body": {
+                "type": "Literal",
+                "value": 1,
+                "start": 137,
+                "end": 138
+              },
+              "async": false,
+              "expression": true,
+              "start": 117,
+              "end": 138
+            },
+            "start": 113,
+            "end": 138
+          }
+        ],
+        "kind": "const",
+        "start": 107,
+        "end": 138
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 100,
+      "end": 138
+    }
+  ],
+  "sourceType": "module",
+  "start": 26,
+  "end": 138
+}

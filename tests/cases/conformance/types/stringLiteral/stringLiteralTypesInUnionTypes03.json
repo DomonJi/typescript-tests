@@ -1,0 +1,449 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "T",
+        "start": 30,
+        "end": 31
+      },
+      "typeAnnotation": {
+        "type": "TSUnionType",
+        "types": [
+          {
+            "type": "TSNumberKeyword",
+            "start": 34,
+            "end": 40
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "foo",
+              "start": 43,
+              "end": 48
+            },
+            "start": 43,
+            "end": 48
+          },
+          {
+            "type": "TSLiteralType",
+            "literal": {
+              "type": "Literal",
+              "value": "bar",
+              "start": 51,
+              "end": 56
+            },
+            "start": 51,
+            "end": 56
+          }
+        ],
+        "start": 34,
+        "end": 56
+      },
+      "start": 25,
+      "end": 57
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "x",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSUnionType",
+                "types": [
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "foo",
+                      "start": 68,
+                      "end": 73
+                    },
+                    "start": 68,
+                    "end": 73
+                  },
+                  {
+                    "type": "TSLiteralType",
+                    "literal": {
+                      "type": "Literal",
+                      "value": "bar",
+                      "start": 76,
+                      "end": 81
+                    },
+                    "start": 76,
+                    "end": 81
+                  },
+                  {
+                    "type": "TSNumberKeyword",
+                    "start": 84,
+                    "end": 90
+                  }
+                ],
+                "start": 68,
+                "end": 90
+              },
+              "start": 66,
+              "end": 90
+            },
+            "start": 65,
+            "end": 90
+          },
+          "init": null,
+          "start": 65,
+          "end": 90
+        }
+      ],
+      "kind": "var",
+      "start": 61,
+      "end": 91
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "y",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 100,
+                  "end": 101
+                },
+                "start": 100,
+                "end": 101
+              },
+              "start": 98,
+              "end": 101
+            },
+            "start": 97,
+            "end": 101
+          },
+          "init": {
+            "type": "Identifier",
+            "name": "undefined",
+            "start": 104,
+            "end": 113
+          },
+          "start": 97,
+          "end": 113
+        }
+      ],
+      "kind": "var",
+      "start": 93,
+      "end": 114
+    },
+    {
+      "type": "IfStatement",
+      "test": {
+        "type": "BinaryExpression",
+        "operator": "===",
+        "left": {
+          "type": "Identifier",
+          "name": "x",
+          "start": 122,
+          "end": 123
+        },
+        "right": {
+          "type": "Literal",
+          "value": "foo",
+          "start": 128,
+          "end": 133
+        },
+        "start": 122,
+        "end": 133
+      },
+      "consequent": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "a",
+                  "start": 146,
+                  "end": 147
+                },
+                "init": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 150,
+                  "end": 151
+                },
+                "start": 146,
+                "end": 151
+              }
+            ],
+            "kind": "let",
+            "start": 142,
+            "end": 152
+          }
+        ],
+        "start": 135,
+        "end": 155
+      },
+      "alternate": {
+        "type": "IfStatement",
+        "test": {
+          "type": "BinaryExpression",
+          "operator": "!==",
+          "left": {
+            "type": "Identifier",
+            "name": "x",
+            "start": 166,
+            "end": 167
+          },
+          "right": {
+            "type": "Literal",
+            "value": "bar",
+            "start": 172,
+            "end": 177
+          },
+          "start": 166,
+          "end": 177
+        },
+        "consequent": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "b",
+                    "start": 190,
+                    "end": 191
+                  },
+                  "init": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "x",
+                      "start": 194,
+                      "end": 195
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "y",
+                      "start": 199,
+                      "end": 200
+                    },
+                    "start": 194,
+                    "end": 200
+                  },
+                  "start": 190,
+                  "end": 200
+                }
+              ],
+              "kind": "let",
+              "start": 186,
+              "end": 201
+            }
+          ],
+          "start": 179,
+          "end": 204
+        },
+        "alternate": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "c",
+                    "start": 222,
+                    "end": 223
+                  },
+                  "init": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 226,
+                    "end": 227
+                  },
+                  "start": 222,
+                  "end": 227
+                }
+              ],
+              "kind": "let",
+              "start": 218,
+              "end": 228
+            },
+            {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "d",
+                    "start": 238,
+                    "end": 239
+                  },
+                  "init": {
+                    "type": "Identifier",
+                    "name": "y",
+                    "start": 242,
+                    "end": 243
+                  },
+                  "start": 238,
+                  "end": 243
+                }
+              ],
+              "kind": "let",
+              "start": 234,
+              "end": 244
+            },
+            {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "e",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSUnionType",
+                        "types": [
+                          {
+                            "type": "TSTypeQuery",
+                            "exprName": {
+                              "type": "Identifier",
+                              "name": "x",
+                              "start": 265,
+                              "end": 266
+                            },
+                            "start": 258,
+                            "end": 266
+                          },
+                          {
+                            "type": "TSTypeQuery",
+                            "exprName": {
+                              "type": "Identifier",
+                              "name": "y",
+                              "start": 278,
+                              "end": 279
+                            },
+                            "start": 271,
+                            "end": 279
+                          }
+                        ],
+                        "start": 257,
+                        "end": 280
+                      },
+                      "start": 255,
+                      "end": 280
+                    },
+                    "start": 254,
+                    "end": 280
+                  },
+                  "init": {
+                    "type": "LogicalExpression",
+                    "operator": "||",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "c",
+                      "start": 283,
+                      "end": 284
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "d",
+                      "start": 288,
+                      "end": 289
+                    },
+                    "start": 283,
+                    "end": 289
+                  },
+                  "start": 254,
+                  "end": 289
+                }
+              ],
+              "kind": "let",
+              "start": 250,
+              "end": 290
+            }
+          ],
+          "start": 211,
+          "end": 293
+        },
+        "start": 162,
+        "end": 293
+      },
+      "start": 118,
+      "end": 293
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "x",
+          "start": 297,
+          "end": 298
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "y",
+          "start": 301,
+          "end": 302
+        },
+        "start": 297,
+        "end": 302
+      },
+      "start": 297,
+      "end": 303
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "AssignmentExpression",
+        "operator": "=",
+        "left": {
+          "type": "Identifier",
+          "name": "y",
+          "start": 305,
+          "end": 306
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "x",
+          "start": 309,
+          "end": 310
+        },
+        "start": 305,
+        "end": 310
+      },
+      "start": 305,
+      "end": 311
+    }
+  ],
+  "sourceType": "script",
+  "start": 25,
+  "end": 311
+}

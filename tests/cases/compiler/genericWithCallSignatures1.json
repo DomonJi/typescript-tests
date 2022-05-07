@@ -1,0 +1,322 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSCallSignatureDeclaration",
+            "params": [],
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 79,
+                  "end": 80
+                },
+                "start": 79,
+                "end": 80
+              },
+              "start": 77,
+              "end": 80
+            },
+            "start": 75,
+            "end": 81
+          },
+          {
+            "type": "TSCallSignatureDeclaration",
+            "params": [
+              {
+                "type": "Identifier",
+                "name": "value",
+                "typeAnnotation": {
+                  "type": "TSTypeAnnotation",
+                  "typeAnnotation": {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "T",
+                      "start": 95,
+                      "end": 96
+                    },
+                    "start": 95,
+                    "end": 96
+                  },
+                  "start": 93,
+                  "end": 96
+                },
+                "start": 88,
+                "end": 96
+              }
+            ],
+            "returnType": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSVoidKeyword",
+                "start": 99,
+                "end": 103
+              },
+              "start": 97,
+              "end": 103
+            },
+            "start": 87,
+            "end": 104
+          }
+        ],
+        "start": 68,
+        "end": 107
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "Callable",
+        "start": 56,
+        "end": 64
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 65,
+              "end": 66
+            },
+            "start": 65,
+            "end": 66
+          }
+        ],
+        "start": 64,
+        "end": 67
+      },
+      "start": 46,
+      "end": 107
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 162,
+        "end": 165
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "CallableExtention",
+        "start": 121,
+        "end": 138
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 139,
+              "end": 140
+            },
+            "start": 139,
+            "end": 140
+          }
+        ],
+        "start": 138,
+        "end": 141
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "Callable",
+            "start": 150,
+            "end": 158
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 159,
+                  "end": 160
+                },
+                "start": 159,
+                "end": 160
+              }
+            ],
+            "start": 158,
+            "end": 161
+          },
+          "start": 150,
+          "end": 161
+        }
+      ],
+      "start": 111,
+      "end": 165
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "MyClass",
+        "start": 276,
+        "end": 283
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "callableThing",
+              "start": 298,
+              "end": 311
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "CallableExtention",
+                  "start": 313,
+                  "end": 330
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSStringKeyword",
+                      "start": 331,
+                      "end": 337
+                    }
+                  ],
+                  "start": 330,
+                  "end": 338
+                },
+                "start": 313,
+                "end": 338
+              },
+              "start": 311,
+              "end": 338
+            },
+            "accessibility": "public",
+            "start": 291,
+            "end": 339
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "myMethod",
+              "start": 354,
+              "end": 362
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "x",
+                          "start": 380,
+                          "end": 381
+                        },
+                        "init": {
+                          "type": "TSTypeAssertion",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 385,
+                            "end": 391
+                          },
+                          "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "object": {
+                                "type": "ThisExpression",
+                                "start": 393,
+                                "end": 397
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "callableThing",
+                                "start": 398,
+                                "end": 411
+                              },
+                              "computed": false,
+                              "optional": false,
+                              "start": 393,
+                              "end": 411
+                            },
+                            "arguments": [],
+                            "optional": false,
+                            "start": 393,
+                            "end": 413
+                          },
+                          "start": 384,
+                          "end": 413
+                        },
+                        "start": 380,
+                        "end": 413
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 376,
+                    "end": 414
+                  }
+                ],
+                "start": 365,
+                "end": 421
+              },
+              "params": [],
+              "start": 362,
+              "end": 421
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 347,
+            "end": 421
+          }
+        ],
+        "start": 284,
+        "end": 424
+      },
+      "superClass": null,
+      "start": 270,
+      "end": 424
+    }
+  ],
+  "sourceType": "script",
+  "start": 46,
+  "end": 424
+}

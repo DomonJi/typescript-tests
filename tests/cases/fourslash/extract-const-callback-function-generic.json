@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 126,
+            "end": 130
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 131,
+            "end": 137
+          },
+          "computed": false,
+          "optional": false,
+          "start": 126,
+          "end": 137
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 138,
+            "end": 141
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 143,
+            "end": 146
+          }
+        ],
+        "optional": false,
+        "start": 126,
+        "end": 147
+      },
+      "start": 126,
+      "end": 148
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 149,
+            "end": 153
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 154,
+            "end": 167
+          },
+          "computed": false,
+          "optional": false,
+          "start": 149,
+          "end": 167
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 174,
+                  "end": 186
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract Symbol",
+                  "start": 188,
+                  "end": 204
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 174,
+                "end": 204
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 210,
+                  "end": 220
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "constant_scope_0",
+                  "start": 222,
+                  "end": 240
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 210,
+                "end": 240
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 246,
+                  "end": 263
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract to constant in enclosing scope",
+                  "start": 265,
+                  "end": 305
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 246,
+                "end": 305
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 311,
+                  "end": 321
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "declare function fnUnion(fn: <T>(a: T) => T): void\nconst newLocal: <T>(a: T) => T = a => a;\nfnUnion(/*RENAME*/newLocal);",
+                        "cooked": "declare function fnUnion(fn: <T>(a: T) => T): void\nconst newLocal: <T>(a: T) => T = a => a;\nfnUnion(/*RENAME*/newLocal);"
+                      },
+                      "tail": true,
+                      "start": 323,
+                      "end": 445
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 323,
+                  "end": 445
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 311,
+                "end": 445
+              }
+            ],
+            "start": 168,
+            "end": 447
+          }
+        ],
+        "optional": false,
+        "start": 149,
+        "end": 448
+      },
+      "start": 149,
+      "end": 449
+    }
+  ],
+  "sourceType": "script",
+  "start": 126,
+  "end": 449
+}

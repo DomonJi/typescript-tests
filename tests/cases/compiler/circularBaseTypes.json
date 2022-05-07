@@ -1,0 +1,238 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M",
+        "start": 72,
+        "end": 73
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "value",
+              "start": 81,
+              "end": 86
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "T",
+                  "start": 88,
+                  "end": 89
+                },
+                "start": 88,
+                "end": 89
+              },
+              "start": 86,
+              "end": 89
+            },
+            "start": 81,
+            "end": 89
+          }
+        ],
+        "start": 79,
+        "end": 91
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "T",
+              "start": 74,
+              "end": 75
+            },
+            "start": 74,
+            "end": 75
+          }
+        ],
+        "start": 73,
+        "end": 76
+      },
+      "start": 67,
+      "end": 92
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 121,
+        "end": 123
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "M2",
+        "start": 104,
+        "end": 106
+      },
+      "extends": [
+        {
+          "type": "TSInterfaceHeritage",
+          "expression": {
+            "type": "Identifier",
+            "name": "M",
+            "start": 115,
+            "end": 116
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "M3",
+                  "start": 117,
+                  "end": 119
+                },
+                "start": 117,
+                "end": 119
+              }
+            ],
+            "start": 116,
+            "end": 120
+          },
+          "start": 115,
+          "end": 120
+        }
+      ],
+      "start": 94,
+      "end": 123
+    },
+    {
+      "type": "EmptyStatement",
+      "start": 123,
+      "end": 124
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M3",
+        "start": 141,
+        "end": 143
+      },
+      "typeAnnotation": {
+        "type": "TSIndexedAccessType",
+        "objectType": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "M2",
+            "start": 146,
+            "end": 148
+          },
+          "start": 146,
+          "end": 148
+        },
+        "indexType": {
+          "type": "TSTypeOperator",
+          "operator": "keyof",
+          "typeAnnotation": {
+            "type": "TSTypeReference",
+            "typeName": {
+              "type": "Identifier",
+              "name": "M2",
+              "start": 155,
+              "end": 157
+            },
+            "start": 155,
+            "end": 157
+          },
+          "start": 149,
+          "end": 157
+        },
+        "start": 146,
+        "end": 158
+      },
+      "start": 136,
+      "end": 159
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 182,
+        "end": 183
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "m",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "M3",
+                "start": 187,
+                "end": 189
+              },
+              "start": 187,
+              "end": 189
+            },
+            "start": 185,
+            "end": 189
+          },
+          "start": 184,
+          "end": 189
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "m",
+                "start": 203,
+                "end": 204
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "value",
+                "start": 205,
+                "end": 210
+              },
+              "computed": false,
+              "optional": false,
+              "start": 203,
+              "end": 210
+            },
+            "start": 196,
+            "end": 211
+          }
+        ],
+        "start": 191,
+        "end": 214
+      },
+      "start": 173,
+      "end": 214
+    }
+  ],
+  "sourceType": "script",
+  "start": 67,
+  "end": 216
+}

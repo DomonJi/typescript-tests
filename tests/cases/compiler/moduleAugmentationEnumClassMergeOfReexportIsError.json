@@ -1,0 +1,224 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "ClassDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "Foo",
+          "start": 36,
+          "end": 39
+        },
+        "body": {
+          "type": "ClassBody",
+          "body": [
+            {
+              "type": "PropertyDefinition",
+              "key": {
+                "type": "Identifier",
+                "name": "member",
+                "start": 47,
+                "end": 53
+              },
+              "value": null,
+              "computed": false,
+              "static": false,
+              "declare": false,
+              "override": false,
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSStringKeyword",
+                  "start": 55,
+                  "end": 61
+                },
+                "start": 53,
+                "end": 61
+              },
+              "start": 47,
+              "end": 62
+            }
+          ],
+          "start": 40,
+          "end": 65
+        },
+        "superClass": null,
+        "start": 30,
+        "end": 65
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 23,
+      "end": 65
+    },
+    {
+      "type": "ExportAllDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./file",
+        "start": 108,
+        "end": 116
+      },
+      "exportKind": "value",
+      "exported": null,
+      "assertions": [],
+      "start": 94,
+      "end": 117
+    },
+    {
+      "type": "ImportDeclaration",
+      "source": {
+        "type": "Literal",
+        "value": "./reexport",
+        "start": 165,
+        "end": 177
+      },
+      "specifiers": [
+        {
+          "type": "ImportNamespaceSpecifier",
+          "local": {
+            "type": "Identifier",
+            "name": "ns",
+            "start": 157,
+            "end": 159
+          },
+          "start": 152,
+          "end": 159
+        }
+      ],
+      "importKind": "value",
+      "assertions": [],
+      "start": 145,
+      "end": 178
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Literal",
+        "value": "./reexport",
+        "start": 197,
+        "end": 209
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "TSEnumDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "Foo",
+                "start": 229,
+                "end": 232
+              },
+              "members": [
+                {
+                  "type": "TSEnumMember",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "A",
+                    "start": 244,
+                    "end": 245
+                  },
+                  "start": 244,
+                  "end": 245
+                },
+                {
+                  "type": "TSEnumMember",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "B",
+                    "start": 247,
+                    "end": 248
+                  },
+                  "start": 247,
+                  "end": 248
+                },
+                {
+                  "type": "TSEnumMember",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "C",
+                    "start": 250,
+                    "end": 251
+                  },
+                  "start": 250,
+                  "end": 251
+                }
+              ],
+              "start": 224,
+              "end": 258
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 217,
+            "end": 258
+          }
+        ],
+        "start": 210,
+        "end": 261
+      },
+      "declare": true,
+      "start": 182,
+      "end": 261
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "f",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "TSQualifiedName",
+                  "left": {
+                    "type": "Identifier",
+                    "name": "ns",
+                    "start": 282,
+                    "end": 284
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "Foo",
+                    "start": 285,
+                    "end": 288
+                  },
+                  "start": 282,
+                  "end": 288
+                },
+                "start": 282,
+                "end": 288
+              },
+              "start": 280,
+              "end": 288
+            },
+            "start": 279,
+            "end": 288
+          },
+          "init": null,
+          "start": 279,
+          "end": 288
+        }
+      ],
+      "kind": "const",
+      "declare": true,
+      "start": 265,
+      "end": 289
+    }
+  ],
+  "sourceType": "module",
+  "start": 23,
+  "end": 344
+}

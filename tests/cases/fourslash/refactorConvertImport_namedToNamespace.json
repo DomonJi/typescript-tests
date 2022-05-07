@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 203,
+            "end": 207
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 208,
+            "end": 214
+          },
+          "computed": false,
+          "optional": false,
+          "start": 203,
+          "end": 214
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 215,
+            "end": 218
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 220,
+            "end": 223
+          }
+        ],
+        "optional": false,
+        "start": 203,
+        "end": 224
+      },
+      "start": 203,
+      "end": 225
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 226,
+            "end": 230
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 231,
+            "end": 244
+          },
+          "computed": false,
+          "optional": false,
+          "start": 226,
+          "end": 244
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 251,
+                  "end": 263
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert import",
+                  "start": 265,
+                  "end": 281
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 251,
+                "end": 281
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 287,
+                  "end": 297
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert named imports to namespace import",
+                  "start": 299,
+                  "end": 342
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 287,
+                "end": 342
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 348,
+                  "end": 365
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Convert named imports to namespace import",
+                  "start": 367,
+                  "end": 410
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 348,
+                "end": 410
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 416,
+                  "end": 426
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "import * as m_1 from \"m\";\nimport { x } from \"m\";\nconst m = 0;\nconst o = { x: m_1.x };\nexport { x }; // Need a named import for this\n    m_1.y;\nconst n: m_1.T = 0;",
+                        "cooked": "import * as m_1 from \"m\";\nimport { x } from \"m\";\nconst m = 0;\nconst o = { x: m_1.x };\nexport { x }; // Need a named import for this\n    m_1.y;\nconst n: m_1.T = 0;"
+                      },
+                      "tail": true,
+                      "start": 476,
+                      "end": 640
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 476,
+                  "end": 640
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 416,
+                "end": 640
+              }
+            ],
+            "start": 245,
+            "end": 643
+          }
+        ],
+        "optional": false,
+        "start": 226,
+        "end": 644
+      },
+      "start": 226,
+      "end": 645
+    }
+  ],
+  "sourceType": "script",
+  "start": 203,
+  "end": 646
+}

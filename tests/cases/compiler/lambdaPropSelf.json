@@ -1,0 +1,414 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "ko",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSAnyKeyword",
+                "start": 16,
+                "end": 19
+              },
+              "start": 14,
+              "end": 19
+            },
+            "start": 12,
+            "end": 19
+          },
+          "init": null,
+          "start": 12,
+          "end": 19
+        }
+      ],
+      "kind": "var",
+      "declare": true,
+      "start": 0,
+      "end": 20
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Person",
+        "start": 30,
+        "end": 36
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "children",
+              "start": 44,
+              "end": 52
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSArrayType",
+                "elementType": {
+                  "type": "TSStringKeyword",
+                  "start": 54,
+                  "end": 60
+                },
+                "start": 54,
+                "end": 62
+              },
+              "start": 52,
+              "end": 62
+            },
+            "start": 44,
+            "end": 63
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 71,
+              "end": 82
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "TSParameterProperty",
+                  "accessibility": "public",
+                  "parameter": {
+                    "type": "Identifier",
+                    "name": "name",
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSStringKeyword",
+                        "start": 97,
+                        "end": 103
+                      },
+                      "start": 95,
+                      "end": 103
+                    },
+                    "start": 91,
+                    "end": 103
+                  },
+                  "start": 84,
+                  "end": 103
+                },
+                {
+                  "type": "Identifier",
+                  "name": "children",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSArrayType",
+                      "elementType": {
+                        "type": "TSStringKeyword",
+                        "start": 115,
+                        "end": 121
+                      },
+                      "start": 115,
+                      "end": 123
+                    },
+                    "start": 113,
+                    "end": 123
+                  },
+                  "start": 105,
+                  "end": 123
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "AssignmentExpression",
+                      "operator": "=",
+                      "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                          "type": "ThisExpression",
+                          "start": 136,
+                          "end": 140
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "children",
+                          "start": 141,
+                          "end": 149
+                        },
+                        "computed": false,
+                        "optional": false,
+                        "start": 136,
+                        "end": 149
+                      },
+                      "right": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "object": {
+                            "type": "Identifier",
+                            "name": "ko",
+                            "start": 152,
+                            "end": 154
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "observableArray",
+                            "start": 155,
+                            "end": 170
+                          },
+                          "computed": false,
+                          "optional": false,
+                          "start": 152,
+                          "end": 170
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "children",
+                            "start": 171,
+                            "end": 179
+                          }
+                        ],
+                        "optional": false,
+                        "start": 152,
+                        "end": 180
+                      },
+                      "start": 136,
+                      "end": 180
+                    },
+                    "start": 136,
+                    "end": 181
+                  }
+                ],
+                "start": 125,
+                "end": 188
+              },
+              "start": 83,
+              "end": 188
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 71,
+            "end": 188
+          },
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "addChild",
+              "start": 196,
+              "end": 204
+            },
+            "value": {
+              "type": "ArrowFunctionExpression",
+              "generator": false,
+              "id": null,
+              "params": [],
+              "body": {
+                "type": "CallExpression",
+                "callee": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "ThisExpression",
+                      "start": 213,
+                      "end": 217
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "children",
+                      "start": 218,
+                      "end": 226
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 213,
+                    "end": 226
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "push",
+                    "start": 227,
+                    "end": 231
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 213,
+                  "end": 231
+                },
+                "arguments": [
+                  {
+                    "type": "Literal",
+                    "value": "New child",
+                    "start": 232,
+                    "end": 243
+                  }
+                ],
+                "optional": false,
+                "start": 213,
+                "end": 244
+              },
+              "async": false,
+              "expression": true,
+              "start": 207,
+              "end": 244
+            },
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "start": 196,
+            "end": 245
+          }
+        ],
+        "start": 37,
+        "end": 248
+      },
+      "superClass": null,
+      "start": 24,
+      "end": 248
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "T",
+        "start": 260,
+        "end": 261
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "fo",
+              "start": 270,
+              "end": 272
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "VariableDeclaration",
+                    "declarations": [
+                      {
+                        "type": "VariableDeclarator",
+                        "id": {
+                          "type": "Identifier",
+                          "name": "x",
+                          "start": 290,
+                          "end": 291
+                        },
+                        "init": {
+                          "type": "ThisExpression",
+                          "start": 294,
+                          "end": 298
+                        },
+                        "start": 290,
+                        "end": 298
+                      }
+                    ],
+                    "kind": "var",
+                    "start": 286,
+                    "end": 299
+                  }
+                ],
+                "start": 275,
+                "end": 306
+              },
+              "params": [],
+              "start": 272,
+              "end": 306
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "start": 270,
+            "end": 306
+          }
+        ],
+        "start": 262,
+        "end": 309
+      },
+      "superClass": null,
+      "start": 254,
+      "end": 309
+    },
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "M",
+        "start": 320,
+        "end": 321
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 333,
+                  "end": 334
+                },
+                "init": {
+                  "type": "ThisExpression",
+                  "start": 337,
+                  "end": 341
+                },
+                "start": 333,
+                "end": 341
+              }
+            ],
+            "kind": "var",
+            "start": 329,
+            "end": 342
+          }
+        ],
+        "start": 322,
+        "end": 345
+      },
+      "start": 313,
+      "end": 345
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 347
+}

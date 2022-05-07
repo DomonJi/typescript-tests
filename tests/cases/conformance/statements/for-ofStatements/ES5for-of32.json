@@ -1,0 +1,212 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "array",
+            "start": 22,
+            "end": 27
+          },
+          "init": {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "Literal",
+                "value": 1,
+                "start": 31,
+                "end": 32
+              },
+              {
+                "type": "Literal",
+                "value": 2,
+                "start": 33,
+                "end": 34
+              },
+              {
+                "type": "Literal",
+                "value": 3,
+                "start": 35,
+                "end": 36
+              }
+            ],
+            "start": 30,
+            "end": 37
+          },
+          "start": 22,
+          "end": 37
+        }
+      ],
+      "kind": "var",
+      "start": 18,
+      "end": 38
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "sum",
+            "start": 44,
+            "end": 47
+          },
+          "init": {
+            "type": "Literal",
+            "value": 0,
+            "start": 50,
+            "end": 51
+          },
+          "start": 44,
+          "end": 51
+        }
+      ],
+      "kind": "var",
+      "start": 40,
+      "end": 52
+    },
+    {
+      "type": "ForOfStatement",
+      "left": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "num",
+              "start": 65,
+              "end": 68
+            },
+            "init": null,
+            "start": 65,
+            "end": 68
+          }
+        ],
+        "kind": "let",
+        "start": 61,
+        "end": 68
+      },
+      "right": {
+        "type": "Identifier",
+        "name": "array",
+        "start": 72,
+        "end": 77
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "Identifier",
+                "name": "sum",
+                "start": 90,
+                "end": 93
+              },
+              "right": {
+                "type": "Literal",
+                "value": 0,
+                "start": 98,
+                "end": 99
+              },
+              "start": 90,
+              "end": 99
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "array",
+                      "start": 112,
+                      "end": 117
+                    },
+                    "right": {
+                      "type": "ArrayExpression",
+                      "elements": [
+                        {
+                          "type": "Literal",
+                          "value": 4,
+                          "start": 121,
+                          "end": 122
+                        },
+                        {
+                          "type": "Literal",
+                          "value": 5,
+                          "start": 123,
+                          "end": 124
+                        },
+                        {
+                          "type": "Literal",
+                          "value": 6,
+                          "start": 125,
+                          "end": 126
+                        }
+                      ],
+                      "start": 120,
+                      "end": 127
+                    },
+                    "start": 112,
+                    "end": 127
+                  },
+                  "start": 112,
+                  "end": 127
+                }
+              ],
+              "start": 101,
+              "end": 134
+            },
+            "alternate": null,
+            "start": 86,
+            "end": 134
+          },
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "+=",
+              "left": {
+                "type": "Identifier",
+                "name": "sum",
+                "start": 146,
+                "end": 149
+              },
+              "right": {
+                "type": "Identifier",
+                "name": "num",
+                "start": 153,
+                "end": 156
+              },
+              "start": 146,
+              "end": 156
+            },
+            "start": 146,
+            "end": 157
+          }
+        ],
+        "start": 79,
+        "end": 160
+      },
+      "await": false,
+      "start": 56,
+      "end": 160
+    }
+  ],
+  "sourceType": "script",
+  "start": 18,
+  "end": 160
+}

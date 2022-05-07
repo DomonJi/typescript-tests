@@ -1,0 +1,130 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "foo",
+            "start": 29,
+            "end": 32
+          },
+          "init": {
+            "type": "ArrowFunctionExpression",
+            "generator": false,
+            "id": null,
+            "params": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [],
+              "start": 41,
+              "end": 43
+            },
+            "async": false,
+            "expression": false,
+            "start": 35,
+            "end": 43
+          },
+          "start": 29,
+          "end": 43
+        }
+      ],
+      "kind": "let",
+      "start": 25,
+      "end": 44
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "bar",
+            "start": 50,
+            "end": 53
+          },
+          "init": null,
+          "start": 50,
+          "end": 53
+        }
+      ],
+      "kind": "let",
+      "start": 46,
+      "end": 54
+    },
+    {
+      "type": "WhileStatement",
+      "test": {
+        "type": "Literal",
+        "value": 1,
+        "start": 63,
+        "end": 64
+      },
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "AssignmentExpression",
+              "operator": "=",
+              "left": {
+                "type": "Identifier",
+                "name": "bar",
+                "start": 73,
+                "end": 76
+              },
+              "right": {
+                "type": "UnaryExpression",
+                "operator": "~",
+                "prefix": true,
+                "argument": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "Identifier",
+                    "name": "foo",
+                    "start": 80,
+                    "end": 83
+                  },
+                  "arguments": [
+                    {
+                      "type": "SpreadElement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "bar",
+                        "start": 87,
+                        "end": 90
+                      },
+                      "start": 84,
+                      "end": 90
+                    }
+                  ],
+                  "optional": false,
+                  "start": 80,
+                  "end": 91
+                },
+                "start": 79,
+                "end": 91
+              },
+              "start": 73,
+              "end": 91
+            },
+            "start": 73,
+            "end": 92
+          }
+        ],
+        "start": 66,
+        "end": 95
+      },
+      "start": 56,
+      "end": 95
+    }
+  ],
+  "sourceType": "script",
+  "start": 25,
+  "end": 97
+}

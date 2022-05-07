@@ -1,0 +1,83 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 194,
+            "end": 200
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "importFixAtPosition",
+            "start": 201,
+            "end": 220
+          },
+          "computed": false,
+          "optional": false,
+          "start": 194,
+          "end": 220
+        },
+        "arguments": [
+          {
+            "type": "ArrayExpression",
+            "elements": [
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import * as ns from \"./module\";\r\n// Comment\r\nns.f1();",
+                      "cooked": "import * as ns from \"./module\";\n// Comment\nns.f1();"
+                    },
+                    "tail": true,
+                    "start": 224,
+                    "end": 279
+                  }
+                ],
+                "expressions": [],
+                "start": 224,
+                "end": 279
+              },
+              {
+                "type": "TemplateLiteral",
+                "quasis": [
+                  {
+                    "type": "TemplateElement",
+                    "value": {
+                      "raw": "import * as ns from \"./module\";\r\nimport { f1 } from \"./module\";\r\n// Comment\r\nf1();",
+                      "cooked": "import * as ns from \"./module\";\nimport { f1 } from \"./module\";\n// Comment\nf1();"
+                    },
+                    "tail": true,
+                    "start": 282,
+                    "end": 366
+                  }
+                ],
+                "expressions": [],
+                "start": 282,
+                "end": 366
+              }
+            ],
+            "start": 221,
+            "end": 370
+          }
+        ],
+        "optional": false,
+        "start": 194,
+        "end": 371
+      },
+      "start": 194,
+      "end": 372
+    }
+  ],
+  "sourceType": "script",
+  "start": 194,
+  "end": 374
+}

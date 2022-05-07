@@ -1,0 +1,343 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 23,
+              "end": 26
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 28,
+                "end": 34
+              },
+              "start": 26,
+              "end": 34
+            },
+            "start": 23,
+            "end": 35
+          }
+        ],
+        "start": 16,
+        "end": 38
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "IText",
+        "start": 10,
+        "end": 15
+      },
+      "start": 0,
+      "end": 38
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [],
+        "start": 61,
+        "end": 63
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "TextSpan",
+        "start": 52,
+        "end": 60
+      },
+      "start": 42,
+      "end": 63
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "SubText",
+        "start": 73,
+        "end": 80
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "constructor",
+              "start": 111,
+              "end": 122
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "text",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "IText",
+                        "start": 129,
+                        "end": 134
+                      },
+                      "start": 129,
+                      "end": 134
+                    },
+                    "start": 127,
+                    "end": 134
+                  },
+                  "start": 123,
+                  "end": 134
+                },
+                {
+                  "type": "Identifier",
+                  "name": "span",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "TextSpan",
+                        "start": 142,
+                        "end": 150
+                      },
+                      "start": 142,
+                      "end": 150
+                    },
+                    "start": 140,
+                    "end": 150
+                  },
+                  "start": 136,
+                  "end": 150
+                }
+              ],
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Super",
+                        "start": 167,
+                        "end": 172
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 167,
+                      "end": 174
+                    },
+                    "start": 167,
+                    "end": 175
+                  }
+                ],
+                "start": 152,
+                "end": 186
+              },
+              "start": 122,
+              "end": 186
+            },
+            "computed": false,
+            "static": false,
+            "kind": "constructor",
+            "override": false,
+            "start": 111,
+            "end": 186
+          }
+        ],
+        "start": 98,
+        "end": 189
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "TextBase",
+        "start": 89,
+        "end": 97
+      },
+      "start": 67,
+      "end": 189
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "TextBase",
+        "start": 199,
+        "end": 207
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 243,
+              "end": 246
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSNumberKeyword",
+                "start": 248,
+                "end": 254
+              },
+              "start": 246,
+              "end": 254
+            },
+            "accessibility": "public",
+            "start": 236,
+            "end": 255
+          },
+          {
+            "type": "MethodDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "subText",
+              "start": 272,
+              "end": 279
+            },
+            "value": {
+              "type": "FunctionExpression",
+              "id": null,
+              "generator": false,
+              "expression": false,
+              "async": false,
+              "body": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ReturnStatement",
+                    "argument": {
+                      "type": "NewExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "SubText",
+                        "start": 331,
+                        "end": 338
+                      },
+                      "arguments": [
+                        {
+                          "type": "ThisExpression",
+                          "start": 339,
+                          "end": 343
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "span",
+                          "start": 345,
+                          "end": 349
+                        }
+                      ],
+                      "start": 327,
+                      "end": 350
+                    },
+                    "start": 320,
+                    "end": 351
+                  }
+                ],
+                "start": 303,
+                "end": 362
+              },
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "span",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "TextSpan",
+                        "start": 286,
+                        "end": 294
+                      },
+                      "start": 286,
+                      "end": 294
+                    },
+                    "start": 284,
+                    "end": 294
+                  },
+                  "start": 280,
+                  "end": 294
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "IText",
+                    "start": 297,
+                    "end": 302
+                  },
+                  "start": 297,
+                  "end": 302
+                },
+                "start": 295,
+                "end": 302
+              },
+              "start": 279,
+              "end": 362
+            },
+            "computed": false,
+            "static": false,
+            "kind": "method",
+            "override": false,
+            "accessibility": "public",
+            "start": 265,
+            "end": 362
+          }
+        ],
+        "start": 225,
+        "end": 365
+      },
+      "superClass": null,
+      "implements": [
+        {
+          "type": "TSClassImplements",
+          "expression": {
+            "type": "Identifier",
+            "name": "IText",
+            "start": 219,
+            "end": 224
+          },
+          "start": 219,
+          "end": 224
+        }
+      ],
+      "start": 193,
+      "end": 365
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 365
+}

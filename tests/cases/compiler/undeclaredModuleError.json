@@ -1,0 +1,653 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "fs",
+        "start": 23,
+        "end": 25
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "fs",
+          "start": 36,
+          "end": 40
+        },
+        "start": 28,
+        "end": 41
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 16,
+      "end": 42
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "readdir",
+        "start": 53,
+        "end": 60
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "path",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 67,
+              "end": 73
+            },
+            "start": 65,
+            "end": 73
+          },
+          "start": 61,
+          "end": 73
+        },
+        {
+          "type": "Identifier",
+          "name": "accept",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "stat",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "TSQualifiedName",
+                        "left": {
+                          "type": "Identifier",
+                          "name": "fs",
+                          "start": 90,
+                          "end": 92
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "Stats",
+                          "start": 93,
+                          "end": 98
+                        },
+                        "start": 90,
+                        "end": 98
+                      },
+                      "start": 90,
+                      "end": 98
+                    },
+                    "start": 88,
+                    "end": 98
+                  },
+                  "start": 84,
+                  "end": 98
+                },
+                {
+                  "type": "Identifier",
+                  "name": "name",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 106,
+                      "end": 112
+                    },
+                    "start": 104,
+                    "end": 112
+                  },
+                  "start": 100,
+                  "end": 112
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSBooleanKeyword",
+                  "start": 117,
+                  "end": 124
+                },
+                "start": 114,
+                "end": 124
+              },
+              "start": 83,
+              "end": 124
+            },
+            "start": 81,
+            "end": 124
+          },
+          "start": 75,
+          "end": 124
+        },
+        {
+          "type": "Identifier",
+          "name": "callback",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [
+                {
+                  "type": "Identifier",
+                  "name": "error",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Error",
+                        "start": 144,
+                        "end": 149
+                      },
+                      "start": 144,
+                      "end": 149
+                    },
+                    "start": 142,
+                    "end": 149
+                  },
+                  "start": 137,
+                  "end": 149
+                },
+                {
+                  "type": "Identifier",
+                  "name": "results",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSArrayType",
+                      "elementType": {
+                        "type": "TSTypeLiteral",
+                        "members": [
+                          {
+                            "type": "TSPropertySignature",
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "name": "name",
+                              "start": 162,
+                              "end": 166
+                            },
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSStringKeyword",
+                                "start": 168,
+                                "end": 174
+                              },
+                              "start": 166,
+                              "end": 174
+                            },
+                            "start": 162,
+                            "end": 175
+                          },
+                          {
+                            "type": "TSPropertySignature",
+                            "computed": false,
+                            "key": {
+                              "type": "Identifier",
+                              "name": "stat",
+                              "start": 176,
+                              "end": 180
+                            },
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "TSQualifiedName",
+                                  "left": {
+                                    "type": "Identifier",
+                                    "name": "fs",
+                                    "start": 182,
+                                    "end": 184
+                                  },
+                                  "right": {
+                                    "type": "Identifier",
+                                    "name": "Stats",
+                                    "start": 185,
+                                    "end": 190
+                                  },
+                                  "start": 182,
+                                  "end": 190
+                                },
+                                "start": 182,
+                                "end": 190
+                              },
+                              "start": 180,
+                              "end": 190
+                            },
+                            "start": 176,
+                            "end": 191
+                          }
+                        ],
+                        "start": 160,
+                        "end": 193
+                      },
+                      "start": 160,
+                      "end": 195
+                    },
+                    "start": 158,
+                    "end": 195
+                  },
+                  "start": 151,
+                  "end": 195
+                }
+              ],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSVoidKeyword",
+                  "start": 200,
+                  "end": 204
+                },
+                "start": 197,
+                "end": 204
+              },
+              "start": 136,
+              "end": 204
+            },
+            "start": 134,
+            "end": 204
+          },
+          "start": 126,
+          "end": 204
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 207,
+        "end": 209
+      },
+      "start": 44,
+      "end": 209
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "join",
+        "start": 222,
+        "end": 226
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "RestElement",
+          "argument": {
+            "type": "Identifier",
+            "name": "paths",
+            "start": 230,
+            "end": 235
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSStringKeyword",
+                "start": 237,
+                "end": 243
+              },
+              "start": 237,
+              "end": 245
+            },
+            "start": 235,
+            "end": 245
+          },
+          "start": 227,
+          "end": 245
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 247,
+        "end": 249
+      },
+      "start": 213,
+      "end": 249
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "instrumentFile",
+        "start": 262,
+        "end": 276
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "covFileDir",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 289,
+              "end": 295
+            },
+            "start": 287,
+            "end": 295
+          },
+          "start": 277,
+          "end": 295
+        },
+        {
+          "type": "Identifier",
+          "name": "covFileName",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 310,
+              "end": 316
+            },
+            "start": 308,
+            "end": 316
+          },
+          "start": 297,
+          "end": 316
+        },
+        {
+          "type": "Identifier",
+          "name": "originalFilePath",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSStringKeyword",
+              "start": 336,
+              "end": 342
+            },
+            "start": 334,
+            "end": 342
+          },
+          "start": 318,
+          "end": 342
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ExpressionStatement",
+            "expression": {
+              "type": "CallExpression",
+              "callee": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "fs",
+                  "start": 351,
+                  "end": 353
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "readFile",
+                  "start": 354,
+                  "end": 362
+                },
+                "computed": false,
+                "optional": false,
+                "start": 351,
+                "end": 362
+              },
+              "arguments": [
+                {
+                  "type": "Identifier",
+                  "name": "originalFilePath",
+                  "start": 363,
+                  "end": 379
+                },
+                {
+                  "type": "ArrowFunctionExpression",
+                  "generator": false,
+                  "id": null,
+                  "params": [],
+                  "body": {
+                    "type": "BlockStatement",
+                    "body": [
+                      {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                          "type": "CallExpression",
+                          "callee": {
+                            "type": "Identifier",
+                            "name": "readdir",
+                            "start": 405,
+                            "end": 412
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "name": "covFileDir",
+                              "start": 413,
+                              "end": 423
+                            },
+                            {
+                              "type": "ArrowFunctionExpression",
+                              "generator": false,
+                              "id": null,
+                              "params": [],
+                              "body": {
+                                "type": "BlockStatement",
+                                "body": [],
+                                "start": 431,
+                                "end": 443
+                              },
+                              "async": false,
+                              "expression": false,
+                              "start": 425,
+                              "end": 443
+                            },
+                            {
+                              "type": "ArrowFunctionExpression",
+                              "generator": false,
+                              "id": null,
+                              "params": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "error",
+                                  "typeAnnotation": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSTypeReference",
+                                      "typeName": {
+                                        "type": "Identifier",
+                                        "name": "Error",
+                                        "start": 454,
+                                        "end": 459
+                                      },
+                                      "start": 454,
+                                      "end": 459
+                                    },
+                                    "start": 452,
+                                    "end": 459
+                                  },
+                                  "start": 447,
+                                  "end": 459
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "files",
+                                  "typeAnnotation": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSArrayType",
+                                      "elementType": {
+                                        "type": "TSTypeLiteral",
+                                        "members": [],
+                                        "start": 468,
+                                        "end": 470
+                                      },
+                                      "start": 468,
+                                      "end": 472
+                                    },
+                                    "start": 466,
+                                    "end": 472
+                                  },
+                                  "start": 461,
+                                  "end": 472
+                                }
+                              ],
+                              "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                  {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                      "type": "CallExpression",
+                                      "callee": {
+                                        "type": "MemberExpression",
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "files",
+                                          "start": 496,
+                                          "end": 501
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "forEach",
+                                          "start": 502,
+                                          "end": 509
+                                        },
+                                        "computed": false,
+                                        "optional": false,
+                                        "start": 496,
+                                        "end": 509
+                                      },
+                                      "arguments": [
+                                        {
+                                          "type": "ArrowFunctionExpression",
+                                          "generator": false,
+                                          "id": null,
+                                          "params": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "file",
+                                              "start": 511,
+                                              "end": 515
+                                            }
+                                          ],
+                                          "body": {
+                                            "type": "BlockStatement",
+                                            "body": [
+                                              {
+                                                "type": "VariableDeclaration",
+                                                "declarations": [
+                                                  {
+                                                    "type": "VariableDeclarator",
+                                                    "id": {
+                                                      "type": "Identifier",
+                                                      "name": "fullPath",
+                                                      "start": 547,
+                                                      "end": 555
+                                                    },
+                                                    "init": {
+                                                      "type": "CallExpression",
+                                                      "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "join",
+                                                        "start": 558,
+                                                        "end": 562
+                                                      },
+                                                      "arguments": [
+                                                        {
+                                                          "type": "Identifier",
+                                                          "name": "IDoNotExist",
+                                                          "start": 563,
+                                                          "end": 574
+                                                        }
+                                                      ],
+                                                      "optional": false,
+                                                      "start": 558,
+                                                      "end": 575
+                                                    },
+                                                    "start": 547,
+                                                    "end": 575
+                                                  }
+                                                ],
+                                                "kind": "var",
+                                                "start": 543,
+                                                "end": 576
+                                              }
+                                            ],
+                                            "start": 520,
+                                            "end": 595
+                                          },
+                                          "async": false,
+                                          "expression": false,
+                                          "start": 510,
+                                          "end": 595
+                                        }
+                                      ],
+                                      "optional": false,
+                                      "start": 496,
+                                      "end": 597
+                                    },
+                                    "start": 496,
+                                    "end": 598
+                                  }
+                                ],
+                                "start": 477,
+                                "end": 613
+                              },
+                              "async": false,
+                              "expression": false,
+                              "start": 446,
+                              "end": 613
+                            }
+                          ],
+                          "optional": false,
+                          "start": 405,
+                          "end": 615
+                        },
+                        "start": 405,
+                        "end": 616
+                      }
+                    ],
+                    "start": 387,
+                    "end": 623
+                  },
+                  "async": false,
+                  "expression": false,
+                  "start": 381,
+                  "end": 623
+                }
+              ],
+              "optional": false,
+              "start": 351,
+              "end": 625
+            },
+            "start": 351,
+            "end": 626
+          }
+        ],
+        "start": 344,
+        "end": 629
+      },
+      "start": 253,
+      "end": 629
+    }
+  ],
+  "sourceType": "module",
+  "start": 16,
+  "end": 629
+}

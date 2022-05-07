@@ -1,0 +1,292 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "func",
+        "start": 61,
+        "end": 65
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "a",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "A",
+                "start": 100,
+                "end": 101
+              },
+              "start": 100,
+              "end": 101
+            },
+            "start": 98,
+            "end": 101
+          },
+          "start": 97,
+          "end": 101
+        },
+        {
+          "type": "Identifier",
+          "name": "b",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "B",
+                  "start": 106,
+                  "end": 107
+                },
+                "start": 106,
+                "end": 107
+              },
+              "start": 106,
+              "end": 109
+            },
+            "start": 104,
+            "end": 109
+          },
+          "start": 103,
+          "end": 109
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSFunctionType",
+          "params": [
+            {
+              "type": "Identifier",
+              "name": "ab",
+              "typeAnnotation": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSIntersectionType",
+                  "types": [
+                    {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "A",
+                        "start": 117,
+                        "end": 118
+                      },
+                      "start": 117,
+                      "end": 118
+                    },
+                    {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "B",
+                        "start": 121,
+                        "end": 122
+                      },
+                      "start": 121,
+                      "end": 122
+                    }
+                  ],
+                  "start": 117,
+                  "end": 122
+                },
+                "start": 115,
+                "end": 122
+              },
+              "start": 113,
+              "end": 122
+            }
+          ],
+          "returnType": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSVoidKeyword",
+              "start": 127,
+              "end": 131
+            },
+            "start": 124,
+            "end": 131
+          },
+          "start": 112,
+          "end": 131
+        },
+        "start": 110,
+        "end": 131
+      },
+      "declare": true,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "A",
+              "start": 66,
+              "end": 67
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 76,
+              "end": 82
+            },
+            "start": 66,
+            "end": 82
+          },
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "B",
+              "start": 84,
+              "end": 85
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "A",
+                "start": 94,
+                "end": 95
+              },
+              "start": 94,
+              "end": 95
+            },
+            "start": 84,
+            "end": 95
+          }
+        ],
+        "start": 65,
+        "end": 96
+      },
+      "start": 44,
+      "end": 132
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "q",
+            "start": 140,
+            "end": 141
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "func",
+              "start": 144,
+              "end": 148
+            },
+            "arguments": [
+              {
+                "type": "TSAsExpression",
+                "expression": {
+                  "type": "Literal",
+                  "value": "x",
+                  "start": 149,
+                  "end": 152
+                },
+                "typeAnnotation": {
+                  "type": "TSUnionType",
+                  "types": [
+                    {
+                      "type": "TSLiteralType",
+                      "literal": {
+                        "type": "Literal",
+                        "value": "x",
+                        "start": 156,
+                        "end": 159
+                      },
+                      "start": 156,
+                      "end": 159
+                    },
+                    {
+                      "type": "TSLiteralType",
+                      "literal": {
+                        "type": "Literal",
+                        "value": "y",
+                        "start": 162,
+                        "end": 165
+                      },
+                      "start": 162,
+                      "end": 165
+                    }
+                  ],
+                  "start": 156,
+                  "end": 165
+                },
+                "start": 149,
+                "end": 165
+              },
+              {
+                "type": "ArrayExpression",
+                "elements": [
+                  {
+                    "type": "Literal",
+                    "value": "x",
+                    "start": 168,
+                    "end": 171
+                  }
+                ],
+                "start": 167,
+                "end": 172
+              }
+            ],
+            "optional": false,
+            "start": 144,
+            "end": 173
+          },
+          "start": 140,
+          "end": 173
+        }
+      ],
+      "kind": "const",
+      "start": 134,
+      "end": 174
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "q",
+          "start": 176,
+          "end": 177
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "x",
+            "start": 178,
+            "end": 181
+          }
+        ],
+        "optional": false,
+        "start": 176,
+        "end": 182
+      },
+      "start": 176,
+      "end": 183
+    }
+  ],
+  "sourceType": "script",
+  "start": 44,
+  "end": 185
+}

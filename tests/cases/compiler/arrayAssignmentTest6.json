@@ -1,0 +1,426 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSModuleDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Test",
+        "start": 7,
+        "end": 11
+      },
+      "body": {
+        "type": "TSModuleBlock",
+        "body": [
+          {
+            "type": "TSInterfaceDeclaration",
+            "body": {
+              "type": "TSInterfaceBody",
+              "body": [],
+              "start": 36,
+              "end": 44
+            },
+            "id": {
+              "type": "Identifier",
+              "name": "IState",
+              "start": 29,
+              "end": 35
+            },
+            "start": 19,
+            "end": 44
+          },
+          {
+            "type": "TSInterfaceDeclaration",
+            "body": {
+              "type": "TSInterfaceBody",
+              "body": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "startIndex",
+                    "start": 78,
+                    "end": 88
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSNumberKeyword",
+                      "start": 90,
+                      "end": 96
+                    },
+                    "start": 88,
+                    "end": 96
+                  },
+                  "start": 78,
+                  "end": 97
+                }
+              ],
+              "start": 67,
+              "end": 104
+            },
+            "id": {
+              "type": "Identifier",
+              "name": "IToken",
+              "start": 60,
+              "end": 66
+            },
+            "start": 50,
+            "end": 104
+          },
+          {
+            "type": "TSInterfaceDeclaration",
+            "body": {
+              "type": "TSInterfaceBody",
+              "body": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "tokens",
+                    "start": 143,
+                    "end": 149
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSArrayType",
+                      "elementType": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "IToken",
+                          "start": 151,
+                          "end": 157
+                        },
+                        "start": 151,
+                        "end": 157
+                      },
+                      "start": 151,
+                      "end": 159
+                    },
+                    "start": 149,
+                    "end": 159
+                  },
+                  "start": 143,
+                  "end": 160
+                },
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "endState",
+                    "start": 170,
+                    "end": 178
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "IState",
+                        "start": 180,
+                        "end": 186
+                      },
+                      "start": 180,
+                      "end": 186
+                    },
+                    "start": 178,
+                    "end": 186
+                  },
+                  "start": 170,
+                  "end": 187
+                }
+              ],
+              "start": 132,
+              "end": 194
+            },
+            "id": {
+              "type": "Identifier",
+              "name": "ILineTokens",
+              "start": 120,
+              "end": 131
+            },
+            "start": 110,
+            "end": 194
+          },
+          {
+            "type": "TSInterfaceDeclaration",
+            "body": {
+              "type": "TSInterfaceBody",
+              "body": [
+                {
+                  "type": "TSMethodSignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "tokenize",
+                    "start": 227,
+                    "end": 235
+                  },
+                  "params": [
+                    {
+                      "type": "Identifier",
+                      "name": "line",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSStringKeyword",
+                          "start": 241,
+                          "end": 247
+                        },
+                        "start": 240,
+                        "end": 247
+                      },
+                      "start": 236,
+                      "end": 247
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "state",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "IState",
+                            "start": 255,
+                            "end": 261
+                          },
+                          "start": 255,
+                          "end": 261
+                        },
+                        "start": 254,
+                        "end": 261
+                      },
+                      "start": 249,
+                      "end": 261
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "includeStates",
+                      "typeAnnotation": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSBooleanKeyword",
+                          "start": 277,
+                          "end": 284
+                        },
+                        "start": 276,
+                        "end": 284
+                      },
+                      "start": 263,
+                      "end": 284
+                    }
+                  ],
+                  "kind": "method",
+                  "returnType": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "ILineTokens",
+                        "start": 286,
+                        "end": 297
+                      },
+                      "start": 286,
+                      "end": 297
+                    },
+                    "start": 285,
+                    "end": 297
+                  },
+                  "start": 227,
+                  "end": 298
+                }
+              ],
+              "start": 216,
+              "end": 305
+            },
+            "id": {
+              "type": "Identifier",
+              "name": "IMode",
+              "start": 210,
+              "end": 215
+            },
+            "start": 200,
+            "end": 305
+          },
+          {
+            "type": "ExportNamedDeclaration",
+            "declaration": {
+              "type": "ClassDeclaration",
+              "id": {
+                "type": "Identifier",
+                "name": "Bug",
+                "start": 324,
+                "end": 327
+              },
+              "body": {
+                "type": "ClassBody",
+                "body": [
+                  {
+                    "type": "MethodDefinition",
+                    "key": {
+                      "type": "Identifier",
+                      "name": "tokenize",
+                      "start": 363,
+                      "end": 371
+                    },
+                    "value": {
+                      "type": "FunctionExpression",
+                      "id": null,
+                      "generator": false,
+                      "expression": false,
+                      "async": false,
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Literal",
+                              "value": null,
+                              "start": 459,
+                              "end": 463
+                            },
+                            "start": 452,
+                            "end": 464
+                          }
+                        ],
+                        "start": 437,
+                        "end": 475
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "line",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSStringKeyword",
+                              "start": 377,
+                              "end": 383
+                            },
+                            "start": 376,
+                            "end": 383
+                          },
+                          "start": 372,
+                          "end": 383
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "tokens",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSArrayType",
+                              "elementType": {
+                                "type": "TSTypeReference",
+                                "typeName": {
+                                  "type": "Identifier",
+                                  "name": "IToken",
+                                  "start": 392,
+                                  "end": 398
+                                },
+                                "start": 392,
+                                "end": 398
+                              },
+                              "start": 392,
+                              "end": 400
+                            },
+                            "start": 391,
+                            "end": 400
+                          },
+                          "start": 385,
+                          "end": 400
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "includeStates",
+                          "typeAnnotation": {
+                            "type": "TSTypeAnnotation",
+                            "typeAnnotation": {
+                              "type": "TSBooleanKeyword",
+                              "start": 416,
+                              "end": 423
+                            },
+                            "start": 415,
+                            "end": 423
+                          },
+                          "start": 402,
+                          "end": 423
+                        }
+                      ],
+                      "returnType": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "ILineTokens",
+                            "start": 425,
+                            "end": 436
+                          },
+                          "start": 425,
+                          "end": 436
+                        },
+                        "start": 424,
+                        "end": 436
+                      },
+                      "start": 371,
+                      "end": 475
+                    },
+                    "computed": false,
+                    "static": false,
+                    "kind": "method",
+                    "override": false,
+                    "accessibility": "public",
+                    "start": 356,
+                    "end": 475
+                  }
+                ],
+                "start": 345,
+                "end": 482
+              },
+              "superClass": null,
+              "implements": [
+                {
+                  "type": "TSClassImplements",
+                  "expression": {
+                    "type": "Identifier",
+                    "name": "IMode",
+                    "start": 339,
+                    "end": 344
+                  },
+                  "start": 339,
+                  "end": 344
+                }
+              ],
+              "start": 318,
+              "end": 482
+            },
+            "specifiers": [],
+            "source": null,
+            "exportKind": "value",
+            "assertions": [],
+            "start": 311,
+            "end": 482
+          }
+        ],
+        "start": 12,
+        "end": 489
+      },
+      "start": 0,
+      "end": 489
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 491
+}

@@ -1,0 +1,206 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "GlobalThing",
+            "start": 137,
+            "end": 148
+          },
+          "init": {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 153,
+                  "end": 154
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 12,
+                  "start": 156,
+                  "end": 158
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 153,
+                "end": 158
+              }
+            ],
+            "start": 151,
+            "end": 160
+          },
+          "start": 137,
+          "end": 160
+        }
+      ],
+      "kind": "var",
+      "start": 133,
+      "end": 161
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f",
+        "start": 241,
+        "end": 242
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "type",
+          "start": 243,
+          "end": 247
+        },
+        {
+          "type": "Identifier",
+          "name": "ctor",
+          "start": 249,
+          "end": 253
+        },
+        {
+          "type": "Identifier",
+          "name": "exports",
+          "start": 255,
+          "end": 262
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "!==",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "exports",
+                  "start": 281,
+                  "end": 288
+                },
+                "start": 274,
+                "end": 288
+              },
+              "right": {
+                "type": "Literal",
+                "value": "undefined",
+                "start": 293,
+                "end": 304
+              },
+              "start": 274,
+              "end": 304
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "exports",
+                        "start": 316,
+                        "end": 323
+                      },
+                      "property": {
+                        "type": "BinaryExpression",
+                        "operator": "+",
+                        "left": {
+                          "type": "Literal",
+                          "value": "AST_",
+                          "start": 324,
+                          "end": 330
+                        },
+                        "right": {
+                          "type": "Identifier",
+                          "name": "type",
+                          "start": 333,
+                          "end": 337
+                        },
+                        "start": 324,
+                        "end": 337
+                      },
+                      "computed": true,
+                      "optional": false,
+                      "start": 316,
+                      "end": 338
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "ctor",
+                      "start": 341,
+                      "end": 345
+                    },
+                    "start": 316,
+                    "end": 345
+                  },
+                  "start": 316,
+                  "end": 346
+                }
+              ],
+              "start": 306,
+              "end": 352
+            },
+            "alternate": null,
+            "start": 270,
+            "end": 352
+          }
+        ],
+        "start": 264,
+        "end": 354
+      },
+      "start": 232,
+      "end": 354
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "MemberExpression",
+        "object": {
+          "type": "Identifier",
+          "name": "GlobalThing",
+          "start": 377,
+          "end": 388
+        },
+        "property": {
+          "type": "Identifier",
+          "name": "x",
+          "start": 389,
+          "end": 390
+        },
+        "computed": false,
+        "optional": false,
+        "start": 377,
+        "end": 390
+      },
+      "start": 377,
+      "end": 390
+    }
+  ],
+  "sourceType": "script",
+  "start": 133,
+  "end": 391
+}

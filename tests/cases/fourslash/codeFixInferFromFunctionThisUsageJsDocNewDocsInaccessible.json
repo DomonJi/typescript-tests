@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 566,
+            "end": 572
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFix",
+            "start": 573,
+            "end": 580
+          },
+          "computed": false,
+          "optional": false,
+          "start": 566,
+          "end": 580
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "description",
+                  "start": 588,
+                  "end": 599
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Infer 'this' type of 'returnThisMember' from usage",
+                  "start": 601,
+                  "end": 653
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 588,
+                "end": 653
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "index",
+                  "start": 660,
+                  "end": 665
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": 0,
+                  "start": 667,
+                  "end": 668
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 660,
+                "end": 668
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 675,
+                  "end": 689
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "/**\r\n * @this {any}\r\n */\r\nfunction returnThisMember() {\r\n    return this.member;\r\n}\r\n\r\n/**\r\n * @type {import(\"/providesType\").Container}\r\n */\r\nconst container = {\r\n    member: \"sample\",\r\n    returnThisMember: returnThisMember,\r\n};\r\n\r\ncontainer.returnThisMember();",
+                        "cooked": "/**\n * @this {any}\n */\nfunction returnThisMember() {\n    return this.member;\n}\n\n/**\n * @type {import(\"/providesType\").Container}\n */\nconst container = {\n    member: \"sample\",\n    returnThisMember: returnThisMember,\n};\n\ncontainer.returnThisMember();"
+                      },
+                      "tail": true,
+                      "start": 691,
+                      "end": 956
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 691,
+                  "end": 956
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 675,
+                "end": 956
+              }
+            ],
+            "start": 581,
+            "end": 959
+          }
+        ],
+        "optional": false,
+        "start": 566,
+        "end": 960
+      },
+      "start": 566,
+      "end": 961
+    }
+  ],
+  "sourceType": "script",
+  "start": 566,
+  "end": 963
+}

@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 257,
+            "end": 263
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 264,
+            "end": 274
+          },
+          "computed": false,
+          "optional": false,
+          "start": 257,
+          "end": 274
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 279,
+                  "end": 296
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 298,
+                        "end": 300
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 301,
+                        "end": 312
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 298,
+                      "end": 312
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Fix_all_expressions_possibly_missing_await",
+                      "start": 313,
+                      "end": 355
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 298,
+                    "end": 355
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 356,
+                    "end": 363
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 298,
+                  "end": 363
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 279,
+                "end": 363
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 367,
+                  "end": 372
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "addMissingAwait",
+                  "start": 374,
+                  "end": 391
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 367,
+                "end": 391
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 395,
+                  "end": 409
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "async function fn(a: number, b: Promise<number>) {\n  const x = await b;\n  const y = b;\n  fn(x, b);\n  fn(await y, b);\n  x.toFixed();\n  y.then;\n\n  await b + await b;\n  x + await b;\n  x + x.toFixed();\n}",
+                        "cooked": "async function fn(a: number, b: Promise<number>) {\n  const x = await b;\n  const y = b;\n  fn(x, b);\n  fn(await y, b);\n  x.toFixed();\n  y.then;\n\n  await b + await b;\n  x + await b;\n  x + x.toFixed();\n}"
+                      },
+                      "tail": true,
+                      "start": 411,
+                      "end": 612
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 411,
+                  "end": 612
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 395,
+                "end": 612
+              }
+            ],
+            "start": 275,
+            "end": 614
+          }
+        ],
+        "optional": false,
+        "start": 257,
+        "end": 615
+      },
+      "start": 257,
+      "end": 616
+    }
+  ],
+  "sourceType": "script",
+  "start": 257,
+  "end": 617
+}

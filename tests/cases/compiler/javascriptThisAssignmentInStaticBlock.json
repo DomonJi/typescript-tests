@@ -1,0 +1,313 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Thing",
+        "start": 107,
+        "end": 112
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "StaticBlock",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "AssignmentExpression",
+                  "operator": "=",
+                  "left": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "ThisExpression",
+                      "start": 136,
+                      "end": 140
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "doSomething",
+                      "start": 141,
+                      "end": 152
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 136,
+                    "end": 152
+                  },
+                  "right": {
+                    "type": "ArrowFunctionExpression",
+                    "generator": false,
+                    "id": null,
+                    "params": [],
+                    "body": {
+                      "type": "BlockStatement",
+                      "body": [],
+                      "start": 161,
+                      "end": 163
+                    },
+                    "async": false,
+                    "expression": false,
+                    "start": 155,
+                    "end": 163
+                  },
+                  "start": 136,
+                  "end": 163
+                },
+                "start": 136,
+                "end": 164
+              }
+            ],
+            "start": 119,
+            "end": 170
+          }
+        ],
+        "start": 113,
+        "end": 172
+      },
+      "superClass": null,
+      "start": 101,
+      "end": 172
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "Thing",
+            "start": 174,
+            "end": 179
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "doSomething",
+            "start": 180,
+            "end": 191
+          },
+          "computed": false,
+          "optional": false,
+          "start": 174,
+          "end": 191
+        },
+        "arguments": [],
+        "optional": false,
+        "start": 174,
+        "end": 193
+      },
+      "start": 174,
+      "end": 194
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "ElementsArray",
+        "start": 214,
+        "end": 227
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "StaticBlock",
+            "body": [
+              {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "superisArray",
+                      "start": 271,
+                      "end": 283
+                    },
+                    "init": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Super",
+                        "start": 286,
+                        "end": 291
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "isArray",
+                        "start": 292,
+                        "end": 299
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 286,
+                      "end": 299
+                    },
+                    "start": 271,
+                    "end": 299
+                  }
+                ],
+                "kind": "const",
+                "start": 265,
+                "end": 300
+              },
+              {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "customIsArray",
+                      "start": 315,
+                      "end": 328
+                    },
+                    "init": {
+                      "type": "ArrowFunctionExpression",
+                      "generator": false,
+                      "id": null,
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "arg",
+                          "start": 332,
+                          "end": 335
+                        }
+                      ],
+                      "body": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "superisArray",
+                          "start": 339,
+                          "end": 351
+                        },
+                        "arguments": [
+                          {
+                            "type": "Identifier",
+                            "name": "arg",
+                            "start": 352,
+                            "end": 355
+                          }
+                        ],
+                        "optional": false,
+                        "start": 339,
+                        "end": 356
+                      },
+                      "async": false,
+                      "expression": true,
+                      "start": 331,
+                      "end": 356
+                    },
+                    "start": 315,
+                    "end": 356
+                  }
+                ],
+                "kind": "const",
+                "start": 309,
+                "end": 357
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "AssignmentExpression",
+                  "operator": "=",
+                  "left": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "ThisExpression",
+                      "start": 366,
+                      "end": 370
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "isArray",
+                      "start": 371,
+                      "end": 378
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 366,
+                    "end": 378
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "customIsArray",
+                    "start": 381,
+                    "end": 394
+                  },
+                  "start": 366,
+                  "end": 394
+                },
+                "start": 366,
+                "end": 395
+              }
+            ],
+            "start": 248,
+            "end": 401
+          }
+        ],
+        "start": 242,
+        "end": 403
+      },
+      "superClass": {
+        "type": "Identifier",
+        "name": "Array",
+        "start": 236,
+        "end": 241
+      },
+      "start": 208,
+      "end": 403
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "ElementsArray",
+            "start": 405,
+            "end": 418
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "isArray",
+            "start": 419,
+            "end": 426
+          },
+          "computed": false,
+          "optional": false,
+          "start": 405,
+          "end": 426
+        },
+        "arguments": [
+          {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "ElementsArray",
+              "start": 431,
+              "end": 444
+            },
+            "arguments": [],
+            "start": 427,
+            "end": 446
+          }
+        ],
+        "optional": false,
+        "start": 405,
+        "end": 447
+      },
+      "start": 405,
+      "end": 448
+    }
+  ],
+  "sourceType": "script",
+  "start": 101,
+  "end": 448
+}

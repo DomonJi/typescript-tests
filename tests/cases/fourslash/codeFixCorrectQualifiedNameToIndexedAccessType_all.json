@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 141,
+            "end": 147
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 148,
+            "end": 158
+          },
+          "computed": false,
+          "optional": false,
+          "start": 141,
+          "end": 158
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 165,
+                  "end": 170
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "correctQualifiedNameToIndexedAccessType",
+                  "start": 172,
+                  "end": 213
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 165,
+                "end": 213
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 219,
+                  "end": 236
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Rewrite all as indexed access types",
+                  "start": 238,
+                  "end": 275
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 219,
+                "end": 275
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 281,
+                  "end": 295
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface Foo {\n    bar: string;\n}\nconst x: Foo[\"bar\"] = \"\";\nconst y: Foo[\"bar\"] = \"\";",
+                        "cooked": "interface Foo {\n    bar: string;\n}\nconst x: Foo[\"bar\"] = \"\";\nconst y: Foo[\"bar\"] = \"\";"
+                      },
+                      "tail": true,
+                      "start": 297,
+                      "end": 385
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 297,
+                  "end": 385
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 281,
+                "end": 385
+              }
+            ],
+            "start": 159,
+            "end": 388
+          }
+        ],
+        "optional": false,
+        "start": 141,
+        "end": 389
+      },
+      "start": 141,
+      "end": 390
+    }
+  ],
+  "sourceType": "script",
+  "start": 141,
+  "end": 391
+}

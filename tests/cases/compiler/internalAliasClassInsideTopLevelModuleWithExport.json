@@ -1,0 +1,245 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "TSModuleDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "x",
+          "start": 58,
+          "end": 59
+        },
+        "body": {
+          "type": "TSModuleBlock",
+          "body": [
+            {
+              "type": "ExportNamedDeclaration",
+              "declaration": {
+                "type": "ClassDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "c",
+                  "start": 80,
+                  "end": 81
+                },
+                "body": {
+                  "type": "ClassBody",
+                  "body": [
+                    {
+                      "type": "MethodDefinition",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "foo",
+                        "start": 93,
+                        "end": 96
+                      },
+                      "value": {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "generator": false,
+                        "expression": false,
+                        "async": false,
+                        "body": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ReturnStatement",
+                              "argument": {
+                                "type": "Identifier",
+                                "name": "a",
+                                "start": 130,
+                                "end": 131
+                              },
+                              "start": 123,
+                              "end": 132
+                            }
+                          ],
+                          "start": 108,
+                          "end": 143
+                        },
+                        "params": [
+                          {
+                            "type": "Identifier",
+                            "name": "a",
+                            "typeAnnotation": {
+                              "type": "TSTypeAnnotation",
+                              "typeAnnotation": {
+                                "type": "TSNumberKeyword",
+                                "start": 100,
+                                "end": 106
+                              },
+                              "start": 98,
+                              "end": 106
+                            },
+                            "start": 97,
+                            "end": 106
+                          }
+                        ],
+                        "start": 96,
+                        "end": 143
+                      },
+                      "computed": false,
+                      "static": false,
+                      "kind": "method",
+                      "override": false,
+                      "start": 93,
+                      "end": 143
+                    }
+                  ],
+                  "start": 82,
+                  "end": 150
+                },
+                "superClass": null,
+                "start": 74,
+                "end": 150
+              },
+              "specifiers": [],
+              "source": null,
+              "exportKind": "value",
+              "assertions": [],
+              "start": 67,
+              "end": 150
+            }
+          ],
+          "start": 60,
+          "end": 153
+        },
+        "start": 51,
+        "end": 153
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 44,
+      "end": 153
+    },
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "xc",
+        "start": 171,
+        "end": 173
+      },
+      "moduleReference": {
+        "type": "TSQualifiedName",
+        "left": {
+          "type": "Identifier",
+          "name": "x",
+          "start": 176,
+          "end": 177
+        },
+        "right": {
+          "type": "Identifier",
+          "name": "c",
+          "start": 178,
+          "end": 179
+        },
+        "start": 176,
+        "end": 179
+      },
+      "importKind": "value",
+      "isExport": true,
+      "start": 157,
+      "end": 180
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "VariableDeclaration",
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "id": {
+              "type": "Identifier",
+              "name": "cProp",
+              "start": 193,
+              "end": 198
+            },
+            "init": {
+              "type": "NewExpression",
+              "callee": {
+                "type": "Identifier",
+                "name": "xc",
+                "start": 205,
+                "end": 207
+              },
+              "arguments": [],
+              "start": 201,
+              "end": 209
+            },
+            "start": 193,
+            "end": 209
+          }
+        ],
+        "kind": "var",
+        "start": 189,
+        "end": 210
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 182,
+      "end": 210
+    },
+    {
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "cReturnVal",
+            "start": 216,
+            "end": 226
+          },
+          "init": {
+            "type": "CallExpression",
+            "callee": {
+              "type": "MemberExpression",
+              "object": {
+                "type": "Identifier",
+                "name": "cProp",
+                "start": 229,
+                "end": 234
+              },
+              "property": {
+                "type": "Identifier",
+                "name": "foo",
+                "start": 235,
+                "end": 238
+              },
+              "computed": false,
+              "optional": false,
+              "start": 229,
+              "end": 238
+            },
+            "arguments": [
+              {
+                "type": "Literal",
+                "value": 10,
+                "start": 239,
+                "end": 241
+              }
+            ],
+            "optional": false,
+            "start": 229,
+            "end": 242
+          },
+          "start": 216,
+          "end": 242
+        }
+      ],
+      "kind": "var",
+      "start": 212,
+      "end": 243
+    }
+  ],
+  "sourceType": "module",
+  "start": 44,
+  "end": 243
+}

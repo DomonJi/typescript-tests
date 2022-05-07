@@ -1,0 +1,122 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 209,
+            "end": 215
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 216,
+            "end": 226
+          },
+          "computed": false,
+          "optional": false,
+          "start": 209,
+          "end": 226
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 233,
+                  "end": 238
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "unusedIdentifier_infer",
+                  "start": 240,
+                  "end": 264
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 233,
+                "end": 264
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 270,
+                  "end": 287
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Replace all unused 'infer' with 'unknown'",
+                  "start": 289,
+                  "end": 332
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 270,
+                "end": 332
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 338,
+                  "end": 352
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "type Length<T> = T extends ArrayLike<unknown> ? number : never;\ntype Indexer<T> = T extends ArrayLike<unknown> ? number : never;\nfunction f(p) {} // Ignored",
+                        "cooked": "type Length<T> = T extends ArrayLike<unknown> ? number : never;\ntype Indexer<T> = T extends ArrayLike<unknown> ? number : never;\nfunction f(p) {} // Ignored"
+                      },
+                      "tail": true,
+                      "start": 354,
+                      "end": 512
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 354,
+                  "end": 512
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 338,
+                "end": 512
+              }
+            ],
+            "start": 227,
+            "end": 515
+          }
+        ],
+        "optional": false,
+        "start": 209,
+        "end": 516
+      },
+      "start": 209,
+      "end": 517
+    }
+  ],
+  "sourceType": "script",
+  "start": 209,
+  "end": 518
+}

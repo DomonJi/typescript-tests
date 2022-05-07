@@ -1,0 +1,173 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSImportEqualsDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "decl",
+        "start": 7,
+        "end": 11
+      },
+      "moduleReference": {
+        "type": "TSExternalModuleReference",
+        "expression": {
+          "type": "Literal",
+          "value": "../decl",
+          "start": 22,
+          "end": 31
+        },
+        "start": 14,
+        "end": 32
+      },
+      "importKind": "value",
+      "isExport": false,
+      "start": 0,
+      "end": 33
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "fail",
+        "start": 54,
+        "end": 58
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [],
+      "declare": true,
+      "start": 37,
+      "end": 61
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": {
+        "type": "FunctionDeclaration",
+        "id": {
+          "type": "Identifier",
+          "name": "call",
+          "start": 81,
+          "end": 85
+        },
+        "generator": false,
+        "expression": false,
+        "async": false,
+        "params": [],
+        "body": {
+          "type": "BlockStatement",
+          "body": [
+            {
+              "type": "VariableDeclaration",
+              "declarations": [
+                {
+                  "type": "VariableDeclarator",
+                  "id": {
+                    "type": "Identifier",
+                    "name": "str",
+                    "start": 100,
+                    "end": 103
+                  },
+                  "init": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "decl",
+                        "start": 106,
+                        "end": 110
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "call",
+                        "start": 111,
+                        "end": 115
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 106,
+                      "end": 115
+                    },
+                    "arguments": [],
+                    "optional": false,
+                    "start": 106,
+                    "end": 117
+                  },
+                  "start": 100,
+                  "end": 117
+                }
+              ],
+              "kind": "var",
+              "start": 96,
+              "end": 118
+            },
+            {
+              "type": "IfStatement",
+              "test": {
+                "type": "BinaryExpression",
+                "operator": "!==",
+                "left": {
+                  "type": "Identifier",
+                  "name": "str",
+                  "start": 134,
+                  "end": 137
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": "success",
+                  "start": 142,
+                  "end": 151
+                },
+                "start": 134,
+                "end": 151
+              },
+              "consequent": {
+                "type": "BlockStatement",
+                "body": [
+                  {
+                    "type": "ExpressionStatement",
+                    "expression": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "fail",
+                        "start": 169,
+                        "end": 173
+                      },
+                      "arguments": [],
+                      "optional": false,
+                      "start": 169,
+                      "end": 175
+                    },
+                    "start": 169,
+                    "end": 176
+                  }
+                ],
+                "start": 158,
+                "end": 183
+              },
+              "alternate": null,
+              "start": 130,
+              "end": 183
+            }
+          ],
+          "start": 89,
+          "end": 186
+        },
+        "start": 72,
+        "end": 186
+      },
+      "specifiers": [],
+      "source": null,
+      "exportKind": "value",
+      "assertions": [],
+      "start": 65,
+      "end": 186
+    }
+  ],
+  "sourceType": "module",
+  "start": 0,
+  "end": 186
+}

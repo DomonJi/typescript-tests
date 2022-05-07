@@ -1,0 +1,161 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "verify",
+            "start": 490,
+            "end": 496
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "codeFixAll",
+            "start": 497,
+            "end": 507
+          },
+          "computed": false,
+          "optional": false,
+          "start": 490,
+          "end": 507
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixId",
+                  "start": 515,
+                  "end": 520
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "fixMissingProperties",
+                  "start": 522,
+                  "end": 544
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 515,
+                "end": 544
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "fixAllDescription",
+                  "start": 551,
+                  "end": 568
+                },
+                "value": {
+                  "type": "MemberExpression",
+                  "object": {
+                    "type": "MemberExpression",
+                    "object": {
+                      "type": "MemberExpression",
+                      "object": {
+                        "type": "Identifier",
+                        "name": "ts",
+                        "start": 570,
+                        "end": 572
+                      },
+                      "property": {
+                        "type": "Identifier",
+                        "name": "Diagnostics",
+                        "start": 573,
+                        "end": 584
+                      },
+                      "computed": false,
+                      "optional": false,
+                      "start": 570,
+                      "end": 584
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "Add_all_missing_properties",
+                      "start": 585,
+                      "end": 611
+                    },
+                    "computed": false,
+                    "optional": false,
+                    "start": 570,
+                    "end": 611
+                  },
+                  "property": {
+                    "type": "Identifier",
+                    "name": "message",
+                    "start": 612,
+                    "end": 619
+                  },
+                  "computed": false,
+                  "optional": false,
+                  "start": 570,
+                  "end": 619
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 551,
+                "end": 619
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newFileContent",
+                  "start": 626,
+                  "end": 640
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "interface I1 {\r\n    a: number;\r\n    b: string;\r\n    c: 1;\r\n    d: \"d\";\r\n    e: \"e1\" | \"e2\";\r\n    f(x: number, y: number): void;\r\n    g: (x: number, y: number) => void;\r\n}\r\ninterface I2 {\r\n    a: unknown;\r\n    b: any;\r\n}\r\nconst a: I1 = {\r\n    a: 0,\r\n    b: \"\",\r\n    c: 1,\r\n    d: \"d\",\r\n    e: \"e1\",\r\n    f: function(x: number, y: number): void {\r\n        throw new Error(\"Function not implemented.\");\r\n    },\r\n    g: function(x: number, y: number): void {\r\n        throw new Error(\"Function not implemented.\");\r\n    }\r\n};\r\nconst b: I2 = {\r\n    a: undefined,\r\n    b: undefined\r\n};\r\nclass C {\r\n     public c: I1 = {\r\n         a: 0,\r\n         b: \"\",\r\n         c: 1,\r\n         d: \"d\",\r\n         e: \"e1\",\r\n         f: function(x: number, y: number): void {\r\n             throw new Error(\"Function not implemented.\");\r\n         },\r\n         g: function(x: number, y: number): void {\r\n             throw new Error(\"Function not implemented.\");\r\n         }\r\n     };\r\n}\r\nfunction fn1(foo: I2 = {\r\n    a: undefined,\r\n    b: undefined\r\n}) {}\r\nfunction fn2(a: I1) {}\r\nfn2({\r\n    a: 0,\r\n    b: \"\",\r\n    c: 1,\r\n    d: \"d\",\r\n    e: \"e1\",\r\n    f: function(x: number, y: number): void {\r\n        throw new Error(\"Function not implemented.\");\r\n    },\r\n    g: function(x: number, y: number): void {\r\n        throw new Error(\"Function not implemented.\");\r\n    }\r\n});",
+                        "cooked": "interface I1 {\n    a: number;\n    b: string;\n    c: 1;\n    d: \"d\";\n    e: \"e1\" | \"e2\";\n    f(x: number, y: number): void;\n    g: (x: number, y: number) => void;\n}\ninterface I2 {\n    a: unknown;\n    b: any;\n}\nconst a: I1 = {\n    a: 0,\n    b: \"\",\n    c: 1,\n    d: \"d\",\n    e: \"e1\",\n    f: function(x: number, y: number): void {\n        throw new Error(\"Function not implemented.\");\n    },\n    g: function(x: number, y: number): void {\n        throw new Error(\"Function not implemented.\");\n    }\n};\nconst b: I2 = {\n    a: undefined,\n    b: undefined\n};\nclass C {\n     public c: I1 = {\n         a: 0,\n         b: \"\",\n         c: 1,\n         d: \"d\",\n         e: \"e1\",\n         f: function(x: number, y: number): void {\n             throw new Error(\"Function not implemented.\");\n         },\n         g: function(x: number, y: number): void {\n             throw new Error(\"Function not implemented.\");\n         }\n     };\n}\nfunction fn1(foo: I2 = {\n    a: undefined,\n    b: undefined\n}) {}\nfunction fn2(a: I1) {}\nfn2({\n    a: 0,\n    b: \"\",\n    c: 1,\n    d: \"d\",\n    e: \"e1\",\n    f: function(x: number, y: number): void {\n        throw new Error(\"Function not implemented.\");\n    },\n    g: function(x: number, y: number): void {\n        throw new Error(\"Function not implemented.\");\n    }\n});"
+                      },
+                      "tail": true,
+                      "start": 643,
+                      "end": 1990
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 643,
+                  "end": 1990
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 626,
+                "end": 1990
+              }
+            ],
+            "start": 508,
+            "end": 1993
+          }
+        ],
+        "optional": false,
+        "start": 490,
+        "end": 1994
+      },
+      "start": 490,
+      "end": 1995
+    }
+  ],
+  "sourceType": "script",
+  "start": 490,
+  "end": 1997
+}

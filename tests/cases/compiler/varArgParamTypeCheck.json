@@ -1,0 +1,313 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "sequence",
+        "start": 9,
+        "end": 17
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "RestElement",
+          "argument": {
+            "type": "Identifier",
+            "name": "sequences",
+            "start": 21,
+            "end": 30
+          },
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSArrayType",
+              "elementType": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSCallSignatureDeclaration",
+                    "params": [],
+                    "returnType": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSVoidKeyword",
+                        "start": 35,
+                        "end": 39
+                      },
+                      "start": 34,
+                      "end": 39
+                    },
+                    "start": 32,
+                    "end": 40
+                  }
+                ],
+                "start": 31,
+                "end": 41
+              },
+              "start": 31,
+              "end": 43
+            },
+            "start": 30,
+            "end": 43
+          },
+          "start": 18,
+          "end": 43
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 45,
+        "end": 49
+      },
+      "start": 0,
+      "end": 49
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "callback",
+        "start": 62,
+        "end": 70
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "clb",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSFunctionType",
+              "params": [],
+              "returnType": {
+                "type": "TSTypeAnnotation",
+                "typeAnnotation": {
+                  "type": "TSVoidKeyword",
+                  "start": 79,
+                  "end": 83
+                },
+                "start": 77,
+                "end": 83
+              },
+              "start": 75,
+              "end": 83
+            },
+            "start": 74,
+            "end": 83
+          },
+          "start": 71,
+          "end": 83
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [],
+        "start": 85,
+        "end": 89
+      },
+      "start": 53,
+      "end": 89
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "sequence",
+          "start": 93,
+          "end": 101
+        },
+        "arguments": [
+          {
+            "type": "FunctionExpression",
+            "id": {
+              "type": "Identifier",
+              "name": "bar",
+              "start": 117,
+              "end": 120
+            },
+            "generator": false,
+            "params": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [],
+              "start": 123,
+              "end": 131
+            },
+            "async": false,
+            "expression": false,
+            "start": 108,
+            "end": 131
+          },
+          {
+            "type": "FunctionExpression",
+            "id": {
+              "type": "Identifier",
+              "name": "foo",
+              "start": 147,
+              "end": 150
+            },
+            "generator": false,
+            "params": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "callback",
+                      "start": 164,
+                      "end": 172
+                    },
+                    "arguments": [
+                      {
+                        "type": "ArrowFunctionExpression",
+                        "generator": false,
+                        "id": null,
+                        "params": [],
+                        "body": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ExpressionStatement",
+                              "expression": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "ThisExpression",
+                                  "start": 192,
+                                  "end": 196
+                                },
+                                "arguments": [],
+                                "optional": false,
+                                "start": 192,
+                                "end": 198
+                              },
+                              "start": 192,
+                              "end": 199
+                            }
+                          ],
+                          "start": 177,
+                          "end": 210
+                        },
+                        "async": false,
+                        "expression": false,
+                        "start": 173,
+                        "end": 210
+                      }
+                    ],
+                    "optional": false,
+                    "start": 164,
+                    "end": 211
+                  },
+                  "start": 164,
+                  "end": 212
+                }
+              ],
+              "start": 153,
+              "end": 219
+            },
+            "async": false,
+            "expression": false,
+            "start": 138,
+            "end": 219
+          },
+          {
+            "type": "FunctionExpression",
+            "id": {
+              "type": "Identifier",
+              "name": "baz",
+              "start": 235,
+              "end": 238
+            },
+            "generator": false,
+            "params": [],
+            "body": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                      "type": "Identifier",
+                      "name": "callback",
+                      "start": 252,
+                      "end": 260
+                    },
+                    "arguments": [
+                      {
+                        "type": "ArrowFunctionExpression",
+                        "generator": false,
+                        "id": null,
+                        "params": [],
+                        "body": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ExpressionStatement",
+                              "expression": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "ThisExpression",
+                                  "start": 280,
+                                  "end": 284
+                                },
+                                "arguments": [],
+                                "optional": false,
+                                "start": 280,
+                                "end": 286
+                              },
+                              "start": 280,
+                              "end": 287
+                            }
+                          ],
+                          "start": 265,
+                          "end": 298
+                        },
+                        "async": false,
+                        "expression": false,
+                        "start": 261,
+                        "end": 298
+                      }
+                    ],
+                    "optional": false,
+                    "start": 252,
+                    "end": 299
+                  },
+                  "start": 252,
+                  "end": 300
+                }
+              ],
+              "start": 241,
+              "end": 307
+            },
+            "async": false,
+            "expression": false,
+            "start": 226,
+            "end": 307
+          }
+        ],
+        "optional": false,
+        "start": 93,
+        "end": 310
+      },
+      "start": 93,
+      "end": 311
+    }
+  ],
+  "sourceType": "script",
+  "start": 0,
+  "end": 313
+}

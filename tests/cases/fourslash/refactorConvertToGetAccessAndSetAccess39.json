@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 149,
+            "end": 153
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 154,
+            "end": 160
+          },
+          "computed": false,
+          "optional": false,
+          "start": 149,
+          "end": 160
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 161,
+            "end": 164
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 166,
+            "end": 169
+          }
+        ],
+        "optional": false,
+        "start": 149,
+        "end": 170
+      },
+      "start": 149,
+      "end": 171
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 172,
+            "end": 176
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 177,
+            "end": 190
+          },
+          "computed": false,
+          "optional": false,
+          "start": 172,
+          "end": 190
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 197,
+                  "end": 209
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors",
+                  "start": 211,
+                  "end": 247
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 197,
+                "end": 247
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 253,
+                  "end": 263
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors",
+                  "start": 265,
+                  "end": 301
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 253,
+                "end": 301
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 307,
+                  "end": 324
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Generate 'get' and 'set' accessors",
+                  "start": 326,
+                  "end": 362
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 307,
+                "end": 362
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 368,
+                  "end": 378
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "type Foo = undefined | null;\nclass A {\n    private /*RENAME*/_foo?: string | Foo;\n    public get foo(): string | Foo {\n        return this._foo;\n    }\n    public set foo(value: string | Foo) {\n        this._foo = value;\n    }\n}",
+                        "cooked": "type Foo = undefined | null;\nclass A {\n    private /*RENAME*/_foo?: string | Foo;\n    public get foo(): string | Foo {\n        return this._foo;\n    }\n    public set foo(value: string | Foo) {\n        this._foo = value;\n    }\n}"
+                      },
+                      "tail": true,
+                      "start": 380,
+                      "end": 609
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 380,
+                  "end": 609
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 368,
+                "end": 609
+              }
+            ],
+            "start": 191,
+            "end": 611
+          }
+        ],
+        "optional": false,
+        "start": 172,
+        "end": 612
+      },
+      "start": 172,
+      "end": 613
+    }
+  ],
+  "sourceType": "script",
+  "start": 149,
+  "end": 614
+}

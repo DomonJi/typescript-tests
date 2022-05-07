@@ -1,0 +1,187 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "goTo",
+            "start": 402,
+            "end": 406
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "select",
+            "start": 407,
+            "end": 413
+          },
+          "computed": false,
+          "optional": false,
+          "start": 402,
+          "end": 413
+        },
+        "arguments": [
+          {
+            "type": "Literal",
+            "value": "a",
+            "start": 414,
+            "end": 417
+          },
+          {
+            "type": "Literal",
+            "value": "b",
+            "start": 419,
+            "end": 422
+          }
+        ],
+        "optional": false,
+        "start": 402,
+        "end": 423
+      },
+      "start": 402,
+      "end": 424
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "MemberExpression",
+          "object": {
+            "type": "Identifier",
+            "name": "edit",
+            "start": 426,
+            "end": 430
+          },
+          "property": {
+            "type": "Identifier",
+            "name": "applyRefactor",
+            "start": 431,
+            "end": 444
+          },
+          "computed": false,
+          "optional": false,
+          "start": 426,
+          "end": 444
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "refactorName",
+                  "start": 452,
+                  "end": 464
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract Symbol",
+                  "start": 466,
+                  "end": 482
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 452,
+                "end": 482
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionName",
+                  "start": 489,
+                  "end": 499
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "function_scope_1",
+                  "start": 501,
+                  "end": 519
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 489,
+                "end": 519
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "actionDescription",
+                  "start": 526,
+                  "end": 543
+                },
+                "value": {
+                  "type": "Literal",
+                  "value": "Extract to method in class 'C'",
+                  "start": 545,
+                  "end": 577
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 526,
+                "end": 577
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "newContent",
+                  "start": 584,
+                  "end": 594
+                },
+                "value": {
+                  "type": "TemplateLiteral",
+                  "quasis": [
+                    {
+                      "type": "TemplateElement",
+                      "value": {
+                        "raw": "\r\nnamespace M {\r\n    class C {\r\n        foo() {\r\n            let { x, y, z } = this./*RENAME*/newMethod();\r\n            return x.a + y.b + z.c;\r\n        }\r\n\r\n        private newMethod() {\r\n            let x = { a: 1 };\r\n            let y = {\r\n                b: 2\r\n            };\r\n            let z = {\r\n                c: 3\r\n            };\r\n            return { x, y, z };\r\n        }\r\n    }\r\n}\r\n",
+                        "cooked": "\nnamespace M {\n    class C {\n        foo() {\n            let { x, y, z } = this./*RENAME*/newMethod();\n            return x.a + y.b + z.c;\n        }\n\n        private newMethod() {\n            let x = { a: 1 };\n            let y = {\n                b: 2\n            };\n            let z = {\n                c: 3\n            };\n            return { x, y, z };\n        }\n    }\n}\n"
+                      },
+                      "tail": true,
+                      "start": 597,
+                      "end": 995
+                    }
+                  ],
+                  "expressions": [],
+                  "start": 597,
+                  "end": 995
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 584,
+                "end": 995
+              }
+            ],
+            "start": 445,
+            "end": 998
+          }
+        ],
+        "optional": false,
+        "start": 426,
+        "end": 999
+      },
+      "start": 426,
+      "end": 1000
+    }
+  ],
+  "sourceType": "script",
+  "start": 402,
+  "end": 1006
+}
