@@ -38,6 +38,8 @@ for await (const p of walk('./TypeScript/tests/cases')) {
       jsx: p.endsWith('x'),
     })
 
+    astJson.sourceType = 'module'
+
     // omit the raw field, which is useless for test comparisons
     traverse(astJson).forEach((node) => {
       if (node && node.type === 'Literal') {
