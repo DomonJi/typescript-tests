@@ -6,6 +6,9 @@ import path from 'path'
 async function* walk(dir) {
   for await (const d of await fs.promises.opendir(dir)) {
     const entry = path.join(dir, d.name)
+    if (entry.match(/node_modules/)) {
+      continue
+    }
     if (d.isDirectory()) yield* walk(entry)
     else if (d.isFile()) yield entry
   }
@@ -33,10 +36,16 @@ for await (const p of walk('./TypeScript/tests/cases')) {
   }
 
   try {
-    const astJson = parse(code, {
+    let astJson = parse(code, {
       range: true,
       jsx: p.endsWith('x'),
     })
+
+    const bigIntSerializer = (_key, value) => {
+      return typeof value === 'bigint' ? value.toString() + 'n' : value
+    }
+
+    astJson = JSON.parse(JSON.stringify(astJson, bigIntSerializer))
 
     astJson.sourceType = 'module'
 
@@ -54,10 +63,6 @@ for await (const p of walk('./TypeScript/tests/cases')) {
         delete node.range
       }
     })
-
-    const bigIntSerializer = (_key, value) => {
-      return typeof value === 'bigint' ? value.toString() + 'n' : value
-    }
 
     await fs.promises.writeFile(
       writeFile,
