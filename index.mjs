@@ -23,8 +23,17 @@ for await (const p of walk('./TypeScript/tests/cases')) {
     continue
   }
 
-  await fs.promises.copyFile(p, path.join('./', p.replace(/^TypeScript\//, '')))
   const code = await fs.promises.readFile(path.join('./', p), 'utf8')
+  if (
+    code.includes('@filename') ||
+    code.includes('@Filename') ||
+    fs.existsSync(
+      `./TypeScript/tests/baselines/reference/${path.basename(p)}.errors.txt`,
+    )
+  ) {
+    continue
+  }
+  await fs.promises.copyFile(p, path.join('./', p.replace(/^TypeScript\//, '')))
 
   const writePath = path.parse(path.join('./', p.replace(/^TypeScript\//, '')))
   const writeFile = writePath.dir + '/' + writePath.name + '.json'
