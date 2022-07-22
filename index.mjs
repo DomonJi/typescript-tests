@@ -2,41 +2,36 @@ import { parse } from '@typescript-eslint/typescript-estree'
 import traverse from 'traverse'
 import fs from 'fs'
 import path from 'path'
+import glob from 'glob'
 
-async function* walk(dir) {
-  for await (const d of await fs.promises.opendir(dir)) {
-    const entry = path.join(dir, d.name)
-    if (entry.match(/node_modules/)) {
-      continue
-    }
-    if (d.isDirectory()) yield* walk(entry)
-    else if (d.isFile()) yield entry
-  }
-}
+let extensions = ['js', 'mjs', 'cjs', 'jsx', 'ts', 'mts', 'ctx', 'tsx'].join(',')
+let globPath = `./TypeScript/tests/cases/@(compiler|conformance)/**/*.{${extensions}}`
 
-for await (const p of walk('./TypeScript/tests/cases')) {
-  if (
-    !['.js', '.mjs', '.cjs', '.jsx', '.ts', '.mts', '.ctx', '.tsx'].some(
-      (ext) => p.endsWith(ext),
-    )
-  ) {
-    continue
-  }
+for await (const p of glob.sync(globPath)) {
+  const filePath = p.replace(/^TypeScript\//, './')
+  const writePath = path.parse(filePath)
+  const writeFile = writePath.dir + '/' + writePath.name + '.json'
 
   const code = await fs.promises.readFile(path.join('./', p), 'utf8')
-  if (
-    code.includes('@filename') ||
-    code.includes('@Filename') ||
-    fs.existsSync(
-      `./TypeScript/tests/baselines/reference/${path.basename(p)}.errors.txt`,
-    )
-  ) {
+
+  // skip multi-file files
+  if (/@filename/i.test(code)) {
+    if (fs.existsSync(writeFile)) {
+      fs.unlinkSync(writeFile)
+    }
     continue
   }
-  await fs.promises.copyFile(p, path.join('./', p.replace(/^TypeScript\//, '')))
 
-  const writePath = path.parse(path.join('./', p.replace(/^TypeScript\//, '')))
-  const writeFile = writePath.dir + '/' + writePath.name + '.json'
+  // error files have path like "importMeta(module=es2020,target=es5).errors.txt"
+  let errorsPath = `./TypeScript/tests/baselines/reference/${path.basename(p).split('.')[0]}*.errors.txt`
+  if (glob.sync(errorsPath).length > 0) {
+    if (fs.existsSync(writeFile)) {
+      fs.unlinkSync(writeFile)
+    }
+    continue
+  }
+
+  await fs.promises.copyFile(p, filePath)
 
   if (!fs.existsSync(writePath.dir)) {
     fs.mkdirSync(writePath.dir, {
@@ -47,7 +42,6 @@ for await (const p of walk('./TypeScript/tests/cases')) {
   try {
     let astJson = parse(code, {
       range: true,
-      jsx: p.endsWith('x'),
     })
 
     const bigIntSerializer = (_key, value) => {
