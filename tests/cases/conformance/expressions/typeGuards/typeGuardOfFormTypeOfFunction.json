@@ -1313,9 +1313,373 @@
       },
       "start": 1150,
       "end": 1351
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "configureStore",
+        "start": 1388,
+        "end": 1402
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "reducer",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSFunctionType",
+                  "params": [],
+                  "returnType": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSVoidKeyword",
+                      "start": 1437,
+                      "end": 1441
+                    },
+                    "start": 1434,
+                    "end": 1441
+                  },
+                  "start": 1431,
+                  "end": 1441
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Record",
+                    "start": 1445,
+                    "end": 1451
+                  },
+                  "typeParameters": {
+                    "type": "TSTypeParameterInstantiation",
+                    "params": [
+                      {
+                        "type": "TSTypeOperator",
+                        "operator": "keyof",
+                        "typeAnnotation": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "S",
+                            "start": 1458,
+                            "end": 1459
+                          },
+                          "start": 1458,
+                          "end": 1459
+                        },
+                        "start": 1452,
+                        "end": 1459
+                      },
+                      {
+                        "type": "TSFunctionType",
+                        "params": [],
+                        "returnType": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSVoidKeyword",
+                            "start": 1467,
+                            "end": 1471
+                          },
+                          "start": 1464,
+                          "end": 1471
+                        },
+                        "start": 1461,
+                        "end": 1471
+                      }
+                    ],
+                    "start": 1451,
+                    "end": 1472
+                  },
+                  "start": 1445,
+                  "end": 1472
+                }
+              ],
+              "start": 1430,
+              "end": 1472
+            },
+            "start": 1428,
+            "end": 1472
+          },
+          "start": 1421,
+          "end": 1472
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "VariableDeclaration",
+            "declarations": [
+              {
+                "type": "VariableDeclarator",
+                "id": {
+                  "type": "Identifier",
+                  "name": "rootReducer",
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSFunctionType",
+                      "params": [],
+                      "returnType": {
+                        "type": "TSTypeAnnotation",
+                        "typeAnnotation": {
+                          "type": "TSVoidKeyword",
+                          "start": 1504,
+                          "end": 1508
+                        },
+                        "start": 1501,
+                        "end": 1508
+                      },
+                      "start": 1498,
+                      "end": 1508
+                    },
+                    "start": 1496,
+                    "end": 1508
+                  },
+                  "start": 1485,
+                  "end": 1508
+                },
+                "init": null,
+                "start": 1485,
+                "end": 1508
+              }
+            ],
+            "kind": "let",
+            "start": 1481,
+            "end": 1509
+          },
+          {
+            "type": "IfStatement",
+            "test": {
+              "type": "BinaryExpression",
+              "operator": "===",
+              "left": {
+                "type": "UnaryExpression",
+                "operator": "typeof",
+                "prefix": true,
+                "argument": {
+                  "type": "Identifier",
+                  "name": "reducer",
+                  "start": 1526,
+                  "end": 1533
+                },
+                "start": 1519,
+                "end": 1533
+              },
+              "right": {
+                "type": "Literal",
+                "value": "function",
+                "start": 1538,
+                "end": 1548
+              },
+              "start": 1519,
+              "end": 1548
+            },
+            "consequent": {
+              "type": "BlockStatement",
+              "body": [
+                {
+                  "type": "ExpressionStatement",
+                  "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "=",
+                    "left": {
+                      "type": "Identifier",
+                      "name": "rootReducer",
+                      "start": 1561,
+                      "end": 1572
+                    },
+                    "right": {
+                      "type": "Identifier",
+                      "name": "reducer",
+                      "start": 1575,
+                      "end": 1582
+                    },
+                    "start": 1561,
+                    "end": 1582
+                  },
+                  "start": 1561,
+                  "end": 1583
+                }
+              ],
+              "start": 1550,
+              "end": 1590
+            },
+            "alternate": null,
+            "start": 1515,
+            "end": 1590
+          }
+        ],
+        "start": 1474,
+        "end": 1593
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "S",
+              "start": 1403,
+              "end": 1404
+            },
+            "constraint": {
+              "type": "TSObjectKeyword",
+              "start": 1413,
+              "end": 1419
+            },
+            "in": false,
+            "out": false,
+            "start": 1403,
+            "end": 1419
+          }
+        ],
+        "start": 1402,
+        "end": 1420
+      },
+      "start": 1379,
+      "end": 1593
+    },
+    {
+      "type": "FunctionDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "f101",
+        "start": 1606,
+        "end": 1610
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "x",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSUnionType",
+              "types": [
+                {
+                  "type": "TSStringKeyword",
+                  "start": 1614,
+                  "end": 1620
+                },
+                {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "Record",
+                    "start": 1623,
+                    "end": 1629
+                  },
+                  "typeParameters": {
+                    "type": "TSTypeParameterInstantiation",
+                    "params": [
+                      {
+                        "type": "TSStringKeyword",
+                        "start": 1630,
+                        "end": 1636
+                      },
+                      {
+                        "type": "TSAnyKeyword",
+                        "start": 1638,
+                        "end": 1641
+                      }
+                    ],
+                    "start": 1629,
+                    "end": 1642
+                  },
+                  "start": 1623,
+                  "end": 1642
+                }
+              ],
+              "start": 1614,
+              "end": 1642
+            },
+            "start": 1612,
+            "end": 1642
+          },
+          "start": 1611,
+          "end": 1642
+        }
+      ],
+      "body": {
+        "type": "BlockStatement",
+        "body": [
+          {
+            "type": "ReturnStatement",
+            "argument": {
+              "type": "LogicalExpression",
+              "operator": "&&",
+              "left": {
+                "type": "BinaryExpression",
+                "operator": "===",
+                "left": {
+                  "type": "UnaryExpression",
+                  "operator": "typeof",
+                  "prefix": true,
+                  "argument": {
+                    "type": "Identifier",
+                    "name": "x",
+                    "start": 1665,
+                    "end": 1666
+                  },
+                  "start": 1658,
+                  "end": 1666
+                },
+                "right": {
+                  "type": "Literal",
+                  "value": "object",
+                  "start": 1671,
+                  "end": 1679
+                },
+                "start": 1658,
+                "end": 1679
+              },
+              "right": {
+                "type": "MemberExpression",
+                "object": {
+                  "type": "Identifier",
+                  "name": "x",
+                  "start": 1683,
+                  "end": 1684
+                },
+                "property": {
+                  "type": "Identifier",
+                  "name": "anything",
+                  "start": 1685,
+                  "end": 1693
+                },
+                "computed": false,
+                "optional": false,
+                "start": 1683,
+                "end": 1693
+              },
+              "start": 1658,
+              "end": 1693
+            },
+            "start": 1651,
+            "end": 1694
+          }
+        ],
+        "start": 1644,
+        "end": 1697
+      },
+      "start": 1597,
+      "end": 1697
     }
   ],
   "sourceType": "module",
   "start": 2,
-  "end": 1353
+  "end": 1699
 }

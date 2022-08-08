@@ -1,0 +1,789 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Action",
+        "start": 23,
+        "end": 29
+      },
+      "typeAnnotation": {
+        "type": "TSFunctionType",
+        "params": [
+          {
+            "type": "Identifier",
+            "name": "ev",
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TEvent",
+                  "start": 70,
+                  "end": 76
+                },
+                "start": 70,
+                "end": 76
+              },
+              "start": 68,
+              "end": 76
+            },
+            "start": 66,
+            "end": 76
+          }
+        ],
+        "returnType": {
+          "type": "TSTypeAnnotation",
+          "typeAnnotation": {
+            "type": "TSVoidKeyword",
+            "start": 81,
+            "end": 85
+          },
+          "start": 78,
+          "end": 85
+        },
+        "start": 65,
+        "end": 85
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TEvent",
+              "start": 30,
+              "end": 36
+            },
+            "constraint": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "type",
+                    "start": 47,
+                    "end": 51
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 53,
+                      "end": 59
+                    },
+                    "start": 51,
+                    "end": 59
+                  },
+                  "start": 47,
+                  "end": 59
+                }
+              ],
+              "start": 45,
+              "end": 61
+            },
+            "in": false,
+            "out": false,
+            "start": 30,
+            "end": 61
+          }
+        ],
+        "start": 29,
+        "end": 62
+      },
+      "start": 18,
+      "end": 86
+    },
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "schema",
+              "start": 149,
+              "end": 155
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSPropertySignature",
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "name": "events",
+                      "start": 163,
+                      "end": 169
+                    },
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "TEvent",
+                          "start": 171,
+                          "end": 177
+                        },
+                        "start": 171,
+                        "end": 177
+                      },
+                      "start": 169,
+                      "end": 177
+                    },
+                    "start": 163,
+                    "end": 178
+                  }
+                ],
+                "start": 157,
+                "end": 182
+              },
+              "start": 155,
+              "end": 182
+            },
+            "start": 149,
+            "end": 183
+          },
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "on",
+              "start": 186,
+              "end": 188
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSIntersectionType",
+                "types": [
+                  {
+                    "type": "TSMappedType",
+                    "typeParameter": {
+                      "type": "TSTypeParameter",
+                      "name": {
+                        "type": "Identifier",
+                        "name": "K",
+                        "start": 198,
+                        "end": 199
+                      },
+                      "constraint": {
+                        "type": "TSIndexedAccessType",
+                        "objectType": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "TEvent",
+                            "start": 203,
+                            "end": 209
+                          },
+                          "start": 203,
+                          "end": 209
+                        },
+                        "indexType": {
+                          "type": "TSLiteralType",
+                          "literal": {
+                            "type": "Literal",
+                            "value": "type",
+                            "start": 210,
+                            "end": 216
+                          },
+                          "start": 210,
+                          "end": 216
+                        },
+                        "start": 203,
+                        "end": 217
+                      },
+                      "in": false,
+                      "out": false,
+                      "start": 198,
+                      "end": 217
+                    },
+                    "nameType": null,
+                    "optional": true,
+                    "typeAnnotation": {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "Action",
+                        "start": 221,
+                        "end": 227
+                      },
+                      "typeParameters": {
+                        "type": "TSTypeParameterInstantiation",
+                        "params": [
+                          {
+                            "type": "TSConditionalType",
+                            "checkType": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "TEvent",
+                                "start": 228,
+                                "end": 234
+                              },
+                              "start": 228,
+                              "end": 234
+                            },
+                            "extendsType": {
+                              "type": "TSTypeLiteral",
+                              "members": [
+                                {
+                                  "type": "TSPropertySignature",
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "name": "type",
+                                    "start": 245,
+                                    "end": 249
+                                  },
+                                  "typeAnnotation": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSTypeReference",
+                                      "typeName": {
+                                        "type": "Identifier",
+                                        "name": "K",
+                                        "start": 251,
+                                        "end": 252
+                                      },
+                                      "start": 251,
+                                      "end": 252
+                                    },
+                                    "start": 249,
+                                    "end": 252
+                                  },
+                                  "start": 245,
+                                  "end": 252
+                                }
+                              ],
+                              "start": 243,
+                              "end": 254
+                            },
+                            "trueType": {
+                              "type": "TSTypeReference",
+                              "typeName": {
+                                "type": "Identifier",
+                                "name": "TEvent",
+                                "start": 257,
+                                "end": 263
+                              },
+                              "start": 257,
+                              "end": 263
+                            },
+                            "falseType": {
+                              "type": "TSNeverKeyword",
+                              "start": 266,
+                              "end": 271
+                            },
+                            "start": 228,
+                            "end": 271
+                          }
+                        ],
+                        "start": 227,
+                        "end": 272
+                      },
+                      "start": 221,
+                      "end": 272
+                    },
+                    "start": 191,
+                    "end": 277
+                  },
+                  {
+                    "type": "TSTypeLiteral",
+                    "members": [
+                      {
+                        "type": "TSPropertySignature",
+                        "optional": true,
+                        "computed": false,
+                        "key": {
+                          "type": "Literal",
+                          "value": "*",
+                          "start": 286,
+                          "end": 289
+                        },
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSTypeReference",
+                            "typeName": {
+                              "type": "Identifier",
+                              "name": "Action",
+                              "start": 292,
+                              "end": 298
+                            },
+                            "typeParameters": {
+                              "type": "TSTypeParameterInstantiation",
+                              "params": [
+                                {
+                                  "type": "TSTypeReference",
+                                  "typeName": {
+                                    "type": "Identifier",
+                                    "name": "TEvent",
+                                    "start": 299,
+                                    "end": 305
+                                  },
+                                  "start": 299,
+                                  "end": 305
+                                }
+                              ],
+                              "start": 298,
+                              "end": 306
+                            },
+                            "start": 292,
+                            "end": 306
+                          },
+                          "start": 290,
+                          "end": 306
+                        },
+                        "start": 286,
+                        "end": 307
+                      }
+                    ],
+                    "start": 280,
+                    "end": 311
+                  }
+                ],
+                "start": 191,
+                "end": 311
+              },
+              "start": 189,
+              "end": 311
+            },
+            "start": 186,
+            "end": 312
+          }
+        ],
+        "start": 145,
+        "end": 314
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "MachineConfig",
+        "start": 98,
+        "end": 111
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TEvent",
+              "start": 112,
+              "end": 118
+            },
+            "constraint": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "type",
+                    "start": 129,
+                    "end": 133
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 135,
+                      "end": 141
+                    },
+                    "start": 133,
+                    "end": 141
+                  },
+                  "start": 129,
+                  "end": 141
+                }
+              ],
+              "start": 127,
+              "end": 143
+            },
+            "in": false,
+            "out": false,
+            "start": 112,
+            "end": 143
+          }
+        ],
+        "start": 111,
+        "end": 144
+      },
+      "start": 88,
+      "end": 314
+    },
+    {
+      "type": "TSDeclareFunction",
+      "id": {
+        "type": "Identifier",
+        "name": "createMachine",
+        "start": 333,
+        "end": 346
+      },
+      "generator": false,
+      "expression": false,
+      "async": false,
+      "params": [
+        {
+          "type": "Identifier",
+          "name": "config",
+          "typeAnnotation": {
+            "type": "TSTypeAnnotation",
+            "typeAnnotation": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "MachineConfig",
+                "start": 391,
+                "end": 404
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "TEvent",
+                      "start": 405,
+                      "end": 411
+                    },
+                    "start": 405,
+                    "end": 411
+                  }
+                ],
+                "start": 404,
+                "end": 412
+              },
+              "start": 391,
+              "end": 412
+            },
+            "start": 389,
+            "end": 412
+          },
+          "start": 383,
+          "end": 412
+        }
+      ],
+      "returnType": {
+        "type": "TSTypeAnnotation",
+        "typeAnnotation": {
+          "type": "TSVoidKeyword",
+          "start": 416,
+          "end": 420
+        },
+        "start": 414,
+        "end": 420
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TEvent",
+              "start": 347,
+              "end": 353
+            },
+            "constraint": {
+              "type": "TSTypeLiteral",
+              "members": [
+                {
+                  "type": "TSPropertySignature",
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "name": "type",
+                    "start": 364,
+                    "end": 368
+                  },
+                  "typeAnnotation": {
+                    "type": "TSTypeAnnotation",
+                    "typeAnnotation": {
+                      "type": "TSStringKeyword",
+                      "start": 370,
+                      "end": 376
+                    },
+                    "start": 368,
+                    "end": 376
+                  },
+                  "start": 364,
+                  "end": 376
+                }
+              ],
+              "start": 362,
+              "end": 378
+            },
+            "in": false,
+            "out": false,
+            "start": 347,
+            "end": 378
+          }
+        ],
+        "start": 346,
+        "end": 379
+      },
+      "declare": true,
+      "start": 316,
+      "end": 421
+    },
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "Identifier",
+          "name": "createMachine",
+          "start": 423,
+          "end": 436
+        },
+        "arguments": [
+          {
+            "type": "ObjectExpression",
+            "properties": [
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "schema",
+                  "start": 441,
+                  "end": 447
+                },
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "events",
+                        "start": 455,
+                        "end": 461
+                      },
+                      "value": {
+                        "type": "TSAsExpression",
+                        "expression": {
+                          "type": "ObjectExpression",
+                          "properties": [],
+                          "start": 463,
+                          "end": 465
+                        },
+                        "typeAnnotation": {
+                          "type": "TSUnionType",
+                          "types": [
+                            {
+                              "type": "TSTypeLiteral",
+                              "members": [
+                                {
+                                  "type": "TSPropertySignature",
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "name": "type",
+                                    "start": 471,
+                                    "end": 475
+                                  },
+                                  "typeAnnotation": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSLiteralType",
+                                      "literal": {
+                                        "type": "Literal",
+                                        "value": "FOO",
+                                        "start": 477,
+                                        "end": 482
+                                      },
+                                      "start": 477,
+                                      "end": 482
+                                    },
+                                    "start": 475,
+                                    "end": 482
+                                  },
+                                  "start": 471,
+                                  "end": 482
+                                }
+                              ],
+                              "start": 469,
+                              "end": 484
+                            },
+                            {
+                              "type": "TSTypeLiteral",
+                              "members": [
+                                {
+                                  "type": "TSPropertySignature",
+                                  "computed": false,
+                                  "key": {
+                                    "type": "Identifier",
+                                    "name": "type",
+                                    "start": 489,
+                                    "end": 493
+                                  },
+                                  "typeAnnotation": {
+                                    "type": "TSTypeAnnotation",
+                                    "typeAnnotation": {
+                                      "type": "TSLiteralType",
+                                      "literal": {
+                                        "type": "Literal",
+                                        "value": "BAR",
+                                        "start": 495,
+                                        "end": 500
+                                      },
+                                      "start": 495,
+                                      "end": 500
+                                    },
+                                    "start": 493,
+                                    "end": 500
+                                  },
+                                  "start": 489,
+                                  "end": 500
+                                }
+                              ],
+                              "start": 487,
+                              "end": 502
+                            }
+                          ],
+                          "start": 469,
+                          "end": 502
+                        },
+                        "start": 463,
+                        "end": 502
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 455,
+                      "end": 502
+                    }
+                  ],
+                  "start": 449,
+                  "end": 507
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 441,
+                "end": 507
+              },
+              {
+                "type": "Property",
+                "key": {
+                  "type": "Identifier",
+                  "name": "on",
+                  "start": 511,
+                  "end": 513
+                },
+                "value": {
+                  "type": "ObjectExpression",
+                  "properties": [
+                    {
+                      "type": "Property",
+                      "key": {
+                        "type": "Identifier",
+                        "name": "FOO",
+                        "start": 521,
+                        "end": 524
+                      },
+                      "value": {
+                        "type": "ArrowFunctionExpression",
+                        "generator": false,
+                        "id": null,
+                        "params": [
+                          {
+                            "type": "Identifier",
+                            "name": "ev",
+                            "start": 527,
+                            "end": 529
+                          }
+                        ],
+                        "body": {
+                          "type": "BlockStatement",
+                          "body": [
+                            {
+                              "type": "ExpressionStatement",
+                              "expression": {
+                                "type": "MemberExpression",
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "ev",
+                                  "start": 542,
+                                  "end": 544
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "type",
+                                  "start": 545,
+                                  "end": 549
+                                },
+                                "computed": false,
+                                "optional": false,
+                                "start": 542,
+                                "end": 549
+                              },
+                              "start": 542,
+                              "end": 550
+                            }
+                          ],
+                          "start": 534,
+                          "end": 575
+                        },
+                        "async": false,
+                        "expression": false,
+                        "start": 526,
+                        "end": 575
+                      },
+                      "computed": false,
+                      "method": false,
+                      "shorthand": false,
+                      "kind": "init",
+                      "start": 521,
+                      "end": 575
+                    }
+                  ],
+                  "start": 515,
+                  "end": 580
+                },
+                "computed": false,
+                "method": false,
+                "shorthand": false,
+                "kind": "init",
+                "start": 511,
+                "end": 580
+              }
+            ],
+            "start": 437,
+            "end": 583
+          }
+        ],
+        "optional": false,
+        "start": 423,
+        "end": 584
+      },
+      "start": 423,
+      "end": 585
+    }
+  ],
+  "sourceType": "module",
+  "start": 18,
+  "end": 586
+}
