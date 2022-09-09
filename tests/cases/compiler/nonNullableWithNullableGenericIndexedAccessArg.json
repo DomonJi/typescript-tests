@@ -1,0 +1,652 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "TSInterfaceDeclaration",
+      "body": {
+        "type": "TSInterfaceBody",
+        "body": [
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "states",
+              "start": 83,
+              "end": 89
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeLiteral",
+                "members": [
+                  {
+                    "type": "TSIndexSignature",
+                    "parameters": [
+                      {
+                        "type": "Identifier",
+                        "name": "key",
+                        "typeAnnotation": {
+                          "type": "TSTypeAnnotation",
+                          "typeAnnotation": {
+                            "type": "TSStringKeyword",
+                            "start": 104,
+                            "end": 110
+                          },
+                          "start": 102,
+                          "end": 110
+                        },
+                        "start": 99,
+                        "end": 110
+                      }
+                    ],
+                    "typeAnnotation": {
+                      "type": "TSTypeAnnotation",
+                      "typeAnnotation": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "StateSchema",
+                          "start": 113,
+                          "end": 124
+                        },
+                        "start": 113,
+                        "end": 124
+                      },
+                      "start": 111,
+                      "end": 124
+                    },
+                    "start": 98,
+                    "end": 125
+                  }
+                ],
+                "start": 92,
+                "end": 129
+              },
+              "start": 90,
+              "end": 129
+            },
+            "start": 83,
+            "end": 130
+          }
+        ],
+        "start": 79,
+        "end": 132
+      },
+      "id": {
+        "type": "Identifier",
+        "name": "StateSchema",
+        "start": 67,
+        "end": 78
+      },
+      "start": 57,
+      "end": 132
+    },
+    {
+      "type": "ClassDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StateNode",
+        "start": 148,
+        "end": 157
+      },
+      "body": {
+        "type": "ClassBody",
+        "body": [
+          {
+            "type": "PropertyDefinition",
+            "key": {
+              "type": "Identifier",
+              "name": "schema",
+              "start": 196,
+              "end": 202
+            },
+            "value": null,
+            "computed": false,
+            "static": false,
+            "declare": false,
+            "override": false,
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TStateSchema",
+                  "start": 204,
+                  "end": 216
+                },
+                "start": 204,
+                "end": 216
+              },
+              "start": 202,
+              "end": 216
+            },
+            "start": 196,
+            "end": 217
+          }
+        ],
+        "start": 192,
+        "end": 219
+      },
+      "superClass": null,
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TStateSchema",
+              "start": 158,
+              "end": 170
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "StateSchema",
+                "start": 179,
+                "end": 190
+              },
+              "start": 179,
+              "end": 190
+            },
+            "in": false,
+            "out": false,
+            "start": 158,
+            "end": 190
+          }
+        ],
+        "start": 157,
+        "end": 191
+      },
+      "declare": true,
+      "start": 134,
+      "end": 219
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "StateNodesConfig",
+        "start": 226,
+        "end": 242
+      },
+      "typeAnnotation": {
+        "type": "TSMappedType",
+        "typeParameter": {
+          "type": "TSTypeParameter",
+          "name": {
+            "type": "Identifier",
+            "name": "K",
+            "start": 284,
+            "end": 285
+          },
+          "constraint": {
+            "type": "TSTypeOperator",
+            "operator": "keyof",
+            "typeAnnotation": {
+              "type": "TSIndexedAccessType",
+              "objectType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TStateSchema",
+                  "start": 295,
+                  "end": 307
+                },
+                "start": 295,
+                "end": 307
+              },
+              "indexType": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "states",
+                  "start": 308,
+                  "end": 316
+                },
+                "start": 308,
+                "end": 316
+              },
+              "start": 295,
+              "end": 317
+            },
+            "start": 289,
+            "end": 317
+          },
+          "in": false,
+          "out": false,
+          "start": 284,
+          "end": 317
+        },
+        "nameType": null,
+        "typeAnnotation": {
+          "type": "TSTypeReference",
+          "typeName": {
+            "type": "Identifier",
+            "name": "StateNode",
+            "start": 320,
+            "end": 329
+          },
+          "typeParameters": {
+            "type": "TSTypeParameterInstantiation",
+            "params": [
+              {
+                "type": "TSIndexedAccessType",
+                "objectType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "NonNullable",
+                    "start": 330,
+                    "end": 341
+                  },
+                  "typeParameters": {
+                    "type": "TSTypeParameterInstantiation",
+                    "params": [
+                      {
+                        "type": "TSIndexedAccessType",
+                        "objectType": {
+                          "type": "TSTypeReference",
+                          "typeName": {
+                            "type": "Identifier",
+                            "name": "TStateSchema",
+                            "start": 342,
+                            "end": 354
+                          },
+                          "start": 342,
+                          "end": 354
+                        },
+                        "indexType": {
+                          "type": "TSLiteralType",
+                          "literal": {
+                            "type": "Literal",
+                            "value": "states",
+                            "start": 355,
+                            "end": 363
+                          },
+                          "start": 355,
+                          "end": 363
+                        },
+                        "start": 342,
+                        "end": 364
+                      }
+                    ],
+                    "start": 341,
+                    "end": 365
+                  },
+                  "start": 330,
+                  "end": 365
+                },
+                "indexType": {
+                  "type": "TSTypeReference",
+                  "typeName": {
+                    "type": "Identifier",
+                    "name": "K",
+                    "start": 366,
+                    "end": 367
+                  },
+                  "start": 366,
+                  "end": 367
+                },
+                "start": 330,
+                "end": 368
+              }
+            ],
+            "start": 329,
+            "end": 369
+          },
+          "start": 320,
+          "end": 369
+        },
+        "start": 279,
+        "end": 372
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TStateSchema",
+              "start": 243,
+              "end": 255
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "StateSchema",
+                "start": 264,
+                "end": 275
+              },
+              "start": 264,
+              "end": 275
+            },
+            "in": false,
+            "out": false,
+            "start": 243,
+            "end": 275
+          }
+        ],
+        "start": 242,
+        "end": 276
+      },
+      "start": 221,
+      "end": 373
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Ordering",
+        "start": 426,
+        "end": 434
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "orderBy",
+              "start": 468,
+              "end": 475
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "TOrderBy",
+                  "start": 477,
+                  "end": 485
+                },
+                "start": 477,
+                "end": 485
+              },
+              "start": 475,
+              "end": 485
+            },
+            "start": 468,
+            "end": 485
+          }
+        ],
+        "start": 462,
+        "end": 487
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TOrderBy",
+              "start": 435,
+              "end": 443
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 452,
+              "end": 458
+            },
+            "in": false,
+            "out": false,
+            "start": 435,
+            "end": 458
+          }
+        ],
+        "start": 434,
+        "end": 459
+      },
+      "start": 421,
+      "end": 487
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "Query",
+        "start": 494,
+        "end": 499
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [
+          {
+            "type": "TSPropertySignature",
+            "optional": true,
+            "computed": false,
+            "key": {
+              "type": "Identifier",
+              "name": "order",
+              "start": 533,
+              "end": 538
+            },
+            "typeAnnotation": {
+              "type": "TSTypeAnnotation",
+              "typeAnnotation": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "Ordering",
+                  "start": 541,
+                  "end": 549
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSTypeReference",
+                      "typeName": {
+                        "type": "Identifier",
+                        "name": "TOrderBy",
+                        "start": 550,
+                        "end": 558
+                      },
+                      "start": 550,
+                      "end": 558
+                    }
+                  ],
+                  "start": 549,
+                  "end": 559
+                },
+                "start": 541,
+                "end": 559
+              },
+              "start": 539,
+              "end": 559
+            },
+            "start": 533,
+            "end": 559
+          }
+        ],
+        "start": 527,
+        "end": 561
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TOrderBy",
+              "start": 500,
+              "end": 508
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 517,
+              "end": 523
+            },
+            "in": false,
+            "out": false,
+            "start": 500,
+            "end": 523
+          }
+        ],
+        "start": 499,
+        "end": 524
+      },
+      "start": 489,
+      "end": 561
+    },
+    {
+      "type": "TSTypeAliasDeclaration",
+      "id": {
+        "type": "Identifier",
+        "name": "QueryHandler",
+        "start": 568,
+        "end": 580
+      },
+      "typeAnnotation": {
+        "type": "TSTypeLiteral",
+        "members": [],
+        "start": 692,
+        "end": 694
+      },
+      "typeParameters": {
+        "type": "TSTypeParameterDeclaration",
+        "params": [
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TQuery",
+              "start": 586,
+              "end": 592
+            },
+            "constraint": {
+              "type": "TSTypeReference",
+              "typeName": {
+                "type": "Identifier",
+                "name": "Query",
+                "start": 601,
+                "end": 606
+              },
+              "typeParameters": {
+                "type": "TSTypeParameterInstantiation",
+                "params": [
+                  {
+                    "type": "TSTypeReference",
+                    "typeName": {
+                      "type": "Identifier",
+                      "name": "TOrderBy",
+                      "start": 607,
+                      "end": 615
+                    },
+                    "start": 607,
+                    "end": 615
+                  }
+                ],
+                "start": 606,
+                "end": 616
+              },
+              "start": 601,
+              "end": 616
+            },
+            "in": false,
+            "out": false,
+            "start": 586,
+            "end": 616
+          },
+          {
+            "type": "TSTypeParameter",
+            "name": {
+              "type": "Identifier",
+              "name": "TOrderBy",
+              "start": 622,
+              "end": 630
+            },
+            "constraint": {
+              "type": "TSStringKeyword",
+              "start": 639,
+              "end": 645
+            },
+            "default": {
+              "type": "TSIndexedAccessType",
+              "objectType": {
+                "type": "TSTypeReference",
+                "typeName": {
+                  "type": "Identifier",
+                  "name": "NonNullable",
+                  "start": 648,
+                  "end": 659
+                },
+                "typeParameters": {
+                  "type": "TSTypeParameterInstantiation",
+                  "params": [
+                    {
+                      "type": "TSIndexedAccessType",
+                      "objectType": {
+                        "type": "TSTypeReference",
+                        "typeName": {
+                          "type": "Identifier",
+                          "name": "TQuery",
+                          "start": 660,
+                          "end": 666
+                        },
+                        "start": 660,
+                        "end": 666
+                      },
+                      "indexType": {
+                        "type": "TSLiteralType",
+                        "literal": {
+                          "type": "Literal",
+                          "value": "order",
+                          "start": 667,
+                          "end": 674
+                        },
+                        "start": 667,
+                        "end": 674
+                      },
+                      "start": 660,
+                      "end": 675
+                    }
+                  ],
+                  "start": 659,
+                  "end": 676
+                },
+                "start": 648,
+                "end": 676
+              },
+              "indexType": {
+                "type": "TSLiteralType",
+                "literal": {
+                  "type": "Literal",
+                  "value": "orderBy",
+                  "start": 677,
+                  "end": 686
+                },
+                "start": 677,
+                "end": 686
+              },
+              "start": 648,
+              "end": 687
+            },
+            "in": false,
+            "out": false,
+            "start": 622,
+            "end": 687
+          }
+        ],
+        "start": 580,
+        "end": 689
+      },
+      "start": 563,
+      "end": 694
+    }
+  ],
+  "sourceType": "module",
+  "start": 57,
+  "end": 695
+}
